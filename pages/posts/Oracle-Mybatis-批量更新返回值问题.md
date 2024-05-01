@@ -5,7 +5,7 @@ tags: [数据库, Oracle, Mybatis, Java]
 categories: [奇奇怪怪的项目里的问题]
 author: 苏
 readmore: true
-description: Mybatis 在使用（批量）更新语句的时候，应该在 SQL 语句正常执行完毕后返回「受影响行数」，但在连接的数据库是 Oracle 的时候却一直返回 -1，无法对 SQL 的执行状态进行判断，为了解决这个问题，我做了一些尝试……
+excerpt: Mybatis 在使用（批量）更新语句的时候，应该在 SQL 语句正常执行完毕后返回「受影响行数」，但在连接的数据库是 Oracle 的时候却一直返回 -1，无法对 SQL 的执行状态进行判断，为了解决这个问题，我做了一些尝试……
 ---
 
 # 场景

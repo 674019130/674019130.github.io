@@ -3,7 +3,7 @@ title: 《Designing Data-Intensive Applications》 读书笔记 | 0x02
 date: 2023-02-02 10:46:51
 tags: [DDIA, System Design]
 categories: [读书笔记, DDIA]
-description: 现代存储系统的存储与检索使用的数据结构是怎么来的？
+excerpt: 现代存储系统的存储与检索使用的数据结构是怎么来的？
 author: 苏
 readmore: true
 ---

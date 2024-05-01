@@ -5,7 +5,7 @@ date: 2022-11-02 18:04:34
 tags: [LeetCode, 数据库]
 categories: [LeetCode, 数据库]
 readmore: true
-description: 记录在 LeetCode SQL 相关的题目。调皮的小知识点有点多，用笔记📔把它们一网打尽！
+excerpt: 记录在 LeetCode SQL 相关的题目。调皮的小知识点有点多，用笔记📔把它们一网打尽！
 ---
 
 # LeetCode 数据库刷题笔记
@@ -52,9 +52,9 @@ Department 表:
 select d.name as Department, e.name as Employee, e.Salary as Salary
 from Employee e , Department d
 where e.Departmentid = d.id
-and 
-(e.DepartmentId, Salary) 
-in 
+and
+(e.DepartmentId, Salary)
+in
 (select Departmentid, max(Salary) from Employee GROUP BY DepartmentId )
 ```
 
@@ -87,7 +87,7 @@ Result 表：
 对一张表重复关联3次，横向比较。
 
 ```mysql
-select distinct l1.num as ConsecutiveNums 
+select distinct l1.num as ConsecutiveNums
 from logs l1, logs l2, logs l3
 where l1.num = l2.num and l2.num = l3.num and l1.id = l2.id - 1 and l2.id = l3.id - 1
 ```
@@ -98,7 +98,7 @@ MySql8.x 版本以上支持`rank()`开窗函数。
 
 Oracle 和 SqlServer 也支持，但是没有查具体版本。
 
-> https://blog.csdn.net/u013317445/article/details/100514974 
+> https://blog.csdn.net/u013317445/article/details/100514974
 >
 > MySql 之 rank() over(order by)、rank() over(partition by order by)
 
@@ -114,7 +114,7 @@ order by a.Score DESC
 ## 626. 换座位
 
 ```mysql
-输入: 
+输入:
 Seat 表:
 +----+---------+
 | id | student |
@@ -125,7 +125,7 @@ Seat 表:
 | 4  | Green   |
 | 5  | Jeames  |
 +----+---------+
-输出: 
+输出:
 +----+---------+
 | id | student |
 +----+---------+

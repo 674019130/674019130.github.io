@@ -3,7 +3,7 @@ title: Java Lock Notes
 date: 2024-03-04 15:40:59
 tags: [锁， JDK]
 categories: [笔记, Java]
-description: 典中典之Java中的锁有哪些，其底层实现逻辑是怎样的呢？
+excerpt: 典中典之Java中的锁有哪些，其底层实现逻辑是怎样的呢？
 author: 苏
 readmore: true
 ---
@@ -31,7 +31,7 @@ readmore: true
 
 > ```java
 > public volatile AtomicInteger size = new AtomicInteger(0);
-> 
+>
 > void test() {
 >     size.incrementAndGet();
 > }
@@ -62,7 +62,7 @@ readmore: true
    > ```java
    > public volatile AtomicInteger size = new AtomicInteger(0);
    > public volatile AtomicInteger size2 = new AtomicInteger(0);
-   > 
+   >
    > void test() {
    >     size.incrementAndGet();
    >     size2.incrementAndGet();

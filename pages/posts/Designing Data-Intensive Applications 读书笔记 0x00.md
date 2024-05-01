@@ -3,7 +3,7 @@ title: 《Designing Data-Intensive Applications》 读书笔记 | 0x00
 date: 2023-01-30 14:18:50
 tags: [DDIA, System Design]
 categories: [读书笔记, DDIA]
-description: 没看过《人月神话》，看看 《DDIA》 也不错。我们一直在谈的可靠性、可伸缩性和可维护性到底是什么？
+excerpt: 没看过《人月神话》，看看 《DDIA》 也不错。我们一直在谈的可靠性、可伸缩性和可维护性到底是什么？
 author: 苏
 readmore: true
 ---

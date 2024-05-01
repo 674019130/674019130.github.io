@@ -3,7 +3,7 @@ title: 《Designing Data-Intensive Applications》 读书笔记 | 0x04
 date: 2024-02-23 11:37:59
 tags: [DDIA, System Design]
 categories: [读书笔记, DDIA]
-description: 来看看作者如何从另一种角度描述分布式系统。
+excerpt: 来看看作者如何从另一种角度描述分布式系统。
 author: 苏
 ---
 

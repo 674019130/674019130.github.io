@@ -84,7 +84,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     notice: {
       enable: true,
       hideInPages: true,
-      content: 'Less is more.'
+      content: '要变强，要变成更好的人！'
     },
 
 

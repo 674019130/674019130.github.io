@@ -3,7 +3,7 @@ title: 《Designing Data-Intensive Applications》 读书笔记 | 0x01
 date: 2023-02-01 08:18:50
 tags: [DDIA, System Design]
 categories: [读书笔记, DDIA]
-description: 数据模型除了「SQL」还有什么？
+excerpt: 数据模型除了「SQL」还有什么？
 author: 苏
 readmore: true
 ---

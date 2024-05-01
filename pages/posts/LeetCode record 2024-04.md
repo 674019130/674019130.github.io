@@ -3,11 +3,10 @@ title: LeetCode record 2024-04
 date: 2024-04-29 15:37:59
 tags: [LeetCode, 算法]
 categories: [LeetCode]
-description: LeetCode 2024 年 4 月 刷题记录。
+excerpt: LeetCode 2024 年 4 月 刷题记录。
 author: 苏
 toc: true
 medium_zoom: true
-readmore: true
 ---
 
 ## [1017. 负二进制转换](https://leetcode.cn/problems/convert-to-base-2/) 中等
@@ -118,7 +117,7 @@ public class m04d28 {
 
 代码有点粗糙，应该还有优化空间，比如取完一条对角线后就排序并放回原位，应该会降低一下常数时间复杂度。不管怎么说，没看题解顺利 AC ，开心捏o(*￣▽￣*)ブ！
 
-后查看题解，提到 $i - j + m$ 的写法，对于数组`int[n][m]`，**根据同一对角线上的元素的下标之差相等**，考虑最差情况下 
+后查看题解，提到 $i - j + m$ 的写法，对于数组`int[n][m]`，**根据同一对角线上的元素的下标之差相等**，考虑最差情况下
 $$i - j = 0 - (m - 1) = 1 - m$$
  ，右平移 $m$ 即可将下标平移至以 1 开头的数组中（**其实还是存在一个小疑问，为什么是 1 开头不是 0 开头。经测试，0 开头也是没问题的，可能是为了写起来简单吧**）。附官方题解代码。
 
@@ -160,7 +159,7 @@ class Solution {
 class Solution {
     public int[][] diagonalSort(int[][] mat) {
         List<List<Integer>> diagonalArray = new ArrayList<>();
-        
+
         // 右上角开始的对角线 mat[3][4]
         for (int j = mat[0].length - 1; j > 0; --j) {
             List<Integer> temp = new ArrayList<>();
@@ -249,7 +248,7 @@ class Solution {
 
 你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
 
- 
+
 
 **示例 1：**
 

@@ -3,7 +3,7 @@ title: 《Designing Data-Intensive Applications》 读书笔记 | 0x03
 date: 2023-02-27 16:12:24
 tags: [DDIA, System Design]
 categories: [读书笔记, DDIA]
-description: 数据传输和数据应用如何一起拥抱变化呢？
+excerpt: 数据传输和数据应用如何一起拥抱变化呢？
 author: 苏
 readmore: true
 ---
