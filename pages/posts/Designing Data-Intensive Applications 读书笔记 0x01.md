@@ -49,19 +49,22 @@ ORM 框架减少了转换所需的工作量，但是问题依然客观存在。
 
 ------------
 
-> ![](https://1126993343-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHdCOHMs3fNDC20H5qi%2Fuploads%2Fgit-blob-6a1a9b9d3ecedac52ea104412282d46b86f2f850%2Ffig2-1.png?alt=media)
+<!-- > ![](https://1126993343-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHdCOHMs3fNDC20H5qi%2Fuploads%2Fgit-blob-6a1a9b9d3ecedac52ea104412282d46b86f2f850%2Ffig2-1.png?alt=media) -->
 
-> JSON 表示比 [图 2-1](https://github.com/Vonng/ddia/blob/master/img/fig2-1.png) 中的多表模式具有更好的 **局部性（locality）**。如果在前面的关系型示例中获取简介，那需要执行多个查询（通过 `user_id` 查询每个表），或者在 User 表与其下属表之间混乱地执行多路连接。而在 JSON 表示中，所有相关信息都在同一个地方，一个查询就足够了。
+> JSON 表示比 [图 2-1]
+<!-- > (https://github.com/Vonng/ddia/blob/master/img/fig2-1.png) -->
+>  中的多表模式具有更好的 **局部性（locality）**。如果在前面的关系型示例中获取简介，那需要执行多个查询（通过 `user_id` 查询每个表），或者在 User 表与其下属表之间混乱地执行多路连接。而在 JSON 表示中，所有相关信息都在同一个地方，一个查询就足够了。
 >
-> 从用户简介文件到用户职位，教育历史和联系信息，这种一对多关系隐含了数据中的一个树状结构，而 JSON 表示使得这个树状结构变得明确（见 [图 2-2](https://github.com/Vonng/ddia/blob/master/img/fig2-2.png)）。
+> 从用户简介文件到用户职位，教育历史和联系信息，这种一对多关系隐含了数据中的一个树状结构，而 JSON 表示使得这个树状结构变得明确（见 [图 2-2]
+<!-- > (https://github.com/Vonng/ddia/blob/master/img/fig2-2.png)）。 -->
 
-> ![](https://1126993343-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHdCOHMs3fNDC20H5qi%2Fuploads%2Fgit-blob-2f1801d2975d43a8e5f385d350001e68dd005d33%2Ffig2-2.png?alt=media)
+<!-- > ![](https://1126993343-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHdCOHMs3fNDC20H5qi%2Fuploads%2Fgit-blob-2f1801d2975d43a8e5f385d350001e68dd005d33%2Ffig2-2.png?alt=media) -->
 
 JSON 相比于关系数据模型，优势在于能自由组织不同的相关信息，并在任一层级将整个数据单元独立出来。这就是作者所说的 **局部性**。
 
 ------------
 
-> 在上一节的 [例 2-1]() 中，`region_id` 和 `industry_id` 是以 ID，而不是纯字符串 “Greater Seattle Area” 和 “Philanthropy” 的形式给出的。为什么？
+> 在上一节的 [例 2-1] 中，`region_id` 和 `industry_id` 是以 ID，而不是纯字符串 “Greater Seattle Area” 和 “Philanthropy” 的形式给出的。为什么？
 >
 > 如果用户界面用一个自由文本字段来输入区域和行业，那么将他们存储为纯文本字符串是合理的。另一方式是给出地理区域和行业的标准化的列表，并让用户从下拉列表或自动填充器中进行选择，其优势如下：
 >
@@ -85,9 +88,9 @@ JSON 相比于关系数据模型，优势在于能自由组织不同的相关信
 
 ---------------
 
-> 不幸的是，对这些数据进行规范化需要多对一的关系（许多人生活在一个特定的地区，许多人在一个特定的行业工作），这与文档模型不太吻合。在关系数据库中，通过 ID 来引用其他表中的行是正常的，因为连接很容易。在文档数据库中，一对多树结构没有必要用连接，对连接的支持通常很弱 [^iii]。
+> 不幸的是，对这些数据进行规范化需要多对一的关系（许多人生活在一个特定的地区，许多人在一个特定的行业工作），这与文档模型不太吻合。在关系数据库中，通过 ID 来引用其他表中的行是正常的，因为连接很容易。在文档数据库中，一对多树结构没有必要用连接，对连接的支持通常很弱 。
 >
-> [^iii]: 在撰写本文时，RethinkDB 支持连接，MongoDB 不支持连接，而 CouchDB 只支持预先声明的视图。
+>: 在撰写本文时，RethinkDB 支持连接，MongoDB 不支持连接，而 CouchDB 只支持预先声明的视图。
 
 在我的计算机的学习过程中常常发现，在不变更底层算法的情况下，往往是用一种资源来换取另一种资源，最常见的就是空间换时间或时间换空间。
 

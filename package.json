@@ -13,7 +13,10 @@
   },
   "dependencies": {
     "valaxy": "0.18.6",
+    "valaxy-addon-bangumi": "^0.2.0",
     "valaxy-addon-components": "^0.0.2",
+    "valaxy-addon-lightgallery": "^0.0.2",
+    "valaxy-addon-twikoo": "^0.0.3",
     "valaxy-addon-waline": "^0.1.4",
     "valaxy-theme-yun": "0.18.6"
   },

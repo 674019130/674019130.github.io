@@ -11,9 +11,18 @@ importers:
       valaxy:
         specifier: 0.18.6
         version: 0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7)
+      valaxy-addon-bangumi:
+        specifier: ^0.2.0
+        version: 0.2.0(valaxy@0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7))
       valaxy-addon-components:
         specifier: ^0.0.2
         version: 0.0.2
+      valaxy-addon-lightgallery:
+        specifier: ^0.0.2
+        version: 0.0.2
+      valaxy-addon-twikoo:
+        specifier: ^0.0.3
+        version: 0.0.3(valaxy@0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7))
       valaxy-addon-waline:
         specifier: ^0.1.4
         version: 0.1.4(typescript@5.4.5)(valaxy@0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7))
@@ -923,6 +932,9 @@ packages:
   bidi-js@1.0.3:
     resolution: {integrity: sha512-RKshQI1R3YQ+n9YJz2QQ147P66ELpa1FQEg20Dk8oW9t2KgLbpDLLp9aGZ7y8WHSshDknG0bknqGw5/tyCs5tw==}
 
+  bilibili-bangumi-component@0.3.0:
+    resolution: {integrity: sha512-fgnvsXjpRsRBwxXi9H8nAsPQZBSUbHWWr299/INUDY8Qi07oOfDT850WamVGTN3cw3NWj5PYvvY4YpMGoPqdow==}
+
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
@@ -1816,6 +1828,10 @@ packages:
   leac@0.6.0:
     resolution: {integrity: sha512-y+SqErxb8h7nE/fiEX07jsbuhrpO9lL8eca7/Y1nuWV2moNlXhyd59iDGcRf6moVyDMbmTNzL40SUyrFU/yDpg==}
 
+  lightgallery@2.7.2:
+    resolution: {integrity: sha512-Ewdcg9UPDqV0HGZeD7wNE4uYejwH2u0fMo5VAr6GHzlPYlhItJvjhLTR0cL0V1HjhMsH39PAom9iv69ewitLWw==}
+    engines: {node: '>=6.0.0'}
+
   linkify-it@5.0.0:
     resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
 
@@ -2589,8 +2605,21 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
+  valaxy-addon-bangumi@0.2.0:
+    resolution: {integrity: sha512-kkKzvdgeHIMgN8XFaUvXJNlxtn9DVhjl2/ahyglhaQmtAFNaBdF3Wb3p9iIqCVcA1gbeXToYyj+1/jtubF9yZA==}
+    peerDependencies:
+      valaxy: latest
+
   valaxy-addon-components@0.0.2:
     resolution: {integrity: sha512-J6JeNTagohF9fNvYaYiOwVHQGuhoWamy1P01mEUfzreacaJ3CqzJU1G/uSFMTvm3CXvMo8OAQCwqa+OqBG0dkw==}
+
+  valaxy-addon-lightgallery@0.0.2:
+    resolution: {integrity: sha512-pP8hmHMad1QxKzzh1GwjL3dC6/bm1Vpj9lYefwZ+EzOgSUaQ44LVeU2koA+C6c2iy5AaDZlZzZ7LLnvckanYJA==}
+
+  valaxy-addon-twikoo@0.0.3:
+    resolution: {integrity: sha512-8ISPqSF3uto8jCceaDuGzeq1utJuH3oJ3mqtz9h1lQhXkP3jwReh8Sa3bnfhHlcfCUCoNK2E5dj8CNK2tVgHpg==}
+    peerDependencies:
+      valaxy: latest
 
   valaxy-addon-waline@0.1.4:
     resolution: {integrity: sha512-YU98QvNa5P8lw8R4+W0qZTSKOM5NFDD24+XO5wGxvObEBkAiCuobw0rJGCQ9pTAaGgsLf6sxtNPkDpXJmtoqcQ==}
@@ -3834,6 +3863,8 @@ snapshots:
     dependencies:
       require-from-string: 2.0.2
 
+  bilibili-bangumi-component@0.3.0: {}
+
   binary-extensions@2.3.0: {}
 
   body-parser@1.20.2:
@@ -4759,6 +4790,8 @@ snapshots:
 
   leac@0.6.0: {}
 
+  lightgallery@2.7.2: {}
+
   linkify-it@5.0.0:
     dependencies:
       uc.micro: 2.1.0
@@ -5632,7 +5665,20 @@ snapshots:
       kleur: 4.1.5
       sade: 1.8.1
 
+  valaxy-addon-bangumi@0.2.0(valaxy@0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7)):
+    dependencies:
+      bilibili-bangumi-component: 0.3.0
+      valaxy: 0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7)
+
   valaxy-addon-components@0.0.2: {}
+
+  valaxy-addon-lightgallery@0.0.2:
+    dependencies:
+      lightgallery: 2.7.2
+
+  valaxy-addon-twikoo@0.0.3(valaxy@0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7)):
+    dependencies:
+      valaxy: 0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7)
 
   valaxy-addon-waline@0.1.4(typescript@5.4.5)(valaxy@0.18.6(@babel/parser@7.24.5)(@types/markdown-it@14.0.1)(@types/node@20.12.7)(@unhead/shared@1.9.7)(axios@1.6.8)(postcss@8.4.38)(rollup@4.17.2)(typescript@5.4.5)(unhead@1.9.7)):
     dependencies:

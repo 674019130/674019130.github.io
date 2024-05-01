@@ -1,6 +1,7 @@
-import { defineValaxyConfig } from 'valaxy'
 import type { UserThemeConfig } from 'valaxy-theme-yun'
+import { addonLightGallery } from 'valaxy-addon-lightgallery'
 import { addonWaline } from 'valaxy-addon-waline'
+import { defineValaxyConfig } from 'valaxy'
 
 // add icons what you will need
 const safelist = [
@@ -22,21 +23,69 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
   },
 
+  markdown: {
+    // default material-theme-palenight
+    // theme: 'material-theme-palenight',
+    theme: {
+      // light: 'material-theme-lighter',
+      light: 'github-light',
+      // dark: 'material-theme-darker',
+      dark: 'github-dark',
+    },
+
+    blocks: {
+      tip: {
+        icon: 'i-carbon-thumbs-up',
+        text: 'ヒント',
+        langs: {
+          'zh-CN': '提示',
+        },
+      },
+      warning: {
+        icon: 'i-carbon-warning-alt',
+        text: '注意',
+      },
+      danger: {
+        icon: 'i-carbon-warning',
+        text: '警告',
+      },
+      info: {
+        text: 'información',
+      },
+    },
+  },
+
+
   addons: [
     addonWaline({
-      serverURL: 'https://vercel-waline-c111rx0gg-674019130.vercel.app/'
+      serverURL: 'https://vercel-waline-cuuf-674019130s-projects.vercel.app/',
+      pageview: true,
+      comment: true
     }),
+    addonLightGallery(),
   ],
 
   themeConfig: {
+    bg_image: {
+      enable: true,
+      url: 'https://s2.loli.net/2024/05/01/bUmy5FOotWPK9Qv.jpg',
+      dark: 'https://s2.loli.net/2024/05/01/zgRmHkITt9w6ju7.jpg',
+      opacity: 0.7
+    },
+
     banner: {
       enable: true,
-      title: '陪我去看海',
+      title: ['陪我去看海', '再喝点酒吧'],
       cloud: {
         enable: true,
       },
     },
 
+    notice: {
+      enable: true,
+      hideInPages: true,
+      content: 'Less is more.'
+    },
 
 
     pages: [
@@ -57,7 +106,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     footer: {
       since: 2022,
       // liveTime: {
-      //   enable: true, 
+      //   enable: true,
       //   prefix: '风已经走了',
       //   suffix: '(●\'◡\'●)',
       //   start_time: '2022-10-31T00:00:00'

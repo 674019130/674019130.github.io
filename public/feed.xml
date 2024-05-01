@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>苏</title>
+        <link>https://674019130.github.io/</link>
+        <description>I was 26 years old and didn't know what I could do other than write some simple code.</description>
+        <lastBuildDate>Wed, 01 May 2024 08:17:13 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>苏</title>
+            <url>https://gravatar.com/userimage/135478784/07954c26f630b810ec9709a8907dab5f.jpeg</url>
+            <link>https://674019130.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2024 © 苏</copyright>
+        <atom:link href="https://674019130.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x03]]></title>
+            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03</link>
+            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03</guid>
+            <pubDate>Wed, 01 May 2024 08:16:50 GMT</pubDate>
+            <description><![CDATA[数据传输和数据应用如何一起拥抱变化呢？]]></description>
+            <content:encoded><![CDATA[<blockquote>
+<p>唯变所适</p>
+<p>—— 以弗所的赫拉克利特，为柏拉图所引（公元前 360 年）</p>
+</blockquote>
+<hr>
+<blockquote>
+<h4>远程过程调用（RPC）的问题</h4>
+<p>Web 服务仅仅是通过网络进行 API 请求的一系</p>
+</blockquote>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x02]]></title>
+            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02</link>
+            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02</guid>
+            <pubDate>Wed, 01 May 2024 08:16:29 GMT</pubDate>
+            <description><![CDATA[现代存储系统的存储与检索使用的数据结构是怎么来的？]]></description>
+            <content:encoded><![CDATA[<h1>第三章：存储与检索</h1>
+<blockquote>
+<p>为了高效查找数据库中特定键的值，我们需要一个数据结构：<strong>索引（index）</strong>。本章将介绍一系列的索引结构，并在它们之间进行比较。索引背后的大致思想是通过保存一些额外</p>
+</blockquote>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x01]]></title>
+            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01</link>
+            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01</guid>
+            <pubDate>Wed, 01 May 2024 08:14:56 GMT</pubDate>
+            <description><![CDATA[数据模型除了「SQL」还有什么？]]></description>
+            <content:encoded><![CDATA[<h1>第二章：数据模型与查询语言</h1>
+<blockquote>
+<p>多数应用使用层层叠加的数据模型构建。对于每层数据模型的关键问题是：它是如何用低一层数据模型来 <strong>表示</strong> 的？例如：</p>
+<ol>
+<li>作为一名应用开发人员，你观</li>
+</ol>
+</blockquote>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x00]]></title>
+            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</link>
+            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</guid>
+            <pubDate>Wed, 01 May 2024 08:13:49 GMT</pubDate>
+            <description><![CDATA[没看过《人月神话》，看看 《DDIA》 也不错。我们一直在谈的可靠性、可伸缩性和可维护性到底是什么？]]></description>
+            <content:encoded><![CDATA[<h1>第一章：可靠性、可伸缩性和可维护性</h1>
+<!-- > ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x04]]></title>
+            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</link>
+            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</guid>
+            <pubDate>Wed, 01 May 2024 08:13:16 GMT</pubDate>
+            <description><![CDATA[来看看作者如何从另一种角度描述分布式系统。]]></description>
+            <content:encoded><![CDATA[<blockquote>
+<p>与可能出错的东西比，“不可能”出错的东西最显著的特点就是：一旦真的出错，通常就彻底玩完了。</p>
+<p>—— 道格拉斯・亚当斯（1992）</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>复制意味着在通过网络连接的多台机器上保留相</p>
+</blockquote>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[LeetCode record 2024-04]]></title>
+            <link>https://674019130.github.io/posts/LeetCode record 2024-04</link>
+            <guid>https://674019130.github.io/posts/LeetCode record 2024-04</guid>
+            <pubDate>Tue, 30 Apr 2024 10:15:46 GMT</pubDate>
+            <description><![CDATA[LeetCode 2024 年 4 月 刷题记录。]]></description>
+            <content:encoded><![CDATA[<h2><a href="https://leetcode.cn/problems/convert-to-base-2/">1017. 负二进制转换</a> 中等</h2>
+<p>给你一个整数 <code>n</code> ，以二进制字符串的形式返回该整数的</p>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Java Lock Notes]]></title>
+            <link>https://674019130.github.io/posts/Java Lock Notes</link>
+            <guid>https://674019130.github.io/posts/Java Lock Notes</guid>
+            <pubDate>Sun, 28 Apr 2024 10:17:40 GMT</pubDate>
+            <description><![CDATA[典中典之Java中的锁有哪些，其底层实现逻辑是怎样的呢？]]></description>
+            <content:encoded><![CDATA[<blockquote>
+<p><a href="https://tech.meituan.com/2018/11/15/java-lock.html">https://tech.meituan.com/2018/11/15/java-lock.html</a></p>
+</blockquote>
+<p>美团这篇写的很好，非常适合拿来复习。</p>
+<hr>
+<p>![img](https://awps-</p>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[关于 Java 8 中函数式编程的粗浅见解]]></title>
+            <link>https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解</link>
+            <guid>https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解</guid>
+            <pubDate>Wed, 21 Feb 2024 08:08:45 GMT</pubDate>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Oracle & Mybatis 批量更新返回值问题]]></title>
+            <link>https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题</link>
+            <guid>https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题</guid>
+            <pubDate>Mon, 27 Feb 2023 08:10:07 GMT</pubDate>
+            <description><![CDATA[Mybatis 在使用（批量）更新语句的时候，应该在 SQL 语句正常执行完毕后返回「受影响行数」，但在连接的数据库是 Oracle 的时候却一直返回 -1，无法对 SQL 的执行状态进行判断，为了解决这个问题，我做了一些尝试……]]></description>
+            <content:encoded><![CDATA[<h1>场景</h1>
+<p>ORM：Mybatis</p>
+<p>数据库：Oracle</p>
+<p>组里新人写的一个接口。</p>
+<p>传给 Mapper 层的是两个元素数量相等的 List，根据某两个字段是否与 List 中的</p>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[关于代码规范的一些粗浅想法]]></title>
+            <link>https://674019130.github.io/posts/关于代码规范的一些粗浅想法</link>
+            <guid>https://674019130.github.io/posts/关于代码规范的一些粗浅想法</guid>
+            <pubDate>Mon, 27 Feb 2023 08:10:07 GMT</pubDate>
+            <description><![CDATA[衡量代码质量的标准有很多——鲁棒性、可读性、复用性、是否符合各种设计原则等等。在我看来，代码规范即衡量代码质量标准的集合。其中可读性可能是代码规范最关注的一部分。]]></description>
+            <content:encoded><![CDATA[<h1>什么是代码规范？</h1>
+<blockquote>
+<p>“衡量代码质量的唯一标准是阅读该代码时说脏话的次数”。</p>
+<p>——Robert C. Martin</p>
+<p>&lt;img src=&quot;https://</p>
+</blockquote>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[常用代码片段]]></title>
+            <link>https://674019130.github.io/posts/常用代码片段</link>
+            <guid>https://674019130.github.io/posts/常用代码片段</guid>
+            <pubDate>Mon, 27 Feb 2023 08:10:07 GMT</pubDate>
+            <description><![CDATA[每次都忘记快排怎么写💔，得想个办法。]]></description>
+            <content:encoded><![CDATA[<h1>快速排序（递归版）</h1>
+<pre><code class="language-java">import java.util.Arrays;
+
+public class QuickSort {
+
+  public static voi</code></pre>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hello World]]></title>
+            <link>https://674019130.github.io/posts/hello-world</link>
+            <guid>https://674019130.github.io/posts/hello-world</guid>
+            <pubDate>Tue, 22 Nov 2022 05:08:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check [documentation](<a href="https://hex">https://hex</a></p>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[LeetCode 数据库刷题笔记]]></title>
+            <link>https://674019130.github.io/posts/LeetCode-SQL-notes</link>
+            <guid>https://674019130.github.io/posts/LeetCode-SQL-notes</guid>
+            <pubDate>Wed, 09 Nov 2022 01:04:37 GMT</pubDate>
+            <description><![CDATA[记录在 LeetCode SQL 相关的题目。调皮的小知识点有点多，用笔记📔把它们一网打尽！]]></description>
+            <content:encoded><![CDATA[<h1>LeetCode 数据库刷题笔记</h1>
+<blockquote>
+<p>只做重点的记录。</p>
+</blockquote>
+<h2>181. 超过经理收入的员工</h2>
+<h2>183. 部门工资最高的员工</h2>
+<pre><code class="language-mysql">输入：
+Emplo</code></pre>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://674019130.github.io/posts/hello-valaxy</link>
+            <guid>https://674019130.github.io/posts/hello-valaxy</guid>
+            <pubDate>Fri, 01 Apr 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!<br>
+$$ test a_2$$</p>
+<h2>Usage</h2>
+]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+    </channel>
+</rss>

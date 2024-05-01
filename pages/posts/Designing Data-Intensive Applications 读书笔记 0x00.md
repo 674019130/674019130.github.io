@@ -9,7 +9,7 @@ readmore: true
 ---
 # 第一章：可靠性、可伸缩性和可维护性
 
-> ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHdCOHMs3fNDC20H5qi%2Fuploads%2Fgit-blob-31a6740f3d8fa7b256e88ed10f00a2e162125646%2Ffig1-3.png?alt=media)
+<!-- > ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHdCOHMs3fNDC20H5qi%2Fuploads%2Fgit-blob-31a6740f3d8fa7b256e88ed10f00a2e162125646%2Ffig1-3.png) -->
 
 将发布的推文 **扇出 Fan-out** 到其他关注者的 Timeline 缓存中。
 
@@ -27,7 +27,7 @@ readmore: true
 
 ----------
 
-> ![图 1-4 展示了一个服务 100 次请求响应时间的均值与百分位数](https://1126993343-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHdCOHMs3fNDC20H5qi%2Fuploads%2Fgit-blob-14ae4b436ce95f2e6343f794ccfbe5b74dfca608%2Ffig1-4.png?alt=media)
+<!-- > ![图 1-4 展示了一个服务 100 次请求响应时间的均值与百分位数](https://1126993343-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHdCOHMs3fNDC20H5qi%2Fuploads%2Fgit-blob-14ae4b436ce95f2e6343f794ccfbe5b74dfca608%2Ffig1-4.png?alt=media) -->
 
 一个服务 100 请求的响应时间报表。
 

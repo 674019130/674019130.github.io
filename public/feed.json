@@ -1,0 +1,193 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "苏",
+    "home_page_url": "https://674019130.github.io/",
+    "feed_url": "https://674019130.github.io/feed.json",
+    "description": "I was 26 years old and didn't know what I could do other than write some simple code.",
+    "icon": "https://gravatar.com/userimage/135478784/07954c26f630b810ec9709a8907dab5f.jpeg",
+    "author": {
+        "name": "苏",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>唯变所适</p>\n<p>—— 以弗所的赫拉克利特，为柏拉图所引（公元前 360 年）</p>\n</blockquote>\n<hr>\n<blockquote>\n<h4>远程过程调用（RPC）的问题</h4>\n<p>Web 服务仅仅是通过网络进行 API 请求的一系</p>\n</blockquote>\n",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x03",
+            "summary": "数据传输和数据应用如何一起拥抱变化呢？",
+            "date_modified": "2023-02-27T16:12:24.000Z",
+            "date_published": "2024-05-01T08:16:50.780Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>第三章：存储与检索</h1>\n<blockquote>\n<p>为了高效查找数据库中特定键的值，我们需要一个数据结构：<strong>索引（index）</strong>。本章将介绍一系列的索引结构，并在它们之间进行比较。索引背后的大致思想是通过保存一些额外</p>\n</blockquote>\n",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x02",
+            "summary": "现代存储系统的存储与检索使用的数据结构是怎么来的？",
+            "date_modified": "2023-02-02T10:46:51.000Z",
+            "date_published": "2024-05-01T08:16:29.402Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>第二章：数据模型与查询语言</h1>\n<blockquote>\n<p>多数应用使用层层叠加的数据模型构建。对于每层数据模型的关键问题是：它是如何用低一层数据模型来 <strong>表示</strong> 的？例如：</p>\n<ol>\n<li>作为一名应用开发人员，你观</li>\n</ol>\n</blockquote>\n",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x01",
+            "summary": "数据模型除了「SQL」还有什么？",
+            "date_modified": "2023-02-01T08:18:50.000Z",
+            "date_published": "2024-05-01T08:14:56.297Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>第一章：可靠性、可伸缩性和可维护性</h1>\n<!-- > ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x00",
+            "summary": "没看过《人月神话》，看看 《DDIA》 也不错。我们一直在谈的可靠性、可伸缩性和可维护性到底是什么？",
+            "date_modified": "2023-01-30T14:18:50.000Z",
+            "date_published": "2024-05-01T08:13:49.886Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>与可能出错的东西比，“不可能”出错的东西最显著的特点就是：一旦真的出错，通常就彻底玩完了。</p>\n<p>—— 道格拉斯・亚当斯（1992）</p>\n</blockquote>\n<hr>\n<blockquote>\n<p>复制意味着在通过网络连接的多台机器上保留相</p>\n</blockquote>\n",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x04",
+            "summary": "来看看作者如何从另一种角度描述分布式系统。",
+            "date_modified": "2024-02-23T11:37:59.000Z",
+            "date_published": "2024-05-01T08:13:16.185Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2><a href=\"https://leetcode.cn/problems/convert-to-base-2/\">1017. 负二进制转换</a> 中等</h2>\n<p>给你一个整数 <code>n</code> ，以二进制字符串的形式返回该整数的</p>\n",
+            "url": "https://674019130.github.io/posts/LeetCode record 2024-04",
+            "title": "LeetCode record 2024-04",
+            "summary": "LeetCode 2024 年 4 月 刷题记录。",
+            "date_modified": "2024-04-29T15:37:59.000Z",
+            "date_published": "2024-04-30T10:15:46.506Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p><a href=\"https://tech.meituan.com/2018/11/15/java-lock.html\">https://tech.meituan.com/2018/11/15/java-lock.html</a></p>\n</blockquote>\n<p>美团这篇写的很好，非常适合拿来复习。</p>\n<hr>\n<p>![img](https://awps-</p>\n",
+            "url": "https://674019130.github.io/posts/Java Lock Notes",
+            "title": "Java Lock Notes",
+            "summary": "典中典之Java中的锁有哪些，其底层实现逻辑是怎样的呢？",
+            "date_modified": "2024-03-04T15:40:59.000Z",
+            "date_published": "2024-04-28T10:17:40.591Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "",
+            "url": "https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解",
+            "title": "关于 Java 8 中函数式编程的粗浅见解",
+            "date_modified": "2024-02-21T16:08:45.000Z",
+            "date_published": "2024-02-21T08:08:45.224Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>场景</h1>\n<p>ORM：Mybatis</p>\n<p>数据库：Oracle</p>\n<p>组里新人写的一个接口。</p>\n<p>传给 Mapper 层的是两个元素数量相等的 List，根据某两个字段是否与 List 中的</p>\n",
+            "url": "https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题",
+            "title": "Oracle & Mybatis 批量更新返回值问题",
+            "summary": "Mybatis 在使用（批量）更新语句的时候，应该在 SQL 语句正常执行完毕后返回「受影响行数」，但在连接的数据库是 Oracle 的时候却一直返回 -1，无法对 SQL 的执行状态进行判断，为了解决这个问题，我做了一些尝试……",
+            "date_modified": "2022-11-04T09:29:59.000Z",
+            "date_published": "2023-02-27T08:10:07.887Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>什么是代码规范？</h1>\n<blockquote>\n<p>“衡量代码质量的唯一标准是阅读该代码时说脏话的次数”。</p>\n<p>——Robert C. Martin</p>\n<p>&lt;img src=&quot;https://</p>\n</blockquote>\n",
+            "url": "https://674019130.github.io/posts/关于代码规范的一些粗浅想法",
+            "title": "关于代码规范的一些粗浅想法",
+            "summary": "衡量代码质量的标准有很多——鲁棒性、可读性、复用性、是否符合各种设计原则等等。在我看来，代码规范即衡量代码质量标准的集合。其中可读性可能是代码规范最关注的一部分。",
+            "date_modified": "2023-01-05T15:07:18.000Z",
+            "date_published": "2023-02-27T08:10:07.887Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>快速排序（递归版）</h1>\n<pre><code class=\"language-java\">import java.util.Arrays;\n\npublic class QuickSort {\n\n  public static voi</code></pre>\n",
+            "url": "https://674019130.github.io/posts/常用代码片段",
+            "title": "常用代码片段",
+            "summary": "每次都忘记快排怎么写💔，得想个办法。",
+            "date_modified": "2023-02-06T13:06:59.000Z",
+            "date_published": "2023-02-27T08:10:07.887Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>Welcome to <a href=\"https://hexo.io/\">Hexo</a>! This is your very first post. Check [documentation](<a href=\"https://hex\">https://hex</a></p>\n",
+            "url": "https://674019130.github.io/posts/hello-world",
+            "title": "Hello World",
+            "date_modified": "2022-11-02T18:03:34.000Z",
+            "date_published": "2022-11-22T05:08:32.315Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>LeetCode 数据库刷题笔记</h1>\n<blockquote>\n<p>只做重点的记录。</p>\n</blockquote>\n<h2>181. 超过经理收入的员工</h2>\n<h2>183. 部门工资最高的员工</h2>\n<pre><code class=\"language-mysql\">输入：\nEmplo</code></pre>\n",
+            "url": "https://674019130.github.io/posts/LeetCode-SQL-notes",
+            "title": "LeetCode 数据库刷题笔记",
+            "summary": "记录在 LeetCode SQL 相关的题目。调皮的小知识点有点多，用笔记📔把它们一网打尽！",
+            "date_modified": "2022-11-02T18:04:34.000Z",
+            "date_published": "2022-11-09T01:04:37.608Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!<br>\n$$ test a_2$$</p>\n<h2>Usage</h2>\n",
+            "url": "https://674019130.github.io/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2022-04-01T00:00:00.000Z",
+            "date_published": "2022-04-01T00:00:00.000Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
