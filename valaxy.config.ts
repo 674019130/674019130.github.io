@@ -68,7 +68,7 @@ export default defineValaxyConfig<UserThemeConfig>({
   themeConfig: {
     bg_image: {
       enable: true,
-      url: 'https://s2.loli.net/2024/05/01/bUmy5FOotWPK9Qv.jpg',
+      url: 'https://w.wallhaven.cc/full/qz/wallhaven-qzp8dr.png',
       dark: 'https://s2.loli.net/2024/05/01/zgRmHkITt9w6ju7.jpg',
       opacity: 0.7
     },
