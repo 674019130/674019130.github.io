@@ -6,8 +6,8 @@ on:
       # The branch where the project source code resides
       # 项目源代码所在的分支
       - main
-      - master
-      - valaxy
+      # - master
+      # - valaxy
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [lts/*]
+        node-version: [18.x]
         os: [ubuntu-latest]
       fail-fast: false
 
