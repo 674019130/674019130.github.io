@@ -75,7 +75,7 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     banner: {
       enable: true,
-      title: ['陪我去看海', '再喝点酒吧'],
+      title: ['陪我去看海','或许', '再喝点酒'],
       cloud: {
         enable: true,
       },

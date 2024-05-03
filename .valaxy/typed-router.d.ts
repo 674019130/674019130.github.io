@@ -30,6 +30,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/常用代码片段': RouteRecordInfo<'/posts/常用代码片段', '/posts/常用代码片段', Record<never, never>, Record<never, never>>,
     '/posts/关于-Java-8-中函数式编程的粗浅见解': RouteRecordInfo<'/posts/关于-Java-8-中函数式编程的粗浅见解', '/posts/关于-Java-8-中函数式编程的粗浅见解', Record<never, never>, Record<never, never>>,
     '/posts/关于代码规范的一些粗浅想法': RouteRecordInfo<'/posts/关于代码规范的一些粗浅想法', '/posts/关于代码规范的一些粗浅想法', Record<never, never>, Record<never, never>>,
+    '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合': RouteRecordInfo<'/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合', '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合', Record<never, never>, Record<never, never>>,
     '/posts/Designing Data-Intensive Applications 读书笔记 0x00': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x00', '/posts/Designing Data-Intensive Applications 读书笔记 0x00', Record<never, never>, Record<never, never>>,
     '/posts/Designing Data-Intensive Applications 读书笔记 0x01': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x01', '/posts/Designing Data-Intensive Applications 读书笔记 0x01', Record<never, never>, Record<never, never>>,
     '/posts/Designing Data-Intensive Applications 读书笔记 0x02': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x02', '/posts/Designing Data-Intensive Applications 读书笔记 0x02', Record<never, never>, Record<never, never>>,
@@ -42,6 +43,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/LeetCode record 2024-05': RouteRecordInfo<'/posts/LeetCode record 2024-05', '/posts/LeetCode record 2024-05', Record<never, never>, Record<never, never>>,
     '/posts/LeetCode-SQL-notes': RouteRecordInfo<'/posts/LeetCode-SQL-notes', '/posts/LeetCode-SQL-notes', Record<never, never>, Record<never, never>>,
     '/posts/Oracle-Mybatis-批量更新返回值问题': RouteRecordInfo<'/posts/Oracle-Mybatis-批量更新返回值问题', '/posts/Oracle-Mybatis-批量更新返回值问题', Record<never, never>, Record<never, never>>,
+    '/posts/template': RouteRecordInfo<'/posts/template', '/posts/template', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 }

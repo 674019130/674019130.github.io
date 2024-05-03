@@ -5,7 +5,7 @@ toc: post
 author: 苏
 ---
 
-# Blog
+## Blog
 
 Hi, guys. 这里是苏💕。
 
@@ -24,10 +24,10 @@ Hi, guys. 这里是苏💕。
 
 
 - 爱好：代码规范和文档规范（是的）、鼓捣一些花里胡哨的东西
-- 喜欢：西瓜、夏天、冰块🧊、喝酒🍸（甜且酒味不那么重的）、诗、书、电子鸦片（FPS 爱好者，MOBA 类精通）
+- 喜欢：西瓜:watermelon: 、夏天:sun_with_face: 、冰块🧊、喝酒🍸（甜且度数不高的）、诗:book: 、电子鸦片（FPS 爱好者，MOBA 类精通）
 - 讨厌：不努力的自己、不真诚的朋友
 - 运动：羽毛球（希望有一天能快乐的跟自己爱的人打羽毛球，顺便帮她锻炼一下身体）
-- 目标：成为厉害的后端工程师（也想学一些前端）、很会解决问题的人、老师
+- 目标：成为厉害的后端工程师（也想学一些前端）（最好能加入微软！）、很会解决问题的人、老师
 - 梦想：财富自由，专职写作✍
 
 ![工作就输了](https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/meme/no-work.jpg)
@@ -36,29 +36,36 @@ Hi, guys. 这里是苏💕。
 
 
 
-# 小破站的 History Version
+## 小破站的 History Version
 
-## TODO：
+## TODO
 
-- 迁移至 Valxy 和 valxy-theme-yun（等待[@云游君](https://github.com/YunYouJun)完善）
+- ~~迁移至 Valxy 和 valxy-theme-yun（等待[@云游君](https://github.com/YunYouJun)完善）~~
+- CDN 加速，国内访问加速（方便没有魔法的同学）
+- 已有文章主页展示格式美化（好看真的很重要）
+- 音乐插件（待定，感觉加了会很吵闹，但是可以试一下）
 
-## 2024年2月21日
+### 2024年5月3日
+
+- 迁移至 Valxy 和 valxy-theme-yun，新的引擎真的很酷诶 :runner:
+
+### 2024年2月21日
 
 - 修复了评论系统，可以继续快乐玩耍！
 
-## 2022年10月31日
+### 2022年10月31日
 
 - 配置了评论系统，可以在评论区快乐玩耍啦🎈
 - 配置了多边形网格蒙版🎨
 - 配置了网站统计数据（并没有什么用）🔍
 
-## 2022年11月4日
+### 2022年11月4日
 
-- 配置字数统计系统👀
+- 配置字数统计👀
 - 优化了评论系统使用体验(づ￣3￣)づ╭❤～
 
-# 致谢
+## 致谢
 
-首先致谢优秀的开源作者[云游君](https://github.com/YunYouJun)，提供了功能强大且文档齐全的博客模板[hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun)。世界之大，容得下一方书桌。
+首先致谢炒鸡优秀的开源作者 [云游君](https://github.com/YunYouJun)，提供了功能强大且文档齐全的博客模板 [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun) 。世界之大，容得下一方书桌。
 
 致谢所有帮助过我，爱过我的人们。

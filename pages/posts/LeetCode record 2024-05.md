@@ -3,13 +3,15 @@ title: LeetCode record 2024-05
 # date: 2024-05-02 02:28:12
 tags: [LeetCode, 算法]
 categories: [LeetCode]
-excerpt_type: md
-excerpt: LeetCode 2024 年 5 月 刷题记录。
 author: 苏
-color:
+color: rgba(255, 165, 0, 0.5)
 toc: true
 medium_zoom: true
 ---
+
+**如果有一天我没有打卡，会不会辜负踌躇满志的那个自己。**
+
+<!-- more -->
 
 ## [2462. 雇佣 K 位工人的总代价](https://leetcode.cn/problems/total-cost-to-hire-k-workers/) 中等
 
@@ -183,7 +185,7 @@ public long totalCost(int[] costs, int k, int candidates) {
 
 给定整数 `k` ，返回 *组成满足上述条件的付费群体所需的最小金额* 。在实际答案的 `10-5` 以内的答案将被接受。。
 
- 
+
 
 **示例 1：**
 
@@ -201,7 +203,7 @@ public long totalCost(int[] costs, int k, int candidates) {
 解释： 我们向 0 号工人支付 4，向 2 号和 3 号分别支付 13.33333。
 ```
 
- 
+
 
 **提示：**
 
@@ -231,7 +233,7 @@ $$ans = qualitySum * hourlyWage$$
 
 维护一个最大堆，里面放在按升序遍历 $hourlyWage$ 时当前时薪下的最小工时，如果 $curQuality$ 小于堆顶元素，则触发 $qualitySum$ 更小的条件，则有可能有更小的 $ans$。
 
-另，**在按升序遍历 $ hourlyWage $ 的情况下，要想新的 $ans$ 更小，则必须有更小的 $curQuality$，所以更新时不必思考 $curQuality$ 没有更小但是在当前时薪下 $ans$ 更小的情况。**
+另，**在按升序遍历 $hourlyWage$ 的情况下，要想新的 $ans$ 更小，则必须有更小的 $curQuality$，所以更新时不必思考 $curQuality$ 没有更小但是在当前时薪下 $ans$ 更小的情况。**
 
 一开始是用 ` ans += qualityQueue.stream().map(s -> curHW * s).reduce(Double::sum).get();`算的，结果在最后一个样例 TLE 了，于是改成维护一个当前总和，不用再每次都相加计算了。
 
