@@ -314,7 +314,6 @@ public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
             include = true;
         }
 
-
         ans +=  curSumQuality * curHW;
         if (qualityQueue.size() == k && include) {
             minAns = Math.min(minAns, ans);
