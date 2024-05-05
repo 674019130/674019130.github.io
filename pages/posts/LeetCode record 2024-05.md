@@ -371,7 +371,7 @@ public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
 
 如果你选择的工作在时间 `X` 结束，那么你可以立刻进行在时间 `X` 开始的下一份工作。
 
- 
+
 
 **示例 1：**
 
@@ -381,7 +381,7 @@ public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
 输入：startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]
 输出：120
 解释：
-我们选出第 1 份和第 4 份工作， 
+我们选出第 1 份和第 4 份工作，
 时间范围是 [1-3]+[3-6]，共获得报酬 120 = 50 + 70。
 ```
 
@@ -393,7 +393,7 @@ public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
 输入：startTime = [1,2,3,4,6], endTime = [3,5,10,6,9], profit = [20,20,100,70,60]
 输出：150
 解释：
-我们选择第 1，4，5 份工作。 
+我们选择第 1，4，5 份工作。
 共获得报酬 150 = 20 + 70 + 60。
 ```
 
@@ -406,7 +406,7 @@ public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
 输出：6
 ```
 
- 
+
 
 **提示：**
 
@@ -420,9 +420,9 @@ public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
 
 先按照**开始时间升序排序**，遍历工作。（现在想一下，可能应该遍历时间点，但是这样应该更复杂，不考虑做法了）
 
-不难发现要求的结果是 $ [0, endTime_{max}] $ 时间里的最大值，于是一开始定义 $$ dp[i] $$ 为时间点 $i$ 能获取的最大报酬，递推公式：
+不难发现要求的结果是 $[0, endTime_{max}]$ 时间里的最大值，于是一开始定义 $dp[i]$ 为时间点 $i$ 能获取的最大报酬，递推公式：
 
-$$ dp[Job[i].endTime] = max(dp[i-1], \quad dp[Job[i].startTime] + Job[i].profit) $$​
+$$ dp[Job[i].endTime] = max(dp[i-1], \quad dp[Job[i].startTime] + Job[i].profit) $$
 
 写了一下发现过不去样例（写的也很简单，输出了一下 `dp[]`的值发现根本不连续，没有做到把问题拆分成子问题解决，递推公式里，`dp[i]` 和 `dp[i-1]` 之间没有明确的转移关系，这应该就是问题所在。
 
@@ -447,7 +447,9 @@ $j$ 的寻找用了二分，都知道只有有序数组才能用二分，因为�
 
 其次是对于状态转移方程的认识不够，到底应该怎么定义才是对的，可能要看有没有把问题拆分成子问题，并且使他们与对`dp`数组的定义联系起来，感觉还是挺难的。
 
-但是不管怎么说，这题还是思考之后理解并做出来了，是感觉到一点进步的。可能自己太笨，之前大学时候搞 ACM 对于这种题是一点点思路都没有，也可能是有畏难情绪在吧 T_T。
+但是不管怎么说，这题还是思考之后理解并做出来了，是感觉到一点进步的。可能自己太笨，之前大学时候搞 ACM 对于这种题是一点点思路都没有，也可能是有畏难情绪在吧，现在长大一点了，反而有能力去思考了 T_T。
+
+五一就要过去了，一切都会好的！
 
 ```java
 public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
@@ -474,7 +476,6 @@ public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
                     '}';
         }
 
-        // 寻找前
         public static int bs(List<Job> jobs, int high, int target) {
             int low = -1;
             while (low + 1 < high) {

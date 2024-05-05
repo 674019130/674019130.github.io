@@ -31,6 +31,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/关于-Java-8-中函数式编程的粗浅见解': RouteRecordInfo<'/posts/关于-Java-8-中函数式编程的粗浅见解', '/posts/关于-Java-8-中函数式编程的粗浅见解', Record<never, never>, Record<never, never>>,
     '/posts/关于代码规范的一些粗浅想法': RouteRecordInfo<'/posts/关于代码规范的一些粗浅想法', '/posts/关于代码规范的一些粗浅想法', Record<never, never>, Record<never, never>>,
     '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合': RouteRecordInfo<'/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合', '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合', Record<never, never>, Record<never, never>>,
+    '/posts/占坑 Java 多线程题目': RouteRecordInfo<'/posts/占坑 Java 多线程题目', '/posts/占坑 Java 多线程题目', Record<never, never>, Record<never, never>>,
     '/posts/Designing Data-Intensive Applications 读书笔记 0x00': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x00', '/posts/Designing Data-Intensive Applications 读书笔记 0x00', Record<never, never>, Record<never, never>>,
     '/posts/Designing Data-Intensive Applications 读书笔记 0x01': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x01', '/posts/Designing Data-Intensive Applications 读书笔记 0x01', Record<never, never>, Record<never, never>>,
     '/posts/Designing Data-Intensive Applications 读书笔记 0x02': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x02', '/posts/Designing Data-Intensive Applications 读书笔记 0x02', Record<never, never>, Record<never, never>>,
