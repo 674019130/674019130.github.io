@@ -359,3 +359,156 @@ public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
 }
 ```
 
+## [1235. 规划兼职工作](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) 困难
+
+你打算利用空闲时间来做兼职工作赚些零花钱。
+
+这里有 `n` 份兼职工作，每份工作预计从 `startTime[i]` 开始到 `endTime[i]` 结束，报酬为 `profit[i]`。
+
+给你一份兼职工作表，包含开始时间 `startTime`，结束时间 `endTime` 和预计报酬 `profit` 三个数组，请你计算并返回可以获得的最大报酬。
+
+注意，时间上出现重叠的 2 份工作不能同时进行。
+
+如果你选择的工作在时间 `X` 结束，那么你可以立刻进行在时间 `X` 开始的下一份工作。
+
+ 
+
+**示例 1：**
+
+**![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/10/19/sample1_1584.png)**
+
+```
+输入：startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]
+输出：120
+解释：
+我们选出第 1 份和第 4 份工作， 
+时间范围是 [1-3]+[3-6]，共获得报酬 120 = 50 + 70。
+```
+
+**示例 2：**
+
+**![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/10/19/sample22_1584.png)**
+
+```
+输入：startTime = [1,2,3,4,6], endTime = [3,5,10,6,9], profit = [20,20,100,70,60]
+输出：150
+解释：
+我们选择第 1，4，5 份工作。 
+共获得报酬 150 = 20 + 70 + 60。
+```
+
+**示例 3：**
+
+**![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/10/19/sample3_1584.png)**
+
+```
+输入：startTime = [1,1,1], endTime = [2,3,4], profit = [5,6,4]
+输出：6
+```
+
+ 
+
+**提示：**
+
+- `1 <= startTime.length == endTime.length == profit.length <= 5 * 10^4`
+- `1 <= startTime[i] < endTime[i] <= 10^9`
+- `1 <= profit[i] <= 10^4`
+
+### 思路
+
+一眼 DP，但是动态规划一直都是我的弱项，之前学的时候只学会了完全背包多重背包那几个，但是还是试着推了一下递推公式。
+
+先按照**开始时间升序排序**，遍历工作。（现在想一下，可能应该遍历时间点，但是这样应该更复杂，不考虑做法了）
+
+不难发现要求的结果是 $ [0, endTime_{max}] $ 时间里的最大值，于是一开始定义 $$ dp[i] $$ 为时间点 $i$ 能获取的最大报酬，递推公式：
+
+$$ dp[Job[i].endTime] = max(dp[i-1], \quad dp[Job[i].startTime] + Job[i].profit) $$​
+
+写了一下发现过不去样例（写的也很简单，输出了一下 `dp[]`的值发现根本不连续，没有做到把问题拆分成子问题解决，递推公式里，`dp[i]` 和 `dp[i-1]` 之间没有明确的转移关系，这应该就是问题所在。
+
+既然这样写递推公式没法联系 `dp[i]` 和 `dp[i-1]` ，**那么就要考虑改变 `dp` 数组的定义**。
+
+看了一眼题解，感觉有点像模拟当前这个工作做与不做的模式，即定义 $dp[i]$ 为**按照结束时间升序排序**时前 $i$ 份工作能获取的最大报酬。
+
+对于当前工作 $Job[i]$，有两种选择：
+
+- 不选当前工作，则 $dp[i] = dp[i - 1]$
+- 选择当前工作，则 $dp[i] = dp[j] + Job[i].profit$，**其中 $j$ 为最接近在这份工作开始时间的工作的下标，通过这个下标可以获得在能开始这份工作之前能获取的最大报酬。**
+
+递推公式：
+
+$$dp[i] = max(dp[i - 1], \quad dp[j] + Job[i].profit)$$
+
+实现细节上，由于当 $i=0$ 时 $i-1 = -1$，会产生负数，所以下标都加一变成正数。
+
+$j$ 的寻找用了二分，都知道只有有序数组才能用二分，因为这里是按照结束时间升序排序的，所以查的也是结束时间，用二分是可以的。（这里曾经困扰了我一段时间，后来才想到找的是时间，只要在时间数组里做查找就可以了）
+
+总结一下，首先对于`dp`数组的定义有问题，傻傻的按照样例给的图例的时间轴进行的定义，但是实际上影响结果变化的是一个个工作，这里可能比较难想到的是按结束时间排序，题解里没说为什么这样排，感觉是为了用二分（？）。
+
+其次是对于状态转移方程的认识不够，到底应该怎么定义才是对的，可能要看有没有把问题拆分成子问题，并且使他们与对`dp`数组的定义联系起来，感觉还是挺难的。
+
+但是不管怎么说，这题还是思考之后理解并做出来了，是感觉到一点进步的。可能自己太笨，之前大学时候搞 ACM 对于这种题是一点点思路都没有，也可能是有畏难情绪在吧 T_T。
+
+```java
+public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
+    // 其中 dp[i] 表示前 i 份工作能获得的最大报酬
+    int[] dp = new int[endTime.length + 1];
+
+    class Job {
+        public int st;
+        public int ed;
+        public int pro;
+
+        public Job(int st, int ed, int pro) {
+            this.st = st;
+            this.ed = ed;
+            this.pro = pro;
+        }
+
+        @Override
+        public String toString() {
+            return "\nJob{" +
+                    "st=" + st +
+                    ", ed=" + ed +
+                    ", pro=" + pro +
+                    '}';
+        }
+
+        // 寻找前
+        public static int bs(List<Job> jobs, int high, int target) {
+            int low = -1;
+            while (low + 1 < high) {
+                int mid = (high - low) / 2 + low;
+                if (jobs.get(mid).ed > target) {
+                    high = mid;
+                } else {
+                    low = mid;
+                }
+            }
+
+            return low;
+        }
+    }
+
+    List<Job> jobs = new ArrayList<>();
+
+    for (int i = 0; i < profit.length; ++i) {
+        jobs.add(new Job(startTime[i], endTime[i], profit[i]));
+    }
+
+    jobs.sort((a, b) -> b.ed - a.ed);
+
+    System.out.println(jobs);
+
+    for (int i = 0; i < jobs.size(); ++i) {
+        int j = Job.bs(jobs, i, jobs.get(i).st);
+        dp[i + 1] = Math.max(dp[i], dp[j + 1] + jobs.get(i).pro);
+    }
+
+    for (int i : dp) {
+        System.out.println(i);
+    }
+
+    return dp[profit.length];
+}
+```
