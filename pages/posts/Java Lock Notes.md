@@ -1,7 +1,7 @@
 ---
 title: Java Lock Notes
 date: 2024-03-04 15:40:59
-tags: [锁， JDK]
+tags: [锁, JDK]
 categories: [笔记, Java]
 excerpt: 典中典之Java中的锁有哪些，其底层实现逻辑是怎样的呢？
 author: 苏
