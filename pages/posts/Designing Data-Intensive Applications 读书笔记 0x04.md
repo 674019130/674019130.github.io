@@ -5,6 +5,7 @@ tags: [DDIA, System Design]
 categories: [读书笔记, DDIA]
 excerpt: 来看看作者如何从另一种角度描述分布式系统。
 author: 苏
+color: palevioletred
 ---
 
 > 与可能出错的东西比，“不可能”出错的东西最显著的特点就是：一旦真的出错，通常就彻底玩完了。

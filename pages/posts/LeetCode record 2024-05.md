@@ -4,12 +4,12 @@ title: LeetCode record 2024-05
 tags: [LeetCode, 算法]
 categories: [LeetCode]
 author: 苏
-color: rgba(255, 165, 0, 0.5)
 toc: true
+codeHeightLimit: 300
 medium_zoom: true
 ---
 
-**如果有一天我没有打卡，会不会辜负踌躇满志的那个自己。**
+**如果有一天没有打卡，会不会辜负踌躇满志的那个自己。**
 
 <!-- more -->
 
@@ -511,5 +511,71 @@ public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
     }
 
     return dp[profit.length];
+}
+```
+
+## [3. 无重复字符的最长子串 ](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)中等
+
+已解答
+
+[算术评级: 5](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/)
+
+给定一个字符串 `s` ，请你找出其中不含有重复字符的 **最长** **子串** 的长度。
+
+**示例 1:**
+
+```
+输入: s = "abcabcbb"
+输出: 3
+解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
+```
+
+**示例 2:**
+
+```
+输入: s = "bbbbb"
+输出: 1
+解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
+```
+
+**示例 3:**
+
+```
+输入: s = "pwwkew"
+输出: 3
+解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
+     请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
+```
+
+
+
+**提示：**
+
+- `0 <= s.length <= 5 * 104`
+- `s` 由英文字母、数字、符号和空格组成
+
+### 思路
+
+前两天的每日一题是在我看来不可做的 DP，直接放弃。今天来 A 一道经典题目，稍微思考一下就知道滑动窗口可做，5分钟速A。
+
+```java
+public int lengthOfLongestSubstring(String s) {
+    int ans = 0;
+
+    for (int i = 0; i < s.length(); ++i) {
+        Set<Character> chars = new HashSet<>();
+        chars.add(s.charAt(i));
+
+        for (int j = i + 1; j < s.length(); ++j) {
+            if (!chars.contains(s.charAt(j))) {
+                chars.add(s.charAt(j));
+            } else {
+                break;
+            }
+        }
+        ans = Math.max(ans, chars.size());
+    }
+
+    return ans;
 }
 ```
