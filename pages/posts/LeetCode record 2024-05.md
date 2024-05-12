@@ -683,6 +683,7 @@ class Solution {
         }
 
         // 之前没计算过，求吃完当前数量的最小次数
+        // 最后 + 1 是为了模拟整除吃这一步， + left % 2 和 + left % 3 是模拟吃一个的次数
         int min = Math.min(dfs(left / 3) + left % 3, dfs(left / 2) + left % 2) + 1;
 
         // 存起来
