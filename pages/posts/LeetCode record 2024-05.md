@@ -645,6 +645,49 @@ public int lengthOfLongestSubstring(String s) {
 
 考虑贪心，如果能被 3 整除，那么可以一次吃掉 $\frac{2n}{3}$ 个橘子，显然比 $\frac{n}{2}$ 要大，优先走这一步，争取走出最终结果的函数调用足够靠前，这样能 break 后续的所有调用，也算是剪枝。
 
-但是还是在 $n=166188$ 的时候 TLE 了。
+但是还是在 $n=166188$ 的时候 TLE 了。（记录了一下，一共调用了 $363169$ 次函数）
 
-再改，初始化时将 `Map<Integer, Integer> memo` 的容量初始化为 $n$，降低扩容次数
+再改，初始化时将 `Map<Integer, Integer> memo` 的容量初始化为 $n$，降低扩容次数。
+
+这次在最大 $n=9209408$ 的时候 TLE 了。
+
+随着 $n$ 的变大，贪心的做法带来了更多不必要的开销，遍历了许多不必遍历的节点。
+
+看了一下题解。
+
+考虑另一种贪心，整除吃越早越好，且整除吃永远优于只吃一个。
+
+要么先将 $n$​ 吃到可以被 3 整除，要么吃到可以被 2 整除，每次都有两种选择。
+
+记忆化数组从保存吃到当前数量的橘子最少需要的次数，改为存储当前数量的橘子最少需要多少次吃完。
+
+改完之后在 $n=166188$ 的情况下，只调用了 $79$ 次。
+
+```java
+class Solution {
+    static Map<Integer, Integer> mem;
+
+    public int minDays(int n) {
+        mem = new HashMap<>();
+        return dfs(n);
+    }
+
+    public int dfs(int left) {
+        if (left <= 1) {
+            return left;
+        }
+
+        // 之前已经计算过当前数量最少需要吃多少次才能吃完，直接用
+        if (mem.containsKey(left)) {
+            return mem.get(left);
+        }
+
+        // 之前没计算过，求吃完当前数量的最小次数
+        int min = Math.min(dfs(left / 3) + left % 3, dfs(left / 2) + left % 2) + 1;
+
+        // 存起来
+        mem.put(left, min);
+        return min;
+    }
+}
+```
