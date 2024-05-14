@@ -37,6 +37,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/Designing Data-Intensive Applications 读书笔记 0x02': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x02', '/posts/Designing Data-Intensive Applications 读书笔记 0x02', Record<never, never>, Record<never, never>>,
     '/posts/Designing Data-Intensive Applications 读书笔记 0x03': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x03', '/posts/Designing Data-Intensive Applications 读书笔记 0x03', Record<never, never>, Record<never, never>>,
     '/posts/Designing Data-Intensive Applications 读书笔记 0x04': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x04', '/posts/Designing Data-Intensive Applications 读书笔记 0x04', Record<never, never>, Record<never, never>>,
+    '/posts/Designing Data-Intensive Applications 读书笔记 0x05': RouteRecordInfo<'/posts/Designing Data-Intensive Applications 读书笔记 0x05', '/posts/Designing Data-Intensive Applications 读书笔记 0x05', Record<never, never>, Record<never, never>>,
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
     '/posts/hello-world': RouteRecordInfo<'/posts/hello-world', '/posts/hello-world', Record<never, never>, Record<never, never>>,
     '/posts/Java Lock Notes': RouteRecordInfo<'/posts/Java Lock Notes', '/posts/Java Lock Notes', Record<never, never>, Record<never, never>>,

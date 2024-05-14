@@ -7,6 +7,7 @@ export default defineSiteConfig({
    */
   frontmatter: {
     time_warning: true,
+    codeHeightLimit: 350
   },
 
     /**
@@ -33,6 +34,7 @@ export default defineSiteConfig({
     name: '苏',
     avatar: 'https://gravatar.com/userimage/135478784/07954c26f630b810ec9709a8907dab5f.jpeg',
   },
+  subtitle: '念念不忘，必有回响。',
   description: 'I was 26 years old and didn\'t know what I could do other than write some simple code.',
   social: [
     // {
