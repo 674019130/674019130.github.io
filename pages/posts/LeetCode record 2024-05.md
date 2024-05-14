@@ -692,3 +692,213 @@ class Solution {
     }
 }
 ```
+
+## [994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/) 中等
+
+已解答
+
+[算术评级: 4](https://leetcode.cn/problems/rotting-oranges/description/?envType=daily-question&envId=2024-05-13)[第 124 场周赛](https://leetcode.cn/contest/weekly-contest-124)[Q2](https://leetcode.cn/contest/weekly-contest-124/problems/rotting-oranges)
+
+1433
+
+在给定的 `m x n` 网格 `grid` 中，每个单元格可以有以下三个值之一：
+
+- 值 `0` 代表空单元格；
+- 值 `1` 代表新鲜橘子；
+- 值 `2` 代表腐烂的橘子。
+
+每分钟，腐烂的橘子 **周围 4 个方向上相邻** 的新鲜橘子都会腐烂。
+
+返回 *直到单元格中没有新鲜橘子为止所必须经过的最小分钟数。如果不可能，返回 `-1`* 。
+
+**示例 1：**
+
+**![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/16/oranges.png)**
+
+```
+输入：grid = [[2,1,1],[1,1,0],[0,1,1]]
+输出：4
+```
+
+**示例 2：**
+
+```
+输入：grid = [[2,1,1],[0,1,1],[1,0,1]]
+输出：-1
+解释：左下角的橘子（第 2 行， 第 0 列）永远不会腐烂，因为腐烂只会发生在 4 个方向上。
+```
+
+**示例 3：**
+
+```
+输入：grid = [[0,2]]
+输出：0
+解释：因为 0 分钟时已经没有新鲜橘子了，所以答案就是 0 。
+```
+
+**提示：**
+
+- `m == grid.length`
+- `n == grid[i].length`
+- `1 <= m, n <= 10`
+- `grid[i][j]` 仅为 `0`、`1` 或 `2`
+
+### 思路
+
+广搜且没什么变种，拿来练手。
+
+拿 ChatGPT 写了个 `Pair<K, V>`类方便操作。
+
+```java
+class Pair<K, V> {
+    private K key;
+    private V value;
+
+    // Constructor
+    public Pair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    // Getters
+    public K getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
+
+    // Setters
+    public void setKey(K key) {
+        this.key = key;
+    }
+
+    public void setValue(V value) {
+        this.value = value;
+    }
+
+    // Override toString() method for easy printing
+    @Override
+    public String toString() {
+        return "Pair{" +
+                "key=" + key +
+                ", value=" + value +
+                '}';
+    }
+
+    // Override equals() method to compare two Pair objects
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Pair<?, ?> pair = (Pair<?, ?>) o;
+
+        if (key != null ? !key.equals(pair.key) : pair.key != null) return false;
+        return value != null ? value.equals(pair.value) : pair.value == null;
+    }
+
+    // Override hashCode() method to provide hash code for Pair objects
+    @Override
+    public int hashCode() {
+        int result = key != null ? key.hashCode() : 0;
+        result = 31 * result + (value != null ? value.hashCode() : 0);
+        return result;
+    }
+}
+
+public int orangesRotting(int[][] grid) {
+
+    int ans = 0;
+    int freshLeft = 0;
+    
+    Queue<Pair<Integer, Integer>> queue = new ArrayDeque<>();
+    Queue<Pair<Integer, Integer>> next = new ArrayDeque<>();
+
+    for (int i = 0; i < grid.length; ++i) {
+        for (int j = 0; j < grid[i].length; ++j) {
+            if (grid[i][j] == 2) {
+                queue.add(new Pair<>(i, j));
+            } else if (grid[i][j] == 1) {
+                freshLeft++;
+            }
+        }
+    }
+
+    if (freshLeft == 0 && queue.isEmpty()) {
+        return 0;
+    }
+
+    if (queue.isEmpty()) {
+        return -1;
+    }
+
+    int[][] dire = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
+    while (freshLeft != 0 && !queue.isEmpty()) {
+        ans++;
+        while (!queue.isEmpty()) {
+            Pair<Integer, Integer> poll = queue.poll();
+            Integer ii = poll.getKey();
+            Integer jj = poll.getValue();
+
+            for (int i = 0; i < dire.length; ++i) {
+                if (ii + dire[i][0] >= 0 && jj + dire[i][1] >= 0 && ii + dire[i][0] < grid.length && jj + dire[i][1] < grid[ii].length) {
+                    if (grid[ii + dire[i][0]][jj + dire[i][1]] == 1) {
+                        freshLeft--;
+                        grid[ii + dire[i][0]][jj + dire[i][1]] = 2;
+                        next.add(new Pair<>(ii + dire[i][0], jj + dire[i][1]));
+                    }
+                }
+            }
+        }
+
+        queue.addAll(next);
+        next.clear();
+    }
+
+    if (freshLeft > 0) {
+        return -1;
+    }
+
+    return ans;
+}
+```
+
+## [244. 完成所有任务需要的最少轮数](https://leetcode.cn/problems/minimum-rounds-to-complete-all-tasks/) 中等
+
+已解答
+
+[算术评级: 3](https://leetcode.cn/problems/minimum-rounds-to-complete-all-tasks/description/?envType=daily-question&envId=2024-05-14)[第 289 场周赛](https://leetcode.cn/contest/weekly-contest-289)[Q2](https://leetcode.cn/contest/weekly-contest-289/problems/minimum-rounds-to-complete-all-tasks)
+
+1372
+
+给你一个下标从 **0** 开始的整数数组 `tasks` ，其中 `tasks[i]` 表示任务的难度级别。在每一轮中，你可以完成 2 个或者 3 个 **相同难度级别** 的任务。
+
+返回完成所有任务需要的 **最少** 轮数，如果无法完成所有任务，返回 `-1` 。
+
+**示例 1：**
+
+```
+输入：tasks = [2,2,3,3,2,4,4,4,4,4]
+输出：4
+解释：要想完成所有任务，一个可能的计划是：
+- 第一轮，完成难度级别为 2 的 3 个任务。 
+- 第二轮，完成难度级别为 3 的 2 个任务。 
+- 第三轮，完成难度级别为 4 的 3 个任务。 
+- 第四轮，完成难度级别为 4 的 2 个任务。 
+可以证明，无法在少于 4 轮的情况下完成所有任务，所以答案为 4 。
+```
+
+**示例 2：**
+
+```
+输入：tasks = [2,3,3]
+输出：-1
+解释：难度级别为 2 的任务只有 1 个，但每一轮执行中，只能选择完成 2 个或者 3 个相同难度级别的任务。因此，无法完成所有任务，答案为 -1 。
+```
+
+**提示：**
+
+- `1 <= tasks.length <= 105`
+- `1 <= tasks[i] <= 109`
