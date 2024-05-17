@@ -6,7 +6,14 @@ categories: [代码, 多线程代码片段]
 author: 苏
 type: yuque
 hide: true
-# color: 'red'
+# color: 'red'a
 ---
 
+> Talk is cheap, show me the code.
+
 <!-- more -->
+
+
+
+## 多线程交替输出
+
