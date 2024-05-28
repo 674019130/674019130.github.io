@@ -1,8 +1,8 @@
 ---
-title: 记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 Github Pages
+title: 记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 GitHub Pages
 # date: 2024-05-03 02:28:12
-tags: [LeetCode, 算法]
-categories: [LeetCode]
+tags: [Valaxy, GitHub]
+categories: [笔记, 博客]
 author: 苏
 type: yuque
 # color: 'red'
