@@ -1,10 +1,11 @@
 ---
 title: Windows 下 Docker 使用笔记
-# date: 2024-05-28 20:19:12
+# date: 2024-05-29 20:19:12
 tags: [docker]
 categories: [笔记, docker]
 author: 苏
 type: yuque
+codeHeightLimit: 300
 # color: 'red'
 # color: '#FF8EB3'
 # color: 'rgb(255, 0, 255)'
@@ -18,7 +19,7 @@ type: yuque
 ![image.png](https://s2.loli.net/2024/05/28/17kjdQVX35ieZvb.png)
 
 <!-- more -->
-## 一些简单的常用命令
+## 0. 一些简单的常用命令
 
 ```bash
 # 显示当前容器 IP
@@ -31,9 +32,11 @@ hostname -i
 
 
 
-## RocketMQ 启动服务踩坑
+## 1. RocketMQ 启动服务踩坑
 
-第一步，pull 镜像
+### 第一步，pull 镜像
+
+一共要启动的服务有两个，nameserver 和 broker。生产者和消费者在 Spring 服务中配置。
 
 ```
 # 最新(rocketmq)
@@ -44,7 +47,7 @@ docker pull rocketmqinc/rocketmq:<版本号># 最新(RocketMQ控制台)
 docker pull pangliang/rocketmq-console-ng
 ```
 
-第二步，搞一个 `broker.conf`
+### 第二步，搞一个 `broker.conf`
 
 可以从启动的容器里拿到宿主机本地，也可以自己写，以下是配置文件描述
 
@@ -188,7 +191,7 @@ clientCallbackExecutorThreads=2
 clientSocketSndBufSize=131072
 ```
 
-第三步，Docker 启动 RocketMQ
+### 第三步，Docker 启动 RocketMQ
 
 这里踩了几个坑：
 
@@ -207,8 +210,8 @@ clientSocketSndBufSize=131072
 
 > 进入正题，为什么会发生这个错误？这里不得不说明一下两个和问题有关的特性。
 >
-> - Windows 中个东西叫做“TCP 动态端口范围”，这个范围内的端口有时候会被一些服务占用。在 Windows Vista（或 Windows Server 2008）之前，动态端口范围是 1025 到 5000；在其之后的版本中，新的默认起始端口为 49152，新的默认结束端口为 65535。
-> - 如果安装了 Hyper-V，则 Hyper-V 会保留一些随机端口号供 Windows [容器](https://cloud.tencent.com/product/tke?from_column=20065&from=20065)主机网络服务使用。
+> - Windows 中个东西叫做“**TCP 动态端口范围**”，这个范围内的端口有时候会被一些服务占用。在 Windows Vista（或 Windows Server 2008）之前，动态端口范围是 1025 到 5000；在其之后的版本中，新的默认起始端口为 49152，新的默认结束端口为 65535。
+> - **如果安装了 Hyper-V，则 Hyper-V 会保留一些随机端口号供 Windows [容器](https://cloud.tencent.com/product/tke?from_column=20065&from=20065)主机网络服务使用。**
 >
 > 一般情况（正常情况下）Hyper-V 会在“TCP 动态端口范围”中预留一些随机的端口号，但是预留的端口号一般都很大，所以即使预留了成百上千个端口，也影响不大。但是 Windows 自动更新有时会出错（万恶的自动更新），把“TCP 动态端口范围”起始端口被重置为 1024，导致 Hyper-V 在预留端口的时候占用了常用端口号，使得一些常用端口因为被预留而无法使用。
 >
@@ -243,13 +246,13 @@ clientSocketSndBufSize=131072
 
 可以看到 10911/10910 端口确实是在被征用的范围内的（我在输出结果中用 * 标记了），那么应该就是因为 Hyper-V 随机征用端口导致的。
 
-于是去问了一下 ChatGPT：
+于是带着一个小猜想去问了一下 ChatGPT：
 
 > wsl2底层实现使用了 hyper-v？
 >
 > ChatGPT
 >
-> 是的，WSL 2 的底层实现确实使用了 Hyper-V 技术。这是因为 WSL 2 采用了完全虚拟化的方式，与 WSL 1 不同，它使用了 Hyper-V 虚拟化平台来运行 Linux 内核。这种设计使得 WSL 2 在性能和功能上有了显著提升，并且能够提供更接近于本机 Linux 环境的体验。
+> 是的，**WSL 2 的底层实现确实使用了 Hyper-V 技术**。这是因为 WSL 2 采用了完全虚拟化的方式，与 WSL 1 不同，它使用了 Hyper-V 虚拟化平台来运行 Linux 内核。这种设计使得 WSL 2 在性能和功能上有了显著提升，并且能够提供更接近于本机 Linux 环境的体验。
 >
 > 下面是 WSL 2 使用 Hyper-V 的一些关键点：
 >
