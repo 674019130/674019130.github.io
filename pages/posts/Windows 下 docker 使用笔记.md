@@ -265,3 +265,5 @@ clientSocketSndBufSize=131072
 
 ---
 
+先启动 nameserver ，再启动 broker，确保 IP 地址是匹配的。
+
