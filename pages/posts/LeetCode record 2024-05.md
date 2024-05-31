@@ -870,3 +870,63 @@ public int orangesRotting(int[][] grid) {
 2024年5月27日 15点52分
 
 做每日一题会有一点不够有针对性，找了一个微软的题库，以后除了每日一题尽量做可做的，还是主要以题库为主。
+
+## [2965. 找出缺失和重复的数字](https://leetcode.cn/problems/find-missing-and-repeated-values/) 简单
+
+给你一个下标从 **0** 开始的二维整数矩阵 `grid`，大小为 `n * n` ，其中的值在 `[1, n2]` 范围内。除了 `a` 出现 **两次**，`b` **缺失** 之外，每个整数都 **恰好出现一次** 。
+
+任务是找出重复的数字`a` 和缺失的数字 `b` 。
+
+返回一个下标从 0 开始、长度为 `2` 的整数数组 `ans` ，其中 `ans[0]` 等于 `a` ，`ans[1]` 等于 `b` 。
+
+**示例 1：**
+
+```
+输入：grid = [[1,3],[2,2]]
+输出：[2,4]
+解释：数字 2 重复，数字 4 缺失，所以答案是 [2,4] 。
+```
+
+**示例 2：**
+
+```
+输入：grid = [[9,1,7],[8,9,2],[3,4,6]]
+输出：[9,5]
+解释：数字 9 重复，数字 5 缺失，所以答案是 [9,5] 。
+```
+
+**提示：**
+
+- `2 <= n == grid.length == grid[i].length <= 50`
+- `1 <= grid[i][j] <= n * n`
+- 对于所有满足`1 <= x <= n * n` 的 `x` ，恰好存在一个 `x` 与矩阵中的任何成员都不相等。
+- 对于所有满足`1 <= x <= n * n` 的 `x` ，恰好存在一个 `x` 与矩阵中的两个成员相等。
+- 除上述的两个之外，对于所有满足`1 <= x <= n * n` 的 `x` ，都恰好存在一对 `i, j` 满足 `0 <= i, j <= n - 1` 且 `grid[i][j] == x` 。
+
+### 思路
+
+观察数据范围后发现是简单暴力，直接做要再遍历一次哈希表，通过提前打表（或者用`Set<>`容器）和求和的方法做到**一次遍历出结果**。
+
+```java
+public int[] findMissingAndRepeatedValues(int[][] grid) {
+    boolean[] exist = new boolean[grid.length * grid.length + 1];
+    int[] ans = new int[2];
+    int sum = (1 + grid.length * grid.length) * grid.length * grid.length / 2;
+
+    for (int i = 0; i < grid.length; ++i) {
+        for (int j = 0; j < grid[i].length; ++j) {
+            if (exist[grid[i][j]]) {
+                ans[0] = grid[i][j];
+                continue;
+            }
+            sum -= grid[i][j];
+            exist[grid[i][j]] = true;
+        }
+    }
+    ans[1] = sum;
+
+    return ans;
+}
+```
+
+五月结束。
