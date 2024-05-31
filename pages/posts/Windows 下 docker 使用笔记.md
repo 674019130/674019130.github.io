@@ -10,6 +10,7 @@ codeHeightLimit: 300
 # color: '#FF8EB3'
 # color: 'rgb(255, 0, 255)'
 # color: '255, 0, 255'
+typora-copy-images-to: upload
 ---
 
 **Docker 伟大，无需多言！**
@@ -265,5 +266,77 @@ clientSocketSndBufSize=131072
 
 ---
 
+搞定前面端口的问题，再试一下启动一次容器。
+
 先启动 nameserver ，再启动 broker，确保 IP 地址是匹配的。
 
+上面的`broker.conf`文件里指定了 namesrv 和 broker 的 IP 地址，**但是 **在 Docker 启动容器时要指定 IP 地址需要自定义网络，如果跟我一样不打算自定义网络的话，可以注释掉对应的配置项，先启动 namesrv，再通过配置环境变量和镜像命令来指定 namesrv 的地址。
+
+**以下命令中存在需要自己手动替换的地方，如挂载路径、端口号和 IP 地址。**
+
+```shell
+# 1. success namesrv
+docker run -d -p 9876:9876   -v /d/docker_volume/rocketmq/namesrv/logs:/root/logs   -v /d/docker_volume/rocketmq/namesrv/store:/root/store   -v /d/docker_volume/rocketmq/conf/broker.conf:/opt/rocketmq-4.4.0/conf/broker.conf   --name rmqnamesrv rocketmqinc/rocketmq:latest sh mqnamesrv
+
+# 2. success broker
+docker run -d  -p 10911:10911 -p 10909:10909 -v /d/docker_volume/rocketmq/broker/logs:/root/logs -v /d/docker_volume/rocketmq/broker/store:/root/store -v /d/docker_volume/rocketmq/conf/broker.conf:/opt/rocketmq-4.4.0/conf/broker.conf --name rmqbroker --add-host namesrv:172.17.0.2 -e "NAMESRV_ADDR=namesrv:9876" rocketmqinc/rocketmq:latest sh mqbroker -n namesrv:9876 -c /opt/rocketmq-4.4.0/conf/broker.conf autoCreateTopicEnable=true
+
+# 3. success console
+docker run -d --name rocketmq-console  -p 8080:8080 -t apacherocketmq/rocketmq-console:2.0.0 -e "JAVA_OPTS=-Drocketmq.namesrv.addr=172.17.0.2:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false"
+
+docker run -d --name rocketmq-console  -p 8080:8080 -t styletang/rocketmq-console-ng:latest -e "JAVA_OPTS=-Drocketmq.namesrv.addr=172.17.0.2:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false"
+```
+
+通过查看挂载在本地的日志，可以发现 namesrv 和 broker 之间已经建立了通信（重点日志添加了换行）。
+
+```shell
+# broker.log:
+2024-05-31 22:06:19 INFO main - Replace, key: namesrvAddr, value: namesrv:9876 -> 172.17.0.2:9876
+
+2024-05-31 22:06:19 INFO main - load exist local topic, TopicConfig [topicName=RMQ_SYS_TRANS_HALF_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2024-05-31 22:06:19 INFO main - load exist local topic, TopicConfig [topicName=BenchmarkTest, readQueueNums=1024, writeQueueNums=1024, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2024-05-31 22:06:19 INFO main - load exist local topic, TopicConfig [topicName=OFFSET_MOVED_EVENT, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2024-05-31 22:06:19 INFO main - load exist local topic, TopicConfig [topicName=knBroker, readQueueNums=1, writeQueueNums=1, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2024-05-31 22:06:19 INFO main - load exist local topic, TopicConfig [topicName=TBW102, readQueueNums=8, writeQueueNums=8, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2024-05-31 22:06:19 INFO main - load exist local topic, TopicConfig [topicName=SELF_TEST_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2024-05-31 22:06:19 INFO main - load exist local topic, TopicConfig [topicName=DefaultCluster, readQueueNums=16, writeQueueNums=16, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2024-05-31 22:06:19 INFO main - load /root/store/config/topics.json OK
+2024-05-31 22:06:19 INFO main - load /root/store/config/consumerOffset.json OK
+2024-05-31 22:06:19 INFO main - load /root/store/config/consumerFilter.json OK
+2024-05-31 22:06:19 INFO main - load /root/store/config/delayOffset.json OK
+2024-05-31 22:06:20 INFO main - Set user specified name server address: namesrv:9876
+2024-05-31 22:06:20 WARN main - Load default transaction message hook service: TransactionalMessageServiceImpl
+2024-05-31 22:06:20 WARN main - Load default discard message hook service: DefaultTransactionalMessageCheckListener
+2024-05-31 22:06:20 INFO main - The broker dose not enable acl
+2024-05-31 22:06:20 INFO FileWatchService - FileWatchService service started
+2024-05-31 22:06:20 INFO PullRequestHoldService - PullRequestHoldService service started
+2024-05-31 22:06:20 INFO brokerOutApi_thread_1 - register broker to name server namesrv:9876 OK
+2024-05-31 22:06:20 INFO main - Start transaction service!
+
+2024-05-31 22:06:20 INFO main - The broker[knBroker, 172.17.0.4:10911] boot success. serializeType=JSON and name server is namesrv:9876
+
+2024-05-31 22:06:25 INFO FilterServerManagerScheduledThread1 - CallShell: <sh /opt/rocketmq-4.4.0/bin/startfsrv.sh -c /opt/rocketmq-4.4.0/conf/broker.conf -n namesrv:9876> OK
+2024-05-31 22:06:30 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2024-05-31 22:06:30 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2024-05-31 22:06:30 INFO brokerOutApi_thread_2 - register broker to name server namesrv:9876 OK
+```
+
+```shell
+# namesrv.log:
+
+2024-05-31 22:06:20 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 172.17.0.4:42174
+2024-05-31 22:06:20 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[172.17.0.4:42174]
+2024-05-31 22:06:20 INFO RemotingExecutorThread_1 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=knBroker, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2024-05-31 22:06:20 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=knBroker, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2024-05-31 22:06:20 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=knBroker, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2024-05-31 22:06:20 INFO RemotingExecutorThread_1 - new topic registered, knBroker QueueData [brokerName=knBroker, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2024-05-31 22:06:20 INFO RemotingExecutorThread_1 - new topic registered, TBW102 QueueData [brokerName=knBroker, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2024-05-31 22:06:20 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=knBroker, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2024-05-31 22:06:20 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=knBroker, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+
+2024-05-31 22:06:20 INFO RemotingExecutorThread_1 - new broker registered, 172.17.0.4:10911 HAServer: 172.17.0.4:10912
+```
+
+![image-20240531231411249](https://s2.loli.net/2024/05/31/gay2XUvZTAPBSJi.png)
+
+至此，Docker 启动 RocketMQ 告一段落。
