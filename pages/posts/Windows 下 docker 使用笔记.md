@@ -270,7 +270,7 @@ clientSocketSndBufSize=131072
 
 先启动 nameserver ，再启动 broker，确保 IP 地址是匹配的。
 
-上面的`broker.conf`文件里指定了 namesrv 和 broker 的 IP 地址，**但是 **在 Docker 启动容器时要指定 IP 地址需要自定义网络，如果跟我一样不打算自定义网络的话，可以注释掉对应的配置项，先启动 namesrv，再通过配置环境变量和镜像命令来指定 namesrv 的地址。
+上面的`broker.conf`文件里指定了 namesrv 和 broker 的 IP 地址，**但是** 在 Docker 启动容器时要指定 IP 地址需要自定义网络，如果跟我一样不打算自定义网络的话，可以注释掉对应的配置项，先启动 namesrv，再通过配置环境变量和镜像命令来指定 namesrv 的地址（但是`broker.conf`里的配置还是要改成正确的 namesrv 地址）。
 
 **以下命令中存在需要自己手动替换的地方，如挂载路径、端口号和 IP 地址。**
 
@@ -340,3 +340,4 @@ docker run -d --name rocketmq-console  -p 8080:8080 -t styletang/rocketmq-consol
 ![image-20240531231411249](https://s2.loli.net/2024/05/31/gay2XUvZTAPBSJi.png)
 
 至此，Docker 启动 RocketMQ 告一段落。
+

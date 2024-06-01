@@ -10,7 +10,7 @@ top: -1
 medium_zoom: true
 ---
 
-![LeetCode Stats](https://leetcard.jacoblin.cool/treepoem?theme=light&font=Laila&ext=heatmap&site=cn)
+![LeetCode Stats](https://leetcard.jacoblin.cool/treepoem?theme=light&font=Cairo&ext=heatmap&site=cn)
 
 <!-- more -->
 
