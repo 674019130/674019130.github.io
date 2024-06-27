@@ -12,6 +12,195 @@ excerpt: 记录在 LeetCode SQL 相关的题目。调皮的小知识点有点多
 
 > 只做重点的记录。
 
+## [570. 至少有5名直接下属的经理](https://leetcode.cn/problems/managers-with-at-least-5-direct-reports/) 中等
+
+表: `Employee`
+
+```
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| name        | varchar |
+| department  | varchar |
+| managerId   | int     |
++-------------+---------+
+id 是此表的主键（具有唯一值的列）。
+该表的每一行表示雇员的名字、他们的部门和他们的经理的id。
+如果managerId为空，则该员工没有经理。
+没有员工会成为自己的管理者。
+```
+
+ 
+
+编写一个解决方案，找出至少有**五个直接下属**的经理。
+
+以 **任意顺序** 返回结果表。
+
+查询结果格式如下所示。
+
+ 
+
+**示例 1:**
+
+```
+输入: 
+Employee 表:
++-----+-------+------------+-----------+
+| id  | name  | department | managerId |
++-----+-------+------------+-----------+
+| 101 | John  | A          | Null      |
+| 102 | Dan   | A          | 101       |
+| 103 | James | A          | 101       |
+| 104 | Amy   | A          | 101       |
+| 105 | Anne  | A          | 101       |
+| 106 | Ron   | B          | 101       |
++-----+-------+------------+-----------+
+输出: 
++------+
+| name |
++------+
+| John |
++------+
+```
+
+### 答案
+
+```sql
+# Write your MySQL query statement below
+select e.name from Employee e
+where e.id in (
+    select ee.id from Employee ee, Employee eee
+    where eee.managerId = ee.id #(1)
+    group by ee.id 
+    having count(distinct eee.id) >= 5 #(2)
+)
+```
+
+需要注意的是，要查找对于每一个分组的条件，写在`(1)`处，对筛选之后分组的结果再进行数量限制，写在`(2)`处。与之类似的还有**题目 185**，也可以使用子查询做。
+
+## [185. 部门工资前三高的所有员工](https://leetcode.cn/problems/department-top-three-salaries/) 困难
+
+表: `Employee`
+
+```
++--------------+---------+
+| Column Name  | Type    |
++--------------+---------+
+| id           | int     |
+| name         | varchar |
+| salary       | int     |
+| departmentId | int     |
++--------------+---------+
+id 是该表的主键列(具有唯一值的列)。
+departmentId 是 Department 表中 ID 的外键（reference 列）。
+该表的每一行都表示员工的ID、姓名和工资。它还包含了他们部门的ID。
+```
+
+ 
+
+表: `Department`
+
+```
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| name        | varchar |
++-------------+---------+
+id 是该表的主键列(具有唯一值的列)。
+该表的每一行表示部门ID和部门名。
+```
+
+ 
+
+公司的主管们感兴趣的是公司每个部门中谁赚的钱最多。一个部门的 **高收入者** 是指一个员工的工资在该部门的 **不同** 工资中 **排名前三** 。
+
+编写解决方案，找出每个部门中 **收入高的员工** 。
+
+以 **任意顺序** 返回结果表。
+
+返回结果格式如下所示。
+
+ 
+
+**示例 1:**
+
+```
+输入: 
+Employee 表:
++----+-------+--------+--------------+
+| id | name  | salary | departmentId |
++----+-------+--------+--------------+
+| 1  | Joe   | 85000  | 1            |
+| 2  | Henry | 80000  | 2            |
+| 3  | Sam   | 60000  | 2            |
+| 4  | Max   | 90000  | 1            |
+| 5  | Janet | 69000  | 1            |
+| 6  | Randy | 85000  | 1            |
+| 7  | Will  | 70000  | 1            |
++----+-------+--------+--------------+
+Department  表:
++----+-------+
+| id | name  |
++----+-------+
+| 1  | IT    |
+| 2  | Sales |
++----+-------+
+输出: 
++------------+----------+--------+
+| Department | Employee | Salary |
++------------+----------+--------+
+| IT         | Max      | 90000  |
+| IT         | Joe      | 85000  |
+| IT         | Randy    | 85000  |
+| IT         | Will     | 70000  |
+| Sales      | Henry    | 80000  |
+| Sales      | Sam      | 60000  |
++------------+----------+--------+
+```
+
+### 答案
+
+```sql
+SELECT
+	d.NAME AS Department,
+	e.NAME AS Employee,
+	e.salary AS Salary 
+FROM
+	employee e
+	LEFT JOIN department d ON e.departmentId = d.id 
+WHERE
+	e.id IN (
+	SELECT
+		e1.id 
+	FROM
+		employee e1,
+		employee e2 
+	WHERE
+		e1.salary <= e2.salary 
+		AND e1.departmentId = e2.departmentId 
+	GROUP BY
+		e1.id 
+	HAVING
+		count( DISTINCT e2.salary ) <= 3 
+	) 
+ORDER BY
+	Department,
+	Salary DESC
+```
+
+```sql
+select Department, Employee, Salary
+from (
+    select d.Name as Department, e.Name as Employee, e.Salary as Salary, 
+	dense_rank() over (partition by DepartmentId order by Salary desc) as rk
+    from Employee as e, Department as d
+    where e.DepartmentId = d.Id
+) m
+where rk <= 3;
+```
+
 ## 181. 超过经理收入的员工
 
 ## 183. 部门工资最高的员工
