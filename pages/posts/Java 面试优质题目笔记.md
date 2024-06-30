@@ -1,11 +1,12 @@
 ---
-title: Java 多线程题目
+title: Java 面试优质题目笔记
 date: 2024-05-03 02:28:12
-tags: [Java, 多线程, 面试题]
-categories: [代码, 多线程代码片段]
+tags: [Java, 多线程, JVM, 面试题]
+categories: [笔记, Java]
 author: 苏
 type: yuque
 # hide: true
+
 ---
 
 > Talk is cheap, show me the code.
@@ -13,6 +14,162 @@ type: yuque
 <!-- more -->
 
 
+
+## String 和 JVM 内存布局 （JDK 17）
+
+在代码执行过程中，JVM 内存布局会包括栈内存、堆内存、方法区等区域。我们逐步分析各个步骤，并描述内存布局和变量之间的指向关系。
+
+### 代码回顾
+
+```java
+String[] a = new String[10];
+String b = "Hello world";
+a[0] = b;
+
+System.out.println(a[0] == "Hello world");
+System.out.println(b == "Hello world");
+
+System.out.println(a[0]);
+b = "changed";
+System.out.println("a[0] = " + a[0]);
+System.out.println("b = " + b);
+```
+
+### 1. 初始化数组和字符串
+
+```java
+String[] a = new String[10];
+String b = "Hello world";
+```
+
+#### 栈内存
+
+- 局部变量 `a`：指向堆内存中的 `String` 数组对象。
+- 局部变量 `b`：指向堆内存中常量池的 `"Hello world"` 字符串对象。
+
+#### 堆内存
+
+- `String[]` 数组对象：长度为 10 的数组，初始化为 `null`。
+- `"Hello world"`：存储在常量池中的字符串对象。
+
+#### 方法区
+
+- `String` 类的信息：包括其定义的字段、方法、常量池等。
+- `String[]` 类的信息：自动生成的数组类信息。
+- 常量池：包含字符串 `"Hello world"`。
+
+### 2. 数组赋值
+
+```java
+a[0] = b;
+```
+
+- `a[0]` 现在指向常量池中的 `"Hello world"` 字符串对象。
+
+### 3. 比较和输出
+
+```java
+System.out.println(a[0] == "Hello world"); // true
+System.out.println(b == "Hello world");    // true
+```
+
+- 两个比较都是比较引用，结果为 `true`，因为 `a[0]` 和 `b` 都指向常量池中的同一个 `"Hello world"` 字符串对象。
+
+### 4. 打印 `a[0]` 的值
+
+```java
+System.out.println(a[0]); // Hello world
+```
+
+- 输出 `a[0]` 的值，结果为 `"Hello world"`。
+
+### 5. 重新赋值 `b`
+
+```java
+b = "changed";
+```
+
+- `b` 现在指向常量池中的 `"changed"` 字符串对象，原来的 `"Hello world"` 对象不变。
+
+### 6. 打印 `a[0]` 和 `b` 的值
+
+```java
+System.out.println("a[0] = " + a[0]); // a[0] = Hello world
+System.out.println("b = " + b);       // b = changed
+```
+
+- `a[0]` 仍然是 `"Hello world"`，`b` 现在是 `"changed"`。
+
+### 最终内存布局
+
+#### 栈内存
+
+- 变量 `a`：引用类型变量，指向堆内存中的 `String[]` 对象。
+- 变量 `b`：引用类型变量，指向堆内存中常量池的 `"changed"` 字符串对象。
+
+#### 堆内存
+
+- `String[]` 数组对象：长度为 10 的数组，其中 `a[0]` 指向 `"Hello world"`，其他元素初始化为 `null`。
+- 常量池中的字符串对象：
+  - `"Hello world"`
+  - `"changed"`
+
+#### 方法区
+
+- `String` 类的信息：包括其定义的字段、方法、常量池等。
+- `String[]` 类的信息：自动生成的数组类信息。
+- 常量池：包含字符串 `"Hello world"` 和 `"changed"`。
+
+### 内存布局图示
+
+```
+栈内存:
++------+-----+
+|  变量 | 值  |
++------+-----+
+|   a  | ref1|  -> 指向堆内存中的 String[] 对象
+|   b  | ref3|  -> 指向堆内存中的 "changed" 字符串对象
++------+-----+
+
+堆内存:
++-------------+----------------------+
+|  地址       |    值/对象            |
++-------------+----------------------+
+|  ref1       | String[10]           |
+|             | +--------+-------+   |
+|             | | 0      | ref2  |   |  -> 指向堆内存中的 "Hello world" 字符串对象
+|             | | 1      | null  |   |
+|             | | 2      | null  |   |
+|             | | ...    | ...   |   |
+|             | | 9      | null  |   |
+|             | +--------+-------+   |
++-------------+----------------------+
+|  ref2       | "Hello world"        |
++-------------+----------------------+
+|  ref3       | "changed"            |
++-------------+----------------------+
+
+方法区:
++-----------------------------+
+| 类信息和常量池              |
++-----------------------------+
+| String 类信息               |
+| String[] 类信息             |
+| 常量池                      |
+| - "Hello world"             |
+| - "changed"                 |
++-----------------------------+
+```
+
+### 预测输出（也是实际输出）
+
+```plaintext
+true
+true
+Hello world
+a[0] = Hello world
+b = changed
+```
 
 ## 多线程交替输出
 
