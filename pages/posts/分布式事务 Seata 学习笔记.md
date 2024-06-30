@@ -2,6 +2,8 @@
 title: 分布式事务解决方案 Seata 学习笔记
 date: 2024-06-28 00:24:45
 tags: [分布式, 分布式事务, 事务, Seata]
+postTitleClass: 'text-pink-400'
+pageTtitleClass: 'text-rgb(255, 0, 0)'
 categories: [笔记, 分布式系统]
 ---
 
@@ -93,7 +95,7 @@ categories: [笔记, 分布式系统]
 > }
 > ```
 >
-> 
+>
 >
 > 注意，如果 TCC 参与者是本地 bean（非远程RPC服务），本地 TCC bean 还需要在接口定义中添加 @LocalTCC 注解，比如,
 >

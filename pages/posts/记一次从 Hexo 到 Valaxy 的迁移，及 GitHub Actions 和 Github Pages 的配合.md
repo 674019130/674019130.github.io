@@ -4,10 +4,11 @@ title: 记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 GitHub Pag
 tags: [Valaxy, GitHub]
 categories: [笔记, 博客]
 author: 苏
-type: yuque
+postTitleClass: 'text-#FF8EB3'
+# type: yuque
 # color: 'red'
 # color: '#FF8EB3'
-# color: 'rgb(255, 0, 255)'
+# color: 'rgb(255, 0, 191)'
 # color: '255, 0, 255'
 ---
 

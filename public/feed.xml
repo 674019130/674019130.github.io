@@ -4,7 +4,7 @@
         <title>苏</title>
         <link>https://674019130.github.io/</link>
         <description>I was 26 years old and didn't know what I could do other than write some simple code.</description>
-        <lastBuildDate>Sun, 05 May 2024 15:49:38 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 30 Jun 2024 16:52:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,19 +15,164 @@
         <copyright>CC BY-NC-SA 4.0 2024 © 苏</copyright>
         <atom:link href="https://674019130.github.io/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 GitHub Pages]]></title>
+            <link>https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合</link>
+            <guid>https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合</guid>
+            <pubDate>Sun, 30 Jun 2024 16:52:05 GMT</pubDate>
+            <content:encoded><![CDATA[<p><em>仿佛只有有一个自己的博客，才像个理想中的程序员。</em></p>
+<p><em>从买一台云主机，部署 WordPress，到 Hexo，再到前几天被 <a href="https://github.com/YunYouJun">云游君</a> 安利的（也就是现在在使用的）Valaxy，也经历了蛮久。</em></p>
+<p><em>但是记录和折腾这么久，自己又真正学到了什么东西呢？</em></p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[LeetCode Stats Card]]></title>
+            <link>https://674019130.github.io/posts/LeetCode Stats Card</link>
+            <guid>https://674019130.github.io/posts/LeetCode Stats Card</guid>
+            <pubDate>Sun, 30 Jun 2024 16:47:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="https://leetcard.jacoblin.cool/treepoem?theme=light&amp;font=Cairo&amp;ext=heatmap&amp;site=cn" alt="LeetCode Stats"></p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Java 多线程 API 笔记（待填坑）]]></title>
+            <link>https://674019130.github.io/posts/Java 多线程 API 笔记</link>
+            <guid>https://674019130.github.io/posts/Java 多线程 API 笔记</guid>
+            <pubDate>Sun, 30 Jun 2024 15:29:46 GMT</pubDate>
+            <content:encoded><![CDATA[<h4>除了要理解 Java 多线程的内存模型，还要熟悉相关的 Java API，最好能再看下多线程工具实现的源码。</h4>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[LeetCode 数据库刷题笔记]]></title>
+            <link>https://674019130.github.io/posts/LeetCode-SQL-notes</link>
+            <guid>https://674019130.github.io/posts/LeetCode-SQL-notes</guid>
+            <pubDate>Sun, 30 Jun 2024 15:27:48 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>LeetCode 数据库刷题笔记</h1>
+<blockquote>
+<p>只做重点的记录。</p>
+</blockquote>
+<h2>[550. 游戏玩法分析 IV](<a href="https://leetcode.cn/problems/game-play-analysis">https://leetcode.cn/problems/game-play-analysis</a></h2>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Java 面试优质题目笔记]]></title>
+            <link>https://674019130.github.io/posts/Java 面试优质题目笔记</link>
+            <guid>https://674019130.github.io/posts/Java 面试优质题目笔记</guid>
+            <pubDate>Sun, 30 Jun 2024 14:49:28 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>Talk is cheap, show me the code.</p>
+</blockquote>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[一些技术问题的另类观点（待填坑）]]></title>
+            <link>https://674019130.github.io/posts/常见技术问题的一些不一样的看法</link>
+            <guid>https://674019130.github.io/posts/常见技术问题的一些不一样的看法</guid>
+            <pubDate>Sat, 29 Jun 2024 15:10:29 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>或许你听说过延迟双删吗？</strong><img src="https://s2.loli.net/2024/06/29/fBaVhUbizqd9kOm.jpg" alt="服务端缓存之redis入门 - 知乎"></p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[分布式事务解决方案 Seata 学习笔记]]></title>
+            <link>https://674019130.github.io/posts/分布式事务 Seata 学习笔记</link>
+            <guid>https://674019130.github.io/posts/分布式事务 Seata 学习笔记</guid>
+            <pubDate>Thu, 27 Jun 2024 17:26:01 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>我摊牌了，我就是想用分布式事务解决缓存数据库一致性问题！（bushi</strong></p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[关于 Java 8 中函数式编程的粗浅见解（待填坑）]]></title>
+            <link>https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解</link>
+            <guid>https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解</guid>
+            <pubDate>Thu, 27 Jun 2024 16:54:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>如何在 Java 的不完整的函数式编程中窥得其真正的含义呢？</strong></p>
+<p>一次函数式编程的链式调用，就应该作为一个匿名函数使用。</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Java Lock Notes]]></title>
+            <link>https://674019130.github.io/posts/Java Lock Notes</link>
+            <guid>https://674019130.github.io/posts/Java Lock Notes</guid>
+            <pubDate>Sat, 01 Jun 2024 10:05:10 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p><a href="https://tech.meituan.com/2018/11/15/java-lock.html">https://tech.meituan.com/2018/11/15/java-lock.html</a></p>
+</blockquote>
+<p>美团这篇写的很好，非常适合拿来复习。</p>
+<hr>
+<p>![img](https://awps-</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Windows 下 Docker 使用笔记]]></title>
+            <link>https://674019130.github.io/posts/Windows 下 docker 使用笔记</link>
+            <guid>https://674019130.github.io/posts/Windows 下 docker 使用笔记</guid>
+            <pubDate>Sat, 01 Jun 2024 09:35:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>Docker 伟大，无需多言！</strong></p>
+<blockquote>
+<p>但是 Windows 下的 Docker 使用体验像吃了那个。</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2024/05/28/17kjdQVX35ieZvb.png" alt="image.png"></p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
             <title><![CDATA[LeetCode record 2024-05]]></title>
             <link>https://674019130.github.io/posts/LeetCode record 2024-05</link>
             <guid>https://674019130.github.io/posts/LeetCode record 2024-05</guid>
-            <pubDate>Sun, 05 May 2024 15:46:23 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>如果有一天我没有打卡，会不会辜负踌躇满志的那个自己。</strong></p>
-]]></content:encoded>
+            <pubDate>Fri, 31 May 2024 13:40:15 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>如果有一天没有打卡，会不会辜负踌躇满志的那个自己。</strong></p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[常用算法代码片段]]></title>
+            <link>https://674019130.github.io/posts/常用算法代码片段</link>
+            <guid>https://674019130.github.io/posts/常用算法代码片段</guid>
+            <pubDate>Wed, 29 May 2024 10:20:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>快速排序（递归版）</h1>
+<pre><code class="language-java">import java.util.Arrays;
+
+public class QuickSort {
+
+  public static void sort(</code></pre>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[常用业务代码片段]]></title>
+            <link>https://674019130.github.io/posts/常用业务代码片段</link>
+            <guid>https://674019130.github.io/posts/常用业务代码片段</guid>
+            <pubDate>Wed, 29 May 2024 10:20:18 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>跟 ChatGPT 聊天甚至都觉得有些麻烦了 T_T</p>
+</blockquote>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x05]]></title>
+            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05</link>
+            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05</guid>
+            <pubDate>Mon, 27 May 2024 07:31:30 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>我们必须跳出电脑指令序列的窠臼。叙述定义、描述元数据、梳理关系，<strong>而不是编写过程</strong>。</p>
+<p>—— Grace Murray Hopper，未来的计算机及其管理（1962）</p>
+</blockquote>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
             <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x04]]></title>
             <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</link>
             <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</guid>
-            <pubDate>Fri, 03 May 2024 04:23:29 GMT</pubDate>
+            <pubDate>Wed, 08 May 2024 05:58:10 GMT</pubDate>
             <content:encoded><![CDATA[<blockquote>
 <p>与可能出错的东西比，“不可能”出错的东西最显著的特点就是：一旦真的出错，通常就彻底玩完了。</p>
 <p>—— 道格拉斯・亚当斯（1992）</p>
@@ -36,36 +181,16 @@
 <blockquote>
 <p>复制意味着在通过网络连接的多台机器上保留相</p>
 </blockquote>
-]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[关于 Java 8 中函数式编程的粗浅见解]]></title>
-            <link>https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解</link>
-            <guid>https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解</guid>
-            <pubDate>Fri, 03 May 2024 04:23:18 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>占坑~</strong></p>
-]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 Github Pages]]></title>
-            <link>https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合</link>
-            <guid>https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合</guid>
-            <pubDate>Fri, 03 May 2024 04:13:22 GMT</pubDate>
-            <content:encoded><![CDATA[<p><em>仿佛只有有一个自己的博客，才像个理想中的程序员。</em></p>
-<p><em>从买一台云主机，部署 WordPress，到 Hexo，再到前几天被 <a href="https://github.com/YunYouJun">云游君</a> 安利的（也就是现在在使用的）Valaxy，也经历了蛮久。</em></p>
-<p><em>但是记录和折腾这么久，自己又真正学到了什么东西呢？</em></p>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
             <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x00]]></title>
             <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</link>
             <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
+            <pubDate>Sun, 05 May 2024 15:55:16 GMT</pubDate>
             <content:encoded><![CDATA[<h1>第一章：可靠性、可伸缩性和可维护性</h1>
-<!-- > ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.]]></content:encoded>
+<!-- > ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
@@ -80,7 +205,7 @@
 <li>作为一名应用开发人员，你观</li>
 </ol>
 </blockquote>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
@@ -92,7 +217,7 @@
 <blockquote>
 <p>为了高效查找数据库中特定键的值，我们需要一个数据结构：<strong>索引（index）</strong>。本章将介绍一系列的索引结构，并在它们之间进行比较。索引背后的大致思想是通过保存一些额外</p>
 </blockquote>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
@@ -109,38 +234,7 @@
 <h4>远程过程调用（RPC）的问题</h4>
 <p>Web 服务仅仅是通过网络进行 API 请求的一系</p>
 </blockquote>
-]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[Java Lock Notes]]></title>
-            <link>https://674019130.github.io/posts/Java Lock Notes</link>
-            <guid>https://674019130.github.io/posts/Java Lock Notes</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
-            <content:encoded><![CDATA[<blockquote>
-<p><a href="https://tech.meituan.com/2018/11/15/java-lock.html">https://tech.meituan.com/2018/11/15/java-lock.html</a></p>
-</blockquote>
-<p>美团这篇写的很好，非常适合拿来复习。</p>
-<hr>
-<p>![img](https://awps-</p>
-]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[LeetCode 数据库刷题笔记]]></title>
-            <link>https://674019130.github.io/posts/LeetCode-SQL-notes</link>
-            <guid>https://674019130.github.io/posts/LeetCode-SQL-notes</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>LeetCode 数据库刷题笔记</h1>
-<blockquote>
-<p>只做重点的记录。</p>
-</blockquote>
-<h2>181. 超过经理收入的员工</h2>
-<h2>183. 部门工资最高的员工</h2>
-<pre><code class="language-mysql">输入：
-Employee 表:
-+---</code></pre>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
@@ -153,7 +247,7 @@ Employee 表:
 <p>数据库：Oracle</p>
 <p>组里新人写的一个接口。</p>
 <p>传给 Mapper 层的是两个元素数量相等的 List，根据某两个字段是否与 List 中的元素匹配，对 st</p>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
@@ -167,21 +261,7 @@ Employee 表:
 <p>——Robert C. Martin</p>
 <p>&lt;img src=&quot;<a href="https://pica.zhim">https://pica.zhim</a></p>
 </blockquote>
-]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[常用代码片段]]></title>
-            <link>https://674019130.github.io/posts/常用代码片段</link>
-            <guid>https://674019130.github.io/posts/常用代码片段</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>快速排序（递归版）</h1>
-<pre><code class="language-java">import java.util.Arrays;
-
-public class QuickSort {
-
-  public static void sort(</code></pre>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
@@ -191,7 +271,7 @@ public class QuickSort {
             <pubDate>Wed, 01 May 2024 18:53:17 GMT</pubDate>
             <content:encoded><![CDATA[<h2><a href="https://leetcode.cn/problems/convert-to-base-2/">1017. 负二进制转换</a> 中等</h2>
 <p>给你一个整数 <code>n</code> ，以二进制字符串的形式返回该整数的</p>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
@@ -200,7 +280,7 @@ public class QuickSort {
             <guid>https://674019130.github.io/posts/hello-world</guid>
             <pubDate>Tue, 22 Nov 2022 05:08:32 GMT</pubDate>
             <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check [documentation](<a href="https://hex">https://hex</a></p>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
@@ -213,7 +293,7 @@ public class QuickSort {
 <p>Write your first post!<br>
 $$ test a_2$$</p>
 <h2>Usage</h2>
-]]></content:encoded>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
     </channel>
