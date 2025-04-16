@@ -3,8 +3,8 @@ title: Stats Card
 # date: 2024-05-02 02:28:12
 tags: [Stats]
 categories: [Home]
-# postTitleClass: 'text-#ffa600'
-postTitleClass: 'text-rgb(255, 0, 0)'
+postTitleClass: 'text-#ffa600'
+# postTitleClass: 'text-rgb(255, 0, 0)'
 toc: true
 codeHeightLimit: 300
 top: 100000
