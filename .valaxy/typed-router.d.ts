@@ -46,9 +46,9 @@ declare module 'vue-router/auto-routes' {
     '/posts/Java Lock Notes': RouteRecordInfo<'/posts/Java Lock Notes', '/posts/Java Lock Notes', Record<never, never>, Record<never, never>>,
     '/posts/LeetCode record 2024-04': RouteRecordInfo<'/posts/LeetCode record 2024-04', '/posts/LeetCode record 2024-04', Record<never, never>, Record<never, never>>,
     '/posts/LeetCode record 2024-05': RouteRecordInfo<'/posts/LeetCode record 2024-05', '/posts/LeetCode record 2024-05', Record<never, never>, Record<never, never>>,
-    '/posts/LeetCode Stats Card': RouteRecordInfo<'/posts/LeetCode Stats Card', '/posts/LeetCode Stats Card', Record<never, never>, Record<never, never>>,
     '/posts/LeetCode-SQL-notes': RouteRecordInfo<'/posts/LeetCode-SQL-notes', '/posts/LeetCode-SQL-notes', Record<never, never>, Record<never, never>>,
     '/posts/Oracle-Mybatis-批量更新返回值问题': RouteRecordInfo<'/posts/Oracle-Mybatis-批量更新返回值问题', '/posts/Oracle-Mybatis-批量更新返回值问题', Record<never, never>, Record<never, never>>,
+    '/posts/Stats Card': RouteRecordInfo<'/posts/Stats Card', '/posts/Stats Card', Record<never, never>, Record<never, never>>,
     '/posts/Windows 下 docker 使用笔记': RouteRecordInfo<'/posts/Windows 下 docker 使用笔记', '/posts/Windows 下 docker 使用笔记', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }

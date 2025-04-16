@@ -10,21 +10,21 @@ export default defineSiteConfig({
     codeHeightLimit: 350
   },
 
-    /**
-   * 开启阅读统计
-   */
-    statistics: {
-      enable: true,
-      readTime: {
-        /**
-         * 阅读速度
-         */
-        speed: {
-          cn: 300,
-          en: 200,
-        },
+  /**
+ * 开启阅读统计
+ */
+  statistics: {
+    enable: true,
+    readTime: {
+      /**
+       * 阅读速度
+       */
+      speed: {
+        cn: 300,
+        en: 200,
       },
     },
+  },
 
   url: 'https://674019130.github.io/',
   lang: 'zh-CN',
@@ -55,12 +55,12 @@ export default defineSiteConfig({
       icon: 'i-ri-github-line',
       color: '#6e5494',
     },
-    {
-      name: '微博',
-      link: 'https://weibo.com/u/7638556772',
-      icon: 'i-ri-weibo-line',
-      color: '#E6162D',
-    },
+    // {
+    //   name: '微博',
+    //   link: 'https://weibo.com/u/7638556772',
+    //   icon: 'i-ri-weibo-line',
+    //   color: '#E6162D',
+    // },
     // {
     //   name: '豆瓣',
     //   link: 'https://www.douban.com/people/yunyoujun/',

@@ -1,14 +1,18 @@
 ---
 title: Google Prompt Engineering 白皮书阅读笔记
 date: 2025-04-15
+top: 2
 tags: [AI, Prompt Engineering, Note]
-postTitleClass: 'text-rgb(0, 102, 255)'
 pageTtitleClass: 'text-rgb(0, 94, 255)'
 categories: [AI, Prompt Engineering]
+toc: true
+aside: false
 ---
 
-You don't need to be a data scientist or a machine learning engineer 
-– everyone can write a prompt.
+
+> You don't need to be a data scientist or a machine learning engineer – everyone can write a prompt.
+
+![CleanShot 2025-04-16 at 12.47.13@2x.png](https://s2.loli.net/2025/04/16/zEiAw6lyxd3DpRK.png)
 
 <!-- more -->
 # Google Prompt Engineering 白皮书阅读笔记
@@ -131,11 +135,10 @@ $0$记为 greedy decoding。
 这种方法可以发现人类可能没有想到的有效提示策略，提高模型在特定任务上的表现。
 
 ---------
-## 为什么 Prompt Engineering 是 `Engineering`？
-首先定义什么是 `Engineering`。
+## 为什么 Prompt Engineering 是 **Engineering**？
+首先定义什么是 **Engineering**。
 
-`Engineering` 是应用科学和数学原理来设计、构建和维护结构、机器和系统的实践。
+**Engineering** 是应用科学和数学原理来设计、构建和维护结构、机器和系统的实践。
 
-Prompt Engineering 同样需要经过设计、优化、迭代的过程。虽然大模型会出现幻觉，或者多次询问答案不一，但是经过统计学的分析，往往可以找到最优的提示策略。这个过程需要大量的实验和数据分析，所以同样是 `Engineering`。
-
+Prompt Engineering 同样需要经过设计、优化、迭代的过程。虽然大模型会出现幻觉，或者多次询问答案不一，但是经过统计学的分析，往往可以找到最优的提示策略。这个过程需要大量的实验和数据分析，所以同样是 **Engineering**。
 
