@@ -17,7 +17,9 @@ typora-copy-images-to: upload
 
 > 但是 Windows 下的 Docker 使用体验像吃了那个。
 
-![image.png](https://s2.loli.net/2024/05/28/17kjdQVX35ieZvb.png)
+> 换了 MacBook 之后终于丝滑体验了！
+
+<!-- ![image.png](https://s2.loli.net/2024/05/28/17kjdQVX35ieZvb.png) -->
 
 <!-- more -->
 ## 0. 一些简单的常用命令
