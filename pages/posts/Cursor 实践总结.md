@@ -6,6 +6,7 @@ categories: [笔记, 工具]
 postTitleClass: 'text-#112313'
 # postTitleClass: 'text-rgb(62, 52, 52)'
 toc: true
+top: 4
 codeHeightLimit: 300
 medium_zoom: true
 ---
