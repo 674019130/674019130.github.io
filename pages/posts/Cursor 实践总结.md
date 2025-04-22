@@ -1,5 +1,5 @@
 ---
-title: Cursor 实践总结
+title: Cursor 个人最佳实践总结
 # date: 2024-05-02 02:28:12
 tags: [Cursor]
 categories: [笔记, 工具]
@@ -13,7 +13,7 @@ medium_zoom: true
 
 <!-- more -->
 
-# Cursor 实践总结
+# Cursor 个人最佳实践总结
 
 1. 在每次成功的 Agent run 之后反思总结，**根据其内容迭代更新 Cursor Rules**（尝试用更新后的 Rules 做同一件事，观察效果）
 2. 定期更新、整理 Cursor Rules
