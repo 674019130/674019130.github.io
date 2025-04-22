@@ -19,7 +19,6 @@ aside: false
 
 Origin PDF link: https://drive.google.com/file/d/1AbaBYbEa_EbPelsT40-vj64L-2IwUJHy/view?pli=1
 
-## Prompt 为什么会是 Engineering？
 
 ## 参数`['temperature', 'top_p', 'top_k', 'max_tokens']`
 
