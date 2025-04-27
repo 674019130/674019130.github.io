@@ -5,6 +5,7 @@ tags: [Valaxy, Hexo, 博客迁移, GitHub Actions, GitHub Pages]
 categories: [技术笔记, Web开发, 工具与环境]
 author: 苏
 postTitleClass: 'text-#FF8EB3'
+top: 3
 # type: yuque
 # color: 'red'
 # color: '#FF8EB3'

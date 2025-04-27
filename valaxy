@@ -1,0 +1,69 @@
+
+◐ Resolve valaxy config ...                                                                                                13:59:45
+✔ Resolve siteConfig from /Users/mxc/cursor-workplace/674019130.github.io/site.config.ts 31.90ms                          13:59:46
+✔ Resolve userValaxyConfig from /Users/mxc/cursor-workplace/674019130.github.io/valaxy.config.ts 34.57ms                  13:59:46
+✔ Resolve valaxy.config.ts from theme(yun) 16.14ms                                                                        13:59:46
+✔ Resolve addons from /Users/mxc/cursor-workplace/674019130.github.io
+  ├─ valaxy-addon-waline v0.2.1 https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-addon-waline
+  └─ valaxy-addon-lightgallery v0.0.4 https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-addon-lightgallery
+⠧ [valaxy] creating server ...
+ ERROR  failed to start server. error:                                                                                     05:59:46
+
+
+YAMLException: end of the stream or a document separator is expected (11:1)
+
+  8 | 
+  9 | # LeetCode 数据库刷题笔记
+ 10 | 
+ 11 | > 只做重点的记录。
+------^
+ 12 | 
+ 13 | ## [550. 游戏玩法分析 IV](https://lee ...
+    at generateError (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/js-yaml/dist/js-yaml.mjs:1273:10)
+    at throwError (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/js-yaml/dist/js-yaml.mjs:1277:9)
+    at readDocument (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/js-yaml/dist/js-yaml.mjs:2735:5)
+    at loadDocuments (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/js-yaml/dist/js-yaml.mjs:2778:5)
+    at Object.load$1 [as load] (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/js-yaml/dist/js-yaml.mjs:2804:19)
+    at Object.parse (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/dist/chunk-AP7OY5ZQ.js:861:28)
+    at module.exports (/Users/mxc/cursor-workplace/674019130.github.io/node_modules/gray-matter/lib/parse.js:12:17)
+    at parseMatter (/Users/mxc/cursor-workplace/674019130.github.io/node_modules/gray-matter/index.js:109:17)
+    at matter (/Users/mxc/cursor-workplace/674019130.github.io/node_modules/gray-matter/index.js:50:10)
+    at Object.extendRoute (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/dist/chunk-AP7OY5ZQ.js:3811:44)
+    at Object.scanPages (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/unplugin-vue-router/dist/chunk-7VU2UIPH.
+    at Object.scanPages (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/unplugin-vue-router/dist/chunk-7VU2UIPH.js:1419:34)
+    at async Promise.all (index 2)
+    at async EnvironmentPluginContainer.hookParallel (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/node
+    at async EnvironmentPluginContainer.hookParallel (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/node_modules/vite/dist/node/chunks/dep-BMIURPaQ.js:42111:5)
+    at async EnvironmentPluginContainer.buildStart (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/node_m
+    at async EnvironmentPluginContainer.buildStart (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/node_modules/vite/dist/node/chunks/dep-BMIURPaQ.js:42130:5)
+    at async file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/node_modules/vite/dist/node/chunks/dep-BMIURP
+    at async file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/node_modules/vite/dist/node/chunks/dep-BMIURPaQ.js:38661:7
+    at async httpServer.listen (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/node_modules/vite/dist/nod
+    at async httpServer.listen (file:///Users/mxc/cursor-workplace/674019130.github.io/node_modules/valaxy/node_modules/vite/dist/node/chunks/dep-BMIURPaQ.js:38676:9) {
+  reason: 'end of the stream or a document separator is expected',
+  mark: {
+    name: null,
+    buffer: '\n' +
+      'title: LeetCode SQL 练习笔记\n' +
+      'date: 2024-05-02 02:28:12\n' +
+      'tags: [LeetCode, SQL]\n' +
+      'categories: [技术笔记, 数据库, 算法与数据结构]\n' +
+      '# top: 1\n' +
+      '# excerpt: \n' +
+      '\n' +
+      '# LeetCode 数据库刷题笔记\n' +
+      '\n' +
+      '> 只做重点的记录。\n' +
+      '\n' +
+      '## [550. 游戏玩法分析 IV](https://leetcode.cn/problems/game-play-analysis-iv/) 中等\n',
+    position: 149,
+    line: 10,
+    column: 0,
+    snippet: '  8 | \n' +
+      '  9 | # LeetCode 数据库刷题笔记\n' +
+      ' 10 | \n' +
+      ' 11 | > 只做重点的记录。\n' +
+      '------^\n' +
+      ' 12 | \n' +
+      ' 13 | ## [550. 游戏玩法分析 IV](https://lee ...'
+  }

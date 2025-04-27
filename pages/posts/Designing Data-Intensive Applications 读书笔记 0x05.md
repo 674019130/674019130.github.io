@@ -1,5 +1,5 @@
 ---
-title: Designing Data-Intensive Applications 读书笔记 0x05
+title: 《Designing Data-Intensive Applications》 读书笔记 | 0x05
 # date: 2024-05-02 02:28:12
 tags: [DDIA, 读书笔记, 数据密集型应用]
 categories: [技术笔记, 分布式系统]
