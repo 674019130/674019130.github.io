@@ -1,11 +1,10 @@
 ---
-title: Windows 下 Docker 使用笔记
-# date: 2024-05-29 20:19:12
-tags: [docker]
-categories: [笔记, docker]
-author: 苏
-type: yuque
-codeHeightLimit: 300
+title: Windows 下 docker 使用笔记
+# date: 2024-05-02 02:28:12
+tags: [Docker, Windows, WSL]
+categories: [技术笔记, 工具与环境]
+toc: true
+# top: 1
 # color: 'red'
 # color: '#FF8EB3'
 # color: 'rgb(255, 0, 255)'

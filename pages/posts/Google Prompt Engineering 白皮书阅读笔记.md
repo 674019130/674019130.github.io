@@ -1,10 +1,8 @@
 ---
 title: Google Prompt Engineering 白皮书阅读笔记
-date: 2025-04-15
-top: 2
-tags: [AI, Prompt Engineering, Note]
-pageTtitleClass: 'text-rgb(0, 94, 255)'
-categories: [AI, Prompt Engineering]
+# date: 2024-05-02 02:28:12
+tags: [Prompt Engineering, LLM, AI, 读书笔记]
+categories: [技术笔记, AI与大模型]
 toc: true
 aside: false
 ---

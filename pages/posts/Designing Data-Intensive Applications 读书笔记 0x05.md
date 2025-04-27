@@ -1,11 +1,12 @@
 ---
-title: 《Designing Data-Intensive Applications》 读书笔记 | 0x05
-date: 2024-05-09 17:16:59
-tags: [DDIA, System Design]
-categories: [读书笔记, DDIA]
+title: Designing Data-Intensive Applications 读书笔记 0x05
+# date: 2024-05-02 02:28:12
+tags: [DDIA, 读书笔记, 数据密集型应用]
+categories: [技术笔记, 分布式系统]
 excerpt: 来看看作者如何从另一种角度描述分布式系统。
 author: 苏
 color: palevioletred
+toc: true
 ---
 
 > 我们必须跳出电脑指令序列的窠臼。叙述定义、描述元数据、梳理关系，**而不是编写过程**。

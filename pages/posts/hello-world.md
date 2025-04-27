@@ -1,8 +1,8 @@
 ---
-title: Hello World
-tags: [Hello, World]
-date: 2022-11-02 18:03:34
-categories: [测试, 盘古开天辟地]
+title: Hello, World!
+# date: 2024-05-02 02:28:12
+tags: [随笔]
+categories: [生活随笔]
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

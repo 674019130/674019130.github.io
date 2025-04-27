@@ -1,8 +1,8 @@
 ---
 title: LeetCode record 2024-04
-date: 2024-04-29 15:37:59
-tags: [LeetCode, 算法]
-categories: [LeetCode]
+date: 2024-04-27 00:00:00
+tags: [LeetCode, 刷题记录]
+categories: [技术笔记, 算法与数据结构]
 excerpt: LeetCode 2024 年 4 月 刷题记录。
 author: 苏
 toc: true

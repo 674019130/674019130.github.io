@@ -1,8 +1,9 @@
 ---
-title: Stats Card
+title: 在 Profile 中展示好看的 Github Stats Card
 # date: 2024-05-02 02:28:12
-tags: [Stats]
-categories: [Home]
+tags: [Github, Github Stats]
+categories: [技术笔记, 工具与环境]
+author: 苏
 postTitleClass: 'text-#ffa600'
 # postTitleClass: 'text-rgb(255, 0, 0)'
 toc: true

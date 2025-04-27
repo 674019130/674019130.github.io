@@ -1,11 +1,8 @@
 ---
 title: Hello, Valaxy!
-date: 2022-04-01
-updated: 2022-04-01
-categories: Valaxy 笔记
-tags:
-  - valaxy
-  - 笔记
+# date: 2024-05-02 02:28:12
+tags: [Valaxy, 博客]
+categories: [技术笔记, Web开发]
 # top: 1
 ---
 

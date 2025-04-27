@@ -1,10 +1,11 @@
 ---
 title: 分布式事务解决方案 Seata 学习笔记
 date: 2024-06-28 00:24:45
-tags: [分布式, 分布式事务, 事务, Seata]
+tags: [Seata, 分布式事务, Java]
 postTitleClass: 'text-pink-400'
 pageTtitleClass: 'text-rgb(255, 0, 0)'
-categories: [笔记, 分布式系统]
+categories: [技术笔记, 分布式系统, 编程语言]
+toc: true
 ---
 
 **截至 2025-04-15，依然没能在项目中用上 T_T，是确实还没场景**

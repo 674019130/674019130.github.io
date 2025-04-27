@@ -1,15 +1,15 @@
 ---
 title: 记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 GitHub Pages
 # date: 2024-05-03 02:28:12
-tags: [Valaxy, GitHub]
-categories: [笔记, 博客]
+tags: [Valaxy, Hexo, 博客迁移, GitHub Actions, GitHub Pages]
+categories: [技术笔记, Web开发, 工具与环境]
 author: 苏
 postTitleClass: 'text-#FF8EB3'
 # type: yuque
 # color: 'red'
 # color: '#FF8EB3'
 # color: 'rgb(255, 0, 191)'
-# color: '255, 0, 255'
+# color: '255, 0, 255'
 ---
 
 *仿佛只有有一个自己的博客，才像个理想中的程序员。*

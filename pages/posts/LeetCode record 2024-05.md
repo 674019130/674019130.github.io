@@ -1,8 +1,8 @@
 ---
 title: LeetCode record 2024-05
-# date: 2024-05-02 02:28:12
-tags: [LeetCode, 算法]
-categories: [LeetCode]
+date: 2024-05-27 00:00:00
+tags: [LeetCode, 刷题记录]
+categories: [技术笔记, 算法与数据结构]
 author: 苏
 toc: true
 codeHeightLimit: 300

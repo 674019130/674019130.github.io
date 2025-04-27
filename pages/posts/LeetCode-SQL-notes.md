@@ -1,12 +1,10 @@
 ---
-title: LeetCode 数据库刷题笔记
-author: 苏
-date: 2022-11-02 18:04:34
-tags: [LeetCode, 数据库]
-categories: [LeetCode, 数据库]
-readmore: true
-excerpt: 记录在 LeetCode SQL 相关的题目。调皮的小知识点有点多，用笔记📔把它们一网打尽！
----
+title: LeetCode SQL 练习笔记
+date: 2024-05-02 02:28:12
+tags: [LeetCode, SQL]
+categories: [技术笔记, 数据库, 算法与数据结构]
+# top: 1
+# excerpt: 
 
 # LeetCode 数据库刷题笔记
 

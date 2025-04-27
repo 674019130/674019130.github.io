@@ -1,8 +1,10 @@
 ---
-title: Oracle & Mybatis 批量更新返回值问题
-date: 2022-11-04 09:29:59
-tags: [数据库, Oracle, Mybatis, Java]
-categories: [奇奇怪怪的项目里的问题]
+title: Oracle-Mybatis-批量更新返回值问题
+# date: 2024-05-02 02:28:12
+tags: [Oracle, Mybatis, Java, JDBC]
+categories: [技术笔记, 数据库, 编程语言]
+# top: 1
+# excerpt: 
 author: 苏
 readmore: true
 excerpt: Mybatis 在使用（批量）更新语句的时候，应该在 SQL 语句正常执行完毕后返回「受影响行数」，但在连接的数据库是 Oracle 的时候却一直返回 -1，无法对 SQL 的执行状态进行判断，为了解决这个问题，我做了一些尝试……
@@ -30,7 +32,7 @@ ORM：Mybatis
 
 解决了批量更新的问题，返回值还是 -1，开始查网上的资料。无奈 Mybatis & Oracle 的相关资料非常少，包括外网也是。
 
-当数据库是 MySQL 的时候，可以通过修改 JDBC 的 URL 参数，添加`”affectedRows=true“`来实现返回受影响行数的功能（我自己在 MySQL 数据库开发的时候并没有遇到需要额外配置这个参数的情况）。于是我去搜了 Oracle JDBC 的官方文档，官方给出的 URL 参数里并没有效果类似`”affectedRows“`的，这条路走不通。
+当数据库是 MySQL 的时候，可以通过修改 JDBC 的 URL 参数，添加`"affectedRows=true"`来实现返回受影响行数的功能（我自己在 MySQL 数据库开发的时候并没有遇到需要额外配置这个参数的情况）。于是我去搜了 Oracle JDBC 的官方文档，官方给出的 URL 参数里并没有效果类似`"affectedRows"`的，这条路走不通。
 
 JDBC 连接上走不通，看看能不能从 Mybatis 入手。继续搜别的资料。
 
