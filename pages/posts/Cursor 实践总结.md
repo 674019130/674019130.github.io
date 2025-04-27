@@ -11,9 +11,13 @@ codeHeightLimit: 300
 medium_zoom: true
 ---
 
+> 
+
 <!-- more -->
 
 # Cursor 个人最佳实践总结
+
+0. 不依赖 Cursor，必要情况下自己手写，以及 Cursor 写出来的代码自己也得能写，时间允许的情况下可以写得更好
 
 1. 在每次成功的 Agent run 之后反思总结，**根据其内容迭代更新 Cursor Rules**（尝试用更新后的 Rules 做同一件事，观察效果）
 2. 定期更新、整理 Cursor Rules
