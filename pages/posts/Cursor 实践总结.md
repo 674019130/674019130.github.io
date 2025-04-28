@@ -3,7 +3,7 @@ title: Cursor 个人最佳实践总结
 # date: 2024-05-02 02:28:12
 tags: [Cursor, AI辅助编程]
 categories: [技术笔记, 工具与环境]
-postTitleClass: 'text-#112313'
+postTitleClass: 'text-#4169E1'
 # postTitleClass: 'text-rgb(62, 52, 52)'
 toc: true
 top: 4
