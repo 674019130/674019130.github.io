@@ -4,7 +4,7 @@ date: 2024-06-28 00:24:45
 tags: [Seata, 分布式事务, Java]
 postTitleClass: 'text-pink-400'
 pageTtitleClass: 'text-rgb(255, 0, 0)'
-categories: [技术笔记, 分布式系统, 编程语言]
+categories: [技术笔记, 分布式系统]
 toc: true
 ---
 

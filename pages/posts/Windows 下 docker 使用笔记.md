@@ -7,8 +7,8 @@ toc: true
 top: 1
 # color: 'red'
 # color: '#FF8EB3'
-# color: 'rgb(255, 0, 255)'
-# color: '255, 0, 255'
+# color: 'rgb(255, 0, 255)'
+# color: '255, 0, 255'
 typora-copy-images-to: upload
 ---
 
@@ -28,7 +28,7 @@ typora-copy-images-to: upload
 hostname -i
 ```
 
-你可以使用命令 `netsh int ipv4 show dynamicport tcp` 查看当前的“TCP 动态端口范围”
+你可以使用命令 `netsh int ipv4 show dynamicport tcp` 查看当前的"TCP 动态端口范围"
 
 还可使用 `netsh int ipv4 show excludedportrange protocol=tcp` 查看当前已经被征用的端口
 
@@ -212,12 +212,12 @@ clientSocketSndBufSize=131072
 
 > 进入正题，为什么会发生这个错误？这里不得不说明一下两个和问题有关的特性。
 >
-> - Windows 中个东西叫做“**TCP 动态端口范围**”，这个范围内的端口有时候会被一些服务占用。在 Windows Vista（或 Windows Server 2008）之前，动态端口范围是 1025 到 5000；在其之后的版本中，新的默认起始端口为 49152，新的默认结束端口为 65535。
+> - Windows 中个东西叫做"**TCP 动态端口范围**"，这个范围内的端口有时候会被一些服务占用。在 Windows Vista（或 Windows Server 2008）之前，动态端口范围是 1025 到 5000；在其之后的版本中，新的默认起始端口为 49152，新的默认结束端口为 65535。
 > - **如果安装了 Hyper-V，则 Hyper-V 会保留一些随机端口号供 Windows [容器](https://cloud.tencent.com/product/tke?from_column=20065&from=20065)主机网络服务使用。**
 >
-> 一般情况（正常情况下）Hyper-V 会在“TCP 动态端口范围”中预留一些随机的端口号，但是预留的端口号一般都很大，所以即使预留了成百上千个端口，也影响不大。但是 Windows 自动更新有时会出错（万恶的自动更新），把“TCP 动态端口范围”起始端口被重置为 1024，导致 Hyper-V 在预留端口的时候占用了常用端口号，使得一些常用端口因为被预留而无法使用。
+> 一般情况（正常情况下）Hyper-V 会在"TCP 动态端口范围"中预留一些随机的端口号，但是预留的端口号一般都很大，所以即使预留了成百上千个端口，也影响不大。但是 Windows 自动更新有时会出错（万恶的自动更新），把"TCP 动态端口范围"起始端口被重置为 1024，导致 Hyper-V 在预留端口的时候占用了常用端口号，使得一些常用端口因为被预留而无法使用。
 >
-> 你可以使用命令 `netsh int ipv4 show dynamicport tcp` 查看当前的“TCP 动态端口范围”，还可使用 `netsh int ipv4 show excludedportrange protocol=tcp` 查看当前已经被征用的端口。
+> 你可以使用命令 `netsh int ipv4 show dynamicport tcp` 查看当前的"TCP 动态端口范围"，还可使用 `netsh int ipv4 show excludedportrange protocol=tcp` 查看当前已经被征用的端口。
 
 我用的引擎其实是 WSL 2，好像是跟这个 Hyper-V 没关系，但是本着刨根问底的原则，查了一下被征用的端口：
 

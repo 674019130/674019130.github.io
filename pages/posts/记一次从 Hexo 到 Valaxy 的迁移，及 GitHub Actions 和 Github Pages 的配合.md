@@ -2,7 +2,7 @@
 title: 记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 GitHub Pages
 # date: 2024-05-03 02:28:12
 tags: [Valaxy, Hexo, 博客迁移, GitHub Actions, GitHub Pages]
-categories: [技术笔记, Web开发, 工具与环境]
+categories: [技术笔记, Web开发]
 author: 苏
 postTitleClass: 'text-#FF8EB3'
 top: 3

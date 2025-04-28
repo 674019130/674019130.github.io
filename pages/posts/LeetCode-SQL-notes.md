@@ -2,7 +2,7 @@
 title: LeetCode SQL 练习笔记
 date: 2024-05-02 02:28:12
 tags: [LeetCode, SQL]
-categories: [技术笔记, 数据库, 算法与数据结构]
+categories: [技术笔记, 数据库]
 # top: 1
 # excerpt: 
 ---

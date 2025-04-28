@@ -2,7 +2,7 @@
 title: Java Lock Notes
 # date: 2024-05-02 02:28:12
 tags: [Java, Lock, JUC, 并发]
-categories: [技术笔记, 编程语言, 并发编程]
+categories: [技术笔记, 并发编程]
 author: 苏
 readmore: true
 toc: true

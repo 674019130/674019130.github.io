@@ -2,7 +2,7 @@
 title: Oracle-Mybatis-批量更新返回值问题
 # date: 2024-05-02 02:28:12
 tags: [Oracle, Mybatis, Java, JDBC]
-categories: [技术笔记, 数据库, 编程语言]
+categories: [技术笔记, 数据库]
 # top: 1
 # excerpt: 
 author: 苏

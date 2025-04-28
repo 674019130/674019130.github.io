@@ -2,7 +2,7 @@
 title: Java 面试优质题目笔记
 # date: 2024-05-02 02:28:12
 tags: [Java, 面试题]
-categories: [技术笔记, 软件工程, 编程语言]
+categories: [技术笔记, 软件工程]
 author: 苏
 type: yuque
 # hide: true
