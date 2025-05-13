@@ -3,7 +3,7 @@ title: AI Horseless Carriages 读书笔记
 date: 2025-04-27 14:17:00
 tags: [AI, 读书笔记]
 categories: [技术笔记, AI与大模型]
-postTitleClass: 'text-#E6E6FA'
+postTitleClass: 'text-#4169E1'
 top: 6
 ---
 
