@@ -1,5 +1,5 @@
 ---
-title: LangGraph + FastAPI 初见
+title: LangGraph + FastAPI 开发 Agent 应用 ｜ 0x01
 # date: 2024-05-02 02:28:12
 tags: [LangGraph, FastAPI]
 categories: [技术笔记, AI应用开发]
@@ -26,4 +26,4 @@ medium_zoom: true
 我们从另一个问题开始：如果我不用 LangGraph，我会用什么？
 那么引出另一个比较 base 的问题：我用这些框架的目的是什么？
 
-是的，我们要
+是的，我们要开发一个 Agent 应用。我要控制 Agent 的执行流程，我需要 Agent 的输出，我需要 Agent 的输入，我需要 Agent 的中间状态，我需要 Agent 的中间输出。
