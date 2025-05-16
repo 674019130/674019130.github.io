@@ -1,0 +1,326 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "苏",
+    "home_page_url": "https://674019130.github.io/",
+    "feed_url": "https://674019130.github.io/feed.json",
+    "description": "I was 26 years old and didn't know what I could do other than write some simple code.",
+    "icon": "https://gravatar.com/userimage/135478784/07954c26f630b810ec9709a8907dab5f.jpeg",
+    "author": {
+        "name": "苏",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<p><strong>截至 2025-04-15，依然没能在项目中用上 T_T，是确实还没场景</strong></p>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/分布式事务 Seata 学习笔记\" target=\"_blank\">https://674019130.github.io/posts/分布式事务 Seata 学习笔记</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/分布式事务 Seata 学习笔记",
+            "title": "分布式事务解决方案 Seata 学习笔记",
+            "date_modified": "2024-06-28T00:24:45.000Z",
+            "date_published": "2025-05-16T09:07:59.826Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>跟 ChatGPT 聊天甚至都觉得有些麻烦了 T_T</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/常用业务代码片段\" target=\"_blank\">https://674019130.github.io/posts/常用业务代码片段</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/常用业务代码片段",
+            "title": "常用业务代码片段",
+            "date_modified": "2024-05-02T02:28:12.000Z",
+            "date_published": "2025-05-16T09:07:59.826Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>快速排序（递归版）</h1>\n<pre><code class=\"language-java\">import java.util.Arrays;\n\npublic class QuickSort {\n\n  public static void sort(</code></pre>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/常用算法代码片段\" target=\"_blank\">https://674019130.github.io/posts/常用算法代码片段</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/常用算法代码片段",
+            "title": "常用算法代码片段",
+            "date_modified": "2025-05-16T09:07:59.826Z",
+            "date_published": "2025-05-16T09:07:59.826Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p><em>仿佛只有有一个自己的博客，才像个理想中的程序员。</em></p>\n<p><em>从买一台云主机，部署 WordPress，到 Hexo，再到前几天被 <a href=\"https://github.com/YunYouJun\">云游君</a> 安利的（也就是现在在使用的）Valaxy，也经历了蛮久。</em></p>\n<p><em>但是记录和折腾这么久，自己又真正学到了什么东西呢？</em></p>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合\" target=\"_blank\">https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合",
+            "title": "记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 GitHub Pages",
+            "date_modified": "2025-05-16T09:07:59.826Z",
+            "date_published": "2025-05-16T09:07:59.826Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<br/><p>访问 <a href=\"https://674019130.github.io/posts/LangGraph + FastAPI 开发 Agent 应用 ｜ 0x01\" target=\"_blank\">https://674019130.github.io/posts/LangGraph + FastAPI 开发 Agent 应用 ｜ 0x01</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/LangGraph + FastAPI 开发 Agent 应用 ｜ 0x01",
+            "title": "LangGraph + FastAPI 开发 Agent 应用 ｜ 0x01",
+            "date_modified": "2025-05-16T09:07:59.825Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2><a href=\"https://leetcode.cn/problems/convert-to-base-2/\">1017. 负二进制转换</a> 中等</h2>\n<p>给你一个整数 <code>n</code> ，以二进制字符串的形式返回该整数的</p>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/LeetCode record 2024-04\" target=\"_blank\">https://674019130.github.io/posts/LeetCode record 2024-04</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/LeetCode record 2024-04",
+            "title": "LeetCode record 2024-04",
+            "date_modified": "2024-04-27T00:00:00.000Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p><strong>如果有一天没有打卡，会不会辜负踌躇满志的那个自己。</strong></p>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/LeetCode record 2024-05\" target=\"_blank\">https://674019130.github.io/posts/LeetCode record 2024-05</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/LeetCode record 2024-05",
+            "title": "LeetCode record 2024-05",
+            "date_modified": "2024-05-27T00:00:00.000Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>LeetCode 数据库刷题笔记</h1>\n<blockquote>\n<p>只做重点的记录。</p>\n</blockquote>\n<h2>[550. 游戏玩法分析 IV](<a href=\"https://leetcode.cn/problems/game-play-analysis-\">https://leetcode.cn/problems/game-play-analysis-</a></h2>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/LeetCode-SQL-notes\" target=\"_blank\">https://674019130.github.io/posts/LeetCode-SQL-notes</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/LeetCode-SQL-notes",
+            "title": "LeetCode SQL 练习笔记",
+            "date_modified": "2024-05-02T02:28:12.000Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>场景</h1>\n<p>ORM：Mybatis</p>\n<p>数据库：Oracle</p>\n<p>组里新人写的一个接口。</p>\n<p>传给 Mapper 层的是两个元素数量相等的 List，根据某两个字段是否与 List 中的元素匹配，对 st</p>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题\" target=\"_blank\">https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题",
+            "title": "Oracle-Mybatis-批量更新返回值问题",
+            "date_modified": "2025-05-16T09:07:59.825Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p><img src=\"http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=674019130&amp;theme=github\" alt=\"GitHub Stats\"></p>\n<!-- ![LeetCode Stats](https://leetcard.jacoblin.cool/treepoem?theme=light&font=Cairo&ext=heatmap&site=cn) -->\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Stats Card\" target=\"_blank\">https://674019130.github.io/posts/Stats Card</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Stats Card",
+            "title": "Stats Card",
+            "date_modified": "2025-05-16T09:07:59.825Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p><strong>Docker 伟大，无需多言！</strong></p>\n<blockquote>\n<p>但是 Windows 下的 Docker 使用体验像吃了那个。</p>\n</blockquote>\n<blockquote>\n<p>换了 MacBook 之后终于丝滑体验了！</p>\n</blockquote>\n<!-- ![image.png](https://s2.loli.net/2024/05/28/17kjdQVX35ieZvb.png) -->\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Windows 下 docker 使用笔记\" target=\"_blank\">https://674019130.github.io/posts/Windows 下 docker 使用笔记</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Windows 下 docker 使用笔记",
+            "title": "Windows 下 docker 使用笔记",
+            "date_modified": "2025-05-16T09:07:59.825Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!<br>\n$$ test a_2$$</p>\n<h2>Usage</h2>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/hello-valaxy\" target=\"_blank\">https://674019130.github.io/posts/hello-valaxy</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2025-05-16T09:07:59.825Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>Welcome to <a href=\"https://hexo.io/\">Hexo</a>! This is your very first post. Check [documentation](<a href=\"https://hex\">https://hex</a></p>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/hello-world\" target=\"_blank\">https://674019130.github.io/posts/hello-world</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/hello-world",
+            "title": "Hello, World!",
+            "date_modified": "2025-05-16T09:07:59.825Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>什么是代码规范？</h1>\n<blockquote>\n<p>“衡量代码质量的唯一标准是阅读该代码时说脏话的次数”。</p>\n<p>——Robert C. Martin</p>\n<p>&lt;img src=&quot;<a href=\"https://pica.zhim\">https://pica.zhim</a></p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/关于代码规范的一些粗浅想法\" target=\"_blank\">https://674019130.github.io/posts/关于代码规范的一些粗浅想法</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/关于代码规范的一些粗浅想法",
+            "title": "关于代码规范的一些粗浅想法",
+            "date_modified": "2025-05-16T09:07:59.825Z",
+            "date_published": "2025-05-16T09:07:59.825Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>I suspect that in the future we'll look back and laugh at the idea that a &quot;prompt injection&quot; (like &quot;Ignore previous instructions...&quot;) was something to be concerned about.</p>\n</blockquote>\n<blockquote>\n<p>未来我们可能会对&quot;提示注入&quot;这种担忧感到好笑。<br>\n<img src=\"https://koomen.dev/images/steam-carriage.png\" alt=\"蒸汽机车\"></p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/AI Horseless Carriages\" target=\"_blank\">https://674019130.github.io/posts/AI Horseless Carriages</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/AI Horseless Carriages",
+            "title": "AI Horseless Carriages 读书笔记",
+            "date_modified": "2025-04-27T14:17:00.000Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>在使用新工具的路上四处张望，捡起了一些未知价值的石子。</p>\n</blockquote>\n<blockquote>\n<p>一定不要忘了原来的工具怎么用，AI 辅助编程越强大，手写代码的能力就越重要。</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Cursor 实践总结\" target=\"_blank\">https://674019130.github.io/posts/Cursor 实践总结</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Cursor 实践总结",
+            "title": "Cursor 个人最佳实践总结",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>第一章：可靠性、可伸缩性和可维护性</h1>\n<!-- > ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.<br/><p>访问 <a href=\"https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00\" target=\"_blank\">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x00",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>第二章：数据模型与查询语言</h1>\n<blockquote>\n<p>多数应用使用层层叠加的数据模型构建。对于每层数据模型的关键问题是：它是如何用低一层数据模型来 <strong>表示</strong> 的？例如：</p>\n<ol>\n<li>作为一名应用开发人员，你观</li>\n</ol>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01\" target=\"_blank\">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x01",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>第三章：存储与检索</h1>\n<blockquote>\n<p>为了高效查找数据库中特定键的值，我们需要一个数据结构：<strong>索引（index）</strong>。本章将介绍一系列的索引结构，并在它们之间进行比较。索引背后的大致思想是通过保存一些额外</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02\" target=\"_blank\">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x02",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>唯变所适</p>\n<p>—— 以弗所的赫拉克利特，为柏拉图所引（公元前 360 年）</p>\n</blockquote>\n<hr>\n<blockquote>\n<h4>远程过程调用（RPC）的问题</h4>\n<p>Web 服务仅仅是通过网络进行 API 请求的一系</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03\" target=\"_blank\">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x03",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>与可能出错的东西比，&quot;不可能&quot;出错的东西最显著的特点就是：一旦真的出错，通常就彻底玩完了。</p>\n<p>—— 道格拉斯・亚当斯（1992）</p>\n</blockquote>\n<hr>\n<blockquote>\n<p>复制意味着在通过网络连接的多台机器上保留相</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04\" target=\"_blank\">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x04",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>我们必须跳出电脑指令序列的窠臼。叙述定义、描述元数据、梳理关系，<strong>而不是编写过程</strong>。</p>\n<p>—— Grace Murray Hopper，未来的计算机及其管理（1962）</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05\" target=\"_blank\">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05",
+            "title": "《Designing Data-Intensive Applications》 读书笔记 | 0x05",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<br/><p>访问 <a href=\"https://674019130.github.io/posts/Google Agent Companion 白皮书阅读笔记\" target=\"_blank\">https://674019130.github.io/posts/Google Agent Companion 白皮书阅读笔记</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Google Agent Companion 白皮书阅读笔记",
+            "title": "Google Agent Companion 白皮书阅读笔记",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>You don't need to be a data scientist or a machine learning engineer – everyone can write a prompt.</p>\n</blockquote>\n<p><img src=\"https://s2.loli.net/2025/04/16/zEiAw6lyxd3DpRK.png\" alt=\"CleanShot 2025-04-16 at 12.47.13@2x.png\"></p>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Google Prompt Engineering 白皮书阅读笔记\" target=\"_blank\">https://674019130.github.io/posts/Google Prompt Engineering 白皮书阅读笔记</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Google Prompt Engineering 白皮书阅读笔记",
+            "title": "Google Prompt Engineering 白皮书阅读笔记",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p><a href=\"https://tech.meituan.com/2018/11/15/java-lock.html\">https://tech.meituan.com/2018/11/15/java-lock.html</a></p>\n</blockquote>\n<p>美团这篇写的很好，非常适合拿来复习。</p>\n<hr>\n<p>![img](https://awps-</p>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Java Lock Notes\" target=\"_blank\">https://674019130.github.io/posts/Java Lock Notes</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Java Lock Notes",
+            "title": "Java Lock Notes",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>Talk is cheap, show me the code.</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://674019130.github.io/posts/Java 面试优质题目笔记\" target=\"_blank\">https://674019130.github.io/posts/Java 面试优质题目笔记</a> 阅读全文。</p>",
+            "url": "https://674019130.github.io/posts/Java 面试优质题目笔记",
+            "title": "Java 面试优质题目笔记",
+            "date_modified": "2025-05-16T09:07:59.824Z",
+            "date_published": "2025-05-16T09:07:59.824Z",
+            "author": {
+                "name": "苏",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
