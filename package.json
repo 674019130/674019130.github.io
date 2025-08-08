@@ -12,15 +12,15 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "valaxy": "0.22.17",
+    "valaxy": "^0.26.1",
     "valaxy-addon-bangumi": "^0.2.2",
     "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-lightgallery": "^0.0.4",
     "valaxy-addon-twikoo": "^0.0.3",
-    "valaxy-addon-waline": "^0.2.0",
-    "valaxy-theme-yun": "^0.22.17"
+    "valaxy-addon-waline": "^0.2.1",
+    "valaxy-theme-yun": "^0.26.1"
   },
   "devDependencies": {
-    "typescript": "^5.8.2"
+    "typescript": "^5.9.2"
   }
 }
