@@ -48,6 +48,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/LeetCode record 2024-05': RouteRecordInfo<'/posts/LeetCode record 2024-05', '/posts/LeetCode record 2024-05', Record<never, never>, Record<never, never>>,
     '/posts/LeetCode-SQL-notes': RouteRecordInfo<'/posts/LeetCode-SQL-notes', '/posts/LeetCode-SQL-notes', Record<never, never>, Record<never, never>>,
     '/posts/Oracle-Mybatis-批量更新返回值问题': RouteRecordInfo<'/posts/Oracle-Mybatis-批量更新返回值问题', '/posts/Oracle-Mybatis-批量更新返回值问题', Record<never, never>, Record<never, never>>,
+    '/posts/Sharing Valuable Articles on AI Usage': RouteRecordInfo<'/posts/Sharing Valuable Articles on AI Usage', '/posts/Sharing Valuable Articles on AI Usage', Record<never, never>, Record<never, never>>,
     '/posts/Stats Card': RouteRecordInfo<'/posts/Stats Card', '/posts/Stats Card', Record<never, never>, Record<never, never>>,
     '/posts/Windows 下 docker 使用笔记': RouteRecordInfo<'/posts/Windows 下 docker 使用笔记', '/posts/Windows 下 docker 使用笔记', Record<never, never>, Record<never, never>>,
     '/posts/关于代码规范的一些粗浅想法': RouteRecordInfo<'/posts/关于代码规范的一些粗浅想法', '/posts/关于代码规范的一些粗浅想法', Record<never, never>, Record<never, never>>,
@@ -57,4 +58,184 @@ declare module 'vue-router/auto-routes' {
     '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合': RouteRecordInfo<'/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合', '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
+
+  /**
+   * Route file to route info map by unplugin-vue-router.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * Each key is a file path relative to the project root with 2 properties:
+   * - routes: union of route names of the possible routes when in this page (passed to useRoute<...>())
+   * - views: names of nested views (can be passed to <RouterView name="...">)
+   *
+   * @internal
+   */
+  export interface _RouteFileInfoMap {
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.2_vue@3.5.13_typescript@5.9.2_/node_modules/valaxy-theme-yun/pages/index.vue': {
+      routes: '/'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy@0.26.2_@babel+parser@7.28.0_@nuxt+kit@3.16.1_@types+markdown-it@14.1.2_@types+no_6a2a1b281e341c8883325f35f5c1420e/node_modules/valaxy/client/pages/[...path].vue': {
+      routes: '/[...path]'
+      views: never
+    }
+    'pages/404.md': {
+      routes: '/404'
+      views: never
+    }
+    'pages/about/index.md': {
+      routes: '/about/'
+      views: never
+    }
+    'pages/about/site.md': {
+      routes: '/about/site'
+      views: never
+    }
+    'pages/archives/index.md': {
+      routes: '/archives/'
+      views: never
+    }
+    'pages/categories/index.md': {
+      routes: '/categories/'
+      views: never
+    }
+    'pages/links/index.md': {
+      routes: '/links/'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.2_vue@3.5.13_typescript@5.9.2_/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+      routes: '/page/[page]'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.2_vue@3.5.13_typescript@5.9.2_/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+      routes: '/posts/'
+      views: never
+    }
+    'pages/posts/AI Horseless Carriages.md': {
+      routes: '/posts/AI Horseless Carriages'
+      views: never
+    }
+    'pages/posts/Cursor 实践总结.md': {
+      routes: '/posts/Cursor 实践总结'
+      views: never
+    }
+    'pages/posts/Designing Data-Intensive Applications 读书笔记 0x00.md': {
+      routes: '/posts/Designing Data-Intensive Applications 读书笔记 0x00'
+      views: never
+    }
+    'pages/posts/Designing Data-Intensive Applications 读书笔记 0x01.md': {
+      routes: '/posts/Designing Data-Intensive Applications 读书笔记 0x01'
+      views: never
+    }
+    'pages/posts/Designing Data-Intensive Applications 读书笔记 0x02.md': {
+      routes: '/posts/Designing Data-Intensive Applications 读书笔记 0x02'
+      views: never
+    }
+    'pages/posts/Designing Data-Intensive Applications 读书笔记 0x03.md': {
+      routes: '/posts/Designing Data-Intensive Applications 读书笔记 0x03'
+      views: never
+    }
+    'pages/posts/Designing Data-Intensive Applications 读书笔记 0x04.md': {
+      routes: '/posts/Designing Data-Intensive Applications 读书笔记 0x04'
+      views: never
+    }
+    'pages/posts/Designing Data-Intensive Applications 读书笔记 0x05.md': {
+      routes: '/posts/Designing Data-Intensive Applications 读书笔记 0x05'
+      views: never
+    }
+    'pages/posts/DSPy 0x01.md': {
+      routes: '/posts/DSPy 0x01'
+      views: never
+    }
+    'pages/posts/Google Agent Companion 白皮书阅读笔记.md': {
+      routes: '/posts/Google Agent Companion 白皮书阅读笔记'
+      views: never
+    }
+    'pages/posts/Google Prompt Engineering 白皮书阅读笔记.md': {
+      routes: '/posts/Google Prompt Engineering 白皮书阅读笔记'
+      views: never
+    }
+    'pages/posts/hello-valaxy.md': {
+      routes: '/posts/hello-valaxy'
+      views: never
+    }
+    'pages/posts/hello-world.md': {
+      routes: '/posts/hello-world'
+      views: never
+    }
+    'pages/posts/Java Lock Notes.md': {
+      routes: '/posts/Java Lock Notes'
+      views: never
+    }
+    'pages/posts/Java 面试优质题目笔记.md': {
+      routes: '/posts/Java 面试优质题目笔记'
+      views: never
+    }
+    'pages/posts/LangGraph + FastAPI 开发 Agent 应用 ｜ 0x01.md': {
+      routes: '/posts/LangGraph + FastAPI 开发 Agent 应用 ｜ 0x01'
+      views: never
+    }
+    'pages/posts/LeetCode record 2024-04.md': {
+      routes: '/posts/LeetCode record 2024-04'
+      views: never
+    }
+    'pages/posts/LeetCode record 2024-05.md': {
+      routes: '/posts/LeetCode record 2024-05'
+      views: never
+    }
+    'pages/posts/LeetCode-SQL-notes.md': {
+      routes: '/posts/LeetCode-SQL-notes'
+      views: never
+    }
+    'pages/posts/Oracle-Mybatis-批量更新返回值问题.md': {
+      routes: '/posts/Oracle-Mybatis-批量更新返回值问题'
+      views: never
+    }
+    'pages/posts/Sharing Valuable Articles on AI Usage.md': {
+      routes: '/posts/Sharing Valuable Articles on AI Usage'
+      views: never
+    }
+    'pages/posts/Stats Card.md': {
+      routes: '/posts/Stats Card'
+      views: never
+    }
+    'pages/posts/Windows 下 docker 使用笔记.md': {
+      routes: '/posts/Windows 下 docker 使用笔记'
+      views: never
+    }
+    'pages/posts/关于代码规范的一些粗浅想法.md': {
+      routes: '/posts/关于代码规范的一些粗浅想法'
+      views: never
+    }
+    'pages/posts/分布式事务 Seata 学习笔记.md': {
+      routes: '/posts/分布式事务 Seata 学习笔记'
+      views: never
+    }
+    'pages/posts/常用业务代码片段.md': {
+      routes: '/posts/常用业务代码片段'
+      views: never
+    }
+    'pages/posts/常用算法代码片段.md': {
+      routes: '/posts/常用算法代码片段'
+      views: never
+    }
+    'pages/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合.md': {
+      routes: '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合'
+      views: never
+    }
+    'pages/tags/index.md': {
+      routes: '/tags/'
+      views: never
+    }
+  }
+
+  /**
+   * Get a union of possible route names in a certain route component file.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * @internal
+   */
+  export type _RouteNamesForFilePath<FilePath extends string> =
+    _RouteFileInfoMap extends Record<FilePath, infer Info>
+      ? Info['routes']
+      : keyof RouteNamedMap
 }
