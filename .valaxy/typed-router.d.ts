@@ -53,6 +53,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/Windows 下 docker 使用笔记': RouteRecordInfo<'/posts/Windows 下 docker 使用笔记', '/posts/Windows 下 docker 使用笔记', Record<never, never>, Record<never, never>>,
     '/posts/关于代码规范的一些粗浅想法': RouteRecordInfo<'/posts/关于代码规范的一些粗浅想法', '/posts/关于代码规范的一些粗浅想法', Record<never, never>, Record<never, never>>,
     '/posts/分布式事务 Seata 学习笔记': RouteRecordInfo<'/posts/分布式事务 Seata 学习笔记', '/posts/分布式事务 Seata 学习笔记', Record<never, never>, Record<never, never>>,
+    '/posts/北京、海、雨': RouteRecordInfo<'/posts/北京、海、雨', '/posts/北京、海、雨', Record<never, never>, Record<never, never>>,
     '/posts/常用业务代码片段': RouteRecordInfo<'/posts/常用业务代码片段', '/posts/常用业务代码片段', Record<never, never>, Record<never, never>>,
     '/posts/常用算法代码片段': RouteRecordInfo<'/posts/常用算法代码片段', '/posts/常用算法代码片段', Record<never, never>, Record<never, never>>,
     '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合': RouteRecordInfo<'/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合', '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合', Record<never, never>, Record<never, never>>,
@@ -208,6 +209,10 @@ declare module 'vue-router/auto-routes' {
     }
     'pages/posts/分布式事务 Seata 学习笔记.md': {
       routes: '/posts/分布式事务 Seata 学习笔记'
+      views: never
+    }
+    'pages/posts/北京、海、雨.md': {
+      routes: '/posts/北京、海、雨'
       views: never
     }
     'pages/posts/常用业务代码片段.md': {

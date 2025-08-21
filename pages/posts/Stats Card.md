@@ -14,7 +14,7 @@ medium_zoom: true
 ![GitHub Stats](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=674019130&theme=github)
 
 
-<!-- ![LeetCode Stats](https://leetcard.jacoblin.cool/treepoem?theme=light&font=Cairo&ext=heatmap&site=cn) -->
+![LeetCode Stats](https://leetcard.jacoblin.cool/treepoem?theme=light&font=Cairo&ext=heatmap&site=cn)
 
 <!-- more -->
 
