@@ -24,3 +24,13 @@ medium_zoom: true
 
   《不，人工智能并没有让工程师的工作效率提高 10 倍》
   辩证看待 AI 工具，打破你的 AI 焦虑。
+
+- https://www.anthropic.com/engineering/writing-tools-for-agents
+
+  《为 agents 编写有效的工具》
+  纸上得来终觉浅，有关评估任务的部分还是有一些参考价值的。
+
+- https://blog.langchain.com/building-langgraph/
+
+  一些 LangGraph 的设计思想和原则，可以引起一些思考。
+
