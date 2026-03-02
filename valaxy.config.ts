@@ -59,7 +59,7 @@ export default defineValaxyConfig<UserThemeConfig>({
 
   addons: [
     addonWaline({
-      serverURL: 'https://vercel-waline-cuuf-674019130s-projects.vercel.app/',
+      serverURL: 'https://mine-waline.vercel.app/',
       pageview: true,
       comment: true
     }),
