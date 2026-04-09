@@ -29,12 +29,12 @@ export default defineSiteConfig({
   url: 'https://674019130.github.io/',
   lang: 'zh-CN',
   title: '苏',
-  favicon: 'https://gravatar.com/userimage/135478784/07954c26f630b810ec9709a8907dab5f.jpeg',
+  favicon: 'https://gravatar.com/avatar/2914ec1292f53a19b51340bda091c50faaeef0fd3a5d35c1c525ad27693bb6eb?v=1775685650000&size=256&d=initials',
   author: {
     name: '苏',
-    avatar: 'https://gravatar.com/userimage/135478784/07954c26f630b810ec9709a8907dab5f.jpeg',
+    avatar: 'https://gravatar.com/avatar/2914ec1292f53a19b51340bda091c50faaeef0fd3a5d35c1c525ad27693bb6eb?v=1775685650000&size=256&d=initials',
   },
-  subtitle: '念念不忘，必有回响。',
+  subtitle: 'talk is cheap, show me the agent',
   description: 'I was 26 years old and didn\'t know what I could do other than write some simple code.',
   social: [
     // {
