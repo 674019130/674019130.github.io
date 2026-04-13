@@ -76,7 +76,7 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     banner: {
       enable: true,
-      title: ['难道你','无台风会决定留下'],
+      title: ['Push yourself','harder.'],
       cloud: {
         enable: true,
       },
