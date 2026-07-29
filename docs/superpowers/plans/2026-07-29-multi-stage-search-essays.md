@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Publish standalone Chinese and English essays about multi-stage search ranking, upgrade the compatible Valaxy stack, and replace the accumulated homepage pins with a curated six-post order while hiding Stats Card.
+**Goal:** Publish standalone Chinese and English essays that explain multi-stage search ranking through public-safe Q&A, upgrade the compatible Valaxy stack, and replace the accumulated homepage pins with a curated six-post order while hiding Stats Card.
 
-**Architecture:** Keep the two language versions as independent Valaxy posts with explicit language metadata and reciprocal links. Upgrade the framework and theme as one coordinated dependency change, migrate the removed config key, then apply content-only frontmatter changes for homepage curation. Validate the result through reproducible installs, TypeScript, SSG build, rendered-page inspection, and a public-information scan.
+**Architecture:** Keep the two language versions as independent Valaxy posts with explicit language metadata and reciprocal links. Explain the first-page ranking boundary, the two freshness stages, and Query-complexity classification at a conceptual level while withholding production thresholds and dictionaries. Upgrade the framework and theme as one coordinated dependency change, migrate the removed config key, then apply content-only frontmatter changes for homepage curation. Validate the result through reproducible installs, TypeScript, SSG build, rendered-page inspection, and a public-information scan.
 
 **Tech Stack:** Valaxy 0.28.11, valaxy-theme-yun 0.28.11, Markdown, Mermaid, TypeScript 5.9.3, pnpm 10.14.0, GitHub Pages Actions.
 
@@ -15,6 +15,7 @@
 - Keep TypeScript at `^5.9.3` and `packageManager` at `pnpm@10.14.0`.
 - Use Valaxy and valaxy-theme-yun `^0.28.11`, valaxy-addon-bangumi `^0.4.0`, and valaxy-addon-twikoo `^0.0.4`.
 - Keep company names, service names, internal acronyms, request/debug fields, real business examples, exact thresholds, weights, windows, formulas, and language-routing rules out of both public posts.
+- Do not publish the production term-count threshold, classifier decision order, registered-entity list, hot-term list, or synonym dictionaries.
 - Keep `.github/workflows/gh-pages.yml` unchanged; a push to `main` remains the only publication trigger.
 - Update both tracked lockfiles so their direct dependency versions match `package.json`.
 - Do not treat pre-existing TypeScript diagnostics as new regressions; record the exact baseline and post-change commands if any remain.
@@ -150,18 +151,26 @@ Use these section headings in order:
 ```markdown
 ## 先选择目标，再讨论算法
 ## 一张图看懂两条排序路径
+## 复杂 Query 是策略信号，不是长度开关
 ## 相关性路径：从候选到最终顺序
+## 为什么完整智能排序集中在第一页
 ## 为什么时效性要出现两次
 ## Rerank 不是推倒重来
 ## 时间排序也需要相关性门槛
-## 拿到一个 Query，如何推断它的结果
+## 不同 Query 会走向哪里
 ## 设计边界与常见误区
 ## 结语
 ```
 
-The diagnostic section walks through five observable stages: choose the ordering objective; infer lexical and semantic candidate sources; identify quality filtering/cutoff; identify base score, two freshness adjustments, and rerank; explain the final ordering and likely failure stage.
+The article must answer the three engineering questions as follows:
 
-- [ ] **Step 3: Add three Chinese Mermaid diagrams**
+- Describe Query complexity using public dimensions only: character/script shape, descriptive breadth, and known-entity exceptions. Do not disclose the production threshold, exact decision order, or any dictionaries.
+- Explain the first-page boundary as a tradeoff between a bounded candidate set and stable, resumable ordering. Cover duplicate, omission, and page-drift risks; treat lower repeated cost as a secondary benefit.
+- Explain early freshness as affecting candidate entry and late freshness as calibrating competition after fusion. Contrast early-only, late-only, and both-stage designs.
+
+Group public examples into input boundaries, short or navigational queries, descriptive queries, non-Latin and mixed-script queries, known entities, lexical-only requests, exact ID/title behavior, later pages, and chronological sorting. End with a diagnostic sequence: choose the ordering objective; infer lexical and semantic candidate sources; identify quality filtering/cutoff; locate base scoring, both freshness stages, and rerank; explain the final order and likely failure stage.
+
+- [ ] **Step 3: Add four Chinese Mermaid diagrams**
 
 The overview diagram branches from the query into relevance-first and time-first objectives. The relevance diagram contains separate nodes in this order:
 
@@ -183,7 +192,18 @@ Lexical recall
 → newest/oldest ordering
 ```
 
-Use conceptual labels only. Do not show numeric thresholds, weights, internal names, special-query dictionaries, language routing, or vendor details.
+The pagination diagram contains:
+
+```text
+First page: bounded lexical + semantic candidates
+→ fusion and optional rerank
+→ stable continuation anchor
+Later pages: lexical continuation
+→ recover candidates omitted from page one
+→ deduplicate candidates promoted earlier
+```
+
+Use conceptual labels only. Do not show numeric thresholds, weights, internal names, special-query dictionaries, language routing, vendor details, or internal cursor fields.
 
 - [ ] **Step 4: Create the English post frontmatter and summary**
 
@@ -210,16 +230,18 @@ Use these section headings in order:
 ```markdown
 ## Choose the Objective Before the Algorithm
 ## Two Ranking Paths at a Glance
+## Query Complexity Is a Policy Signal, Not a Length Switch
 ## The Relevance Path: From Candidates to Final Order
+## Why the Full Intelligent Pipeline Is Concentrated on Page One
 ## Why Freshness Appears Twice
 ## Reranking Should Not Erase the Prior
 ## Chronological Sorting Still Needs a Relevance Gate
-## Given a Query, How Can We Reason About Its Results?
+## How Different Queries Reach Different Results
 ## Design Boundaries and Common Misconceptions
 ## Closing Thoughts
 ```
 
-Cover the same reasoning model and diagrams as the Chinese post, but phrase the examples and transitions naturally for an English technical audience. Keep both posts independently understandable.
+Answer the same three public-safe Q&As as the Chinese post: Query complexity as a multi-signal policy classification, page-one intelligence as a pagination-consistency boundary, and early versus late freshness as complementary controls. Use the same grouped public scenarios and four diagrams, but phrase examples and transitions naturally for an English technical audience. Keep both posts independently understandable.
 
 - [ ] **Step 6: Scan the posts for completeness and public safety**
 
@@ -231,7 +253,7 @@ rg -n '^## ' pages/posts/multi-stage-search-ranking-{zh,en}.md
 rg -n '^```mermaid|<!-- more -->|multi-stage-search-ranking-(zh|en)' pages/posts/multi-stage-search-ranking-{zh,en}.md
 ```
 
-Expected: no placeholders or exposed implementation identifiers; each post has nine headings, one excerpt marker, a reciprocal link, and three Mermaid blocks.
+Expected: no placeholders or exposed implementation identifiers; each post has eleven headings, one excerpt marker, a reciprocal link, and four Mermaid blocks.
 
 - [ ] **Step 7: Commit the bilingual articles**
 
@@ -367,7 +389,7 @@ Run:
 pnpm serve --host 127.0.0.1
 ```
 
-Inspect the homepage, both new article routes, archives, search UI, and Stats Card direct route at desktop and narrow widths. Expected: the six pinned posts appear in approved order; all six Mermaid diagrams render; headings and TOCs are readable; reciprocal links work; no hydration error or clipped diagram is visible.
+Inspect the homepage, both new article routes, archives, search UI, and Stats Card direct route at desktop and narrow widths. Expected: the six pinned posts appear in approved order; all eight Mermaid diagrams render; headings and TOCs are readable; reciprocal links work; no hydration error or clipped diagram is visible.
 
 - [ ] **Step 4: Review the branch diff and dependency impact**
 
