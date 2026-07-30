@@ -4,7 +4,6 @@ date: 2025-04-27 14:17:00
 tags: [AI, 读书笔记]
 categories: [技术笔记, AI与大模型]
 postTitleClass: 'text-#4169E1'
-top: 6
 ---
 
 > I suspect that in the future we'll look back and laugh at the idea that a "prompt injection" (like "Ignore previous instructions...") was something to be concerned about.

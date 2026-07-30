@@ -7,7 +7,6 @@ title: DSPy 0x01
 tags: [LLM, AI, Python, DSPy]
 categories: \[技术笔记, 框架]
 toc: true
-top: 6
 aside: false
 ------------
 
