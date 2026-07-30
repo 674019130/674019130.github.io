@@ -6,7 +6,6 @@ categories: [收藏夹]
 postTitleClass: 'text-#4169E1'
 # postTitleClass: 'text-rgb(62, 52, 52)'
 toc: true
-top: 4
 codeHeightLimit: 300
 medium_zoom: true
 ---

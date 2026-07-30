@@ -4,7 +4,6 @@ date: 2026-04-13 22:10:00
 tags: [Agent, LLM, 架构, harness, Multi-Agent]
 categories: [技术笔记, AI与大模型]
 postTitleClass: 'text-#c8956c'
-top: 5
 readmore: true
 toc: true
 ---

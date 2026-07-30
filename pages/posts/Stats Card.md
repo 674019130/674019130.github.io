@@ -8,7 +8,7 @@ postTitleClass: 'text-#ffa600'
 # postTitleClass: 'text-rgb(255, 0, 0)'
 toc: true
 codeHeightLimit: 300
-top: 100000
+hide: true
 medium_zoom: true
 ---
 ![GitHub Stats](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=674019130&theme=github)
