@@ -14,7 +14,7 @@ This article presents a reusable model for that sequence. It deliberately stays 
 
 <!-- more -->
 
-> [阅读中文版](/posts/multi-stage-search-ranking-zh/)
+> [阅读中文版](/posts/multi-stage-search-ranking-zh)
 
 ## Choose the Objective Before the Algorithm
 

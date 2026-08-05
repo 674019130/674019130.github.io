@@ -14,7 +14,7 @@ top: 100
 
 <!-- more -->
 
-> [Read the English version](/posts/multi-stage-search-ranking-en/)
+> [Read the English version](/posts/multi-stage-search-ranking-en)
 
 ## 先选择目标，再讨论算法
 

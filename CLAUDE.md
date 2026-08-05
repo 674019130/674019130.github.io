@@ -76,6 +76,13 @@ postTitleClass: 'text-#颜色值'
 - `<!-- more -->` 用于分隔摘要与正文，必须添加
 - `postTitleClass` 可选，用于自定义标题颜色
 
+### 文章内部链接
+
+- 文章路径统一使用无尾斜杠的扩展名省略形式，例如 `/posts/example-post`
+- 不要写成 `/posts/example-post/`。Valaxy SSG 生成的是 `dist/posts/example-post.html`；GitHub Pages 会将无尾斜杠路径映射到该文件，但会把带尾斜杠路径当作目录并寻找 `index.html`，导致首次 HTTP 请求返回 404
+- 404 页面加载 Valaxy 客户端路由后可能仍能渲染文章，因此浏览器会表现为“先显示 404，再打开成功”；这不是服务端重定向
+- 双语文章互链和相关文章链接都必须遵守此规则
+
 ### Categories 层级
 
 顶级分类：**技术笔记** / **读书笔记** / **生活随笔**
