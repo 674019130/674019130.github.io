@@ -2,6 +2,7 @@
 title: "When Relevance Meets Recency: Engineering a Multi-Stage Search Ranking System"
 date: 2026-07-29 12:05:00
 lang: en
+translationKey: multi-stage-search-ranking
 tags: [Search, Information Retrieval, BM25, ANN, Rerank]
 categories: [技术笔记, 软件工程]
 toc: true
@@ -14,7 +15,11 @@ This article presents a reusable model for that sequence. It deliberately stays 
 
 <!-- more -->
 
-> [阅读中文版](/posts/multi-stage-search-ranking-zh)
+<PostLanguageSwitch
+  current="en"
+  english-path="/posts/multi-stage-search-ranking-en"
+  chinese-path="/posts/multi-stage-search-ranking-zh"
+/>
 
 ## Choose the Objective Before the Algorithm
 

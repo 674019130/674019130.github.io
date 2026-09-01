@@ -1,7 +1,9 @@
 # Components
 
-Components in this dir will be auto-registered and on-demand, powered by [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components).
+Components are auto-registered on demand through `unplugin-vue-components`.
 
-## Icons
+- `PortfolioHome.vue`: restrained bilingual homepage, profile details, writing, experience, working set, and projects
+- `HomeActivity.vue`: six-month Tokdash and GitHub snapshot visualizations
+- `PostLanguageSwitch.vue`: visible language navigation plus `lang` and `hreflang` metadata for bilingual posts
 
-You can use icons from almost any icon sets by the power of [Iconify](https://iconify.design/).
+Iconify classes used by these components must also be added to the `safelist` in `valaxy.config.ts` so production builds retain them.

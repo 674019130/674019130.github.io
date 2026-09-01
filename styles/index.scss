@@ -1,1 +1,31 @@
-// you can custom css here
+// Keep the portfolio homepage visually independent from article-page theming.
+body:has(.portfolio-home) {
+  background: var(--home-bg, #fbfbfa);
+}
+
+body:has(.portfolio-home) .yun-bg,
+body:has(.portfolio-home) .yun-nav-menu,
+body:has(.portfolio-home) .yun-fullscreen-menu,
+body:has(.portfolio-home) .yun-page-header-gradient,
+body:has(.portfolio-home) .fireworks {
+  display: none;
+}
+
+body:has(.portfolio-home) .yun-layout-wrapper__content {
+  display: block;
+}
+
+html.dark .portfolio-home {
+  --home-bg: #181918;
+  --home-text: #eceeec;
+  --home-muted: #999d99;
+  --home-soft: #222422;
+  --home-rule: #323532;
+  --home-accent: #d8dad8;
+  --activity-0: #252725;
+  --activity-1: #3a3d3a;
+  --activity-2: #5c605c;
+  --activity-3: #898e89;
+  --activity-4: #c2c6c2;
+  --activity-5: #ecefec;
+}

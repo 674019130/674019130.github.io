@@ -5,8 +5,12 @@ on:
   push:
     branches: [main]
 
+  # Refreshes the contribution calendar without adding generated commits.
+  schedule:
+    - cron: '23 1 * * *'
+
   # Allows you to run this workflow manually from the Actions tab
-  # workflow_dispatch:
+  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -41,6 +45,18 @@ jobs:
       #   env:
       #     HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
       #   run: npm run algolia
+
+      - name: Sync GitHub activity
+        run: npm run activity:github
+        env:
+          PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Sync featured GitHub projects
+        run: npm run projects:github
+        env:
+          PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🌌 Build Valaxy Blog
         run: npm run build

@@ -1,0 +1,37 @@
+{
+  "source": "github",
+  "username": "674019130",
+  "generatedAt": "2026-09-01T09:26:39.489Z",
+  "projects": [
+    {
+      "name": "Tokdash",
+      "description": "Agent Dashboard: Visualization and analytics for Sessions and Quota Usage. Track, analyze, and optimize token usage across providers with heatmaps, cost tracking, token counting and quota resets..",
+      "url": "https://github.com/JingbiaoMei/Tokdash",
+      "homepage": "https://tokdash.github.io",
+      "stars": 67,
+      "forks": 11,
+      "language": "Python",
+      "updatedAt": "2026-09-01T00:04:31Z"
+    },
+    {
+      "name": "learn-real-claude-code",
+      "description": "Deep dive into Claude Code source — 512K lines of industrial-grade TypeScript agent architecture",
+      "url": "https://github.com/674019130/learn-real-claude-code",
+      "homepage": null,
+      "stars": 87,
+      "forks": 14,
+      "language": "TypeScript",
+      "updatedAt": "2026-08-18T13:33:15Z"
+    },
+    {
+      "name": "shadow-reading",
+      "description": "An immersive English speaking practice tool built on the shadow reading method (影子跟读法)",
+      "url": "https://github.com/674019130/shadow-reading",
+      "homepage": null,
+      "stars": 7,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2026-07-24T03:28:04Z"
+    }
+  ]
+}

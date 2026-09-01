@@ -49,9 +49,41 @@ bash update.sh "自定义消息"
 - `locales/` — i18n 翻译（`en.yml`、`zh-CN.yml`）
 - `public/` — 静态资源（favicon、PWA 图标、RSS feeds）
 
+### Homepage Design
+
+- 首页默认显示英文，并提供 `EN / 中` 页面内切换；不要把全站中文文章页强制改成英文
+- 桌面端外框固定为 `700px`，左右内边距各 `32px`，正文实际宽度为 `636px`
+- 姓名、正文和章节标题统一使用 `16px / 24px` 作为基础排版尺度，主要靠间距、颜色和字重区分层级，不使用营销页式超大标题
+- 手写批注只作为一次性的邮件入口使用；图标集中服务于社交入口、主题和工作栈，不在文章列表里为图标预留空位
+- 顶部邮箱图标点击后复制 `nostarsbutmyeyes@gmail.com` 并显示轻量 toast；首屏邮件 CTA 保持 `mailto:`，用于直接打开邮件客户端
+- 首页历史版本保存在 `archive/components/`，归档原因记录在 `archive/README.md`
+- 首页经历当前从 `2026-06` 加入 South China Morning Post 起记录；项目展示保持三项，并优先选择原创且能体现不同能力面的仓库
+- 首屏手写提示与主 CTA 都指向邮件联系，阅读入口使用 `Explore writing / 浏览文章`，避免“归档”带来的过期感
+- 教育与竞赛信息放在 Experience 的折叠详情中，默认收起：山东师范大学计算机科学与技术专业工学硕士（2020）、ACM 省二等奖、数学建模省一等奖
+- Working set 的模型训练能力写为 `BERT · Multi-label fine-tuning / BERT · 多标签分类训练`，不要笼统简化为 AI 或 Machine Learning
+
 ### CI/CD
 
-`.github/workflows/gh-pages.yml`：push 到 `main` 后自动构建并部署到 GitHub Pages。
+`.github/workflows/gh-pages.yml`：push 到 `main` 后自动构建并部署到 GitHub Pages，也会每天定时刷新首页活动数据。
+
+### 首页活动热力图
+
+- 站点托管在 GitHub Pages，浏览器端不能依赖本机服务，也不能携带 GitHub token
+- `scripts/sync-activity.mjs` 在构建前生成 `data/activity.json`，页面只读取这份静态快照
+- 默认使用 GitHub GraphQL contribution calendar；Actions 优先读取可选的 `PROFILE_GITHUB_TOKEN`，否则使用仓库自带的 `GITHUB_TOKEN`
+- 本地运行 `npm run activity:github` 刷新 GitHub 数据；已登录 GitHub CLI 时无需额外配置
+- 本地运行 `npm run activity:tokdash` 刷新 `data/token-activity.json`。每日数据只保留 `date` 与固定阈值强度 `level`；允许公开最近半年的总 Token、活跃天数和活跃日均值，但不得包含每日实际 token 数、费用、模型或来源明细
+- Tokdash Daily activity 直接按固定 Token 阈值分级：`<100M / 100M+ / 300M+ / 500M+ / 1B+`，不使用角标或相对峰值；页面以快照最后一条 Tokdash 数据为终点，不在未同步日期后补空格
+- 首页 Activity 默认展示最近半年，Token 在前、GitHub 在后并采用上下排列；Token 同时展示总量、活跃天数和活跃日均值
+- GitHub activity 和项目数据在 push 到 `main` 时刷新，并由 Actions 每天 `01:23 UTC` 再刷新一次；这是构建期快照，不是浏览器实时请求
+- 定时构建只更新 Pages 构建产物，不提交每日生成的数据变更
+
+### 首页 GitHub 项目
+
+- `scripts/sync-projects.mjs` 在构建前从 GitHub REST API 同步三项精选仓库到 `data/projects.json`
+- 默认项目顺序为 `JingbiaoMei/Tokdash`、`674019130/learn-real-claude-code`、`674019130/shadow-reading`；可通过 `GITHUB_FEATURED_PROJECTS` 传入逗号分隔的 `owner/repo` 覆盖，但首页仍应保持精简
+- 页面只读取静态快照，不能在浏览器端请求 GitHub API；Actions 与活动热力图共用 token 回退策略
+- 本地运行 `npm run projects:github` 刷新项目数据
 
 ## Writing Conventions
 
@@ -82,6 +114,8 @@ postTitleClass: 'text-#颜色值'
 - 不要写成 `/posts/example-post/`。Valaxy SSG 生成的是 `dist/posts/example-post.html`；GitHub Pages 会将无尾斜杠路径映射到该文件，但会把带尾斜杠路径当作目录并寻找 `index.html`，导致首次 HTTP 请求返回 404
 - 404 页面加载 Valaxy 客户端路由后可能仍能渲染文章，因此浏览器会表现为“先显示 404，再打开成功”；这不是服务端重定向
 - 双语文章互链和相关文章链接都必须遵守此规则
+- 双语文章使用相同的 `translationKey` 形成一组；首页只展示一个主题条目，并提供 `EN / 中文` 直达入口
+- 双语正文顶部使用 `PostLanguageSwitch`，同时生成可见语言切换、正确的页面 `lang` 和 `rel="alternate" hreflang` 元数据
 
 ### Categories 层级
 

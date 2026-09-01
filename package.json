@@ -8,12 +8,16 @@
   },
   "packageManager": "pnpm@10.14.0",
   "scripts": {
+    "activity:github": "node scripts/sync-activity.mjs --source=github",
+    "activity:tokdash": "node scripts/sync-activity.mjs --source=tokdash",
+    "projects:github": "node scripts/sync-projects.mjs",
     "build": "npm run build:ssg",
     "build:spa": "valaxy build",
     "build:ssg": "valaxy build --ssg",
     "dev": "valaxy",
     "rss": "valaxy rss",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "valaxy": "^0.28.11",

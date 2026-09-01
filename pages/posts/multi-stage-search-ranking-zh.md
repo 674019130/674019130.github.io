@@ -2,6 +2,7 @@
 title: 当相关性遇见时效性：多阶段搜索排序的工程设计
 date: 2026-07-29 12:00:00
 lang: zh-CN
+translationKey: multi-stage-search-ranking
 tags: [Search, Information Retrieval, BM25, ANN, Rerank]
 categories: [技术笔记, 软件工程]
 toc: true
@@ -14,7 +15,11 @@ top: 100
 
 <!-- more -->
 
-> [Read the English version](/posts/multi-stage-search-ranking-en)
+<PostLanguageSwitch
+  current="zh"
+  english-path="/posts/multi-stage-search-ranking-en"
+  chinese-path="/posts/multi-stage-search-ranking-zh"
+/>
 
 ## 先选择目标，再讨论算法
 
