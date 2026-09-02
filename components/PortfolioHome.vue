@@ -225,9 +225,9 @@ const projectDescriptions: Record<string, Record<HomeLocale, string>> = {
     en: 'A source-guided study of industrial TypeScript agent architecture.',
     zh: '沿源码理解工业级 TypeScript Agent 架构。',
   },
-  'shadow-reading': {
-    en: 'An immersive English speaking tool built around shadow reading.',
-    zh: '围绕影子跟读法构建的沉浸式英语口语工具。',
+  'kaifan': {
+    en: 'A local-first, adaptive macOS companion for deciding where to eat.',
+    zh: '本地优先、会减少近期重复的 macOS 吃饭选择器。',
   },
   'Tokdash': {
     en: 'A local dashboard for agent sessions, token usage, cost, and quota trends.',

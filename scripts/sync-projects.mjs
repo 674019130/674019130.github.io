@@ -4,8 +4,8 @@ import { dirname, resolve } from 'node:path'
 const username = process.env.GITHUB_PROJECT_USER || '674019130'
 const repositories = (process.env.GITHUB_FEATURED_PROJECTS || [
   'JingbiaoMei/Tokdash',
+  `${username}/kaifan`,
   `${username}/learn-real-claude-code`,
-  `${username}/shadow-reading`,
 ].join(',')).split(',').map((reference) => {
   const parts = reference.trim().split('/').filter(Boolean)
   if (parts.length === 1)

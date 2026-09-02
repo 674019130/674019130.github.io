@@ -1,7 +1,7 @@
 {
   "source": "github",
   "username": "674019130",
-  "generatedAt": "2026-09-01T09:26:39.489Z",
+  "generatedAt": "2026-09-02T03:22:53.591Z",
   "projects": [
     {
       "name": "Tokdash",
@@ -11,7 +11,17 @@
       "stars": 67,
       "forks": 11,
       "language": "Python",
-      "updatedAt": "2026-09-01T00:04:31Z"
+      "updatedAt": "2026-09-01T20:42:10Z"
+    },
+    {
+      "name": "kaifan",
+      "description": "一个本地优先、会智能减少重复的吃饭选择器",
+      "url": "https://github.com/674019130/kaifan",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2026-08-25T12:07:16Z"
     },
     {
       "name": "learn-real-claude-code",
@@ -22,16 +32,6 @@
       "forks": 14,
       "language": "TypeScript",
       "updatedAt": "2026-08-18T13:33:15Z"
-    },
-    {
-      "name": "shadow-reading",
-      "description": "An immersive English speaking practice tool built on the shadow reading method (影子跟读法)",
-      "url": "https://github.com/674019130/shadow-reading",
-      "homepage": null,
-      "stars": 7,
-      "forks": 0,
-      "language": "TypeScript",
-      "updatedAt": "2026-07-24T03:28:04Z"
     }
   ]
 }
