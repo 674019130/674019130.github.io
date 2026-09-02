@@ -2,7 +2,7 @@
 import { useHead } from '@unhead/vue'
 import type { Post } from 'valaxy/types'
 import { usePostListWithCollections } from 'valaxy'
-import { computed, onBeforeUnmount, ref } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import projectsSnapshot from '../data/projects.json'
 
 type HomeLocale = 'en' | 'zh'
@@ -24,7 +24,14 @@ const posts = usePostListWithCollections({})
 const emailAddress = 'nostarsbutmyeyes@gmail.com'
 const emailToastVisible = ref(false)
 const emailCopied = ref(false)
+const contactMenuOpen = ref(false)
+const commentsMounted = ref(false)
+const commentsOpen = ref(false)
+const contactMenuRef = ref<HTMLElement | null>(null)
+const contactTriggerRef = ref<HTMLButtonElement | null>(null)
+const commentsSectionRef = ref<HTMLElement | null>(null)
 let emailToastTimer: ReturnType<typeof setTimeout> | undefined
+let commentFocusTimer: ReturnType<typeof setTimeout> | undefined
 
 function postLocale(post: HomePost): HomeLocale | undefined {
   if (post.lang === 'en')
@@ -55,10 +62,10 @@ const recentWriting = computed(() => {
 const copy = {
   en: {
     name: 'Su',
-    role: 'Search · Agents · Data systems',
-    intro: 'Hi, I’m Su. I build search and AI systems, and write about data-intensive software, agent architecture, and engineering practice.',
+    role: 'Search · Recommendation · AI systems',
+    intro: 'Hi, I’m Su. I build search, recommendation, and AI systems, and write about data-intensive software, agent architecture, and engineering practice.',
     context: 'This is my public workbench: long-running notes, iteration logs, and problems worth explaining clearly.',
-    latest: 'Email me',
+    latest: 'Get in touch',
     browse: 'Explore writing',
     annotation: 'say hello',
     activity: 'Activity',
@@ -66,7 +73,7 @@ const copy = {
     topics: 'All topics',
     experience: 'Experience',
     present: 'Jun 2026 — Present',
-    scmpWork: 'Engineering · Search & AI systems',
+    scmpWork: 'AI Agent Engineer',
     moreExperience: 'More',
     education: 'Education',
     degree: 'M.Eng. in Computer Science and Technology',
@@ -87,15 +94,21 @@ const copy = {
     copyEmail: 'Copy email address',
     emailCopied: 'Email copied',
     emailAddress: 'Email address',
+    contactMenu: 'Contact options',
+    emailOption: 'Email me',
+    commentOption: 'Leave a note',
+    commentHeading: 'Leave a note',
+    commentOptional: 'Add your name, email, or website if you’d like; none are required.',
+    closeComments: 'Close comments',
     dismiss: 'Dismiss',
-    description: 'Search systems, AI agents, data-intensive software, and engineering notes by Su.',
+    description: 'Search and recommendation systems, AI agents, data-intensive software, and engineering notes by Su.',
   },
   zh: {
     name: '苏',
-    role: '搜索 · Agent · 数据系统',
-    intro: '你好，我是苏。我做搜索与 AI 工程，也写数据密集型软件、Agent 架构和工程实践。',
+    role: '搜索 · 推荐 · AI 系统',
+    intro: '你好，我是苏。我做搜索、推荐与 AI 工程，也写数据密集型软件、Agent 架构和工程实践。',
     context: '这里是我的公开工作台：长期笔记、阶段性复盘，以及那些值得被讲清楚的问题。',
-    latest: '给我写信',
+    latest: '联系我',
     browse: '浏览文章',
     annotation: '聊聊吧',
     activity: '活动',
@@ -103,7 +116,7 @@ const copy = {
     topics: '全部主题',
     experience: '经历',
     present: '2026 年 6 月至今',
-    scmpWork: '工程 · 搜索与 AI 系统',
+    scmpWork: 'AI Agent Engineer',
     moreExperience: '更多',
     education: '教育经历',
     degree: '计算机科学与技术 · 工学硕士',
@@ -124,16 +137,22 @@ const copy = {
     copyEmail: '复制邮箱地址',
     emailCopied: '邮箱已复制',
     emailAddress: '邮箱地址',
+    contactMenu: '联系方式',
+    emailOption: '写邮件',
+    commentOption: '留言',
+    commentHeading: '留言',
+    commentOptional: '愿意的话可以留下昵称、邮箱或网址；不填也可以留言。',
+    closeComments: '关闭留言',
     dismiss: '关闭',
-    description: '苏的搜索系统、AI Agent、数据密集型软件与工程笔记。',
+    description: '苏的搜索与推荐系统、AI Agent、数据密集型软件与工程笔记。',
   },
 } as const
 
 const focusAreas = [
   {
     icon: 'i-ri-search-eye-line',
-    name: { en: 'Search systems', zh: '搜索系统' },
-    detail: { en: 'retrieval, relevance, ranking', zh: '召回、相关性与排序' },
+    name: { en: 'Discovery systems', zh: '搜索与推荐' },
+    detail: { en: 'search, recommendation, ranking', zh: '召回、排序与个性化' },
   },
   {
     icon: 'i-ri-robot-2-line',
@@ -162,19 +181,12 @@ const workingGroups = [
     ],
   },
   {
-    label: { en: 'Search & data', zh: '搜索与数据' },
+    label: { en: 'Search & recommendation', zh: '搜索与推荐' },
     items: [
       { name: 'Elasticsearch', icon: 'i-simple-icons-elasticsearch' },
-      { name: 'PostgreSQL', icon: 'i-simple-icons-postgresql' },
-      { name: 'Redis', icon: 'i-simple-icons-redis' },
-    ],
-  },
-  {
-    label: { en: 'Modeling', zh: '模型训练' },
-    items: [
       {
-        name: 'BERT · Multi-label fine-tuning',
-        localizedName: { en: 'BERT · Multi-label fine-tuning', zh: 'BERT · 多标签分类训练' },
+        name: 'BERT · Multi-label classification',
+        localizedName: { en: 'BERT · Multi-label classification', zh: 'BERT · 多标签分类' },
         icon: 'i-ri-brain-line',
       },
     ],
@@ -188,8 +200,10 @@ const workingGroups = [
     ],
   },
   {
-    label: { en: 'Infrastructure', zh: '基础设施' },
+    label: { en: 'Data & infrastructure', zh: '数据与基础设施' },
     items: [
+      { name: 'PostgreSQL', icon: 'i-simple-icons-postgresql' },
+      { name: 'Redis', icon: 'i-simple-icons-redis' },
       { name: 'Docker', icon: 'i-simple-icons-docker' },
       { name: 'Kubernetes', icon: 'i-simple-icons-kubernetes' },
       { name: 'Linux', icon: 'i-simple-icons-linux' },
@@ -229,7 +243,7 @@ const featuredProjects = computed(() => (projectsSnapshot.projects as ProjectSna
 const t = computed(() => copy[locale.value])
 
 useHead(computed(() => ({
-  title: locale.value === 'en' ? 'Su — Search, Agents & Data Systems' : '苏 — 搜索、Agent 与数据系统',
+  title: locale.value === 'en' ? 'Su — Search, Recommendation & AI Systems' : '苏 — 搜索、推荐与 AI 系统',
   htmlAttrs: { lang: locale.value === 'en' ? 'en' : 'zh-CN' },
   meta: [{ name: 'description', content: t.value.description }],
 })))
@@ -281,9 +295,75 @@ async function showEmailToast() {
   }, 3600)
 }
 
+function handleOutsideContactMenu(event: PointerEvent) {
+  if (!contactMenuRef.value?.contains(event.target as Node))
+    contactMenuOpen.value = false
+}
+
+async function toggleContactMenu() {
+  contactMenuOpen.value = !contactMenuOpen.value
+  if (!contactMenuOpen.value)
+    return
+
+  await nextTick()
+  contactMenuRef.value?.querySelector<HTMLElement>('[role="menuitem"]')?.focus()
+}
+
+function handleContactMenuKeydown(event: KeyboardEvent) {
+  if (event.key === 'Escape') {
+    contactMenuOpen.value = false
+    contactTriggerRef.value?.focus()
+    return
+  }
+
+  if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key))
+    return
+
+  const items = [...(contactMenuRef.value?.querySelectorAll<HTMLElement>('[role="menuitem"]') || [])]
+  if (!items.length)
+    return
+
+  event.preventDefault()
+  const currentIndex = items.indexOf(document.activeElement as HTMLElement)
+  const nextIndex = event.key === 'Home'
+    ? 0
+    : event.key === 'End'
+      ? items.length - 1
+      : event.key === 'ArrowDown'
+        ? (currentIndex + 1) % items.length
+        : (currentIndex - 1 + items.length) % items.length
+  items[nextIndex]?.focus()
+}
+
+async function openComments() {
+  contactMenuOpen.value = false
+  commentsMounted.value = true
+  commentsOpen.value = true
+  await nextTick()
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  commentsSectionRef.value?.scrollIntoView({
+    behavior: reducedMotion ? 'auto' : 'smooth',
+    block: 'start',
+  })
+
+  if (commentFocusTimer)
+    clearTimeout(commentFocusTimer)
+  commentFocusTimer = setTimeout(() => {
+    commentsSectionRef.value?.querySelector<HTMLTextAreaElement>('.wl-editor')?.focus({ preventScroll: true })
+  }, 500)
+}
+
+onMounted(() => {
+  document.addEventListener('pointerdown', handleOutsideContactMenu)
+})
+
 onBeforeUnmount(() => {
   if (emailToastTimer)
     clearTimeout(emailToastTimer)
+  if (commentFocusTimer)
+    clearTimeout(commentFocusTimer)
+  document.removeEventListener('pointerdown', handleOutsideContactMenu)
 })
 </script>
 
@@ -306,9 +386,6 @@ onBeforeUnmount(() => {
           <nav class="profile-actions" aria-label="Social links">
             <a href="https://github.com/674019130" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
               <span class="i-ri-github-line" aria-hidden="true" />
-            </a>
-            <a class="optional-social" href="https://www.zhihu.com/people/meng-bo-lin-50" target="_blank" rel="noreferrer" aria-label="Zhihu" title="Zhihu">
-              <span class="i-ri-zhihu-line" aria-hidden="true" />
             </a>
             <a class="optional-social" href="https://space.bilibili.com/85830279" target="_blank" rel="noreferrer" aria-label="Bilibili" title="Bilibili">
               <span class="i-ri-bilibili-line" aria-hidden="true" />
@@ -340,23 +417,46 @@ onBeforeUnmount(() => {
         <p>{{ t.intro }}</p>
         <p>{{ t.context }}</p>
 
-        <div class="intro-actions-wrap">
+        <div class="intro-actions-wrap" :class="{ 'is-contact-open': contactMenuOpen }">
           <a
             class="hand-note"
             href="mailto:nostarsbutmyeyes@gmail.com"
             :aria-label="locale === 'en' ? 'Email Su' : '给苏写邮件'"
           >
             <span>{{ t.annotation }}</span>
-            <svg viewBox="0 0 94 28" fill="none">
-              <path d="M4 8C24 22 52 22 84 12" />
-              <path d="M76 9L85 12L79 19" />
+            <svg viewBox="0 0 96 30" fill="none">
+              <path d="M4 4C12 18 39 23 84 13" />
+              <path d="M76 9L86 13L78 21" />
             </svg>
           </a>
           <div class="intro-actions">
-            <a class="primary-action" href="mailto:nostarsbutmyeyes@gmail.com">
-              {{ t.latest }}
-              <span class="i-ri-arrow-right-line" aria-hidden="true" />
-            </a>
+            <div ref="contactMenuRef" class="contact-action" @keydown="handleContactMenuKeydown">
+              <button
+                ref="contactTriggerRef"
+                class="primary-action"
+                type="button"
+                aria-haspopup="menu"
+                :aria-expanded="contactMenuOpen"
+                aria-controls="contact-options"
+                @click="toggleContactMenu"
+              >
+                {{ t.latest }}
+                <span class="i-ri-arrow-down-s-line" aria-hidden="true" />
+              </button>
+
+              <Transition name="contact-menu">
+                <div v-if="contactMenuOpen" id="contact-options" class="contact-menu" role="menu" :aria-label="t.contactMenu">
+                  <a href="mailto:nostarsbutmyeyes@gmail.com" role="menuitem" @click="contactMenuOpen = false">
+                    <span class="i-ri-mail-line" aria-hidden="true" />
+                    {{ t.emailOption }}
+                  </a>
+                  <button type="button" role="menuitem" @click="openComments">
+                    <span class="i-ri-chat-3-line" aria-hidden="true" />
+                    {{ t.commentOption }}
+                  </button>
+                </div>
+              </Transition>
+            </div>
             <RouterLink class="secondary-action" to="/archives/">
               {{ t.browse }}
             </RouterLink>
@@ -523,6 +623,31 @@ onBeforeUnmount(() => {
         </ol>
       </section>
 
+      <section
+        v-if="commentsMounted"
+        v-show="commentsOpen"
+        ref="commentsSectionRef"
+        class="home-section home-comments"
+        aria-labelledby="comments-title"
+      >
+        <div class="section-heading comments-heading">
+          <h2 id="comments-title">
+            {{ t.commentHeading }}
+          </h2>
+          <button type="button" :aria-label="t.closeComments" :title="t.closeComments" @click="commentsOpen = false">
+            <span class="i-ri-close-line" aria-hidden="true" />
+          </button>
+        </div>
+        <div class="home-comments-body">
+          <p class="comment-note">
+            {{ t.commentOptional }}
+          </p>
+          <ClientOnly>
+            <HomeComments :locale="locale" />
+          </ClientOnly>
+        </div>
+      </section>
+
       <footer class="home-footer home-reveal home-reveal-5">
         <span>{{ t.since }}</span>
         <span>{{ t.built }}</span>
@@ -554,6 +679,8 @@ onBeforeUnmount(() => {
   --home-soft: #f4f4f2;
   --home-rule: #dedfdd;
   --home-accent: #383b38;
+  --home-radius-control: 7px;
+  --home-radius-panel: 8px;
   --activity-0: #ededeb;
   --activity-1: #d5d7d4;
   --activity-2: #aeb2ae;
@@ -574,7 +701,7 @@ onBeforeUnmount(() => {
   box-sizing: border-box;
   width: min(100%, 700px);
   margin: 0 auto;
-  padding: 56px 32px 32px;
+  padding: 48px 32px 28px;
 }
 
 .profile-header,
@@ -632,7 +759,7 @@ onBeforeUnmount(() => {
   width: 28px;
   height: 28px;
   border: 0;
-  border-radius: 4px;
+  border-radius: var(--home-radius-control);
   background: transparent;
   color: var(--home-muted);
   font-size: 16px;
@@ -661,13 +788,13 @@ onBeforeUnmount(() => {
   height: 26px;
   padding: 2px;
   border: 1px solid var(--home-rule);
-  border-radius: 5px;
+  border-radius: var(--home-radius-control);
 }
 
 .locale-switch button {
   padding: 0;
   border: 0;
-  border-radius: 3px;
+  border-radius: 5px;
   background: transparent;
   color: var(--home-muted);
   font-size: 10px;
@@ -687,7 +814,7 @@ onBeforeUnmount(() => {
 }
 
 .intro {
-  padding-top: 24px;
+  padding-top: 20px;
 }
 
 .intro > p {
@@ -697,17 +824,25 @@ onBeforeUnmount(() => {
 }
 
 .intro > p + p {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .intro-actions-wrap {
   position: relative;
-  margin-top: 24px;
+  margin-top: 20px;
+}
+
+.intro-actions-wrap.is-contact-open {
+  padding-bottom: 80px;
 }
 
 .intro-actions {
   display: flex;
   gap: 8px;
+}
+
+.contact-action {
+  position: relative;
 }
 
 .primary-action,
@@ -719,11 +854,13 @@ onBeforeUnmount(() => {
   box-sizing: border-box;
   padding: 0 12px;
   border: 1px solid var(--home-rule);
-  border-radius: 5px;
+  border-radius: var(--home-radius-control);
   font-size: 14px;
+  font-family: inherit;
   font-weight: 500;
   line-height: 20px;
   text-decoration: none;
+  cursor: pointer;
   transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
@@ -748,35 +885,101 @@ onBeforeUnmount(() => {
   background: var(--home-soft);
 }
 
-.hand-note {
+.contact-menu {
   position: absolute;
-  top: -9px;
-  right: calc(100% + 12px);
-  width: 102px;
-  color: #9a9d99;
-  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
-  font-size: 14px;
+  z-index: 20;
+  top: calc(100% + 7px);
+  left: 0;
+  width: 172px;
+  box-sizing: border-box;
+  padding: 4px;
+  border: 1px solid color-mix(in srgb, var(--home-text) 12%, var(--home-rule));
+  border-radius: var(--home-radius-panel);
+  background: color-mix(in srgb, var(--home-bg) 97%, transparent);
+  box-shadow: 0 12px 32px rgba(24, 26, 24, 0.1), 0 2px 6px rgba(24, 26, 24, 0.05);
+  backdrop-filter: blur(16px);
+}
+
+.contact-menu > a,
+.contact-menu > button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 36px;
+  box-sizing: border-box;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--home-text);
+  font-size: 12px;
+  font-family: inherit;
   line-height: 18px;
   text-decoration: none;
-  text-align: right;
+  cursor: pointer;
+  transition: background-color 140ms ease;
+}
+
+.contact-menu > a:hover,
+.contact-menu > button:hover,
+.contact-menu > a:focus-visible,
+.contact-menu > button:focus-visible {
+  background: var(--home-soft);
+}
+
+.contact-menu > a > span,
+.contact-menu > button > span {
+  color: var(--home-muted);
+  font-size: 14px;
+}
+
+.contact-menu-enter-active,
+.contact-menu-leave-active {
+  transition: opacity 140ms ease, transform 160ms cubic-bezier(.2, .75, .25, 1);
+  transform-origin: top left;
+}
+
+.contact-menu-enter-from,
+.contact-menu-leave-to {
+  opacity: 0;
+  transform: translateY(-3px) scale(.98);
+}
+
+.hand-note {
+  position: absolute;
+  top: -14px;
+  right: calc(100% + 6px);
+  width: 136px;
+  color: #9a9d99;
+  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: left;
   transform: rotate(-5deg);
   transform-origin: right center;
 }
 
+.hand-note > span {
+  display: block;
+}
+
 .hand-note svg {
   display: block;
-  width: 94px;
-  height: 28px;
-  margin-top: -3px;
+  width: 96px;
+  height: 30px;
+  margin-top: -2px;
+  margin-left: 40px;
   overflow: visible;
   stroke: currentColor;
-  stroke-width: 1.4;
+  stroke-width: 1.6;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .home-section {
-  padding-top: 48px;
+  padding-top: 38px;
 }
 
 .section-heading {
@@ -809,7 +1012,7 @@ onBeforeUnmount(() => {
 .themes-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-top: 18px;
+  margin-top: 12px;
 }
 
 .theme-item {
@@ -861,7 +1064,7 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--home-rule);
-  border-radius: 6px;
+  border-radius: var(--home-radius-control);
   background: var(--home-soft);
   color: var(--home-muted);
 }
@@ -880,25 +1083,26 @@ onBeforeUnmount(() => {
 }
 
 .working-list {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .working-row {
   display: grid;
-  grid-template-columns: 120px minmax(0, 1fr);
+  grid-template-columns: 140px minmax(0, 1fr);
   align-items: center;
-  min-height: 42px;
+  min-height: 36px;
 }
 
 .working-label {
   color: var(--home-muted);
   font-size: 13px;
+  line-height: 18px;
 }
 
 .working-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 18px;
+  gap: 6px 16px;
 }
 
 .working-item {
@@ -920,8 +1124,8 @@ onBeforeUnmount(() => {
   grid-template-columns: 20px minmax(0, 1fr) auto;
   align-items: center;
   gap: 10px;
-  min-height: 64px;
-  margin-top: 10px;
+  min-height: 54px;
+  margin-top: 8px;
 }
 
 .experience-line {
@@ -941,7 +1145,7 @@ onBeforeUnmount(() => {
 
 .experience-line span {
   position: absolute;
-  top: 26px;
+  top: 21px;
   left: 6px;
   width: 7px;
   height: 7px;
@@ -980,7 +1184,7 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: flex-end;
   gap: 3px;
-  min-height: 32px;
+  min-height: 28px;
   color: var(--home-muted);
   font-size: 11px;
   line-height: 16px;
@@ -1004,8 +1208,8 @@ onBeforeUnmount(() => {
 .experience-details-content {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  padding: 2px 0 14px;
+  gap: 20px;
+  padding: 2px 0 10px;
 }
 
 .experience-details-content > div {
@@ -1030,7 +1234,7 @@ onBeforeUnmount(() => {
 
 .project-list,
 .writing-list {
-  margin: 14px 0 0;
+  margin: 10px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -1045,8 +1249,8 @@ onBeforeUnmount(() => {
   grid-template-columns: minmax(0, 1fr) auto 16px;
   align-items: center;
   gap: 12px;
-  min-height: 66px;
-  padding: 8px 0;
+  min-height: 58px;
+  padding: 6px 0;
   box-sizing: border-box;
   color: var(--home-text);
   text-decoration: none;
@@ -1101,7 +1305,7 @@ onBeforeUnmount(() => {
 }
 
 .writing-list {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .writing-row {
@@ -1109,8 +1313,8 @@ onBeforeUnmount(() => {
   grid-template-columns: minmax(0, 1fr) auto 16px;
   align-items: center;
   gap: 10px;
-  min-height: 56px;
-  padding: 7px 0;
+  min-height: 50px;
+  padding: 5px 0;
   box-sizing: border-box;
 }
 
@@ -1165,9 +1369,47 @@ onBeforeUnmount(() => {
   text-decoration: none;
 }
 
+.home-comments {
+  scroll-margin-top: 24px;
+}
+
+.comments-heading > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--home-muted);
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.comments-heading > button:hover {
+  background: var(--home-soft);
+  color: var(--home-text);
+}
+
+.home-comments-body {
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--home-rule);
+}
+
+.comment-note {
+  margin: 0 0 6px;
+  color: var(--home-muted);
+  font-size: 11px;
+  line-height: 16px;
+}
+
 .home-footer {
-  margin-top: 56px;
-  padding-top: 16px;
+  margin-top: 42px;
+  padding-top: 14px;
   border-top: 1px solid var(--home-rule);
   color: var(--home-muted);
   font-size: 11px;
@@ -1187,7 +1429,7 @@ onBeforeUnmount(() => {
   box-sizing: border-box;
   padding: 10px;
   border: 1px solid color-mix(in srgb, var(--home-text) 15%, var(--home-rule));
-  border-radius: 6px;
+  border-radius: var(--home-radius-panel);
   background: color-mix(in srgb, var(--home-bg) 96%, transparent);
   box-shadow: 0 12px 36px rgba(24, 26, 24, 0.12), 0 2px 8px rgba(24, 26, 24, 0.06);
   color: var(--home-text);
@@ -1201,7 +1443,7 @@ onBeforeUnmount(() => {
   width: 34px;
   height: 34px;
   border: 1px solid var(--home-rule);
-  border-radius: 5px;
+  border-radius: var(--home-radius-control);
   background: var(--home-soft);
   color: var(--home-text);
   font-size: 16px;
@@ -1237,7 +1479,7 @@ onBeforeUnmount(() => {
   height: 28px;
   padding: 0;
   border: 0;
-  border-radius: 4px;
+  border-radius: 6px;
   background: transparent;
   color: var(--home-muted);
   font-size: 15px;
@@ -1265,6 +1507,10 @@ onBeforeUnmount(() => {
   animation: home-reveal 400ms both cubic-bezier(.2, .75, .25, 1);
 }
 
+.profile-header.home-reveal {
+  animation-name: home-header-reveal;
+}
+
 .home-reveal-1 { animation-delay: 30ms; }
 .home-reveal-2 { animation-delay: 70ms; }
 .home-reveal-3 { animation-delay: 110ms; }
@@ -1282,9 +1528,14 @@ onBeforeUnmount(() => {
   }
 }
 
+@keyframes home-header-reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 @media (max-width: 760px) {
   .portfolio-frame {
-    padding: 32px 20px 28px;
+    padding: 28px 20px 24px;
   }
 
   .profile-role {
@@ -1338,35 +1589,35 @@ onBeforeUnmount(() => {
   }
 
   .intro {
-    padding-top: 28px;
+    padding-top: 22px;
   }
 
   .intro-actions-wrap {
-    margin-top: 46px;
+    margin-top: 42px;
   }
 
   .hand-note {
-    top: -36px;
+    top: -32px;
     right: auto;
     left: 2px;
-    width: 98px;
+    width: 116px;
     text-align: left;
     transform: rotate(-3deg);
     transform-origin: left center;
   }
 
   .hand-note svg {
-    width: 74px;
-    margin-left: 18px;
+    width: 88px;
+    margin-left: 26px;
   }
 
   .home-section {
-    padding-top: 44px;
+    padding-top: 34px;
   }
 
   .themes-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    row-gap: 22px;
+    row-gap: 16px;
   }
 
   .theme-item > p {
@@ -1375,12 +1626,12 @@ onBeforeUnmount(() => {
 
   .working-row {
     grid-template-columns: 1fr;
-    gap: 5px;
-    padding: 7px 0;
+    gap: 3px;
+    padding: 5px 0;
   }
 
   .working-items {
-    gap: 7px 14px;
+    gap: 5px 12px;
   }
 
   .writing-title {

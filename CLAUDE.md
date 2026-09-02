@@ -54,13 +54,18 @@ bash update.sh "自定义消息"
 - 首页默认显示英文，并提供 `EN / 中` 页面内切换；不要把全站中文文章页强制改成英文
 - 桌面端外框固定为 `700px`，左右内边距各 `32px`，正文实际宽度为 `636px`
 - 姓名、正文和章节标题统一使用 `16px / 24px` 作为基础排版尺度，主要靠间距、颜色和字重区分层级，不使用营销页式超大标题
-- 手写批注只作为一次性的邮件入口使用；图标集中服务于社交入口、主题和工作栈，不在文章列表里为图标预留空位
-- 顶部邮箱图标点击后复制 `nostarsbutmyeyes@gmail.com` 并显示轻量 toast；首屏邮件 CTA 保持 `mailto:`，用于直接打开邮件客户端
+- 手写批注只作为一次性的邮件入口使用，保留 `say hello / 聊聊吧` 文案，并让曲线箭头从文字末端下方自然起笔后指向 CTA；图标集中服务于社交入口、主题和工作栈，不在文章列表里为图标预留空位
+- 顶部邮箱图标点击后复制 `nostarsbutmyeyes@gmail.com` 并显示轻量 toast；首屏主 CTA 使用 `Get in touch / 联系我` 菜单，提供 `mailto:` 与首页留言两种联系路径
+- 首页留言复用站点现有 Waline 服务并固定使用首页路径 `/`；组件只在首次展开时挂载，关闭后保留状态，不能影响文章页按各自路径隔离的评论
 - 首页历史版本保存在 `archive/components/`，归档原因记录在 `archive/README.md`
-- 首页经历当前从 `2026-06` 加入 South China Morning Post 起记录；项目展示保持三项，并优先选择原创且能体现不同能力面的仓库
-- 首屏手写提示与主 CTA 都指向邮件联系，阅读入口使用 `Explore writing / 浏览文章`，避免“归档”带来的过期感
+- 首页经历当前从 `2026-06` 加入 South China Morning Post 起记录，职位为 `AI Agent Engineer`；项目展示保持三项，并优先选择原创且能体现不同能力面的仓库
+- 首屏手写提示仍指向邮件联系，主 CTA 同时提供邮件和留言；阅读入口使用 `Explore writing / 浏览文章`，避免“归档”带来的过期感
 - 教育与竞赛信息放在 Experience 的折叠详情中，默认收起：山东师范大学计算机科学与技术专业工学硕士（2020）、ACM 省二等奖、数学建模省一等奖
-- Working set 的模型训练能力写为 `BERT · Multi-label fine-tuning / BERT · 多标签分类训练`，不要笼统简化为 AI 或 Machine Learning
+- BERT 经历是在裸 BERT 基础上完成多标签分类，不要描述为 fine-tuning；首页仅在 Search & recommendation 工作栈中低调写作 `BERT · Multi-label classification / BERT · 多标签分类`，不要单列 Modeling 或模型训练模块
+- 个人定位必须同时包含搜索与推荐，英文简介明确使用 `search, recommendation, and AI systems`，中文使用 `搜索、推荐与 AI 工程`；不要把能力范围缩写成只有搜索
+- 首页采用紧凑的纵向节奏：主要章节间距约 `38px`（移动端约 `34px`），模块内容通常在标题下 `10–12px` 开始，避免重新放大成松散的营销页排版
+- 首页控件圆角统一使用约 `7px`，浮层、toast 与评论面板使用 `8px`；Waline 首页留言保留昵称、邮箱和网址三个输入框，以克制的辅助文案说明它们可填但非必填，并固定 `meta: ['nick', 'mail', 'link']`、`requiredMeta: []`
+- 首页搜索弹层使用全屏实色中性表面，输入框对齐 `636px` 正文栅并使用 `8px` 圆角；不使用高强度模糊、透明胶囊或黑白反色的搜索结果态
 
 ### CI/CD
 
@@ -74,6 +79,9 @@ bash update.sh "自定义消息"
 - 本地运行 `npm run activity:github` 刷新 GitHub 数据；已登录 GitHub CLI 时无需额外配置
 - 本地运行 `npm run activity:tokdash` 刷新 `data/token-activity.json`。每日数据只保留 `date` 与固定阈值强度 `level`；允许公开最近半年的总 Token、活跃天数和活跃日均值，但不得包含每日实际 token 数、费用、模型或来源明细
 - Tokdash Daily activity 直接按固定 Token 阈值分级：`<100M / 100M+ / 300M+ / 500M+ / 1B+`，不使用角标或相对峰值；页面以快照最后一条 Tokdash 数据为终点，不在未同步日期后补空格
+- Token Activity 的固定更新策略是：在能访问本机 Tokdash API 的环境执行 `pnpm activity:tokdash`，检查 `data/token-activity.json` 的 `generatedAt`、`period` 与 diff，运行 `pnpm test`，然后把脱敏快照提交进仓库；GitHub Actions 不运行 Tokdash 同步，部署只使用已提交的快照
+- Tokdash 默认地址为 `http://127.0.0.1:55423`，可用 `TOKDASH_URL` 覆盖；同步失败且旧快照存在时，脚本会保留旧文件而不中断构建，所以必须确认输出是 `Synced tokdash activity` 且 `generatedAt` 已更新，不能只依赖退出码
+- 不得为了自动同步而把 Tokdash API 公开到互联网或让浏览器直连；未来若增加自动化，应在持有 Tokdash 数据的本地主机上定时生成同一脱敏快照，再通过正常 Git 流程提交
 - 首页 Activity 默认展示最近半年，Token 在前、GitHub 在后并采用上下排列；Token 同时展示总量、活跃天数和活跃日均值
 - GitHub activity 和项目数据在 push 到 `main` 时刷新，并由 Actions 每天 `01:23 UTC` 再刷新一次；这是构建期快照，不是浏览器实时请求
 - 定时构建只更新 Pages 构建产物，不提交每日生成的数据变更

@@ -1,8 +1,12 @@
 # Su's Blog
 
-Personal engineering notes about search systems, AI agents, data-intensive software, and day-to-day practice. The site is built with [Valaxy](https://valaxy.site/) and deployed as a static site at [674019130.github.io](https://674019130.github.io/).
+Personal engineering notes about search and recommendation systems, AI agents, data-intensive software, and day-to-day practice. The site is built with [Valaxy](https://valaxy.site/) and deployed as a static site at [674019130.github.io](https://674019130.github.io/).
 
 The homepage defaults to English and provides an in-page English/Chinese switch. Article content remains in its authored language, with direct links between bilingual variants when available.
+
+The homepage contact control offers email and an inline note form. Notes reuse the site's existing Waline service at the homepage path (`/`) and are mounted only after the visitor opens the form; article comments continue to use their own page paths.
+
+The homepage search uses Valaxy's existing Fuse search behavior inside a solid, full-viewport surface. It shares the homepage's 636px content grid, shows results only after input, and avoids transparent blur, oversized pill styling, inverted result rows, and implementation-only score labels.
 
 ## Local Development
 
@@ -35,7 +39,17 @@ The browser never calls GitHub or a local Tokdash server. The homepage reads com
 
 GitHub activity is fetched through the GraphQL contribution calendar. Actions uses `PROFILE_GITHUB_TOKEN` when configured and otherwise falls back to the workflow `GITHUB_TOKEN`. This is scheduled snapshotting, not a real-time browser request.
 
-Tokdash cannot be refreshed by GitHub-hosted runners because its API is local. Its public snapshot contains six-month aggregate totals and daily threshold levels only; it excludes exact daily token counts, costs, model names, providers, and session details. Heatmap levels are `<100M`, `100M+`, `300M+`, `500M+`, and `1B+`, and the grid stops at the last locally synchronized record.
+Tokdash cannot be refreshed by GitHub-hosted runners because its API is local. Refresh it from a machine that can reach Tokdash, verify that `generatedAt` changed, run the snapshot tests, and commit the resulting file:
+
+```bash
+pnpm activity:tokdash
+git diff -- data/token-activity.json
+pnpm test
+```
+
+Set `TOKDASH_URL` when Tokdash is not available at the default `http://127.0.0.1:55423`. A failed refresh intentionally keeps the existing snapshot, so a successful process exit alone is not proof that the data changed; check the command message and `generatedAt`.
+
+The public snapshot contains six-month aggregate totals and daily threshold levels only; it excludes exact daily token counts, costs, model names, providers, and session details. Heatmap levels are `<100M`, `100M+`, `300M+`, `500M+`, and `1B+`, and the grid stops at the last locally synchronized record. See [`docs/token-activity.md`](docs/token-activity.md) for the complete update and privacy runbook.
 
 ## Bilingual Posts
 
@@ -59,11 +73,13 @@ translationKey: example-topic
 - `pages/posts/`: Markdown articles and front matter
 - `components/PortfolioHome.vue`: bilingual portfolio homepage
 - `components/HomeActivity.vue`: GitHub and Tokdash activity presentation
+- `components/HomeComments.vue`: lazily mounted homepage Waline conversation
 - `components/PostLanguageSwitch.vue`: direct bilingual article navigation and metadata
 - `layouts/home.vue`: homepage layout override
 - `scripts/`: static activity and project snapshot generators
 - `data/`: public JSON snapshots consumed by the homepage
 - `tests/`: snapshot schema and privacy-boundary tests
+- `docs/`: maintenance runbooks for static data integrations
 - `archive/`: retired implementations retained with removal reasons
 - `.github/workflows/gh-pages.yml`: scheduled GitHub Pages build and deployment
 

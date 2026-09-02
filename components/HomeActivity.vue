@@ -267,7 +267,7 @@ function dayTitle(panel: ActivityPanel, day: GridDay) {
 
 <style scoped>
 .home-section {
-  padding-top: 48px;
+  padding-top: 38px;
 }
 
 .section-heading,
@@ -292,7 +292,7 @@ function dayTitle(panel: ActivityPanel, day: GridDay) {
 }
 
 .activity-stack {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .activity-panel {
@@ -300,8 +300,8 @@ function dayTitle(panel: ActivityPanel, day: GridDay) {
 }
 
 .activity-panel + .activity-panel {
-  margin-top: 24px;
-  padding-top: 24px;
+  margin-top: 18px;
+  padding-top: 18px;
   border-top: 1px solid var(--home-rule);
 }
 
@@ -337,8 +337,8 @@ function dayTitle(panel: ActivityPanel, day: GridDay) {
   display: grid;
   grid-template-columns: 164px minmax(0, 1fr);
   align-items: start;
-  gap: 24px;
-  margin-top: 12px;
+  gap: 20px;
+  margin-top: 9px;
 }
 
 .activity-stats {
@@ -360,8 +360,8 @@ function dayTitle(panel: ActivityPanel, day: GridDay) {
 
 .activity-stats .stat-primary {
   grid-column: 1 / -1;
-  margin-bottom: 9px;
-  padding-bottom: 10px;
+  margin-bottom: 7px;
+  padding-bottom: 8px;
   border-bottom: 1px solid var(--home-rule);
 }
 
@@ -393,7 +393,7 @@ function dayTitle(panel: ActivityPanel, day: GridDay) {
 
 .activity-scroll {
   overflow-x: auto;
-  padding: 0 2px 8px;
+  padding: 0 2px 6px;
   scrollbar-width: none;
 }
 
@@ -486,12 +486,12 @@ function dayTitle(panel: ActivityPanel, day: GridDay) {
 
 @media (max-width: 760px) {
   .home-section {
-    padding-top: 44px;
+    padding-top: 34px;
   }
 
   .activity-body {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 12px;
   }
 
   .activity-stats {
