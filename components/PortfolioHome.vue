@@ -63,7 +63,7 @@ const copy = {
   en: {
     name: 'Su',
     role: 'Search · Recommendation · AI systems',
-    intro: 'Hi, I’m Su. I build search, recommendation, and AI systems, and write about data-intensive software, agent architecture, and engineering practice.',
+    intro: 'Hi, I\'m Su. I build search, recommendation, and AI systems, and write about data-intensive software, agent architecture, and engineering practice.',
     context: 'This is my public workbench: long-running notes, iteration logs, and problems worth explaining clearly.',
     latest: 'Get in touch',
     browse: 'Explore writing',
