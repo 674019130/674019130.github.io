@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef0f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0c11" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Thread is a private, local-only timeline for moments worth noticing.">
+  <meta property="og:title" content="Thread — Moments in Time">
+  <meta property="og:description" content="Notice time before it disappears.">
+  <meta property="og:image" content="https://674019130.github.io/thread/assets/icon.png">
+  <title>Thread — Moments in Time</title>
+  <link rel="icon" href="./assets/icon.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./thread-site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Thread home">
+      <img src="./assets/icon.png" alt="">
+      <span>Thread</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="./support/">Support</a>
+      <a href="./privacy/">Privacy</a>
+      <span class="language-switch" aria-label="Language">
+        <button type="button" data-language="en" aria-pressed="true">EN</button>
+        <button type="button" data-language="zh" aria-pressed="false">中文</button>
+      </span>
+    </nav>
+  </header>
+
+  <main id="content" class="page">
+    <section class="hero">
+      <div data-language-panel="en">
+        <p class="eyebrow">A private timeline</p>
+        <h1 id="hero-title">Notice time before it disappears.</h1>
+        <p class="hero-copy">One tap leaves a moment. The space between moments shapes the line, making the rhythm of an ordinary day visible.</p>
+        <p class="availability">Prepared for the App Store</p>
+      </div>
+      <div data-language-panel="zh" hidden>
+        <p class="eyebrow">一根只属于你的时间线</p>
+        <h1>在时间消失以前，看见它。</h1>
+        <p class="hero-copy">轻点一下，留下此刻。时刻之间的距离改变线的形状，让普通一天的节奏真正可见。</p>
+        <p class="availability">App Store 上架准备中</p>
+      </div>
+
+      <figure class="thread-instrument" aria-label="A Thread timeline connecting three moments">
+        <svg viewBox="0 0 440 540" role="img" aria-hidden="true">
+          <path class="thread-shadow" d="M118 88 C332 114 352 214 193 249 C67 278 86 350 282 365 C356 371 327 436 174 469" />
+          <path class="thread-main" d="M118 88 C332 114 352 214 193 249 C67 278 86 350 282 365 C356 371 327 436 174 469" />
+          <path class="thread-tail" d="M174 469 C157 496 174 511 155 528" />
+          <circle class="node" cx="118" cy="88" r="15" />
+          <circle class="node" cx="193" cy="249" r="15" />
+          <circle class="node node-now" cx="174" cy="469" r="17" />
+        </svg>
+        <span class="instrument-time time-one">08:42 <small>01</small></span>
+        <span class="instrument-time time-two">12:18 <small>02</small></span>
+        <span class="instrument-time time-three">17:06 <small>03</small></span>
+      </figure>
+    </section>
+
+    <div class="sections">
+      <section class="feature-row">
+        <p class="section-label">01 / Thread</p>
+        <div data-language-panel="en">
+          <h2>Time first. Meaning when it helps.</h2>
+          <p>Mark now, then optionally add a label, color, note, or photo. Group related moments into events without turning the day into a feed.</p>
+          <ul class="detail-list">
+            <li>One-tap marks</li><li>Editable quick labels</li>
+            <li>Readable intervals</li><li>Local search</li>
+          </ul>
+        </div>
+        <div data-language-panel="zh" hidden>
+          <h2>时间优先，需要时再补充意义。</h2>
+          <p>先记录现在，再按需添加标签、颜色、备注或照片。相关时刻可以组合成事件，但一天不会变成另一条信息流。</p>
+          <ul class="detail-list">
+            <li>轻点即记</li><li>可编辑快捷标签</li>
+            <li>可读时间间隔</li><li>本地搜索</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="feature-row">
+        <p class="section-label">02 / Check-ins</p>
+        <div data-language-panel="en">
+          <h2>Daily rhythm without a streak.</h2>
+          <p>Check in once per item each day. Week and month views show repetition and absence as information, never as judgment.</p>
+          <ul class="detail-list">
+            <li>Your own items</li><li>Optional colors</li>
+            <li>Past-date check-ins</li><li>Optional exact time</li>
+          </ul>
+        </div>
+        <div data-language-panel="zh" hidden>
+          <h2>看见日常节奏，不追逐连续天数。</h2>
+          <p>每个项目每天打卡一次。周视图和月视图把重复与空白都当成信息，而不是评判。</p>
+          <ul class="detail-list">
+            <li>自定义项目</li><li>可选颜色</li>
+            <li>支持补记</li><li>精确时间可选</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="privacy-row">
+        <p class="section-label">03 / Private</p>
+        <div data-language-panel="en">
+          <h2>Your life stays on your device.</h2>
+          <p>No account, cloud, ads, analytics, or tracking. Export a local archive when you choose. <a href="./privacy/">Read the privacy policy.</a></p>
+        </div>
+        <div data-language-panel="zh" hidden>
+          <h2>你的生活，只留在你的设备上。</h2>
+          <p>没有账户、云端、广告、分析或追踪。需要时可以自行导出本地归档。<a href="./privacy/">查看隐私政策。</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Edward Meng. Thread stores no website analytics.</p>
+    <p><a href="mailto:nostarsbutmyeyes@gmail.com">nostarsbutmyeyes@gmail.com</a></p>
+  </footer>
+</body>
+</html>
