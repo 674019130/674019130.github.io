@@ -5,6 +5,9 @@ import { defineValaxyConfig } from 'valaxy'
 
 // add icons what you will need
 const safelist = [
+  'i-ri-terminal-box-line',
+  'i-ri-restaurant-line',
+  'i-ri-code-s-slash-line',
   'i-ri-home-line',
   'i-ri-arrow-right-line',
   'i-ri-arrow-right-up-line',
