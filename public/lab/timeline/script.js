@@ -556,7 +556,6 @@ async function replay() {
       if (!(await collapseRemovedRun(token))) return;
     }
     if (!(await applyEvent(event, token))) return;
-    if (!(await wait(playbackDelay(700), token))) return;
   }
 
   if (removedRun.length && !(await collapseRemovedRun(token))) return;
