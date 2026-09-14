@@ -582,3 +582,18 @@ replayButton.addEventListener("click", replay);
 resetButton.addEventListener("click", reset);
 reset();
 
+
+// The lab hover mounts this document only while the entry is being previewed.
+if (document.documentElement.dataset.preview === "true") {
+  const still = new URLSearchParams(location.search).get("still") === "1"
+    || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!still) {
+    async function previewLoop() {
+      await new Promise(resolve => setTimeout(resolve, 350));
+      await replay();
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      if (!document.hidden) previewLoop();
+    }
+    previewLoop();
+  }
+}

@@ -730,3 +730,26 @@ body { background: var(--page); }
 .timeline-footer { color: #666; font-weight: 400; }
 .status-dot.is-running { background: #777; }
 @media (max-width: 560px) { .page-shell { width: calc(100% - 28px); padding-top: 28px; } .timeline-group-head { row-gap: 5px; } }
+
+/* Embedded live preview: same rows and event engine, without page controls. */
+html[data-preview] .lab-nav, html[data-preview] .intro, html[data-preview] .playback-bar,
+html[data-preview] .legend, html[data-preview] .timeline-footer, html[data-preview] .skip-link { display: none; }
+html[data-preview] body { min-width: 0; overflow: hidden; }
+html[data-preview] .page-shell { width: 100%; padding: 16px; }
+html[data-preview] .timeline-card { border: 0; background: transparent; }
+html[data-preview] .timeline-card-header { padding: 8px 12px 16px; }
+html[data-preview] .timeline-card-header h2 { font-size: 16px; }
+html[data-preview] .timeline-group { padding-bottom: 18px; }
+html[data-preview] .timeline-row { grid-template-columns: 8px minmax(0, 1fr); }
+html[data-preview] .row-date { display: none; }
+html[data-preview] .row-headline { font-size: 15px; }
+html[data-preview] .timeline-date, html[data-preview] .timeline-summary { font-size: 14px; }
+html[data-preview][data-theme="dark"] { color-scheme: dark; --page: #202220; --surface: #202220; --ink: #e5e7e5; --link: #d1d6d1; --muted: #a1a8a1; --added: #6abf85; --added-bg: #294234; --changed: #d1ab61; --changed-bg: #433a27; --removed: #d18479; --removed-bg: #432c29; }
+html[data-preview][data-theme="dark"] .timeline-card-header h2,
+html[data-preview][data-theme="dark"] .timeline-summary { color: #e5e7e5; }
+html[data-preview][data-theme="dark"] .timeline-date { color: #a1a8a1; }
+html[data-preview][data-theme="dark"] .timeline-group-dot { box-shadow: 0 0 0 2px #202220; }
+html[data-preview][data-theme="dark"] .mode-label { color: #b5bcb5; background: #292e29; border-color: #485048; }
+html[data-preview][data-theme="dark"] .diff-tag.added { color: var(--added); }
+html[data-preview][data-theme="dark"] .diff-tag.changed { color: var(--changed); }
+html[data-preview][data-theme="dark"] .diff-tag.removed { color: var(--removed); }

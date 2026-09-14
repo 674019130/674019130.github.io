@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="A streaming timeline experiment with entirely fictional garden-project data." />
   <title>Streaming timeline · Su UI lab</title>
+  <script>
+    const previewOptions = new URLSearchParams(location.search);
+    if (previewOptions.get('preview') === '1') {
+      document.documentElement.dataset.preview = 'true';
+      document.documentElement.dataset.theme = previewOptions.get('theme') === 'dark' ? 'dark' : 'light';
+    }
+  </script>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>

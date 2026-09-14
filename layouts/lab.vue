@@ -19,15 +19,7 @@ useHead(computed(() => ({
         </header>
         <h1>{{ zh ? 'UI 实验室' : 'UI lab' }}</h1>
         <p>{{ zh ? '一些关于界面、交互与动效的小实验。' : 'Small experiments in interfaces, interactions, and motion.' }}</p>
-        <a class="lab-experiment" href="/lab/timeline/">
-          <div class="lab-preview" aria-hidden="true">
-            <span class="preview-line unchanged" /><span class="preview-line changed" />
-            <span class="preview-line removed" /><span class="preview-line added" />
-          </div>
-          <div class="experiment-heading"><h2>{{ zh ? '流式时间线' : 'Streaming timeline' }}</h2><span aria-hidden="true">↗</span></div>
-          <p>{{ zh ? '新证据逐条到来，变化清晰可见。试试更新、增删与折叠。' : 'New evidence, one row at a time. Explore edits, additions, and folded removals.' }}</p>
-          <span class="experiment-open">{{ zh ? '打开实验' : 'Open experiment' }} →</span>
-        </a>
+        <div class="lab-list"><LabTimelinePreview :zh="zh" /></div>
         <footer><RouterLink to="/archives/">{{ zh ? '先看看文章' : 'Explore the writing' }} ↗</RouterLink></footer>
       </div>
     </main>
@@ -44,16 +36,7 @@ a { color: var(--home-muted); text-decoration: none; transition: color 200ms; }
 a:hover { color: var(--home-text); }
 h1 { font-size: 16.8px; font-weight: 500; margin: 0 0 10px; }
 p { margin: 0; color: var(--home-muted); }
-.lab-experiment { display: block; margin: 38px 0 24px; padding: 24px 0; border-top: 1px solid var(--home-rule); border-bottom: 1px solid var(--home-rule); }
-.lab-preview { display: grid; gap: 9px; padding: 12px 0 22px 14px; border-left: 1px solid var(--home-rule); margin: 0 0 18px 4px; }
-.preview-line { display: block; height: 7px; width: 65%; max-width: 280px; border-radius: 2px; background: var(--home-rule); }
-.preview-line.changed { width: 78%; background: #bd7d1830; border-left: 2px solid #bd7d18; }
-.preview-line.removed { width: 45%; background: #bd4f4525; border-left: 2px solid #bd4f45; }
-.preview-line.added { width: 72%; background: #2d8a5630; border-left: 2px solid #2d8a56; }
-.experiment-heading { display: flex; justify-content: space-between; gap: 16px; align-items: center; color: var(--home-text); }
-h2 { margin: 0 0 8px; font-size: 15px; font-weight: 500; }
-.experiment-open { display: inline-block; font-size: 12px; margin-top: 16px; }
-.lab-experiment:hover .experiment-open { text-decoration: underline; text-underline-offset: 4px; }
+.lab-list { margin: 34px 0 30px; padding: 12px 0; border-top: 1px solid var(--home-rule); border-bottom: 1px solid var(--home-rule); }
 footer { font-size: 12px; }
 a:focus-visible, button:focus-visible { outline: 2px solid #4a5b96; outline-offset: 5px; }
 @keyframes lab-arrive { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
