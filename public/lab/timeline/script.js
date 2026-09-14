@@ -1,78 +1,307 @@
+// Entirely fictional garden project; no real people, organisations or records.
 const PREVIEW_GROUPS = [
   {
-    id: "group-1",
-    dateLabel: "Jan–Mar 2025",
-    summary: "Proposal enters public review",
-    items: [
-      { id: "article-1", headline: "Draft terms open for public consultation", date: "12 Jan 2025" },
-      { id: "article-2", headline: "Committee schedules its first review session", date: "04 Feb 2025" },
-      { id: "article-3", headline: "Early market response remains cautious", date: "18 Feb 2025" },
-      { id: "article-4", headline: "Second consultation round is announced", date: "08 Mar 2025" },
-    ],
+    "id": "group-1",
+    "dateLabel": "Jan\u2013Mar 2025",
+    "summary": "Sketching a shared garden",
+    "items": [
+      {
+        "id": "entry-1",
+        "headline": "A first sketch sets aside space for a shared garden",
+        "date": "08 Jan 2025"
+      },
+      {
+        "id": "entry-2",
+        "headline": "The plan includes four raised beds",
+        "date": "22 Jan 2025"
+      },
+      {
+        "id": "entry-3",
+        "headline": "A storage shed is placed near the entrance",
+        "date": "03 Feb 2025"
+      },
+      {
+        "id": "entry-4",
+        "headline": "A gravel path crosses the centre of the plot",
+        "date": "17 Feb 2025"
+      },
+      {
+        "id": "entry-5",
+        "headline": "The planting list is ready for review",
+        "date": "12 Mar 2025"
+      }
+    ]
   },
   {
-    id: "group-2",
-    dateLabel: "Jul–Sep 2025",
-    summary: "Revised framework moves forward",
-    items: [
-      { id: "article-6", headline: "Revised framework receives final committee support", date: "21 Jul 2025" },
-      { id: "article-7", headline: "Implementation timetable is published", date: "03 Sep 2025" },
-    ],
+    "id": "group-2",
+    "dateLabel": "Jul\u2013Sep 2025",
+    "summary": "Trying the first planting season",
+    "items": [
+      {
+        "id": "entry-6",
+        "headline": "The first planting day is pencilled in for July",
+        "date": "04 Jul 2025"
+      },
+      {
+        "id": "entry-7",
+        "headline": "An evening watering rota is drafted",
+        "date": "16 Jul 2025"
+      },
+      {
+        "id": "entry-8",
+        "headline": "Two trial beds are reserved for herbs",
+        "date": "06 Aug 2025"
+      },
+      {
+        "id": "entry-9",
+        "headline": "A weekend workshop is proposed",
+        "date": "21 Aug 2025"
+      }
+    ]
   },
+  {
+    "id": "group-4",
+    "dateLabel": "Jan\u2013Mar 2026",
+    "summary": "Planning another season",
+    "items": [
+      {
+        "id": "entry-10",
+        "headline": "The winter review collects notes from the trial",
+        "date": "14 Jan 2026"
+      },
+      {
+        "id": "entry-11",
+        "headline": "A second season keeps the original layout",
+        "date": "10 Feb 2026"
+      },
+      {
+        "id": "entry-12",
+        "headline": "New seed orders are prepared",
+        "date": "03 Mar 2026"
+      }
+    ]
+  }
 ];
 
 const CHANGE_EVENTS = [
-  { type: "review_item", groupId: "group-1", itemId: "article-1" },
   {
-    type: "change_item",
-    groupId: "group-1",
-    itemId: "article-2",
-    item: {
-      id: "article-2",
-      headline: "Committee expands review after receiving new evidence",
-      date: "06 Feb 2025",
-    },
-  },
-  { type: "remove_item", groupId: "group-1", itemId: "article-3" },
-  { type: "remove_item", groupId: "group-1", itemId: "article-4" },
-  {
-    type: "add_item",
-    groupId: "group-1",
-    item: {
-      id: "article-5",
-      headline: "Updated evidence changes the shape of the proposal",
-      date: "26 Mar 2025",
-    },
+    "type": "review_item",
+    "groupId": "group-1",
+    "itemId": "entry-1"
   },
   {
-    type: "add_group",
-    groupId: "group-3",
-    afterGroupId: "group-1",
-    group: {
-      id: "group-3",
-      dateLabel: "Apr–Jun 2025",
-      summary: "New evidence creates an intermediate phase",
-      items: [
+    "type": "change_item",
+    "groupId": "group-1",
+    "itemId": "entry-2",
+    "item": {
+      "id": "entry-2",
+      "headline": "The revised plan makes room for six smaller beds",
+      "date": "24 Jan 2025"
+    }
+  },
+  {
+    "type": "remove_item",
+    "groupId": "group-1",
+    "itemId": "entry-3"
+  },
+  {
+    "type": "remove_item",
+    "groupId": "group-1",
+    "itemId": "entry-4"
+  },
+  {
+    "type": "change_item",
+    "groupId": "group-1",
+    "itemId": "entry-5",
+    "item": {
+      "id": "entry-5",
+      "headline": "The planting list adds shade-tolerant varieties",
+      "date": "14 Mar 2025"
+    }
+  },
+  {
+    "type": "add_item",
+    "groupId": "group-1",
+    "itemId": "entry-13",
+    "item": {
+      "id": "entry-13",
+      "headline": "A narrow path now follows the edge of the garden",
+      "date": "25 Mar 2025"
+    }
+  },
+  {
+    "type": "add_group",
+    "groupId": "group-3",
+    "afterGroupId": "group-1",
+    "group": {
+      "id": "group-3",
+      "dateLabel": "Apr\u2013Jun 2025",
+      "summary": "Testing soil and sunlight",
+      "items": [
         {
-          id: "article-8",
-          headline: "Independent assessment prompts a mid-year revision",
-          date: "19 May 2025",
-          diff: "added",
-        },
+          "id": "entry-14",
+          "headline": "A soil trial identifies two areas needing compost",
+          "date": "09 Apr 2025",
+          "diff": "added"
+        }
       ],
-      diff: "added",
-    },
+      "diff": "added"
+    }
   },
-  { type: "review_item", groupId: "group-2", itemId: "article-6" },
   {
-    type: "add_item",
-    groupId: "group-2",
-    item: {
-      id: "article-9",
-      headline: "Delivery teams publish the first implementation update",
-      date: "26 Sep 2025",
-    },
+    "type": "add_item",
+    "groupId": "group-3",
+    "itemId": "entry-15",
+    "item": {
+      "id": "entry-15",
+      "headline": "Morning shade is mapped before the beds are built",
+      "date": "07 May 2025"
+    }
   },
+  {
+    "type": "add_item",
+    "groupId": "group-3",
+    "itemId": "entry-16",
+    "item": {
+      "id": "entry-16",
+      "headline": "A rainwater barrel is added beside the tool shelf",
+      "date": "18 Jun 2025"
+    }
+  },
+  {
+    "type": "review_item",
+    "groupId": "group-2",
+    "itemId": "entry-6"
+  },
+  {
+    "type": "change_item",
+    "groupId": "group-2",
+    "itemId": "entry-7",
+    "item": {
+      "id": "entry-7",
+      "headline": "The watering rota moves to early mornings",
+      "date": "18 Jul 2025"
+    }
+  },
+  {
+    "type": "remove_item",
+    "groupId": "group-2",
+    "itemId": "entry-8"
+  },
+  {
+    "type": "remove_item",
+    "groupId": "group-2",
+    "itemId": "entry-9"
+  },
+  {
+    "type": "add_item",
+    "groupId": "group-2",
+    "itemId": "entry-17",
+    "item": {
+      "id": "entry-17",
+      "headline": "Herbs move into smaller pots along the path",
+      "date": "15 Aug 2025"
+    }
+  },
+  {
+    "type": "add_item",
+    "groupId": "group-2",
+    "itemId": "entry-18",
+    "item": {
+      "id": "entry-18",
+      "headline": "A short open-garden afternoon replaces the workshop",
+      "date": "06 Sep 2025"
+    }
+  },
+  {
+    "type": "add_group",
+    "groupId": "group-5",
+    "afterGroupId": "group-2",
+    "group": {
+      "id": "group-5",
+      "dateLabel": "Oct\u2013Dec 2025",
+      "summary": "Learning from the first harvest",
+      "items": [
+        {
+          "id": "entry-19",
+          "headline": "A harvest notebook records what grew well",
+          "date": "11 Oct 2025",
+          "diff": "added"
+        }
+      ],
+      "diff": "added"
+    }
+  },
+  {
+    "type": "add_item",
+    "groupId": "group-5",
+    "itemId": "entry-20",
+    "item": {
+      "id": "entry-20",
+      "headline": "Fallen leaves become mulch for the winter beds",
+      "date": "05 Nov 2025"
+    }
+  },
+  {
+    "type": "add_item",
+    "groupId": "group-5",
+    "itemId": "entry-21",
+    "item": {
+      "id": "entry-21",
+      "headline": "The tool shelf gains a weatherproof cover",
+      "date": "02 Dec 2025"
+    }
+  },
+  {
+    "type": "review_item",
+    "groupId": "group-4",
+    "itemId": "entry-10"
+  },
+  {
+    "type": "change_item",
+    "groupId": "group-4",
+    "itemId": "entry-11",
+    "item": {
+      "id": "entry-11",
+      "headline": "The second season gives climbing plants their own bed",
+      "date": "13 Feb 2026"
+    }
+  },
+  {
+    "type": "change_item",
+    "groupId": "group-4",
+    "itemId": "entry-12",
+    "item": {
+      "id": "entry-12",
+      "headline": "Seed orders favour varieties that handled the shade",
+      "date": "09 Mar 2026"
+    }
+  },
+  {
+    "type": "add_item",
+    "groupId": "group-4",
+    "itemId": "entry-22",
+    "item": {
+      "id": "entry-22",
+      "headline": "The new planting calendar is shared with the group",
+      "date": "20 Mar 2026"
+    }
+  },
+  {
+    "type": "add_item",
+    "groupId": "group-4",
+    "itemId": "entry-23",
+    "item": {
+      "id": "entry-23",
+      "headline": "A small seed exchange is set for the next open day",
+      "date": "28 Mar 2026"
+    }
+  },
+  {
+    "type": "review_item",
+    "groupId": "group-4",
+    "itemId": "entry-23"
+  }
 ];
 
 const timelineList = document.querySelector("#timelineList");
@@ -119,7 +348,7 @@ function rowHtml(item) {
 
 function removedClusterHtml(cluster) {
   const controlId = `removed-${cluster.id}`;
-  const label = `${cluster.items.length} removed articles`;
+  const label = `${cluster.items.length} removed entries`;
   return `<li class="removed-cluster" data-cluster-id="${escapeHtml(cluster.id)}" data-expanded="false">
     <button class="removed-cluster-toggle" type="button" aria-expanded="false" aria-controls="${controlId}">
       <span class="row-marker" aria-hidden="true"></span>
@@ -321,11 +550,13 @@ async function replay() {
   updateStatus("Reviewing timeline changes", "running");
   if (!(await wait(playbackDelay(260), token))) return;
 
-  for (const event of CHANGE_EVENTS) {
+  for (const [index, event] of CHANGE_EVENTS.entries()) {
+    updateStatus(`Updating ${index + 1} of ${CHANGE_EVENTS.length}`, "running");
     if (removedRun.length && !nextEventContinuesRemoval(event)) {
       if (!(await collapseRemovedRun(token))) return;
     }
     if (!(await applyEvent(event, token))) return;
+    if (!(await wait(playbackDelay(700), token))) return;
   }
 
   if (removedRun.length && !(await collapseRemovedRun(token))) return;
