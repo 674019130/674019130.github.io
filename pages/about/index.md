@@ -37,7 +37,7 @@ Hi, guys. 这里是苏💕。
 
 现在的[首页](/)像一封简短的信，灵感来自 [Sanyam 的个人网站](https://sanyam.sh/)。原来的双语作品集首页也完整留在了[经典首页](/home-classic)，那里还能看到项目、经历和活动热力图。
 
-我还留了一个 [UI 实验室](/lab)的入口，之后用来放交互与动效实验；目前还在准备中。网站每次折腾了什么，会记在[小站日志](/about/site)。
+我还留了一个 [UI 实验室](/lab)的入口，用来放交互与动效实验；第一个作品是[流式时间线](/lab/timeline/)。网站每次折腾了什么，会记在[小站日志](/about/site)。
 
 可以在评论区留言，也可以通过 [GitHub](https://github.com/674019130) 或[邮件](mailto:nostarsbutmyeyes@gmail.com)找到我。
 
