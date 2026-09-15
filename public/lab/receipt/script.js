@@ -10,7 +10,7 @@ function setState(state) {
   printer.dataset.state = state;
   paper.setAttribute('aria-hidden', String(state === 'idle'));
   machineStatus.textContent = { idle: 'READY', printing: 'PRINTING', printed: 'PRINTED' }[state];
-  status.textContent = { idle: 'Ready to print', printing: 'Printing your lunch decision…', printed: 'Printed · lunch is decided' }[state];
+  status.textContent = { idle: 'Ready to print', printing: 'Printing your receipt…', printed: 'Printed · your sample receipt is ready' }[state];
   printButton.disabled = state === 'printing';
   printButton.textContent = state === 'printed' ? 'Print again' : 'Print receipt';
 }
