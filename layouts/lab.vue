@@ -3,6 +3,11 @@ import { computed, ref } from 'vue'
 import { useHead } from '@unhead/vue'
 
 const zh = ref(false)
+const experiments = [
+  { slug: 'timeline', title: 'Streaming timeline', titleZh: '流式时间线', date: '2026-09-14', dateLabel: 'Sep 14, 2026', dateLabelZh: '2026 年 9 月 14 日' },
+  { slug: 'receipt', title: 'Receipt printer', titleZh: '小票打印机', date: '2026-09-15', dateLabel: 'Sep 15, 2026', dateLabelZh: '2026 年 9 月 15 日' },
+  { slug: 'mascot', title: 'Expressive mascot', titleZh: '表情角色', date: '2026-09-15', dateLabel: 'Sep 15, 2026', dateLabelZh: '2026 年 9 月 15 日' },
+]
 useHead(computed(() => ({
   title: zh.value ? 'UI 实验室' : 'UI lab',
   htmlAttrs: { lang: zh.value ? 'zh-CN' : 'en' },
@@ -19,7 +24,7 @@ useHead(computed(() => ({
         </header>
         <h1>{{ zh ? 'UI 实验室' : 'UI lab' }}</h1>
         <p>{{ zh ? '一些关于界面、交互与动效的小实验。' : 'Small experiments in interfaces, interactions, and motion.' }}</p>
-        <div class="lab-list"><LabTimelinePreview :zh="zh" /></div>
+        <div class="lab-list"><LabExperimentPreview v-for="experiment in experiments" :key="experiment.slug" v-bind="experiment" :zh="zh" /></div>
         <footer><RouterLink to="/archives/">{{ zh ? '先看看文章' : 'Explore the writing' }} ↗</RouterLink></footer>
       </div>
     </main>
