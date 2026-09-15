@@ -7,6 +7,9 @@
 .character { transform-origin: 80px 116px; }
 .body { fill: var(--character); transition: fill 400ms; }
 .face { transform-origin: 80px 80px; }
+.expression { opacity: 0; transition: opacity 140ms ease; fill: var(--face); }
+.expression path { fill: none; stroke: var(--face); stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; }
+.expression .mouth { stroke-width: 2.5; }.expression .brow { stroke-width: 2.5; }.expression .cheeks { fill: #e6a39a; opacity: .6; }
 .lab-mascot[data-mood="idle"] .face { animation: look-around 7s ease-in-out infinite; }
 .lab-mascot[data-mood="thinking"] .character { animation: ponder 3s ease-in-out infinite; }
 .lab-mascot[data-mood="happy"] .character { animation: happy-bob 600ms cubic-bezier(.22,1,.36,1) both; }
@@ -28,7 +31,13 @@
 .lab-mascot[data-still] * { animation: none !important; transition: none !important; }
 :root[data-preview] .mascot-stage { height: 400px; margin: 0; border: 0; border-radius: 0; background: var(--bg); }
 :root[data-preview] .lab-mascot { width: 228px; height: 228px; }
-.face path { fill: none; stroke: var(--face); stroke-linecap: round; stroke-linejoin: round; }
-.face .eye { stroke-width: 10; }
-.face .mouth { fill: var(--face); stroke-width: 2.5; }
-#face-cheeks { fill: #e6a39a; }
+.lab-mascot:not([data-reaction])[data-mood="idle"] [data-face="idle"] { opacity: 1; }
+.lab-mascot:not([data-reaction])[data-mood="thinking"] [data-face="thinking"] { opacity: 1; }
+.lab-mascot:not([data-reaction])[data-mood="happy"] [data-face="happy"] { opacity: 1; }
+.lab-mascot:not([data-reaction])[data-mood="proud"] [data-face="proud"] { opacity: 1; }
+.lab-mascot:not([data-reaction])[data-mood="sleepy"] [data-face="sleepy"] { opacity: 1; }
+.lab-mascot[data-reaction="notice"] [data-face="notice"] { opacity: 1; }
+.lab-mascot[data-reaction="consider"] [data-face="consider"] { opacity: 1; }
+.lab-mascot[data-reaction="wink"] [data-face="wink"] { opacity: 1; }
+.lab-mascot[data-reaction="surprised"] [data-face="surprised"] { opacity: 1; }
+.lab-mascot[data-reaction="approve"] [data-face="approve"] { opacity: 1; }
