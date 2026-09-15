@@ -30,3 +30,5 @@
 :root[data-preview] .lab-mascot { width: 228px; height: 228px; }
 .face path { fill: none; stroke: var(--face); stroke-linecap: round; stroke-linejoin: round; }
 .face .eye { stroke-width: 10; }
+.face .mouth { fill: var(--face); stroke-width: 2.5; }
+#face-cheeks { fill: #e6a39a; }
