@@ -1,0 +1,1 @@
+User requested removal of the visible Chinese background playback button. Preserve the former component; reduced-motion and background-tab pause behavior remain active. Visitors no longer have an in-page manual playback control.

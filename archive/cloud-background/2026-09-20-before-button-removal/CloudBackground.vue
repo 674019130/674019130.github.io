@@ -44,6 +44,9 @@ watch(paused, sync)
       <div class="cloud-veil" />
     </div>
     <div class="cloud-content"><slot><LetterHome /></slot></div>
+    <button class="cloud-motion" type="button" :aria-pressed="paused" @click="paused = !paused">
+      {{ paused ? '播放背景' : '暂停背景' }}
+    </button>
   </div>
 </template>
 
@@ -55,6 +58,9 @@ watch(paused, sync)
 .cloud-veil { position: absolute; inset: 0; background: rgb(255 255 255 / 66%); transition: background 250ms; }
 .cloud-background :deep(.letter-home) { position: relative; z-index: 1; background: transparent; padding-bottom: 100px; --home-muted: #394b52; --home-text: #172d38; }
 .cloud-background :deep(.letter-arrival) { animation: none; opacity: 1; transform: none; }
+.cloud-motion { position: fixed; left: max(16px, env(safe-area-inset-left)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 10; border: 1px solid #d6dfe1; border-radius: 8px; padding: 8px 12px; background: #ffffffed; color: #394b52; font: 12px/1.4 system-ui; cursor: pointer; }
+.cloud-motion:hover { background: #fff; }
+.cloud-motion:focus-visible { outline: 2px solid #4a5b96; outline-offset: 3px; }
 :global(html.dark .cloud-background .cloud-veil) { background: rgb(18 27 34 / 78%); }
 :global(html.dark .cloud-background .letter-home) { --home-muted: #dae4e8; --home-text: #f3f6f7; }
 .cloud-background[data-page='archives'] .cloud-veil { background: rgb(255 255 255 / 84%); }

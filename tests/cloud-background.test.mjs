@@ -32,15 +32,16 @@ test('cloud video starts slowly and pauses when the page is hidden', async () =>
   assert.equal(f.count().plays, before.plays)
   assert.ok(f.count().pauses > before.pauses)
 })
-test('reduced motion loads no video until the visitor explicitly plays it', async () => {
+test('reduced motion loads no video until the motion preference is disabled', async () => {
   const f = await fixture(true)
   assert.equal(f.source.value, undefined)
   assert.equal(f.count().plays, 0)
-  f.paused.value = false
+  f.media.matches = false
+  f.listeners.get('media:change')()
   await f.sync()
   assert.ok(f.count().plays > 0)
 })
-test('manual pause survives visibility changes and listeners are removed on exit', async () => {
+test('paused state survives visibility changes and listeners are removed on exit', async () => {
   const f = await fixture()
   f.paused.value = true
   const before = f.count().plays

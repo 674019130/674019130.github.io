@@ -2,7 +2,7 @@
 
 Components are auto-registered on demand through `unplugin-vue-components`.
 
-- `CloudBackground.vue`: shared homepage/about/archive cloud video; static poster for reduced motion, pause control, background-tab suspension, and page-specific overlays
+- `CloudBackground.vue`: shared homepage/about/archive cloud video; static poster for reduced motion, background-tab suspension, and page-specific overlays
 - `PortfolioHome.vue`: restrained bilingual homepage, profile details, writing, experience, working set, and projects
 - `HomeActivity.vue`: six-month Tokdash and GitHub snapshot visualizations; it reads committed JSON only and must never call GitHub or a local Tokdash service from the browser
 - `HomeComments.vue`: lazy homepage Waline instance sharing the site's existing comment service at path `/`
