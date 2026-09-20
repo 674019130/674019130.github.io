@@ -1,14 +1,14 @@
 {
   "source": "tokdash",
-  "generatedAt": "2026-09-14T11:22:16.599Z",
+  "generatedAt": "2026-09-20T11:23:11.124Z",
   "period": {
-    "from": "2026-03-15",
-    "to": "2026-09-14"
+    "from": "2026-03-21",
+    "to": "2026-09-20"
   },
   "summary": {
-    "totalTokens": 23624503130,
-    "activeDays": 71,
-    "averageTokensPerActiveDay": 332739481
+    "totalTokens": 24273758090,
+    "activeDays": 76,
+    "averageTokensPerActiveDay": 319391554
   },
   "days": [
     {
@@ -294,6 +294,26 @@
     {
       "date": "2026-09-14",
       "level": 3
+    },
+    {
+      "date": "2026-09-15",
+      "level": 2
+    },
+    {
+      "date": "2026-09-16",
+      "level": 2
+    },
+    {
+      "date": "2026-09-17",
+      "level": 1
+    },
+    {
+      "date": "2026-09-18",
+      "level": 2
+    },
+    {
+      "date": "2026-09-20",
+      "level": 1
     }
   ]
 }

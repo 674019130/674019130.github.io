@@ -50,7 +50,15 @@ const recentWriting = computed(() => {
     groups.set(key, variants)
   }
 
-  return [...groups.entries()].slice(0, 6).map(([key, variants]) => ({
+  // Latest writing follows publication dates, independently of archive pinning.
+  const publishedAt = (variants: HomePost[]) => Math.max(0, ...variants.map((post) => {
+    const timestamp = Date.parse(String(post.date ?? '').replace(' ', 'T'))
+    return Number.isFinite(timestamp) ? timestamp : 0
+  }))
+
+  return [...groups.entries()]
+    .sort(([, a], [, b]) => publishedAt(b) - publishedAt(a))
+    .slice(0, 6).map(([key, variants]) => ({
     key,
     post: variants.find(post => postLocale(post) === locale.value) || variants[0],
     variants: [...variants]
