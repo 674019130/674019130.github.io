@@ -1,0 +1,1 @@
+Preview controls and source assets archived when promoting the approved cloud background to production. Keeps the earlier comparison UI recoverable; source asset license is unverified. Production video originates from https://www.allysen.net/images/background.mp4 .

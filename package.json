@@ -17,17 +17,19 @@
     "dev": "valaxy",
     "rss": "valaxy rss",
     "serve": "vite preview",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@waline/client": "3.4.1",
-    "valaxy": "^0.28.11",
+    "valaxy": "1.0.0-rc.12",
     "valaxy-addon-bangumi": "^0.4.0",
     "valaxy-addon-components": "^0.1.0",
     "valaxy-addon-lightgallery": "^0.0.4",
     "valaxy-addon-twikoo": "^0.0.4",
     "valaxy-addon-waline": "^0.2.1",
-    "valaxy-theme-yun": "^0.28.11"
+    "valaxy-theme-yun": "1.0.0-rc.12",
+    "vue": "3.5.41"
   },
   "devDependencies": {
     "typescript": "^5.9.3"

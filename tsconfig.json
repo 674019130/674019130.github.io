@@ -2,12 +2,21 @@
   "compilerOptions": {
     "target": "ESNext",
     "jsx": "preserve",
-    "lib": ["DOM", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "baseUrl": ".",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "paths": {
-      "~/*": ["./*"]
+      "~/*": [
+        "./*"
+      ],
+      "valaxy-addon-waline": [
+        "./node_modules/valaxy-addon-waline/index.d.ts"
+      ]
     },
     "resolveJsonModule": true,
     "strict": true,
@@ -17,5 +26,9 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "archive"
+  ]
 }

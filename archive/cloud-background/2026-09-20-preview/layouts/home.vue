@@ -8,7 +8,8 @@ const isHome = computed(() => route.path === '/')
 
 <template>
   <YunLayoutWrapper v-if="isHome" :footer="false" no-margin>
-    <CloudBackground />
+    <CloudBackgroundPreview v-if="route.query.background === 'clouds'" />
+    <LetterHome v-else />
   </YunLayoutWrapper>
 
   <YunLayoutWrapper v-else>
