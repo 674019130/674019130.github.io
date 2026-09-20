@@ -18,7 +18,10 @@
     "rss": "valaxy rss",
     "serve": "vite preview",
     "test": "node --test tests/*.test.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prebuild:ssg": "node scripts/sync-writing-dates.mjs",
+    "prebuild:spa": "node scripts/sync-writing-dates.mjs",
+    "predev": "node scripts/sync-writing-dates.mjs"
   },
   "dependencies": {
     "@waline/client": "3.4.1",

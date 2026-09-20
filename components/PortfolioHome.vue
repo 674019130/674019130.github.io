@@ -4,6 +4,7 @@ import type { Post } from 'valaxy/types'
 import { usePostListWithCollections } from 'valaxy'
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import projectsSnapshot from '../data/projects.json'
+import writingDates from '../data/writing-dates.json'
 
 type HomeLocale = 'en' | 'zh'
 type HomePost = Post & {
@@ -40,13 +41,25 @@ function postLocale(post: HomePost): HomeLocale | undefined {
     return 'zh'
 }
 
+function explicitPublicationDate(post: HomePost): string | undefined {
+  let path = post.path || ''
+  // Valaxy can encode non-ASCII slugs twice; normalize for source-file lookup.
+  for (let i = 0; i < 2; i++) {
+    try { path = decodeURIComponent(path) }
+    catch { break }
+  }
+  return (writingDates as Record<string, string>)[path.replace(/\/$/, '')]
+}
+
 const recentWriting = computed(() => {
   const groups = new Map<string, HomePost[]>()
 
   for (const post of posts.value.filter(post => !post._collection) as HomePost[]) {
+    const date = explicitPublicationDate(post)
+    if (!date) continue
     const key = post.translationKey || post.path || String(post.title)
     const variants = groups.get(key) || []
-    variants.push(post)
+    variants.push({ ...post, date })
     groups.set(key, variants)
   }
 
