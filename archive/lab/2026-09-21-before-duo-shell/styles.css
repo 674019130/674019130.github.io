@@ -7,7 +7,7 @@ main { max-width: 660px; }
 .leaf { clip-path: var(--leaf-clip); }
 .shell { position: absolute; width: 100%; height: 66.6667%; top: 16.6667%; overflow: visible; }
 .shell path { fill: var(--bg); stroke: var(--ink); stroke-width: 1.4; }
-.screen { position: absolute; top: 16.6667%; height: 66.6667%; width: 50%; padding: clamp(12px, 2.8vw, 21px); display: flex; flex-direction: column;  }
+.screen { position: absolute; top: 16.6667%; height: 66.6667%; width: 50%; padding: clamp(12px, 2.8vw, 21px); display: flex; flex-direction: column; filter: blur(var(--blur)); }
 .right-screen { left: 50%; }
 .left-screen { left: 0; }
 .base .screen { opacity: var(--base-opacity); transform: translateX(var(--content-shift, 0px)); }
@@ -56,14 +56,3 @@ input:focus-visible { outline: 2px solid #7181a5; outline-offset: 4px; border-ra
 @media (max-width: 480px) { .stage { min-height: 340px; } .book { width: min(380px, 100%); } .screen { padding: 12px; } .edition { font-size: 8px; } .credit { margin-top: 24px; } }
 
 .glare::after { content: ""; position: absolute; inset: 0; opacity: .1; background: repeating-linear-gradient(115deg, #fff 0px, #fff 1px, transparent 1px, transparent 3px); mask-image: radial-gradient(ellipse at var(--light-x) var(--light-y), #000, transparent 60%); }
-
-/* The shell has perspective; its display stays within the original horizontal bounds. */
-.shell { z-index: 0; }
-.leaf .shell path { fill: #030303; stroke: #171717; }
-.leaf::before { content: ""; position: absolute; z-index: 1; inset: 16.6667% 0; background: var(--bg); }
-.face { z-index: 2; }
-.base .screen { z-index: 2; }
-.inner .screen { left: var(--outer-left, 0%); filter: blur(var(--blur)); }
-.foil, .glare { top: 16.6667%; bottom: 16.6667%; z-index: 3; }
-.base::after, .leaf::after { content: ""; position: absolute; z-index: 4; inset: 16.6667% 0; pointer-events: none; background: rgb(0 0 0 / var(--fold-shade, 0)); }
-.leaf::after { right: var(--leaf-right, 0%); left: var(--outer-left, 0%); background: linear-gradient(90deg, rgb(0 0 0 / var(--edge-shade, 0)), transparent 90%), rgb(0 0 0 / var(--fold-shade, 0)); }

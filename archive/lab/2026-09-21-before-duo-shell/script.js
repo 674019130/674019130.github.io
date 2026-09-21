@@ -77,16 +77,12 @@
     // Content stays front-facing: the surface clips it instead of rotating glyphs.
     // Hinge angle, not elapsed time, drives blur and the display handoff.
     const middle = Math.sin(Math.PI * p);
-    book.style.setProperty('--blur', `${still() ? 0 : 12 * (1 - smooth(.65, 1, p))}px`);
-    book.style.setProperty('--outer-left', `${Math.min(outerX, 220) / 440 * 100}%`);
-    book.style.setProperty('--leaf-right', p >= .5 ? '50%' : '0%');
-    book.style.setProperty('--fold-shade', String(.52 * middle));
-    book.style.setProperty('--edge-shade', String(.9 * middle));
+    book.style.setProperty('--blur', `${still() ? 0 : 9 * middle ** 2}px`);
     book.style.setProperty('--cover-opacity', String(1 - smooth(.08, .47, p)));
-    book.style.setProperty('--inner-opacity', String(smooth(.63, .98, p)));
-    book.style.setProperty('--base-opacity', '1');
-    book.style.setProperty('--content-shift', '0px');
-    book.style.setProperty('--inner-shift', '0px');
+    book.style.setProperty('--inner-opacity', String(smooth(.5, .95, p)));
+    book.style.setProperty('--base-opacity', String(smooth(.16, .85, p)));
+    book.style.setProperty('--content-shift', `${-15 * middle}px`);
+    book.style.setProperty('--inner-shift', `${28 * (1 - p)}px`);
     book.style.setProperty('--hinge-alpha', String(.08 + .24 * middle));
     lighting();
     slider.value = String(Math.round(p * 180));

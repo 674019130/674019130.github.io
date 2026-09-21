@@ -1,0 +1,1 @@
+Archived before separating the black perspective shell from the front-facing rectangular display. Previous version blurred both panels and filled the whole shell with the card material. Shared resources remain in public/lab/shared.

@@ -68,12 +68,16 @@ test('cancelled horizontal drag settles safely and contact link does not start a
 })
 
 
-test('Duo handoff blurs mid-fold but returns sharp endpoint content', () => {
+test('Duo display keeps fixed content visible and restores the folded surface at the endpoint', () => {
   const h = harness(), slider = h.element('#fold'), style = h.element('#book').style.values
   slider.value = '90'; slider.listeners.input()
-  assert.equal(style['--blur'], '9px')
+  assert.equal(style['--blur'], '12px')
   assert.equal(style['--cover-opacity'], '0')
-  assert.ok(Number(style['--base-opacity']) > 0)
+  assert.equal(style['--base-opacity'], '1')
+  assert.equal(style['--content-shift'], '0px')
+  slider.value = '114'; slider.listeners.input()
+  assert.ok(Number(style['--fold-shade']) > .4)
+  assert.ok(parseFloat(style['--outer-left']) < 50)
   slider.value = '180'; slider.listeners.input()
   assert.ok(parseFloat(style['--blur']) < .001)
   assert.equal(style['--base-opacity'], '1')
