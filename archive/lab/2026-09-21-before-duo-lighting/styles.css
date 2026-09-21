@@ -1,0 +1,42 @@
+main { max-width: 660px; }
+.stage { display: grid; place-items: center; min-height: 410px; perspective: 1400px; overflow: visible; }
+.book { --fold: 180deg; --shift: -25%; --shade: .16; --p: 0; position: relative; width: min(440px, 100%); aspect-ratio: 22 / 15; transform: translateX(var(--shift)); transform-style: preserve-3d; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; }
+.book.dragging { cursor: grabbing; }
+.panel { background: var(--bg); border: 1px solid var(--ink); padding: clamp(12px, 2.8vw, 21px); }
+.base { position: absolute; inset: 0 0 0 50%; border-radius: 0 12px 12px 0; display: flex; flex-direction: column; box-shadow: 3px 5px 7px #00000005; }
+.base::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, #000, transparent 88%); opacity: var(--shade); border-radius: inherit; }
+.leaf { position: absolute; inset: 0 50% 0 0; transform-origin: 100% 50%; transform: rotateY(var(--fold)); transform-style: preserve-3d; z-index: 2; }
+.face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.inner { border-radius: 12px 0 0 12px; display: flex; flex-direction: column; border-right-color: var(--line); }
+.inner::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(270deg, #000, transparent 85%); opacity: var(--shade); pointer-events: none; }
+.cover { transform: rotateY(180deg); border-radius: 0 12px 12px 0; display: flex; flex-direction: column; box-shadow: 3px 5px 7px #00000008; }
+.topline { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.monogram { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(24px, 4vw, 30px); line-height: 1; font-weight: 400; letter-spacing: -.08em; }
+.edition { color: var(--muted); font: 9px/1.3 ui-monospace, monospace; text-align: right; }
+.identity { margin-top: auto; display: grid; gap: 6px; }
+.identity strong { font-size: clamp(17px, 3vw, 20px); font-weight: 500; letter-spacing: -.03em; }
+.identity span, .message span { font-size: clamp(10px, 2vw, 12px); color: var(--muted); line-height: 1.5; }
+.cover-mark { margin: auto; font: 50px/1 Georgia, serif; color: var(--line); }
+.crease { position: absolute; left: 0; inset-block: 0; width: 5px; background: linear-gradient(90deg, #0000000d, transparent); }
+.stamp { width: 43px; height: 43px; display: grid; place-items: center; border: 1px solid #798780; border-radius: 50%; color: #556a5b; background: #dfe9e0; font-family: Georgia, 'Songti SC', serif; font-size: 21px; }
+.message { margin-top: auto; }
+.message p { font-size: clamp(12px, 2.7vw, 17px); line-height: 1.4; font-weight: 500; letter-spacing: -.025em; margin: 0 0 9px; }
+.edge-note { margin-top: 18px; color: var(--muted); font: 9px ui-monospace, monospace; }
+.contact-list { margin: auto 0; font: 10px/1.6 ui-monospace, monospace; }
+.contact-list div { display: flex; justify-content: space-between; gap: 8px; margin-block: 7px; }
+.contact-list dt { color: var(--muted); }
+.contact-list dd { margin: 0; text-align: right; }
+.contact-list a { display: inline-block; padding: 3px 0; }
+.fold-controls { width: min(300px, 100%); margin: 5px auto 0; }
+.control-heading { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; gap: 8px; }
+output { font: 11px ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+input[type=range] { display: block; width: 100%; margin: 10px 0; height: 26px; accent-color: var(--ink); cursor: ew-resize; }
+input:focus-visible { outline: 2px solid #7181a5; outline-offset: 4px; border-radius: 4px; }
+.actions { display: flex; gap: 7px; justify-content: center; }
+.actions button { font-size: 11px; padding: 8px 11px; }
+.status { text-align: center; font-size: 11px; }
+.credit { margin-top: 44px; text-align: center; font-size: 11px; line-height: 1.8; color: var(--muted); }
+:root[data-preview] .stage { width: 600px; height: 400px; min-height: 0; }
+:root[data-preview] .fold-controls, :root[data-preview] .credit { display: none; }
+:root[data-preview] .book { width: 380px; }
+@media (max-width: 480px) { .stage { min-height: 340px; } .book { width: min(380px, 100%); } .panel { padding: 12px; } .edition { font-size: 8px; } .credit { margin-top: 24px; } }

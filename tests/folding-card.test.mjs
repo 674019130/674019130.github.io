@@ -9,7 +9,8 @@ function harness(reduced = false) {
   function element(selector) {
     if (!elements.has(selector)) elements.set(selector, {
       value: '0', textContent: '', attributes: {}, listeners: {}, inert: false, offsetWidth: 440,
-      style: { setProperty() {} }, classList: { add() {}, remove() {} },
+      dataset: {}, getBoundingClientRect() { return { left: 0, top: 0, width: 440, height: 430 } },
+      style: { values: {}, setProperty(k, v) { this.values[k] = v } }, classList: { add() {}, remove() {} },
       setAttribute(k, v) { this.attributes[k] = v },
       addEventListener(k, fn) { this.listeners[k] = fn },
       setPointerCapture() {}, hasPointerCapture() { return true }, releasePointerCapture() {}, focus() {},
@@ -64,4 +65,31 @@ test('cancelled horizontal drag settles safely and contact link does not start a
   book.listeners.pointerdown({ ...event, target: { closest() { return {} } } })
   book.listeners.pointerup({ ...event, type: 'pointerup' })
   assert.equal(h.element('#fold').value, '180')
+})
+
+
+test('Duo handoff blurs mid-fold but returns sharp endpoint content', () => {
+  const h = harness(), slider = h.element('#fold'), style = h.element('#book').style.values
+  slider.value = '90'; slider.listeners.input()
+  assert.equal(style['--blur'], '9px')
+  assert.equal(style['--cover-opacity'], '0')
+  assert.ok(Number(style['--base-opacity']) > 0)
+  slider.value = '180'; slider.listeners.input()
+  assert.ok(parseFloat(style['--blur']) < .001)
+  assert.equal(style['--base-opacity'], '1')
+})
+
+test('pointer light persists while parked and responds to the hinge normal', () => {
+  const h = harness(), stage = h.element('#stage'), leaf = h.element('#leaf')
+  stage.listeners.pointermove({ clientX: 420, clientY: 90 }); h.advance(16)
+  const first = leaf.style.values['--light-x']
+  h.advance(1000)
+  assert.equal(leaf.style.values['--light-x'], first)
+  stage.listeners.pointermove({ clientX: 20, clientY: 330 }); h.advance(16)
+  assert.notEqual(leaf.style.values['--light-x'], first)
+  const moved = leaf.style.values['--light-x']
+  h.element('#fold').value = '125'; h.element('#fold').listeners.input()
+  assert.notEqual(leaf.style.values['--light-x'], moved)
+  h.click('#finish')
+  assert.equal(h.element('#book').dataset.foil, 'false')
 })

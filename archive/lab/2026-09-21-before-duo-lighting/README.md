@@ -1,0 +1,1 @@
+Archived first folding-card implementation before replacing paper-like rotating text with front-projected Duo content, hinge-driven blur handoff and pointer-driven foil lighting. Preserved for rollback; original relative shared assets live under public/lab/shared.
