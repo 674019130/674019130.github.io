@@ -4,6 +4,7 @@ import { useHead } from '@unhead/vue'
 
 const zh = ref(false)
 const experiments = [
+  { slug: 'folding-card', title: 'Folding card', titleZh: '折叠名片', date: '2026-09-21', dateLabel: 'Sep 21, 2026', dateLabelZh: '2026 年 9 月 21 日' },
   { slug: 'timeline', title: 'Streaming timeline', titleZh: '流式时间线', date: '2026-09-14', dateLabel: 'Sep 14, 2026', dateLabelZh: '2026 年 9 月 14 日' },
   { slug: 'receipt', title: 'Receipt printer', titleZh: '小票打印机', date: '2026-09-15', dateLabel: 'Sep 15, 2026', dateLabelZh: '2026 年 9 月 15 日' },
   { slug: 'mascot', title: 'Expressive mascot', titleZh: '表情角色', date: '2026-09-15', dateLabel: 'Sep 15, 2026', dateLabelZh: '2026 年 9 月 15 日' },
