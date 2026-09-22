@@ -60,7 +60,7 @@ function render(motion = false) {
 }
 function schedule() {
   clearInterval(timer); timer = undefined;
-  if (!paused && range === 'live' && !document.hidden) timer = setInterval(() => { tick++; render(true); }, 2400);
+  if (!paused && range === 'live' && !document.hidden) timer = setInterval(() => { tick++; render(true); }, 600);
   document.documentElement.dataset.paused = String(paused || range !== 'live');
   $('#feed-label').textContent = range !== 'live' ? 'Simulated snapshot' : paused ? 'Feed paused' : 'Simulated live feed';
 }
