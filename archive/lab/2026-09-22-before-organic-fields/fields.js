@@ -7,21 +7,19 @@ function mount(kind,selector){
  const canvas=/** @type {HTMLCanvasElement} */(document.querySelector(selector));
  const ctx=canvas.getContext('2d');if(!ctx)return;
  const button=/** @type {HTMLButtonElement} */(document.querySelector(`[data-study-pause="${kind}"]`));
- const points=createParticles();let pointer=[.5,.5],active=false,strength=0,paused=false,visible=false,frame=0,last=0,mode=0,blend=0,oldMode=0,time=0,speed=0;let previousPointer=[.5,.5];
+ const points=createParticles();let pointer=[.5,.5],active=false,strength=0,paused=false,visible=false,frame=0,last=0,mode=0,blend=0,oldMode=0;
  function size(){const r=canvas.getBoundingClientRect();const scale=Math.min(devicePixelRatio,1.5);canvas.width=Math.round(r.width*scale);canvas.height=Math.round(r.height*scale);ctx.setTransform(scale,0,0,scale,0,0);return [r.width,r.height];}
  let dimensions=size();
  function draw(){
  const [w,h]=dimensions;ctx.clearRect(0,0,w,h);
  if(kind==='particles'){
- for(const p of points){const d=Math.hypot(p.x-pointer[0],(p.y-pointer[1])*h/w),ink=strength*Math.exp(-d*d/.055);ctx.fillStyle=`rgba(${Math.round(151-36*ink)},${Math.round(142-80*ink)},${Math.round(156-18*ink)},${.18+ink*.48})`;ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.55;ctx.beginPath();ctx.moveTo(p.px*w,p.py*h);ctx.lineTo(p.x*w,p.y*h);ctx.stroke();ctx.fillRect(p.x*w,p.y*h,.65+ink*.35,.65+ink*.35);}
-
+ for(const p of points){const d=Math.hypot(p.x-pointer[0],(p.y-pointer[1])*.48),ink=strength*Math.exp(-d*d/.055);ctx.fillStyle=`rgba(${Math.round(151-35*ink)},${Math.round(142-62*ink)},${Math.round(156-20*ink)},${.25+ink*.45})`;ctx.beginPath();ctx.arc(p.x*w,p.y*h,.55+ink*.3,0,Math.PI*2);ctx.fill();}
  if(active){ctx.strokeStyle='#a58baf';ctx.lineWidth=.7;ctx.beginPath();ctx.moveTo(pointer[0]*w-4,pointer[1]*h);ctx.lineTo(pointer[0]*w+4,pointer[1]*h);ctx.moveTo(pointer[0]*w,pointer[1]*h-4);ctx.lineTo(pointer[0]*w,pointer[1]*h+4);ctx.stroke();}
  }else{
- const tint=(Math.sin(time*.18)+1)/2;const wash=ctx.createLinearGradient(0,0,w,h);wash.addColorStop(0,`rgba(174,156,209,${.09+.045*(1-tint)})`);wash.addColorStop(1,`rgba(223,160,184,${.08+.06*tint})`);ctx.fillStyle=wash;ctx.fillRect(0,0,w,h);
- const nx=120,ny=60,grid=new Float32Array((nx+1)*(ny+1));
- for(let y=0;y<=ny;y++)for(let x=0;x<=nx;x++){const px=x/nx,py=y/ny;grid[y*(nx+1)+x]=heightAt(px,py,oldMode,time)*(1-blend)+heightAt(px,py,mode,time)*blend+strength*.55*Math.exp(-((px-pointer[0])**2+(py-pointer[1])**2)/.026);}
- ctx.lineWidth=.7;ctx.strokeStyle=`rgba(${165+Math.round(tint*20)},130,164,.46)`;
- for(let level=-.72;level<.8;level+=.24){ctx.beginPath();for(let y=0;y<ny;y++)for(let x=0;x<nx;x++){
+ const nx=90,ny=45,grid=new Float32Array((nx+1)*(ny+1));
+ for(let y=0;y<=ny;y++)for(let x=0;x<=nx;x++){const px=x/nx,py=y/ny;grid[y*(nx+1)+x]=heightAt(px,py,oldMode)*(1-blend)+heightAt(px,py,mode)*blend+strength*.55*Math.exp(-((px-pointer[0])**2+(py-pointer[1])**2)/.026);}
+ ctx.lineWidth=.65;ctx.strokeStyle='#b78eae';
+ for(let level=-.9;level<1;level+=.12){ctx.beginPath();for(let y=0;y<ny;y++)for(let x=0;x<nx;x++){
  const i=y*(nx+1)+x,values=[grid[i],grid[i+1],grid[i+nx+2],grid[i+nx+1]],verts=[[x,y],[x+1,y],[x+1,y+1],[x,y+1]],hits=[];
  for(let edge=0;edge<4;edge++){const next=(edge+1)%4,a=values[edge],b=values[next];if((a<level)!==(b<level)){const t=crossing(a,b,level);hits.push([(verts[edge][0]+(verts[next][0]-verts[edge][0])*t)*w/nx,(verts[edge][1]+(verts[next][1]-verts[edge][1])*t)*h/ny]);}}
  for(let k=0;k+1<hits.length;k+=2){ctx.moveTo(hits[k][0],hits[k][1]);ctx.lineTo(hits[k+1][0],hits[k+1][1]);}
@@ -30,9 +28,9 @@ function mount(kind,selector){
  }
  function stop(){cancelAnimationFrame(frame);frame=0;last=0;}
  /** @param {number} now */
- function loop(now){frame=0;if(!last || now-last>32){const dt=last?Math.min((now-last)/1000,.05):1/30;last=now;time+=dt;speed+=(Math.min(1,Math.hypot(pointer[0]-previousPointer[0],pointer[1]-previousPointer[1])*24)-speed)*.12;previousPointer=[...pointer];strength+=(Number(active)-strength)*.09;blend=Math.min(1,blend+.055);if(kind==='particles')stepParticles(points,pointer,strength,time,speed,dimensions[1]/dimensions[0]);draw();}if(visible && !paused && !still() && !document.hidden)frame=requestAnimationFrame(loop);}
+ function loop(now){frame=0;if(!last || now-last>32){last=now;strength+=(Number(active)-strength)*.09;blend=Math.min(1,blend+.055);if(kind==='particles')stepParticles(points,pointer,strength);draw();}if(visible && !paused && !still() && !document.hidden)frame=requestAnimationFrame(loop);}
  function sync(){stop();button.disabled=still();button.textContent=paused?'Resume':'Pause';button.setAttribute('aria-pressed',String(paused));draw();if(visible&&!paused&&!still()&&!document.hidden)frame=requestAnimationFrame(loop);}
- function interact(){if(paused)return;active=true;if(still()){strength=1;blend=1;if(kind==='particles')for(let i=0;i<65;i++)stepParticles(points,pointer,strength,time,speed,dimensions[1]/dimensions[0]);draw();}}
+ function interact(){if(paused)return;active=true;if(still()){strength=1;blend=1;if(kind==='particles')for(let i=0;i<65;i++)stepParticles(points,pointer,strength);draw();}}
  canvas.addEventListener('pointermove',e=>{if(paused)return;const r=canvas.getBoundingClientRect();pointer=[Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))];interact();});
  canvas.addEventListener('pointerdown',e=>{if(paused)return;const r=canvas.getBoundingClientRect();pointer=[Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))];canvas.setPointerCapture(e.pointerId);interact();});
  function release(){active=false;if(still()){strength=0;if(kind==='particles')for(let i=0;i<80;i++)stepParticles(points,pointer,0);draw();}}

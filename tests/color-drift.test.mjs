@@ -24,3 +24,15 @@ test('particles respond locally and return to their original field after release
 test('landscapes differ, are deterministic, and contour interpolation stays on the edge',()=>{
  assert.equal(heightAt(.3,.7,0),heightAt(.3,.7,0));assert.notEqual(heightAt(.3,.7,0),heightAt(.3,.7,1));assert.notEqual(heightAt(.3,.7,1),heightAt(.3,.7,2));assert.equal(crossing(-1,1,0),.5);assert.equal(crossing(1,1,1),.5);
 });
+test('curl field evolves while held, stays finite through fast gestures, and settles on release',()=>{
+ const points=createParticles(600);
+ for(let i=0;i<180;i++)stepParticles(points,[.5,.5],1,i/30,.1,.4);
+ const held=points.map(p=>[p.x,p.y]);
+ for(let i=180;i<240;i++)stepParticles(points,[.5,.5],1,i/30,.1,.4);
+ assert.ok(points.some((p,i)=>Math.hypot(p.x-held[i][0],p.y-held[i][1])>.01));
+ for(let i=0;i<180;i++)stepParticles(points,[i%2,.5],1,i/30,1,.8);
+ assert.ok(points.every(p=>[p.x,p.y,p.vx,p.vy].every(Number.isFinite)));
+ for(let i=0;i<300;i++)stepParticles(points,[.5,.5],0,10,0,.8);
+ assert.ok(points.every(p=>Math.hypot(p.x-p.bx,p.y-p.by)<.0001));
+ assert.notEqual(heightAt(.3,.7,0,0),heightAt(.3,.7,0,4));
+});
