@@ -13,3 +13,14 @@ test('pigment moves after the pointer stops, fades, and stays finite',()=>{
 test('clear removes pigment and momentum; subsequent gestures work again',()=>{
  const f=new Fluid(50,32);f.splat(.4,.5,.1,.1,[.8,.1,.4]);f.step();f.clear();f.step();assert.equal(f.energy(),0);assert.ok(f.u.every(x=>x===0));f.splat(.6,.4,0,0,[.1,.5,.8]);assert.ok(f.energy()>0);
 });
+
+import {createParticles,stepParticles,heightAt,crossing} from '../public/lab/color-drift/fields-model.js';
+test('particles respond locally and return to their original field after release',()=>{
+ const points=createParticles(400);for(let i=0;i<90;i++)stepParticles(points,[.5,.5],1);
+ assert.ok(points.some(p=>Math.hypot(p.x-p.bx,p.y-p.by)>.05));
+ for(let i=0;i<240;i++)stepParticles(points,[.5,.5],0);
+ assert.ok(points.every(p=>Math.hypot(p.x-p.bx,p.y-p.by)<.0001));
+});
+test('landscapes differ, are deterministic, and contour interpolation stays on the edge',()=>{
+ assert.equal(heightAt(.3,.7,0),heightAt(.3,.7,0));assert.notEqual(heightAt(.3,.7,0),heightAt(.3,.7,1));assert.notEqual(heightAt(.3,.7,1),heightAt(.3,.7,2));assert.equal(crossing(-1,1,0),.5);assert.equal(crossing(1,1,1),.5);
+});

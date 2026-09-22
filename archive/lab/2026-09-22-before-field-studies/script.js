@@ -1,11 +1,9 @@
 // @ts-check
 import { Fluid } from './fluid.js';
-/** @param {HTMLElement} root */
-function mountFluid(root){
-const canvas=/** @type {HTMLCanvasElement} */(root.querySelector('[data-fluid-canvas]'));
-const stage=/** @type {HTMLElement} */(root.querySelector('.composition'));
-const pause=/** @type {HTMLButtonElement} */(root.querySelector('[data-fluid-pause]'));
-const status=/** @type {HTMLElement} */(root.querySelector('[data-fluid-status]'));
+const canvas=/** @type {HTMLCanvasElement} */(document.querySelector('#field'));
+const stage=/** @type {HTMLElement} */(document.querySelector('.composition'));
+const pause=/** @type {HTMLButtonElement} */(document.querySelector('#pause'));
+const status=/** @type {HTMLElement} */(document.querySelector('#status'));
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
 const params=new URLSearchParams(location.search);
 const fluid=new Fluid(180,110);
@@ -55,8 +53,8 @@ stage.addEventListener('pointerdown',event=>{if(event.pointerType==='touch'){sta
 function leave(){previous=null;}
 stage.addEventListener('pointerleave',leave);stage.addEventListener('pointercancel',leave);stage.addEventListener('lostpointercapture',leave);stage.addEventListener('pointerup',event=>{if(event.pointerType==='touch'){if(stage.hasPointerCapture(event.pointerId))stage.releasePointerCapture(event.pointerId);leave();}});
 pause.addEventListener('click',()=>{paused=!paused;previous=null;sync();});
-root.querySelector('[data-fluid-clear]')?.addEventListener('click',()=>{stop();fluid.clear();previous=null;paint();});
-root.querySelectorAll('[data-palette]').forEach(button=>button.addEventListener('click',()=>{palette=Number(/** @type {HTMLElement} */(button).dataset.palette);root.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));}));
+document.querySelector('#clear')?.addEventListener('click',()=>{stop();fluid.clear();previous=null;paint();});
+document.querySelectorAll('[data-palette]').forEach(button=>button.addEventListener('click',()=>{palette=Number(/** @type {HTMLElement} */(button).dataset.palette);document.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));}));
 motion.addEventListener('change',()=>{previous=null;sync();});
 document.addEventListener('visibilitychange',()=>{previous=null;sync();});
 new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync();}).observe(stage);
@@ -64,6 +62,3 @@ window.addEventListener('pagehide',stop);window.addEventListener('pageshow',sync
 // An honest static gesture sample in the Lab thumbnail; the full page starts empty.
 if(params.get('preview')==='1'){for(let i=0;i<45;i++){const x=.24+i*.012,y=.5+Math.sin(i*.12)*.13;fluid.splat(x,y,.009,Math.cos(i*.12)*.012,palettes[0]);fluid.step();}paint();}
 sync();
-
-}
-document.querySelectorAll('[data-fluid-study]').forEach(root=>mountFluid(/** @type {HTMLElement} */(root)));
