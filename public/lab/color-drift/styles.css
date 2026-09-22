@@ -1,0 +1,27 @@
+main { width: min(960px, calc(100% - 48px)); }
+.composition { position: relative; isolation: isolate; margin-top: 38px; min-height: 560px; overflow: hidden; background: var(--bg); }
+.masthead { display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 18px; font-size: 11px; color: var(--muted); }
+h2 { position: relative; margin: 66px 0 0 9%; font-size: clamp(23px, 3.2vw, 35px); letter-spacing: -.045em; font-weight: 450; line-height: 1.15; }
+.wash { position: absolute; z-index: -1; inset: 30px -6% 0; pointer-events: none; background: radial-gradient(ellipse at 35% 52%, #d9b3f64a, transparent 34%), radial-gradient(ellipse at 66% 48%, #ff98c34a, transparent 32%); }
+canvas { width: 100%; height: 100%; display: block; }
+.wash[data-ready=true] { background: none; }
+.field-notes { margin: 86px 8% 0 auto; width: 210px; font-size: 13px; line-height: 1.7; }
+.eyebrow, .edition { font: 9px ui-monospace, SFMono-Regular, monospace; letter-spacing: .08em; color: var(--muted); }
+.field-notes p { margin-top: 13px; }
+.bottom-line { display: flex; align-items: end; justify-content: space-between; margin: 68px 9% 40px; gap: 24px; font-size: 12px; line-height: 1.6; }
+.bottom-line p { margin: 0; }
+.controls { border-top: 1px solid var(--line); padding-top: 20px; justify-content: space-between; }
+.palette { display: flex; gap: 7px; }
+button { font-size: 11px; }
+.status, footer { font-size: 11px; color: var(--muted); }
+footer { margin-top: 30px; }
+:root[data-theme=dark] .wash { opacity: .7; }
+:root[data-preview] main { width: 600px; }
+:root[data-preview] .composition { margin: 0; min-height: 400px; height: 400px; padding: 20px 32px; }
+:root[data-preview] .masthead { font-size: 8px; }
+:root[data-preview] h2 { font-size: 23px; margin-top: 40px; }
+:root[data-preview] .field-notes { margin-top: 38px; width: 155px; font-size: 10px; }
+:root[data-preview] .eyebrow, :root[data-preview] .edition { font-size: 7px; }
+:root[data-preview] .bottom-line { margin-top: 35px; font-size: 9px; }
+:root[data-preview] footer { display: none; }
+@media(max-width:480px) { main { width: calc(100% - 36px); } .composition { margin-top: 24px; min-height: 520px; } h2 { margin: 55px 0 0 4%; font-size: 28px; } .field-notes { margin: 78px 4% 0 auto; width: 170px; font-size: 12px; } .bottom-line { margin: 64px 4% 30px; } .edition { max-width: 80px; text-align: right; line-height: 1.5; } }
