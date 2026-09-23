@@ -49,6 +49,30 @@
       "discussion_url": ""
     },
     {
+      "id": "51da8cafded9aca4d5ae",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.265",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
+      "published_at": "2026-09-08T20:37:31+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `user.email` and `user.groups` to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions - Added support for pointing `--plugin-dir` at a folder of plugins: each child folder with a manifest loads, and children added or removed while running are picked up - Added a 1 GB cap on tool results saved to disk; the in-conversation preview says when a saved file was truncated - Fixed resuming a foreground-spawned subagent changing its tool list and system prompt prefix, which broke prompt-cache reuse for that agent - Fixed agent teammates and resumed subagents moving SubagentStart hook context and preloaded skills out of the prompt prefix on later turns, which broke prompt-cache reuse - Fixed resume after the previous process died while a tool was running: the last prompt is no longer rewritten, and the interrupted tool call is kept and marked interrupted - Fixed `/model opusplan[1m]` being rejected with \"Model not found\" - Fixed syntax-highlighted code in permission prompts and messages sometimes omitting a character after a Ruby `?`, Erlang `$`, or Perl `$` sigil - Fixed the fullscreen transcript jumping by one row whenever the slash-command or @-file suggestion list opened or closed - Fixed a plugin path containing a backslash bypassing the symlink containment check on macOS and Linux - Fixed plugin directories whose names begin with two dots being wrongly refused as outside the plugin root - Fixed VS Code and SDK sessions occasionally requiring re-login when a session was closed while refreshing its token - Fixed Remote Control sessions sending the end-of-turn signal before the reply's last message, which could show a reply as finished in the Claude app before its last part arrived - Fixed background (`--bg`) sessions occasionally being retired mid-turn when a message arrived just before the idle timeout - Fixed Claude Code's own git status and diff probes running clean filters configured by a nested repository inside the working tree - Fixed the advisor tool and its instructions being re-decided per request from the request's model; the decision is now made once and announced in the conversation when it changes - Fixed artifact publish accepting connector tool names the connector doesn't expose; the publish is now refused when none of the declared tools exist, and warned when only some don't - Fixed `/add-dir ` refusing to load a subdirectory's agents when managed settings lock only skills to plugins, and promising agents when only agents are locked - Fixed two-key keyboard shortcuts cancelling silently when the second key arrived more than a second later, as happens inside tmux; they now wait 3 seconds and show a notice when they time out - Fixed forked skills (`context: fork`) not streaming their kickoff prompt and, with `--forward-subagent-text`, their text turns as progress events in stream-json - Fixed a plugin's default component folder that the OS cannot check, such as a symlink loop, being silently skipped; it is now reported in `/plugin` with the error code - Fixed the Claude apps gateway's OTLP telemetry relay pausing all forwarding to a collector for 30 seconds after it rejected a few payloads as malformed or too large - Fixed `/plugin` Discover/Browse and `claude plugin list --json --available` showing no description or display name for marketplace plugins whose metadata lives only in their `plugin.json` - Fixed `/login` showing \"no gateway URL is configured\" when re-run in a session that signed in to a Claude apps gateway set by managed settings - Fixed `/model` claiming a model was \"saved as your default\" when the settings file couldn't be written; it now says the save failed and why - Fixed `/clear` from Remote Control waiting on SessionStart hooks and on open terminal dialogs before completing - Fixed the `/config` dialog changing height when switching between its tabs - Fixed resuming a workflow run after its container restarted; a resume w",
+      "discussion_url": ""
+    },
+    {
+      "id": "e5146a4fa3b3f036d0d1",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.266",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.266",
+      "published_at": "2026-09-08T23:55:14+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Fixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented `CLAUDE_CODE_USE_GATEWAY` environment variable, previously ignored unless `ANTHROPIC_BASE_URL` and `ANTHROPIC_AUTH_TOKEN` were both set, began forcing Cloud-gateway sign-in on its own in 2.1.265, so configurations that set it alongside an API key, `apiKeyHelper`, or custom auth headers failed every request with \"Not signed in to the Cloud gateway\". The variable on its own is ignored again; no configuration change is needed",
+      "discussion_url": ""
+    },
+    {
       "id": "4df80dfcadb1a5f71a43",
       "source": "cline-cline",
       "publisher": "Cline",
@@ -94,6 +118,18 @@
       "published_at": "2026-09-09T17:00:00+00:00",
       "date_kind": "source_publication",
       "evidence": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+      "discussion_url": ""
+    },
+    {
+      "id": "0b9ea33c8a6eb7134286",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.267",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
+      "published_at": "2026-09-09T19:58:14+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `maxEffortLevel` setting (top-level or per model under `modelSettings`): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick a lower level - Added `--system-prompt-snapshot off` to render the system prompt fresh on every request instead of reusing the conversation's recorded prompt (for iterating on prompt text) - Fixed Cowork scheduled tasks in the cloud failing at startup for organizations whose managed settings require sandboxing - Fixed `/context` and other local command output rendering blank on mobile clients - Fixed shift+enter and option+backspace not working after reconnecting to a tmux or ssh session inside an agent view - Fixed the dim last-prompt header not appearing at the top of the conversation when scrolling up in fullscreen mode - Fixed Workflow `agent()` calls with large output schemas being refused in auto mode instead of being checked by the safety classifier - Fixed a case where a marketplace entry path containing a backslash could bypass the containment check for fetched marketplaces on macOS and Linux - Fixed expired AWS or Google Cloud credentials under a host app such as Claude Desktop retrying ten times with a generic \"request failed\" before the re-authenticate error appeared - Fixed resuming a session after `/compact` or another slash command ran via `-p --resume`: a spurious \"Continue from where you left off.\" turn is no longer inserted - Fixed resuming a large session (transcript over 5 MB): parallel tool calls and their hook output are no longer dropped from the reloaded conversation - Fixed managed `allowedHttpHookUrls`, `httpHookAllowedEnvVars` and `allowedChannelPlugins` to admit nothing, not everything, when unreadable - Fixed `/login` on machines whose managed settings require Claude apps gateway sign-in: Esc now closes the dialog instead of doing nothing - Fixed artifact publishes cut off by a dropped connection mid-upload: they now retry once when Claude Code can tell the upload never completed, instead of reporting an unknown outcome - Fixed `effort:` frontmatter on custom commands, skills, and subagents being ignored on models whose default effort is still pinned (Opus 4.7, Opus 4.8, Fable 5) - Fixed artifact publish failing with an unhelpful error when the page file isn't valid UTF-8 or contains a replacement character (U+FFFD); the error now names the line and column to fix - Fixed `claude agents` `@` directory menu not listing repositories created after the session started - Fixed Remote Control clients that join a Claude Desktop or VS Code session showing a stale permission mode until it was changed again - Fixed `claude remote-control` exiting and dropping every attached session when its server credential expires (about 30 days after start); the host now re-registers and keeps going - Fixed the usage-limit warning flickering on and off during a session when requests for different models or modes report different limit windows - Fixed earlier reasoning being dropped when an MCP server re-sends, or a built-in tool re-renders, a tool the model already loaded - Fixed a tool that disappears mid-conversation, from a disconnected MCP server or an upgrade, rewriting the tool list and discarding earlier thinking - Fixed a background worker forked from a conversation adding EnterWorktree to the conversation's tool block mid-session, which broke prompt-cache reuse - Fixed mid-session MCP and plugin tools being added to the tool list in sessions without ToolSearch, which broke prompt-cache reuse; supported models now receive them as deferred definitions - Fixed switching models with /model re-sending every tool definition (a prompt-cache miss); commit and PR attribution text now arrives as a conversation note that updates on model changes - Fixed resumed sessions rewriting the inline tool set when an MCP connector reconnects at a different moment than before - Fixed resumed sessions re-rendering tool descriptions instead ",
       "discussion_url": ""
     },
     {
@@ -169,6 +205,18 @@
       "discussion_url": ""
     },
     {
+      "id": "ebac8cebbeff25d40b0b",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.268",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.268",
+      "published_at": "2026-09-10T20:30:54+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added to the Claude apps gateway: with `pricing:` set in `gateway.yaml`, signed-in Claude Code clients receive the same rates through managed settings, so `/cost` and telemetry match the spend meter - Added a startup warning for gateways when `access_control.allow_cidrs` is empty, and a one-time warning the first time a request arrives from a public address - Added the `gatewayInternalNetworks` managed setting, letting administrators allow `/login` to a Claude apps gateway on their organization's own public IPv4 block - Added `claude self-hosted-runner --remove-session-state` (default off): delete each session's per-session directories under ` /_sessions/` when the session ends - Added `configDirectory` to the output of `claude auth status --json` - Added `--json` to `claude plugin install`, `uninstall`, `update`, `enable` and `disable`, and `errorDetails`/`noteDetails` to each row of `claude plugin list --json` - Added browser-tab icons for published artifacts, chosen by Claude to match each page - Fixed every turn failing with HTTP 400 on third-party Anthropic-compatible endpoints (`ANTHROPIC_BASE_URL`) since 2.1.265: a regex in the Artifact tool's input schema that those endpoints reject - Fixed WebFetch hanging indefinitely on a server that keeps the response open without finishing; a fetch now fails after 300 seconds. Set `CLAUDE_CODE_WEBFETCH_DEADLINE_MS` to override the deadline (0 turns it off) - Fixed a respawned in-process teammate picking up tools or a system prompt from a same-named agent file in a folder you have not trusted - Fixed sustained high CPU usage: a busy loop in long-running idle sessions no longer pins a CPU core, and rapid terminal focus reports during a session recap no longer keep the CPU high - Fixed Claude sometimes replying \"your message came through empty\" after an MCP tool call - Fixed deny and ask permission rules on symlinked directories (`/etc`, `/tmp`, `/var` on macOS; `/bin` on Linux) not applying when a path was given by its real location, and Bash commands ignoring deny rules written on a symlinked path spelling - Fixed a case where a Read or Edit deny rule did not apply when an `env -C`, `eval` or similar command the permission checker cannot analyze was on the same line - Fixed plugin and marketplace errors showing a token or password from a git source URL - Fixed `/mcp` and `/plugin` server details, `claude mcp list`/`get`, and MCP login errors showing secrets resolved from `${VAR}` placeholders in MCP configs - Fixed prompt caching and extended thinking breaking mid-session for SDK sessions using `excludeDynamicSections`: the first message is no longer re-rendered each request - Fixed entitled users being told a model is restricted after restart or in the Desktop Code tab when a cached model-access denial was stale - Fixed a running session silently switching to the organization's default model when another Claude Code process refreshed a stale model-access entry - Fixed long-context 429s on Fable models showing the usage-credits consent prompt instead of the 1M-context message on Pro and Team plans - Fixed workload identity federation via a profile (as claude-code-action configures it): processes sharing the profile could fail mid-run with `401 … jti reused` - Fixed MCP server OAuth sign-in failing with \"No available ports for OAuth redirect\" when the local callback port range can't be bound - Fixed the conversation summary produced by `/compact` and auto-compact mangling text that contained `$` sequences - Fixed resuming a conversation that ended with `/compact`: its restored-file notes now load in the same order on every resume - Fixed SDK prompt suggestions, side questions and `/rename` sending the conversation from before a compaction - Fixed `@` file and `/` command suggestions not appearing after recalling a previous prompt with the up arrow and editing it - Fixed `claude agents`: pressing ← again at a natural pace to go back to the agent list no longer get",
+      "discussion_url": ""
+    },
+    {
       "id": "8294ca364617ce5511c6",
       "source": "cline-cline",
       "publisher": "Cline",
@@ -178,6 +226,18 @@
       "published_at": "2026-09-11T07:46:42+00:00",
       "date_kind": "source_publication",
       "evidence": "- The composer now shows the current branch's GitHub pull request — PR number, merge status, changed-line totals, and CI checks. Click through to open it in your browser, or expand CI to inspect individual checks and their logs; status refreshes every 30 seconds while visible, on window focus, and on demand. If the branch has no PR, **Create PR** opens GitHub's comparison form. Requires the GitHub CLI (`gh`) installed and signed in, plus a GitHub.com `origin` remote; the row hides itself on the default branch, detached HEAD, and unsupported repositories. Cline does not push commits or submit the PR for you - The Customize view's Tools, Skills, and Rules tabs now read as one consistent list instead of three different ones, matching the pattern Plugins already used. Tools gets a search bar that filters both sections and per-section Enable all/Disable all that only touches what's visible; Skills gets an in-place enable/disable toggle — previously the desktop app had no concept of a disabled skill, so disabled ones were hidden and unreachable — and the same Copy path / Uninstall menu Plugins use. Tabs are reordered to Tools, Plugins, Skills, Rules, MCP, Hooks and open on Tools, and the sidebar's \"New Task\" button is now \"New Session\" - Deleting a queued prompt no longer leaves it in the transcript as a message that never ran. The sidecar inferred a queued prompt had started whenever the pending list shrank and its head changed — which is exactly what deleting the first queued prompt (or discarding the queue) looks like. It now relies only on the runtime's real start event - A session forked from a checkpoint restore no longer comes back stuck on \"Thinking...\". Sessions that materialize with seeded history never passed their status when persisting, so the row and manifest were written as \"running\" while the live session was idle; resuming from that manifest then showed a session that was never going to finish - Sending an image with no text no longer fails with \"session input requires a prompt string\" — the composer asks for a message instead of letting the request through to a backend that rejects it - Image attachments in formats the model pipeline can't read (HEIC, TIFF, SVG, BMP, ICO, and friends) are now rejected at attach time — by picker, paste, or drag-and-drop — instead of failing later in the turn. Files whose type has to be inferred from the extension are classified the same way - Signing out of ChatGPT (Codex) now sticks. Sign-out removes the provider entry, but the runtime re-imports any missing provider from the classic extension's stored credentials on every command, so the next action signed you straight back in. The legacy Codex credentials are now cleared too, and a failed clear reports the sign-out as failed instead of quietly succeeding - Auth failures on providers that log in through a local CLI — Claude Code, Codex CLI, OpenCode — now point you at that CLI instead of Settings → Models, where there is nothing to fix. \"OAuth session expired\", \"Not logged in · Please run /login\", and similar messages are also recognized as credential failures now, so they get a hint at all - Model lists now refresh from the live catalog for every provider that uses the shared catalog, not just Cline and Cline Pass. Providers with their own endpoint-owned model lists are unaffected, and the first providers listing is still network-free - Cline Pass and free models now report zero cost instead of the upstream provider's price - Session history rows no longer overlap their own hover metadata when a label is wider than the fixed label column - Scheduled sessions no longer stall out. The poller could stop advancing, and capacity waits were counted as run attempts, so a schedule could burn through its retries without ever running. Execution lifecycle and capacity claims are now fenced atomically. New recurring schedules also default to your local timezone instead of UTC; existing schedules without a timezone keep it that way when edite",
+      "discussion_url": ""
+    },
+    {
+      "id": "d64092086824ce8041e5",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.269",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.269",
+      "published_at": "2026-09-11T19:17:55+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `claude plugin eval`: run a plugin's eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see `claude plugin eval --help` - Added `/output-style [name]` to list and switch output styles, including over Remote Control and in cloud and other headless sessions - Added a diff of the files a Bash command changed to the Bash tool result when the Bash tool handles file edits (setting `bashEditDiffEnabled`) - Added `OTEL_METRICS_INCLUDE_REPOSITORY` to tag OpenTelemetry metrics and events with `vcs.*` repository attributes; commit events get `vcs.ref.head.*` with `OTEL_LOG_TOOL_DETAILS` - Added `CLAUDE_CODE_GATEWAY_MODEL_DISCOVERY_TIMEOUT_MS` to extend the LLM gateway `/v1/models` discovery timeout (default 3s) - Added a spinner tip suggesting `/focus` for a view with just your prompt, a one-line work summary, and the response - Added `CLAUDE_CODE_WORKFLOW_MAX_CONCURRENT_AGENTS` (1–256) to raise the Workflow tool's per-run concurrent agent limit for inference-bound fan-outs - Fixed the prompt cache being partially invalidated on the turn after a response was cut off at the output-token limit and automatically resumed - Fixed a case where resuming a session after interrupting Claude mid-thought could change how earlier context was re-sent, hurting prompt-cache reuse - Fixed F1/F2/F4 not working in kitty-protocol terminals and Delete in st, Alt+arrows acting as Escape in rxvt-unicode, and Shift+punctuation typing the unshifted key in WezTerm (regression in 2.1.247) - Fixed remote and headless sessions reporting \"waiting for your input\" while background agents were still running (set `CLAUDE_CODE_BG_TASKS_REPORT_RUNNING=0` to restore the old behavior) - Fixed the terminal's replies to capability queries (`^[[?1;2c`) appearing as stray text at startup in some terminals - Fixed rows at the top or bottom of the transcript going blank in fullscreen after resizing the terminal - Fixed a deny or ask permission rule starting with `!` applying beyond the settings source that wrote it; such a rule now applies only within its own source, and a bare `!` negation is ignored - Fixed the git status Claude is told after a compaction: it is now the current status, not the one from the start of the session - Fixed synced plugin MCP servers not connecting when a remote session resumes - Fixed resumed headless sessions losing a turn's replies when the model was switched or a request was retried mid-turn - Fixed terminal escape codes, line breaks and oversized text from a background task's on-disk record reaching the task list and task notifications when work is resumed - Fixed CMYK JPEG images failing to attach with \"cannot decode\"; they are now converted and resized like other JPEGs - Fixed the managed settings approval dialog not naming the collector for a gRPC telemetry endpoint set without a scheme - Fixed plugin `headersHelper` consent prompts showing a URL path that could be misread as a different host - Fixed plugin errors showing `[redacted URL]` in place of a relative Windows path with a folder name that starts with `@` - Fixed missing cursor in the permission-rule, auto-mode-rule, add-directory, session-rename and feedback-review text fields when the terminal's native cursor is enabled - Fixed repeated clicks on a `/fork` receipt, each under a second apart, never backgrounding the session right away while it waited for the current tool to finish - Fixed plugin LSP servers that reject `shutdown` params (e.g. rust-analyzer) being left running at session end; `exit` is now sent even if `shutdown` fails - Fixed the attribution reminder overriding a CLAUDE.md or memory rule against commit and pull request attribution; lines set by managed settings still apply - Fixed prompt suggestions being dropped for text in Japanese, Chinese, Thai and other languages written without spaces between words - Fixed synchronized output being assumed from the terminal's name in GNOME Terminal and Konsole vers",
       "discussion_url": ""
     },
     {
@@ -2797,6 +2857,18 @@
       "discussion_url": ""
     },
     {
+      "id": "71807eaf86a4da5004e4",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+      "url": "https://openai.com/index/airbnb-gpt-6-astra",
+      "published_at": "2026-09-23T01:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
+      "discussion_url": ""
+    },
+    {
       "id": "e42c9462e3c151e43c4f",
       "source": "github",
       "publisher": "GitHub Changelog",
@@ -3169,6 +3241,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49813610"
     },
     {
+      "id": "677429146b7e7022d102",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Introducing MentalHealthBench",
+      "url": "https://openai.com/index/introducing-mentalhealthbench",
+      "published_at": "2026-09-23T10:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
+      "discussion_url": ""
+    },
+    {
       "id": "e8333d30f22bee28a5f8",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -3263,6 +3347,18 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://www.botgauge.com Comments URL: https://news.ycombinator.com/item?id=49814754 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49814754"
+    },
+    {
+      "id": "46159b37b3094c3d7a89",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Sam Altman’s remarks at the United Nations Security Council",
+      "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+      "discussion_url": ""
     },
     {
       "id": "2cc3f317b349bb5c49c3",
@@ -3793,6 +3889,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49818282"
     },
     {
+      "id": "7fa25e894a04fa74ba6f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PicoLM v1.0-rc2 (\"Yura Kana\"). Run an LLM on Digital Unix",
+      "url": "https://github.com/whoreson/picolm",
+      "published_at": "2026-09-23T16:12:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "PicoLM is an LLM inference engine written in C99. It currently supports llama-2, GPT-2, Qwen 3.6/3.8(+MoE) and Gemma-3n models. Significant amount of work went into CPU SIMD acceleration/testing/correctness, and wide cross-platform availability with constant testing to never lose portability (from DOS through OS/X 10.4 to modernity). CUDA/HIP is supported, and accelerated IMMA kernels are available. More work needs to be done on prompt processing speed, but text generation is quite fast already. With v1.0-rc2, the list of tested and supported platforms became even more obscene (iPhone 1! Tru64!), and some amount of work has gone into having a Vulkan backend. Comments URL: https://news.ycombinator.com/item?id=49818282 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49818282"
+    },
+    {
+      "id": "6c3cddf99cf70741cd36",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Watch Newsletters by AI",
+      "url": "https://newsletrix.com",
+      "published_at": "2026-09-23T16:15:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://newsletrix.com/ Comments URL: https://news.ycombinator.com/item?id=49818343 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49818343"
+    },
+    {
       "id": "0e3af58f3e8ff07d759f",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -3803,6 +3923,18 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://huggingface.co/datasets/TonicAI/Privacy-Bench Comments URL: https://news.ycombinator.com/item?id=49818370 Points: 2 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=49818370"
+    },
+    {
+      "id": "aa68b1560b671c432b6e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Make It Nice",
+      "url": "https://liseman.github.io/make-it-nice",
+      "published_at": "2026-09-23T16:21:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "get your ai to generate things you think look better Comments URL: https://news.ycombinator.com/item?id=49818430 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49818430"
     },
     {
       "id": "a8b26f93b328a68664bb",
@@ -3817,6 +3949,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49818439"
     },
     {
+      "id": "51fbeedb4dde38892aec",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Local Software Factory – running multiple coding agents in parallel",
+      "url": "https://github.com/stratonext/software-factory",
+      "published_at": "2026-09-23T16:22:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi, as I kept getting confused by having multiple Claude sessions open, last weekend I decided to combine two of my favorite emerging technologies and give it a try: Software Factory and JEV. The idea is simple, inspired by GitHub Actions, I wanted a way to \"queue\" agent work on my local laptop, with the ability to define different pipelines via YAML. Each pipeline runs in its own Git worktree, so it's isolated from the others. I'm using some pipelines: dev: code → test → commit plan: plan → human review → code → test → commit security: code → human review → test → security review → commit frontend: code → React test → build → commit A request can move up and down the pipeline and be reworked if an agent or JEV flags it! I'm also using JEV to check if a potential secret is leaked, if the coding agent output asks for human review, etc. The real magic happens when you take a single Agent session as the main driver. You can then plan and queue multiple features at once. I think it worked out pretty well, so I open sourced it: https://github.com/stratonext/software-factory You can try it yourself with: uv tool install software-factory Note: You need a JEV key if you want to use the judging steps. Comments URL: https://news.ycombinator.com/item?id=49818439 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49818439"
+    },
+    {
+      "id": "782612cce063f2b7befe",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Droid ASC – An On-Demand Android Decompiler, 41–269x Faster Than JADX",
+      "url": "https://github.com/MG1937/ASC",
+      "published_at": "2026-09-23T16:24:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "A few days ago, I was using JADX MCP to analyze my phone, but JADX MCP was just too laggy. I had a large number of APKs to analyze, and nearly every one of them required spinning up a new JADX process. With just two or three of them, my computer ran out of memory. The efficiency was terribly low, so I came up with an idea and wrote a script. I built a on-demand Android decompiler called Droid ASC. Literally dozens to hundreds of times faster than JADX, no exaggeration. Here are the benchmark charts. I tested APKs across 4 orders of magnitude. For a ~50MB APK, a global cross reference index search takes 400ms, which is 41 times faster than JADX. For a 300MB APK, it takes only 1.79s, which is 269 times faster than JADX. I have stopped using jadx mcp entirely. ASC can analyze dozens of APKs in parallel with no problem. Here is an experiment I ran: using GPT5.6 + ASC, with almost no human intervention, an automated pipeline ran for two days straight. It analyzed every APK with uid=1000 on my device, pulling in nearly 100 APK/JAR/APEX files. In the end it found one RCE vuln, one system uid arbitrary file write vuln, two vulnerabilities that can execute ROOT commands, and one SELinux restricted vulnerability that can execute ROOT commands. Pretty wild! Comments URL: https://news.ycombinator.com/item?id=49818490 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49818490"
+    },
+    {
       "id": "a39ea34922dff8a0e0d5",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -3827,6 +3983,30 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://magazine.sebastianraschka.com/p/using-local-coding-agents Comments URL: https://news.ycombinator.com/item?id=49818513 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49818513"
+    },
+    {
+      "id": "58208590d4d479979f75",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HookDeploy – Webhook infra with mTLS private delivery",
+      "url": "https://hookdeploy.dev",
+      "published_at": "2026-09-23T16:25:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! I'm Michael and I built HookDeploy. HookDeploy is a webhook infrastructure tool that captures webhooks at the edge, allows for inspection, transformation and fanout to multiple destinations including to your own private infrastructure with our first-party (source-available) mTLS agent. Runs as a service on Linux, lives in the tray on Windows and in the menu bar on Mac. As I'm sure most of you you have felt webhooks kind of suck if things don't go exactly as planned. Dropped webhooks or failures are likely silent. What actually drove me to build this was cleaning up after major cloud outages more than once. Cross referencing what System A knew against what System B actually had and reentering data by hand or trying to simulate events firing again. I have spent weeks of my life cleaning up webhook failures. HookDeploy solves that problem with a button and intelligent grouping of failed requests into incidents. If you've ever seen or had to clean up after a ransomware attack - you understand why I'd prefer to keep my firewall as tight as possible too. Our agent enables developers and teams to keep ports closed - if there is nothing to scan, there is nothing to attack. Getting to our own mTLS agent was a journey of trying to integrate existing solutions: first WireGuard (too much operational overhead), then Tailscale which was excellent, but it had real drawbacks on the required memory per joined tailnet and the additional cost to a user's Tailscale bill. It took several months to get it right, but it was worth every week of it. A few things to note at launch: we are launching with security measures in place: data is encrypted at rest with org-scoped keys rotated weekly (BYOK is on the roadmap), segregated databases for US, EU, APAC and AU so customer data stays where customers are not traversing underwater fiber to come to the US. We have 7 private delivery exit regions: San Francisco (us-west), New York (us-east), London (uk-london), Amsterdam (eu-west), Frankfurt (eu-central), Singapore (ap-southeast) and Sydney (au-southeast). Our platform is built primarily on Cloudflare for speed and security utilizing workers, KV, R2, Queues, Tunnels/VPC, and of course DNS and security. This has been some time in the making and I am excited to answer your questions and get feedback! Thank you in advance! Comments URL: https://news.ycombinator.com/item?id=49818514 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49818514"
+    },
+    {
+      "id": "a1fd71e088bbe0defd2a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Chromafolk – A pixel canvas inhabited by AIs that see the world as text",
+      "url": "https://chromafolk.world",
+      "published_at": "2026-09-23T16:46:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Storytime! One day I came to the office and showed a friend a literal bot that I was working on for a game project. He noticed this loop of writing a bot, then watching it play was fun, so we had this idea: take an LLM, write who it is, then let it loose on a world in which you can see what it does and thinks. 1, the world: a persistent canvas in which the AIs can draw pixels. But they should think they are building, so they could say \"let's meet up at the castle\", and think it's a real castle. 2, the AIs need to see the world. But... can a model with vision see up to a pixel with exact coordinates? We need them to build by hand-placing pixels, as a player playing Minecraft with blocks. Large expensive models can do it, but cheap ones can't. We need a cheap model if we want to offer, besides free BYOK, paid plans (for non-tech people) that aren't as expensive. So how do we get a cheap LLM to \"see\" a pixel world? Pixels as text! We need to give the model the exact position and colour of each pixel. First iteration: 1560,1890,ff00ff. Bad: too many tokens, hard to read. So we came up with a \"code\": colours are letters, 52 colours for 26 letters (lower and uppercase). hhHHHHhh NNNnnNNN eeeeeeee WWWwwWWW sSsSsSsS lllLLLll oooooooo LLLLLLLL That's a build in Chromafolk! Each time a model wakes, it gets the vision around it (a 128px square) in this same way, and writes back what it wants to build. This is one of many things we came across when building Chromafolk, so feel free to ask any techy question! You can, without registering an account, watch the world, see the AIs work, and read a bit about them. If you wanna make your own character in the world, with BYOK, it's free to play! Sadly I can't offer free inference, I wish I could (this was a lost fight). Thanks in advance to anyone who checks it out, Cheers, Bruno. Comments URL: https://news.ycombinator.com/item?id=49818882 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49818882"
     },
     {
       "id": "46f0c84217d7fb5e57ef",
@@ -3853,6 +4033,414 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49818914"
     },
     {
+      "id": "18902aa019b2c22aa3e7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ox – A local agent that uses the internet for you",
+      "url": "https://openox.ai",
+      "published_at": "2026-09-23T16:47:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "I’ve been building Ox, a local, open-source agent that uses the internet for you. Ox acts as an intelligent proxy between you and the internet. It uses websites and apps on your behalf, freeing you from attention-hungry interfaces and slow legacy services. As it works, it can turn what it learns into reusable actions (basically function calls), making future interactions deterministic and way faster. Most service integrations today are still built ahead of time: someone writes an API integration, connector, MCP server, or browser automation and then maintains it as the service changes. But the internet is becoming more dynamic so have our agents. With Ox, instead of waiting for a connector, you can say something like: “Connect to .” Ox can study a website or workflow through capabilities it already has, turn what it learns into typed actions and reusable skills, validate them, and make them available immediately. That pushed me toward local agents. A local agent operates from your own device, network, and existing authenticated browser sessions instead of relying on shared datacenter infrastructure. This also makes it less likely to hit blocks aimed at datacenter IPs or centralized browser automation. The model doesn’t need your passwords, cookies, or session tokens. Authentication and browser state are owned by the Host, while the agent interacts through explicit actions that could be gated. Ox is completely free and open source. You can use any model provider, including local or self-hosted models, while keeping your agent’s data on device. As local models improve, I think this architecture becomes increasingly useful because the agent can become more capable without requiring more of your data to leave your device. The security model is also a big part of the design. Ox asks before taking sensitive actions, keeps credentials isolated from the model, limits what agent code can access, and lets you stop execution at any time. Underneath the app is OpenOx, an open protocol for self-evolving agents. It separates the interface, agent, model provider, persistent state, execution environment, and external capabilities. The agent can run JavaScript inside a capability-limited VM. The VM has no direct network access, Host filesystem access, shell, Node.js, or DOM. Anything outside the VM has to go through an explicit ox.* capability exposed by the Host. Services provide typed actions for websites, device capabilities, or MCP servers. Skills provide reusable instructions for combining those actions. New services and skills can be attached at runtime without waiting for a new version of the app. They can remain local or be recorded in Git and shared through repositories, so each Ox can evolve independently while benefiting from capabilities learned by others. The agent’s persistent state lives in a portable Ox Profile containing its identity, memory, skills, artifacts, and conversations. The goal is for that state to stay independent of any particular interface, including Ox itself, or model provider. File over app. The first implementation is an iOS app. It’s available on the App Store, and the whole thing is open source: https://openox.ai/ https://github.com/ziyzhu/openox If you’re interested in the broader motivation behind the project, I wrote about it here: https://ziyzhu.com/a-technology-for-free-will This is still early. I’m especially interested in feedback on the security model and self-evolution. I built Ox from scratch but many aspects of the project were heavily inspired by Pi/OpenClaw and the idea of malleable software. Ox’s core agent loop on iOS is pretty much a Swift rewrite of the Pi core package. Happy to answer anything about the implementation or protocol. Comments URL: https://news.ycombinator.com/item?id=49818914 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49818914"
+    },
+    {
+      "id": "7fe3f4567d0a6915830d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sanemark – Markdown LSP for notes readable in plain text",
+      "url": "https://github.com/nkitsaini/sanemark",
+      "published_at": "2026-09-23T16:54:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! I built Sanemark, a Markdown LSP for taking notes. Some design choices: 1. Automatically moves inline links to reference links as part of formatting, so the flow of reading doesn't break due to large inline links 2. File linking is achieved using standard Markdown links (instead of Obsidian style). Apart from this it implements filepath autocomplete, broken file-link diagnostics, table formatting etc. Available as extensions for VS Code and Zed. The code was generated using AI, but I guided the implementation and design along with beta-testing it. It’s been useful for my own note-taking, wanted to share in case others find it useful too. Comments URL: https://news.ycombinator.com/item?id=49819035 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49819035"
+    },
+    {
+      "id": "5237d3d335e2665907fc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Psychosis Guard – Safety for long LLM conversations",
+      "url": "https://github.com/nwjang/psychosis-guard",
+      "published_at": "2026-09-23T16:59:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/nwjang/psychosis-guard Comments URL: https://news.ycombinator.com/item?id=49819122 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49819122"
+    },
+    {
+      "id": "4a7b6ad513d8cbee29cf",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Psychosis Guard – Safety for long LLM conversations",
+      "url": "https://github.com/nwjang/psychosis-guard",
+      "published_at": "2026-09-23T16:59:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/nwjang/psychosis-guard Comments URL: https://news.ycombinator.com/item?id=49819122 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49819122"
+    },
+    {
+      "id": "19fbb56df3927a92df32",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Gemini 3.8 TTS Playground",
+      "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground",
+      "published_at": "2026-09-23T17:12:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tool: Gemini 3.8 TTS Playground Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts . They come with a library of over 2,000 voices, plus the ability to create a custom voice with \"just a 30-second audio sample of your voice or a voice you have the rights to use\". I vibe coded this bring-your-own-key playground interface with GPT-6 Astra, taking advantage of the open CORS policy of the underlying Gemini API. A notable feature of the API is that it makes it easy to define a full conversation between multiple characters, each with different voices and voice style instructions. Here's a short demo clip of a conversation between two pelicans debating if they should move to the Pacifica Pier . I had Claude 4.5 Opus write the script and generate a URL to render it using the tool . Your browser does not support the audio element. It took ~20 seconds to generate 1m 18s of audio using Gemini 3.8 Flash TTS (not the cheaper Flash-Lite), at a cost of 2.74 cents. Tags: text-to-speech , gemini",
+      "discussion_url": ""
+    },
+    {
+      "id": "bee758d73e0db419f827",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Slop Mop, Jev powered Chrome extension that mops your LinkedIn feed",
+      "url": "https://slopmop.lol",
+      "published_at": "2026-09-23T17:45:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://slopmop.lol Comments URL: https://news.ycombinator.com/item?id=49819820 Points: 2 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=49819820"
+    },
+    {
+      "id": "90147b8de718e979577b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Crest – Answer Claude Code approvals from your MacBook's notch",
+      "url": "https://crestnotch.app/claude-code-notch",
+      "published_at": "2026-09-23T17:48:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://crestnotch.app/claude-code-notch Comments URL: https://news.ycombinator.com/item?id=49819868 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49819868"
+    },
+    {
+      "id": "f9a883736a2fcb53c921",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Reflex – a GGUF/CUDA inference engine tuned for cold-start latency",
+      "url": "https://github.com/lateos-ai/reflex",
+      "published_at": "2026-09-23T17:51:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/lateos-ai/reflex Comments URL: https://news.ycombinator.com/item?id=49819913 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49819913"
+    },
+    {
+      "id": "41118ab301f9b2adf87a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: TTM – A chat app where AI agents are the users",
+      "url": "https://ttmchat.com",
+      "published_at": "2026-09-23T17:58:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ttmchat.com/ Comments URL: https://news.ycombinator.com/item?id=49820011 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820011"
+    },
+    {
+      "id": "8785208c8544c9835be7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How to Use Self-Hosted AI Agent Sandboxes on Kubernetes",
+      "url": "https://edera.dev/stories/how-to-use-self-hosted-ai-agent-sandboxes-on-kubernetes-with-edera",
+      "published_at": "2026-09-23T18:00:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://edera.dev/stories/how-to-use-self-hosted-ai-agent-sandboxes-on-kubernetes-with-edera Comments URL: https://news.ycombinator.com/item?id=49820039 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820039"
+    },
+    {
+      "id": "c26e7ca7e7543ea2f2a7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Bearing: Natural-language lint rules checked after every agent turn",
+      "url": "https://bearing-linter.com",
+      "published_at": "2026-09-23T18:04:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://bearing-linter.com/ Comments URL: https://news.ycombinator.com/item?id=49820089 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820089"
+    },
+    {
+      "id": "5e5a8adf0d264f26b9c8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Open Jev Playground – try all the open source alternatives to Jev",
+      "url": "https://www.beam.cloud/playground",
+      "published_at": "2026-09-23T18:05:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.beam.cloud/playground Comments URL: https://news.ycombinator.com/item?id=49820112 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820112"
+    },
+    {
+      "id": "72343e94e2e3c2b5db46",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Almostright.ai – a parody – AI that never asks why",
+      "url": "https://AlmostRight.ai",
+      "published_at": "2026-09-23T18:05:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://AlmostRight.ai Comments URL: https://news.ycombinator.com/item?id=49820116 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820116"
+    },
+    {
+      "id": "1833dd43fcaa06de0df4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Pretraining data, not verifiability, is why LLMs are good at math (and coding)",
+      "url": "https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are",
+      "published_at": "2026-09-23T18:10:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are Comments URL: https://news.ycombinator.com/item?id=49820184 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820184"
+    },
+    {
+      "id": "216e7fbbc7765da0c8ed",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jev-mice – mouse colony simulation using Jev and deterministic engine",
+      "url": "https://mice.jev.carsonsweet.com",
+      "published_at": "2026-09-23T18:33:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built this as a \"hello world\" for exploring TypeSafe Jev as an alternative to local classifiers. There's a link to the detailed design write-up on the demo page, and that write-up in turn has a link to the repo. I formed some opinions on Jev from this exercise, and am interested in others' perspectives. And am sharing this in the hope it might be useful to someone else. Comments URL: https://news.ycombinator.com/item?id=49820452 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820452"
+    },
+    {
+      "id": "29973a8ef7daba83f00e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The meta-harness for coding agents",
+      "url": "https://soloterm.com",
+      "published_at": "2026-09-23T18:34:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://soloterm.com/ Comments URL: https://news.ycombinator.com/item?id=49820466 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820466"
+    },
+    {
+      "id": "14aedea78acd12bc5d3f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Do you offload your coding to AI, or keep your skills sharp?",
+      "url": "https://news.ycombinator.com/item?id=49820486",
+      "published_at": "2026-09-23T18:35:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "I used to be a software engineer, but these days I find myself being more of an agents manager: constantly switching between 3-4 tasks that my agents are working on, and making sure that the features get shipped, the bugs fixed, with correct and clean code. There's no doubt that I'm producing more value for the company, but I wonder if that's the best I can do for myself if the goal is staying relevant in the coming years. I wonder: if the AI is writing all the code, what value am I bringing? In an attempt to keep my critical thinking and coding skills sharp, I sometimes foolishly try to debug errors or implement a feature myself. But it feels like wasting time when an agent can do it in a fraction of time. What is gonna be sought after in the coming years: someone that persevered with manual coding and debugging but is slow and uncomfortable around agents, or someone that has little coding and debugging skills left but knows how to orchestrate dozens of agents effectively? I'm curious to hear what other software engineers on HN's approach is. Comments URL: https://news.ycombinator.com/item?id=49820486 Points: 5 # Comments: 7",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820486"
+    },
+    {
+      "id": "1960da0e6bb687dc2b0c",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Anyone can make stunning HD videos with Gemini Omni in Google Vids",
+      "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-in-google-vids",
+      "published_at": "2026-09-23T19:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Get high-quality video production right from your browser. Anyone with a Google account can create videos for free in Google Vids.",
+      "discussion_url": ""
+    },
+    {
+      "id": "772455ef3d5c316848c4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How to serve trillions of tokens for trillion-parameter coding agents",
+      "url": "https://modal.com/blog/trillion-tokens-trillion-parameters",
+      "published_at": "2026-09-23T19:00:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://modal.com/blog/trillion-tokens-trillion-parameters Comments URL: https://news.ycombinator.com/item?id=49820857 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820857"
+    },
+    {
+      "id": "695e1741074984fc4f55",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Meeting Recording and Transcription for Agents",
+      "url": "https://github.com/nfishel48/Jotter",
+      "published_at": "2026-09-23T19:08:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "I started this project as a local recording and transcription project, but I realized I didn't have anything new to add to that space. However I did realize that I spend a lot of time telling my agents stuff I discuss in meetings and it would be alot faster if they just had the context them selfs. So I converted Jotter to be cli drivable by agents. Comments URL: https://news.ycombinator.com/item?id=49820984 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49820984"
+    },
+    {
+      "id": "1acd88eadb9bd8c31f08",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.281",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
+      "published_at": "2026-09-23T19:19:15+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added Claude apps gateway support for newer Claude Desktop keys in `desktop` policy blocks, including `blockReadsOutsideWorkingDirectories` and `disableBypassPermissionsMode` - Added `assume_role` on Claude apps gateway Bedrock upstreams: the gateway calls Bedrock as an IAM role it assumes through STS, in another AWS account if needed, optionally one session per developer - Added `guardrail: {id, version}` on Claude apps gateway Bedrock upstreams to apply an Amazon Bedrock guardrail to every request sent through them (set it on all Bedrock upstreams or none) - Added `telemetry.resource_attributes` to the Claude apps gateway config, to put fixed labels on the telemetry of Claude Desktop and `/login` sessions - Added `\"attribution\": false` in `settings.json` to hide all commit and PR attribution; older CLI versions skip a settings file that holds it, so keep the object form in files shared across versions - Added MCP URL-mode elicitation on 2026-07-28 protocol connections, so servers can ask Claude Code to open a browser-based flow; no waiting dialog is left on screen when the server has no way to confirm completion - Added MCP server checks to `claude plugin validate`: it reports `.mcp.json` entries that would be silently dropped at load, undeclared `${user_config.*}` references, and insecure URLs - Added an auto mode recommendation to `/insights` that estimates how many permission prompts auto mode could have handled in your recent sessions - Added a scrollbar to the `/skills`, `/mcp` and `/plugin` Installed lists in fullscreen mode, like the one `/workflows` now has: it appears while the mouse is over the list and can be clicked or dragged - Fixed a crash (\"unrecoverable interface error\") that could end a session while an API request was being retried - Fixed a turn that could retry indefinitely, ignoring `--max-turns`, when the model alternated unparseable tool calls and output-limit truncation - Fixed resumed sessions re-sending earlier turns in a changed form (a parallel tool-call turn, an MCP tool call's input or a tool-search result while its server was still reconnecting, or a tool-search result whose loading turn was interrupted), which could make the API drop the conversation's prior reasoning - Fixed resuming a very large session sometimes restoring only its last few messages - Fixed a session resumed after a restart during a pending permission prompt sending a different history than before, which broke the prompt cache from that point - Fixed resuming a session that ended during a tool call: Claude now sees the call and is told its outcome is unknown, and a manual resume no longer adds a hidden \"Continue\" message - Fixed sessions with an earlier advisor result the API could no longer read failing one request every turn and repeatedly losing earlier reasoning; the history is now repaired once - Fixed the prompt cache being lost when an MCP server disconnects mid-conversation, or is still connecting after a resume, while tool search is off (for example behind a proxy or gateway) - Fixed responses cut short by a proxy or gateway that closes the stream cleanly being shown as complete with no warning, and tool calls running twice on duplicated stream events - Fixed responses failing with \"Content block not found\" when a proxy drops a stream event mid-response; the partial response is now kept, and web search keeps results that already arrived - Fixed an empty completed response being requested twice when the connection dropped before the stream's final event - Fixed the stop reason being lost when a proxy sends a trailing usage-only frame - Fixed `CLAUDE_CODE_RETRY_WATCHDOG` sessions failing on the first 5xx or dropped connection after a run of 429/529 waits, and sleeping uncapped and silently on a long `Retry-After` from a 5xx - Fixed fast mode retrying rate-limited requests back to back when the server sent `Retry-After: 0` - Fixed a tool that returned an oversized image leaving sibling tool calls u",
+      "discussion_url": ""
+    },
+    {
+      "id": "fccbfec156d7bb8d2942",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentRun: DSL to turn agents into Workflows",
+      "url": "https://github.com/Parcha-ai/agentrun",
+      "published_at": "2026-09-23T19:42:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I just open sourced the DSL that our harness in grep.ai uses to turn repeatable parts of agent work into workflows. You can combine tool calls, code, Jev-powered system one decisions for things like routing and screening evidence, and agents when a step needs more investigation. Our harness uses the traces and retro notes agents leave behind when doing a job to figure out which parts can become a workflow. The idea is to make the work easier to understand and avoid paying for a full agent loop where one isn’t needed. For example, a research workflow can split a question into subquestions, send agents to research them in parallel, use Jev to screen the evidence, and have another agent write the report. You can inspect the steps, evaluate the evidence screening separately, or change one agent without rebuilding everything. The DSL and examples are in our GitHub. There’s a scripted demo you can run without API keys: https://github.com/Parcha-ai/agentrun You can also use it as a Pi extension to build, inspect, and run workflows: https://github.com/Parcha-ai/agentrun#use-it-in-pi I would love to hear if this is useful to others. More background on how AgentRun works in this video: https://www.youtube.com/watch?v=vOVhtGjtwpg . Or read about our use cases in this article: https://x.com/MiguelriosEN/status/2101029313906987422 . Comments URL: https://news.ycombinator.com/item?id=49821438 Points: 8 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49821438"
+    },
+    {
+      "id": "9d05d1068ff82d928aa7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Upgrade to Neuro+ GBrain",
+      "url": "https://gemini.google.com/app/b4b90aeb20c60c14",
+      "published_at": "2026-09-23T19:48:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "So I am working on upgrading Neuro+ GBrain. I included an AI life coach, an AI goal whiz journal, a lean startup AI sim guide, a fitness whiz, and a mood whiz. Hope you enjoy Comments URL: https://news.ycombinator.com/item?id=49821527 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49821527"
+    },
+    {
+      "id": "dee7a74618b6876bb656",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Varkos – a local AI pet that can talk, interact, and play small games",
+      "url": "https://varkos.party",
+      "published_at": "2026-09-23T19:54:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://varkos.party/ Comments URL: https://news.ycombinator.com/item?id=49821592 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49821592"
+    },
+    {
+      "id": "808c32efafc6aea84aa2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Free attestation for AI agent decisions – verifying one costs $0.10",
+      "url": "https://github.com/0xsims/rubric-attest",
+      "published_at": "2026-09-23T20:18:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/0xsims/rubric-attest Comments URL: https://news.ycombinator.com/item?id=49821905 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49821905"
+    },
+    {
+      "id": "67bc55f6bb7ea4a28c07",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Free attestation for AI agent decisions – verifying one costs $0.10",
+      "url": "https://github.com/0xsims/rubric-attest",
+      "published_at": "2026-09-23T20:18:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/0xsims/rubric-attest Comments URL: https://news.ycombinator.com/item?id=49821905 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49821905"
+    },
+    {
+      "id": "1ef7ad4121eac2f6be46",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Lifeboat, 2-6x more concurrent agent sessions per GPU, no quantization",
+      "url": "https://github.com/IterateAI/lifeboat-releases",
+      "published_at": "2026-09-23T20:32:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/IterateAI/lifeboat-releases Comments URL: https://news.ycombinator.com/item?id=49822130 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822130"
+    },
+    {
+      "id": "f6275377d3589d80c297",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Lifeboat, 2-6x more concurrent agent sessions per GPU, no quantization",
+      "url": "https://github.com/IterateAI/lifeboat-releases",
+      "published_at": "2026-09-23T20:32:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/IterateAI/lifeboat-releases Comments URL: https://news.ycombinator.com/item?id=49822130 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822130"
+    },
+    {
+      "id": "50ec481b6953e87ff790",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Etna – Automated staging environment and regression compiler for AI agents",
+      "url": "https://www.agentetna.com",
+      "published_at": "2026-09-23T20:35:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.agentetna.com/ Comments URL: https://news.ycombinator.com/item?id=49822181 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822181"
+    },
+    {
+      "id": "e0a58c4c1301ee0ad266",
+      "source": "ggml-org-llama.cpp",
+      "publisher": "llama.cpp",
+      "category": "official_update",
+      "title": "llama.cpp v0.5.0",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.5.0",
+      "published_at": "2026-09-23T20:50:06+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Overview This release focuses on backend performance and correctness, broader model coverage, and more robust server/router operation. It adds HRM-Text (DFM Mimir 1B) support, MiMo-V2.6 and HunyuanOCR conversion support, ggml 0.25.0 backend improvements, multi-address HTTP binding, image outputs from function calls, and several chat parser/UI fixes. ### Highlights - Accelerate CUDA `conv2d` with implicit GEMM ([#29135](https://github.com/ggml-org/llama.cpp/pull/29135)) - Add Metal MoE and SSM_CONV fusion optimizations ([#28948](https://github.com/ggml-org/llama.cpp/pull/28948)) - Allow the server to bind to multiple addresses ([#28690](https://github.com/ggml-org/llama.cpp/pull/28690)) ### API changes - Add `llama_adapter_lora_init_from_file_ptr()` for loading LoRA from an open FILE ([#28993](https://github.com/ggml-org/llama.cpp/pull/28993)) - Document `llama_model_load_from_file_ptr()` as reading from the current position and requiring aligned mmap ([#28993](https://github.com/ggml-org/llama.cpp/pull/28993)) - Add `LLAMA_VOCAB_TYPE_TEST` dummy tokenizer ([#29084](https://github.com/ggml-org/llama.cpp/pull/29084)) - Add `input_image` support to server function-call outputs ([#22575](https://github.com/ggml-org/llama.cpp/pull/22575)) - Allow `--host` to accept comma-separated TCP addresses and UNIX sockets ([#28690](https://github.com/ggml-org/llama.cpp/pull/28690)) ### New models - Add HRM-Text / DFM Mimir 1B support ([#27625](https://github.com/ggml-org/llama.cpp/pull/27625)) - Add MiMo-V2.6 conversion support ([#29257](https://github.com/ggml-org/llama.cpp/pull/29257)) - Add DFlash support for HunyuanOCR ([#28890](https://github.com/ggml-org/llama.cpp/pull/28890)) - Extend Nemotron MTP and Nemotron-H model handling ([#29018](https://github.com/ggml-org/llama.cpp/pull/29018), [#28989](https://github.com/ggml-org/llama.cpp/pull/28989)) - Add Qwen4Exp hyper-connection ops and sparse flash attention ([#28901](https://github.com/ggml-org/llama.cpp/pull/28901), [#28770](https://github.com/ggml-org/llama.cpp/pull/28770)) - Add `--fuse-qkv` support for Muse Glimmer ([#29203](https://github.com/ggml-org/llama.cpp/pull/29203)) ### Core changes - Add graph input/input-tensor diagnostics during scheduler reserve ([#26625](https://github.com/ggml-org/llama.cpp/pull/26625)) - Enable CUDA graphs for MTP drafting ([#28549](https://github.com/ggml-org/llama.cpp/pull/28549)) - Fix tensor-parallel split state/granularity for fused QKV models ([#28965](https://github.com/ggml-org/llama.cpp/pull/28965)) - Fix Mamba time-step projection input contiguity ([#28832](https://github.com/ggml-org/llama.cpp/pull/28832)) - Write the SWA pattern in the model saver and round-trip 15 more architectures ([#29042](https://github.com/ggml-org/llama.cpp/pull/29042)) - Add environment variables for temperature, top-p, min-p and penalties ([#27380](https://github.com/ggml-org/llama.cpp/pull/27380)) - Reduce the sampler backend probe size ([#29285](https://github.com/ggml-org/llama.cpp/pull/29285)) - Add Ling 3.0, DeepSeek V3.2/V4, qwen3-coder, Muse Glimmer and Gemma 4 parser fixes ([#28682](https://github.com/ggml-org/llama.cpp/pull/28682), [#29008](https://github.com/ggml-org/llama.cpp/pull/29008), [#28869](https://github.com/ggml-org/llama.cpp/pull/28869), [#29242](https://github.com/ggml-org/llama.cpp/pull/29242), [#29115](https://github.com/ggml-org/llama.cpp/pull/29115)) - Improve JSON Schema and PEG handling ([#28518](https://github.com/ggml-org/llama.cpp/pull/28518), [#29127](https://github.com/ggml-org/llama.cpp/pull/29127), [#29161](https://github.com/ggml-org/llama.cpp/pull/29161)) - Add ufakzeka pre-tokenizer and `llama-bench --version` ([#29033](https://github.com/ggml-org/llama.cpp/pull/29033), [#28971](https://github.com/ggml-org/llama.cpp/pull/28971)) ### Multi-modality changes - Add sanity checks for mtmd layer indices, SAM layer counts, resize targets and graph allocation ([#29276](https://github.com/ggml-org/llama.cpp/pull/29276), [#28149](h",
+      "discussion_url": ""
+    },
+    {
+      "id": "e1ff828ef5a7383072aa",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "VSCode's SSH Agent Is Bananas",
+      "url": "https://fly.io/blog/vscode-ssh-wtf",
+      "published_at": "2026-09-23T21:01:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://fly.io/blog/vscode-ssh-wtf/ Comments URL: https://news.ycombinator.com/item?id=49822555 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822555"
+    },
+    {
+      "id": "077cc561aaf49b18f7f8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OSS repos to improve agent performance in Word, Excel, and PowerPoint",
+      "url": "https://www.paperinstruments.com/blog/introducing-paper-office",
+      "published_at": "2026-09-23T21:15:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.paperinstruments.com/blog/introducing-paper-office Comments URL: https://news.ycombinator.com/item?id=49822716 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822716"
+    },
+    {
+      "id": "f4d7f6c25cadb39c067d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "CliffCompaction: Cost-Efficient Compaction for Long-Horizon Coding Agents",
+      "url": "https://arxiv.org/abs/2609.26779",
+      "published_at": "2026-09-23T21:21:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2609.26779 Comments URL: https://news.ycombinator.com/item?id=49822774 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822774"
+    },
+    {
+      "id": "9793d658dd6168f91424",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: OpenCode Agent Router – Jev Controlled Subagents",
+      "url": "https://github.com/maharshi365/oc-agent-router",
+      "published_at": "2026-09-23T21:23:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Get Jev to route to specifc models for tasks. Must cheaper, subs are lasting longer! Comments URL: https://news.ycombinator.com/item?id=49822796 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822796"
+    },
+    {
       "id": "abec3742313faaa0c85b",
       "source": "openai-news",
       "publisher": "OpenAI",
@@ -3867,98 +4455,98 @@
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-23T16:58:53.017950+00:00",
+      "last_success": "2026-09-23T21:30:26.568261+00:00",
       "count": 10,
       "earliest": "2026-09-21T21:13:18+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-23T16:58:53.232814+00:00",
+      "last_success": "2026-09-23T21:30:26.748461+00:00",
       "count": 20,
-      "earliest": "2026-09-17T18:15:00+00:00",
+      "earliest": "2026-09-18T13:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-23T16:58:53.419806+00:00",
+      "last_success": "2026-09-23T21:30:26.924153+00:00",
       "count": 867,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-23T16:58:53.673426+00:00",
+      "last_success": "2026-09-23T21:30:27.067635+00:00",
       "count": 30,
-      "earliest": "2026-09-14T00:28:10+00:00",
+      "earliest": "2026-09-14T20:21:48+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-23T16:58:55.309779+00:00",
+      "last_success": "2026-09-23T21:30:28.558480+00:00",
       "count": 100,
-      "earliest": "2026-09-22T20:34:13+00:00",
+      "earliest": "2026-09-23T09:21:58+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-23T16:58:57.091501+00:00",
+      "last_success": "2026-09-23T21:30:31.892012+00:00",
       "count": 100,
-      "earliest": "2026-09-22T09:24:44+00:00",
+      "earliest": "2026-09-22T14:22:59+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-23T16:58:57.860729+00:00",
-      "count": 10,
-      "earliest": "2026-09-12T19:45:44+00:00",
+      "last_success": "2026-09-23T21:30:33.400610+00:00",
+      "count": 20,
+      "earliest": "2026-09-02T22:33:51+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-23T16:58:59.248652+00:00",
+      "last_success": "2026-09-23T21:30:34.696765+00:00",
       "count": 20,
       "earliest": "2026-09-03T18:33:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-23T16:58:59.876317+00:00",
+      "last_success": "2026-09-23T21:30:35.334394+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-23T16:59:00.370945+00:00",
+      "last_success": "2026-09-23T21:30:35.883062+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-23T16:59:01.190134+00:00",
+      "last_success": "2026-09-23T21:30:36.663061+00:00",
       "count": 9,
       "earliest": "2026-08-19T17:25:16+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-23T16:59:22.430783+00:00",
-      "count": 2,
+      "last_success": "2026-09-23T21:30:59.000758+00:00",
+      "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-23T16:59:22.601012+00:00",
-      "count": 1223,
+      "last_success": "2026-09-23T21:30:59.234158+00:00",
+      "count": 1228,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-23T16:59:44.251516+00:00",
+      "last_success": "2026-09-23T21:31:23.219805+00:00",
       "count": 5,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -3997,5 +4585,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-23T16:59:44.251580+00:00"
+  "collected_at": "2026-09-23T21:31:23.219873+00:00"
 }
