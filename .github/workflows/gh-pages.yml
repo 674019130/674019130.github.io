@@ -58,6 +58,16 @@ jobs:
           PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Restore published weekly archive
+        run: |
+          remote_state=$(git ls-remote --heads origin weekly-data)
+          if [ -n "$remote_state" ]; then
+            git fetch origin weekly-data
+            git show FETCH_HEAD:data/weekly/issues.json > /tmp/weekly-issues.json
+            python3 -c "import json; d=json.load(open('/tmp/weekly-issues.json')); assert isinstance(d['issues'], list)"
+            cp /tmp/weekly-issues.json data/weekly/issues.json
+          fi
+
       - name: 🌌 Build Valaxy Blog
         run: npm run build
         env:

@@ -111,6 +111,7 @@ onBeforeUnmount(() => { if (noticeTimer) clearTimeout(noticeTimer) })
           <nav :aria-label="zh ? '更多页面' : 'More pages'">
             <RouterLink to="/about/">{{ zh ? '关于' : 'about' }}</RouterLink>
             <RouterLink to="/archives/">{{ zh ? '文章' : 'writing' }}</RouterLink>
+            <RouterLink :to="{ path: '/weekly/', query: { lang: locale } }">{{ zh ? 'AI 周报' : 'AI weekly' }}</RouterLink>
             <RouterLink to="/home-classic">{{ zh ? '旧版首页' : 'classic home' }}</RouterLink>
           </nav>
           <div class="letter-language" role="group" :aria-label="zh ? '语言' : 'Language'">

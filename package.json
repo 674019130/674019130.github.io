@@ -21,7 +21,10 @@
     "typecheck": "tsc --noEmit",
     "prebuild:ssg": "node scripts/sync-writing-dates.mjs",
     "prebuild:spa": "node scripts/sync-writing-dates.mjs",
-    "predev": "node scripts/sync-writing-dates.mjs"
+    "predev": "node scripts/sync-writing-dates.mjs",
+    "weekly:collect": "python3 scripts/weekly.py collect",
+    "weekly:generate": "python3 scripts/weekly.py generate",
+    "test:weekly": "python3 -m unittest discover -s tests -p test_weekly.py"
   },
   "dependencies": {
     "@waline/client": "3.4.1",

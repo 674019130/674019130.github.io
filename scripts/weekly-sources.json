@@ -1,0 +1,101 @@
+[
+  {
+    "id": "github",
+    "name": "GitHub Changelog",
+    "url": "https://github.blog/changelog/feed/",
+    "category": "official_update",
+    "kind": "rss"
+  },
+  {
+    "id": "google",
+    "name": "Google Blog",
+    "url": "https://blog.google/rss/",
+    "category": "official_update",
+    "kind": "rss"
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "category": "official_update",
+    "kind": "rss"
+  },
+  {
+    "id": "simon",
+    "name": "Simon Willison",
+    "url": "https://simonwillison.net/atom/everything/",
+    "category": "discovery",
+    "kind": "rss"
+  },
+  {
+    "id": "hn-show",
+    "name": "Show HN",
+    "url": "https://hnrss.org/show?count=100",
+    "category": "discovery",
+    "kind": "rss"
+  },
+  {
+    "id": "hn-topics",
+    "name": "Hacker News",
+    "url": "https://hnrss.org/newest?q=agent+OR+retrieval+OR+rerank+OR+LLM+OR+coding&count=100",
+    "category": "discovery",
+    "kind": "rss"
+  },
+  {
+    "id": "anthropics-claude-code",
+    "name": "Claude Code",
+    "url": "https://api.github.com/repos/anthropics/claude-code/releases",
+    "category": "official_update",
+    "kind": "releases"
+  },
+  {
+    "id": "cline-cline",
+    "name": "Cline",
+    "url": "https://api.github.com/repos/cline/cline/releases",
+    "category": "official_update",
+    "kind": "releases"
+  },
+  {
+    "id": "continuedev-continue",
+    "name": "Continue",
+    "url": "https://api.github.com/repos/continuedev/continue/releases",
+    "category": "official_update",
+    "kind": "releases"
+  },
+  {
+    "id": "Aider-AI-aider",
+    "name": "Aider",
+    "url": "https://api.github.com/repos/Aider-AI/aider/releases",
+    "category": "official_update",
+    "kind": "releases"
+  },
+  {
+    "id": "ollama-ollama",
+    "name": "Ollama",
+    "url": "https://api.github.com/repos/ollama/ollama/releases",
+    "category": "official_update",
+    "kind": "releases"
+  },
+  {
+    "id": "ggml-org-llama.cpp",
+    "name": "llama.cpp",
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases",
+    "category": "official_update",
+    "kind": "releases"
+  },
+  {
+    "id": "openai-news",
+    "name": "OpenAI",
+    "url": "https://openai.com/news/rss.xml",
+    "category": "official_update",
+    "kind": "rss"
+  },
+  {
+    "id": "openai-codex",
+    "page_size": 3,
+    "name": "Codex",
+    "url": "https://api.github.com/repos/openai/codex/releases",
+    "category": "official_update",
+    "kind": "releases"
+  }
+]

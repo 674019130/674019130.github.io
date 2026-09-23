@@ -1,0 +1,110 @@
+{
+  "issues": [
+    {
+      "id": "2026-09-14",
+      "period_start": "2026-09-14",
+      "period_end": "2026-09-20",
+      "generated_at": "2026-09-23T05:53:37.173526+00:00",
+      "status": "pilot",
+      "coverage_note": "试刊精选：4 条官方更新、2 条社区发现。已核对来源说明；非全行业完整收录，项目未实测。",
+      "items": [
+        {
+          "id": "copilot-review",
+          "title": "Copilot代码审查体验改进正式可用",
+          "summary": "审查概览区分未解决、上轮以来已解决和之前遗漏的问题；符合条件的整批建议可生成提交标题与可选描述。",
+          "category": "official_update",
+          "kind": "changed",
+          "url": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience/",
+          "publisher": "GitHub",
+          "published_at": "2026-09-18",
+          "date_kind": "source_publication",
+          "discussion_url": "",
+          "verification": "source_checked_not_independently_tested",
+          "product": "Copilot Review",
+          "change": "区分已解决与遗漏的问题",
+          "change_en": "Separates resolved and missed findings"
+        },
+        {
+          "id": "copilot-metrics",
+          "title": "Copilot用量指标API纳入CLI自定义活动",
+          "summary": "CLI 用量指标新增 Skills、Agents、MCP 等活动；MCP 统计连接尝试而非工具调用，插件计数不可与 Skills 相加。",
+          "category": "official_update",
+          "kind": "changed",
+          "url": "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/",
+          "publisher": "GitHub",
+          "published_at": "2026-09-17",
+          "date_kind": "source_publication",
+          "discussion_url": "",
+          "verification": "source_checked_not_independently_tested",
+          "product": "Copilot Metrics",
+          "change": "纳入 CLI 的自定义活动",
+          "change_en": "Adds CLI customization activity"
+        },
+        {
+          "id": "google-live",
+          "title": "Google发布Gemini 3.8 Live及Extended Thinking",
+          "summary": "官方发布Gemini 3.8 Live与Extended Thinking，前者重成本效率与流畅对话，后者重复杂任务多步推理，工具可后台执行。",
+          "category": "official_update",
+          "kind": "added",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+          "publisher": "Google",
+          "published_at": "2026-09-15",
+          "date_kind": "source_publication",
+          "discussion_url": "",
+          "verification": "source_checked_not_independently_tested",
+          "product": "Gemini 3.8 Live",
+          "change": "新增实时对话与扩展思考",
+          "change_en": "Adds live dialogue and extended thinking"
+        },
+        {
+          "id": "copilot-auto",
+          "title": "Copilot auto新增成本与质量偏好档位",
+          "summary": "自动选模新增效率、平衡、智能三档偏好，仍在同一模型池中按任务选模型；费用取决于实际所选模型。",
+          "category": "official_update",
+          "kind": "changed",
+          "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/",
+          "publisher": "GitHub",
+          "published_at": "2026-09-14",
+          "date_kind": "source_publication",
+          "discussion_url": "",
+          "verification": "source_checked_not_independently_tested",
+          "product": "Copilot Auto",
+          "change": "可选成本与质量偏好",
+          "change_en": "Adds cost and quality preferences"
+        },
+        {
+          "id": "49775566",
+          "title": "lgtm：用 Jev 检查测试是否有用",
+          "summary": "项目README称用Jev读取测试与实现，识别缺乏验证价值的测试，提供CLI及/lgtm、/actually-test skills。作者介绍，仅核对项目说明，未实测。",
+          "category": "discovery",
+          "kind": "discovery",
+          "url": "https://github.com/stardeckai/lgtm",
+          "publisher": "Show HN",
+          "published_at": "2026-09-20T13:17:26Z",
+          "date_kind": "community_post",
+          "discussion_url": "https://news.ycombinator.com/item?id=49775566",
+          "verification": "source_checked_not_independently_tested",
+          "product": "lgtm / Jev",
+          "change": "作者用它检查测试是否有用",
+          "change_en": "Author: checks test value with Jev"
+        },
+        {
+          "id": "49774320",
+          "title": "WTF：看清编程 Agent 改了什么",
+          "summary": "Show HN作者介绍：为编程Agent的修改提供概览，核对现实部分仍在早期实验，作者称免费开源完全本地。仅核对介绍，未实测。",
+          "category": "discovery",
+          "kind": "discovery",
+          "url": "https://github.com/LinusInnovator/wtf",
+          "publisher": "Show HN",
+          "published_at": "2026-09-20T10:05:59Z",
+          "date_kind": "community_post",
+          "discussion_url": "https://news.ycombinator.com/item?id=49774320",
+          "verification": "source_checked_not_independently_tested",
+          "product": "WTF",
+          "change": "作者用它概览 Agent 的修改",
+          "change_en": "Author: an overview of agent edits"
+        }
+      ]
+    }
+  ]
+}

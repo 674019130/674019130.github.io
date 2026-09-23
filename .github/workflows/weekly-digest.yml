@@ -1,0 +1,81 @@
+name: Collect and publish AI weekly
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+    - cron: '43 1 * * 1'
+  workflow_dispatch:
+    inputs:
+      generate:
+        description: Generate the last complete Hong Kong week (existing issues are preserved)
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: weekly-data
+  cancel-in-progress: false
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: pipeline
+      - uses: actions/checkout@v7
+        with:
+          path: state
+          fetch-depth: 1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Restore durable collection state
+        id: restore
+        working-directory: state
+        run: |
+          remote_state=$(git ls-remote --heads origin weekly-data)
+          if [ -n "$remote_state" ]; then
+            git fetch origin weekly-data
+            git switch -C weekly-data FETCH_HEAD
+          else
+            git switch -c weekly-data
+          fi
+          git config user.name 'Su'
+          git config user.email 'nostarsbutmyeyes@gmail.com'
+      - name: Collect public sources
+        id: collect
+        continue-on-error: true
+        env:
+          WEEKLY_ROOT: ${{ github.workspace }}/state
+          GH_TOKEN: ${{ github.token }}
+        run: python pipeline/scripts/weekly.py collect
+      - name: Generate weekly issue
+        id: generate
+        if: steps.collect.outcome == 'success' && (github.event.schedule == '43 1 * * 1' || inputs.generate)
+        continue-on-error: true
+        env:
+          WEEKLY_ROOT: ${{ github.workspace }}/state
+          GH_TOKEN: ${{ github.token }}
+          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
+        run: python pipeline/scripts/weekly.py generate
+      - name: Persist collection and archive
+        if: always() && steps.restore.outcome == 'success'
+        working-directory: state
+        run: |
+          git add data/weekly
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh weekly source archive'
+            git push origin HEAD:weekly-data
+          fi
+      - name: Deploy the new issue
+        if: steps.generate.outputs.generated == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh workflow run gh-pages.yml --ref main
+      - name: Report failure without replacing the last issue
+        if: steps.collect.outcome == 'failure' || steps.generate.outcome == 'failure'
+        run: |
+          echo 'Collection or generation failed. Last published issue is preserved.' >> "$GITHUB_STEP_SUMMARY"
+          exit 1
