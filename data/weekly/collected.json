@@ -5903,41 +5903,269 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://getbelay.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=49833684 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49833684"
+    },
+    {
+      "id": "465e3eba6ff788ab8766",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Guardmcp – I scanned the official MCP registry with a config scanner",
+      "url": "https://github.com/BerkantACUN/guardmcp",
+      "published_at": "2026-09-24T17:13:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/BerkantACUN/guardmcp Comments URL: https://news.ycombinator.com/item?id=49833750 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49833750"
+    },
+    {
+      "id": "00f77cc06c87529793e2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+      "url": "https://github.com/devdotfast/whiteboard",
+      "published_at": "2026-09-24T17:21:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello! We’re Sid, Alex, Ketan, and Milan. We’re building Whiteboard, an open-source desktop app where humans and agents can architect software together in a common workspace. Here’s our repo: https://github.com/devdotfast/whiteboard and our homepage: https://whiteboard.dev.fast/ We were missing the feeling of a “whiteboard session” with another dev where you leave with a deep understanding of a system, so we built this app for ourselves. Whiteboard plugs into the tools you already use - e.g. Claude Code, Codex, etc. – and gives your agent an SDK to draw on an in-app canvas to describe its work. We began with an MVP based on HTML artifacts and started rethinking the app as we ran into limitations: 1. Built on top of CodeOSS: We found that in pure HTML tools it was hard to connect a spec or diagram to code. In Whiteboard, when you click on visualizations like a sequence diagram, an entity relationship diagram, or a quote from the agent’s trace, you can jump to the underlying code directly. When navigating code, you get keybindings and LSP support from VSCode out of the box. We’ve found this is especially valuable because tradeoffs are often only discovered after a first pass at implementation (re: slop) 2. Semantic diff viewer: we wrote a semantic, AST-aware diff viewer in Rust so you can only view the code changes which are relevant to you [1]. We’ve set up some sane defaults: large added functions are summarized as pseudocode, and things like unit tests and large documentation changes are collapsed / hidden. This is all customizable with a WASM-based plugin system. 3. Decision Log: We found it difficult to reason about what set of decisions our agents made autonomously. So we built tools for agents to query and link their own traces to the Whiteboard, so you can understand how the requirements that you set were implemented, and understand what decisions your agent made autonomously. Here’s a quick demo video explaining more: https://www.youtube.com/watch?v=ChPn3ftULWE Folks at companies like Salesforce and Modal are using Whiteboard today as a review tool for architecture or spec-level changes – really any change where they want to be involved: 1. Reviewing your own coding agent’s work: because Whiteboard makes it easier to review large amounts of code, folks will typically have their AI agents create a prototype and a corresponding Whiteboard session so they can iterate on the design. 2. Reviewing other people’s changes: We’ve found that Whiteboard is particularly helpful when composed with tools like Greptile. For example, you can run an automated code reviewer on small changes and escalate to a Whiteboard session for the changes that require human judgement. Why we built this: we’re four buddies from college who quit our jobs as tech leads right before agentic coding became industry standard. As we iterated towards an MVP for a previous idea, we struggled to maintain a comprehensible codebase while reaping all the velocity benefits of agentic coding. As more PRs were merged without our understanding, we felt a ‘cognitive debt’ begin to seep in, until it became difficult for us to even contribute to the system [2]. We’re releasing our desktop app under an MIT license. Please poke through and feel free to contribute! Eventually we’ll charge companies for a hosted web version that manages whiteboard session creation alongside features like trajectory storage and multiplayer reviews. Everything will always remain self-hostable. Thanks for reading, and we hope you try it out! We would love to hear any feedback and to learn from your expertise. Here’s are the project links again: https://github.com/devdotfast/whiteboard , and you can install (for MacOS + Linux) at https://install.dev.fast [1] diffs library: https://github.com/devdotfast/diffr [2] Credit for the term ‘cognitive debt’ goes to https://www.geoffreylitt.com/2026/07/02/understanding-is-the... Comments URL: https://news.ycombinator.com/item?id=49833867 Points: 131 # Com",
+      "discussion_url": "https://news.ycombinator.com/item?id=49833867"
+    },
+    {
+      "id": "9501696736e9e60ac68b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Busbar self-hosted execution boundary for Agentic Apps",
+      "url": "https://github.com/GetBusbar/busbar",
+      "published_at": "2026-09-24T17:22:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Came across this new project of Busbar for execution boundaries. looks very promising. Control where AI can go, what it may use, what authority it receives, what it may cost, and what evidence is retained—before it acts. Comments URL: https://news.ycombinator.com/item?id=49833885 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49833885"
+    },
+    {
+      "id": "8666bd394367b6115285",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: DeutschDNA – German Tutor Skill for Claude Code and Codex",
+      "url": "https://github.com/ahmtsahin/deutsch-dna",
+      "published_at": "2026-09-24T17:22:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ahmtsahin/deutsch-dna Comments URL: https://news.ycombinator.com/item?id=49833890 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49833890"
+    },
+    {
+      "id": "326655351e5550e1d6a1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Critic – Review code with the agent that wrote it",
+      "url": "https://www.critic.run",
+      "published_at": "2026-09-24T17:35:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I'm Shreyash from Feyn. We help companies build custom models from their data. Today we're releasing Critic, a change review platform that lets you engage directly with the AI that wrote the code. Agents write most of our code. While that has made us more productive, understanding a change and its consequences has become incredibly difficult. As our company adopted more agentic tools, we found it harder to loop people in on the impact of a PR and the state of a project. We built Critic to fix this. Critic lets AI agents present their code, annotate key blocks, and include relevant evidence (like screenshots and instructions to run locally). Anyone viewing that change can talk directly to the agent that wrote it. See a demo here: https://www.youtube.com/watch?v=U2--lytmOtQ . Critic works through a plugin for Codex or Claude Code. When your agent writes code, the plugin asks it to also write a narrative describing the story behind the change, and highlight any assumptions, decisions, or complex code. You can then view the change at critic.run or have your agent pull it via the bundled MCP. Every feature in Critic is available over MCP, so your agent gets all the same context without leaving its harness. From the dashboard or MCP, you can chat with the authoring agent directly. When Critic receives a question, it forks the authoring session and forwards your question there. That way your main thread stays clean and keeps working. Local changes are visible only to the owner. Anything pushed to GitHub is mirrored and visible to anyone with permission to view that change on GitHub. When building Critic, security was a big priority for us. AI agents often run in auto mode and can take many actions on your computer. We wanted to ensure that giving people access to your agent doesn't mean giving them access to your computer. All Critic forked sessions are stripped of their write tools. They can only answer questions about the change and in-progress work in that workspace. Critic has helped us catch several incidents before they hit production. The most common is a model not reusing artifacts, like existing styles, components, or functions. Because it's so easy to dig into an agent's work and question it, we've also caught more cases of models misdiagnosing issues or writing unhelpful code. Since Critic's UI is faster and friendlier to agents than GitHub, our team is returning feedback quicker as well. Critic is free to use. Sign up at critic.run. Let me know if you have feedback or questions Comments URL: https://news.ycombinator.com/item?id=49834098 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834098"
+    },
+    {
+      "id": "d34a1ed91313d4932ef1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MEF LLM Studio",
+      "url": "https://www.mef-llm-studio.com/de",
+      "published_at": "2026-09-24T17:50:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.mef-llm-studio.com/de/ Comments URL: https://news.ycombinator.com/item?id=49834320 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834320"
+    },
+    {
+      "id": "94c8bae6ead6f1802a31",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: bananabread AI – Find what customers love and want from your products",
+      "url": "https://bb-product-api-docs.web.app",
+      "published_at": "2026-09-24T17:52:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "We recently launched an API that finds what people consistently love about a specific consumer product. Some of our first users reached out asking whether it could also find what people still want from the product. That’s what we're launching today. For example, reviews like \"I love the taste, but I wish it had less sugar\" tells you what's working well already and what you could improve. Give the API a brand + product name (only consumer goods work for now). It first searches for thousands of reviews per product across Amazon, TikTok, Reddit, YouTube, Instagram, Walmart, and other web sources. It then extracts what people love and what they wish was better, and shows you the evidence (actual quotes + links to the reviews). The goal is to help you answer two questions: what keeps people coming back, and what are they still asking for? It currently takes a few minutes per product. Docs: https://bb-product-api-docs.web.app/ Get API key: https://bb-product-api-docs.web.app/keys.html Examples: https://bb-product-api-docs.web.app/examples.html Please let me know if we can add anything to make it more useful. Ask me anything. Comments URL: https://news.ycombinator.com/item?id=49834368 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834368"
+    },
+    {
+      "id": "fc03f391da63facb5f77",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: DrawCMS – An open-source animated diagramming tool for AI Agents",
+      "url": "https://github.com/drawcms/drawcms",
+      "published_at": "2026-09-24T17:57:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello, I'm building DrawCMS. It's an open source animated diagram editor you can self-host. You can ask a compatible AI agent to read your repository and create an editable diagram, then walk through the flow step by step on the canvas. AI makes it easy to write code quickly. Keeping track of how that code works can be harder. You finish a feature, move on, and a week later you're trying to remember where a request goes, which service writes to the database, or why a background job runs. It supports architecture, sequence, network and etc diagrams, infrastructure icons also . You can also draw and edit everything manually. Repo: https://github.com/drawcms/drawcms Quickstart (Claude Code, Codex, OpenClaw, Hermes): npx skills add drawcms/drawcms-skill -g Thanks for reading, and I hope you try it out! I would love to hear any feedback Comments URL: https://news.ycombinator.com/item?id=49834430 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834430"
+    },
+    {
+      "id": "8fb8a7d014161581d494",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rig – Open-source cloud desktops for AI agents",
+      "url": "https://github.com/ShadowWalker2014/rig",
+      "published_at": "2026-09-24T18:01:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ShadowWalker2014/rig Comments URL: https://news.ycombinator.com/item?id=49834499 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834499"
+    },
+    {
+      "id": "fa028edd72f9b2a08870",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: BoxHaven – Run Claude Code and Codex on Persistent Cloud VMs",
+      "url": "https://github.com/finbarr/boxhaven",
+      "published_at": "2026-09-24T18:16:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/finbarr/boxhaven Comments URL: https://news.ycombinator.com/item?id=49834707 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834707"
+    },
+    {
+      "id": "dcd307326f7ed924a6b0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Radix – Visual UI for agentic programming",
+      "url": "https://radix-os.com",
+      "published_at": "2026-09-24T18:35:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I'm Jordan from Radix. Radix is a UI tool for programming agents. You prompt your agent to generate a workspace for a task you're working on and get an interactive widget that persists locally on disk. I built Radix because I always needed tools while I was writing code: tools to test little experiments, to play around with UI, to visualise results etc. Sometimes these would end up as python tools that read and plotted data, or separate React apps spun up just to test a single feature. Lately obviously I've been using Claude artifacts but these are quite limited. I wanted a system where it was easy to leave comments or adapt an artifact without having to give vague descriptions back to the agent, and where ideally I could actually shift away from a chat window as the main interface. I've got a pro version of Radix which I will launch soon. This current version is entirely free and is definitely a beta -- there will be rough edges! Note: There's no telemetry or data captured. Your messages run entirely through your own agent. I require a key but that's just to get an idea of how many people are using it. Everything is stored locally (the workspaces are actually just React apps which you can edit \"artisanally\" if you want). If you have any questions please reply here or email me hello@radix-os.com Thank you! Comments URL: https://news.ycombinator.com/item?id=49834964 Points: 15 # Comments: 16",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834964"
+    },
+    {
+      "id": "3b11e67390b21a9fcd9b",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.282",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+      "published_at": "2026-09-24T18:38:05+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added a `maxProseWidth` setting that caps the width of Claude's prose in wide terminals while tables and code blocks keep the full width - Added a startup notice, and `/status` and `claude doctor` entries, listing telemetry variables in a project's settings files that were ignored or that turned telemetry off - Added the `allowClaudeInChromeWithManagedMcp` managed setting to let `claude --chrome` run alongside an exclusive `managed-mcp.json`; the error shown when Chrome is blocked now names it - Added `store.readiness_grace_seconds` to the Claude apps gateway so `/readyz` can stay ready through a short Postgres outage such as a database failover - Added a scrollbar to the `/feedback` drafts list in fullscreen mode; it appears while the mouse is over the list - Fixed every request failing with a 400 error in conversations whose history holds web search results the API cannot decrypt (for example, from a turn answered through a third-party gateway) - Fixed more cases of continued or resumed sessions (`--continue`, `--resume`) re-sending earlier messages in a changed form, which could make the API drop Claude's earlier reasoning - Fixed earlier extended thinking being dropped when `/model`, `/rename`, `/artifacts` or another immediate slash command was used while Claude was working - Fixed continued or resumed conversations losing earlier extended thinking when relaunched with a `--tools` list that leaves out a built-in tool offered earlier in the conversation - Fixed sessions failing on every turn with an \"Invalid `data` in `redacted_thinking` block\" API error; Claude Code now drops the conversation's thinking blocks and retries once - Fixed compaction failing when the summarization request is refused; it now retries on a fallback model - Fixed a failed turn (\"Effort 'xhigh' isn't available with thinking turned off\") after a safety-related model switch in sessions with thinking off and effort above high - Fixed an unanswered Fable usage-credits prompt switching models in SDK-hosted sessions such as Claude Desktop; the turn now ends instead, and Remote Control clients now see the model-switch notice - Fixed `/model` with a full Fable model id stopping at an API error instead of opening the usage-credits prompt when the plan needs usage credits that aren't turned on yet - Fixed requests failing for up to a minute with an \"another Claude Code process is refreshing it\" login error after that other process was closed or killed mid-refresh - Fixed sessions started while another Claude Code window was refreshing the sign-in (common with several VS Code windows) not retrying their organization policy fetch - Fixed CLAUDE.md and rules being read at startup through a repository symlink reaching macOS's `/Network` via `..` or a `/.vol`-style kernel path, or a rules link to macOS's `/home` being listed - Fixed Bash permission rules with a mid-pattern `:*` being skipped in settings files while `--allowedTools` honored them; they now work from every source, with a startup warning on how they match - Fixed a command approved on a restored permission prompt running twice when a remote session's worker restarted - Fixed managed settings ignoring a mistyped value for boolean lock keys such as `disableClaudeAiConnectors` or `allowManagedPermissionRulesOnly`; the lock now applies and startup names the key - Fixed managed `permissions`, `autoMode`, `worktree` and `attribution` settings being ignored entirely when one nested value was invalid; the rest of the block now still applies - Fixed repository, user and `--add-dir` skills, commands and skills-directory plugin manifests pre-approving their own tools via `allowed-tools` under managed `allowManagedPermissionRulesOnly` - Fixed safeguard block messages on Amazon Bedrock and Bedrock Mantle not showing a request ID; block messages now also show the message ID - Vertex AI: Fixed web search not being offered for models Claude Code doesn't recognize yet, such as newly released ones ",
+      "discussion_url": ""
+    },
+    {
+      "id": "7f8e418e603a67e5f05f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: IttyBittyAI – Qwen2.5:0.5B running on a 2017 Asus smartphone",
+      "url": "https://news.ycombinator.com/item?id=49835080",
+      "published_at": "2026-09-24T18:42:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Rummaging through some boxes of old stuff, I found one of my old smart phones. It's an Asus Zenfone 4 Max (ZC554KL, Snapdragon 430, 8x Cortex-A53, 3 GB RAM, 32 GB storage) that I bought back in 2017 and so it's been sitting in a box for ~8 or 9 years. Still works! So I thought I'd give it a chance to avoid the garbage bin by turning it into a tiny AI chatbot server that can connect to any wifi network and immediately make itself available to chat via a web UI on the local network. The phone now boots into postmarketOS, with a small touch screen UI for picking a Wi-Fi network. Once connected, the web server is started and a chat URL provided (the app sets the device hostname to ittybitty so the standard chat URL will be http://ittybitty.local or just the IP address) and a QR code that will take you to the chat UI is provided. llama.cpp was compiled on the phone itself (the first full build took over an hour). The model is Qwen2.5-0.5B-Instruct at 4-bit (403 MB). It can't really do a whole lot other than chat and answer questions using it's training data, which is tiny so not super-intelligent on its own, but I added a few helpers to the web app (a calculator, the date/time, Wikipedia lookups). This project was mostly just to see if it would work at all , so the results were relatively impressive. What I'm seeing: - ~4.5 tokens/sec generating (generally faster than you can read the output being generated), ~13 tokens/sec reading the prompt - llama-server uses about 570 MB of RAM with the model loaded - two people can chat at once, users wait their turn - I tried SmolLM2-360M first, it was faster (6 tok/s) but it looped and refused to answer things. The 0.5B model is noticeably better at holding a conversation. The coolest thing is it's portability. Anywhere you go that has a wifi to connect to you can just turn the phone on, connect it to the wifi, and now that network has a little AI chat bot to talk to. If this old crappy smart phone does this well I can only imagine how newer, better, faster, bigger phones would do. If anybody has this same smart phone and is interested in doing the same thing just let me know and I can give you the custom OS and llamacpp builds to start from. Not a whole lot to 'show' since it runs inside my local network but here are some screenshots of the mobile app/server and the web UI: https://spottedmarley.com/ittybitty-home.png https://spottedmarley.com/ittybitty-ui.jpg Comments URL: https://news.ycombinator.com/item?id=49835080 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49835080"
+    },
+    {
+      "id": "a1301adc275557a156d9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agency – Manage Agents for Your Robinhood Agentic Account",
+      "url": "https://agency.trading",
+      "published_at": "2026-09-24T18:59:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agency.trading/ Comments URL: https://news.ycombinator.com/item?id=49835332 Points: 2 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=49835332"
+    },
+    {
+      "id": "7f61d49a8d52697d1baa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Fine-tuned 110M encoder beat 7B LLMs and hybrid search for NIST mapping",
+      "url": "https://github.com/applied-inference-lab/autormf-ml-lab",
+      "published_at": "2026-09-24T19:26:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/applied-inference-lab/autormf-ml-lab Comments URL: https://news.ycombinator.com/item?id=49835684 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49835684"
+    },
+    {
+      "id": "1bd4e7f55d1b3ae1101a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Dunara",
+      "url": "https://dunara-studio.com",
+      "published_at": "2026-09-24T20:07:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm building Dunara, an open-source local builder for Expo and React Native apps. Bring your own AI connection, refine your app in Studio, and export the full source. Interact with the app using your own AI provider via MCP or directly within the studio. Looking for feedback Comments URL: https://news.ycombinator.com/item?id=49836148 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49836148"
+    },
+    {
+      "id": "cc4b96b9168b1860fd53",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: RentBench – Levels.fyi for UK Rents",
+      "url": "https://rentbench.fyi",
+      "published_at": "2026-09-24T20:26:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "My flatmate and I recently had our letting agent ask for a 30% rent increase on our London flat. Negotiating with them was hard given that there's a huge information gap: agents see rents across their whole portfolio and agreed deals, while tenants see a handful of listings whose asking prices may or may not reflect what people actually pay. This makes it easy for agents to justify big increases by saying \"the market has moved\", and really hard for tenants to prove that that's not the case. We even found that some neighbours in our own building are paying up to 30% more than others for similar flats. This matters more now that England's Renters' Rights Act lets tenants challenge rent increases they believe are above market rate. The problem is there's no easy way for a tenant to find out what market rate is. Also, now that landlords can no longer accept offers above the asking price, they have an incentive to list higher than the rent they expect to get. That's what inspired us to build RentBench, a platform where renters anonymously share what they currently pay and can see median rents for their area, so they can quickly check whether a price is in line with the market instead of spending hours going through listings. We also include official ONS rent inflation and median rent data for context. It covers Great Britain for now, but we'd love to expand to other countries if people find it useful! https://rentbench.fyi/ Comments URL: https://news.ycombinator.com/item?id=49836351 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49836351"
+    },
+    {
+      "id": "4aa88ed051f50d189cb0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A $25 DIY alternative to $159 AI voice recorders – BYOK or local",
+      "url": "https://zephclick.com",
+      "published_at": "2026-09-24T20:51:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://zephclick.com Comments URL: https://news.ycombinator.com/item?id=49836576 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49836576"
+    },
+    {
+      "id": "ba62e02ea88968c188dd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Canary (YC) – Independent verification for AI code",
+      "url": "https://www.runcanary.ai",
+      "published_at": "2026-09-24T20:57:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, we are Aakash and Viswesh and we are building Canary ( https://www.runcanary.ai/ ) - independent verification for AI code. Claude/Codex calls Canary with the changesets, intended behaviour and team knowledge. Canary then deploys agent swarms to investigate potential failures and test suspected runtime bugs in remote sandboxes. To try it on your repository, paste this into your coding agent: Install the Canary CLI with npm i -g @runcanary/cli, then run canary skills and follow its instructions to onboard this repository. Verification starts with what software is supposed to do and most importantly what it must never allow. This means investigating how inputs, permissions, state, timing, dependencies etc interact with each other. Intent is not always fully declared as well but many expectations are clear: private files should stay private, credentials should not leak, and retries should not create unintended duplicate effects. We believe the future is a unified and independent verification system that starts with all those expectations and then chooses how to investigate each suspected failure. Source-only code reviews catches static issues in the implementation but even a clean review leaves a good chunk of behavioral only issues untested. Unit tests, integrations, E2E, static analysis, runtime experiments and formal verification are all means to establish that behavior thereby generating different kinds of evidence and guarantees. This is why we believe a dedicated verification harness that can think and reason through all these modalities and invariants is necessary on top of general intelligence. The harness needs to start with the system’s intended behavior, develop a series of potential failure scenarios and choose how to investigate them. It’s sole functionality is to pressure test and challenge the assumptions behind a change, create the conditions needed to test suspected failures and assess what the resulting evidence establishes How Canary works: it takes a cold snapshot of the codebase when called, combining the supplied intent and team knowledge with requirements, decisions, prior issues from tools like Notion, Linear. It can also route questions to you through the coding agents if anything is ambiguous. Canary’s harness coordinates agent swarms by leveraging the different strengths across model families. It compares the code before and after, traces the effects through callers, dependencies, state transitions etc. and each suspected failure becomes a concrete scenario with an actor, state, trigger, outcomes and many more runtime states., For each suspected failure, Canary chooses the best way to provide evidence through methods like runtime verification, static analysis, unit, integration or sometimes even combination of these as necessary. The agent executes these checks in remote sandboxes by seeding data, configuring permissions, mocking dependencies and third party integrations and much more. Canary then returns these findings and supporting evidence back to the coding agents which then fixes these failures and requests reverifications against the failed scenarios. To get started, give your coding agent this setup instruction and tell us what it caught and how we can do better. Install the Canary CLI with npm i -g @runcanary/cli, then run canary skills and follow its instructions to onboard this repository. We are still pretty early in our journey and would love feedback on the product and how we can do better. Comments URL: https://news.ycombinator.com/item?id=49836632 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49836632"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-24T17:11:39.818169+00:00",
+      "last_success": "2026-09-24T21:31:23.595658+00:00",
       "count": 10,
-      "earliest": "2026-09-22T09:21:03+00:00",
+      "earliest": "2026-09-22T14:11:47+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-24T17:11:40.019776+00:00",
+      "last_success": "2026-09-24T21:31:23.730402+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-24T17:11:40.125122+00:00",
+      "last_success": "2026-09-24T21:31:23.835478+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-24T17:11:40.201647+00:00",
+      "last_success": "2026-09-24T21:31:23.982421+00:00",
       "count": 30,
-      "earliest": "2026-09-14T20:21:48+00:00",
+      "earliest": "2026-09-15T22:47:07+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-24T17:11:47.687367+00:00",
-      "count": 100,
-      "earliest": "2026-09-24T01:07:30+00:00",
+      "last_success": "2026-09-24T21:31:29.795651+00:00",
+      "count": 99,
+      "earliest": "2026-09-24T12:41:36+00:00",
       "gap": false,
       "error": null
     },
@@ -5946,59 +6174,59 @@
       "count": 100,
       "earliest": "2026-09-23T14:36:02+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-24T17:11:52.963683+00:00",
+      "last_success": "2026-09-24T21:31:35.425611+00:00",
       "count": 20,
-      "earliest": "2026-09-02T22:33:51+00:00",
+      "earliest": "2026-09-03T23:48:12+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-24T17:11:54.059845+00:00",
+      "last_success": "2026-09-24T21:31:36.370300+00:00",
       "count": 28,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-24T17:11:54.386248+00:00",
+      "last_success": "2026-09-24T21:31:36.704267+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-24T17:11:54.745971+00:00",
+      "last_success": "2026-09-24T21:31:36.970992+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-24T17:11:55.241527+00:00",
+      "last_success": "2026-09-24T21:31:37.386490+00:00",
       "count": 10,
       "earliest": "2026-08-19T17:25:16+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-24T17:12:06.618400+00:00",
+      "last_success": "2026-09-24T21:31:49.398424+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-24T17:12:06.770932+00:00",
+      "last_success": "2026-09-24T21:31:49.546704+00:00",
       "count": 1229,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-24T17:12:19.878373+00:00",
+      "last_success": "2026-09-24T21:32:03.807379+00:00",
       "count": 5,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -6037,5 +6265,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-24T17:12:19.878478+00:00"
+  "collected_at": "2026-09-24T21:32:03.807453+00:00"
 }
