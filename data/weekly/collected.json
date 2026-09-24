@@ -2905,6 +2905,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49810838"
     },
     {
+      "id": "14f9d95a9626ae6ef09e",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.34.4",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.34.4",
+      "published_at": "2026-09-23T02:24:43+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's Changed - Structured outputs on thinking models now apply in a single pass, making them faster and more reliable. - Fixed intermittent \"model not found\" errors with a large local library - Fixed the macOS app becoming unresponsive when checking if ChatGPT or Codex is running. - Qwen 3.8 prompt processing is faster on Apple Silicon. - Gemma 4 on Apple Silicon now picks the best image resolution per image, keeping more detail in high-resolution images. - Updated llama.cpp, MLX, and XGrammar. **Full Changelog**: https://github.com/ollama/ollama/compare/v0.34.3...v0.34.4",
+      "discussion_url": ""
+    },
+    {
       "id": "07cc26fdc592100799be",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -4441,6 +4453,366 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49822796"
     },
     {
+      "id": "19d03c318f7630bd146c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: OpenCode Agent Router – Jev Controlled Subagents",
+      "url": "https://github.com/maharshi365/oc-agent-router",
+      "published_at": "2026-09-23T21:23:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Get Jev to route to specifc models for tasks. Must cheaper, subs are lasting longer! Comments URL: https://news.ycombinator.com/item?id=49822796 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822796"
+    },
+    {
+      "id": "cc7fa6eb1b9cc6acb16d",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "More ways to request and configure Copilot code reviews",
+      "url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews",
+      "published_at": "2026-09-23T21:25:58+00:00",
+      "date_kind": "source_publication",
+      "evidence": "GitHub Copilot code review now offers additional personal configurations to an expanded set of Copilot plans and an enterprise-level default setting. These improvements are now generally available: A dedicated personal settings page for automatic review and your default review effort An enterprise-wide default review effort setting for organization-owned repositories ⚙️ Manage your personal review settings Previously, personal Copilot code review settings were available only with Copilot Pro, Pro+, and Max on the “Copilot features” page. They covered a single automatic review setting without separate controls for draft pull requests or new pushes. Under your profile → Copilot settings , a dedicated “code review” page under Copilot is now available on every Copilot plan, including Copilot Business and Copilot Enterprise. From this page you can: Turn on automatic reviews from Copilot, which will trigger when you create a pull request, coauthor a pull request, or move a pull request out of draft state. Turn on automatic review for new pushes and for draft pull requests you create or coauthor. Set your default review effort, shown today as Lite or Balanced . Your default effort applies to reviews you request, including reviews configured to automatically review your pull request. When manually requesting a review from Copilot via the pull request page under “Reviewers”, you can still select a different review effort before requesting. 🏢 Set an enterprise default review effort Authorized enterprise administrators can now set one default review effort (i.e., Lite , Balanced , or the GitHub default) for the whole enterprise. The default applies to organization-owned repositories through inheritance. Organizations and repositories can still set their own overrides. The post More ways to request and configure Copilot code reviews appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "e231ecbe635d16b17392",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AI Agent Goal Hijack: How Attackers Turn an Agent's Own Tools Against It",
+      "url": "https://darkmarc.substack.com/p/hijacking-ai-agents-how-an-agents",
+      "published_at": "2026-09-23T21:30:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://darkmarc.substack.com/p/hijacking-ai-agents-how-an-agents Comments URL: https://news.ycombinator.com/item?id=49822862 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822862"
+    },
+    {
+      "id": "e94225e5b23f50f427c4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenAI agent hacked Medicare, Albanese expressed 'extreme concern' to Sam Altman",
+      "url": "https://www.theguardian.com/australia-news/2026/sep/24/anthony-albanese-says-openai-agent-hacked-medicare-extreme-concern-sam-altman",
+      "published_at": "2026-09-23T21:41:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.theguardian.com/australia-news/2026/sep/24/anthony-albanese-says-openai-agent-hacked-medicare-extreme-concern-sam-altman Comments URL: https://news.ycombinator.com/item?id=49822973 Points: 6 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49822973"
+    },
+    {
+      "id": "ee5f23767551752fc7ae",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenAI 'agent' hacked Australia's health service",
+      "url": "https://www.ft.com/content/56133ef4-377b-4e35-a939-f199ceb64507",
+      "published_at": "2026-09-23T21:49:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.ft.com/content/56133ef4-377b-4e35-a939-f199ceb64507 Comments URL: https://news.ycombinator.com/item?id=49823062 Points: 23 # Comments: 6",
+      "discussion_url": "https://news.ycombinator.com/item?id=49823062"
+    },
+    {
+      "id": "3c5e0894dd56c7bb6fc4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "I stress-tested LLM quantization by deliberately breaking models",
+      "url": "https://github.com/gracejackson-sudo/quant-delta-predictor",
+      "published_at": "2026-09-23T22:04:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/gracejackson-sudo/quant-delta-predictor Comments URL: https://news.ycombinator.com/item?id=49823211 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49823211"
+    },
+    {
+      "id": "60f8e07ea5214d42eab0",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Mercury 2.5 LLM hits 770 tokens per second",
+      "url": "https://artificialanalysis.ai/models/mercury-2-5",
+      "published_at": "2026-09-23T22:16:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://artificialanalysis.ai/models/mercury-2-5 Comments URL: https://news.ycombinator.com/item?id=49823348 Points: 77 # Comments: 48",
+      "discussion_url": "https://news.ycombinator.com/item?id=49823348"
+    },
+    {
+      "id": "6f328f1d82683263da33",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PromptSpend – LLM API prices re-checked daily, with source per price",
+      "url": "https://promptspend.com",
+      "published_at": "2026-09-23T22:49:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://promptspend.com/ Comments URL: https://news.ycombinator.com/item?id=49823708 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49823708"
+    },
+    {
+      "id": "9039f9dca22da6e7d795",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: PromptSpend – LLM API prices re-checked daily, with source per price",
+      "url": "https://promptspend.com",
+      "published_at": "2026-09-23T22:49:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://promptspend.com/ Comments URL: https://news.ycombinator.com/item?id=49823708 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49823708"
+    },
+    {
+      "id": "43091383a5e006a7e3b3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hosted JayBase – An append-only data store for safe AI agent writes",
+      "url": "https://jaybase.ai",
+      "published_at": "2026-09-23T22:59:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Just launched the hosted version of my JayBase project, which I shared with you guys a few months ago. ( https://news.ycombinator.com/item?id=48999936 ) I'm really trying to design it from the ground up to be the way that agents can interact with business data, in the same way they can interact with code (by having a built-in history and built-in auditability, in the same way that coding agents do with Git). I'd love to get your feedback. Comments URL: https://news.ycombinator.com/item?id=49823815 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49823815"
+    },
+    {
+      "id": "20cedd7450908af5f2a5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Hosted JayBase – An append-only data store for safe AI agent writes",
+      "url": "https://jaybase.ai",
+      "published_at": "2026-09-23T22:59:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Just launched the hosted version of my JayBase project, which I shared with you guys a few months ago. ( https://news.ycombinator.com/item?id=48999936 ) I'm really trying to design it from the ground up to be the way that agents can interact with business data, in the same way they can interact with code (by having a built-in history and built-in auditability, in the same way that coding agents do with Git). I'd love to get your feedback. Comments URL: https://news.ycombinator.com/item?id=49823815 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49823815"
+    },
+    {
+      "id": "95a7956b60cd634b62e3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: NetHackers",
+      "url": "https://nethackers.dunnolab.ai",
+      "published_at": "2026-09-23T23:04:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "hi everyone, been building this project for the last ~1.5 months (cc+superpowers all the way) it is an open effort to find a program that can reliably win NetHack 3.6.6: you can write a bot by hand, let claude code / codex / opencode improve one, or build your own harness that improves the thing that improves the bot me and my lab switched to the goal-based research this year (we worked a lot in the idea-based framework for a last couple of years) -- and decided that we would like to tackle the NetHack, it is one of those nasty roguelike that is still somehow not solved with all fancy AI models (yes, even astra) -- probably on the way something useful will appear you can pull someone else's bot, run experiments locally and register the results. every registered program is linked to your github repo and exact source commit i always wanted to try building something that will use github as both social and storage layer (and it seems to work quite well in our case, simplified things a bit and i think this approach is quite cool) there is a shared frontier across 73 starting identities -- your bots dont have to be the best at everything to contribute something useful, e.g. if you love to roleplay gnomes only, so be it to make thing easier (for both harness devs and people who are just playing around), we provide a loop that does some sort of an evolutionary optimization process (quality-diversity, etc), ofc you don't have to use it. but you can start with in minutes (given you have codex or claude subs) you can also bring your own search, your own harness, whatever -- the common ground is the evaluation. public seeds are there for people to overfit (in nethack even overfitting is hard), and we separately re-evaluate on hidden seeds to check whether the improvements actually transfer one of my goals was to actually try to make it at least a bit fun -- hope you enjoy the web-site and easter eggs Comments URL: https://news.ycombinator.com/item?id=49823869 Points: 1 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49823869"
+    },
+    {
+      "id": "1bfc4b06cbdcc71e367c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenAI agent hacked into Australia's national healthcare system",
+      "url": "https://www.cnn.com/2026/09/23/business/australia-openai-agent-hack-intl-hnk",
+      "published_at": "2026-09-23T23:31:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.cnn.com/2026/09/23/business/australia-openai-agent-hack-intl-hnk Comments URL: https://news.ycombinator.com/item?id=49824127 Points: 5 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49824127"
+    },
+    {
+      "id": "a848e889e924d7ecf77f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Submit asynchronous LLM batch jobs through one interface",
+      "url": "https://github.com/gojiplus/batchlane",
+      "published_at": "2026-09-23T23:33:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/gojiplus/batchlane Comments URL: https://news.ycombinator.com/item?id=49824148 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49824148"
+    },
+    {
+      "id": "1f05f5499345c770e940",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Submit asynchronous LLM batch jobs through one interface",
+      "url": "https://github.com/gojiplus/batchlane",
+      "published_at": "2026-09-23T23:33:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/gojiplus/batchlane Comments URL: https://news.ycombinator.com/item?id=49824148 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49824148"
+    },
+    {
+      "id": "d55bc2d286e530ca821e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AI-CAD: An OSS Multi-Agent Harness for Mech. Eng. CAD",
+      "url": "https://github.com/ai-cad-labs/ai-cad",
+      "published_at": "2026-09-24T00:14:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ai-cad-labs/ai-cad Comments URL: https://news.ycombinator.com/item?id=49824497 Points: 6 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49824497"
+    },
+    {
+      "id": "fd6d40c9b9353be2eef8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Holistic design systems for the AI coding era",
+      "url": "https://numeric.substack.com/p/design-systems-at-numeric",
+      "published_at": "2026-09-24T00:21:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://numeric.substack.com/p/design-systems-at-numeric Comments URL: https://news.ycombinator.com/item?id=49824554 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49824554"
+    },
+    {
+      "id": "cbc8fcc9db294783f653",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "JEV Engineering for Coding Agents",
+      "url": "https://drive.google.com/file/d/17h982xvsL3E7b80iGmOCfKp9qTOW9ohv/view?pli=1",
+      "published_at": "2026-09-24T00:46:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://drive.google.com/file/d/17h982xvsL3E7b80iGmOCfKp9qTOW9ohv/view?pli=1 Comments URL: https://news.ycombinator.com/item?id=49824733 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49824733"
+    },
+    {
+      "id": "5f054fb4abd2937b9b96",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Does per-step reasoning effort save money in Claude Code?",
+      "url": "https://github.com/ifoster01/jev-effort",
+      "published_at": "2026-09-24T01:08:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ifoster01/jev-effort Comments URL: https://news.ycombinator.com/item?id=49824915 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49824915"
+    },
+    {
+      "id": "040b199aa6e807a62067",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "We used an AI agent to fix an open-source bug. Someone asked to ban us",
+      "url": "https://github.com/saulpw/visidata/pull/3229",
+      "published_at": "2026-09-24T01:14:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/saulpw/visidata/pull/3229 Comments URL: https://news.ycombinator.com/item?id=49824957 Points: 15 # Comments: 21",
+      "discussion_url": "https://news.ycombinator.com/item?id=49824957"
+    },
+    {
+      "id": "68608ec8a69670fcfc4a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Australia says OpenAI agent hacked into government website",
+      "url": "https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411",
+      "published_at": "2026-09-24T01:24:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411 Comments URL: https://news.ycombinator.com/item?id=49825024 Points: 68 # Comments: 46",
+      "discussion_url": "https://news.ycombinator.com/item?id=49825024"
+    },
+    {
+      "id": "ad8acd59c676ac2b4fbf",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Chatlo – an iOS-native AI agent, now with Jev",
+      "url": "https://apps.apple.com/us/app/chatlo-ai-chat-agent/id6771188943",
+      "published_at": "2026-09-24T02:23:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello HN! I’m sure many of you have used AI agent apps like OpenClaw, Claude Code, or Codex on your PCs, but you rarely see AI agents running on the iOS platform. That’s why I created an agent app that runs exclusively on iOS—it doesn’t require a separate computer or server; it runs entirely on your iPhone. Plus, in the latest version, we’ve become the first to integrate Jev AI—a very popular decision-making AI—on the App Store. We invite you to try it out, and we look forward to your feedback. App Store: https://apps.apple.com/us/app/chatlo-ai-chat-agent/id6771188... Comments URL: https://news.ycombinator.com/item?id=49825446 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49825446"
+    },
+    {
+      "id": "d5fc3b33e1d496c76729",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Chatlo – an iOS-native AI agent, now with Jev",
+      "url": "https://apps.apple.com/us/app/chatlo-ai-chat-agent/id6771188943",
+      "published_at": "2026-09-24T02:23:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello HN! I’m sure many of you have used AI agent apps like OpenClaw, Claude Code, or Codex on your PCs, but you rarely see AI agents running on the iOS platform. That’s why I created an agent app that runs exclusively on iOS—it doesn’t require a separate computer or server; it runs entirely on your iPhone. Plus, in the latest version, we’ve become the first to integrate Jev AI—a very popular decision-making AI—on the App Store. We invite you to try it out, and we look forward to your feedback. App Store: https://apps.apple.com/us/app/chatlo-ai-chat-agent/id6771188... Comments URL: https://news.ycombinator.com/item?id=49825446 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49825446"
+    },
+    {
+      "id": "fa3e96f5fc7cc5c854c8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenAI agent hacked Australian government website, PM says",
+      "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+      "published_at": "2026-09-24T02:44:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.bbc.com/news/live/cvgl73pxgndwt Comments URL: https://news.ycombinator.com/item?id=49825580 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49825580"
+    },
+    {
+      "id": "c8e170c958fe7b347593",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I made Jev moderate Discord servers",
+      "url": "https://soter.frolleks.site",
+      "published_at": "2026-09-24T03:14:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "demo: https://x.com/frolleks/status/2102751607238902258 Comments URL: https://news.ycombinator.com/item?id=49825787 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49825787"
+    },
+    {
+      "id": "11a6a15fd47aeead1373",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Built-in APM for vibe-coded apps so your AI can fix them",
+      "url": "https://oncroft.net/blog/monitoring-built-in-for-every-croft-app",
+      "published_at": "2026-09-24T03:31:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://oncroft.net/blog/monitoring-built-in-for-every-croft-app/ Comments URL: https://news.ycombinator.com/item?id=49825904 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49825904"
+    },
+    {
+      "id": "7a99567b854e9a721df1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: How long do I need to work at my salary before I can coast, or retire?",
+      "url": "https://github.com/karmanyaahm/budget-tools/tree/main/fire",
+      "published_at": "2026-09-24T03:53:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "I made a financial planning tool in a couple hours that can model various stages of life and potentially guide job searching and work timelines. Comments URL: https://news.ycombinator.com/item?id=49826059 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49826059"
+    },
+    {
+      "id": "cded4de551cc4ebab01e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tokenhush – keeps your secrets out of what Claude Code sends",
+      "url": "https://github.com/fregie/tokenhush",
+      "published_at": "2026-09-24T03:59:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/fregie/tokenhush Comments URL: https://news.ycombinator.com/item?id=49826094 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49826094"
+    },
+    {
+      "id": "753daac75d75190b7ca8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Nori LLM: Achieving Over 1M tok / s",
+      "url": "https://noriagentic.com/nori-llm.html",
+      "published_at": "2026-09-24T04:11:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://noriagentic.com/nori-llm.html Comments URL: https://news.ycombinator.com/item?id=49826163 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49826163"
+    },
+    {
+      "id": "652e26a427916e41aca3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenAI agent 'infiltrated' Australian government website, PM says",
+      "url": "https://www.bbc.com/news/articles/c6vgy0333dppo",
+      "published_at": "2026-09-24T04:33:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.bbc.com/news/articles/c6vgy0333dppo Comments URL: https://news.ycombinator.com/item?id=49826285 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49826285"
+    },
+    {
       "id": "abec3742313faaa0c85b",
       "source": "openai-news",
       "publisher": "OpenAI",
@@ -4455,98 +4827,98 @@
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-23T21:30:26.568261+00:00",
+      "last_success": "2026-09-24T04:51:13.778238+00:00",
       "count": 10,
-      "earliest": "2026-09-21T21:13:18+00:00",
+      "earliest": "2026-09-22T09:21:03+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-23T21:30:26.748461+00:00",
+      "last_success": "2026-09-24T04:51:13.910677+00:00",
       "count": 20,
       "earliest": "2026-09-18T13:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-23T21:30:26.924153+00:00",
+      "last_success": "2026-09-24T04:51:14.049935+00:00",
       "count": 867,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-23T21:30:27.067635+00:00",
+      "last_success": "2026-09-24T04:51:14.120699+00:00",
       "count": 30,
       "earliest": "2026-09-14T20:21:48+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-23T21:30:28.558480+00:00",
+      "last_success": "2026-09-24T04:51:17.554849+00:00",
       "count": 100,
-      "earliest": "2026-09-23T09:21:58+00:00",
+      "earliest": "2026-09-23T13:29:22+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-23T21:30:31.892012+00:00",
+      "last_success": "2026-09-24T04:51:29.143019+00:00",
       "count": 100,
-      "earliest": "2026-09-22T14:22:59+00:00",
+      "earliest": "2026-09-22T18:15:57+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-23T21:30:33.400610+00:00",
+      "last_success": "2026-09-24T04:51:30.162719+00:00",
       "count": 20,
       "earliest": "2026-09-02T22:33:51+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-23T21:30:34.696765+00:00",
+      "last_success": "2026-09-24T04:51:31.058124+00:00",
       "count": 20,
       "earliest": "2026-09-03T18:33:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-23T21:30:35.334394+00:00",
+      "last_success": "2026-09-24T04:51:31.506597+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-23T21:30:35.883062+00:00",
+      "last_success": "2026-09-24T04:51:31.894820+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-23T21:30:36.663061+00:00",
-      "count": 9,
+      "last_success": "2026-09-24T04:51:32.443839+00:00",
+      "count": 10,
       "earliest": "2026-08-19T17:25:16+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-23T21:30:59.000758+00:00",
+      "last_success": "2026-09-24T04:51:46.809974+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-23T21:30:59.234158+00:00",
-      "count": 1228,
+      "last_success": "2026-09-24T04:51:46.955328+00:00",
+      "count": 1229,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-23T21:31:23.219805+00:00",
+      "last_success": "2026-09-24T04:52:02.916794+00:00",
       "count": 5,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -4585,5 +4957,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-23T21:31:23.219873+00:00"
+  "collected_at": "2026-09-24T04:52:02.916868+00:00"
 }
