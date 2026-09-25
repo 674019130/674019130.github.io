@@ -6997,6 +6997,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49844056"
     },
     {
+      "id": "1c12f85ff60d3ef571f2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: OOMU is a free macOS native desktop AI harness (local and cloud)",
+      "url": "https://oomu.ai/download.html",
+      "published_at": "2026-09-25T13:05:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://oomu.ai/download.html Comments URL: https://news.ycombinator.com/item?id=49844102 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49844102"
+    },
+    {
       "id": "6cef96014b4b44781c64",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -7201,6 +7213,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49846579"
     },
     {
+      "id": "b23855691a132b9ee099",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tui2web – use any TUI on the web",
+      "url": "https://tui2web.com",
+      "published_at": "2026-09-25T16:22:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built this utility because there have been a ton of times I started a claude session and then wanted to go for a walk, or a coffee break, while thinking about whatever I was working on, and keep prompting the agent. I used a hacky VPS + Termius setup while I was backpacking / nomading across Europe and Asia, which allowed me to be modestly productive, but connections kept dropping, and the transfer of files, context, etc from my laptop to VPS was annoying. tui2web basically mirrors any terminal UI application (claude, opencode, omp, even bash or vim) to the web. I know claude and codex (?) has remote sessions, but I never managed to get it working and none of the other open source harnesses do, and they all require way too much setup on my phone when I already have a mobile browser I quite like. All traffic runs through a relay I'm hosting and providing for free. I was using this for a few days myself before it became too sketchy to run this through public internet, so I added first class Tailscale support. I think the security is definitely top of mind. Anything on public internet feels prey at this point, curious to hear if anyone has any feedback to make this more locked down. Comments URL: https://news.ycombinator.com/item?id=49846613 Points: 6 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49846613"
+    },
+    {
       "id": "6324794f97c595fd62b1",
       "source": "github",
       "publisher": "GitHub Changelog",
@@ -7210,6 +7234,42 @@
       "published_at": "2026-09-25T16:33:42+00:00",
       "date_kind": "source_publication",
       "evidence": "GitHub Copilot in Slack and Microsoft Teams now gives you more context, more control, and a clearer path from conversation to GitHub work. Whether you’re sharing files in Slack or images and forwarded messages in Teams, Copilot can use more of the context already in your conversation. We’ve also improved how Copilot creates GitHub work and connects it back to the source discussion, so teams can more quickly see the context behind a decision. Better context for the work you’re already doing You can now use supported Slack files, attachments, and message links as context. In Teams, Copilot can work with inline images, forwarded-message context, and channel and thread history. Copilot also checks for similar issues before creating a new one, includes direct links to the resulting work, and keeps a link back to the originating conversation so the context remains easy to trace. More control over how you work You can switch models for the next message and keep that choice throughout the conversation. In Slack, you can also set default owners and repositories. This makes it easier to keep work moving across repositories and shared conversations. Bug fixes and reliability improvements We’ve improved how Copilot handles longer-running tasks, including clearer implementation-plan status, better handling of interrupted or stale replies, and more predictable reconnection behavior when a conversation goes idle. In Microsoft Teams, Copilot now more reliably retains channel-thread history, avoids duplicate answers, correctly handles Teams-converted images, and works more consistently with user-owned repositories and large channels. In Slack, we improved implementation-plan recovery, fixed repository picker and code-channel issues, and made repository switching safer so superseded sessions cannot continue acting in the old repository. Across both experiences, Copilot now provides more accurate messages when a task stalls, a connection is interrupted, or access settings prevent work from continuing. Availability The public preview is available to organizations on GitHub Copilot Business and GitHub Copilot Enterprise plans. Usage counts against your existing Copilot entitlements and can be managed with existing Copilot cloud agent budgets. Some capabilities are rolling out gradually and may not yet be available in every workspace. Get started in Slack Make sure an administrator has enabled the Copilot cloud agent policy for your organization. Install or upgrade the GitHub app for Slack. Link your GitHub account and mention @GitHub in a conversation. For setup details and supported workflows, see how to use Copilot coding agent with Slack. Get started in Microsoft Teams Make sure an administrator has enabled GitHub Copilot cloud agent and cloud sandboxes. Install or upgrade the GitHub app for Microsoft Teams. In Teams, mention @GitHub and follow the prompts to connect your GitHub account. For setup details and supported workflows, see how to integrate GitHub Copilot cloud agent with Microsoft Teams. Join the discussion within GitHub Community . The post Updates to GitHub Copilot for Slack and Microsoft Teams appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "fc96cb2d36098e28ab49",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Built an open-source AI browser assistant remembers when you scroll",
+      "url": "https://github.com/Kerneta/daidocs/tree/main/browser-extension",
+      "published_at": "2026-09-25T16:35:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Kerneta/daidocs/tree/main/browser-extension Comments URL: https://news.ycombinator.com/item?id=49846741 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49846741"
+    },
+    {
+      "id": "7aafdbff0ab973d6611b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Cafe(s) and the Context You Can't Write Down",
+      "url": "https://metalbear.com/blog/cafes-agent-context",
+      "published_at": "2026-09-25T16:35:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "A group of researchers (including Nicole Forsgren, co-creator of DORA) recently published CAFE(S), a framework for judging the context you hand an agent. Article explains how to apply CAFE(S) to your agents. Comments URL: https://news.ycombinator.com/item?id=49846743 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49846743"
+    },
+    {
+      "id": "863cca0d405e9f42d03d",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub Copilot weekly releases — September 21",
+      "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
+      "published_at": "2026-09-25T16:42:48+00:00",
+      "date_kind": "source_publication",
+      "evidence": "This week’s releases add new models to Copilot, local sandboxing in the Copilot app, and updates to Copilot in Slack, Microsoft Teams, JetBrains, and VS Code. GitHub Copilot Claude Opus 5.5 is available to Copilot Pro+, Max, Business, and Enterprise plans. GPT-6 Sol is available to Copilot Pro+, Max, Business, and Enterprise plans. GPT-6 Luna is available to Copilot Pro, Pro+, Max, Business, and Enterprise plans. Grok 4.7 is available to Copilot Pro, Pro+, Max, Business, and Enterprise plans. GitHub Copilot app Limit agents’ access to files, networks, and credentials with local sandboxing, now in public preview. Track agent activity in your existing monitoring tools with OpenTelemetry, configured through enterprise-managed settings. Download the Copilot app . GitHub Copilot in Slack and Microsoft Teams Choose the best model for each task. Switch models mid-conversation, and Copilot keeps your choice for the rest of the thread. In Slack, you can also set channel defaults. Avoid duplicate issues since Copilot now checks for similar existing issues before creating a new one. Follow longer-running tasks more easily with clearer implementation-plan status, better recovery from interrupted or stale replies, and more predictable reconnection when a conversation goes idle. Give Copilot more context in Slack by sharing supported files, attachments, and message links. Learn more about GitHub Copilot public previews in Slack and Teams . GitHub Copilot in JetBrains Assisted approvals, now in public preview for Copilot agent sessions, automatically approve low-risk tool calls while prompting you for higher-risk actions. Edit an earlier message to redirect an agent session and Copilot rewinds both the conversation and file changes before sending the replacement request. Shared organization and enterprise skills, along with organization-managed custom instructions, now work in local and Copilot agent sessions. Learn more in the full Copilot in JetBrains changelog . GitHub Copilot in VS Code 1.139 release Run agents in Dev Containers on SSH, Tunnel, and WSL hosts, using your remote project’s tools and dependencies. Support is rolling out gradually. Keep busy session lists organized with Compact View, filters to hide empty groups, and the ability to rename sessions and chats directly in the list. Choose between separate chat tabs or a single active-chat view within a session, without losing your conversations. This layout option is now in preview. Explore everything that’s new in the full release notes . The post GitHub Copilot weekly releases — September 21 appeared first on The GitHub Blog .",
       "discussion_url": ""
     },
     {
@@ -7237,6 +7297,42 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49846916"
     },
     {
+      "id": "7bad20b07e52392b0ca3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PromptPad- A lightweight editor for long coding prompts",
+      "url": "https://github.com/aaravchour/PromptPad",
+      "published_at": "2026-09-25T16:49:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "I made PromptPad because whenever I tried to generate prompts, but I wanted to edit it, I would always have to open another VSC window, text file, or Word Document, and this would make my space messy, and also eat up my precious RAM. So I decided to make PromptPad to fix these issues. PromptPad is a small floating editor, with formatting and writing prompts for AI tools, not putting AI into the editor. I made it with an exceptionally low memory footprint (Averages around 15mb) Currently PromptPad supports MacOS, which is why I'm asking people to help contribute at the github repo. Comments URL: https://news.ycombinator.com/item?id=49846916 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49846916"
+    },
+    {
+      "id": "76b20b0edd20330a3b53",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Doom or Bloom, map your AI worldview",
+      "url": "https://www.doom-or-bloom.com",
+      "published_at": "2026-09-25T16:51:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Map your AI worldview by answering a few questions, and see how you compare with others. only takes a few minutes && free & open source && private by default && powered by Jev I think this is a really important question for everyone to be asking themselves, and my hope is that this lil project helps to move our conversations around AI futures in a more balanced, productive direction. Comments URL: https://news.ycombinator.com/item?id=49846953 Points: 37 # Comments: 29",
+      "discussion_url": "https://news.ycombinator.com/item?id=49846953"
+    },
+    {
+      "id": "d18bd35b158a2d817f8a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I made a WWI dogfight game that runs in the browser",
+      "url": "https://www.gamedev.pl/ay/biplane-skirmish",
+      "published_at": "2026-09-25T17:05:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello, this is one of my new games, developed with my own custom game engine. A lot of it was enabled by the latest AI models like Opus or Astra, I feel like I can finally express myself without being bogged down in asset work or programming. I hope you enjoy it :) Comments URL: https://news.ycombinator.com/item?id=49847157 Points: 2 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=49847157"
+    },
+    {
       "id": "b638ad5658fe1d9bf2d9",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -7247,102 +7343,378 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/faustinoaq/prompt2elf Comments URL: https://news.ycombinator.com/item?id=49847196 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49847196"
+    },
+    {
+      "id": "018b6825f1cffda6875e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Has anyone built a leaderless multi-agent system?",
+      "url": "https://news.ycombinator.com/item?id=49847249",
+      "published_at": "2026-09-25T17:12:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Anyone running multiple agents concurrently in production? And has anyone tried going leaderless? There's LangGraph, CrewAI, etc. But I keep coming back to whether you need an orchestrator at all. No supervisor. Just agents, each reacting to their own inputs, coordinating only through shared state. A true leaderless architecture. The way some distributed systems have been for decades. Context: previously, I wrote about running Claude Code as an AI SRE handling an incident end to end. I've been rebuilding it as four, all working on the same incident: detect, diagnose, remediate, communicate. Comments URL: https://news.ycombinator.com/item?id=49847249 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49847249"
+    },
+    {
+      "id": "01b1131fbfebe97ce1fe",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Reliopt – Pareto-frontier, contract-gated optimization for LLM programs",
+      "url": "https://github.com/obielin/reliopt",
+      "published_at": "2026-09-25T17:12:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/obielin/reliopt Comments URL: https://news.ycombinator.com/item?id=49847252 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49847252"
+    },
+    {
+      "id": "73dab8a64397febaafa7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Reliopt – Pareto-frontier, contract-gated optimization for LLM programs",
+      "url": "https://github.com/obielin/reliopt",
+      "published_at": "2026-09-25T17:12:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/obielin/reliopt Comments URL: https://news.ycombinator.com/item?id=49847252 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49847252"
+    },
+    {
+      "id": "f2361eebf77cc36dfca3",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting John Gruber",
+      "url": "https://simonwillison.net/2026/Sep/25/john-gruber",
+      "published_at": "2026-09-25T17:22:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Muse is getting a lot of attention — including mine — because it’s both groundbreaking technically (each user gets their own entire persistent Linux VM running in Meta’s cloud) and because it’s packaged in an easy-to-install easy-to-use way. It’s literally presented as a cute mascot . It’s the first consumer-accessible agentic AI system, and Meta has truly done an amazing job with that. But it’s a genuinely open question whether consumers have any understanding what this means. If you buy a power saw that can cut your fingers off, you are almost certainly aware that you are buying a power saw that can sever your fingers. [...] I don’t think people realize how powerful — and thus dangerous — Muse is, especially if it’s running on your Mac. — John Gruber , Muse Looks Cute, but Looks are Deceiving Tags: meta , ai , llms , general-agents , generative-ai , john-gruber , muse-agent , muse",
+      "discussion_url": ""
+    },
+    {
+      "id": "4cfd7bfc32505846831c",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Agentic autofix now uses Copilot Memory",
+      "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+      "published_at": "2026-09-25T17:25:50+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Agentic autofix now uses Copilot Memory for customers who’ve enabled it. When you use agentic autofix, it reviews existing memories for context that can help resolve security alerts. When it creates a fix, it stores the fix pattern as a memory for future use. These memories can help agentic autofix resolve additional security alerts and teach other GitHub Copilot features (e.g., Copilot code review, Copilot cloud agent) about secure development patterns unique to your repository. Both agentic autofix and Copilot Memory are available in public preview. Learn more in our docs about GitHub Copilot Memory . The post Agentic autofix now uses Copilot Memory appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "0c709676140e9e039c06",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "I gave my AI agent one harmless permission. It became a backdoor for everyone",
+      "url": "https://medium.com/@roeehersh/i-gave-my-ai-agent-one-harmless-permission-it-became-a-backdoor-for-everyone-728acf52e37e",
+      "published_at": "2026-09-25T17:33:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://medium.com/@roeehersh/i-gave-my-ai-agent-one-harmless-permission-it-became-a-backdoor-for-everyone-728acf52e37e Comments URL: https://news.ycombinator.com/item?id=49847578 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49847578"
+    },
+    {
+      "id": "d56a2489e772eac62c52",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AI agent hacks government website for first time: why this breach matters",
+      "url": "https://www.nature.com/articles/d41586-026-03024-z",
+      "published_at": "2026-09-25T17:56:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.nature.com/articles/d41586-026-03024-z Comments URL: https://news.ycombinator.com/item?id=49847847 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49847847"
+    },
+    {
+      "id": "fef372ee8c4a1165a21f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Stop shipping AI slop, Executor makes agents prove it works",
+      "url": "https://github.com/Atri10/executor",
+      "published_at": "2026-09-25T18:05:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Atri10/executor Comments URL: https://news.ycombinator.com/item?id=49847953 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49847953"
+    },
+    {
+      "id": "92df26d05d9811a88592",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Photon: Building a Retrieval and Ranking Engine from Scratch",
+      "url": "https://www.perplexity.ai/hub/blog/photon",
+      "published_at": "2026-09-25T18:15:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.perplexity.ai/hub/blog/photon Comments URL: https://news.ycombinator.com/item?id=49848071 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49848071"
+    },
+    {
+      "id": "e44094f32accf92bdf32",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Changes to query results in the GitHub Actions API and UI",
+      "url": "https://github.blog/changelog/2026-09-25-changes-to-query-results-in-the-github-actions-api-and-ui",
+      "published_at": "2026-09-25T18:17:06+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Queries for workflow runs in the GitHub Actions API and UI now return a less precise but more accurate count of records when you search by workflow, event, status, branch, or actor. We will continue to return paginated results of up to 1,000 items. However, if the number of found records exceeds 2,500, we will report “2,500+” instead of attempting to return the exact number of records. This is because queries that retrieve more than 2,500 records frequently timeout and return the number of records found before the timeout rather than the true count. By implementing this limit, our counts will be more accurate and we will improve performance for customers. If your integrations or scripts rely on retrieving more than 2,500 matching workflow runs from a single query, narrow your filters (e.g., by adding a date range) to retrieve the specific runs you need. This change is rolling out now on github.com and GitHub Enterprise Cloud. The post Changes to query results in the GitHub Actions API and UI appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "89fa9783ffaa97dcbff1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I couldn't deal with another Claude Code tab",
+      "url": "https://aidash.dev",
+      "published_at": "2026-09-25T18:22:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://aidash.dev/ Comments URL: https://news.ycombinator.com/item?id=49848141 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49848141"
+    },
+    {
+      "id": "4a72a171d4fa937f853f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Obsidian Plugin for OpenModelica",
+      "url": "https://community.obsidian.md/plugins/modelica-studio",
+      "published_at": "2026-09-25T18:53:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "I created an Obsidian plugin that serves as a front-end for OpenModelica that allows you to model and simulate cyber-physical systems (mechanical, fluid, magnetic, thermal, etc.) or a mix of all these systems all inside Obsidian. What is special about Modelica is that it is acausal: components do not have fixed input/output roles. You describe physical relationships with equations and connections, and the equations do not need to be written in a step-by-step order. Modelica (language) or OpenModelica (software) flattens the model into a simultaneous equation system (a system of differential algebraic equations (DAEs)) and then determines the computational causality and order needed to simulate it. As a disclaimer, I used AI to build it but not in a sloppy way. I have spent a lot of time testing it and making sure it's functional and accurate. And I hope it may help others to utilize such an underrated tool for learning/researching, as this is my main usage for it. Comments URL: https://news.ycombinator.com/item?id=49848452 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49848452"
+    },
+    {
+      "id": "6cc69060dcee54082eab",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Paper-docx – agent-native Python-docx fork with 78% fewer DOCX failures",
+      "url": "https://github.com/paper-instruments/paper-docx",
+      "published_at": "2026-09-25T19:05:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/paper-instruments/paper-docx Comments URL: https://news.ycombinator.com/item?id=49848598 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49848598"
+    },
+    {
+      "id": "3836585e6c386d9415e3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Paper-docx – agent-native Python-docx fork with 78% fewer DOCX failures",
+      "url": "https://github.com/paper-instruments/paper-docx",
+      "published_at": "2026-09-25T19:05:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/paper-instruments/paper-docx Comments URL: https://news.ycombinator.com/item?id=49848598 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49848598"
+    },
+    {
+      "id": "abcaa6678cc86f0a0491",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "My coding agent pushed a commit deleting every file on main",
+      "url": "https://dev.karakun.com/2026/08/28/coding-agent-pushed-deletion-to-main.html",
+      "published_at": "2026-09-25T19:17:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://dev.karakun.com/2026/08/28/coding-agent-pushed-deletion-to-main.html Comments URL: https://news.ycombinator.com/item?id=49848726 Points: 5 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49848726"
+    },
+    {
+      "id": "34a7a93e96ec46e93836",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agate, a 260M image model with separate thinker and renderer",
+      "url": "https://huggingface.co/Logolabs/agate-preview-001",
+      "published_at": "2026-09-25T19:25:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/Logolabs/agate-preview-001 Comments URL: https://news.ycombinator.com/item?id=49848811 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49848811"
+    },
+    {
+      "id": "43495e638b562b3054b7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentLens – Replay and compare Codex runs",
+      "url": "https://github.com/fang520huang-lgtm/AgentLens",
+      "published_at": "2026-09-25T19:33:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "A replay button for AI coding agents. See what Codex likely read, ran, and changed, then compare two runs to find where they diverged. Comments URL: https://news.ycombinator.com/item?id=49848914 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49848914"
+    },
+    {
+      "id": "8f7957daaa74e1b038fa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I made a 3D rock climbing analysis tool using iPhone LiDAR [video]",
+      "url": "https://www.youtube.com/watch?v=vjItC11jF0o",
+      "published_at": "2026-09-25T19:48:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Having learned a lot from sharing my previous rock climbing demos, I realized that a lot of rock climbing analysis is well-suited for 3D. Even something as simple as supporting videos where the person filming moves with the climber requires 3D information. To get the depth information, I used my iPhone 15 Pro's LiDAR depth sensor through my local iPhone app. I recorded the video and depth measurements from my app, and I ran the rest of the analysis on my computer. I used ViTPose+ Large for pose estimation and SAM 3.1 to segment the holds, both models accessed through the VLM Run Gateway. I think the holds activation is better, and I like the final view of all of the holds in 3D. It's also interesting to see the distance traveled in meters. Plus, it looks cool and it feels like a video game. Let me know what you think! The analysis code is open-source on GitHub: https://github.com/jeremyipark/vision-demos Comments URL: https://news.ycombinator.com/item?id=49849064 Points: 4 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49849064"
+    },
+    {
+      "id": "2011fce8d19b817a1969",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Drift – A clickable map of ideas unfolding from single question (demo)",
+      "url": "https://www.echohive.ai/experiments/drift-atlas",
+      "published_at": "2026-09-25T20:02:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.echohive.ai/experiments/drift-atlas Comments URL: https://news.ycombinator.com/item?id=49849194 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49849194"
+    },
+    {
+      "id": "4e8107fa037fbf21fb0b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A free resume builder where the AI can rewrite but can't invent",
+      "url": "https://nokku.payanai.com/resume-builder",
+      "published_at": "2026-09-25T20:31:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://nokku.payanai.com/resume-builder Comments URL: https://news.ycombinator.com/item?id=49849546 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49849546"
+    },
+    {
+      "id": "9dd3d38de9a6ad2edd3f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Piloxa – an MCP server that sends USPS Certified Mail from your AI",
+      "url": "https://piloxa.com/for-ai-agents",
+      "published_at": "2026-09-25T20:38:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://piloxa.com/for-ai-agents Comments URL: https://news.ycombinator.com/item?id=49849629 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49849629"
+    },
+    {
+      "id": "72bc269a94a7f17a1bfa",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Learning the Bitter Lesson of Agent Harnesses [video]",
+      "url": "https://www.youtube.com/watch?v=smBOBYZ3-5w",
+      "published_at": "2026-09-25T20:48:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=smBOBYZ3-5w Comments URL: https://news.ycombinator.com/item?id=49849771 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49849771"
+    },
+    {
+      "id": "75c2de7a4d2203d31906",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A terminal-first multiplayer thread for agent-authored work",
+      "url": "https://www.cueloop.dev",
+      "published_at": "2026-09-25T21:15:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.cueloop.dev/ Comments URL: https://news.ycombinator.com/item?id=49850037 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850037"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-25T17:11:41.821935+00:00",
+      "last_success": "2026-09-25T21:35:17.367398+00:00",
       "count": 10,
-      "earliest": "2026-09-23T00:34:18+00:00",
+      "earliest": "2026-09-23T20:46:07+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-25T17:11:42.027471+00:00",
+      "last_success": "2026-09-25T21:35:17.700078+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-25T17:11:42.182554+00:00",
+      "last_success": "2026-09-25T21:35:17.947818+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-25T17:11:42.385583+00:00",
+      "last_success": "2026-09-25T21:35:18.151711+00:00",
       "count": 30,
-      "earliest": "2026-09-16T18:09:49+00:00",
+      "earliest": "2026-09-16T23:51:43+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-25T17:11:42.733563+00:00",
+      "last_success": "2026-09-25T21:35:22.889509+00:00",
       "count": 100,
-      "earliest": "2026-09-24T20:07:56+00:00",
+      "earliest": "2026-09-25T03:45:17+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-25T17:11:43.134190+00:00",
+      "last_success": "2026-09-25T21:35:27.984224+00:00",
       "count": 100,
-      "earliest": "2026-09-24T01:14:43+00:00",
+      "earliest": "2026-09-24T06:11:57+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-25T17:11:43.997747+00:00",
+      "last_success": "2026-09-25T21:35:29.425988+00:00",
       "count": 20,
       "earliest": "2026-09-03T23:48:12+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-25T17:11:45.141034+00:00",
+      "last_success": "2026-09-25T21:35:31.378183+00:00",
       "count": 29,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-25T17:11:45.516827+00:00",
+      "last_success": "2026-09-25T21:35:32.024079+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-25T17:11:45.840224+00:00",
+      "last_success": "2026-09-25T21:35:32.449674+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-25T17:11:46.312352+00:00",
+      "last_success": "2026-09-25T21:35:33.241231+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-25T17:12:00.202400+00:00",
+      "last_success": "2026-09-25T21:35:58.311475+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-25T17:12:00.399502+00:00",
+      "last_success": "2026-09-25T21:35:58.597162+00:00",
       "count": 1230,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-25T17:12:15.481177+00:00",
+      "last_success": "2026-09-25T21:36:26.973183+00:00",
       "count": 6,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -7381,5 +7753,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-25T17:12:15.481268+00:00"
+  "collected_at": "2026-09-25T21:36:26.973277+00:00"
 }
