@@ -5953,6 +5953,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49833890"
     },
     {
+      "id": "6ae779f73152030cd5bc",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Qodo Agentic Toolbox: A CLI-powered Quality counterpart for coding agents",
+      "url": "https://docs.qodo.ai/agentic-toolbox",
+      "published_at": "2026-09-24T17:30:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://docs.qodo.ai/agentic-toolbox Comments URL: https://news.ycombinator.com/item?id=49834030 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834030"
+    },
+    {
       "id": "326655351e5550e1d6a1",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -5965,9 +5977,33 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49834098"
     },
     {
+      "id": "c7086c44d67cfaedf23a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Critic – Review code with the agent that wrote it",
+      "url": "https://www.critic.run",
+      "published_at": "2026-09-24T17:35:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I'm Shreyash from Feyn. We help companies build custom models from their data. Today we're releasing Critic, a change review platform that lets you engage directly with the AI that wrote the code. Agents write most of our code. While that has made us more productive, understanding a change and its consequences has become incredibly difficult. As our company adopted more agentic tools, we found it harder to loop people in on the impact of a PR and the state of a project. We built Critic to fix this. Critic lets AI agents present their code, annotate key blocks, and include relevant evidence (like screenshots and instructions to run locally). Anyone viewing that change can talk directly to the agent that wrote it. See a demo here: https://www.youtube.com/watch?v=U2--lytmOtQ . Critic works through a plugin for Codex or Claude Code. When your agent writes code, the plugin asks it to also write a narrative describing the story behind the change, and highlight any assumptions, decisions, or complex code. You can then view the change at critic.run or have your agent pull it via the bundled MCP. Every feature in Critic is available over MCP, so your agent gets all the same context without leaving its harness. From the dashboard or MCP, you can chat with the authoring agent directly. When Critic receives a question, it forks the authoring session and forwards your question there. That way your main thread stays clean and keeps working. Local changes are visible only to the owner. Anything pushed to GitHub is mirrored and visible to anyone with permission to view that change on GitHub. When building Critic, security was a big priority for us. AI agents often run in auto mode and can take many actions on your computer. We wanted to ensure that giving people access to your agent doesn't mean giving them access to your computer. All Critic forked sessions are stripped of their write tools. They can only answer questions about the change and in-progress work in that workspace. Critic has helped us catch several incidents before they hit production. The most common is a model not reusing artifacts, like existing styles, components, or functions. Because it's so easy to dig into an agent's work and question it, we've also caught more cases of models misdiagnosing issues or writing unhelpful code. Since Critic's UI is faster and friendlier to agents than GitHub, our team is returning feedback quicker as well. Critic is free to use. Sign up at https://critic.run . Let me know if you have feedback or questions. Comments URL: https://news.ycombinator.com/item?id=49834098 Points: 7 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834098"
+    },
+    {
       "id": "d34a1ed91313d4932ef1",
       "source": "hn-show",
       "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MEF LLM Studio",
+      "url": "https://www.mef-llm-studio.com/de",
+      "published_at": "2026-09-24T17:50:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.mef-llm-studio.com/de/ Comments URL: https://news.ycombinator.com/item?id=49834320 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834320"
+    },
+    {
+      "id": "31087a4f79d48589a63f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
       "category": "discovery",
       "title": "Show HN: MEF LLM Studio",
       "url": "https://www.mef-llm-studio.com/de",
@@ -6013,6 +6049,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49834499"
     },
     {
+      "id": "eaffe2f5f57c9369cb28",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Does spec-driven development still pay off with frontier coding models?",
+      "url": "https://news.ycombinator.com/item?id=49834564",
+      "published_at": "2026-09-24T18:05:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "As coding models get better at working from a rough goal, I’m wondering how much value there is in writing a detailed spec up front. If you use these models on real projects, when has a spec improved the outcome? When has it added overhead? Have you shifted toward shorter briefs, tests, or iterative feedback? Comments URL: https://news.ycombinator.com/item?id=49834564 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834564"
+    },
+    {
       "id": "fa028edd72f9b2a08870",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -6023,6 +6071,18 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/finbarr/boxhaven Comments URL: https://news.ycombinator.com/item?id=49834707 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49834707"
+    },
+    {
+      "id": "c58394d91f8531f52889",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Scaling Auto-Research Loops for Efficient Agent Harnesses",
+      "url": "https://nvlabs.github.io/SoL-Pi",
+      "published_at": "2026-09-24T18:29:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://nvlabs.github.io/SoL-Pi/ Comments URL: https://news.ycombinator.com/item?id=49834887 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49834887"
     },
     {
       "id": "dcd307326f7ed924a6b0",
@@ -6085,6 +6145,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49835684"
     },
     {
+      "id": "b0cd60d2bcbc4f7275ce",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Alexandr Wang Is Meta's Not-So-Secret Weapon in the AI Agent Promo War",
+      "url": "https://www.businessinsider.com/alexandr-wang-meta-muse-social-media-posts-pr-strategy-2026-9",
+      "published_at": "2026-09-24T19:51:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.businessinsider.com/alexandr-wang-meta-muse-social-media-posts-pr-strategy-2026-9 Comments URL: https://news.ycombinator.com/item?id=49835964 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49835964"
+    },
+    {
       "id": "1bd4e7f55d1b3ae1101a",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -6121,6 +6193,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49836576"
     },
     {
+      "id": "d6cd31d8bb9073079464",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "SkillOpt: Training Loop for Agent Skills",
+      "url": "https://microsoft.github.io/SkillOpt",
+      "published_at": "2026-09-24T20:55:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://microsoft.github.io/SkillOpt/ Comments URL: https://news.ycombinator.com/item?id=49836602 Points: 7 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49836602"
+    },
+    {
       "id": "ba62e02ea88968c188dd",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -6131,103 +6215,367 @@
       "date_kind": "community_post",
       "evidence": "Hey HN, we are Aakash and Viswesh and we are building Canary ( https://www.runcanary.ai/ ) - independent verification for AI code. Claude/Codex calls Canary with the changesets, intended behaviour and team knowledge. Canary then deploys agent swarms to investigate potential failures and test suspected runtime bugs in remote sandboxes. To try it on your repository, paste this into your coding agent: Install the Canary CLI with npm i -g @runcanary/cli, then run canary skills and follow its instructions to onboard this repository. Verification starts with what software is supposed to do and most importantly what it must never allow. This means investigating how inputs, permissions, state, timing, dependencies etc interact with each other. Intent is not always fully declared as well but many expectations are clear: private files should stay private, credentials should not leak, and retries should not create unintended duplicate effects. We believe the future is a unified and independent verification system that starts with all those expectations and then chooses how to investigate each suspected failure. Source-only code reviews catches static issues in the implementation but even a clean review leaves a good chunk of behavioral only issues untested. Unit tests, integrations, E2E, static analysis, runtime experiments and formal verification are all means to establish that behavior thereby generating different kinds of evidence and guarantees. This is why we believe a dedicated verification harness that can think and reason through all these modalities and invariants is necessary on top of general intelligence. The harness needs to start with the system’s intended behavior, develop a series of potential failure scenarios and choose how to investigate them. It’s sole functionality is to pressure test and challenge the assumptions behind a change, create the conditions needed to test suspected failures and assess what the resulting evidence establishes How Canary works: it takes a cold snapshot of the codebase when called, combining the supplied intent and team knowledge with requirements, decisions, prior issues from tools like Notion, Linear. It can also route questions to you through the coding agents if anything is ambiguous. Canary’s harness coordinates agent swarms by leveraging the different strengths across model families. It compares the code before and after, traces the effects through callers, dependencies, state transitions etc. and each suspected failure becomes a concrete scenario with an actor, state, trigger, outcomes and many more runtime states., For each suspected failure, Canary chooses the best way to provide evidence through methods like runtime verification, static analysis, unit, integration or sometimes even combination of these as necessary. The agent executes these checks in remote sandboxes by seeding data, configuring permissions, mocking dependencies and third party integrations and much more. Canary then returns these findings and supporting evidence back to the coding agents which then fixes these failures and requests reverifications against the failed scenarios. To get started, give your coding agent this setup instruction and tell us what it caught and how we can do better. Install the Canary CLI with npm i -g @runcanary/cli, then run canary skills and follow its instructions to onboard this repository. We are still pretty early in our journey and would love feedback on the product and how we can do better. Comments URL: https://news.ycombinator.com/item?id=49836632 Points: 3 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49836632"
+    },
+    {
+      "id": "ce451124c302dd2290ac",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Vibe Coding Production Kit – a production workflow for AI coding agents",
+      "url": "https://github.com/Moeeryani/Vibe-Coding-Production-Kit",
+      "published_at": "2026-09-24T21:02:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Moeeryani/Vibe-Coding-Production-Kit Comments URL: https://news.ycombinator.com/item?id=49836678 Points: 9 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=49836678"
+    },
+    {
+      "id": "d66c41dce59541d3e080",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Public Browser MCP – +48% speed -33% token/session vs. AgentBrowser",
+      "url": "https://github.com/Silbercue/public-browser/releases/tag/v3.0.0",
+      "published_at": "2026-09-24T21:20:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "(a repost due to gen-ai block | sry guys English is not my native language) me: solo dev from Hamburg (ahoi) started months ago - couldn't stand the token waste and speed of playwright, Chrome dev tools etc - Vercel changed the game a bit but I use Public Browser for weeks now - it delivers project: \"Public Browser\" is a MCP Server running real Chrome with ur profile (no logins) directly via CDP protocol. has a complete tool set. handles multiple tabs. free - open sources - script api - a beast with JEV. numbers: vs agent-browser -24% calls, -33% token, -33% cost, -32% time vs Playwright CLI -26% calls, -34% token, -32% cost, -43% time vs Playwright MCP -51% calls, -61% token, -54% cost, -47% time vs Chrome DevTools -53% calls, -71% token, -65% cost, -51% time vs browser-use -79% calls, -95% token, -93% cost, -88% time method: blind opus 5 - one test harness - 30 tests - 5 runs. competitors = Playwright, Chrome DevTools, browser-use. Public Browser 3.0 vs field, same harness, Opus 5, Chrome 153 (PB 3.0 + agent-browser: 5 runs, 24.09. | others: 3 runs, 23.09.) via tests calls tokens cost time Public Browser 3.0 MCP 30/30 79 3.02M $2.40 261s agent-browser 0.38.1 CLI 29/30 104 4.53M $3.56 386s Playwright CLI 0.1.21 CLI 30/30 107 4.61M $3.52 454s Playwright MCP 0.0.82 MCP 30/30 162 7.84M $5.22 494s Chrome DevTools 1.9.0 MCP 29/30 169 10.33M $6.78 535s browser-use 0.13.10 MCP 24-26/30 384 63.68M $36.06 2187s 29/30 = only T5.2 fails (navigator.webdriver check) but: agentBrowser responses are 28% smaller still in most cases Public Browser should be more efficient cause it needs less rounds in the end install: claude mcp add public-browser -- npx -y public-browser@latest test-site: https://mcp-test.second-truth.com source code: https://github.com/Silbercue/public-browser/blob/master/test... harness & raw data: https://github.com/Silbercue/public-browser/tree/master/test... p.s.: I know a race between a solo dev and companies is lost but I think the people should build the tools that are important. I would love to see Public Browser be used and it would be an absolute honor if someone would improve it - with work & ideas. I hope you enjoy it. pls tell me what u think about it. Comments URL: https://news.ycombinator.com/item?id=49836880 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49836880"
+    },
+    {
+      "id": "29f201b27f105758cf4a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Grev - Thinking Grep with Jev",
+      "url": "https://github.com/aurorainfra/grev",
+      "published_at": "2026-09-24T21:46:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/aurorainfra/grev Comments URL: https://news.ycombinator.com/item?id=49837132 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49837132"
+    },
+    {
+      "id": "f516cbb7cd4bf8fc619e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Which AI model is best for coding? A hands-on comparison",
+      "url": "https://flaviocopes.com/ai-coding-models",
+      "published_at": "2026-09-24T22:12:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://flaviocopes.com/ai-coding-models/ Comments URL: https://news.ycombinator.com/item?id=49837437 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49837437"
+    },
+    {
+      "id": "5ec3eaa0b777fbe3db7f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jev-pilot – Jev picks Claude Code's effort, model and skill per prompt",
+      "url": "https://github.com/Akramovic1/jev-pilot",
+      "published_at": "2026-09-24T22:21:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Akramovic1/jev-pilot Comments URL: https://news.ycombinator.com/item?id=49837537 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49837537"
+    },
+    {
+      "id": "dd899fb2251949c2edf7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Multi-agent coding feels like pre-GitHub development",
+      "url": "https://github.com/motif-Labs/motif",
+      "published_at": "2026-09-24T22:31:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/motif-Labs/motif Comments URL: https://news.ycombinator.com/item?id=49837643 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49837643"
+    },
+    {
+      "id": "fd13399bc7e3c8b6084f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Multi-agent coding feels like pre-GitHub development",
+      "url": "https://github.com/motif-Labs/motif",
+      "published_at": "2026-09-24T22:31:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/motif-Labs/motif Comments URL: https://news.ycombinator.com/item?id=49837643 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49837643"
+    },
+    {
+      "id": "351556cc0297681c3327",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Do you cuss at your agent?",
+      "url": "https://news.ycombinator.com/item?id=49837715",
+      "published_at": "2026-09-24T22:38:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Do you vent your frustrations at your agent when it keeps making stupid mistakes and asinine assumptions or asks obvious questions? I did it for the first time and I feel ashamed. Comments URL: https://news.ycombinator.com/item?id=49837715 Points: 2 # Comments: 7",
+      "discussion_url": "https://news.ycombinator.com/item?id=49837715"
+    },
+    {
+      "id": "32f1eccf0af51c2be5fb",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The model observes, a table decides: keeping an LLM out of pet triage",
+      "url": "https://tailstory-app.com/en/blog/model-observes-table-decides",
+      "published_at": "2026-09-24T22:48:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tailstory-app.com/en/blog/model-observes-table-decides Comments URL: https://news.ycombinator.com/item?id=49837843 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49837843"
+    },
+    {
+      "id": "2dcfd78c90b0f3f134ac",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "CTNicholas Multiplayer-Coding-Agents",
+      "url": "https://github.com/CTNicholas/multiplayer-coding-agents",
+      "published_at": "2026-09-24T23:05:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/CTNicholas/multiplayer-coding-agents Comments URL: https://news.ycombinator.com/item?id=49837993 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49837993"
+    },
+    {
+      "id": "911353f5401be1cbd4b1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jev-browse – browser sub-tasks for coding agents at ~1/3 the cost",
+      "url": "https://github.com/danielnc/jev-browse",
+      "published_at": "2026-09-24T23:08:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/danielnc/jev-browse Comments URL: https://news.ycombinator.com/item?id=49838009 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49838009"
+    },
+    {
+      "id": "bf3d01a14071498d2070",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Jev-browse – browser sub-tasks for coding agents at ~1/3 the cost",
+      "url": "https://github.com/danielnc/jev-browse",
+      "published_at": "2026-09-24T23:08:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/danielnc/jev-browse Comments URL: https://news.ycombinator.com/item?id=49838009 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49838009"
+    },
+    {
+      "id": "75fd670380c194972446",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Vons – Jev-inspired local decisions for AI agents, in the browser",
+      "url": "https://github.com/inlevel9-com/Vons",
+      "published_at": "2026-09-24T23:48:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/inlevel9-com/Vons Comments URL: https://news.ycombinator.com/item?id=49838333 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49838333"
+    },
+    {
+      "id": "14cd331b8ec5d90a3f82",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "ServingStudio: Simulating, Analyzing, and Optimizing LLM Serving Systems",
+      "url": "https://syfi-servingstudio.github.io/ServingStudioIntro/blog/introducing-servingstudio",
+      "published_at": "2026-09-25T00:38:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://syfi-servingstudio.github.io/ServingStudioIntro/blog/introducing-servingstudio/ Comments URL: https://news.ycombinator.com/item?id=49838745 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49838745"
+    },
+    {
+      "id": "f9278c29f80a6491771c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Design Experiments with the Amytis Agent",
+      "url": "https://www.amytis.io/blog/design-experiments-with-the-amytis-agent",
+      "published_at": "2026-09-25T00:51:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.amytis.io/blog/design-experiments-with-the-amytis-agent Comments URL: https://news.ycombinator.com/item?id=49838868 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49838868"
+    },
+    {
+      "id": "b4e3acc69dbf3fb3811e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Peer review in the LLM (mania) age",
+      "url": "https://www.humprog.org/~stephen/blog/research/llms-review-mania.html",
+      "published_at": "2026-09-25T02:04:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.humprog.org/~stephen/blog/research/llms-review-mania.html Comments URL: https://news.ycombinator.com/item?id=49839396 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49839396"
+    },
+    {
+      "id": "e1a36cd9ee1fb4530b08",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Am I too boring to need an AI Agent",
+      "url": "https://www.garbageday.email/p/am-i-too-boring-to-need-an-ai-agent",
+      "published_at": "2026-09-25T02:23:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.garbageday.email/p/am-i-too-boring-to-need-an-ai-agent Comments URL: https://news.ycombinator.com/item?id=49839500 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49839500"
+    },
+    {
+      "id": "283d7a5e5dd62c56e1e0",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.157.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.157.0",
+      "published_at": "2026-09-25T02:31:06+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## New Features - Added GPT-6 Sol and Luna, including Amazon Bedrock support and migration prompts for older models. (#47332, #47347) - Enabled fullscreen transcripts by default and added Shift-click to extend text selections. (#47178, #47414) - Enabled automatic background-server startup for eligible interactive sessions, with recovery choices when server settings are incompatible. (#47179, #47318) - Added an `f` shortcut to fork conversations open in another app, preserving drafts and queued prompts. (#47185) - Made `/import` available in remote sessions and local background-server sessions. (#47317) - Improved terminal rendering with Unicode bullets, checkboxes, aligned equations, and optimization notation. (#47191, #47322) ## Bug Fixes - Preserved active voice conversations when switching threads. (#47381) - Recovered unsent question answers into the composer when turns end, without disrupting active history searches. (#47422, #47423) - Respected tmux mouse settings and restored native scrollback for Terminal.app over SSH in automatic screen mode. (#47399, #47417) - Fixed configured proxy routing for realtime connections and standalone web search, including search redirects. (#47101, #47142, #47204) - Added retries for transient file-upload failures and increased the upload timeout to five minutes. (#47122, #47393) - Enforced network restrictions across redirects and ongoing HTTP and WebSocket traffic, including cancellation when policy changes revoke access. (#47389, #47407) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.156.0...rust-v0.157.0 - #47063 Add a partial index for agent message board root posts @jif-oai - #47064 Stop redundant message-board reads when limits reach one @jif-oai - #47065 Deduplicate deprecation notices in the TUI transcript @etraut-openai - #47068 Highlight selected newlines in the transcript view @etraut-openai - #47073 Wait for thread idle in Guardian context budget tests @jif-oai - #47074 Refresh host-supplied cloud skills at turn startup @TAFOYA-OAI - #47075 Include attributed previews in agent message board notifications @jif-oai - #47077 Serialize environment updates and cancel removed pending attachments @sayan-oai - #47079 Mask daemon socket paths exposed through ancestor bind mounts @nicksteele-oai - #47081 Track cumulative MCP attribution across requests and thread history @peilin-openai - #47082 Show the voice toggle in the TUI shortcut overlay @etraut-openai - #47083 Extract per-thread enrichment into a dedicated async helper @aibrahim-oai - #47084 Avoid building a host SQLite driver for SQLx macros @aibrahim-oai - #47085 Update model catalog descriptions and GPT-5.6-Sol priority @andrewgu-oai - #47086 Format analytics credit usage with consistent decimal precision @fcoury-oai - #47088 Disable unused default dependency features @aibrahim-oai - #47089 Centralize JSON-RPC response serialization through payloads @aibrahim-oai - #47094 Restrict Unix local MCP servers to stdio descriptors @yuzhu-oai - #47095 Remove the `rust-release-prepare` workflow @andrewgu-oai - #47096 Keep TUI hints immediately above the composer @fcoury-oai - #47100 Preserve assistant answers in bounded TUI task responses @etraut-openai - #47101 Honor configured proxies for realtime WebSocket connections @celia-oai - #47106 Preserve originating turn metadata for yielded skill calls @eddie-openai - #47108 Preserve required Windows runtime variables for filesystem helpers @iceweasel-oai - #47112 Lowercase the retry hint for conversations open in another app @fcoury-oai - #47113 Persist thread creator identity in rollouts and SQLite @nornagon-openai - #47114 Preserve and expose thread item lifecycle timestamps @chiam-oai - #47116 Honor the configured product SKU in remote plugin requests @jessedu-oai - #47118 Support model-catalog overrides for Code Mode tool messages @rhan-oai - #47121 Pass thread IDs to attachment uploads @kchainani-oai - #47122 Increase OpenAI file blob upload timeout fr",
+      "discussion_url": ""
+    },
+    {
+      "id": "4df357a8bfaddaeb0b28",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Lovable's annualized revenue crosses $600M as vibe coding takes off",
+      "url": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off",
+      "published_at": "2026-09-25T02:31:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/ Comments URL: https://news.ycombinator.com/item?id=49839552 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49839552"
+    },
+    {
+      "id": "364f82c38f902ddd3bef",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A dedicated Mac that keeps Claude Code or Codex running 24/7",
+      "url": "https://macrun.dev/agents",
+      "published_at": "2026-09-25T02:33:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://macrun.dev/agents Comments URL: https://news.ycombinator.com/item?id=49839560 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49839560"
+    },
+    {
+      "id": "1a35df833a591ed4123d",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Default Enablement of Copilot Features for Copilot Business and Enterprise",
+      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
+      "published_at": "2026-09-25T03:13:23+00:00",
+      "date_kind": "source_publication",
+      "evidence": "We’re introducing a new global default policy for generally available GitHub Copilot features and supported client capabilities in enterprise and organization Copilot settings. For the next 28 days, you can configure this policy, but it won’t affect feature access for your users yet. What’s changing Today, you can configure the new policy by going to the “AI Controls” page, opening the “Copilot” subpage, and selecting an option under “Default policy for new features”. This policy applies to eligible features managed on your enterprise’s “Features & clients” page (i.e., https://github.com/enterprises/YOUR-ENTERPRISE-SLUG/ai-controls/copilot/features), as well as the Copilot Code Review policy on the “Agents” page and the MCP servers in Copilot policy. For feature eligibility and exceptions, see our docs on default availability . You can choose from the following settings: Enabled : Current and future eligible features will be available to users by default. Disabled : Current eligible features will remain unavailable, and future eligible features will require administrator approval. Let organizations decide : Organization administrators can choose whether to enable or disable eligible features. Starting October 22, the policy takes effect. At that point: Eligible generally available features and capabilities left Unconfigured will follow your selected global default of enabled, disabled, or let organizations decide. Explicit decisions are preserved. If you’ve explicitly enabled or disabled a feature, we won’t override that choice. Preview features remain opt-in. If you opt into a preview and it later becomes generally available, your existing choice will be preserved. Join the discussion within GitHub Community . The post Default Enablement of Copilot Features for Copilot Business and Enterprise appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "5b5ceeeaf79ab1c437ad",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Bad examples can override agent skill files",
+      "url": "https://codecut.ai/agent-skills-bad-session-history",
+      "published_at": "2026-09-25T03:27:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://codecut.ai/agent-skills-bad-session-history/ Comments URL: https://news.ycombinator.com/item?id=49839869 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49839869"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-24T21:31:23.595658+00:00",
+      "last_success": "2026-09-25T04:57:41.288815+00:00",
       "count": 10,
-      "earliest": "2026-09-22T14:11:47+00:00",
+      "earliest": "2026-09-22T17:00:14+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-24T21:31:23.730402+00:00",
+      "last_success": "2026-09-25T04:57:41.558323+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-24T21:31:23.835478+00:00",
+      "last_success": "2026-09-25T04:57:41.798227+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-24T21:31:23.982421+00:00",
+      "last_success": "2026-09-25T04:57:41.920429+00:00",
       "count": 30,
       "earliest": "2026-09-15T22:47:07+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-24T21:31:29.795651+00:00",
+      "last_success": "2026-09-25T04:57:42.859934+00:00",
       "count": 99,
-      "earliest": "2026-09-24T12:41:36+00:00",
+      "earliest": "2026-09-24T14:09:34+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-24T17:11:52.199163+00:00",
+      "last_success": "2026-09-25T04:57:45.806204+00:00",
       "count": 100,
-      "earliest": "2026-09-23T14:36:02+00:00",
+      "earliest": "2026-09-23T18:04:09+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-24T21:31:35.425611+00:00",
+      "last_success": "2026-09-25T04:57:46.809726+00:00",
       "count": 20,
       "earliest": "2026-09-03T23:48:12+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-24T21:31:36.370300+00:00",
+      "last_success": "2026-09-25T04:57:48.479630+00:00",
       "count": 28,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-24T21:31:36.704267+00:00",
+      "last_success": "2026-09-25T04:57:49.025033+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-24T21:31:36.970992+00:00",
+      "last_success": "2026-09-25T04:57:49.410639+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-24T21:31:37.386490+00:00",
-      "count": 10,
-      "earliest": "2026-08-19T17:25:16+00:00",
+      "last_success": "2026-09-25T04:57:49.994725+00:00",
+      "count": 9,
+      "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-24T21:31:49.398424+00:00",
+      "last_success": "2026-09-25T04:58:08.606641+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-24T21:31:49.546704+00:00",
+      "last_success": "2026-09-25T04:58:08.785867+00:00",
       "count": 1229,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-24T21:32:03.807379+00:00",
-      "count": 5,
+      "last_success": "2026-09-25T04:58:29.732928+00:00",
+      "count": 6,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
       "error": null
@@ -6265,5 +6613,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-24T21:32:03.807453+00:00"
+  "collected_at": "2026-09-25T04:58:29.733008+00:00"
 }
