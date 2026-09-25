@@ -6479,102 +6479,462 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://codecut.ai/agent-skills-bad-session-history/ Comments URL: https://news.ycombinator.com/item?id=49839869 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49839869"
+    },
+    {
+      "id": "364ff9f58d2c38c7208a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sitcom Flavour – Season your Claude Code chats with sitcom replies",
+      "url": "https://ada.tools/sitcom-flavour",
+      "published_at": "2026-09-25T05:03:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted to give my chats a little color and added a line to my CLAUDE.md: \"Occasionally season replies with a Brooklyn 99 flavoured line (\"Noice\", \"Cool cool cool cool cool\", \"Hot damn\", etc.). Only when it lands and preferably on a win or a clean result. Never in things pushed to remote or anything else that outlives the conversation.\" Later, in a session, it told me that it didn't not know something and I showed it a tool that it could use. The reply I got? > Hot damn! This is exactly what we're looking for. It timed the phrase so well and I enjoyed it so much that I wanted to extend the idea. First I made the idea into a plugin, then added a few more shows, and created a website to explain how to install, how it works, and its ups and downs. If you're like me and want occasional sitcom replies in your chats, those actually land, give it a try. Source is available on GitHub (linked on the website) and MIT licensed. Comments URL: https://news.ycombinator.com/item?id=49840365 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49840365"
+    },
+    {
+      "id": "fb3f4a0fdd86b221fc4f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: SelMem – selective reconstructive memory for LLMs",
+      "url": "https://github.com/jbsalles/Selmem",
+      "published_at": "2026-09-25T05:28:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "A project which explores whether LLM agents can develop persistent behavioural divergence through a reconstructive memory system that forgets, distorts, and consolidates experiences over time. Comments URL: https://news.ycombinator.com/item?id=49840484 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49840484"
+    },
+    {
+      "id": "adf7dcd5a64c9d19b0f1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "When Agent Met Agent",
+      "url": "https://www.flybridge.com/ideas/the-bow/when-agent-met-agent",
+      "published_at": "2026-09-25T05:35:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.flybridge.com/ideas/the-bow/when-agent-met-agent Comments URL: https://news.ycombinator.com/item?id=49840517 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49840517"
+    },
+    {
+      "id": "9de506b7543821b37343",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Knowledge Signal – A JEV-powered rubric assessment tool for study notes",
+      "url": "https://github.com/sumant1122/knowledge-signal",
+      "published_at": "2026-09-25T05:43:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built Knowledge Signal, an open-source prototype that turns study notes into structured, confidence-aware knowledge profiles using TypeSafe AI's Jev model. Comments URL: https://news.ycombinator.com/item?id=49840561 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49840561"
+    },
+    {
+      "id": "b56bed9ce4cf0de62eb0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A single-use authorization boundary in Rust",
+      "url": "https://news.ycombinator.com/item?id=49840686",
+      "published_at": "2026-09-25T06:05:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built a small Rust experiment for putting an authorization boundary in front of a protected action. An authorization is tied to a specific action, resource, and payload. Once it's used successfully, trying to use the same authorization again is denied. The repo includes the implementation, tests, and reproduction steps. https://github.com/trencinodin-stack/arcstone-mcp-sidecar I'm interested in edge cases or failure modes I've missed. Comments URL: https://news.ycombinator.com/item?id=49840686 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49840686"
+    },
+    {
+      "id": "89246cd26ad1dfd22db0",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Jevper – an LLM API client constrained to the Jev wire format",
+      "url": "https://github.com/zhulinchng/jevper",
+      "published_at": "2026-09-25T06:10:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/zhulinchng/jevper Comments URL: https://news.ycombinator.com/item?id=49840721 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49840721"
+    },
+    {
+      "id": "d1bc5c5a87506c3f691d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Reteach – AI tutor that feels human",
+      "url": "https://www.reteach.study",
+      "published_at": "2026-09-25T06:26:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tutoring is very expensive. reteach makes it cheap. Comments URL: https://news.ycombinator.com/item?id=49840850 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49840850"
+    },
+    {
+      "id": "2faefe82fa4ba856c9d6",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Explyt 5.20 – background task panel for AI agent runs in JetBrains IDEs",
+      "url": "https://explyt.ai/docs/explyt-test/whats-new-explyt",
+      "published_at": "2026-09-25T07:07:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://explyt.ai/docs/explyt-test/whats-new-explyt Comments URL: https://news.ycombinator.com/item?id=49841139 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841139"
+    },
+    {
+      "id": "7715ed066ebada3c23cb",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "What is LLM-as-a-Judge, and How It Works?",
+      "url": "https://infere.com/blog/what-is-llm-as-a-judge",
+      "published_at": "2026-09-25T07:19:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://infere.com/blog/what-is-llm-as-a-judge/ Comments URL: https://news.ycombinator.com/item?id=49841219 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841219"
+    },
+    {
+      "id": "5cbfb644d0bd647939a0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: TiddlyInstall – Single HTML file that makes cross-platform installers",
+      "url": "https://robertsdotpm.github.io/_static/tiddlyinstall.html",
+      "published_at": "2026-09-25T07:25:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello HN, I wanted to show you some new software I designed (and Claude implemented.) It's called TiddlyInstall. TiddlyInstall is a single-page website that lets you easily build installers for all your projects. What makes TiddlyInstall unusual is there is no software to download and everything is able to work offline. Based on the project that it's inspired by: you can download TiddlyInstall as a HTML file and use it to make working binaries for Windows, Linux, and Mac. How it works: Most installers / binaries are custom per project. But with very few modifications they can be made general-purpose. Installers can be made to follow meta-data which can be vouched for by hashes in their file names, embedded data, and signatures. That means new binaries only need meta-data to be changed which can be done entirely in the browser. For the installers themselves NSIS was chosen for its amazing Windows support. Otherwise, the rest is shell scripting. I am very excited about it and would love people to try it out. All the code is open source under MIT. Feel free to report issues on the Github at http://github.com/robertsdotpm/tiddlyinstall Credits: Claude (and the authors whose works it was trained on :/) deserve huge credits for the implementation. It would have taken me months to code this all this. This project is not affiliated with TiddlyWiki -- though I am heavily inspired by that project! If anyone thinks my work is cool -- I'm currently looking for new opportunities. Feel free to reach out if there's a match (matthew@roberts.pm.) Comments URL: https://news.ycombinator.com/item?id=49841265 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841265"
+    },
+    {
+      "id": "22dd9eef225b7e7e1e12",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Entail – what your model files declare vs. what the engine runs",
+      "url": "https://github.com/wwoosshh/Entail",
+      "published_at": "2026-09-25T07:26:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/wwoosshh/Entail Comments URL: https://news.ycombinator.com/item?id=49841279 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841279"
+    },
+    {
+      "id": "53893bb18a1e603c07be",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Can an AI agent bypass a post-quantum signed authorization policy?",
+      "url": "https://github.com/max-russo-com/MAX_AUTHORIZATION_SANDBOX",
+      "published_at": "2026-09-25T07:55:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/max-russo-com/MAX_AUTHORIZATION_SANDBOX Comments URL: https://news.ycombinator.com/item?id=49841469 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841469"
+    },
+    {
+      "id": "2e85ce36c1ecf1969b9e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Can an AI agent bypass a post-quantum signed authorization policy?",
+      "url": "https://github.com/max-russo-com/MAX_AUTHORIZATION_SANDBOX",
+      "published_at": "2026-09-25T07:55:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/max-russo-com/MAX_AUTHORIZATION_SANDBOX Comments URL: https://news.ycombinator.com/item?id=49841469 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841469"
+    },
+    {
+      "id": "9d255e329b35cabbb236",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The last day of the dinosaurs, as an interactive painting",
+      "url": "https://www.echohive.ai/experiments/dinosaurs",
+      "published_at": "2026-09-25T08:58:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.echohive.ai/experiments/dinosaurs Comments URL: https://news.ycombinator.com/item?id=49841912 Points: 14 # Comments: 12",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841912"
+    },
+    {
+      "id": "c2bf199954198759daf5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Apowerb, the open-source AI agent runtime (RAG, Text-to-SQL, webhooks)",
+      "url": "https://github.com/apowerb/apowerb",
+      "published_at": "2026-09-25T09:12:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/apowerb/apowerb Comments URL: https://news.ycombinator.com/item?id=49841997 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841997"
+    },
+    {
+      "id": "7199fd08bee239bd6076",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Apowerb, the open-source AI agent runtime (RAG, Text-to-SQL, webhooks)",
+      "url": "https://github.com/apowerb/apowerb",
+      "published_at": "2026-09-25T09:12:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/apowerb/apowerb Comments URL: https://news.ycombinator.com/item?id=49841997 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49841997"
+    },
+    {
+      "id": "8e88ab570281585a5b9e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "In Support of Agent Led Software Engineering",
+      "url": "https://promptogether.com/posts/In_Support_of_Agent_Led_Software_Engineering",
+      "published_at": "2026-09-25T09:15:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://promptogether.com/posts/In_Support_of_Agent_Led_Software_Engineering/ Comments URL: https://news.ycombinator.com/item?id=49842021 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842021"
+    },
+    {
+      "id": "83cbda645e94a0b9dd00",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline Desktop v0.0.36",
+      "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.36",
+      "published_at": "2026-09-25T09:21:23+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- The app now starts on machines that set a system HTTP(S) proxy, such as Clash, v2ray, or a corporate proxy. Before, the backend sent its local connection checks through the proxy, so it couldn't find its own hub and failed with \"No compatible hub runtime is available.\" Local connections now skip the proxy, and any proxy exemptions you already had are kept - On small or scaled displays, the main window now fits on screen. A 1080p laptop at 150% scaling used to open the window larger than the screen, which pushed the settings and account controls out of reach. An oversized window now shrinks to fit the screen (not counting the taskbar) and opens centered - Plugin slash commands like `/goal` no longer vanish from the slash menu the first time you use them. Plugin commands now load as soon as a workspace opens instead of on your first `/`. If that first load is slow or fails, the app retries in the background, so the command no longer gets sent to the model as plain text - The Providers settings (renamed from API Providers) now keep the model list inside the panel. Long model lists scroll in place, and the model controls stay reachable in short windows - In SSH settings, **Save** is disabled until you change a saved host, and the button for a new host now says **Add** - On Amazon Bedrock, OpenAI GPT-6 and GPT-5.6 models now work without turning on cross-region inference. They used to fail with \"on-demand throughput isn't supported.\" India regions (ap-south-1/2) now use the `in.` inference profile **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.35...desktop-v0.0.36",
+      "discussion_url": ""
+    },
+    {
+      "id": "5e434541cc372df1ef5e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Proxima Forma – Designs that my AI agents understand",
+      "url": "https://proximaforma.com",
+      "published_at": "2026-09-25T09:22:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! I built Proxima Forma because sharing screenshots with my agents was not really doing the job. I am a UX Designer with a developer background so I needed a better tool. Wanted the agents to have full design history, design decisions, product notes, etc. in a format they could actually understand. Also wanted one place to manage all my design projects, with dynamic views that let me query projects to see the latest changes and exactly what changed. And wanted to do all that from the commodity of my iPad ;) -early tries of using voice agents to design are still in progress, spoiler: it is too slow... But we'll get there with better models or more fine tuning. Any feedback from the community is really appreciated. I'm trying to come up with other uses cases for Proxima Forma, not only UX Design. In a side note: fully built with AI Agents, Astra, and a little of Meta AI -for instagram advice. Cheers Modecir Comments URL: https://news.ycombinator.com/item?id=49842063 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842063"
+    },
+    {
+      "id": "73b646874424b0bb8c19",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: LabLoop – isolated infrastructure for LLM-driven scientific experiments",
+      "url": "https://github.com/cloudcell/labloop",
+      "published_at": "2026-09-25T09:26:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/cloudcell/labloop Comments URL: https://news.ycombinator.com/item?id=49842097 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842097"
+    },
+    {
+      "id": "8c2b64d38f2e44565ab7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: LabLoop – isolated infrastructure for LLM-driven scientific experiments",
+      "url": "https://github.com/cloudcell/labloop",
+      "published_at": "2026-09-25T09:26:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/cloudcell/labloop Comments URL: https://news.ycombinator.com/item?id=49842097 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842097"
+    },
+    {
+      "id": "73c4625d5b625a899ca2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AtlasBurn – Know what your AI costs and stop runaway agents",
+      "url": "https://atlasburn.com",
+      "published_at": "2026-09-25T09:37:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://atlasburn.com/ Comments URL: https://news.ycombinator.com/item?id=49842163 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842163"
+    },
+    {
+      "id": "192473dd620d930460fd",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support",
+      "url": "https://github.blog/changelog/2026-09-25-codeql-2-27-1-adds-c-and-c-query-and-kotlin-2-4-20-support",
+      "published_at": "2026-09-25T09:55:23+00:00",
+      "date_kind": "source_publication",
+      "evidence": "CodeQL 2.27.1 adds new queries for C/C++ and C#, support for Kotlin 2.4.20, and query-accuracy improvements. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find and remediate security issues in your code. Language and framework support C/C++ We’ve added taint flow models for boost::asio::ip::basic_resolver::resolve , flow summaries for Bloomberg Development Environment’s BloombergLP::bdlbb::Blob segmented byte buffer, and flow summaries for the Protocol Buffers google::protobuf::MessageLite C++ API. Go We’ve added or improved data flow models for Go 1.27 standard-library APIs, including bytes.CutLast , database/sql.ConvertAssign , database/sql/driver.RowsColumnScanner.ScanColumn , net/url.URL.Clone , net/url.Values.Clone , strings.CutLast , and the new encoding/json/jsontext package. We’ve expanded data flow models for the strings package, including Clone , Cut , CutPrefix , CutSuffix , Fields , FieldsFunc , Join , Builder , Reader , and Replacer APIs. Java/Kotlin CodeQL now supports Kotlin 2.4.20. We’ve fixed extraction of Foo::class.java arguments when using the Kotlin K2 compiler. This reduces false positives in queries such as java/android/implicit-pendingintents . JavaScript/TypeScript CodeQL now recognizes Fastify servers configured through chainable methods such as fastify().withTypeProvider() and fastify().setValidatorCompiler(...) . This improves route attribution, which may add results for queries such as js/missing-rate-limiting and remove false positives when globally registered plugins protect routes. Rust We’ve fixed path resolution for m::{self} paths when m is a trait. We’ve added data flow models for core::fmt::Write , improving detection of vulnerabilities where tainted data is written to formatted output buffers. The Rust extractor now uses rust-analyzer version 0.0.347. This updates the Rust library AST with new node types and accessor APIs. See the CodeQL 2.27.1 changelog for migration details. Query changes C/C++ We’ve added the cpp/ambiguous-assignment-of-comparison query to detect potentially ambiguous expressions that assign a comparison result to a variable and use the assignment as a truth value. C# We’ve added the cs/linq/missed-firstordefault query, which identifies foreach loops that can be expressed more clearly with LINQ’s FirstOrDefault method. The cs/linq/missed-* queries no longer suggest lambda rewrites that capture in , out , or ref parameters, preventing suggestions that wouldn’t compile. The cs/web/missing-token-validation query now recognizes ASP.NET Core’s AutoValidateAntiforgeryTokenAttribute when you register it as a global MVC filter through AddControllersWithViews and related methods. This reduces false positives for protected actions. GitHub Actions The actions/unpinned-tag query no longer reports actions pinned by a structurally valid .github/workflows/actions.lock entry for the enclosing workflow. The actions/unpinned-tag query no longer reports $/ self-repository references, such as uses: $/path/to/action , because they resolve to the same repository at the running commit and are inherently pinned. Other improvements C# Private NuGet registries with the Replaces base option enabled in the organization-level private registry configuration now replace default NuGet feeds whenever CodeQL downloads dependencies, including when a project explicitly configures default feeds. For full details, see the CodeQL 2.27.1 changelog . GitHub automatically deploys every new CodeQL version to users of GitHub code scanning on github.com. GitHub Enterprise Server (GHES) 3.24 will include the new functionality in CodeQL 2.27.1. If you use an older version of GHES, you can manually upgrade your CodeQL version . The post CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "7a098160ebfb8d870518",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rigo Studio | AI Farm Intelligence",
+      "url": "https://agririgo.com",
+      "published_at": "2026-09-25T10:02:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agririgo.com Comments URL: https://news.ycombinator.com/item?id=49842358 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842358"
+    },
+    {
+      "id": "9ee0d8ed547f9953010a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AI-Powered Fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+      "published_at": "2026-09-25T10:23:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/ Comments URL: https://news.ycombinator.com/item?id=49842514 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842514"
+    },
+    {
+      "id": "a7145ac70b8eab724132",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agentic CUDA Kernel Optimizer",
+      "url": "https://github.com/bertaye/agentic-cuda-optimizer",
+      "published_at": "2026-09-25T10:32:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello; I was working on optimizing some CUDA kernels and I thought may be it is a good oppurtunity learn langgraph as well. I created a simple C++ CUDA Test Harness and handed that to AI agents. They can run kernels, get benchmarks, and even can profile via nsight Comments URL: https://news.ycombinator.com/item?id=49842596 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842596"
+    },
+    {
+      "id": "7ddf589e6590f64f52fc",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Toby – Your Website Agent",
+      "url": "https://www.tobysite.com/en",
+      "published_at": "2026-09-25T10:50:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.tobysite.com/en Comments URL: https://news.ycombinator.com/item?id=49842721 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842721"
+    },
+    {
+      "id": "7948315df9dc54031bcf",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Skipper, a YouTube sponsor skipper using Ask Gemini and SponsorBlock",
+      "url": "https://chromewebstore.google.com/detail/skipper-ai-â-youtube-spon/ncchpipphiigdfbpbjofbhbahcgckaob",
+      "published_at": "2026-09-25T11:21:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://chromewebstore.google.com/detail/skipper-ai-â-youtube-spon/ncchpipphiigdfbpbjofbhbahcgckaob Comments URL: https://news.ycombinator.com/item?id=49842997 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49842997"
+    },
+    {
+      "id": "73ff828d62fac6106b36",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Herobrine – Minecraft buddies using jev",
+      "url": "https://github.com/xatuke/herobrine",
+      "published_at": "2026-09-25T11:26:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/xatuke/herobrine Comments URL: https://news.ycombinator.com/item?id=49843049 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49843049"
+    },
+    {
+      "id": "0d2fcc676f7bab25f9bf",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Kilo for JetBrains is now a multi-agent control room",
+      "url": "https://blog.kilo.ai/p/kilo-for-jetbrains-a-multi-agent-control-room",
+      "published_at": "2026-09-25T11:46:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blog.kilo.ai/p/kilo-for-jetbrains-a-multi-agent-control-room Comments URL: https://news.ycombinator.com/item?id=49843261 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49843261"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-25T04:57:41.288815+00:00",
+      "last_success": "2026-09-25T11:51:34.829962+00:00",
       "count": 10,
-      "earliest": "2026-09-22T17:00:14+00:00",
+      "earliest": "2026-09-22T17:10:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-25T04:57:41.558323+00:00",
+      "last_success": "2026-09-25T11:51:35.112447+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-25T04:57:41.798227+00:00",
+      "last_success": "2026-09-25T11:51:35.436060+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-25T04:57:41.920429+00:00",
+      "last_success": "2026-09-25T11:51:35.567660+00:00",
       "count": 30,
       "earliest": "2026-09-15T22:47:07+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-25T04:57:42.859934+00:00",
+      "last_success": "2026-09-25T11:51:44.982126+00:00",
       "count": 99,
-      "earliest": "2026-09-24T14:09:34+00:00",
+      "earliest": "2026-09-24T16:13:33+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-25T04:57:45.806204+00:00",
+      "last_success": "2026-09-25T11:51:48.865213+00:00",
       "count": 100,
-      "earliest": "2026-09-23T18:04:09+00:00",
+      "earliest": "2026-09-23T21:21:17+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-25T04:57:46.809726+00:00",
+      "last_success": "2026-09-25T11:51:50.059365+00:00",
       "count": 20,
       "earliest": "2026-09-03T23:48:12+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-25T04:57:48.479630+00:00",
-      "count": 28,
+      "last_success": "2026-09-25T11:51:51.835509+00:00",
+      "count": 29,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-25T04:57:49.025033+00:00",
+      "last_success": "2026-09-25T11:51:52.311811+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-25T04:57:49.410639+00:00",
+      "last_success": "2026-09-25T11:51:53.685269+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-25T04:57:49.994725+00:00",
+      "last_success": "2026-09-25T11:51:54.235446+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-25T04:58:08.606641+00:00",
+      "last_success": "2026-09-25T11:52:13.747457+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-25T04:58:08.785867+00:00",
+      "last_success": "2026-09-25T11:52:13.924535+00:00",
       "count": 1229,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-25T04:58:29.732928+00:00",
+      "last_success": "2026-09-25T11:52:34.049120+00:00",
       "count": 6,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -6613,5 +6973,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-25T04:58:29.733008+00:00"
+  "collected_at": "2026-09-25T11:52:34.049205+00:00"
 }
