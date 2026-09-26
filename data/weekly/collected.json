@@ -8063,41 +8063,185 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://olegdubovoi.com/thoughts/2026-09-26-orca-agent-development-environment-ade-for-shipping-with-coding-agents/ Comments URL: https://news.ycombinator.com/item?id=49855391 Points: 2 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=49855391"
+    },
+    {
+      "id": "3baaf8c2ae5982f6a126",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built a tool that gives any website an API and MCP",
+      "url": "https://news.ycombinator.com/item?id=49855468",
+      "published_at": "2026-09-26T11:22:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Anyone else run into this problem? I built staaake Meets (staaakemeets.com) because we run side tech events around the world. You create an event once and it can be shared to Luma, Meetup and Eventbrite. I connected each platform through their API and it works great. (not the problem) Then I wanted to add more platforms, like Partiful, and realized some don't have a public API. I started noticing the same problem with other projects too. There are still a lot of big products that don't have an API or even a developer page. And now with Claude, ChatGPT and AI agents, it feels like this is becoming a bigger problem. If software and agents are going to interact with products directly, they need a way to access them. So I built staaake Connector (staaakeconnector.com). You connect your backend, choose what you want to make available, and it creates an API and MCP for your product. It can also give you webhooks and an SDK. I also turned my community into a network where humans, products and agents can find and connect with each other. It's live now. I'd really like feedback from people building agents or products that need to interact with other software. Its been a while i used Hackernews, lets see if its still alive! Comments URL: https://news.ycombinator.com/item?id=49855468 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49855468"
+    },
+    {
+      "id": "9120375cb66ce200929e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Note Duel – LLM Arena for composing music",
+      "url": "https://www.noteduel.com",
+      "published_at": "2026-09-26T13:28:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! Inspired by some of the unexpectedly good music I saw Astra + Opus compose on X [1], I've put together Note Duel - think LM Arena, but for musical composition instead of just generating text. I've only tested a few models so far, but will add more... would welcome thoughts + feedback! [1] https://x.com/aug5thmusic/status/2097373938393456984 Comments URL: https://news.ycombinator.com/item?id=49856350 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856350"
+    },
+    {
+      "id": "3b52ecf38fe409d50dda",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI coding agents that prove their work",
+      "url": "https://daneb.github.io/keel",
+      "published_at": "2026-09-26T13:31:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Release of 0.10 Comments URL: https://news.ycombinator.com/item?id=49856381 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856381"
+    },
+    {
+      "id": "f7f1778d786f7d8ec2a7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The easiest way to (embed a calculator) on any website, with no coding",
+      "url": "https://calcupedia.io",
+      "published_at": "2026-09-26T14:04:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://calcupedia.io Comments URL: https://news.ycombinator.com/item?id=49856671 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856671"
+    },
+    {
+      "id": "6808c2e920bba7c83742",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Fly Language Model",
+      "url": "https://flm.kuber.studio",
+      "published_at": "2026-09-26T14:10:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://flm.kuber.studio/ Comments URL: https://news.ycombinator.com/item?id=49856744 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856744"
+    },
+    {
+      "id": "2213e841cb05a7f2f2e7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HomeAI.design – Visualize interior design ideas from a photo",
+      "url": "https://homeai.design",
+      "published_at": "2026-09-26T14:13:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I’m an indie developer and I recently built HomeAI.design. The original idea was simple. When people renovate a room, it's difficult to imagine what a different design would actually look like in their own space. So I built a tool where you upload a room photo and generate different interior design ideas. I'm still figuring out what users really need, especially compared with other AI interior design tools. Would love feedback on the product and the generated results. Comments URL: https://news.ycombinator.com/item?id=49856774 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856774"
+    },
+    {
+      "id": "7e56b85c72849ddeb2e1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Prodigy – The Self-Updating Technical Digest",
+      "url": "https://www.prodigy.org.in",
+      "published_at": "2026-09-26T14:45:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've seen newsletters where we have 15-20 people working on typing out the content and publish it. Obviously that gives you originality, but what if we don't have that much time and resources? I made Prodigy, a self-updating AI newsletter that fetches the best technical updates from sources like X, Hacker News, Git and top-conference papers. A LLaMa model runs in the backend and summarises the complete post to capture the key remarks. A Git Actions framework updates the pages every 5 minutes (PRs) - 6 hours (tweets and HN). The long contents are still a work in progress, but I'm trying to make it as interesting as possible. Not pushing anything else ATM. :) Comments URL: https://news.ycombinator.com/item?id=49857096 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857096"
+    },
+    {
+      "id": "9b7972168ffd2779a685",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ogre MCP – Let your AI agent see your WoW Classic game state",
+      "url": "https://github.com/bttf/ogremcp",
+      "published_at": "2026-09-26T15:06:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/bttf/ogremcp Comments URL: https://news.ycombinator.com/item?id=49857285 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857285"
+    },
+    {
+      "id": "adf195b1dceb90d6ad87",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I made HACKER AI for your vibecoded app",
+      "url": "https://www.netherite.uz",
+      "published_at": "2026-09-26T15:07:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Netherite is your own Security Specialist. It reviews your codebase, find vulnerabilities, flaws, and other security issues before writing professional report. Also gives you fix prompt. Free to try! Comments URL: https://news.ycombinator.com/item?id=49857290 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857290"
+    },
+    {
+      "id": "a55cafc3d55654443d95",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ephemeral runner for JEV-style models",
+      "url": "https://github.com/Partysun/jigor",
+      "published_at": "2026-09-26T15:07:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "npx @zatsepin/jigor ask --model von < < 'JSON' { \"state\": { \"error\": \"Disk volume /var/log at 98% capacity.\" }, \"questions\": { \"requires_intervention\": { \"type\": \"noul\", \"instructions\": \"Does this disk space condition require operational intervention?\" } } } JSON {\"answers\":{\"requires_intervention\":{\"noul\":0.7822,\"type\":\"noul\"}},\"backend\":\"local\",\"model\":\"von-1.0.0\"} Comments URL: https://news.ycombinator.com/item?id=49857297 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857297"
+    },
+    {
+      "id": "897e7522ccbea4e17ab5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A Claude Code skill to analyze your chess games",
+      "url": "https://github.com/brumar/chess-postmortem-skills",
+      "published_at": "2026-09-26T15:34:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello HN, It started as an experiment: can Claude play chess properly if it uses vision instead of PGN notation? Somehow it can. The next experiment was to see whether Claude + Stockfish could explain a game. Somehow it can too. A few sessions later, I had a system that takes my live audio notes (or text, for that matter) and a vague instruction like \"analyze my last lichess game\", and gives me a commented video of the game. The result is not perfect and it takes time to deliver (an hour or so), but for me it is a much more pleasant and memorable experience than clicking around Stockfish branches. It burns tokens, so make sure you have enough quota. From the session logs, the last analyzed game would have cost around $15 at API prices. The fact that it reflects on my own thinking during the game makes it interesting from a teaching point of view, so I thought it was worth sharing. Comments URL: https://news.ycombinator.com/item?id=49857528 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857528"
+    },
+    {
+      "id": "83ca311a5a8b08d547aa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Waitwise, Replace Claude Code's spinner with anything usefull",
+      "url": "https://github.com/marciob/waitwise",
+      "published_at": "2026-09-26T15:50:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/marciob/waitwise Comments URL: https://news.ycombinator.com/item?id=49857671 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857671"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-26T11:25:23.295102+00:00",
+      "last_success": "2026-09-26T16:23:59.561260+00:00",
       "count": 10,
       "earliest": "2026-09-24T20:28:33+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-26T11:25:23.467088+00:00",
+      "last_success": "2026-09-26T16:23:59.797797+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-26T11:25:23.666648+00:00",
+      "last_success": "2026-09-26T16:23:59.974370+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-26T11:25:23.808770+00:00",
+      "last_success": "2026-09-26T16:24:00.137786+00:00",
       "count": 30,
       "earliest": "2026-09-16T23:51:43+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-26T11:25:25.600990+00:00",
+      "last_success": "2026-09-26T16:24:00.620956+00:00",
       "count": 100,
-      "earliest": "2026-09-25T13:18:25+00:00",
+      "earliest": "2026-09-25T15:06:03+00:00",
       "gap": false,
       "error": null
     },
@@ -8106,59 +8250,59 @@
       "count": 100,
       "earliest": "2026-09-24T11:44:58+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-26T11:25:28.426332+00:00",
+      "last_success": "2026-09-26T16:24:09.635216+00:00",
       "count": 20,
       "earliest": "2026-09-04T19:58:10+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-26T11:25:29.997987+00:00",
+      "last_success": "2026-09-26T16:24:11.129385+00:00",
       "count": 29,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-26T11:25:30.420684+00:00",
+      "last_success": "2026-09-26T16:24:11.617591+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-26T11:25:30.869382+00:00",
+      "last_success": "2026-09-26T16:24:12.000762+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-26T11:25:31.437033+00:00",
+      "last_success": "2026-09-26T16:24:12.563230+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-26T11:25:50.106996+00:00",
+      "last_success": "2026-09-26T16:24:31.340455+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-26T11:25:50.295461+00:00",
+      "last_success": "2026-09-26T16:24:31.541406+00:00",
       "count": 1230,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-26T11:26:12.125953+00:00",
+      "last_success": "2026-09-26T16:24:53.856384+00:00",
       "count": 7,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -8197,5 +8341,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-26T11:26:12.126024+00:00"
+  "collected_at": "2026-09-26T16:24:53.856461+00:00"
 }
