@@ -7895,102 +7895,270 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/ Comments URL: https://news.ycombinator.com/item?id=49853137 Points: 2 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=49853137"
+    },
+    {
+      "id": "0415b45b7b11fc2d0144",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built my parents a credit card chooser with Jev",
+      "url": "https://points.chengeric.com",
+      "published_at": "2026-09-26T04:58:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://points.chengeric.com/ Comments URL: https://news.ycombinator.com/item?id=49853344 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853344"
+    },
+    {
+      "id": "6a0822e24085f44b8fbf",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jevcut – an auto-clipper where code picks the cut points, not the model",
+      "url": "https://github.com/VBS2004/jevcut",
+      "published_at": "2026-09-26T05:10:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/VBS2004/jevcut Comments URL: https://news.ycombinator.com/item?id=49853400 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853400"
+    },
+    {
+      "id": "47ca107cf045a8530e06",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenAI works to understand scope of agent activity as user data leak emerges",
+      "url": "https://www.reuters.com/world/openai-works-understand-full-scope-agent-activity-user-data-leak-emerges-2026-09-25",
+      "published_at": "2026-09-26T05:10:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.reuters.com/world/openai-works-understand-full-scope-agent-activity-user-data-leak-emerges-2026-09-25/ Comments URL: https://news.ycombinator.com/item?id=49853401 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853401"
+    },
+    {
+      "id": "7a9fb6b754baa5a19e55",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Gutcheck, grep for meaning with a local CPU model",
+      "url": "https://github.com/sfmqrb/gutcheck",
+      "published_at": "2026-09-26T05:21:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/sfmqrb/gutcheck Comments URL: https://news.ycombinator.com/item?id=49853451 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853451"
+    },
+    {
+      "id": "b3898e3840a4f433a48f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Botbin.io – pastebin for AI agent artifacts",
+      "url": "https://botbin.io?md=true",
+      "published_at": "2026-09-26T05:42:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://botbin.io/?md=true Comments URL: https://news.ycombinator.com/item?id=49853553 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853553"
+    },
+    {
+      "id": "1271c2aa44a9fbf7be60",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Botbin.io – pastebin for AI agent artifacts",
+      "url": "https://botbin.io?md=true",
+      "published_at": "2026-09-26T05:42:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://botbin.io/?md=true Comments URL: https://news.ycombinator.com/item?id=49853553 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853553"
+    },
+    {
+      "id": "e6350f2c0e329561d3cd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built a chatbot that can only reply in emoji, powered by Jev",
+      "url": "https://jev.chat",
+      "published_at": "2026-09-26T05:46:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jev.chat Comments URL: https://news.ycombinator.com/item?id=49853574 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853574"
+    },
+    {
+      "id": "3c93723fe236c734b43f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Any2bazel – an OSS tool for agent-driven migrations to Bazel",
+      "url": "https://blog.engflow.com/2026/09/09/introducing-any2bazel-oss-bazel-migration-tool",
+      "published_at": "2026-09-26T06:17:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blog.engflow.com/2026/09/09/introducing-any2bazel-oss-bazel-migration-tool/ Comments URL: https://news.ycombinator.com/item?id=49853734 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853734"
+    },
+    {
+      "id": "e4517c69d5af0625dd2c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Linux Kernel Developers Consider Adding Agents.md to Help Guide AI/LLM Agents",
+      "url": "https://www.phoronix.com/news/Linux-Considers-AGENTS-MD",
+      "published_at": "2026-09-26T08:36:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.phoronix.com/news/Linux-Considers-AGENTS-MD Comments URL: https://news.ycombinator.com/item?id=49854439 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49854439"
+    },
+    {
+      "id": "213b231faf031a532e0a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM Red-temaing vs. Agent Red teaming",
+      "url": "https://www.botgauge.com/blog/llm-red-teaming-vs-agent-red-teaming",
+      "published_at": "2026-09-26T08:56:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.botgauge.com/blog/llm-red-teaming-vs-agent-red-teaming Comments URL: https://news.ycombinator.com/item?id=49854557 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49854557"
+    },
+    {
+      "id": "7802034781a1d241bd50",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Causal analyst agent skill for Claude",
+      "url": "https://github.com/kiritbasu/causal-analyst",
+      "published_at": "2026-09-26T10:24:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm not a Data Scientist but have been super intrigued with causal inference off late, so I made a Claude skill to simplify the modelling and experimentation process. You upload your dataset to Claude (Opus) and this skill picks your brain for your domain knowledge about the dataset and comes up with a causal dag that you can iterate through. It then runs the data through a number of classical statistics, ML and newer transformer models to come up with outcomes. And it finally creates a html report to help you understand the results. Comments URL: https://news.ycombinator.com/item?id=49855115 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49855115"
+    },
+    {
+      "id": "40258dff99e35e137c3b",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Causal analyst agent skill for Claude",
+      "url": "https://github.com/kiritbasu/causal-analyst",
+      "published_at": "2026-09-26T10:24:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm not a Data Scientist but have been super intrigued with causal inference off late, so I made a Claude skill to simplify the modelling and experimentation process. You upload your dataset to Claude (Opus) and this skill picks your brain for your domain knowledge about the dataset and comes up with a causal dag that you can iterate through. It then runs the data through a number of classical statistics, ML and newer transformer models to come up with outcomes. And it finally creates a html report to help you understand the results. Comments URL: https://news.ycombinator.com/item?id=49855115 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49855115"
+    },
+    {
+      "id": "875126bfa017350c2a9f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CStructSharp – C-struct (de)serialization for C# and JavaScript (WASM)",
+      "url": "https://github.com/vvollers/cstructsharp",
+      "published_at": "2026-09-26T10:31:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've been working on this for a while now (I made a POC for myself some years ago which I didn't release. But AI helped me a lot to finally complete/polish it). Inspired by digital forensic toolkits, this library allows a user to take a c-struct definition and use that to serialize an deserialize binary data. It is a flexible library which features modern c# mechanisms and conventions. I tried to make it easy to use, easy to understand, performant and powerful. You can both use it to parse and use runtime user defined structures as well as use the C# source generator feature to build parsers/serializers at compile time. I also build and published a WASM version/javascript library which is used to showcase the features of the library (see the binary inspector demo app ( https://vvollers.github.io/cstructsharp/inspector/ ) which you can use to run the library against various files, it includes sample definitions for many file formats). The library is quite usable on its own. I'm interested to hear your thoughts and if you have any questions feel free to ask. Comments URL: https://news.ycombinator.com/item?id=49855152 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49855152"
+    },
+    {
+      "id": "88f4f673cf439e602e16",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Orca – Agent Development Environment (ADE) for shipping with coding agents",
+      "url": "https://olegdubovoi.com/thoughts/2026-09-26-orca-agent-development-environment-ade-for-shipping-with-coding-agents",
+      "published_at": "2026-09-26T11:09:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://olegdubovoi.com/thoughts/2026-09-26-orca-agent-development-environment-ade-for-shipping-with-coding-agents/ Comments URL: https://news.ycombinator.com/item?id=49855391 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49855391"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-26T04:58:16.111986+00:00",
+      "last_success": "2026-09-26T11:25:23.295102+00:00",
       "count": 10,
       "earliest": "2026-09-24T20:28:33+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-26T04:58:16.364576+00:00",
+      "last_success": "2026-09-26T11:25:23.467088+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-26T04:58:16.503022+00:00",
+      "last_success": "2026-09-26T11:25:23.666648+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-26T04:58:16.654076+00:00",
+      "last_success": "2026-09-26T11:25:23.808770+00:00",
       "count": 30,
       "earliest": "2026-09-16T23:51:43+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-26T04:58:33.007891+00:00",
+      "last_success": "2026-09-26T11:25:25.600990+00:00",
       "count": 100,
-      "earliest": "2026-09-25T10:40:19+00:00",
+      "earliest": "2026-09-25T13:18:25+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-26T04:58:34.805193+00:00",
+      "last_success": "2026-09-26T11:25:27.329141+00:00",
       "count": 100,
-      "earliest": "2026-09-24T08:06:26+00:00",
+      "earliest": "2026-09-24T11:44:58+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-26T04:58:36.264961+00:00",
+      "last_success": "2026-09-26T11:25:28.426332+00:00",
       "count": 20,
       "earliest": "2026-09-04T19:58:10+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-26T04:58:38.091008+00:00",
+      "last_success": "2026-09-26T11:25:29.997987+00:00",
       "count": 29,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-26T04:58:38.677399+00:00",
+      "last_success": "2026-09-26T11:25:30.420684+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-26T04:58:39.162780+00:00",
+      "last_success": "2026-09-26T11:25:30.869382+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-26T04:58:39.879607+00:00",
+      "last_success": "2026-09-26T11:25:31.437033+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-26T04:59:05.324578+00:00",
+      "last_success": "2026-09-26T11:25:50.106996+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-26T04:59:05.531248+00:00",
+      "last_success": "2026-09-26T11:25:50.295461+00:00",
       "count": 1230,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-26T04:59:34.823267+00:00",
+      "last_success": "2026-09-26T11:26:12.125953+00:00",
       "count": 7,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -8029,5 +8197,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-26T04:59:34.823353+00:00"
+  "collected_at": "2026-09-26T11:26:12.126024+00:00"
 }
