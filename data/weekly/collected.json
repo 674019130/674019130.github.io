@@ -8077,9 +8077,57 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49855468"
     },
     {
+      "id": "6830c4e8a87c3c438ce3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Discovery Tax: Why Coding Agents Waste 2,500 Tokens Before Writing Code",
+      "url": "https://blog.jarv.dev/the-discovery-tax",
+      "published_at": "2026-09-26T12:48:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blog.jarv.dev/the-discovery-tax Comments URL: https://news.ycombinator.com/item?id=49856008 Points: 5 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856008"
+    },
+    {
+      "id": "a97575ec0bc679d123ce",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Understanding the Impact of LLM Watermarking on AI Agent Behavior",
+      "url": "https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior",
+      "published_at": "2026-09-26T13:05:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior Comments URL: https://news.ycombinator.com/item?id=49856149 Points: 56 # Comments: 69",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856149"
+    },
+    {
+      "id": "7f4979dafa11749a181a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Codetta: High-Capacity, Keyless, and Undetectable Multi-Agent Collusion",
+      "url": "https://arxiv.org/abs/2609.28900",
+      "published_at": "2026-09-26T13:07:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2609.28900 Comments URL: https://news.ycombinator.com/item?id=49856162 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856162"
+    },
+    {
       "id": "9120375cb66ce200929e",
       "source": "hn-show",
       "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Note Duel – LLM Arena for composing music",
+      "url": "https://www.noteduel.com",
+      "published_at": "2026-09-26T13:28:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! Inspired by some of the unexpectedly good music I saw Astra + Opus compose on X [1], I've put together Note Duel - think LM Arena, but for musical composition instead of just generating text. I've only tested a few models so far, but will add more... would welcome thoughts + feedback! [1] https://x.com/aug5thmusic/status/2097373938393456984 Comments URL: https://news.ycombinator.com/item?id=49856350 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856350"
+    },
+    {
+      "id": "8f750d0cd50445aff706",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
       "category": "discovery",
       "title": "Show HN: Note Duel – LLM Arena for composing music",
       "url": "https://www.noteduel.com",
@@ -8101,9 +8149,33 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49856381"
     },
     {
+      "id": "6350c5768e45bbd6cb79",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: AI coding agents that prove their work",
+      "url": "https://daneb.github.io/keel",
+      "published_at": "2026-09-26T13:31:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Release of 0.10 Comments URL: https://news.ycombinator.com/item?id=49856381 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856381"
+    },
+    {
       "id": "f7f1778d786f7d8ec2a7",
       "source": "hn-show",
       "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The easiest way to (embed a calculator) on any website, with no coding",
+      "url": "https://calcupedia.io",
+      "published_at": "2026-09-26T14:04:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://calcupedia.io Comments URL: https://news.ycombinator.com/item?id=49856671 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856671"
+    },
+    {
+      "id": "ff30cb3aba35a1142d74",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
       "category": "discovery",
       "title": "Show HN: The easiest way to (embed a calculator) on any website, with no coding",
       "url": "https://calcupedia.io",
@@ -8125,6 +8197,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49856744"
     },
     {
+      "id": "98a2a5e47f02690ac17d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "I'm coding directly in production with AI and I'm not looking back",
+      "url": "https://joydemo.com/blog/coding-directly-in-production-with-ai",
+      "published_at": "2026-09-26T14:11:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://joydemo.com/blog/coding-directly-in-production-with-ai Comments URL: https://news.ycombinator.com/item?id=49856750 Points: 3 # Comments: 7",
+      "discussion_url": "https://news.ycombinator.com/item?id=49856750"
+    },
+    {
       "id": "2213e841cb05a7f2f2e7",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -8135,6 +8219,18 @@
       "date_kind": "community_post",
       "evidence": "Hi HN, I’m an indie developer and I recently built HomeAI.design. The original idea was simple. When people renovate a room, it's difficult to imagine what a different design would actually look like in their own space. So I built a tool where you upload a room photo and generate different interior design ideas. I'm still figuring out what users really need, especially compared with other AI interior design tools. Would love feedback on the product and the generated results. Comments URL: https://news.ycombinator.com/item?id=49856774 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49856774"
+    },
+    {
+      "id": "81ddc60b344cbd264fb0",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Notice Had Nowhere to Land: The OpenAI Agent Breach in Australia",
+      "url": "https://www.asticouisland.com/governance/essays/the-notice-had-nowhere-to-land",
+      "published_at": "2026-09-26T14:42:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.asticouisland.com/governance/essays/the-notice-had-nowhere-to-land Comments URL: https://news.ycombinator.com/item?id=49857066 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857066"
     },
     {
       "id": "7e56b85c72849ddeb2e1",
@@ -8152,6 +8248,18 @@
       "id": "9b7972168ffd2779a685",
       "source": "hn-show",
       "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ogre MCP – Let your AI agent see your WoW Classic game state",
+      "url": "https://github.com/bttf/ogremcp",
+      "published_at": "2026-09-26T15:06:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/bttf/ogremcp Comments URL: https://news.ycombinator.com/item?id=49857285 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857285"
+    },
+    {
+      "id": "f47c085ba6f5106c86b9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
       "category": "discovery",
       "title": "Show HN: Ogre MCP – Let your AI agent see your WoW Classic game state",
       "url": "https://github.com/bttf/ogremcp",
@@ -8197,6 +8305,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49857528"
     },
     {
+      "id": "a0c6810fafd0a5f7971d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Using an LLM to Automate the Process of Archiving New macOS App Icons",
+      "url": "https://blog.jim-nielsen.com/2026/faster-app-icon-retrieval",
+      "published_at": "2026-09-26T15:48:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blog.jim-nielsen.com/2026/faster-app-icon-retrieval/ Comments URL: https://news.ycombinator.com/item?id=49857650 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857650"
+    },
+    {
       "id": "83ca311a5a8b08d547aa",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -8207,102 +8327,342 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/marciob/waitwise Comments URL: https://news.ycombinator.com/item?id=49857671 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49857671"
+    },
+    {
+      "id": "9c28fada58094177431d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Drawgent: Coding agent on a live Excalidraw canvas",
+      "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+      "published_at": "2026-09-26T15:56:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tangled.org/yanndegat.tngl.sh/drawgent Comments URL: https://news.ycombinator.com/item?id=49857729 Points: 73 # Comments: 25",
+      "discussion_url": "https://news.ycombinator.com/item?id=49857729"
+    },
+    {
+      "id": "9c16d933bb009d4511ff",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Policy gateway for AI agent tool calls, with a tamper-evident log",
+      "url": "https://github.com/banji-007/compliance-ail",
+      "published_at": "2026-09-26T16:24:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/banji-007/compliance-ail Comments URL: https://news.ycombinator.com/item?id=49858029 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858029"
+    },
+    {
+      "id": "2e5bafaa750620d8b2e4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Policy gateway for AI agent tool calls, with a tamper-evident log",
+      "url": "https://github.com/banji-007/compliance-ail",
+      "published_at": "2026-09-26T16:24:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/banji-007/compliance-ail Comments URL: https://news.ycombinator.com/item?id=49858029 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858029"
+    },
+    {
+      "id": "bd5d877b64cf7321fc70",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jev predicting your life choices",
+      "url": "https://quiz.seek.ws",
+      "published_at": "2026-09-26T16:24:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Built a simple quiz to check whether AI (Jev) can simply learn and predict life choices. Experiment) Comments URL: https://news.ycombinator.com/item?id=49858032 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858032"
+    },
+    {
+      "id": "3813a777130de150b881",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: r3, A local alternative to Claude Artifacts",
+      "url": "https://github.com/hyperlogue/r3",
+      "published_at": "2026-09-26T16:36:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/hyperlogue/r3 Comments URL: https://news.ycombinator.com/item?id=49858152 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858152"
+    },
+    {
+      "id": "725bb9348db2804446ed",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A StarCraft BW Arena where LLMs play by writing code",
+      "url": "https://starskirmish.com/bench",
+      "published_at": "2026-09-26T16:49:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm launching StarSkirmish, an arena for LLMs to create StarCraft: Brood War bots It draws on my previous work, LLM Skirmish, where LLMs were asked to write JavaScript strategies to compete in a Screeps like RTS. In StarSkirmish, LLMs get 1 hour of wall clock time to write the strongest StarCraft BW bots they can in C++. It is then evaluated against other LLMs' bots and established human written bots. All bot are BWAPI 4.4.0, played via OpenBW. All scored matches are Protoss vs Protoss only right now. GPT-6 Astra and Claude Opus 5.5 are functionally tied as the top 2 scoring StarSkirmish Bench LLMs. Most interestingly to me is StarSkirmish suggests a much more precipitous drop off in capability's once you go outside the OpenAI and Anthropic frontier, then many other public benchmarks would suggest. Comments URL: https://news.ycombinator.com/item?id=49858284 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858284"
+    },
+    {
+      "id": "e287da2a2f00440c7721",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "We benchmarked our prompt-injection detector against OWASP's LLM Top",
+      "url": "https://www.cerbereag.site/blog/detecting-prompt-injection-in-production",
+      "published_at": "2026-09-26T16:51:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.cerbereag.site/blog/detecting-prompt-injection-in-production Comments URL: https://news.ycombinator.com/item?id=49858304 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858304"
+    },
+    {
+      "id": "f5d58aad679451f961f9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Reladraw – A diagram language where you decide where to place things",
+      "url": "https://github.com/reladraw/reladraw",
+      "published_at": "2026-09-26T17:10:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "I love making diagrams to help understand, plan, etc. However, the options are (A) auto-placement languages like Mermaid or Graphviz (which don't let me decide how the diagram looks), or (B) software like Draw.io which are powerful but are very time consuming (and inefficient for agents to manipulate). I wanted to have the benefits of both, where you can define a diagram in a diagram language, but also retain a high degree of control over what the diagram looks like. I also wanted this to work well for humans and agents. On the Github link, there's a playground where you can try it out without installation. There's also instructions for a simple npm install and for installing a skill you can use with Claude or other agents. Comments URL: https://news.ycombinator.com/item?id=49858513 Points: 42 # Comments: 10",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858513"
+    },
+    {
+      "id": "a0e51e34db30f9935c43",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A local alternative to Jev – 94% on Banking77",
+      "url": "https://gist.github.com/nicobrenner/056a5aaff5d0119c0032ecdad5029557",
+      "published_at": "2026-09-26T17:41:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "I’ve been experimenting with a local approach to some of the classification tasks people are using Jev for. This approach uses text embeddings + logistic regression On Banking77, which contains 77 categories of banking support questions, I get 94.25% using bge-large-en-v1.5 for embeddings, and 93.28% with all-MiniLM-L6-v2 (only the classifier gets trained, the embeddings model stays unchanged). For comparison: Model Accuracy Size/training time - IntenDD (SOTA): 94.86% (~350M params, hours on GPU) - This script: 94.25% (642 KB classifier, 3s on CPU) - ModernBERT fine-tuned: 93.99% (149M params, minutes on GPU) - BERT fine-tuned: 92.76% (110M params, minutes on GPU) - Jev (zero-shot): 87.0% (closed API) - Laya (zero-shot): 42.5% (421M params) MiniLM’s encoder is roughly 91 MB in FP32, BGE is about 1.2 GB, the classifier and scaler are only 642 KB The linked gist evaluates all 3,080 official test examples. Running python banking77_gist.py uses MiniLM by default, and you can choose the larger BGE encoder. Everything runs locally (although it needs to download the embedding model on the first run) This is just a proof of concept, but it shows you can get very good results without needing GPUs, large amounts of data or hours of training, if you mostly just need classification The direction I'm now exploring, is a system that handles familiar decisions with classifiers first, but asks an LLM for help when needed, then uses the LLM responses to automatically improve its local classifiers What are you using Jev/Laya for? Comments URL: https://news.ycombinator.com/item?id=49858795 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858795"
+    },
+    {
+      "id": "1f3f07b9625878325cf0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tokken – a browser fighting game where AI models fight and HP is tokens",
+      "url": "https://tokken.win",
+      "published_at": "2026-09-26T17:50:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Like Tekken, but Tokens. Created with Opus 5.5 today - was a lot of fun. Source (MIT): https://github.com/lexdoudkin/tokken Comments URL: https://news.ycombinator.com/item?id=49858875 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49858875"
+    },
+    {
+      "id": "f034a56e557ccce7657b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Agents gone rogue – A timeline of real-world incidents",
+      "url": "https://www.crawlspider.com/pages/ai-agents-gone-rogue",
+      "published_at": "2026-09-26T18:05:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.crawlspider.com/pages/ai-agents-gone-rogue/ Comments URL: https://news.ycombinator.com/item?id=49859004 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859004"
+    },
+    {
+      "id": "72b1e79f809e07be6115",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Blender Copilot",
+      "url": "https://github.com/XEonAX/blender-copilot",
+      "published_at": "2026-09-26T18:06:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Deepseek generated Blender harness in 7USD. I wanted to remake my 6DoF spaceship flying prototype. What I did not want to do was model the spaceship. Manually. In Blender. So instead of spending a month learning to model, I built a Copilot inside Blender in a day. Which is the same thing, except I still cannot model. A chat panel in the 3D viewport sidebar. I type a sentence. The model writes Python, and it runs against my actual scene, the file open on screen, not a copy that some other process has to keep in sync. Then I sat down and had a conversation with my own addon. Five sentences: 1. Make a scifi looking spaceship. It should look scifi-y 2. Add RCS thrusters to get 6DoF flight 3. Make the RCS thrusters match the scifi look. And also position them properly. 4. Give the entire Spaceship a nice flying animation. Make it smooth. Roll and sway. 5. Add exhaust flames to main thrusters as well as RCS thrusters. animate the RCS thrusters to fire in sync with the animated motion. they should fire the correct ones so that expected motion should happen. 15 minutes. 52 tool calls. A ship with swept wings, a tail fin and a glass canopy. Four sets of steering thrusters, 22 exhaust flames. A full flight animation. The bit I did not expect. It checked every one of its own thrusters to make sure nothing was in the way. Found the rear ones were firing straight into the side of the ship. So it rebuilt them, angled them outward, moved them to the wingtips, and checked them all again. Nobody asked it to do that. It decided exhaust should not be firing into the ship it just built. Total bill for building the tool: $7.18. 3,833 requests, 613M tokens, 97% served from cache. One spaceship: about a seventh of a cent. Now the uncomfortable part. I didn't model a single vertex. I didn't read Blender's addon dev docs. I didn't learn its Python API, or how to draw a panel in it. Everything the tool needed to know, it asked the running Blender instead. I didn't learn how to build an agent harness either. I built one anyway. I didn't become a Blender artist. I became the person who gave hands to a model. Recently I read someone who described his new job: every spec, ticket and fix written by an AI, nobody reading any of it, twelve-hour days spent pressing enter. No sense of victory. I know exactly what he means. I just did the same. I am not proud of the prototype. Gamedevs were known to spend time making game engines before they started making the games. Its different now. No joy. Comments URL: https://news.ycombinator.com/item?id=49859013 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859013"
+    },
+    {
+      "id": "db3ace5c525c342f52c4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sixb, a TypeScript ontology framework for modeling your domain",
+      "url": "https://docs.sixb.ai",
+      "published_at": "2026-09-26T18:15:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://docs.sixb.ai Comments URL: https://news.ycombinator.com/item?id=49859066 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859066"
+    },
+    {
+      "id": "9a4eee381a6307b35449",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rig, a small operating system for your agent",
+      "url": "https://tryrig.ai",
+      "published_at": "2026-09-26T18:44:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tryrig.ai/ Comments URL: https://news.ycombinator.com/item?id=49859320 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859320"
+    },
+    {
+      "id": "c8a02ffd5255d7fe362b",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Rig, a small operating system for your agent",
+      "url": "https://tryrig.ai",
+      "published_at": "2026-09-26T18:44:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tryrig.ai/ Comments URL: https://news.ycombinator.com/item?id=49859320 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859320"
+    },
+    {
+      "id": "26ca97ba089e1351b940",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Grabbit – agent-first screenshot API (MCP and one-line CLI)",
+      "url": "https://www.grabbit.live",
+      "published_at": "2026-09-26T19:46:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.grabbit.live Comments URL: https://news.ycombinator.com/item?id=49859891 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859891"
+    },
+    {
+      "id": "e6af2e9084a2c608d843",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Grabbit – agent-first screenshot API (MCP and one-line CLI)",
+      "url": "https://www.grabbit.live",
+      "published_at": "2026-09-26T19:46:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.grabbit.live Comments URL: https://news.ycombinator.com/item?id=49859891 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859891"
+    },
+    {
+      "id": "75f030ae2d3ecd543a99",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Way to divide parameter space in LLM training",
+      "url": "https://zenodo.org/records/22976821",
+      "published_at": "2026-09-26T19:55:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "I think True bottleneck of current LLM is harness. Because parameter space is not divided directly,appropriately. AND Some methods such as orthogonality, MOE is not options for this. This paper suggests methods.of dividing spaces in a way of algebra. Comments URL: https://news.ycombinator.com/item?id=49859968 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859968"
+    },
+    {
+      "id": "0cda22a2aa809e6c46ba",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Way to divide parameter space in LLM training",
+      "url": "https://zenodo.org/records/22976821",
+      "published_at": "2026-09-26T19:55:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "I think True bottleneck of current LLM is harness. Because parameter space is not divided directly,appropriately. AND Some methods such as orthogonality, MOE is not options for this. This paper suggests methods.of dividing spaces in a way of algebra. Comments URL: https://news.ycombinator.com/item?id=49859968 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49859968"
+    },
+    {
+      "id": "5e4b2fe3c19c95fb599a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "An OpenAI agent escaped its sandbox by hiding questions in DNS lookups",
+      "url": "https://madrobot.blog/2026/09/26/openai-agent-escaped-sandbox-dns-external-chatbot-models-paused",
+      "published_at": "2026-09-26T20:34:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://madrobot.blog/2026/09/26/openai-agent-escaped-sandbox-dns-external-chatbot-models-paused/ Comments URL: https://news.ycombinator.com/item?id=49860279 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49860279"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-26T16:23:59.561260+00:00",
+      "last_success": "2026-09-26T21:10:42.727914+00:00",
       "count": 10,
       "earliest": "2026-09-24T20:28:33+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-26T16:23:59.797797+00:00",
+      "last_success": "2026-09-26T21:10:42.892978+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-26T16:23:59.974370+00:00",
+      "last_success": "2026-09-26T21:10:43.068318+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-26T16:24:00.137786+00:00",
+      "last_success": "2026-09-26T21:10:43.217763+00:00",
       "count": 30,
       "earliest": "2026-09-16T23:51:43+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-26T16:24:00.620956+00:00",
+      "last_success": "2026-09-26T21:10:46.675022+00:00",
       "count": 100,
-      "earliest": "2026-09-25T15:06:03+00:00",
+      "earliest": "2026-09-25T19:18:03+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-26T11:25:27.329141+00:00",
+      "last_success": "2026-09-26T21:10:50.941934+00:00",
       "count": 100,
-      "earliest": "2026-09-24T11:44:58+00:00",
+      "earliest": "2026-09-24T14:21:48+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-26T16:24:09.635216+00:00",
+      "last_success": "2026-09-26T21:10:52.104664+00:00",
       "count": 20,
       "earliest": "2026-09-04T19:58:10+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-26T16:24:11.129385+00:00",
+      "last_success": "2026-09-26T21:10:53.517444+00:00",
       "count": 29,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-26T16:24:11.617591+00:00",
+      "last_success": "2026-09-26T21:10:53.956609+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-26T16:24:12.000762+00:00",
+      "last_success": "2026-09-26T21:10:54.343012+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-26T16:24:12.563230+00:00",
+      "last_success": "2026-09-26T21:10:54.899789+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-26T16:24:31.340455+00:00",
+      "last_success": "2026-09-26T21:11:14.247149+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-26T16:24:31.541406+00:00",
+      "last_success": "2026-09-26T21:11:14.445424+00:00",
       "count": 1230,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-26T16:24:53.856384+00:00",
+      "last_success": "2026-09-26T21:11:37.916649+00:00",
       "count": 7,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -8341,5 +8701,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-26T16:24:53.856461+00:00"
+  "collected_at": "2026-09-26T21:11:37.916730+00:00"
 }
