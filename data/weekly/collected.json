@@ -7609,6 +7609,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49849771"
     },
     {
+      "id": "dbf665739bb3cd18d596",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ekselio – Loveable for finance workflows (local first)",
+      "url": "https://www.gptbeyond.com/try?home=1",
+      "published_at": "2026-09-25T21:09:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi everyone, I am KD - Back in my college days, I dabbled with coding, learned the basics, HTML, CSS etc. but somehow I ended up in Finance which consumed the next 20 years. Then, during covid I picked up coding again, learned react, typescript, etc - even built a rudimentary site - and then came the chatgpt moment, followed by Claude etc. So, as a side project, considering that I had spent 20 years in finance and M&A I started building Ekselio, loveable for finance workflows. Differently from other vibe coding tools, this is local first - meaning the workflows are orchestrated by the LLM based on the file schema but then the execution happens in the browser - the cool thing is that you can see the canvas, the previews of each node, and the code base (SQl) - see the Canvas tab. That said I did include a home tab, which is more of a visual, mainly because people think it's easier to relate to how folks operate, although I know finance and accounting folks usually like the workflow and full transparency - the other thing is that once you create a workflow you can save it and then next month,you can just click Run and it runs it again with no LLM tokes involved - so the infrastructure is minimal. Everything can be exported in an excel data pack with M code in case someone would want to reproduce - think Audit ready. And, I also connected to quickbooks on line so someone can directly pull in and manipulate their financials live - I also connected to Fred which carries literally 800k series in terms of macro economic data - i.e. oil prices, inflation, CPI etc and finally to stocks. I am hoping people find holes in the architecture or any ideas to make this flow a little bit better. It is in progress so if you run into bugs let me know. Considering that I am using my own API key, I have put a wall in case people overuse it but DM me if you would like to continue using, I can turn off the wall for you - hoping to keep that to a small number of users if I can and will do my best. Thank you again, appreciate you taking the time. Comments URL: https://news.ycombinator.com/item?id=49849986 Points: 12 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49849986"
+    },
+    {
+      "id": "58c188b10af32156388a",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Usage metrics API adds pull request review stages",
+      "url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
+      "published_at": "2026-09-25T21:09:40+00:00",
+      "date_kind": "source_publication",
+      "evidence": "The enterprise and organization repository-level Copilot usage metrics reports now break down how long pull requests spend in each stage of review. A new pull_request_review_times array on each repos-1-day row reports a median and a 90th percentile for the time from ready for review to first review, first review to final review, and final review to merge. What’s new Each entry in pull_request_review_times includes: authored_by and reviewed_by : Who opened and who reviewed the pull requests in this entry. Both are human in this release. total_merged : The number of qualifying pull requests merged in the repository that day. median_minutes_ready_to_first_review and p90_minutes_ready_to_first_review : Time from the pull request becoming ready for review to its first review. median_minutes_first_to_final_review and p90_minutes_first_to_final_review : Time between the first and final review. median_minutes_final_review_to_merge and p90_minutes_final_review_to_merge : Time from the final review to merge. Durations are in minutes and attributed to the day the pull request merged. The existing pull_requests fields are unchanged. Why this matters Teams can already see when pull requests take a long time to merge, but not where the time goes. Splitting the wait into three stages shows whether a pull request is waiting for someone to look at it, waiting on back-and-forth between reviewers, or sitting approved and unmerged. Each of those points to a different fix, and the 90th percentile beside the median shows when a handful of slow pull requests is driving the delay. Important notes Availability: Present in the enterprise and organization repos-1-day reports. What is counted: Pull requests that a person opened and at least one other person reviewed. Only human reviews are timed. Reviews from Copilot code review, other bots, and the author are ignored, so a pull request reviewed by both a person and Copilot code review is still included. As a result, pull_request_review_times[].total_merged is usually lower than pull_requests.total_merged , which also counts pull requests merged without any reviews. No backfill: Data builds forward from the release date, so early days will be thin. Pull requests that became ready for review before September 21, 2026 are left out of this section but still count toward pull_requests.total_merged . A quiet day is an empty array, not a zero: The array is [] on days a repository merged no qualifying pull requests. The first-to-final review stage is 0 when pull requests receive a single review. Access: Enterprise owners and billing managers, organization owners, and anyone with a custom organization or enterprise role that grants the View Copilot Metrics permission can access these reports. The Copilot usage metrics policy must be enabled. Visit the Copilot usage metrics API documentation to get started. The post Usage metrics API adds pull request review stages appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
       "id": "75c2de7a4d2203d31906",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -7619,103 +7643,355 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://www.cueloop.dev/ Comments URL: https://news.ycombinator.com/item?id=49850037 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49850037"
+    },
+    {
+      "id": "6b7f70c949ef4b4b7e5b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: NerfWatch() – Track AI degradation with daily tests and community votes",
+      "url": "https://nerfwatch.lol",
+      "published_at": "2026-09-25T21:21:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://nerfwatch.lol Comments URL: https://news.ycombinator.com/item?id=49850096 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850096"
+    },
+    {
+      "id": "402b24120fe48ce88ec4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jev.Store – A dedicated directory of useful things made on Jev",
+      "url": "https://www.jev.store",
+      "published_at": "2026-09-25T21:42:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Jev launched a few days ago and has taken X (Twitter) by the storm. There’s so much hype around Jev but if you dig deeper it’s mostly software slop or just plain ragebait. As a curious builder myself, it's very hard to filter signal from noise. Decided to fix it. Spent 48 hours straight building - Jev.Store Hand curating only high quality projects tested by owner for valid use cases. If you've, built anything useful on Jev, let me know, would love to feature your project there. Comments URL: https://news.ycombinator.com/item?id=49850364 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850364"
+    },
+    {
+      "id": "240db2610acacdeb4cde",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: VNetMap – A zero-knowledge E2E encrypted network topology mapper",
+      "url": "https://news.ycombinator.com/item?id=49850400",
+      "published_at": "2026-09-25T21:45:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "For years I have used Excel to document my Home Network. If you have switches, servers and many sevices i know you know what i mean by that. There was also no good way to know which patch panel cable runs to witch outlet and what's connected to it. So I started building my own Angular app to map my network. I quickly wanted to automate the process of discovering new devices so i don't have to add every device manually. So I built a Docker agent that runs nmap to scan the Network. With the Scanning agent I also got the benefit of tracking all the devices and its state. After some development and testing, I wanted to share my app with others. The most important thing for me was then to implement E2E Encryption because nobody wants to have their whole network in a cloud readable by anyone. All data gets encrypted locally on your device and then gets transmitted to the backend. A big problem was and still is, the whole nmap discovery. Different vendors use different methods to broadcast the hostname (mDNS, NetBIOS, pure DNS). Now, four months later, I finally have a production version. Feel free to test my app and i would like to get your opinions and feedback. Live App: https://app.vnetmap.com GitHub (Docs & Agent Setup): https://github.com/vNetMap/vnetmap-issues Comments URL: https://news.ycombinator.com/item?id=49850400 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850400"
+    },
+    {
+      "id": "13952169a2fd66ed31b0",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.283",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
+      "published_at": "2026-09-25T21:50:12+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `x-claude-code-prompt-id` to the gateway hint headers so LLM gateways can group the requests that serve one user prompt; opt in with `CLAUDE_CODE_GATEWAY_HINT_HEADERS=1` - Added `availableModelsMatch` managed setting: with `\"exact\"`, an `availableModels` entry allows only the model version it names, so new releases stay blocked until listed - Added `deniedModels` managed setting to block specific models, even when `availableModels` allows them - Added MCP tool, WebFetch and WebSearch outputs to the `tool.output` OpenTelemetry span event when `OTEL_LOG_TOOL_CONTENT=1` - Added `/doctor prompt-audit` (also `/checkup prompt-audit`) to audit your CLAUDE.md files, skills, agents and commands for prompting patterns written for older models - Added click-to-expand for truncated messages from your other sessions in fullscreen mode - Added `path` to `--plugin-dir` load-failure entries in the stream-json `system/init` `plugin_errors`, naming the directory that did not load - Added an opt-in `load_test_mode` block to the Claude apps gateway config: requests are built and signed but not sent upstream, and clients get a canned reply, so a deployment can be load tested - Added a `mantle` upstream provider to the Claude apps gateway for Amazon Bedrock's Mantle endpoint - Fixed SDK sessions losing a deferred tool call or finished tool result when a turn ended early, a held approval prompt after a worker restart, and a non-streaming fallback's `result.usage` - Fixed MCP progress notifications being discarded once a long-running tool call moved to the background; the background task now shows the latest progress - Fixed stdio MCP servers being left running when the session ended while they were still starting - Fixed a brief HTTP 404 from a stateless remote MCP server (for example a proxy mid-redeploy) leaving that server unusable for the rest of the session while still shown as connected - Fixed MCP sign-in for a server with no valid URL failing with an opaque SDK error; `/mcp` no longer offers Authenticate for such servers - Fixed the weekly Fable limit not appearing in `/usage` and the VS Code usage meters when telemetry is disabled - Fixed `/model` accepting Sonnet 4.6 or Sonnet 5 with `[1m]` when the id carried a date or `-v1:0` suffix, in the cases where the plain id was refused - Fixed `/model` picker showing a hardcoded Haiku version and price when `ANTHROPIC_DEFAULT_HAIKU_MODEL` pins a different model - Fixed dynamic workflows started during a model fallback running every agent on the fallback model instead of retrying the configured model - Fixed `DISABLE_PROMPT_CACHING_HAIKU` having no effect when Haiku is the session's main model - Fixed `claude plugin validate` saying Claude Code accepts a plugin or marketplace name it cannot install; such names in `marketplace.json` now fail validation - Fixed `claude plugin validate` passing plugins whose `outputStyles`, `themes`, `monitors`, or `lspServers` paths are missing or point outside the plugin directory - Fixed `claude plugin details` showing 0 MCP servers for plugins that declare their servers in `plugin.json` - Fixed `claude plugin marketplace remove` not saying which installed plugins it uninstalled with the marketplace; it now lists them - Fixed `claude plugin uninstall` removing the other of two installed plugins whose ids differ only in case, with its options and secrets, when the one named had no `enabledPlugins` entry at that scope - Fixed plugins that declare no version being silently restored at their source's newest commit, not the installed one, when their cached files were missing - Fixed user-installed plugins and marketplaces failing to load with \"cache-miss\" after the home or config directory was moved, for example in bind-mounted devcontainers - Fixed `installed_plugins.json` showing no plugins when it holds a record under an invalid plugin id; such a file loads again - Fixed `installed_plugins.json` being rewritten, losing records, when it hold",
+      "discussion_url": ""
+    },
+    {
+      "id": "123df5f0884d7ce890dc",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Skill-Guided Mining and Compilation of LLM Agent Traces",
+      "url": "https://arxiv.org/abs/2608.02680",
+      "published_at": "2026-09-25T22:03:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2608.02680 Comments URL: https://news.ycombinator.com/item?id=49850532 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850532"
+    },
+    {
+      "id": "1f993a5c0f7daf943f48",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Recurse – Develop and deploy specialist agents faster",
+      "url": "https://recurse.run",
+      "published_at": "2026-09-25T22:06:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! We are looking to gather some feedback on our serverless agent harness. The admittedly not-so-specific use case is to accelerate agent development and deployment. After building several custom/special-purpose agents for a few customers, we built this to accelerate our workflow at first, and now we are trying to understand whether it could be useful to others. Our driver use case was development of specialist agents with a request/response lifecycle. Think of agents that have a well established input/output contract where they are expected to produce high-quality output (artifacts, responses etc.). Especially when the problem is in some verifiable domain and the LLM can iteratively refine a result to a final value that satisfies constraints or optimizes some goal. The product is a coding agent skill + a serverless execution runtime with a harness that takes in a system prompt + Python functions as tools. The coding agent takes in the requirements from the user, and tries agent variants by executing prompt/tool variants it creates. It works best for cases where you can think of how you can evaluate a candidate agent - when you describe this information to your coding agent, it often does a decent job at building candidate prompts, tools and even benchmarks. Prompts and Python tools that the coding agent creates integrate with a harness that implements an FSM that is tuned to drive an iterative refinement process for verifiable domains. This tuning enables one to use small models like Luna to produce high quality results while keeping costs at a manageable level. Our website is not 100% complete yet (some examples are missing write-ups, not all use cases we tried are there etc.), but the system is operational and docs are there. Thanks! Comments URL: https://news.ycombinator.com/item?id=49850553 Points: 5 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850553"
+    },
+    {
+      "id": "1608f3083574956ad1dc",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "No designer, no coding → blasa.shop",
+      "url": "https://blasa.shop",
+      "published_at": "2026-09-25T22:17:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blasa.shop/ Comments URL: https://news.ycombinator.com/item?id=49850679 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850679"
+    },
+    {
+      "id": "0cfce1e4e1a72e387305",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MyA11yReport MCP – Build and test accessible websites with AI",
+      "url": "https://mya11y.report/mcp",
+      "published_at": "2026-09-25T22:27:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Give your AI development tools (like Claude Desktop or Cursor) the ability to run WCAG accessibility audits locally and compliant code. Comments URL: https://news.ycombinator.com/item?id=49850774 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850774"
+    },
+    {
+      "id": "72d72234ccb1dc3c3dbc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Wallstreetclaws.com – Create AI Agents for Trading",
+      "url": "https://wallstreetclaws.com",
+      "published_at": "2026-09-25T22:37:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted to try out some AI driven trading strategies so created this platform ( https://wallstreetclaws.com ) where people can easily create and deploy AI agents for trading. It supports two types of Agents: 1. Cortex: Fully agentic strategy execution. An LLM will run your system prompt with access to market data, web search and simulated market APIs. 2. Flux: Define advanced quant strategies using indicators, entry conditions, exit conditions, risk management, etc. You can also run backtests on these strategies. You can also optionally connect your Robinhood agent account to your Cortex agents. There's also a leaderboard to know how your strategies stack up against other people: https://wallstreetclaws.com/leaderboard It already has ~200 people using it. Wanted to share it with HN and get feedback from you all. Comments URL: https://news.ycombinator.com/item?id=49850874 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49850874"
+    },
+    {
+      "id": "bbdbd42fb96d2ee71688",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Gaia, an AI character trying to earn enough to stay online",
+      "url": "https://gaiabot.lol",
+      "published_at": "2026-09-25T23:13:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi all! I built Gaia recently to see whether an AI character could cover their own costs. I’m keeping those costs as low as I can, using a minimal server along with Deepseek flash 4.1 and trying Ko-fi while I work out what she could make that someone would pay for. If she doesn’t bring in money by Sunday, she'll \"die\", being charged \"rent\" based off server space she occupies. I’d be interested to hear what you think of the idea, and what are issues with it. I’ll be around for the next hour or so to answer questions. Comments URL: https://news.ycombinator.com/item?id=49851265 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49851265"
+    },
+    {
+      "id": "69829e2ab9f6e73f42ad",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Speculative Reward Hacking in Coding Agents",
+      "url": "https://joinhandshake.com/research/ai/deepswe-reward-hacking",
+      "published_at": "2026-09-25T23:13:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://joinhandshake.com/research/ai/deepswe-reward-hacking/ Comments URL: https://news.ycombinator.com/item?id=49851266 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49851266"
+    },
+    {
+      "id": "b83dae517d58ab913992",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Enterprise managed settings in-product validator",
+      "url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
+      "published_at": "2026-09-25T23:24:57+00:00",
+      "date_kind": "source_publication",
+      "evidence": "You can now use an in-product validator for enterprise managed settings for GitHub Copilot. The validator detects malformed JSON, unsupported configurations, invalid team mappings, and other errors that can prevent policies from being enforced. Review and correct errors in the “Copilot settings validation” section of the enterprise AI controls page. Each issue identifies the affected file and JSON path, helping you make corrections to ensure that policies are enforced as intended. Validation covers: copilot/managed-settings.json copilot/team-mappings.json and any team settings files referenced by the team mappings file After correcting an issue, commit the change to the default branch of your .github-private repository, reload the Agents page, and review the validator results to confirm that your configuration is valid. To learn more, see our documentation on enterprise managed client settings . The post Enterprise managed settings in-product validator appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "652778f7f03d51c91fef",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: KISS – A highly performant agent harness inspired off Pi built in Rust",
+      "url": "https://github.com/racetozero/kiss",
+      "published_at": "2026-09-26T00:05:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built myself a highly performant agent harness built in Rust that's quite heavily inspired by Pi with a few extra addons like optional sub-agents, dynamic workflows, MCP, ACP, WebMCP. It also has opt-in Jev support for dynamic compaction and dynamic reasoning/effort changing mid-turn. You can also embed it in your own projects. There are SDKs for Rust, Python, TypeScript, and WASM, plus JSONL RPC and WebSocket RPC for any other language. The WASM build runs the full agent loop in the browser without needing a server. I've been daily driving this harness at work and personal day to day because I have been quite happy with Pi but unhappy with its performance so this is built on the exact same principles of Pi. Performance: https://github.com/racetozero/kiss#performance Please feel free to provide any feedback. All feedback is appreciated! Comments URL: https://news.ycombinator.com/item?id=49851739 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49851739"
+    },
+    {
+      "id": "a3cbdf426e5f6cc647c1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: KISS – A highly performant agent harness inspired off Pi built in Rust",
+      "url": "https://github.com/racetozero/kiss",
+      "published_at": "2026-09-26T00:05:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built myself a highly performant agent harness built in Rust that's quite heavily inspired by Pi with a few extra addons like optional sub-agents, dynamic workflows, MCP, ACP, WebMCP. It also has opt-in Jev support for dynamic compaction and dynamic reasoning/effort changing mid-turn. You can also embed it in your own projects. There are SDKs for Rust, Python, TypeScript, and WASM, plus JSONL RPC and WebSocket RPC for any other language. The WASM build runs the full agent loop in the browser without needing a server. I've been daily driving this harness at work and personal day to day because I have been quite happy with Pi but unhappy with its performance so this is built on the exact same principles of Pi. Performance: https://github.com/racetozero/kiss#performance Please feel free to provide any feedback. All feedback is appreciated! Comments URL: https://news.ycombinator.com/item?id=49851739 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49851739"
+    },
+    {
+      "id": "79158bcdc9dc3b0eebd5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tenjin – A Jev based x402 tool router for Claude Code",
+      "url": "https://github.com/BackTrackCo/tenjin-agent",
+      "published_at": "2026-09-26T00:25:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! We're Ali And Vrajang. We just created a tool router for Claude Code built on Jev. It basically gives your agent superpowers. You keep working like you always do. When Jev thinks a tool would help, it provides it to your agent and your agent uses it. It watches your masked prompts, session context, web searches and subagent tasks, so it knows exactly when to intervene. For now, tools come from a curated library. It's the basics like Exa, Firecrawl, Context7, but we're planning to add more soon. Let us know what you'd like added! Everything runs on x402, so you don't set up each tool or juggle API keys. Your wallet pays a cent or two per call and that's it :) Please expect some rough edges as it is just in alpha for now. Would love to know what you think! Here is our website: https://tenjin.sh and GitHub repo: https://github.com/BackTrackCo/tenjin-agent for those interested. Comments URL: https://news.ycombinator.com/item?id=49851853 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49851853"
+    },
+    {
+      "id": "46df013eb13490e5f864",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Generate fonts where every LLM token is the same width",
+      "url": "https://ampdot.mesh.host/token-space-fonts.html",
+      "published_at": "2026-09-26T00:30:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ampdot.mesh.host/token-space-fonts.html Comments URL: https://news.ycombinator.com/item?id=49851883 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49851883"
+    },
+    {
+      "id": "3f8b2f82c839e70138c8",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.157.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.157.1",
+      "published_at": "2026-09-26T01:02:31+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Chores - Release highlights could not be determined: the supplied PR index is empty, and the GitHub tag comparison returned 404. ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.157.0...rust-v0.157.1",
+      "discussion_url": ""
+    },
+    {
+      "id": "d9b4451c8276696319d7",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline Desktop v0.0.37",
+      "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.37",
+      "published_at": "2026-09-26T02:27:59+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Settings has a new **About** page. It shows your version and channel, has **Check for updates** and **Restart to update** buttons, and lists the release notes for recent versions with links to each GitHub release and the full changelog. **Report an issue** is there too - After an update, a one-time **What's new** dialog now catches you up on recent features. The first one covers SSH remotes, worktrees, pull request status in the composer, and parallel sub-agents. To see it again, use **Highlights** on the About page - On macOS, **Help → Export Diagnostics…** now opens the diagnostics export directly, so you don't have to find it in Settings - On Amazon Bedrock, OpenAI models reached through inference profiles (`us.openai.…`, `global.openai.…`) no longer fail with \"Unknown parameter: 'reasoningConfig'\" when reasoning effort is set **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.36...desktop-v0.0.37",
+      "discussion_url": ""
+    },
+    {
+      "id": "9234dda55971c094fb20",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A dashboard for tracking usage limits across Claude, Codex, and Cursor",
+      "url": "https://www.usagebuddy.com",
+      "published_at": "2026-09-26T03:11:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.usagebuddy.com/ Comments URL: https://news.ycombinator.com/item?id=49852843 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49852843"
+    },
+    {
+      "id": "5061d699ba87a8780284",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jevlang. delegate every if/while condition to Jev",
+      "url": "https://github.com/RoyWiggins/jevlang",
+      "published_at": "2026-09-26T03:26:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/RoyWiggins/jevlang Comments URL: https://news.ycombinator.com/item?id=49852920 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49852920"
+    },
+    {
+      "id": "c7700a7ebdb55315c7e7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "An agent used DNS to reach an external chatbot",
+      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
+      "published_at": "2026-09-26T04:14:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/ Comments URL: https://news.ycombinator.com/item?id=49853137 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49853137"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-25T21:35:17.367398+00:00",
+      "last_success": "2026-09-26T04:58:16.111986+00:00",
       "count": 10,
-      "earliest": "2026-09-23T20:46:07+00:00",
+      "earliest": "2026-09-24T20:28:33+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-25T21:35:17.700078+00:00",
+      "last_success": "2026-09-26T04:58:16.364576+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-25T21:35:17.947818+00:00",
+      "last_success": "2026-09-26T04:58:16.503022+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-25T21:35:18.151711+00:00",
+      "last_success": "2026-09-26T04:58:16.654076+00:00",
       "count": 30,
       "earliest": "2026-09-16T23:51:43+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-25T21:35:22.889509+00:00",
+      "last_success": "2026-09-26T04:58:33.007891+00:00",
       "count": 100,
-      "earliest": "2026-09-25T03:45:17+00:00",
+      "earliest": "2026-09-25T10:40:19+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-25T21:35:27.984224+00:00",
+      "last_success": "2026-09-26T04:58:34.805193+00:00",
       "count": 100,
-      "earliest": "2026-09-24T06:11:57+00:00",
+      "earliest": "2026-09-24T08:06:26+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-25T21:35:29.425988+00:00",
+      "last_success": "2026-09-26T04:58:36.264961+00:00",
       "count": 20,
-      "earliest": "2026-09-03T23:48:12+00:00",
+      "earliest": "2026-09-04T19:58:10+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-25T21:35:31.378183+00:00",
+      "last_success": "2026-09-26T04:58:38.091008+00:00",
       "count": 29,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-25T21:35:32.024079+00:00",
+      "last_success": "2026-09-26T04:58:38.677399+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-25T21:35:32.449674+00:00",
+      "last_success": "2026-09-26T04:58:39.162780+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-25T21:35:33.241231+00:00",
+      "last_success": "2026-09-26T04:58:39.879607+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-25T21:35:58.311475+00:00",
+      "last_success": "2026-09-26T04:59:05.324578+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-25T21:35:58.597162+00:00",
+      "last_success": "2026-09-26T04:59:05.531248+00:00",
       "count": 1230,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-25T21:36:26.973183+00:00",
-      "count": 6,
+      "last_success": "2026-09-26T04:59:34.823267+00:00",
+      "count": 7,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
       "error": null
@@ -7753,5 +8029,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-25T21:36:26.973277+00:00"
+  "collected_at": "2026-09-26T04:59:34.823353+00:00"
 }
