@@ -9011,43 +9011,283 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://rebyte.ai/docs/agents-api/overview Comments URL: https://news.ycombinator.com/item?id=49865755 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49865755"
+    },
+    {
+      "id": "fb23c43a0903e9fd90a6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Interactive Phaistos Disc workbench, rotation ergonomics, null models",
+      "url": "https://lessthanzero.github.io/phaistos-disk",
+      "published_at": "2026-09-27T12:36:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://lessthanzero.github.io/phaistos-disk/ Comments URL: https://news.ycombinator.com/item?id=49866163 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49866163"
+    },
+    {
+      "id": "35217840cb2ba231d75d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Augur – Sandboxed macOS VMs with Xcode for AI Coding Agents",
+      "url": "https://github.com/h1d3mun3/augur",
+      "published_at": "2026-09-27T12:52:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/h1d3mun3/augur Comments URL: https://news.ycombinator.com/item?id=49866246 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49866246"
+    },
+    {
+      "id": "1ad0a9231be83d384a62",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI agent running cost calculator (and when a SaaS platform is cheaper)",
+      "url": "https://broutonlab.com/calculators/how-much-does-an-ai-agent-cost",
+      "published_at": "2026-09-27T14:26:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://broutonlab.com/calculators/how-much-does-an-ai-agent-cost/ Comments URL: https://news.ycombinator.com/item?id=49866912 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49866912"
+    },
+    {
+      "id": "9c3e9f052f86f4708df2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Matching Jev on BANKING77 at a thousandth of the cost",
+      "url": "https://news.ycombinator.com/item?id=49867086",
+      "published_at": "2026-09-27T14:47:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "We developed an early vector embedding model at Lawrence Berkeley National Lab and extended it called the Tuatara Vector Model. It's a blend and scored against Jev's 3,080 BANKING77 test messages resulting in 91.79% versus 92.40%, a statistical tie with some good cost savings. As most may know, BANKING77 is a public dataset from PolyAI with 13,083 messages to a bank, each labelled with intents. The split was 10,003 messages for training and 3,080 for testing. The run used the pinned model jev-1.13.0, all 77 intents as options in a single question, and up to 24 training examples retrieved for each message. Jev got 2,846 of 3,080 right. Recomputing Jev’s accuracy from the file gives 92.40%, the same figure the experiment reports. More stats: https://cymetica.com/blog/matching-jev-on-banking77-at-a-tho... Comments URL: https://news.ycombinator.com/item?id=49867086 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49867086"
+    },
+    {
+      "id": "2fdd6c958edb63b0e2db",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: TinyAIArena watch AI agents battle it out",
+      "url": "https://tinyaiarena.com",
+      "published_at": "2026-09-27T15:51:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Did you ever click on an “AI Arena” expecting glorious battle and instead get a boring benchmark? If so, this project is for you: proper life-or-death fights between four models on a picturesque 8×8 grid. May the most intelligent one win! Click on any of the matches to spectate them. Code: https://github.com/hp6/ai-arena Comments URL: https://news.ycombinator.com/item?id=49867775 Points: 78 # Comments: 36",
+      "discussion_url": "https://news.ycombinator.com/item?id=49867775"
+    },
+    {
+      "id": "cd25e33bc1973324be6b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: swe-mux – A terminal multiplexer for coding agents optimized for mobile",
+      "url": "https://github.com/jatoran/swe-mux",
+      "published_at": "2026-09-27T16:02:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "I run a lot of coding agents at once, mostly Claude Code, Codex and pi, across several projects. I got tired of having so many windows open, of agents leaving hung processes behind, of tracking which one needed input, and of having to remote into my desktop or SSH into a single shell to manage them from my phone. Even then, a terminal on a phone couldn't show me the frontend or output I needed to verify the work. I tried Orca and herdr. Both were better than my setup, but neither had a real WYSIWYG markdown notes surface, and neither had a phone interface I could actually work in. swe-mux is the terminal multiplexer I built for that. It runs any shell or CLI in real terminals on your own machine and serves the same live sessions to your desktop and your phone. It's built around agents: Claude Code, Codex, opencode, pi and oh-my-pi get a live status (working, done, or waiting on you), searchable history and resume. Anything else runs as an ordinary terminal with everything except the status. This is the actual terminal and not a UI wrapped around the agent, and you can just use it that way, or start claude in a plain shell and that pane becomes an agent session. On the desktop it's panes and tabs of sessions, notes, files and dev-server previews. Input behaves the same across agents: Shift+Enter, Ctrl+Backspace, paste and click-to-position work in all of them, shortcuts come from presets (tmux, VS Code, Vim, Emacs), and you can paste images straight from the clipboard. Notes and any markdown file in the project open in the same WYSIWYG editor, on desktop and phone, and autosave. No more scattered locations for notes. On the phone it's the same sessions over your own Tailscale network, installed as a PWA: the terminal with a usable keyboard, git diff review, files, notes, and push notifications when an agent needs a decision. A dev server on the host's 127.0.0.1 is proxied through swe-mux, so the phone can open it without exposing another port. Being able to play-test and check a frontend there is what finally closed the development loop on the phone for a lot of my projects. Now I can and do swe anywhere. It's a problem Two things I use constantly: a prompt queue, so something I think of mid-turn waits until the agent is done instead of interrupting it, and messaging between sessions, so a Codex session can ask a Claude session something. I don't want my workflow tied to one provider. General architecture: Sessions survive restarts. A separate supervisor process owns the terminals, so the daemon can restart and the app can update without killing anything. I update it several times a day, so this wasn't optional. Status comes from the CLI's hooks, its transcript and the terminal itself, because no single one reliably tells \"waiting on you\" apart from \"busy in the background\". There's no swe-mux account, no server of mine in the path, and no telemetry. Just your tailnet It was built on Windows, which is where I use it every day and the only platform with a packaged desktop app. The installer is unsigned, so the PyPI install is the way to avoid the SmartScreen prompt. macOS and Linux run the daemon and use a browser. CI runs it on all three, but I haven't lived on those myself, however Linux I have tested. Demo, the real UI with simulated agents, nothing to install: https://swemux.dev/demo/ Install: `uv tool install swe-mux` (or `pipx install swe-mux`), then run `swe-mux` on Windows or `swemux start` elsewhere. Apache-2.0: https://github.com/jatoran/swe-mux I've put a lot of work into the initial user experience to help streamline a quick setup depending on someone's needs, feedback greatly appreciated, thanks Comments URL: https://news.ycombinator.com/item?id=49867905 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49867905"
+    },
+    {
+      "id": "fdded0f4fc79bcb6d3bc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: An MCP-enabled cross between Twitter X Bumble BFF X ChatGPT",
+      "url": "https://druggie.org/log/join/d84c1ae8566b861b8000050de79a3776",
+      "published_at": "2026-09-27T16:08:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "TL;DR: 40k ft view, it's a friend-making app Hey everyone! Basically, at work, I recently instrumented a massive CRM with a massive number of CLI/MCP operations - over 1.5k. So naturally I wanted to see if I could apply similar methods to a personal project. I give you: New Drugs. Based on the idea that people have already gotten addicted to social media not unlike actual drugs, New Drugs aims to use that addiction for good and actually improve your life by integrating Twitter, Bumble BFF, ChatGPT, and a diary into one. From a technical standpoint, New Drugs consists both of a somewhat typical UI as well as a full matching CLI/MCP operation set. This allows you to operate the website through in-app or external agent chat. The CLI provides a semantic search across the possible operations to allow for the number to grow past what efficiently fits in initial context. I really enjoy this pattern. Let me know any questions or feedback you have. It's MERN stack running on a single $6/mo DigitalOcean host. Comments URL: https://news.ycombinator.com/item?id=49867960 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49867960"
+    },
+    {
+      "id": "95ce25fb3fc1a2054fbe",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Chrome extension where Jev decides if each post/video/page is worth it",
+      "url": "https://github.com/plusminushalf/rot-guard",
+      "published_at": "2026-09-27T16:12:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/plusminushalf/rot-guard Comments URL: https://news.ycombinator.com/item?id=49868003 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49868003"
+    },
+    {
+      "id": "1b0c9e31344594ceb344",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Drive your Chrome window from shell (use with Claude)",
+      "url": "https://github.com/borisreitman/browser-session-ctl",
+      "published_at": "2026-09-27T16:24:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/borisreitman/browser-session-ctl Comments URL: https://news.ycombinator.com/item?id=49868143 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49868143"
+    },
+    {
+      "id": "4d75e774a3c2f60fc703",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Banker – CLI for your finances using Enable Banking and SQLite",
+      "url": "https://github.com/karlis-vagalis/banker",
+      "published_at": "2026-09-27T16:32:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, here, what started as a small personal tool, I wanted to create an AI agent-friendly way to fetch and store financial data, like bank accounts, their respective balances and transactions and store them in a small SQLite database, to gather all of them in a single place, store them long term, and assign arbitrary metadata, for example, expense categories, etc. There are not many PSD2 compliant providers, that allow access to personal bank accounts, but Enable Banking is one of the rare few. That is why it is the core of the engine used to access the financial data from different ASPSPs. Thus, it is quite easy to register and set up a personal \"application\" and link your existing bank accounts to access them in the banker CLI. I hope you find it useful! Comments URL: https://news.ycombinator.com/item?id=49868228 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49868228"
+    },
+    {
+      "id": "63cdf79cf83e24d7f759",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Claude on a 2007 Nokia 6300 (Java ME app, TLS 1.0, private CA)",
+      "url": "https://github.com/emir/claude-s40",
+      "published_at": "2026-09-27T17:13:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/emir/claude-s40 Comments URL: https://news.ycombinator.com/item?id=49868631 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49868631"
+    },
+    {
+      "id": "3c5ab87beaef5930782d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: EthosLM - Turn a sentence into a Minecraft city",
+      "url": "https://github.com/chaitbuilds/EthosLM",
+      "published_at": "2026-09-27T17:15:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built EthosLM to turn a description of a place into something you can walk around in Minecraft. The demo starts with “Build me Ba Sing Se.” It produces a city with districts, roads, walls and furnished interiors. Here's the one-minute video: https://www.youtube.com/watch?v=lgixrYLWfhc It works by separating planning from construction. The model chooses the layout and style. A deterministic library generates the buildings, places the blocks and checks the result. Buildings use reusable procedural generators rather than completed schematics. The same system can build a wide variety of things from villages to castles in any terrain. Comments URL: https://news.ycombinator.com/item?id=49868650 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49868650"
+    },
+    {
+      "id": "ffceb35a7eeac4762589",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Gat – Version large files with Git, without an LFS server",
+      "url": "https://github.com/getgat-dev/gat",
+      "published_at": "2026-09-27T17:20:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I built Gat because I wanted one thing from data versioning: check out an old Git commit and recover the datasets, model weights, or assets that belong to it. It's basically a lock file for large files. I’d appreciate any feedback! Comments URL: https://news.ycombinator.com/item?id=49868710 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49868710"
+    },
+    {
+      "id": "6fff679e3d62161f4e1b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: iPulse AI – Visitors can inspect disagreement across debating agents",
+      "url": "https://ipulseai.com/stocks/nvidia-nvda/ai-forecasts",
+      "published_at": "2026-09-27T18:11:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ipulseai.com/stocks/nvidia-nvda/ai-forecasts Comments URL: https://news.ycombinator.com/item?id=49869225 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49869225"
+    },
+    {
+      "id": "58023707df408a61206b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Orglet, an open source desktop app for your own team of cute AI workers",
+      "url": "https://orglet.codepawl.com",
+      "published_at": "2026-09-27T18:37:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "I’m building Orglet, a desktop app where you give AI workers (I call them orglets, and they are cute) their own instructions and talk to them individually or together in a group chat. You can build your own army of orglets using your existing Claude Code or Codex subscription, an API provider, or even locally hosted models. Like other agent harnesses, orglets can access a working folder you give them permission to use. They can split the work among themselves, and you can review the resulting diff before applying changes to your files. Each orglet has its own role, tools and permissions. Orglet is free under AGPLv3. Downloads are available for Windows, macOS and Linux. It is still very early and flaky, so I’d appreciate any contributions. Thank you! Comments URL: https://news.ycombinator.com/item?id=49869508 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49869508"
+    },
+    {
+      "id": "550d7ee2bce3f64b40c8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Asimov's 4 Laws for AI Contexts",
+      "url": "https://github.com/davidsonff/asimov4laws",
+      "published_at": "2026-09-27T18:46:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "For community and agent comments, thoughts, refinements, critiques, pull requests, and use. Comments URL: https://news.ycombinator.com/item?id=49869595 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49869595"
+    },
+    {
+      "id": "3b7437b170cbd535a13f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Boonful – Claude Code can publish and sell what it builds",
+      "url": "https://boonful.io",
+      "published_at": "2026-09-27T19:22:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://boonful.io Comments URL: https://news.ycombinator.com/item?id=49869937 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49869937"
+    },
+    {
+      "id": "5d60ccf402045fd1e546",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Squint – Drag a box on your screen and ask AI about it",
+      "url": "https://heysquint.com",
+      "published_at": "2026-09-27T19:29:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "It improves the usual workflow: take a screenshot, switch to a chat tab, upload it, switch back. - Built with Rust and Tauri v2, including a built-in native screenshot solution for maximum performance and stability. - Answers come from OpenAI models. Fast, the default, usually starts answering within 1–2 seconds; Best is slightly slower, but provides a much higher quality response. - Free is 3 captures a day, up to 10 a week, on Fast, and needs an email sign-in, since usage is metered per account. Plus is $10/month: 2,500 credits a month, the Best model (25 credits per answer, follow-ups included; Fast is 1), and up to 10 follow-ups per capture instead of 2. - Windows 10/11, and Linux on Wayland (GNOME 45+ or KDE Plasma 6). No macOS yet, and no X11. What I'd most like to know: 1. Is this workflow actually quicker than what you do now? 2. Squint Plus is currently $10/month or $99/year: a) At what monthly price would Plus feel like a good deal? b) At what price would it start to feel expensive, though you'd still consider it? c) At what price would it be too expensive to consider at all? 3. Did anything break during install, sign-in, or a capture? Thanks! Comments URL: https://news.ycombinator.com/item?id=49870007 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49870007"
+    },
+    {
+      "id": "ed22bdc97e4039b83a03",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: An AI wedding concierge I built and ran at my own 300-person wedding",
+      "url": "https://ai-do.io/demo",
+      "published_at": "2026-09-27T19:50:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm an American who got married to a Mauritian this past May. We had our Hindu wedding in my wife's home country of Mauritius. My family and friends are not Hindu, and certainly had never been to the tiny island of Mauritius (it's off the coast of Madagascar in case you were wondering). My wife and I arrived in Mauritius only two weeks before the start of the wedding to put the final preparations in place. I dreaded the prospect of answering a billion questions from my guests while trying to do this. I also dreaded them not having a way to find the answers. So I made an AI app that acted as a guest concierge. At first I simply made a wedding db, seeded it with our info, connected an MCP server with tools to it, connected the agent to it, and gave all my guests an invite link to use it. Scope creep took over and now I have an entire AI platform for planning weddings and being a guest concierge. The two sides are actually really complementary to each other: to make the ai answer correctly, you need a knowledge base. So the wedding planning aspect just kind of happened as a result. There's so much more to this and I'm more than happy to discuss everything I've learned -- for example, the number one thing my guests did with the ai on the day of the ceremony was try to jailbreak it. The demo I'm sharing here is an example wedding where you get to act as a guest and can interact with the ai concierge. I hope you find it interesting! Comments URL: https://news.ycombinator.com/item?id=49870185 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49870185"
+    },
+    {
+      "id": "d2a6a95da82a0782d2f3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AstraBox – an open-source alternative to Claude Managed Agents",
+      "url": "https://github.com/Colton-z/AstraBox",
+      "published_at": "2026-09-27T20:31:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Colton-z/AstraBox Comments URL: https://news.ycombinator.com/item?id=49870517 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49870517"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-27T16:58:42.871828+00:00",
+      "last_success": "2026-09-27T21:21:08.234830+00:00",
       "count": 10,
       "earliest": "2026-09-24T20:28:33+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-27T16:58:43.070085+00:00",
+      "last_success": "2026-09-27T21:21:08.438047+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-27T16:58:43.324354+00:00",
+      "last_success": "2026-09-27T21:21:08.552843+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-27T16:58:43.396118+00:00",
+      "last_success": "2026-09-27T21:21:08.801173+00:00",
       "count": 30,
       "earliest": "2026-09-17T20:57:55+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-27T12:02:32.473688+00:00",
+      "last_success": "2026-09-27T21:21:13.286666+00:00",
       "count": 100,
-      "earliest": "2026-09-26T08:49:32+00:00",
+      "earliest": "2026-09-26T19:24:24+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "hn-topics": {
       "last_success": "2026-09-27T12:02:53.889658+00:00",
@@ -9057,56 +9297,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-27T16:59:00.265510+00:00",
+      "last_success": "2026-09-27T21:21:30.451043+00:00",
       "count": 10,
       "earliest": "2026-09-15T20:23:03+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-27T16:59:01.140630+00:00",
+      "last_success": "2026-09-27T21:21:31.081137+00:00",
       "count": 20,
       "earliest": "2026-09-15T05:53:27+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-27T16:59:01.522411+00:00",
+      "last_success": "2026-09-27T21:21:31.386565+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-27T16:59:01.869860+00:00",
+      "last_success": "2026-09-27T21:21:31.672407+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-27T16:59:02.430675+00:00",
+      "last_success": "2026-09-27T21:21:32.100898+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-27T16:59:14.411333+00:00",
+      "last_success": "2026-09-27T21:21:40.935738+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-27T16:59:14.561887+00:00",
+      "last_success": "2026-09-27T21:21:41.163234+00:00",
       "count": 1230,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-27T16:59:28.280726+00:00",
+      "last_success": "2026-09-27T21:21:51.577546+00:00",
       "count": 5,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
@@ -9145,5 +9385,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-27T16:59:28.280823+00:00"
+  "collected_at": "2026-09-27T21:21:51.577655+00:00"
 }
