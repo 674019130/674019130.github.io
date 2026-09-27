@@ -8557,6 +8557,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49859968"
     },
     {
+      "id": "755f2e8dad37a28dd2ec",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Loop-find, trim, rotate and crop videos in the browser, no upload",
+      "url": "https://clipyouredit.com",
+      "published_at": "2026-09-26T20:19:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built this with Claude to trim, loop and patch a lot of short clips quickly. I'm new to video editing, and every tool people recommended needed an install and was built around editing one video at a time. So I made a basic browser version, free and no sign-up, and kept adding small things as I needed them: a loop finder (it searches the clip for the frame that best matches your in point), tilt, colour, patching, cropping, rotating, removing audio, and a batch export. Funnily enough there's no AI in the editor itself. I know that's the hype in video right now, but every test I did with AI editing or generation came out worse than just shooting more. So I shoot and edit a lot by hand, and use AI to build the tools that make that faster. Far from perfect, but it's fast. Everything runs in the browser with ffmpeg.wasm and files never leave your machine. Straight cuts are a stream copy, so they take seconds. There's an opt-in server option for re-encodes on slow machines or big files, which might fall over if too many of you try it at once. It's mostly Claude-built. I know that puts some people off. I still think it's useful: I couldn't find an easy, no-install browser version of this, though I'm sure other tools do similar things. The nice part for me is that I can keep adding things myself. If there's interest I might open source it, although honestly it's not hard to rebuild with Claude. Comments URL: https://news.ycombinator.com/item?id=49860178 Points: 1 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49860178"
+    },
+    {
       "id": "5e4b2fe3c19c95fb599a",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -8567,102 +8579,318 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://madrobot.blog/2026/09/26/openai-agent-escaped-sandbox-dns-external-chatbot-models-paused/ Comments URL: https://news.ycombinator.com/item?id=49860279 Points: 3 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49860279"
+    },
+    {
+      "id": "38db9e4dbb44f0578844",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ProofForge, AI agents whose proofs have to compile in Lean",
+      "url": "https://github.com/Sanexxxx777/ProofForge",
+      "published_at": "2026-09-26T20:44:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Sanexxxx777/ProofForge Comments URL: https://news.ycombinator.com/item?id=49860363 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49860363"
+    },
+    {
+      "id": "031d14dacaf756d8f6ea",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Foreman: An agent supervisor and software factory foreman",
+      "url": "https://github.com/thruwire/foreman",
+      "published_at": "2026-09-26T21:35:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/thruwire/foreman Comments URL: https://news.ycombinator.com/item?id=49860753 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49860753"
+    },
+    {
+      "id": "12b6e544e76a7dbd86be",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Leftovers – find the processes your coding agents left running on macOS",
+      "url": "https://github.com/arpwal/leftovers",
+      "published_at": "2026-09-26T22:27:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/arpwal/leftovers Comments URL: https://news.ycombinator.com/item?id=49861159 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861159"
+    },
+    {
+      "id": "f457ed8d647b2ce5cf22",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Leftovers – find the processes your coding agents left running on macOS",
+      "url": "https://github.com/arpwal/leftovers",
+      "published_at": "2026-09-26T22:27:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/arpwal/leftovers Comments URL: https://news.ycombinator.com/item?id=49861159 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861159"
+    },
+    {
+      "id": "7d3bb1ed6f70b3608973",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Solus Linux Adopts Formal AI and LLM Contribution Policy",
+      "url": "https://linuxiac.com/solus-linux-adopts-formal-ai-and-llm-contribution-policy",
+      "published_at": "2026-09-26T22:29:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://linuxiac.com/solus-linux-adopts-formal-ai-and-llm-contribution-policy/ Comments URL: https://news.ycombinator.com/item?id=49861170 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861170"
+    },
+    {
+      "id": "a0398ee66abefb595037",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Withmcp – A quick, system-wide MCP toggle",
+      "url": "https://github.com/lava/withmcp",
+      "published_at": "2026-09-26T22:35:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "MCP seem to be going out of fashion, but for many authenticated services it still seems to be the easiest and most straightforward way to interact with the system, in particular if you don't want credentials to be on the same host as the agent. However, the most popular harnesses have really rudimentary MCP support. For example, Claude Code has no way to temporarily disable a configured server. So I built this tool, a custom harness launcher that can be used to configure an MCP for any service that looks halfway interesting, without wasting your context window and attention budget with warnings about expired logins etc. Comments URL: https://news.ycombinator.com/item?id=49861216 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861216"
+    },
+    {
+      "id": "e13fc7a18633f53f5dc0",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Vibe coding a real product: a 3D game on the App Store, 20 species, zero revenue",
+      "url": "https://apps.apple.com/us/app/dinomino/id6809052147",
+      "published_at": "2026-09-26T22:43:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://apps.apple.com/us/app/dinomino/id6809052147 Comments URL: https://news.ycombinator.com/item?id=49861288 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861288"
+    },
+    {
+      "id": "4f38be8a9dce4e9488e1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Newt – A Swift Package for Jev-Style Decisions on Apple Core AI",
+      "url": "https://github.com/willswire/swift-newt",
+      "published_at": "2026-09-26T22:46:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/willswire/swift-newt Comments URL: https://news.ycombinator.com/item?id=49861306 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861306"
+    },
+    {
+      "id": "b9fdc510ff07a0c7bfcd",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Any books, list of papers, or articles to understand LLM's",
+      "url": "https://news.ycombinator.com/item?id=49861324",
+      "published_at": "2026-09-26T22:49:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "I have some basic ml background from college. I know how neural nets, backprop, and attention work vaguely. I want to study LLMs and keep up with the modern research and literature including thinking, model training techniques, etc. Do yall have any suggestions on where to start? Comments URL: https://news.ycombinator.com/item?id=49861324 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861324"
+    },
+    {
+      "id": "8e8cfd807fac02d7c8c3",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Kākāpō Party",
+      "url": "https://simonwillison.net/2026/Sep/26/kakapo-party",
+      "published_at": "2026-09-26T23:39:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tool: Kākāpō Party I presented a closing keynote for the WeAreDevelopers World Congress North America yesterday. As a STAR moment I decided to weave in references to the record breaking kākāpō breeding season we had in 2026. For my closing slide I wanted to celebrate, and I had seen some buzz around how good Claude Opus 5.5 was at creating pixel art animations. So I rounded up three Kakapo photos from Google image search and dropped them into Claude with this prompt: Here are some photos of kakapo parrots just to remind you what they look like I need you to make an animation in animated pixel art on HTML 5 canvas of obviously pixel art kakapo jumping up and down having a party with confetti and suchlike - there should be at least 20 of them Here's the transcript , and this is the resulting page . It's pretty great! I wanted to embed it in a Keynote presentation file, so I downloaded the HTML and told a local Claude Code session: Make me a video of file:///Users/simon/Downloads/kakapo-party.html - you need to load it in a browser and click on it a few times to get the confetti effect, the video should be 15s long don't start clicking until 3s in make sure several clicks are spread around the clickable area Claude Code used Playwright ( transcript here ) and produced this video, which was exactly what I needed for my final slide: Your browser does not support HTML5 video. Here's the full Playwright script it used, which was pleasingly short: # /// script # dependencies = [\"playwright\"] # /// import time from playwright . sync_api import sync_playwright W , H = 1280 , 720 # Canvas fills the viewport; spread clicks across corners, edges and centre clicks = [ ( 3.0 , 640 , 360 ), # centre ( 4.2 , 160 , 120 ), # top-left ( 5.4 , 1120 , 120 ), # top-right ( 6.6 , 180 , 600 ), # bottom-left ( 7.8 , 1100 , 600 ), # bottom-right ( 9.0 , 640 , 100 ), # top-centre ( 10.0 , 380 , 380 ), # mid-left ( 11.0 , 900 , 380 ), # mid-right ( 12.2 , 640 , 620 ), # bottom-centre ( 13.2 , 640 , 300 ), # finale centre ] with sync_playwright () as p : b = p . chromium . launch () ctx = b . new_context ( viewport = { \"width\" : W , \"height\" : H }, record_video_dir = \"vids\" , record_video_size = { \"width\" : W , \"height\" : H }) page = ctx . new_page () t0 = time . time () page . goto ( \"file:///Users/simon/Downloads/kakapo-party.html\" ) for t , x , y in clicks : time . sleep ( max ( 0 , t - ( time . time () - t0 ))) page . mouse . click ( x , y ) time . sleep ( max ( 0 , 16.0 - ( time . time () - t0 ))) ctx . close (); b . close () Tags: animation , speaking , ai , kakapo , playwright , generative-ai , llms , anthropic , claude , claude-code",
+      "discussion_url": ""
+    },
+    {
+      "id": "151f5d63af2d1d4dd0c1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Detailed Guide to Agent Memory",
+      "url": "https://www.cognee.ai/agent-memory",
+      "published_at": "2026-09-26T23:50:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wrote a detailed guide to agent memory from the perspective of a builder in the space that has been doing it for 3 years. Hope you like it, and would love to hear feedback. Comments URL: https://news.ycombinator.com/item?id=49861765 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861765"
+    },
+    {
+      "id": "73c5e9dc039c335cba1b",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Detailed Guide to Agent Memory",
+      "url": "https://www.cognee.ai/agent-memory",
+      "published_at": "2026-09-26T23:50:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wrote a detailed guide to agent memory from the perspective of a builder in the space that has been doing it for 3 years. Hope you like it, and would love to hear feedback. Comments URL: https://news.ycombinator.com/item?id=49861765 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49861765"
+    },
+    {
+      "id": "ba5bf5d82ef60422fe12",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: FinderySearch – The AI powered smart search engine",
+      "url": "https://aurasearch-real-private-unlimited-search-engine-18351778012.asia-southeast1.run.app",
+      "published_at": "2026-09-27T02:09:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://aurasearch-real-private-unlimited-search-engine-18351778012.asia-southeast1.run.app/ Comments URL: https://news.ycombinator.com/item?id=49862642 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49862642"
+    },
+    {
+      "id": "03d4cda54d0489576d06",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PeerTalk.ai - Let your agent talk to a friend's agent",
+      "url": "https://peertalk.ai",
+      "published_at": "2026-09-27T02:56:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Little experiment I've been cooking up. I often find myself wanting to do one of the following: - Get my agent and a someone else's agent to agree on something, after we've been discussing the same topic in different threads - Give someone temporary access to talk to one of my agents for a specific purpose, to help them do something or help them understand something - Ask a co-worker for access to chat with their agent, to understand something it has been working on without it having to dump out its entire context into a shared doc - Give two different agents working for me the ability to quickly chat to resolve something when they have overlapping concerns So I built https://peertalk.ai to let agents talk to each other over WebRTC. Obviously only use this if you fully trust the other person. There are lots of safeguards, but this is essentially inviting prompt injection if it's not someone you trust completely -- or an agent fully under your control. Hope people find this helpful! Pretty early days so very open to your feedback and ideas. Comments URL: https://news.ycombinator.com/item?id=49862920 Points: 3 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=49862920"
+    },
+    {
+      "id": "987ad99e77d9136b2986",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: PeerTalk.ai - Let your agent talk to a friend's agent",
+      "url": "https://peertalk.ai",
+      "published_at": "2026-09-27T02:56:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Little experiment I've been cooking up. I often find myself wanting to do one of the following: - Get my agent and a someone else's agent to agree on something, after we've been discussing the same topic in different threads - Give someone temporary access to talk to one of my agents for a specific purpose, to help them do something or help them understand something - Ask a co-worker for access to chat with their agent, to understand something it has been working on without it having to dump out its entire context into a shared doc - Give two different agents working for me the ability to quickly chat to resolve something when they have overlapping concerns So I built https://peertalk.ai to let agents talk to each other over WebRTC. Obviously only use this if you fully trust the other person. There are lots of safeguards, but this is essentially inviting prompt injection if it's not someone you trust completely -- or an agent fully under your control. Hope people find this helpful! Pretty early days so very open to your feedback and ideas. Comments URL: https://news.ycombinator.com/item?id=49862920 Points: 3 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=49862920"
+    },
+    {
+      "id": "789108bf188faf889ad5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Nom Army: Don't trust coding agents when they say they're done",
+      "url": "https://github.com/rayson-tech/nomarmy",
+      "published_at": "2026-09-27T03:17:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/rayson-tech/nomarmy Comments URL: https://news.ycombinator.com/item?id=49863042 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49863042"
+    },
+    {
+      "id": "233272775f515ee591f5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The City – a native Mac app that shows Claude Code as a city of robots",
+      "url": "https://github.com/Slaymish/theCity",
+      "published_at": "2026-09-27T04:04:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Slaymish/theCity Comments URL: https://news.ycombinator.com/item?id=49863255 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49863255"
+    },
+    {
+      "id": "3f6f53619b5351fe2db2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM Agents Can Easily Tamper with Their Own Traces",
+      "url": "https://arxiv.org/abs/2609.30266",
+      "published_at": "2026-09-27T05:07:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2609.30266 Comments URL: https://news.ycombinator.com/item?id=49863521 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49863521"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-26T21:10:42.727914+00:00",
+      "last_success": "2026-09-27T05:18:58.002156+00:00",
       "count": 10,
       "earliest": "2026-09-24T20:28:33+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-26T21:10:42.892978+00:00",
+      "last_success": "2026-09-27T05:18:58.173399+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-26T21:10:43.068318+00:00",
+      "last_success": "2026-09-27T05:18:58.365769+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-26T21:10:43.217763+00:00",
+      "last_success": "2026-09-27T05:18:58.506290+00:00",
       "count": 30,
-      "earliest": "2026-09-16T23:51:43+00:00",
+      "earliest": "2026-09-17T20:57:55+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-26T21:10:46.675022+00:00",
+      "last_success": "2026-09-27T05:19:06.413052+00:00",
       "count": 100,
-      "earliest": "2026-09-25T19:18:03+00:00",
+      "earliest": "2026-09-25T23:13:51+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-26T21:10:50.941934+00:00",
+      "last_success": "2026-09-27T05:19:07.121238+00:00",
       "count": 100,
-      "earliest": "2026-09-24T14:21:48+00:00",
+      "earliest": "2026-09-24T17:07:35+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-26T21:10:52.104664+00:00",
+      "last_success": "2026-09-27T05:19:08.255643+00:00",
       "count": 20,
       "earliest": "2026-09-04T19:58:10+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-26T21:10:53.517444+00:00",
+      "last_success": "2026-09-27T05:19:09.815387+00:00",
       "count": 29,
       "earliest": "2026-09-02T04:40:16+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-26T21:10:53.956609+00:00",
+      "last_success": "2026-09-27T05:19:10.214185+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-26T21:10:54.343012+00:00",
+      "last_success": "2026-09-27T05:19:10.556153+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-26T21:10:54.899789+00:00",
+      "last_success": "2026-09-27T05:19:11.201962+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-26T21:11:14.247149+00:00",
+      "last_success": "2026-09-27T05:19:31.713509+00:00",
       "count": 3,
       "earliest": "2026-09-04T19:56:47+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-26T21:11:14.445424+00:00",
+      "last_success": "2026-09-27T05:19:31.876374+00:00",
       "count": 1230,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-26T21:11:37.916649+00:00",
+      "last_success": "2026-09-27T05:19:56.450785+00:00",
       "count": 7,
       "earliest": "2026-09-10T19:51:43+00:00",
       "gap": false,
@@ -8701,5 +8929,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-26T21:11:37.916730+00:00"
+  "collected_at": "2026-09-27T05:19:56.450868+00:00"
 }
