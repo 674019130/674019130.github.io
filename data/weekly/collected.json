@@ -13489,6 +13489,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49874386"
     },
     {
+      "id": "0ef5ac39d4ac4c01e3f5",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "published_at": "2026-09-28T07:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+      "discussion_url": ""
+    },
+    {
       "id": "b09390ca22c164ebb8f6",
       "source": "huggingface",
       "publisher": "Hugging Face",
@@ -13511,34 +13523,118 @@
       "date_kind": "source_publication",
       "evidence": "Unify vertical video buys with Google Display & Video 360. See how Unilever boosted reach by 24% using Gemini-powered measurement. Get the details.",
       "discussion_url": ""
+    },
+    {
+      "id": "7722f60ddb4144789855",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "3 ways this grocer cooks for 200 guests with Gemini",
+      "url": "https://blog.google/products-and-platforms/products/gemini/edys-grocer-gemini",
+      "published_at": "2026-09-28T15:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Edy Massih uses Gemini to transform regular recipes into massive catering spreads, automate grocery orders, and adapt menus for dietary restrictions.",
+      "discussion_url": ""
+    },
+    {
+      "id": "807f1d5690298ee8daf5",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "See what 4 builders are making with Gemini 3.8 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-flash-developers",
+      "published_at": "2026-09-28T16:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "See what developers have built with Gemini 3.8 Flash, our most intelligent workhorse model, launched in early September.",
+      "discussion_url": ""
+    },
+    {
+      "id": "0f02b7d1c876a23131d0",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Google Arts & Culture turns 15 — and gives its app a makeover",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/new-arts-culture-app",
+      "published_at": "2026-09-28T16:30:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Explore art and culture with visual-first conversation search, a redesigned home feed, AI experiments and 27 new city guides in the Google Arts & Culture app.",
+      "discussion_url": ""
+    },
+    {
+      "id": "2b2cec3281ad01972671",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.284",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
+      "published_at": "2026-09-28T18:02:03+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added Claude Sonnet 5.5 (`claude-sonnet-5-5`), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads - Added a \"Yes, but ask again next time\" answer to auto mode's prompt before a read outside the working directories, so you can allow that one read and still be asked about later ones - Added dollar amounts to the Claude apps gateway spend limit in `/usage` and the status line (for example \"$271.40 / $500.00 spent this month\") when the gateway runs this version or later; the status line's `rate_limits.spend_limit` also gains `used_usd`, `limit_usd` and `period` - Added `effortSlider:decreaseEffort`, `increaseEffort` and `toggleUltracode` keybinding actions, so the `/effort` slider's arrow and Tab keys can be rebound in `keybindings.json` - Added `/rate-limit-options` to `/help` and the command menu for claude.ai subscribers, so the usage-limit notices that mention it point to a command you can find - Added `/mcp reconnect all` in the interactive terminal to retry every MCP server that failed to connect or needs authentication at once - Added Claude apps gateway startup warnings when a managed policy's `availableModels` is empty, or leaves out the model Claude Code starts on without setting `model` or `enforceAvailableModels` - Added `auth: { google: {} }` for Claude apps gateway `telemetry.forward_to` destinations, so telemetry can be exported straight to Google Cloud's OTLP endpoint using the gateway's Google Cloud credentials - Added certificate client authentication (`private_key_jwt`) between the Claude apps gateway and its identity provider, for identity providers that issue certificate credentials instead of client secrets - Fixed a damaged response stream showing raw errors such as \"JSON Parse error\" or \"undefined is not an object\", or writing the word \"undefined\" into an answer, instead of being retried or reported as an interrupted response - Fixed an overloaded or server error arriving right after a thinking block ending the turn with an error instead of being retried - Fixed \"Prompt is too long\" errors that persisted after compacting: when the compacted request is still too long, Claude Code now compacts once more, keeping less of the recent conversation - Fixed a session whose model is unavailable, with no fallback model left, showing a bare \"is currently unavailable\" message (or \"Something went wrong\" in cloud sessions) instead of the model-unavailable notice and its Learn more link - Fixed Agent SDK sessions crashing when a user message contains an image with a malformed `source`, and failing on every later turn after a malformed document block; a malformed image is now replaced with an explanatory note - Fixed MCP tool calls in a resumed session failing with \"No such tool available\" while their server was still connecting; the call now waits up to 10 seconds for the server - Fixed repeated calls to the plan-usage endpoint after it rate-limits or rejects your login: `/usage`, `/extra-usage` and IDE usage views now back off instead of re-asking - Fixed `claude mcp add` reporting success when managed settings restrict MCP servers to plugins; it now refuses and says what to do, instead of saving a server that never loads - Fixed the `/plugin` configure screen: boolean options are now a true/false choice instead of free text, number options refuse invalid input, and ←/→ change an options field instead of switching tabs - Fixed `ANTHROPIC_FOUNDRY_RESOURCE` being interpolated into the Foundry endpoint host unvalidated; a value that is not a plain resource name is now refused - Fixed Claude Desktop behind a Claude apps gateway offering no 1M context option: the gateway now marks each 1M-capable model for Desktop automatically - Fixed ↓ in shell mode selecting a hidden background-tasks pill, which stopped Backspace and Ctrl+U from editing the prompt - Fixed Bash tool failing on Windows with many plugins enabled: plugin `bin/` directories that don't ",
+      "discussion_url": ""
+    },
+    {
+      "id": "01357a5cdb09c8dce03c",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Claude Sonnet 5.5 in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
+      "published_at": "2026-09-28T18:03:57+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Claude Sonnet 5.5, Anthropic’s newest Sonnet model, is now generally available in GitHub Copilot. It is designed for well-scoped everyday work like building features and fixing bugs. In our early testing, Sonnet 5.5 stood out for its efficiency, matching Claude Sonnet 5 on coding tasks while using significantly fewer steps, tokens, and tool calls. It also finished tasks noticeably faster. This model is billed at provider list pricing under usage-based billing. See Models and pricing for GitHub Copilot for details. Availability in GitHub Copilot Claude Sonnet 5.5 is available to Copilot Pro, Pro+, Max, Business, and Enterprise users. You can select the model in the model picker in: Visual Studio Code Visual Studio Copilot CLI GitHub Copilot coding agent GitHub Copilot app github.com GitHub Mobile on iOS and Android JetBrains IDEs Xcode Eclipse Rollout will be gradual. Check back soon if you don’t see it yet. Enabling access Copilot Enterprise and Copilot Business plan administrators can manage access to Claude Sonnet 5.5 through the model policy in Copilot settings. Under default model enablement, new models are automatically enabled unless an administrator has turned off the global default or explicitly disables this model. Learn more To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot. Share your feedback Join the GitHub Community to share your feedback. The post Claude Sonnet 5.5 in GitHub Copilot appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "128132ab2df6ea026410",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting @joedaroo",
+      "url": "https://simonwillison.net/2026/Sep/28/joedaroo",
+      "published_at": "2026-09-28T19:11:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "To say that we were surprised at the jump and suddenness of the capabilities of our models when it came to “cyber” or “swarming” or “message boards” or anything else related to the incidents is an understatement. Security posture takes time to develop. It’s not just about hardening the systems at play; you have to ingrain it in the culture of the company. The literal people themselves in your organization have to change and evolve with it. These jumps in capabilities were so fast and so sudden that they created an extremely difficult problem. [...] So today my hope is that everyone around the world can look at their own organization and say: how can I deal with a surprise or a sudden jump in AI capability? Are my people, my systems, or my processes resilient to surprises? Do my teams know what to do when something goes wrong? Do I have the right incident response? The right comms and messaging? Do I have the right people ready to go when capabilities jump? — @joedaroo , Agent Security at OpenAI, identity confirmed by The Information's Rocket Drew Tags: generative-ai , ai-security-research , openai , ai , llms",
+      "discussion_url": ""
+    },
+    {
+      "id": "24ec8ddae29de43dc019",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Claude Sonnet 5.5",
+      "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5",
+      "published_at": "2026-09-28T22:07:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Claude Sonnet 5.5 New Sonnet model from Anthropic today. They say it \"runs 30%+ faster, and costs up to 30% less for most work\" - it's priced the same as Sonnet 5 but appears to beat it on every benchmark, and should be cheaper to run as well. Here are some pelicans riding bicycles . Sonnet 5.5 suffered from the same bug as Opus 5.5 : the \"max\" thinking effort pelican thought for 128,000 tokens (at a cost of $1.28) before running out of tokens and failing to produce an SVG. Here's the pelican it gave me for thinking effort \"xhigh\", at a cost of 5.74 cents and taking 41 seconds: Sonnet 5.5 appears to be almost as good as Opus 5.5 on some coding tasks, including various viral 3D animation tricks . The most interesting thing about Sonnet 5.5 is that it's now the model used for the free tier on claude.ai . OpenAI's ChatGPT free tier uses Luna 5.6, which means Anthropic currently have a much more capable free offering. I ran this prompt against that free tier: build me an HTML page that renders a three-dimensional pelican riding a bicycle using WebGL And got back this page , which is a solid effort. Anthropic's announcement reiterates that Haiku 5.5 will be available \"in the coming weeks\". I really hope that one is price-competitive with GPT-6 Luna! Tags: ai , generative-ai , llms , anthropic , claude , pelican-riding-a-bicycle , llm-release",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-28T13:55:41.507726+00:00",
+      "last_success": "2026-09-28T23:16:40.823392+00:00",
       "count": 10,
-      "earliest": "2026-09-24T20:28:33+00:00",
+      "earliest": "2026-09-25T09:55:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-28T13:55:41.616763+00:00",
+      "last_success": "2026-09-28T23:16:41.013396+00:00",
       "count": 20,
-      "earliest": "2026-09-22T23:50:00+00:00",
+      "earliest": "2026-09-23T15:15:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-28T13:55:41.802471+00:00",
+      "last_success": "2026-09-28T23:16:41.312443+00:00",
       "count": 869,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-28T13:55:41.912388+00:00",
+      "last_success": "2026-09-28T23:16:41.498222+00:00",
       "count": 30,
-      "earliest": "2026-09-18T19:09:27+00:00",
+      "earliest": "2026-09-18T23:57:57+00:00",
       "gap": false,
       "error": null
     },
@@ -13557,56 +13653,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-28T13:55:52.312586+00:00",
+      "last_success": "2026-09-28T23:16:51.648565+00:00",
       "count": 10,
-      "earliest": "2026-09-15T20:23:03+00:00",
+      "earliest": "2026-09-17T00:12:02+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-28T13:55:53.026160+00:00",
+      "last_success": "2026-09-28T23:16:52.451328+00:00",
       "count": 20,
       "earliest": "2026-09-15T05:53:27+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-28T13:55:53.390030+00:00",
+      "last_success": "2026-09-28T23:16:52.838029+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-28T13:55:53.678766+00:00",
+      "last_success": "2026-09-28T23:16:53.284903+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-28T13:55:54.143637+00:00",
-      "count": 9,
-      "earliest": "2026-08-21T22:52:46+00:00",
+      "last_success": "2026-09-28T23:16:53.773150+00:00",
+      "count": 8,
+      "earliest": "2026-08-26T18:09:57+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-28T13:56:04.129031+00:00",
+      "last_success": "2026-09-28T23:17:09.871796+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-28T13:56:04.279755+00:00",
-      "count": 1230,
+      "last_success": "2026-09-28T23:17:10.069882+00:00",
+      "count": 1233,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-28T13:56:17.169637+00:00",
+      "last_success": "2026-09-28T23:17:27.459148+00:00",
       "count": 6,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
@@ -13645,5 +13741,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-28T13:56:17.169860+00:00"
+  "collected_at": "2026-09-28T23:17:27.459274+00:00"
 }
