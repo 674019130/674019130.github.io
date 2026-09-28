@@ -4597,6 +4597,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49823869"
     },
     {
+      "id": "a0242eae8a64695e1e19",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "We just shipped support for the ugliest part of HTTP: Vary",
+      "url": "https://simonwillison.net/2026/Sep/23/hn-49823961",
+      "published_at": "2026-09-23T23:14:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "My comment on We just shipped support for the ugliest part of HTTP: Vary — Hacker News. I've been wanting this from Cloudflare for years . The classic problem here is if you do that thing where user agents that send \"accept: text/html\" get HTML, while user agents that don't get JSON or some other format. This used to be impossible to deploy behind Cloudflare caching, because they ignored the Vary header on anything other than images - so you risked caching the JSON version and then serving it up to someone who was expecting HTML. (Independent of the Cloudflare feature I ended up deciding never to use that pattern, because I prefer having URL that predictably returns HTML or JSON - I add a .json suffix to my apps to serve JSON instead.) Tags: http , cloudflare",
+      "discussion_url": ""
+    },
+    {
       "id": "1bfc4b06cbdcc71e367c",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -9013,6 +9025,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49865755"
     },
     {
+      "id": "0b3b452b532b5904f8ac",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Vibe Coding Developer Productivity Tools",
+      "url": "https://mikemcquaid.com/vibe-coding-developer-productivity-tools",
+      "published_at": "2026-09-27T12:34:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://mikemcquaid.com/vibe-coding-developer-productivity-tools/ Comments URL: https://news.ycombinator.com/item?id=49866142 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49866142"
+    },
+    {
+      "id": "97f3ecc64f0c5fee89dd",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A wall that listens: the local-LLM pipeline behind an AI party in Vilnius",
+      "url": "https://vania-novikau.me/ai-party-wall",
+      "published_at": "2026-09-27T12:35:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vania-novikau.me/ai-party-wall/ Comments URL: https://news.ycombinator.com/item?id=49866154 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49866154"
+    },
+    {
       "id": "fb23c43a0903e9fd90a6",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -9037,9 +9073,45 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49866246"
     },
     {
+      "id": "f3bef95ba2b909aaca5e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Augur – Sandboxed macOS VMs with Xcode for AI Coding Agents",
+      "url": "https://github.com/h1d3mun3/augur",
+      "published_at": "2026-09-27T12:52:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/h1d3mun3/augur Comments URL: https://news.ycombinator.com/item?id=49866246 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49866246"
+    },
+    {
+      "id": "98f0e120d4a8fa4f1576",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Your AI Agent Forgot Half of What You Told It",
+      "url": "https://www.oreilly.com/radar/your-ai-agent-already-forgot-half-of-what-you-told-it",
+      "published_at": "2026-09-27T13:15:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.oreilly.com/radar/your-ai-agent-already-forgot-half-of-what-you-told-it/ Comments URL: https://news.ycombinator.com/item?id=49866429 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49866429"
+    },
+    {
       "id": "1ad0a9231be83d384a62",
       "source": "hn-show",
       "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI agent running cost calculator (and when a SaaS platform is cheaper)",
+      "url": "https://broutonlab.com/calculators/how-much-does-an-ai-agent-cost",
+      "published_at": "2026-09-27T14:26:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://broutonlab.com/calculators/how-much-does-an-ai-agent-cost/ Comments URL: https://news.ycombinator.com/item?id=49866912 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49866912"
+    },
+    {
+      "id": "5fbaabf131f304eb4e12",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
       "category": "discovery",
       "title": "Show HN: AI agent running cost calculator (and when a SaaS platform is cheaper)",
       "url": "https://broutonlab.com/calculators/how-much-does-an-ai-agent-cost",
@@ -9073,6 +9145,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49867775"
     },
     {
+      "id": "aeaf305e84c54184f9cc",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Tragic Alley of the LLM",
+      "url": "https://nikotak.com/tragic-alley-of-the-llm.html",
+      "published_at": "2026-09-27T15:55:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://nikotak.com/tragic-alley-of-the-llm.html Comments URL: https://news.ycombinator.com/item?id=49867823 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49867823"
+    },
+    {
       "id": "cd25e33bc1973324be6b",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -9082,6 +9166,18 @@
       "published_at": "2026-09-27T16:02:04+00:00",
       "date_kind": "community_post",
       "evidence": "I run a lot of coding agents at once, mostly Claude Code, Codex and pi, across several projects. I got tired of having so many windows open, of agents leaving hung processes behind, of tracking which one needed input, and of having to remote into my desktop or SSH into a single shell to manage them from my phone. Even then, a terminal on a phone couldn't show me the frontend or output I needed to verify the work. I tried Orca and herdr. Both were better than my setup, but neither had a real WYSIWYG markdown notes surface, and neither had a phone interface I could actually work in. swe-mux is the terminal multiplexer I built for that. It runs any shell or CLI in real terminals on your own machine and serves the same live sessions to your desktop and your phone. It's built around agents: Claude Code, Codex, opencode, pi and oh-my-pi get a live status (working, done, or waiting on you), searchable history and resume. Anything else runs as an ordinary terminal with everything except the status. This is the actual terminal and not a UI wrapped around the agent, and you can just use it that way, or start claude in a plain shell and that pane becomes an agent session. On the desktop it's panes and tabs of sessions, notes, files and dev-server previews. Input behaves the same across agents: Shift+Enter, Ctrl+Backspace, paste and click-to-position work in all of them, shortcuts come from presets (tmux, VS Code, Vim, Emacs), and you can paste images straight from the clipboard. Notes and any markdown file in the project open in the same WYSIWYG editor, on desktop and phone, and autosave. No more scattered locations for notes. On the phone it's the same sessions over your own Tailscale network, installed as a PWA: the terminal with a usable keyboard, git diff review, files, notes, and push notifications when an agent needs a decision. A dev server on the host's 127.0.0.1 is proxied through swe-mux, so the phone can open it without exposing another port. Being able to play-test and check a frontend there is what finally closed the development loop on the phone for a lot of my projects. Now I can and do swe anywhere. It's a problem Two things I use constantly: a prompt queue, so something I think of mid-turn waits until the agent is done instead of interrupting it, and messaging between sessions, so a Codex session can ask a Claude session something. I don't want my workflow tied to one provider. General architecture: Sessions survive restarts. A separate supervisor process owns the terminals, so the daemon can restart and the app can update without killing anything. I update it several times a day, so this wasn't optional. Status comes from the CLI's hooks, its transcript and the terminal itself, because no single one reliably tells \"waiting on you\" apart from \"busy in the background\". There's no swe-mux account, no server of mine in the path, and no telemetry. Just your tailnet It was built on Windows, which is where I use it every day and the only platform with a packaged desktop app. The installer is unsigned, so the PyPI install is the way to avoid the SmartScreen prompt. macOS and Linux run the daemon and use a browser. CI runs it on all three, but I haven't lived on those myself, however Linux I have tested. Demo, the real UI with simulated agents, nothing to install: https://swemux.dev/demo/ Install: `uv tool install swe-mux` (or `pipx install swe-mux`), then run `swe-mux` on Windows or `swemux start` elsewhere. Apache-2.0: https://github.com/jatoran/swe-mux I've put a lot of work into the initial user experience to help streamline a quick setup depending on someone's needs, feedback greatly appreciated, thanks Comments URL: https://news.ycombinator.com/item?id=49867905 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49867905"
+    },
+    {
+      "id": "5b41b7383d861280eb3c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: swe-mux – A terminal multiplexer for coding agents optimized for mobile",
+      "url": "https://github.com/jatoran/swe-mux",
+      "published_at": "2026-09-27T16:02:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "I run a lot of coding agents at once, mostly Claude Code, Codex and pi, across several projects. I got tired of having so many windows open, of agents leaving hung processes behind, of tracking which one needed input, and of having to remote into my desktop or SSH into a single shell to manage them from my phone. Even then, a terminal on a phone couldn't show me the frontend or output I needed to verify the work. I tried Orca and herdr. Both were better than my setup, but neither had a real WYSIWYG markdown notes surface, and neither had a phone interface I could actually work in. swe-mux is the terminal multiplexer I built for that. It runs any shell or CLI in real terminals on your own machine and serves the same live sessions to your desktop and your phone. It's built around agents: Claude Code, Codex, opencode, pi and oh-my-pi get a live status (working, done, or waiting on you), searchable history and resume. Anything else runs as an ordinary terminal with everything except the status. This is the actual terminal and not a UI wrapped around the agent, and you can just use it that way, or start claude in a plain shell and that pane becomes an agent session. On the desktop it's panes and tabs of sessions, notes, files and dev-server previews. Input behaves the same across agents: Shift+Enter, Ctrl+Backspace, paste and click-to-position work in all of them, shortcuts come from presets (tmux, VS Code, Vim, Emacs), and you can paste images straight from the clipboard. Notes and any markdown file in the project open in the same WYSIWYG editor, on desktop and phone, and autosave. No more scattered locations for notes. On the phone it's the same sessions over your own Tailscale network, installed as a PWA: the terminal with a usable keyboard, git diff review, files, notes, and push notifications when an agent needs a decision. A dev server on the host's 127.0.0.1 is proxied through swe-mux, so the phone can open it without exposing another port. Being able to play-test and check a frontend there is what finally closed the development loop on the phone for a lot of my projects. Now I can and do swe anywhere. It's a problem Two things I use constantly: a prompt queue, so something I think of mid-turn waits until the agent is done instead of interrupting it, and messaging between sessions, so a Codex session can ask a Claude session something. I don't want my workflow tied to one provider. General architecture: Sessions survive restarts. A separate supervisor process owns the terminals, so the daemon can restart and the app can update without killing anything. I update it several times a day, so this wasn't optional. Status comes from the CLI's hooks, its transcript and the terminal itself, because no single one reliably tells \"waiting on you\" apart from \"busy in the background\". There's no swe-mux account, no server of mine in the path, and no telemetry. Just your tailnet It was built on Windows, which is where I use it every day and the only platform with a packaged desktop app. The installer is unsigned, so the PyPI install is the way to avoid the SmartScreen prompt. macOS and Linux run the daemon and use a browser. CI runs it on all three, but I haven't lived on those myself, however Linux I have tested. Demo, the real UI with simulated agents, nothing to install: https://swemux.dev/demo/ Install: `uv tool install swe-mux` (or `pipx install swe-mux`), then run `swe-mux` on Windows or `swemux start` elsewhere. Apache-2.0: https://github.com/jatoran/swe-mux I've put a lot of work into the initial user experience to help streamline a quick setup depending on someone's needs, feedback greatly appreciated, thanks Comments URL: https://news.ycombinator.com/item?id=49867905 Points: 3 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49867905"
     },
     {
@@ -9205,6 +9301,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49869595"
     },
     {
+      "id": "68bfb4d365551c330a6e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Meta's Muse agent is attacking one of the economy's most profitable weak spots",
+      "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
+      "published_at": "2026-09-27T18:55:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html Comments URL: https://news.ycombinator.com/item?id=49869691 Points: 7 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49869691"
+    },
+    {
       "id": "3b7437b170cbd535a13f",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -9251,103 +9359,355 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/Colton-z/AstraBox Comments URL: https://news.ycombinator.com/item?id=49870517 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49870517"
+    },
+    {
+      "id": "6e4fd3e735f7b90b9179",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jevdit – a social network moderated by Jev",
+      "url": "https://jevdit.com",
+      "published_at": "2026-09-27T20:46:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! I got this idea that Jev would be a good fit for content moderation, so I investigated how good it is exactly, see my write up at https://tn1ck.com/blog/jevdit And it is actually quite good at it and dirt cheap. I built this reddit like site to see if it actually holds true when exposed to the internet. Anyone who visits gets immediately an anonymous account. It's a simple server side rendered go application, it uses Cloudflare Turnstile to limit bots. Comments URL: https://news.ycombinator.com/item?id=49870654 Points: 8 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49870654"
+    },
+    {
+      "id": "7b784b436430f43554ad",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Minecraft PvP against DiffusionGemma-as-Jev, 24 ms per decision",
+      "url": "https://mc.alexzms.com",
+      "published_at": "2026-09-27T21:13:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://mc.alexzms.com Comments URL: https://news.ycombinator.com/item?id=49870906 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49870906"
+    },
+    {
+      "id": "a6deb2af78cadbcbf836",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jev-Like Model Learns to Cook",
+      "url": "https://rlafuente.com/posts/2026-9-26-training-a-small-decision-model-to-cook",
+      "published_at": "2026-09-27T21:21:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://rlafuente.com/posts/2026-9-26-training-a-small-decision-model-to-cook# Comments URL: https://news.ycombinator.com/item?id=49870984 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49870984"
+    },
+    {
+      "id": "084ab8c6362206b9e4ba",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "George Hotz’s opinion on AI coding",
+      "url": "https://twitter.com/__tinygrad__/status/2044354852663558370",
+      "published_at": "2026-09-27T21:40:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/__tinygrad__/status/2044354852663558370 Comments URL: https://news.ycombinator.com/item?id=49871139 Points: 17 # Comments: 10",
+      "discussion_url": "https://news.ycombinator.com/item?id=49871139"
+    },
+    {
+      "id": "f2a4b1caa4ef38b14df7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Vanish moves heavy computation off your laptop",
+      "url": "https://vanishcompute.com",
+      "published_at": "2026-09-27T21:51:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN I was tired of agents draining my battery and my laptop being unusable so I made vanish, a CLI tool to run your commands in the cloud. Vanish is designed to be process transparent so just prefixing any command with vanish should work, like doing `vanish cargo test` Comments URL: https://news.ycombinator.com/item?id=49871223 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49871223"
+    },
+    {
+      "id": "ca5322638ce7e36b5e4e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Fusor – Like Vue, but the logic is Rust",
+      "url": "https://fusor.build",
+      "published_at": "2026-09-27T22:45:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've been building Fusor. It's a reactive web framework for Rust where the templates are plain HTML files, so there's no markup living inside Rust macros like view! or rsx!. The state and logic live in ordinary Rust structs, and the whole app compiles to WASM. It also benefits from Rust type checkers, even for the HTML bindings. The Fusor website is fully built using the framework. It's all experimental, so I expect breaking changes and lots of refactors. Any feedback is welcome, and so are contributions! The project is pro AI, if you do decide to contribute. Comments URL: https://news.ycombinator.com/item?id=49871569 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49871569"
+    },
+    {
+      "id": "7ee985c20bed43edec8b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Has Anthropic been nerfing their models without disclosure",
+      "url": "https://github.com/ninjahawk/livenerf",
+      "published_at": "2026-09-27T23:21:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ninjahawk/livenerf Comments URL: https://news.ycombinator.com/item?id=49871819 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49871819"
+    },
+    {
+      "id": "60775b93c26f0572d0aa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agenttab – Status Icons for Claude Code, Codex and OpenCode Tabs",
+      "url": "https://github.com/marciob/agenttab",
+      "published_at": "2026-09-27T23:38:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/marciob/agenttab Comments URL: https://news.ycombinator.com/item?id=49871923 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49871923"
+    },
+    {
+      "id": "acc3a0571c8d6d46e992",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "2026 in LLMs (so far)",
+      "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far",
+      "published_at": "2026-09-27T23:54:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "On Friday I gave the closing keynote at the WeAreDevelopers World Congress North America in San Jose. I tied together the key trends from the past year into a chronological exploration of everything that happened in 2026. The video is on YouTube ; here are my annotated slides and notes to accompany the talk. And as an annotated presentation : # I'm going to give a lightning tour of everything that has happened so far in 2026. The year isn't over yet! # For me, 2026 started a couple of months earlier in November 2025. # November saw the release of two important models: Claude Opus 4.5 and GPT-5.1. As is usually the case with new models, these were incremental improvements on the models that came before them. But every now and then when a model improves, it crosses an invisible line where something that didn't really work starts working. In this case, the thing that started working was their coding agents. Claude Code had been around since February 2025, Codex was a little younger. These two new models, when paired with their respective coding agent harnesses, improved from \"often make mistakes\" to \"reliable enough to use on a day-to-day basis\". # For a couple of years now I've been evaluating new models by asking them to \"Generate an SVG of a pelican riding a bicycle\". It's probably the world's stupidest benchmark - there's only so much you can learn from it. But it's still a challenge for models, because drawing pelicans is difficult, drawing bicycles is difficult, and pelicans can't ride bicycles in the first place. Here's the state of the art for November. Claude still couldn't really draw a bicycle! The GPT-5.1 bicycle frame is pretty crap too. # Also in November, we had the first commit to an obscure GitHub repository called \"Warelay\". We'll come back to this repository shortly. # An then there were the December holidays, and individual developers took some time off and many started tinkering with these new coding agent model combinations... and it began to dawn on us quite how much they could do that they couldn't do before. Come January, a lot of us were quite excited to start putting this stuff into action. # Every year I set myself a New Year's resolution, and for as long as I can remember it's been the same thing: stay focused. Take on less new projects. Try to get things done in the projects I already have. # This year I decided that since that had never worked before, I'm going to go the other way. We've got coding agents now, let's see what they can do. I'm going to take on as many new projects as I like! (You can ask me at the end of the year if this turned out to be a good idea or not. I have a lot of plates spinning right now.) \"Be more ambitious\" has been something of a theme for the year, because the only way to find the limits of this technology is to keep on pushing them until they don't work. # I also went on the Oxide and friends podcast with Bryan Cantrill and Adam Leventhal to share predictions for the next year (and three and six years). With hindsight, my LLM predictions were pretty unambitious. I said \"it will become undeniable that LLMs write good code\" - I think we're there now. I predicted we would finally solve sandboxing. I counted and around 40 of the 277 sessions at this conference touched on sandboxing or agent security in some way, so we're at least putting a lot of effort into that! I predicted \"a Challenger disaster\" for coding agent security. There's certainly been a whole lot of noise around agent security this year, though the exact disaster I predicted (with coding agents being hijacked and causing real-world economic damage) hasn't really played out. We threw in a joke prediction that the Pope would weigh in on the economic impact of LLMs. # I also predicted that New Zealand's Kākāpō parrots would have an outstanding breeding season this year. These birds live in New Zealand. They are flightless nocturnal parrots. They're kind of dumpy looking, I think they're beautiful, and there were",
+      "discussion_url": ""
+    },
+    {
+      "id": "9624db6f18377e0f9d3b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Help us fire our UI/UX designers",
+      "url": "https://vosu.ai",
+      "published_at": "2026-09-28T00:29:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Get $10,000 & 3 months of Claude Max on me Redesign http://vosu.ai with any AI tool Better visuals. Better structure If we love it and choose your redesign, I’ll pay for your Claude Max subscription for 3 months Reply with your demo Comments URL: https://news.ycombinator.com/item?id=49872224 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49872224"
+    },
+    {
+      "id": "ec88ee0d5ccf36f9ff7d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ParkourNote – A research workspace, built solo in a month with Claude",
+      "url": "https://note.parkourlabs.io",
+      "published_at": "2026-09-28T00:31:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm sushi. I built ParkourNote, a personal knowledge management app that currently focuses on research: finding papers, reading PDFs, asking AI about them, and writing. A few things it does: Describe a topic, and an agent creates a project, searches arXiv, and imports relevant papers The PDF reader previews citations on hover, overlays translations on the page, and shows original and translated text side by side The agent sees the page you're reading and your selection; you can also connect Claude or ChatGPT via MCP A block editor with math support that compiles LaTeX / Typst to PDF Demo (7 min): https://youtu.be/yZs2nQJtgkg ParkourNote is just me. I built it in about a month: the web app, a Flutter mobile app, and a Chrome extension. It isn't even my full-time job. I work on it for an hour or two in the morning before work, plus evenings and weekends. Two things surprised me along the way: - The web app uses BlockNote for Notion-style editing, but I wanted Flutter for mobile. I asked Claude to implement a compatible editor in Flutter. It took about a day, and it works: documents round-trip between web and mobile. - In high school I worked as a video editor for MarginNote. Back then, a single 5-minute video took about a month, from scripting to recording, editing, and animation. For ParkourNote, I made launch videos for the Chinese, English, Japanese, and Korean markets in one weekend, plus a second Chinese version cut for portrait viewing. I didn't open a video editor once. It was all done with Claude Opus 5.5. PG recently posted something along the lines of: in the AI era, you want to be either very close to the users or very close to the intelligence. That resonated with me, but honestly, building this left me a bit lost. I find it hard to think of a consumer software feature that current AI can't build. So if anyone can build anything, where is the moat? I'm genuinely unsure. The other side of it is exciting, though. Running ParkourNote alone, I feel less like a solo developer and more like a CEO of a small company: I manage product, engineering, marketing, and operations, and somehow it's all manageable. A one-person company feels genuinely possible now, in a way it didn't a few years ago. Signup is required since the AI features cost money to run; new accounts get 100 free credits after email verification. Happy to answer questions about the product, the workflow, or the moat question. I'd genuinely like to hear how others are thinking about it. Comments URL: https://news.ycombinator.com/item?id=49872233 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49872233"
+    },
+    {
+      "id": "db35350becc35dc3ce18",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ghostfox – Self-hosted stealth browser for AI agents",
+      "url": "https://github.com/autokeren/ghostfox",
+      "published_at": "2026-09-28T00:45:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/autokeren/ghostfox Comments URL: https://news.ycombinator.com/item?id=49872295 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49872295"
+    },
+    {
+      "id": "3fc0376b8e053d5c1683",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Arsumbris: Malleable, agent-native IDE for typed knowledge",
+      "url": "https://github.com/arsumbris/arsumbris",
+      "published_at": "2026-09-28T00:53:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/arsumbris/arsumbris Comments URL: https://news.ycombinator.com/item?id=49872330 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49872330"
+    },
+    {
+      "id": "6fcd542d546c6c3e4ebb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Stepgate – AI agents that can't skip steps, in one portable file",
+      "url": "https://github.com/Chaarangan/stepgate",
+      "published_at": "2026-09-28T00:57:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Chaarangan/stepgate Comments URL: https://news.ycombinator.com/item?id=49872350 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49872350"
+    },
+    {
+      "id": "a89ea8e2fc8760d6e7f3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Panda, the world's first personal AI computer",
+      "url": "https://pandax1.com",
+      "published_at": "2026-09-28T01:35:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "We're building an AI computer for consumers, most of whom are quite hesitant with existing services due to privacy concerns and because of costs that add up when using various AI tools. Comments URL: https://news.ycombinator.com/item?id=49872550 Points: 8 # Comments: 45",
+      "discussion_url": "https://news.ycombinator.com/item?id=49872550"
+    },
+    {
+      "id": "234b147d6050ca5a65b4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenRig: Multi-Agent Harness",
+      "url": "https://github.com/mvschwarz/openrig",
+      "published_at": "2026-09-28T01:48:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/mvschwarz/openrig Comments URL: https://news.ycombinator.com/item?id=49872623 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49872623"
+    },
+    {
+      "id": "3ddcccf88ac0efdc4ce2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "An open protocol for agent feedback",
+      "url": "https://feedback.now",
+      "published_at": "2026-09-28T02:54:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://feedback.now/ Comments URL: https://news.ycombinator.com/item?id=49873040 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49873040"
+    },
+    {
+      "id": "1c2278ce7a9a1b181919",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agdog – htop and nvitop, fused and agent-aware",
+      "url": "https://github.com/dynaum/agdog",
+      "published_at": "2026-09-28T03:17:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/dynaum/agdog Comments URL: https://news.ycombinator.com/item?id=49873194 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49873194"
+    },
+    {
+      "id": "181f23d1ea4e2ce6118b",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting Muse AI Agent",
+      "url": "https://simonwillison.net/2026/Sep/28/muse-ai-agent",
+      "published_at": "2026-09-28T04:01:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Bad news on the MX Keys Mini pickup. Usman showed up at your building around 9:15 and waited, messaged a bunch of times, and nobody came down. He left angry at 9:38 and left a negative rating. Worse, my auto-reply told him \"Yep I'm here!\" at 9:27 when you clearly weren't available, which is on me. That's a bad look and it made the no-show worse. I've sent him an apology from your account owning it and offering to try again another day. But the negative rating is real, and I should probably stop the auto-replies from claiming you're home when I can't verify that. Want me to change the pickup replies so they don't promise you're there? — Muse AI Agent , working on behalf of @matt.j.robb Tags: meta , generative-ai , muse-agent , ai , general-agents , llms",
+      "discussion_url": ""
+    },
+    {
+      "id": "391c2e612d408c4326ba",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Fframes – GPU first video vibe coding framework with 5 years histroy",
+      "url": "https://fframes.studio",
+      "published_at": "2026-09-28T04:46:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://fframes.studio/ Comments URL: https://news.ycombinator.com/item?id=49873749 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49873749"
+    },
+    {
+      "id": "a950bdad3befd80c639b",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.158.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.158.0",
+      "published_at": "2026-09-28T05:07:23+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## New Features - Configure copy-on-select and right-click paste in the fullscreen TUI. Copied transcript selections now preserve Markdown formatting. (#47639, #47896, #48118) - Connect to MCP servers that require pre-registered OAuth client secrets, including through `codex mcp add --oauth-client-secret`. (#47891) - Secure direct exec-server WebSocket connections with bearer tokens, including connections configured through app-server. (#47601, #47648) - Image generation and editing can explicitly request transparent backgrounds, and edits now accept file-backed conversation images. (#47484, #47956) - Terminal input approval is enabled by default for commands running with elevated permissions; runtime-only grants no longer cause unnecessary reviews. (#47799, #48073) ## Bug Fixes - Fixed Windows sandbox failures involving ordinary Windows 10 paths, rejected stored credentials, and large permission policies. (#47672, #47695, #47919) - Fixed Linux sandbox startup with nested writable roots and preserved Git metadata protections across writable roots on Linux and macOS. (#47623, #47974) - macOS patch operations now recognize system path aliases covered by existing permissions, avoiding unnecessary approval prompts. (#47879) - Approval reviews now retry when new user input arrives, so a status question does not automatically abort a pending action. (#47819) - Mermaid flowcharts now render quoted labels and ampersands; unsupported diagrams explain why they fall back to source. (#47572, #47678) - Command completion events now include early output and report process-launch failures to clients. (#47529, #47665) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.157.0...rust-v0.158.0 - #47441 Use secondary text styling for the transcript footer shortcut hint @etraut-openai - #47447 Extract WebSocket authentication into `codex-websocket-auth` @euroelessar - #47458 Parallelize instruction refresh and tool preparation @hlevy-openai - #47484 Add explicit background control to image generation @alicec-oai - #47520 Route session agent operations through `AgentControl` @jif-oai - #47529 Emit command lifecycle events for unified exec launch failures @steipete-oai - #47536 Route agent lookups and V2 context through `AgentControl` @jif-oai - #47539 Test interrupted one-shot command launch failure persistence @jif-oai - #47540 Add an option to disable multi-agent v2 direct messaging @jif-oai - #47565 Classify rollout read failures by reason and progress @jif-oai - #47568 Record sandbox backends in command execution analytics @iceweasel-oai - #47571 Wait for idle before injecting remote compaction test history @felixxia-oai - #47572 Explain Mermaid rendering fallbacks in the TUI @etraut-openai - #47582 Retain assistant context for Guardian authorization reviews @felixxia-oai - #47584 Preserve streamed assistant message order in retained context @felixxia-oai - #47585 Preserve delivered assistant messages in Guardian retained context @felixxia-oai - #47589 Keep unfinished link destinations out of rich streaming previews @etraut-openai - #47590 Serialize numeric custom reasoning effort as JSON numbers @dylan-hurd-oai - #47591 Stream daemon executable hashing off the async runtime @etraut-openai - #47596 Refresh realtime context for each model request @reia-oai - #47597 Guard prerelease channel and canary updates against older versions @imac-oai - #47601 Add opt-in WebSocket authentication to exec-server @euroelessar - #47603 Add a reap-only drop policy for child processes @charliemarsh-oai - #47604 Extend child commands with session and descriptor controls @charliemarsh-oai - #47605 Route pipe processes through the shared child launcher @charliemarsh-oai - #47610 Use native POSIX spawning for command hooks @charliemarsh-oai - #47611 Use the shared process launcher for Unix shell snapshots @charliemarsh-oai - #47612 Launch Linux pipe processes through a fresh setup helper @freeqaz-openai - #47613 Expand Linux spawn-helper lif",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-27T21:21:08.234830+00:00",
+      "last_success": "2026-09-28T05:24:22.152097+00:00",
       "count": 10,
       "earliest": "2026-09-24T20:28:33+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-27T21:21:08.438047+00:00",
+      "last_success": "2026-09-28T05:24:22.557086+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-27T21:21:08.552843+00:00",
+      "last_success": "2026-09-28T05:24:22.740081+00:00",
       "count": 868,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-27T21:21:08.801173+00:00",
+      "last_success": "2026-09-28T05:24:22.970868+00:00",
       "count": 30,
-      "earliest": "2026-09-17T20:57:55+00:00",
+      "earliest": "2026-09-18T19:09:27+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-27T21:21:13.286666+00:00",
+      "last_success": "2026-09-28T05:24:24.410360+00:00",
       "count": 100,
-      "earliest": "2026-09-26T19:24:24+00:00",
+      "earliest": "2026-09-27T04:04:47+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-27T12:02:53.889658+00:00",
+      "last_success": "2026-09-28T05:24:30.252386+00:00",
       "count": 100,
-      "earliest": "2026-09-24T21:02:34+00:00",
+      "earliest": "2026-09-25T07:07:26+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-27T21:21:30.451043+00:00",
+      "last_success": "2026-09-28T05:24:30.897744+00:00",
       "count": 10,
       "earliest": "2026-09-15T20:23:03+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-27T21:21:31.081137+00:00",
+      "last_success": "2026-09-28T05:24:31.858976+00:00",
       "count": 20,
       "earliest": "2026-09-15T05:53:27+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-27T21:21:31.386565+00:00",
+      "last_success": "2026-09-28T05:24:32.316932+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-27T21:21:31.672407+00:00",
+      "last_success": "2026-09-28T05:24:32.745840+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-27T21:21:32.100898+00:00",
+      "last_success": "2026-09-28T05:24:33.462291+00:00",
       "count": 9,
       "earliest": "2026-08-21T22:52:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-27T21:21:40.935738+00:00",
+      "last_success": "2026-09-28T05:24:47.787743+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-27T21:21:41.163234+00:00",
+      "last_success": "2026-09-28T05:24:47.964932+00:00",
       "count": 1230,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-27T21:21:51.577546+00:00",
-      "count": 5,
+      "last_success": "2026-09-28T05:25:05.499377+00:00",
+      "count": 6,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
       "error": null
@@ -9385,5 +9745,5 @@
       "to": "2026-09-21T15:16:30+00:00"
     }
   ],
-  "collected_at": "2026-09-27T21:21:51.577655+00:00"
+  "collected_at": "2026-09-28T05:25:05.499492+00:00"
 }
