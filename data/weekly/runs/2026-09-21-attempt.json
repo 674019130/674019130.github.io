@@ -1,0 +1,200 @@
+{
+  "request_evidence": [
+    {
+      "id": "aeaf305e84c54184f9cc",
+      "title": "The Tragic Alley of the LLM",
+      "category": "discovery",
+      "evidence": "Article URL: https://nikotak.com/tragic-alley-of-the-llm.html Comments URL: https://news.ycombinator.com/item?id=49867823 Points: 2 # Comments: 0 PRIMARY PAGE: The Tragic Alley of the LLM — NikoTak NikoTak Securing the Web, One Threat at a Time. The Tragic Alley of the LLM 27 September 2026 The attacker and the defender download the same weights. One of them is already using them to get past the other's web application firewall; the other, as of this month, cannot use them in the place where it would matter. Two earlier articles on this blog worked through the evidence for that ( what the measurements say , what can be done anyway ). This one is about why the asymmetry exists, where it holds, where it does not, and why the way out is the same in every case. The short version: the asymmetry is not about who has the model. It is about the time budget of the decision. An attacker uses the model offline, needs one success out of many attempts, pays nothing for a wrong guess, and gets to iterate against a defence he can observe. A defender must be right on every input, inline or nearly so, with a false-positive cost paid by legitimate users, on a distribution the attacker chooses. Gener"
+    },
+    {
+      "id": "2fdd6c958edb63b0e2db",
+      "title": "Show HN: TinyAIArena watch AI agents battle it out",
+      "category": "discovery",
+      "evidence": "Did you ever click on an “AI Arena” expecting glorious battle and instead get a boring benchmark? If so, this project is for you: proper life-or-death fights between four models on a picturesque 8×8 grid. May the most intelligent one win! Click on any of the matches to spectate them. Code: https://github.com/hp6/ai-arena Comments URL: https://news.ycombinator.com/item?id=49867775 Points: 78 # Comm PRIMARY PAGE: Tiny AI Arena TINY AI ARENA Loading assets… Frame 0 / 0 Pre-game SOUND: ON MENU |< < PREV NEXT > >| AUTO PLAY NEW GAME Arrow keys: Left/Right · Home/End · Space: auto · Esc: menu · M: mute GAME LOG GLOBAL CHAT"
+    },
+    {
+      "id": "8e8cfd807fac02d7c8c3",
+      "title": "Kākāpō Party",
+      "category": "discovery",
+      "evidence": "Tool: Kākāpō Party I presented a closing keynote for the WeAreDevelopers World Congress North America yesterday. As a STAR moment I decided to weave in references to the record breaking kākāpō breeding season we had in 2026. For my closing slide I wanted to celebrate, and I had seen some buzz around how good Claude Opus 5.5 was at creating pixel art animations. So I rounded up three Kakapo photos  PRIMARY PAGE: Tool: Kākāpō Party Simon Willison’s Weblog Subscribe Sponsored by: Greptile — AI code reviewers catch bugs at run time and manage your code. Trusted by Nvidia, Netflix, and many more 26th September 2026 Tool Kākāpō Party — Experience an interactive pixel-art celebration featuring kākāpō (New Zealand's flightless parrots) jumping and dancing to music. Click, tap, or press Space to trigger confetti bursts, balloons, streamers, and festive effects while the birds party under a disco ball with choreographed dance moves that sync to an upbeat rhythm. I presented a closing keynote for the WeAreDevelopers World Congress North America yesterday. As a STAR moment I decided to weave in references to the record breaking kākāpō breeding season we had in 2026. For my closing slide I want"
+    },
+    {
+      "id": "d9b4451c8276696319d7",
+      "title": "Cline Desktop v0.0.37",
+      "category": "official_update",
+      "evidence": "- Settings has a new **About** page. It shows your version and channel, has **Check for updates** and **Restart to update** buttons, and lists the release notes for recent versions with links to each GitHub release and the full changelog. **Report an issue** is there too - After an update, a one-time **What's new** dialog now catches you up on recent features. The first one covers SSH remotes, worktrees, pull request status in the composer, and parallel sub-agents. To see it again, use **Highlights** on the About page - On macOS, **Help → Export Diagnostics…** now opens the diagnostics export directly, so you don't have to find it in Settings - On Amazon Bedrock, OpenAI models reached through inference profiles (`us.openai.…`, `global.openai.…`) no longer fail with \"Unknown parameter: 'reasoningConfig'\" when reasoning effort is set **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.36...desktop-v0.0.37"
+    },
+    {
+      "id": "3f8b2f82c839e70138c8",
+      "title": "Codex 0.157.1",
+      "category": "official_update",
+      "evidence": "## Chores - Release highlights could not be determined: the supplied PR index is empty, and the GitHub tag comparison returned 404. ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.157.0...rust-v0.157.1"
+    },
+    {
+      "id": "b83dae517d58ab913992",
+      "title": "Enterprise managed settings in-product validator",
+      "category": "official_update",
+      "evidence": "You can now use an in-product validator for enterprise managed settings for GitHub Copilot. The validator detects malformed JSON, unsupported configurations, invalid team mappings, and other errors that can prevent policies from being enforced. Review and correct errors in the “Copilot settings validation” section of the enterprise AI controls page. Each issue identifies the affected file and JSON path, helping you make corrections to ensure that policies are enforced as intended. Validation covers: copilot/managed-settings.json copilot/team-mappings.json and any team settings files referenced by the team mappings file After correcting an issue, commit the change to the default branch of your .github-private repository, reload the Agents page, and review the validator results to confirm that your configuration is valid. To learn more, see our documentation on enterprise managed client settings . The post Enterprise managed settings in-product validator appeared first on The GitHub Blog ."
+    },
+    {
+      "id": "13952169a2fd66ed31b0",
+      "title": "Claude Code v2.1.283",
+      "category": "official_update",
+      "evidence": "## What's changed - Added `x-claude-code-prompt-id` to the gateway hint headers so LLM gateways can group the requests that serve one user prompt; opt in with `CLAUDE_CODE_GATEWAY_HINT_HEADERS=1` - Added `availableModelsMatch` managed setting: with `\"exact\"`, an `availableModels` entry allows only the model version it names, so new releases stay blocked until listed - Added `deniedModels` managed setting to block specific models, even when `availableModels` allows them - Added MCP tool, WebFetch and WebSearch outputs to the `tool.output` OpenTelemetry span event when `OTEL_LOG_TOOL_CONTENT=1` - Added `/doctor prompt-audit` (also `/checkup prompt-audit`) to audit your CLAUDE.md files, skills, agents and commands for prompting patterns written for older models - Added click-to-expand for truncated messages from your other sessions in fullscreen mode - Added `path` to `--plugin-dir` load-failure entries in the stream-json `system/init` `plugin_errors`, naming the directory that did not load - Added an opt-in `load_test_mode` block to the Claude apps gateway config: requests are built and signed but not sent upstream, and clients get a canned reply, so a deployment can be load tested -"
+    },
+    {
+      "id": "ed9bdec27e3c2b0f9c01",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "category": "official_update",
+      "evidence": "Introducing Gemini 3.8 Live with Live Avatar, which brings near real-time visual presence to Gemini’s conversational AI."
+    },
+    {
+      "id": "abec3742313faaa0c85b",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "category": "official_update",
+      "evidence": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
+    },
+    {
+      "id": "e0a58c4c1301ee0ad266",
+      "title": "llama.cpp v0.5.0",
+      "category": "official_update",
+      "evidence": "## Overview This release focuses on backend performance and correctness, broader model coverage, and more robust server/router operation. It adds HRM-Text (DFM Mimir 1B) support, MiMo-V2.6 and HunyuanOCR conversion support, ggml 0.25.0 backend improvements, multi-address HTTP binding, image outputs from function calls, and several chat parser/UI fixes. ### Highlights - Accelerate CUDA `conv2d` with implicit GEMM ([#29135](https://github.com/ggml-org/llama.cpp/pull/29135)) - Add Metal MoE and SSM_CONV fusion optimizations ([#28948](https://github.com/ggml-org/llama.cpp/pull/28948)) - Allow the server to bind to multiple addresses ([#28690](https://github.com/ggml-org/llama.cpp/pull/28690)) ### API changes - Add `llama_adapter_lora_init_from_file_ptr()` for loading LoRA from an open FILE ([#28993](https://github.com/ggml-org/llama.cpp/pull/28993)) - Document `llama_model_load_from_file_ptr()` as reading from the current position and requiring aligned mmap ([#28993](https://github.com/ggml-org/llama.cpp/pull/28993)) - Add `LLAMA_VOCAB_TYPE_TEST` dummy tokenizer ([#29084](https://github.com/ggml-org/llama.cpp/pull/29084)) - Add `input_image` support to server function-call outputs ([#2"
+    },
+    {
+      "id": "14f9d95a9626ae6ef09e",
+      "title": "Ollama v0.34.4",
+      "category": "official_update",
+      "evidence": "## What's Changed - Structured outputs on thinking models now apply in a single pass, making them faster and more reliable. - Fixed intermittent \"model not found\" errors with a large local library - Fixed the macOS app becoming unresponsive when checking if ChatGPT or Codex is running. - Qwen 3.8 prompt processing is faster on Apple Silicon. - Gemma 4 on Apple Silicon now picks the best image resolution per image, keeping more detail in high-resolution images. - Updated llama.cpp, MLX, and XGrammar. **Full Changelog**: https://github.com/ollama/ollama/compare/v0.34.3...v0.34.4"
+    },
+    {
+      "id": "5fbaabf131f304eb4e12",
+      "title": "Show HN: AI agent running cost calculator (and when a SaaS platform is cheaper)",
+      "category": "discovery",
+      "evidence": "Article URL: https://broutonlab.com/calculators/how-much-does-an-ai-agent-cost/ Comments URL: https://news.ycombinator.com/item?id=49866912 Points: 3 # Comments: 0 PRIMARY PAGE: How Much Does an AI Agent Cost? Calculator | BroutonLab Services How we work Case studies About Tell us about your product Services How we work Case studies About Tell us about your product AI agent cost calculator How much does an AI agent cost? Two numbers hide behind one question: what an agent costs to build — for us, a fixed-price pilot between $30–50K — and what it costs to run every month, driven by volume, model choice, and hosting. The calculator below estimates both from public pricing and our production systems — because how much does an AI agent cost has no honest one-line answer, only an honest breakdown. Estimate it Your agent, two numbers. What should the agent do? Answer & route Multi-step workflow Multi-system autonomy Systems it must act on (CRM, calendar, ERP…): 2 Interactions per month: 20,000 Must run on our infrastructure (self-hosted) Model tier Economy Frontier Build — fixed-price pilot $38–46K One agent, one workflow, in production with evals. 2–4 months. Running — per month $800–1,"
+    },
+    {
+      "id": "fd1267a8861f292e5904",
+      "title": "Show HN: Updated Ceptile AI Search Improved Answers and Research",
+      "category": "discovery",
+      "evidence": "We have recently updated Ceptile's AI answers and use of web sources. Now, It can go deeper and find more accurate answers and results than before. Now, it has become more powerful to give real-time answers. We have also fixed previous bugs. You can submit your review on our mail at support@ceptile.com. We have also upgraded our backend. You can try the AI search at ceptile.com. Watch 2 minutes de PRIMARY PAGE: Ceptile AI Search Sign In Sign In Sign Up Ceptile YouTube Watch 2-Minute Ceptile Demo See AI search in action → Ceptile is AI. By using it, you agree to our Terms & Privacy Policy . Chats may be reviewed and used to improve our AI models. Learn how search works . About Privacy Terms Contact Status Saved Ceptile Notes Settings Normal Chat"
+    },
+    {
+      "id": "f2361eebf77cc36dfca3",
+      "title": "Quoting John Gruber",
+      "category": "discovery",
+      "evidence": "Muse is getting a lot of attention — including mine — because it’s both groundbreaking technically (each user gets their own entire persistent Linux VM running in Meta’s cloud) and because it’s packaged in an easy-to-install easy-to-use way. It’s literally presented as a cute mascot . It’s the first consumer-accessible agentic AI system, and Meta has truly done an amazing job with that. But it’s a PRIMARY PAGE: A quote from John Gruber Simon Willison’s Weblog Subscribe Sponsored by: Greptile — AI code reviewers catch bugs at run time and manage your code. Trusted by Nvidia, Netflix, and many more 25th September 2026 Muse is getting a lot of attention — including mine — because it’s both groundbreaking technically (each user gets their own entire persistent Linux VM running in Meta’s cloud) and because it’s packaged in an easy-to-install easy-to-use way. It’s literally presented as a cute mascot . It’s the first consumer-accessible agentic AI system, and Meta has truly done an amazing job with that. But it’s a genuinely open question whether consumers have any understanding what this means. If you buy a power saw that can cut your fingers off, you are almost certainly aware that you"
+    },
+    {
+      "id": "83cbda645e94a0b9dd00",
+      "title": "Cline Desktop v0.0.36",
+      "category": "official_update",
+      "evidence": "- The app now starts on machines that set a system HTTP(S) proxy, such as Clash, v2ray, or a corporate proxy. Before, the backend sent its local connection checks through the proxy, so it couldn't find its own hub and failed with \"No compatible hub runtime is available.\" Local connections now skip the proxy, and any proxy exemptions you already had are kept - On small or scaled displays, the main window now fits on screen. A 1080p laptop at 150% scaling used to open the window larger than the screen, which pushed the settings and account controls out of reach. An oversized window now shrinks to fit the screen (not counting the taskbar) and opens centered - Plugin slash commands like `/goal` no longer vanish from the slash menu the first time you use them. Plugin commands now load as soon as a workspace opens instead of on your first `/`. If that first load is slow or fails, the app retries in the background, so the command no longer gets sent to the model as plain text - The Providers settings (renamed from API Providers) now keep the model list inside the panel. Long model lists scroll in place, and the model controls stay reachable in short windows - In SSH settings, **Save** is "
+    },
+    {
+      "id": "283d7a5e5dd62c56e1e0",
+      "title": "Codex 0.157.0",
+      "category": "official_update",
+      "evidence": "## New Features - Added GPT-6 Sol and Luna, including Amazon Bedrock support and migration prompts for older models. (#47332, #47347) - Enabled fullscreen transcripts by default and added Shift-click to extend text selections. (#47178, #47414) - Enabled automatic background-server startup for eligible interactive sessions, with recovery choices when server settings are incompatible. (#47179, #47318) - Added an `f` shortcut to fork conversations open in another app, preserving drafts and queued prompts. (#47185) - Made `/import` available in remote sessions and local background-server sessions. (#47317) - Improved terminal rendering with Unicode bullets, checkboxes, aligned equations, and optimization notation. (#47191, #47322) ## Bug Fixes - Preserved active voice conversations when switching threads. (#47381) - Recovered unsent question answers into the composer when turns end, without disrupting active history searches. (#47422, #47423) - Respected tmux mouse settings and restored native scrollback for Terminal.app over SSH in automatic screen mode. (#47399, #47417) - Fixed configured proxy routing for realtime connections and standalone web search, including search redirects. (#"
+    },
+    {
+      "id": "58c188b10af32156388a",
+      "title": "Usage metrics API adds pull request review stages",
+      "category": "official_update",
+      "evidence": "The enterprise and organization repository-level Copilot usage metrics reports now break down how long pull requests spend in each stage of review. A new pull_request_review_times array on each repos-1-day row reports a median and a 90th percentile for the time from ready for review to first review, first review to final review, and final review to merge. What’s new Each entry in pull_request_review_times includes: authored_by and reviewed_by : Who opened and who reviewed the pull requests in this entry. Both are human in this release. total_merged : The number of qualifying pull requests merged in the repository that day. median_minutes_ready_to_first_review and p90_minutes_ready_to_first_review : Time from the pull request becoming ready for review to its first review. median_minutes_first_to_final_review and p90_minutes_first_to_final_review : Time between the first and final review. median_minutes_final_review_to_merge and p90_minutes_final_review_to_merge : Time from the final review to merge. Durations are in minutes and attributed to the day the pull request merged. The existing pull_requests fields are unchanged. Why this matters Teams can already see when pull requests tak"
+    },
+    {
+      "id": "3b11e67390b21a9fcd9b",
+      "title": "Claude Code v2.1.282",
+      "category": "official_update",
+      "evidence": "## What's changed - Added a `maxProseWidth` setting that caps the width of Claude's prose in wide terminals while tables and code blocks keep the full width - Added a startup notice, and `/status` and `claude doctor` entries, listing telemetry variables in a project's settings files that were ignored or that turned telemetry off - Added the `allowClaudeInChromeWithManagedMcp` managed setting to let `claude --chrome` run alongside an exclusive `managed-mcp.json`; the error shown when Chrome is blocked now names it - Added `store.readiness_grace_seconds` to the Claude apps gateway so `/readyz` can stay ready through a short Postgres outage such as a database failover - Added a scrollbar to the `/feedback` drafts list in fullscreen mode; it appears while the mouse is over the list - Fixed every request failing with a 400 error in conversations whose history holds web search results the API cannot decrypt (for example, from a turn answered through a third-party gateway) - Fixed more cases of continued or resumed sessions (`--continue`, `--resume`) re-sending earlier messages in a changed form, which could make the API drop Claude's earlier reasoning - Fixed earlier extended thinking be"
+    },
+    {
+      "id": "5ba642c48f4c0099c1fe",
+      "title": "Behind Project Suncatcher, our moonshot to put AI in space",
+      "category": "official_update",
+      "evidence": "Learn about Project Suncatcher, how we’re testing hardware survival for space, designing cooling systems for AI chips, and more."
+    },
+    {
+      "id": "ed72170d4d6766c57fdd",
+      "title": "Two years of OpenAI Academy",
+      "category": "official_update",
+      "evidence": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+    },
+    {
+      "id": "98f0e120d4a8fa4f1576",
+      "title": "Your AI Agent Forgot Half of What You Told It",
+      "category": "discovery",
+      "evidence": "Article URL: https://www.oreilly.com/radar/your-ai-agent-already-forgot-half-of-what-you-told-it/ Comments URL: https://news.ycombinator.com/item?id=49866429 Points: 2 # Comments: 0 PRIMARY PAGE: Your AI Agent Already Forgot Half of What You Told It – O’Reilly Skip to main content For Enterprise For Government For Higher Ed For Individuals For Content Marketing Explore Skills Cloud Computing Microsoft Azure Amazon Web Services (AWS) Google Cloud Cloud Migration Cloud Deployment Cloud Platforms View all Data Engineering Data Warehouse SQL Apache Spark Microsoft SQL Server MySQL Kafka Data Lake Streaming & Messaging NoSQL Databases Relational Databases View all Data Science Pandas R MATLAB SAS D3 Power BI Tableau Statistics Exploratory Data Analysis Data Visualization View all AI & ML Generative AI Machine Learning Artificial Intelligence (AI) Deep Learning Reinforcement Learning Natural Language Processing TensorFlow Scikit-Learn Hyperparameter Tuning MLOps View all Programming Languages Java JavaScript Spring Python Go C# C++ C Swift Rust Functional Programming View all Software Architecture Object-Oriented Distributed Systems Domain-Driven Design Architectural Patterns View all IT"
+    },
+    {
+      "id": "a59070872b1dff0d1b0a",
+      "title": "Note on 24th September 2026",
+      "category": "discovery",
+      "evidence": "The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder. We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge. Tags: coding-agents , ai , llms PRIMARY PAGE: Note on 24th September 2026 Simon Willison’s Weblog Subscribe Sponsored by: Greptile — AI code reviewers catch bugs at run time and manage your code. Trusted by Nvidia, Netflix, and many more 24th September 2026 The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder. We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge. Posted 24th September 2026 at 11:31 pm Recent articles 2026 in LLMs (so far) - 27th September 2026 Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war - 22nd September 2026 Jev introduces a new shape of LLM - System One, aka Decision Models - 21st September 2026 This is a note by Simon Willison, posted on 24th September 2026 . ai 2,252 llms 1,963 coding-agents 252 Monthly briefing Sponsor me for $10/month and get a curated email digest of the m"
+    },
+    {
+      "id": "f821f5b2ba68dba50891",
+      "title": "Cline v4.1.21",
+      "category": "official_update",
+      "evidence": "### Added - New provider: ai&, an OpenAI-compatible endpoint serving open-weight models from Japan. ### Changed - Refreshed the model catalog to 6,386 models across 209 providers. The resolved default model changes for 19 providers that do not pin one, 11 of them to Claude Opus 5.5 (including GitHub Copilot and Vertex). If you use one of those providers without pinning a model, expect a different default. - Raised the minimum js-yaml version to 4.3.2 to pick up a security fix in the parser used to read rule and skill frontmatter. ### Fixed - Long replies on local models (llama.cpp, Ollama, LM Studio) that hit the output-token limit now compact the conversation and retry once instead of ending the task. These servers cap generation at whatever context is left, regardless of the output budget you set. If compaction cannot help, the existing concise-retry recovery still runs, and the partial answer is kept. - Reopening a task that failed now shows the error with the retry option, instead of presenting it as a completed task. - A command that prints nothing no longer shows a raw JSON blob like `[{\"query\":\"git add -A\",\"result\":\"\",\"success\":true}]` as its output. - On Windows, @-mention "
+    },
+    {
+      "id": "60e252ebde26f8e26fd5",
+      "title": "Codex 0.156.1",
+      "category": "official_update",
+      "evidence": "## New Features - Choose GPT-6 Sol or GPT-6 Luna from the model picker. The rate-limit switch prompt now recommends GPT-6 Luna. (#47405) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.156.0...rust-v0.156.1 - #47405 [hotfix 0.156.0] Add GPT-6 Sol and Luna to the model catalog (#47332) @imac-oai"
+    },
+    {
+      "id": "e44094f32accf92bdf32",
+      "title": "Changes to query results in the GitHub Actions API and UI",
+      "category": "official_update",
+      "evidence": "Queries for workflow runs in the GitHub Actions API and UI now return a less precise but more accurate count of records when you search by workflow, event, status, branch, or actor. We will continue to return paginated results of up to 1,000 items. However, if the number of found records exceeds 2,500, we will report “2,500+” instead of attempting to return the exact number of records. This is because queries that retrieve more than 2,500 records frequently timeout and return the number of records found before the timeout rather than the true count. By implementing this limit, our counts will be more accurate and we will improve performance for customers. If your integrations or scripts rely on retrieving more than 2,500 matching workflow runs from a single query, narrow your filters (e.g., by adding a date range) to retrieve the specific runs you need. This change is rolling out now on github.com and GitHub Enterprise Cloud. The post Changes to query results in the GitHub Actions API and UI appeared first on The GitHub Blog ."
+    },
+    {
+      "id": "1acd88eadb9bd8c31f08",
+      "title": "Claude Code v2.1.281",
+      "category": "official_update",
+      "evidence": "## What's changed - Added Claude apps gateway support for newer Claude Desktop keys in `desktop` policy blocks, including `blockReadsOutsideWorkingDirectories` and `disableBypassPermissionsMode` - Added `assume_role` on Claude apps gateway Bedrock upstreams: the gateway calls Bedrock as an IAM role it assumes through STS, in another AWS account if needed, optionally one session per developer - Added `guardrail: {id, version}` on Claude apps gateway Bedrock upstreams to apply an Amazon Bedrock guardrail to every request sent through them (set it on all Bedrock upstreams or none) - Added `telemetry.resource_attributes` to the Claude apps gateway config, to put fixed labels on the telemetry of Claude Desktop and `/login` sessions - Added `\"attribution\": false` in `settings.json` to hide all commit and PR attribution; older CLI versions skip a settings file that holds it, so keep the object form in files shared across versions - Added MCP URL-mode elicitation on 2026-07-28 protocol connections, so servers can ask Claude Code to open a browser-based flow; no waiting dialog is left on screen when the server has no way to confirm completion - Added MCP server checks to `claude plugin vali"
+    },
+    {
+      "id": "1960da0e6bb687dc2b0c",
+      "title": "Anyone can make stunning HD videos with Gemini Omni in Google Vids",
+      "category": "official_update",
+      "evidence": "Get high-quality video production right from your browser. Anyone with a Google account can create videos for free in Google Vids."
+    },
+    {
+      "id": "46159b37b3094c3d7a89",
+      "title": "Sam Altman’s remarks at the United Nations Security Council",
+      "category": "official_update",
+      "evidence": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
+    }
+  ],
+  "response": {
+    "id": "ed3e5d1f-a7dc-4f6c-b225-bd3c5120757f_b25357b1b660404d895086f19ab81d61",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```json\n{\"items\": [{\"id\": \"d9b4451c8276696319d7\", \"product\": \"Cline Desktop\", \"change\": \"新增About页与更新检查机制\", \"change_en\": \"Added About page with update checks\", \"title\": \"Cline Desktop v0.0.37\", \"summary\": \"Cline Desktop v0.0.37新增设置中的About页面，展示版本与渠道信息，提供检查更新、重启更新、报告问题按钮及近期版本发布说明；更新后弹出一次性What's new对话框，介绍SSH远程、worktree、PR状态与并行子代理等特性。macOS帮助菜单可直接导出诊断信息；修复了Amazon Bedrock上OpenAI推理配置模型设置推理力度时报错的问题。\", \"kind\": \"added\"}, {\"id\": \"e0a58c4c1301ee0ad266\", \"product\": \"llama.cpp\", \"change\": \"后端性能与多地址绑定更新\", \"change_en\": \"Backend perf and multi-address binding updates\", \"title\": \"llama.cpp v0.5.0\", \"summary\": \"llama.cpp v0.5.0聚焦后端性能与正确性：新增HRM-Text、MiMo-V2.6与HunyuanOCR转换支持，CUDA conv2d采用implicit GEMM加速，Metal新增MoE与SSM_CONV融合优化；服务端支持多地址HTTP绑定，函数调用输出支持图像，并新增从FILE指针加载LoRA等API变化。\", \"kind\": \"changed\"}, {\"id\": \"14f9d95a9626ae6ef09e\", \"product\": \"Ollama\", \"change\": \"思考模型结构化输出单次完成\", \"change_en\": \"Single-pass structured outputs on thinking models\", \"title\": \"Ollama v0.34.4\", \"summary\": \"Ollama v0.34.4中思考模型的结构化输出改为单次执行，速度更快更可靠；修复大型本地模型库偶发'模型未找到'错误，以及macOS应用检查ChatGPT/Codex进程时无响应问题；Qwen 3.8在Apple Silicon上提示处理提速，Gemma 4按图选取最佳分辨率；底层更新llama.cpp、MLX与XGrammar。\", \"kind\": \"changed\"}, {\"id\": \"13952169a2fd66ed31b0\", \"product\": \"Claude Code\", \"change\": \"新增模型管控与网关多项能力\", \"change_en\": \"Added model controls and gateway features\", \"title\": \"Claude Code v2.1.283\", \"summary\": \"Claude Code v2.1.283新增availableModelsMatch（exact）与deniedModels管控设置，可精确限制可用模型；网关提示头x-claude-code-prompt-id便于将多请求归组；OpenTelemetry工具输出事件记录MCP、WebFetch与WebSearch内容；新增/doctor prompt-audit审计CLAUDE.md中过时提示词模式，及网关load_test_mode负载测试模式。\", \"kind\": \"added\"}, {\"id\": \"283d7a5e5dd62c56e1e0\", \"product\": \"Codex CLI\", \"change\": \"支持GPT-6 Sol与Luna模型\", \"change_en\": \"Added GPT-6 Sol and Luna model support\", \"title\": \"Codex 0.157.0\", \"summary\": \"Codex 0.157.0新增GPT-6 Sol与GPT-6 Luna模型，含Amazon Bedrock支持与旧模型迁移提示；默认启用全屏转录并支持Shift-click扩展选区；支持符合条件会话自动后台服务器启动、f快捷键分叉对话、远程会话中/import；终端渲染优化Unicode符号与公式对齐；修复代理路由、tmux滚动等问题。\", \"kind\": \"added\"}, {\"id\": \"b83dae517d58ab913992\", \"product\": \"GitHub Copilot\", \"change\": \"企业托管设置校验器上线\", \"change_en\": \"In-product validator for managed settings\", \"title\": \"Copilot设置校验器\", \"summary\": \"GitHub Copilot新增企业托管设置的产品内校验器，可检测格式错误的JSON、不支持的配置、无效团队映射等问题，避免策略无法生效；校验覆盖copilot/managed-settings.json、team-mappings.json及其引用的团队设置文件，每条问题标注受影响文件与JSON路径，修正后提交至.github-private仓库默认分支并重新加载确认。\", \"kind\": \"added\"}, {\"id\": \"2fdd6c958edb63b0e2db\", \"product\": \"Tiny AI Arena\", \"change\": \"作者介绍：模型对战竞技场项目\", \"change_en\": \"Author: repo by hp6 showcasing model battles\", \"title\": \"Tiny AI Arena 模型对战\", \"summary\": \"作者介绍：由hp6在GitHub上开源的AI对战竞技场项目，四个模型在8×8格子地图上进行对局，支持观战、自动播放、新建对局、快捷键操作与全局聊天等交互功能。此条仅为项目介绍，未声明实测效果或性能。\", \"kind\": \"discovery\"}, {\"id\": \"aeaf305e84c54184f9cc\", \"product\": \"LLM攻防不对称分析\", \"change\": \"社区分析LLM攻防时间预算不对称\", \"change_en\": \"Community analysis of LLM attacker/defender asymmetry\", \"title\": \"LLM攻防的悲剧小巷\", \"summary\": \"NikoTak博客文章分析攻击者与防御者下载相同模型权重时为何存在攻防不对称：关键在于决策时间预算——攻击者离线迭代、一次成功即可、错误猜测零成本；防御者需对每个输入实时正确，误报由合法用户买单，且分布由攻击者选择。文章探讨该不对称的适用与不适用场景及应对思路。\", \"kind\": \"discovery\"}]}\n```",
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1790581070,
+    "model": "mimo-v2.6-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1371,
+      "prompt_tokens": 7023,
+      "total_tokens": 8394,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  }
+}
