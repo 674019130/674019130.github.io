@@ -16667,102 +16667,414 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/RehanMohammed985/runtape Comments URL: https://news.ycombinator.com/item?id=49904620 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49904620"
+    },
+    {
+      "id": "024f683ef02b7ecb15f5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Instapath – your personal agent needs something, another agent has it",
+      "url": "https://instapath.ai",
+      "published_at": "2026-09-30T05:41:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Introducing Instapath in early access. I believe there is a big opportunity here for those who are interested to build around it and connect businesses to the network. Please read the builder program, I'm starting with 50 people who are looking for an opportunity for their personal ai agent. https://instapath.ai/builder-program Comments URL: https://news.ycombinator.com/item?id=49904797 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49904797"
+    },
+    {
+      "id": "bfa4581ffc4db8a4a09e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Instapath – your personal agent needs something, another agent has it",
+      "url": "https://instapath.ai",
+      "published_at": "2026-09-30T05:41:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Introducing Instapath in early access. I believe there is a big opportunity here for those who are interested to build around it and connect businesses to the network. Please read the builder program, I'm starting with 50 people who are looking for an opportunity for their personal ai agent. https://instapath.ai/builder-program Comments URL: https://news.ycombinator.com/item?id=49904797 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49904797"
+    },
+    {
+      "id": "65e4118cbaa06f6dd358",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline Desktop v0.0.39",
+      "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.39",
+      "published_at": "2026-09-30T07:18:19+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- On Linux with the proprietary NVIDIA driver, the app window no longer opens blank. The app now turns off WebKitGTK's DMA-BUF renderer when it detects the NVIDIA driver. To keep that renderer on (for example, on a hybrid-GPU system), set `WEBKIT_DISABLE_DMABUF_RENDERER=0` - The Linux `.deb` and `.rpm` packages now include app info, so GNOME Software and KDE Discover show Cline's icon and description and list it under Installed **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.38...desktop-v0.0.39",
+      "discussion_url": ""
+    },
+    {
+      "id": "e81a10573d9ed4f5e54e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I made Jev to talk",
+      "url": "https://github.com/zie1ony/jev-talks",
+      "published_at": "2026-09-30T07:52:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Simply by asking Jev multiple yes/no question about what would be best next word, it's possible to get some reasonable text out of it. Play it by yourself. Comments URL: https://news.ycombinator.com/item?id=49905785 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49905785"
+    },
+    {
+      "id": "63311ccac01a372956e5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Built agent orchestration system, Director->{workers }",
+      "url": "https://github.com/mastaan66/foreman",
+      "published_at": "2026-09-30T07:52:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "I have recently started working on an agent orchestrator with stricht budgeting + TUI, check it here: https://github.com/mastaan66/foreman Comments URL: https://news.ycombinator.com/item?id=49905786 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49905786"
+    },
+    {
+      "id": "259adbf107718fd2e47d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Built agent orchestration system, Director->{workers }",
+      "url": "https://github.com/mastaan66/foreman",
+      "published_at": "2026-09-30T07:52:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "I have recently started working on an agent orchestrator with stricht budgeting + TUI, check it here: https://github.com/mastaan66/foreman Comments URL: https://news.ycombinator.com/item?id=49905786 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49905786"
+    },
+    {
+      "id": "815437dd33d685742e3d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HairColorChangeAI – AI hair color try-on in the browser",
+      "url": "https://haircolorchangeai.com",
+      "published_at": "2026-09-30T08:21:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Upload a photo and preview different hair colors, highlights, and hairstyle filters before dyeing your hair. Comments URL: https://news.ycombinator.com/item?id=49905963 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49905963"
+    },
+    {
+      "id": "5b2752d2055f80e30bae",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Layout – Order food anywhere with AI",
+      "url": "https://layout.link",
+      "published_at": "2026-09-30T08:55:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Layout lets you order food anywhere with AI. Text it what you want, like \"iced americano from Starbucks,\" and it builds the cart at the restaurant, sends you the total, and securely places the order. Works at almost any restaurant in the US over SMS, the iOS app, or any MCP client like ChatGPT. Developers can integrate our infrastructure into their own platforms at developer.layout.link. Comments URL: https://news.ycombinator.com/item?id=49906193 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49906193"
+    },
+    {
+      "id": "b780652ea5e0758af95a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN:I built an AI agent team that recreates the style of any video",
+      "url": "https://github.com/edenfunf/reelmimic",
+      "published_at": "2026-09-30T09:37:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/edenfunf/reelmimic Comments URL: https://news.ycombinator.com/item?id=49906508 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49906508"
+    },
+    {
+      "id": "3f2a4ca4ee4091d9753a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN:I built an AI agent team that recreates the style of any video",
+      "url": "https://github.com/edenfunf/reelmimic",
+      "published_at": "2026-09-30T09:37:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/edenfunf/reelmimic Comments URL: https://news.ycombinator.com/item?id=49906508 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49906508"
+    },
+    {
+      "id": "bfc2e99740aaeb146fef",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent haven, an end-to-end encrypted messaging network for AI agents",
+      "url": "https://agenthaven.org",
+      "published_at": "2026-09-30T09:38:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agenthaven.org/ Comments URL: https://news.ycombinator.com/item?id=49906511 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49906511"
+    },
+    {
+      "id": "dea13516fb3be666ebc7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: VoxScribe – local, offline voice dictation for Windows (open source)",
+      "url": "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation",
+      "published_at": "2026-09-30T10:03:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation Comments URL: https://news.ycombinator.com/item?id=49906717 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49906717"
+    },
+    {
+      "id": "a945fbc438d1574ae379",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Notes on Working with Coding Agents",
+      "url": "https://adri0.com/blog/notes-on-working-with-coding-agents",
+      "published_at": "2026-09-30T10:26:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://adri0.com/blog/notes-on-working-with-coding-agents Comments URL: https://news.ycombinator.com/item?id=49906870 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49906870"
+    },
+    {
+      "id": "bbe18cd567c68bdcfd7a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AFAW – A multi-agent coding workflow that doesn't trust the model",
+      "url": "https://github.com/agustindiazcano/afaw-anti-fragile-agentic-workflow",
+      "published_at": "2026-09-30T10:31:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/agustindiazcano/afaw-anti-fragile-agentic-workflow Comments URL: https://news.ycombinator.com/item?id=49906916 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49906916"
+    },
+    {
+      "id": "6624f56ce8e658e1276d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: AFAW – A multi-agent coding workflow that doesn't trust the model",
+      "url": "https://github.com/agustindiazcano/afaw-anti-fragile-agentic-workflow",
+      "published_at": "2026-09-30T10:31:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/agustindiazcano/afaw-anti-fragile-agentic-workflow Comments URL: https://news.ycombinator.com/item?id=49906916 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49906916"
+    },
+    {
+      "id": "bda2f98a38d85db99e03",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Privacy-First Natural Language to SQL, No LLMs, No Uploads",
+      "url": "https://www.clientvirt.com",
+      "published_at": "2026-09-30T11:01:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.clientvirt.com/ Comments URL: https://news.ycombinator.com/item?id=49907161 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907161"
+    },
+    {
+      "id": "17191c00d26fa7bd6f79",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A semantic fuzzer for Obsidian Sync... in spite of Claude",
+      "url": "https://github.com/hmijail/ObsSyncBugHunt",
+      "published_at": "2026-09-30T11:26:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "The Obsidian forum has threads reporting Sync data loss for over 2 years. To help reproduce bugs, I built a fuzzer that runs Obsidian instances in containers, makes them edit notes while cutting off their network, and documents the failure rates. The fuzzer finds amusingly short sequences that cause data loss and that you can reproduce on your own in a minute (if you have an Obsidian Sync subscription). Steps in the repro README. I guided Claude Code to build the fuzzer, but I didn't read the code. This didn't go well. The project ballooned to a painful 60h, so I wrote a separate experience report on the many failure modes and what I'll do differently next time: https://hmijail.substack.com/p/building-a-semantic-fuzzer-fo... Comments URL: https://news.ycombinator.com/item?id=49907352 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907352"
+    },
+    {
+      "id": "23b9ed13f67916049069",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Maverank, a free AI-readiness check for your website",
+      "url": "https://maverank.com/tools/ai-visibility-checker",
+      "published_at": "2026-09-30T11:40:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm David. I build SaaS products and lately I've been a bit obsessed with whether ChatGPT recommends mine or a competitor's. I built Maverank's free checker to find problems I could fix on my own sites. Things like blocked crawlers, content that only loads with JavaScript, or pages that don't explain what the product does. Enter a URL and you'll get a score out of 100, a breakdown of the checks, and suggestions for what to fix. You don't need an account for the free check, but more checks are available through a 7-day trial. Scoring 100 doesn't mean ChatGPT will recommend you. It's a way to spot problems that could make your site harder to read or understand. After making changes, you can check again, share your score, or compare it with sites on the leaderboard. I'd appreciate hearing what it finds on something you've built, especially if a check gets something wrong or suggests an unhelpful fix. Comments URL: https://news.ycombinator.com/item?id=49907482 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907482"
+    },
+    {
+      "id": "083eee52c5863302a228",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Mowgli, an AI design canvas for apps and websites",
+      "url": "https://mowgli.ai",
+      "published_at": "2026-09-30T11:42:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://mowgli.ai/ Comments URL: https://news.ycombinator.com/item?id=49907492 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907492"
+    },
+    {
+      "id": "817575ea437c8401304f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Llestia – an economic marketplace where AI agents hire each other",
+      "url": "https://llestia.ai",
+      "published_at": "2026-09-30T11:57:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://llestia.ai Comments URL: https://news.ycombinator.com/item?id=49907622 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907622"
+    },
+    {
+      "id": "91f0a32eb95fbd4a0673",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rhubarb – build, edit, publish custom JavaScript/D3 data visualizations",
+      "url": "https://rhubarbviz.com/try?launch=1",
+      "published_at": "2026-09-30T12:01:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Last July, I was beginning to consider branching out on my own to take on data analytics work as a consultant. As I experimented with AI, I realized how incredible it was at building custom data visualizations. The problem was that the AI outputs couldn't really live anywhere without having to manage all of the infrastructure yourself. The generated code is only one piece of delivering an interactive visualization. You still need somewhere for the data to live, a way to keep the data fresh, hosting, access control, and version control for the code. I started building Rhubarb as the platform that I wanted to use to deliver analytical products. Having been forced into using legacy point and click data visualization tools for years, I wanted to build the platform that would let me build the kinds of visualizations I wanted to build. Over the last year the models improved so dramatically, that between that and my development background, Rhubarb turned into a real project. My intent was to build an environment around AI’s ability to write code for visualizations, so that you could get from data and a concept to a published visualization all in one workflow. The Rhubarb Assistant writes the code for your data transformations and data visualizations and lets you inspect the code to verify and validate what it produces. The environment pulls all of that together so that at the end of each request, there is a live version of the change rather than just a block of generated code. For me, this has made it dramatically easier to build and publish interesting analytical visualizations while maintaining control over the analytical pipeline. This has also produced some results I wasn’t really planning to build. Having been so impressed by it's ability to build any type of custom visualization I'd asked for so far, I asked for something a little absurd to test the boundaries. I asked the assistant to make something inspired by Monet’s water lilies, then I asked it to add frogs and to make them jump when you startled them. In a couple of prompts I had created the silly interactive frog visualization that's in the demo, entirely from my phone. It is only a couple of prompts away from being a playable game, maybe you can get it there. The public demo is deliberately limited. You can use the Rhubarb Assistant to modify live visualizations, inspect what it produces, and try building something from scratch. The full thing handles much more of the life cycle from connecting to data, managing and transforming it, to publishing your results. Give it a try, I would like to hear what you think. Try it: https://rhubarbviz.com/try?launch=1 View examples: https://rhubarbviz.com/demo-visualization-gallery Comments URL: https://news.ycombinator.com/item?id=49907663 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907663"
+    },
+    {
+      "id": "1386662e22f53a4791dc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: TabX – recall closed Chrome tabs by meaning",
+      "url": "https://www.tabx.dev",
+      "published_at": "2026-09-30T12:03:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm Yash, the founder of TabX - a sidepanel extension for Chrome that recalls Chrome tabs by meaning, auto-groups your tabs by intent, offers an AI web search that fetches an ordered list of results for you to act on (while leaving out SEO farms) and much more. I love using the Chrome web browser but could not stand the slow rollout of native AI features within it. \"Ask Gemini\" can answer a question about the page in front of you but retains no context on the 10 pages leading up to the current page. It is largely reactive rather than proactive. Browsers such as Dia, and Comet have a taken a stab at this but haven't enjoyed strong traction due to high browser switching costs and inertia among Chrome users. I thought, why not augment Chrome, which we love and use every day, with productivity features that make browsing more intuitive and assistive? And hence, TabX! If you're a visual learner, then you can skip the features listing below and watch a how-to video instead - https://youtu.be/HnjxmOHmVik?si=IQupYhxg9gN8gwHd What it does: recall a page by meaning (\"That article on Posthog setup I was reading\", \"The video on Hyrox training from last week\"). It retrieves the matching pages (by title and content) and once you click a result, it switches to that page and highlights the passage that matches your intent @mention a tab or a tab group to ask any question and it grounds answers in the pages you've actually read while citing those as well. It infers your browsing intent (say, \"Meal Prep Research\", \"Hyrox training routines\") based on your browsing pattern across tabs and groups similar tabs into color coded stacks on the Chrome Tab strip automatically next step suggestions - based on what you're working on presently, it automatically points you to the next most relevant/useful tab to achieve your browsing goal timelines - all your page visits get grouped into research sessions which you can 1 click to restore and the tabs open up in the precise order that you browsed them online mode - a web search mode that retrieves 3-5 ranked link results with a short results summary. It filters out SEO farms automatically How it works: The stack is a Manifest v3 side panel that sends each page's text to a Nest JS backend where it gets embedded into Postgres with pgVector. Recall combines vector and full-text search, and summaries, tab grouping and next-step suggestions come from LLMs routed through OpenRouter. It's Pro mode is free to try for a week - simply sign up with a one time password (OTP) sent to your email. If you'd rather try the extension directly, here's the install link - https://chromewebstore.google.com/detail/tabx-chromes-ai-sid... Critical feedback is most welcome. I intend to work on this project long term, and I am open to potential pivots. Feel free to drop ideas or suggestions in the comments. Comments URL: https://news.ycombinator.com/item?id=49907682 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907682"
+    },
+    {
+      "id": "5fc1d86c95c1104fb980",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: FinTrace – point-in-time guardrails for financial LLM agents",
+      "url": "https://github.com/FredXing1/FinTrace",
+      "published_at": "2026-09-30T12:16:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/FredXing1/FinTrace Comments URL: https://news.ycombinator.com/item?id=49907790 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907790"
+    },
+    {
+      "id": "ad26e4e4974563e06fc3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: FinTrace – point-in-time guardrails for financial LLM agents",
+      "url": "https://github.com/FredXing1/FinTrace",
+      "published_at": "2026-09-30T12:16:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/FredXing1/FinTrace Comments URL: https://news.ycombinator.com/item?id=49907790 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907790"
+    },
+    {
+      "id": "0720a052b1b74f5d6273",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MeetTwins- Send an AI twin to your Google Meet standups",
+      "url": "https://meettwins-site.vercel.app",
+      "published_at": "2026-09-30T12:18:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://meettwins-site.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=49907815 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907815"
+    },
+    {
+      "id": "a2279d7a053aeeb2141f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AT0M – a Jev Like System One decision model in a single Rust binary",
+      "url": "https://at0m.pienomial.com",
+      "published_at": "2026-09-30T12:23:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://at0m.pienomial.com/ Comments URL: https://news.ycombinator.com/item?id=49907865 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49907865"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-30T05:32:59.084313+00:00",
+      "last_success": "2026-09-30T12:35:19.860148+00:00",
       "count": 10,
       "earliest": "2026-09-25T17:25:50+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-30T05:32:59.257606+00:00",
+      "last_success": "2026-09-30T12:35:20.031864+00:00",
       "count": 20,
       "earliest": "2026-09-23T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-30T05:32:59.492333+00:00",
+      "last_success": "2026-09-30T12:35:20.325169+00:00",
       "count": 869,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-30T05:32:59.633243+00:00",
+      "last_success": "2026-09-30T12:35:20.471117+00:00",
       "count": 30,
       "earliest": "2026-09-20T00:22:04+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-30T05:33:03.317071+00:00",
+      "last_success": "2026-09-30T12:35:20.996021+00:00",
       "count": 100,
-      "earliest": "2026-09-29T13:32:50+00:00",
+      "earliest": "2026-09-29T17:10:46+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-30T05:33:25.467120+00:00",
+      "last_success": "2026-09-30T12:35:22.677398+00:00",
       "count": 100,
-      "earliest": "2026-09-28T19:30:38+00:00",
+      "earliest": "2026-09-28T23:18:07+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-30T05:33:26.060243+00:00",
+      "last_success": "2026-09-30T12:35:23.147002+00:00",
       "count": 10,
       "earliest": "2026-09-17T22:33:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-30T05:33:27.099823+00:00",
+      "last_success": "2026-09-30T12:35:23.968639+00:00",
       "count": 20,
-      "earliest": "2026-09-17T07:51:57+00:00",
+      "earliest": "2026-09-18T01:42:35+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-30T05:33:27.623826+00:00",
+      "last_success": "2026-09-30T12:35:24.340812+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-30T05:33:28.048789+00:00",
+      "last_success": "2026-09-30T12:35:24.680990+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-30T05:33:28.686702+00:00",
+      "last_success": "2026-09-30T12:35:25.072528+00:00",
       "count": 8,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-30T05:33:46.956591+00:00",
+      "last_success": "2026-09-30T12:35:37.848287+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-30T05:33:47.188353+00:00",
+      "last_success": "2026-09-30T12:35:38.047631+00:00",
       "count": 1238,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-30T05:34:10.457868+00:00",
+      "last_success": "2026-09-30T12:35:53.874953+00:00",
       "count": 9,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
@@ -16813,5 +17125,5 @@
       "to": "2026-09-29T11:54:43+00:00"
     }
   ],
-  "collected_at": "2026-09-30T05:34:10.458047+00:00"
+  "collected_at": "2026-09-30T12:35:53.875136+00:00"
 }
