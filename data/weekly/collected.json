@@ -14653,6 +14653,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49884291"
     },
     {
+      "id": "81cb0393e6f86b3f54a7",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.35.0",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.35.0",
+      "published_at": "2026-09-28T21:23:22+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Decision models Ollama now supports decision models through `/v1/systemone`, based on [TypeSafe’s Jev API](https://typesafe.ai). Decision models return choices, probabilities, and scores instead of text. Use them for tasks such as ticket triage, model routing, and content classification. Available models: - [**Nimble**](https://ollama.com/library/nimble) from Bespoke Labs - [**Tev1**](https://ollama.com/library/tev1) from Together AI ```sh ollama pull nimble ``` Send context and one or more questions: ```sh curl http://localhost:11434/v1/systemone \\ -H 'Content-Type: application/json' \\ -d '{ \"model\": \"nimble\", \"state\": \"Our checkout has returned 500 errors since 9am.\", \"questions\": { \"label\": { \"type\": \"choice\", \"instructions\": \"Which label fits this ticket?\", \"criteria\": { \"billing\": \"Payments and refunds\", \"bug\": \"Software errors\", \"account\": \"Login and account access\" } } } }' ``` Example response: ```json { \"model\": \"nimble\", \"answers\": { \"label\": { \"type\": \"choice\", \"choice\": \"bug\", \"probabilities\": { \"billing\": 0.0125, \"bug\": 0.9781, \"account\": 0.0093 }, \"confidence\": 0.8906 } }, \"usage\": { \"input_tokens\": 174, \"output_tokens\": 1 } } ``` The API supports three question types: - `choice`: Select an option and return probabilities for each. - `noul`: Return the probability that a condition is true. - `score`: Return a score across an ordered set of criteria ## What's Changed - Settings now opens without waiting for model discovery. - Fixed the macOS update menu and icon not reflecting an available update at startup. - Fixed stalled MLX model downloads hanging indefinitely. - Requests containing the deprecated `typical_p` parameter now log a warning instead of failing. **Full Changelog:** https://github.com/ollama/ollama/compare/v0.34.4...v0.35.0",
+      "discussion_url": ""
+    },
+    {
       "id": "cce0b42da4ce9d3165a8",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -16057,6 +16069,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49898077"
     },
     {
+      "id": "f4582f1f290cdf3fa6f9",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+      "url": "https://simonwillison.net/2026/Sep/29/hn-49898129",
+      "published_at": "2026-09-29T18:27:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "My comment on GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price — Hacker News. I'm a bit late with the pelicans because I was live-blogging the keynote: https://simonwillison.net/2026/Sep/29/openai-devday-2026-liv... Here they are for GPT-6.1-Sol: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... They're not notably different from the GPT-6 family pelicans: https://static.simonwillison.net/static/2026/gpt-pelicans-gr... Tags: ai , openai , generative-ai , llms , pelican-riding-a-bicycle , gpt",
+      "discussion_url": ""
+    },
+    {
       "id": "87a2dd8528901c3f788c",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -16343,103 +16367,403 @@
       "date_kind": "community_post",
       "evidence": "Cortex turns a thousand processes into the apps you actually run, remembers the last 30 days, and shows what your Neural Engine and local models are doing. Everything stays on your Mac. Comments URL: https://news.ycombinator.com/item?id=49901329 Points: 1 # Comments: 3",
       "discussion_url": "https://news.ycombinator.com/item?id=49901329"
+    },
+    {
+      "id": "8db25a143923b4888288",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting Anthropic Frontier Red Team",
+      "url": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team",
+      "published_at": "2026-09-29T22:20:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "We evaluate several models on 100 tasks from the [internal Binary Exploitation benchmark] (selected at random), and find that GLM-5.3 develops full control flow hijacks in 4% of the trials; Claude Mythos Preview did so in 6%. Although GLM-5.3 performs below Claude Mythos Preview here, a meaningful threshold has clearly been crossed: earlier models, like Claude Opus 4.6 and GLM-5.2, do not succeed in any of them. — Anthropic Frontier Red Team , GLM-5.3 and the spread of advanced cyber capabilities Tags: anthropic , generative-ai , ai-security-research , glm , ai , ai-in-china , llms",
+      "discussion_url": ""
+    },
+    {
+      "id": "b4061bc596084df42d0e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tiny chess model, 392 KiB, ~1523 elo",
+      "url": "https://github.com/skorotkiewicz/chesslm",
+      "published_at": "2026-09-29T22:25:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/skorotkiewicz/chesslm Comments URL: https://news.ycombinator.com/item?id=49901627 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49901627"
+    },
+    {
+      "id": "b8923db92d6525cce17c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Image Categorizer – sort a photo library with local vision models",
+      "url": "https://github.com/DrBenedictPorkins/image-categorizer",
+      "published_at": "2026-09-29T23:17:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/DrBenedictPorkins/image-categorizer Comments URL: https://news.ycombinator.com/item?id=49902157 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49902157"
+    },
+    {
+      "id": "5f49a9c22c478b9e7577",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rules that stop AI agents from wrecking your warehouse, with an eval",
+      "url": "https://github.com/idk-arsh/data-agent-rules",
+      "published_at": "2026-09-29T23:25:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/idk-arsh/data-agent-rules Comments URL: https://news.ycombinator.com/item?id=49902237 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49902237"
+    },
+    {
+      "id": "6d391b95a61c5f27e2d3",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.159.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.159.2",
+      "published_at": "2026-09-29T23:57:16+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Bug Fixes - Suppressed console windows flashing on Windows when Codex launches background processes and sandboxed commands. (#49385) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.159.1...rust-v0.159.2 - #49385 [0.159] Backport Windows console suppression for 0.159.2 @andrewgu-oai",
+      "discussion_url": ""
+    },
+    {
+      "id": "56208879259dfac1d59f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Olomni (Olomni Agent)",
+      "url": "https://www.olomni.com",
+      "published_at": "2026-09-30T00:06:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.olomni.com/ Comments URL: https://news.ycombinator.com/item?id=49902597 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49902597"
+    },
+    {
+      "id": "db491d123243a03b823f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: InfiniHash App Store – compliance tools built end-to-end by AI agents",
+      "url": "https://apps.infinihash.com",
+      "published_at": "2026-09-30T00:34:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://apps.infinihash.com/ Comments URL: https://news.ycombinator.com/item?id=49902852 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49902852"
+    },
+    {
+      "id": "012f34a274353649e046",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Vibe Coding Discover – A Catalog of AI OSS for Agents, MCP, Skills, RAG",
+      "url": "https://vibecodingdiscover.com",
+      "published_at": "2026-09-30T00:36:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vibecodingdiscover.com Comments URL: https://news.ycombinator.com/item?id=49902866 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49902866"
+    },
+    {
+      "id": "84f7400cfc33e40aa59c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "State of Agent Skills",
+      "url": "https://vercel.com/blog/state-of-agent-skills",
+      "published_at": "2026-09-30T00:58:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vercel.com/blog/state-of-agent-skills Comments URL: https://news.ycombinator.com/item?id=49903054 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903054"
+    },
+    {
+      "id": "e1e475945863db29546d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Alter Zero – RAM-efficient agent for coding, security and automation",
+      "url": "https://github.com/linuztx/alter-zero",
+      "published_at": "2026-09-30T01:25:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/linuztx/alter-zero Comments URL: https://news.ycombinator.com/item?id=49903249 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903249"
+    },
+    {
+      "id": "1eae4254b34844312c14",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Alter Zero – RAM-efficient agent for coding, security and automation",
+      "url": "https://github.com/linuztx/alter-zero",
+      "published_at": "2026-09-30T01:25:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/linuztx/alter-zero Comments URL: https://news.ycombinator.com/item?id=49903249 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903249"
+    },
+    {
+      "id": "423570d914e82b8552b2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "url": "https://regularized-rsi.com",
+      "published_at": "2026-09-30T01:29:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://regularized-rsi.com/ Comments URL: https://news.ycombinator.com/item?id=49903287 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903287"
+    },
+    {
+      "id": "a91eb2ba4c72392d48da",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Moching – AI desktop agent with 219 built-in tools (Rust)",
+      "url": "https://github.com/moching-ai-dev/moching",
+      "published_at": "2026-09-30T02:00:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/moching-ai-dev/moching Comments URL: https://news.ycombinator.com/item?id=49903470 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903470"
+    },
+    {
+      "id": "c9ea0798e33de25c34f3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Moching – AI desktop agent with 219 built-in tools (Rust)",
+      "url": "https://github.com/moching-ai-dev/moching",
+      "published_at": "2026-09-30T02:00:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/moching-ai-dev/moching Comments URL: https://news.ycombinator.com/item?id=49903470 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903470"
+    },
+    {
+      "id": "1326ffc3b93bfb13542a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Llms.txt: agent-optimization wishful thinking",
+      "url": "https://www.phpied.com/llms-txt-agent-optimization-wishful-thinking",
+      "published_at": "2026-09-30T02:23:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.phpied.com/llms-txt-agent-optimization-wishful-thinking/ Comments URL: https://news.ycombinator.com/item?id=49903627 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903627"
+    },
+    {
+      "id": "8add469bfb28c9b2f80a",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline SDK v0.0.88",
+      "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.88",
+      "published_at": "2026-09-30T02:32:48+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Direct Anthropic requests now ask the Claude API for its recommended server-side refusal fallback (`anthropic.fallbacks: \"default\"`), and OpenRouter and Cline requests for Anthropic models set `provider.allow_fallbacks` so a request can fail over to another upstream provider instead of failing outright - A Stop issued while a turn is still being prepared is no longer dropped. The agent runtime ignores `abort()` with no run in flight, so a Stop that landed between `runTurn()` entry and the run start (session persistence, the git metadata refresh, credential sync) was lost and the turn kept running while the host showed it as stopped. `LocalRuntimeHost` now re-sends the abort once the run exists, and clears a leftover between-turns abort flag when a new turn starts so it can't cancel the next prompt - Content-filtered turns are no longer reported as empty responses. `content-filter` is a new `AgentModelFinishReason`, mapped by both the AI SDK and ApiHandler adapters (including the compat round trip); the run fails with a message saying the response was blocked by a content filter and suggesting a rephrase, and the run-failed `sdk.error` event carries the turn's finish reason - Resuming an existing session works again. 0.0.87 added a duplicate-start guard that rejected starting an existing session ID with \"session already exists\", which blocked desktop and TUI resume; the guard is reverted, and the cloud controller keeps initial thinking and reasoning-effort preferences in session metadata instead - `NodeHubClient` registers `{ version, pid }` metadata (version defaults to the `@cline/core` version, overridable with `clientVersion`). `hub.client.registered` includes it, and the Cline Hub web app shows it for connected clients and in join/leave events - `@ai-sdk/amazon-bedrock` moves to `^5.0.98`, so Nova 2 Lite with high reasoning effort no longer returns a 400 - Refreshed the model catalog. GPT-6.1 Sol becomes the default model for OpenAI, OpenRouter, GitHub Copilot, Cortecs, Eden AI, Kilo Gateway, both LLM Gateway providers, NanoGPT, OpenCode Zen, and Requesty. Vercel AI Gateway moves to Ling 3.1 Flash, Tempr Gateway to MiMo V2.6 Flash, CrossModel and Ofox to Claude Sonnet 5.5, Pioneer to GLiNER 2.5 Decide, and Scaleway to Qwen 3.8 27B. New models include Grok 4.7 on Bedrock, DeepSeek V4.1 Flash on Nebius, and Qwen 3.8 27B on Cerebras and Groq; the Claude Opus 4 variants are dropped **Full Changelog**: https://github.com/cline/cline/compare/sdk/sdk/v0.0.87...sdk/sdk/v0.0.88",
+      "discussion_url": ""
+    },
+    {
+      "id": "67ce5eeb4a9eaf0880ff",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline CLI v3.0.66",
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.66",
+      "published_at": "2026-09-30T02:41:06+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- The CLI binaries are now built with Bun 1.4.2. macOS 27 no longer kills them at launch, and the x64 builds run on CPUs without AVX2 - The hub now starts on Windows machines with a system proxy (Clash, v2ray, corporate proxies). Loopback discovery requests were sent through the proxy, so a healthy hub looked unreachable and startup failed with \"No compatible hub runtime is available\" - Pressing Esc right after sending a prompt now stops the turn. A stop that landed while the turn was still being set up was ignored, and the agent kept working in the background - When a response is blocked by a content filter, the CLI now says so and suggests rephrasing, instead of \"Model returned empty response\" (which implied a retry would help) - Direct Anthropic requests now use Anthropic's server-side refusal fallback. On OpenRouter and Cline, Anthropic models can fail over to another upstream provider instead of failing the request - Reasoning tokens are no longer counted twice in output token totals. Cost is unchanged, since reasoning is billed at the output rate - Bedrock fixes. GPT-6 and GPT-5.6 route through inference profiles, India regions (`ap-south-1`, `ap-south-2`) resolve the `in.` profile, and Nova 2 Lite with high reasoning, application inference-profile ARNs, and Nova Micro no longer get requests Bedrock rejects. A legacy bare `awsProfile` setting now migrates as Bedrock profile auth - Gateway models on providers that mix endpoints keep their own API protocol instead of falling back to the provider-wide default - Yolo mode (`-y`) no longer includes plan/act mode instructions in the system prompt - Cron (`.cline/cron/*.md`) and task (`*.task.md`) specs saved with a UTF-8 BOM, as Windows Notepad does, now parse - `search_codebase` now includes PHP sources and templates (`php`, `phtml`, `inc`, `twig`), and Composer's `vendor` directory is excluded like `node_modules` - On Windows, a nested `pwsh -Command` wrapper keeps your configured shell path instead of resolving a bare `powershell.exe`, which could pick up an executable planted in the workspace - Hub diagnostics. The hub daemon log records why each socket closed, a daemon that dies with `EADDRINUSE` reports what holds the port, and the hub web app shows each connected client's version and PID - Refreshed the model catalog. New providers are Bee and Pareto (`PARETO_API_KEY`), and the Cline recommended list adds Claude Sonnet 5.5 and Claude Opus 5.5. GPT-6.1 Sol becomes the default model for OpenAI, OpenRouter, GitHub Copilot, Cortecs, Eden AI, Kilo Gateway, both LLM Gateway providers, NanoGPT, OpenCode Zen, and Requesty. Vercel AI Gateway moves to Ling 3.1 Flash, Tempr Gateway to MiMo V2.6 Flash, CrossModel and Ofox to Claude Sonnet 5.5, Pioneer to GLiNER 2.5 Decide, and Scaleway to Qwen 3.8 27B. If you use one of those without pinning a model, expect a different default **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.65...cli-v3.0.66",
+      "discussion_url": ""
+    },
+    {
+      "id": "38ddae6feea25503c3e8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jev as the Bletchley Park Analyst: A Software Bombe on Enigma",
+      "url": "https://github.com/agodoy21/enigma-jev",
+      "published_at": "2026-09-30T02:49:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Watched a recent youtube veritasium on the enigma machine and was curious on how JEV would do in regards to the analysts calls made at Bletchley's. I rebuilt the historical sequence into the software ux. Results were a mixed, which is what made it interesting. Given the right crib, the Bombe breaks 22 of 25 messages; ciphertext-only against 10 plugs, 0 of 25, same wall Bletchley hit. As a judge of \"is this decryption German?\" Jev is excellent: AUC 0.9999, 159/160 right decisions. As a crib selector it has no skill at all; its ranking is no better than the fixed list. Against XGBoost an classical judges, it ties on the same kind of data. But trained on synthetic traffic and tested on real intercepts, and XGBoost drops to 53% correc versus zero-shot Jev holds at 97%. Feel free to try it here: https://enigma-jev.vercel.app/ (requires a jev typesafe api key) Comments URL: https://news.ycombinator.com/item?id=49903792 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903792"
+    },
+    {
+      "id": "eaa0e93a06cacb57c69e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Generate live realtime dashboards of your system in seconds",
+      "url": "https://github.com/yeet-src/omarchy-yeet-ai",
+      "published_at": "2026-09-30T02:55:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/yeet-src/omarchy-yeet-ai Comments URL: https://news.ycombinator.com/item?id=49903831 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49903831"
+    },
+    {
+      "id": "40ee20f6f36603aef8c5",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline Desktop v0.0.38",
+      "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.38",
+      "published_at": "2026-09-30T03:16:11+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Linux on ARM is now supported: each release ships arm64 `.deb` and `.rpm` packages alongside the x64 ones, and they auto-update like the others - Web search settings moved from **General** to **Customize → Tools**, next to the other built-in tools. That page shows whether your provider supports search, and links to provider settings when it doesn't - Connectors are labeled **Beta**, and opening the marketplace from Connectors now shows only connectors - Pressing **Stop** right after sending a prompt now stops the turn. Before, a stop that landed while the turn was still being set up was ignored: the agent kept editing in the background, and reverting failed with \"Wait for all turns in this workspace to finish before restoring it\" - Inserting a slash command no longer deletes the text after your cursor - On Windows, **Export Diagnostics** no longer fails when the output folder already exists - Cloud agent sessions now keep their workspace. A suspended cloud session resumes with the same files, history, and reasoning settings - When a response is blocked by a content filter, the app now says so and suggests rephrasing, instead of \"Model returned empty response\" - Direct Anthropic requests now use Anthropic's refusal fallback. On OpenRouter and Cline, Anthropic models can fail over to another upstream provider instead of failing the request - Reasoning tokens are no longer counted twice in token usage. Cost is unchanged - On Amazon Bedrock, Nova 2 Lite with high reasoning, application inference-profile ARNs, and Nova Micro no longer get requests Bedrock rejects, and a legacy bare `awsProfile` setting now migrates as profile auth - Gateway models keep their own API protocol instead of falling back to the provider-wide default - Scheduled task specs saved with a UTF-8 BOM (as Windows Notepad does) now parse, and codebase search now includes PHP projects (Composer's `vendor` folder is skipped) - On Windows, a nested `pwsh -Command` keeps your configured shell path instead of picking up a `powershell.exe` from the workspace - Refreshed the model catalog. GPT-6.1 Sol becomes the default model for OpenAI, OpenRouter, GitHub Copilot, Cortecs, Eden AI, Kilo Gateway, both LLM Gateway providers, NanoGPT, OpenCode Zen, and Requesty. Vercel AI Gateway moves to Ling 3.1 Flash, Tempr Gateway to MiMo V2.6 Flash, CrossModel and Ofox to Claude Sonnet 5.5, Pioneer to GLiNER 2.5 Decide, and Scaleway to Qwen 3.8 27B. New providers are Bee and Pareto **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.37...desktop-v0.0.38",
+      "discussion_url": ""
+    },
+    {
+      "id": "7834c6c30b4eca7e1c61",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: How do you handle hitting AI coding agent usage limits?",
+      "url": "https://news.ycombinator.com/item?id=49904074",
+      "published_at": "2026-09-30T03:35:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "One topic I've been researching lately is the best way to handle switching to another agent when I hit a usage limit on one of them. For example, if I hit the usage limit on Codex, I would want to switch to Claude Code and vice versa. The important part is not losing the ongoing context/task(s) when switching between the tools.. I have found a few things that say they do this but none seem to have much traction. As a result, I was hoping to pick the brain of HN'ers to see how you all handle this (To head off comments regarding 'pay for a better plan for more usage' - I can't currently really afford the jump from $20 a month per agent to $100-200/m per agent) Comments URL: https://news.ycombinator.com/item?id=49904074 Points: 1 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49904074"
+    },
+    {
+      "id": "09388e2ac8976f17bd64",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Vibe Coding Is Coming Whether We Like It or Not",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1wtndzi/i_am_the_scab_dev",
+      "published_at": "2026-09-30T03:55:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.reddit.com/r/ClaudeCode/comments/1wtndzi/i_am_the_scab_dev/ Comments URL: https://news.ycombinator.com/item?id=49904190 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49904190"
+    },
+    {
+      "id": "b27fa5cc2ad49c05e077",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline v4.1.22",
+      "url": "https://github.com/cline/cline/releases/tag/v4.1.22",
+      "published_at": "2026-09-30T04:10:12+00:00",
+      "date_kind": "source_publication",
+      "evidence": "### Added - New providers: Bee (by HEOSSI) and Pareto Inference (`PARETO_API_KEY`). ### Changed - Direct Anthropic requests now use Anthropic's server-side refusal fallback. On OpenRouter and Cline, Anthropic models can fail over to another upstream provider instead of failing the request. - When a response is blocked by a content filter, Cline now says so and suggests rephrasing, instead of \"Model returned empty response\". - Refreshed the model catalog. GPT-6.1 Sol becomes the default model for OpenAI, OpenRouter, GitHub Copilot, Cortecs, Eden AI, Kilo Gateway, both LLM Gateway providers, NanoGPT, OpenCode Zen, and Requesty. Vercel AI Gateway moves to Ling 3.1 Flash, Tempr Gateway to MiMo V2.6 Flash, CrossModel and Ofox to Claude Sonnet 5.5, Pioneer to GLiNER 2.5 Decide, and Scaleway to Qwen 3.8 27B. The Cline recommended list adds Claude Sonnet 5.5 and Claude Opus 5.5. If you use one of those providers without pinning a model, expect a different default. ### Fixed - After an API error you can type and send a new message instead of only using Retry. A `/compact` (or `/smol`, `/newtask`) typed during recovery stays in the composer instead of being sent to the model as text. - If a new task fails Cline sign-in, signing in and submitting a revised prompt now starts the task with that prompt. Before, nothing happened. - **Reset Code** is now disabled when a message has no checkpoint, and no longer stays disabled for a message whose checkpoint exists (seen on slow disks). Changing the Checkpoints setting now applies to the active task, and follow-up messages typed while it applies are kept in order. - Canceling right after sending a message now stops the task. A cancel that landed while the turn was still being set up was ignored, and the task kept running. - Reasoning tokens are no longer counted twice in token usage. Cost is unchanged. - Amazon Bedrock: GPT-6 and GPT-5.6 route through inference profiles, and India regions (`ap-south-1`, `ap-south-2`) resolve the `in.` profile. OpenAI models behind inference profiles get the reasoning effort setting they support. Nova 2 Lite with high reasoning, application inference-profile ARNs, and Nova Micro no longer get requests Bedrock rejects. A legacy AWS profile setting saved without the \"use profile\" flag now carries over as profile authentication instead of being dropped. - Gateway models on providers that mix endpoints keep their own API protocol instead of falling back to the provider-wide default. **Full Changelog**: https://github.com/cline/cline/compare/v4.1.21...v4.1.22",
+      "discussion_url": ""
+    },
+    {
+      "id": "c3a8c9ba6832aa511ef1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PyTorch's shape in a browser tap on WebGPU",
+      "url": "https://playidea-lab.github.io/borch",
+      "published_at": "2026-09-30T04:15:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "I made a way to run torch code in a browser. There are no install, no server, no account. It's just a typescript runtime on WebGPU. It can train model and run inference like torch. I started it because I want to use torch on browser without installing anything in my various classes. Comments URL: https://news.ycombinator.com/item?id=49904288 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49904288"
+    },
+    {
+      "id": "ad904fa6499cf25d066d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Runtape – counterfactual debugging and regression tests for AI agents",
+      "url": "https://github.com/RehanMohammed985/runtape",
+      "published_at": "2026-09-30T05:15:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/RehanMohammed985/runtape Comments URL: https://news.ycombinator.com/item?id=49904620 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49904620"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-29T22:15:44.134497+00:00",
+      "last_success": "2026-09-30T05:32:59.084313+00:00",
       "count": 10,
       "earliest": "2026-09-25T17:25:50+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-29T22:15:44.409269+00:00",
+      "last_success": "2026-09-30T05:32:59.257606+00:00",
       "count": 20,
       "earliest": "2026-09-23T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-29T22:15:44.587702+00:00",
+      "last_success": "2026-09-30T05:32:59.492333+00:00",
       "count": 869,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-29T22:15:44.667125+00:00",
+      "last_success": "2026-09-30T05:32:59.633243+00:00",
       "count": 30,
-      "earliest": "2026-09-19T17:10:08+00:00",
+      "earliest": "2026-09-20T00:22:04+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-09-29T22:15:45.833655+00:00",
+      "last_success": "2026-09-30T05:33:03.317071+00:00",
       "count": 100,
-      "earliest": "2026-09-29T11:54:43+00:00",
-      "gap": true,
+      "earliest": "2026-09-29T13:32:50+00:00",
+      "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-09-29T22:15:46.774794+00:00",
+      "last_success": "2026-09-30T05:33:25.467120+00:00",
       "count": 100,
-      "earliest": "2026-09-28T17:01:40+00:00",
+      "earliest": "2026-09-28T19:30:38+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-29T22:15:47.438416+00:00",
+      "last_success": "2026-09-30T05:33:26.060243+00:00",
       "count": 10,
       "earliest": "2026-09-17T22:33:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-29T22:15:48.361304+00:00",
+      "last_success": "2026-09-30T05:33:27.099823+00:00",
       "count": 20,
-      "earliest": "2026-09-15T05:53:27+00:00",
+      "earliest": "2026-09-17T07:51:57+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-29T22:15:48.809113+00:00",
+      "last_success": "2026-09-30T05:33:27.623826+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-29T22:15:49.163001+00:00",
+      "last_success": "2026-09-30T05:33:28.048789+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-29T22:15:49.689845+00:00",
-      "count": 7,
+      "last_success": "2026-09-30T05:33:28.686702+00:00",
+      "count": 8,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-29T22:16:03.879527+00:00",
+      "last_success": "2026-09-30T05:33:46.956591+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-29T22:16:04.011690+00:00",
+      "last_success": "2026-09-30T05:33:47.188353+00:00",
       "count": 1238,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-29T22:16:22.161795+00:00",
-      "count": 8,
+      "last_success": "2026-09-30T05:34:10.457868+00:00",
+      "count": 9,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
       "error": null
@@ -16489,5 +16813,5 @@
       "to": "2026-09-29T11:54:43+00:00"
     }
   ],
-  "collected_at": "2026-09-29T22:16:22.161980+00:00"
+  "collected_at": "2026-09-30T05:34:10.458047+00:00"
 }
