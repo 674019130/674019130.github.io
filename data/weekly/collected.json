@@ -18203,32 +18203,80 @@
       "date_kind": "community_post",
       "evidence": "And if so, why? Comments URL: https://news.ycombinator.com/item?id=49915049 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49915049"
+    },
+    {
+      "id": "6bb0caa3341106225a7f",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.159.3",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.159.3",
+      "published_at": "2026-09-30T22:57:34+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## New Features - Eligible local sessions signed in with ChatGPT can now show optional reminders to complete account security setup. (#49744) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.159.2...rust-v0.159.3 - #49744 [0.159] Backport account security setup reminders for 0.159.3 @andrewgu-oai",
+      "discussion_url": ""
+    },
+    {
+      "id": "197a93e59817244c0f79",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline SDK v0.0.89",
+      "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.89",
+      "published_at": "2026-09-30T23:34:22+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Oversized MCP and Composio tool results can now be recovered in full. Core caches the oversized output in a per-session in-memory cache and sends the model a bounded preview plus a `cline://cache/...` URI that `read_files` can page through by line range. Custom tools can opt in with `resultPolicy: \"cache-oversized\"` on `createTool`. Entries expire after five model iterations without a read, the cache is capped at 16 MiB per session, and original output stays in history and tool events - Custom providers from `providers.json`/`models.json` now run on the agent path. They appeared in pickers but failed with `Unknown or disabled provider \" \"`, because `createAgentModelFromConfig` only registered builtin providers with the gateway. `@cline/llms` now exports `resolveGatewayProviderRegistration(Sync)` - Provider settings saves are more robust. Settings still save when model discovery fails, mutations are serialized, a failed catalog write restores the previous settings, and persistence errors propagate to the caller (`saveLocalProviderSettings` is now async). Model source requests are authenticated, and source catalogs refresh when credentials or endpoints change - Refreshed the model catalog. The Cline recommended list adds GPT-6.1 Sol and drops the Pixel Canary stealth model. Default models change for 302.AI (Claude Sonnet 5.5), NanoGPT (Ling 3.1 Flash), Vivgrid (GPT-6.1 Sol), and Vultr (MiMo V2.6 Flash RL). Vultr's model ids were renamed upstream (for example `zai-org/GLM-5.2-FP8` is now `glm-5.2`), so a pinned Vultr model may need to be re-selected **Full Changelog**: https://github.com/cline/cline/compare/sdk/sdk/v0.0.88...sdk/sdk/v0.0.89",
+      "discussion_url": ""
+    },
+    {
+      "id": "db604ea9e66b72a2c27c",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline CLI v3.0.67",
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.67",
+      "published_at": "2026-09-30T23:42:02+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- When an MCP tool returns more output than fits in context, the agent can now read the rest. It gets a preview plus a link it can page through with `read_files`, so the output past the cutoff is no longer lost - Custom providers defined in `providers.json`/`models.json` now work when you run a task. They showed up in the provider and model pickers but failed with `Unknown or disabled provider` - If saving provider credentials fails during onboarding or in the provider settings dialog, the error now shows in place instead of failing silently - On Linux, the auto-approve indicator in the status bar uses a glyph that common monospace fonts include, instead of rendering as a blank box or nothing - Refreshed the model catalog. The Cline recommended list adds GPT-6.1 Sol. Default models change for 302.AI (Claude Sonnet 5.5), NanoGPT (Ling 3.1 Flash), Vivgrid (GPT-6.1 Sol), and Vultr (MiMo V2.6 Flash RL). Vultr's model ids were renamed upstream, so a pinned Vultr model may need to be re-selected **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.66...cli-v3.0.67",
+      "discussion_url": ""
+    },
+    {
+      "id": "98b0f3a326f75a1a459e",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline Desktop v0.0.40",
+      "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.40",
+      "published_at": "2026-09-30T23:56:13+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Custom providers added with **Add Provider** now work when you run a task. They showed up in the provider and model pickers but failed with `Unknown or disabled provider` - New chats remember whether you last used **Cloud** or **Local**, and which Cloud model you picked, instead of always going back to Local. Switching a thread from Local to Cloud also opens on your remembered Cloud model - Saving provider credentials no longer fails when the provider's model list can't be fetched, and the model list refreshes when you change a provider's API key or endpoint - MCP settings always use the same file. With `CLINE_MCP_SETTINGS_PATH`, `CLINE_DATA_DIR`, or `CLINE_DIR` set, reading and saving servers, MCP OAuth sign-in, and **Open MCP settings** now all use that path, where some could open a different file before - Tool diffs now follow the app's font size setting instead of a fixed 13px - When an MCP tool returns more output than fits in context, the agent can now read the rest. It gets a preview plus a link it can page through, so the output past the cutoff is no longer lost - Refreshed the model catalog. The Cline recommended list adds GPT-6.1 Sol. Default models change for 302.AI (Claude Sonnet 5.5), NanoGPT (Ling 3.1 Flash), Vivgrid (GPT-6.1 Sol), and Vultr (MiMo V2.6 Flash RL). Vultr's model ids were renamed upstream, so a pinned Vultr model may need to be re-selected **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.39...desktop-v0.0.40",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-09-30T22:16:31.579317+00:00",
+      "last_success": "2026-10-01T05:54:18.231015+00:00",
       "count": 10,
       "earliest": "2026-09-25T23:24:57+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-09-30T22:16:31.799848+00:00",
+      "last_success": "2026-10-01T05:54:18.469950+00:00",
       "count": 20,
       "earliest": "2026-09-24T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-09-30T22:16:31.941713+00:00",
+      "last_success": "2026-10-01T05:54:18.803447+00:00",
       "count": 870,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-09-30T22:16:32.141843+00:00",
+      "last_success": "2026-10-01T05:54:18.999893+00:00",
       "count": 30,
       "earliest": "2026-09-20T20:24:41+00:00",
       "gap": false,
@@ -18239,67 +18287,67 @@
       "count": 100,
       "earliest": "2026-09-30T12:18:10+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-09-30T22:16:35.104072+00:00",
       "count": 100,
       "earliest": "2026-09-29T14:07:48+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-09-30T22:16:35.899052+00:00",
+      "last_success": "2026-10-01T05:54:40.043309+00:00",
       "count": 10,
       "earliest": "2026-09-18T02:12:26+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-09-30T22:16:37.193246+00:00",
-      "count": 20,
-      "earliest": "2026-09-18T01:42:35+00:00",
+      "last_success": "2026-10-01T05:54:42.974491+00:00",
+      "count": 30,
+      "earliest": "2026-09-15T05:53:27+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-09-30T22:16:37.814845+00:00",
+      "last_success": "2026-10-01T05:54:43.563075+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-09-30T22:16:38.343802+00:00",
+      "last_success": "2026-10-01T05:54:44.124813+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-09-30T22:16:39.207601+00:00",
+      "last_success": "2026-10-01T05:54:44.908130+00:00",
       "count": 8,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-09-30T22:17:04.182224+00:00",
+      "last_success": "2026-10-01T05:55:11.401538+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-09-30T22:17:04.366384+00:00",
+      "last_success": "2026-10-01T05:55:11.587266+00:00",
       "count": 1240,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-09-30T22:17:35.379603+00:00",
-      "count": 9,
+      "last_success": "2026-10-01T05:55:42.456588+00:00",
+      "count": 10,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
       "error": null
@@ -18349,5 +18397,5 @@
       "to": "2026-09-29T11:54:43+00:00"
     }
   ],
-  "collected_at": "2026-09-30T22:17:35.379805+00:00"
+  "collected_at": "2026-10-01T05:55:42.456751+00:00"
 }
