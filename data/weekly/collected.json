@@ -22067,41 +22067,221 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://measuremy.site Comments URL: https://news.ycombinator.com/item?id=49945236 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49945236"
+    },
+    {
+      "id": "e93673711e4f71361272",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agentlytics – cookieless analytics your AI agent can read and act on",
+      "url": "https://measuremy.site",
+      "published_at": "2026-10-03T15:43:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://measuremy.site Comments URL: https://news.ycombinator.com/item?id=49945236 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49945236"
+    },
+    {
+      "id": "289a9af1a3ca2ee9ab36",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Terminal Gym – a Claude mod that makes you do pushups between prompts",
+      "url": "https://github.com/DrumAndCode/terminal-gym",
+      "published_at": "2026-10-03T16:24:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I built this for myself and wanted to open-source it. The problem: I wanted a way to get reminders in-between prompts as I often spend long hours in the terminal, especially now that we're usually parallel-processing so many agents. The first version was a simple rep counter in my Claude Code status line and a shell script to log reps. Since Claude Code shipped mods this week, I thought this was a good way to level it up with even more accountability. How it works: 1. Every day, you get a daily goal for either squats, pushups, or dips (e.g. 0/100 pushups) with +5 / +10 / +25 buttons to log a set in the terminal. 2. Reminders for sets are spread out across the day so it doesn't get annoying, starting from your first prompt for the day. A toast tells you when the next set is due. 3. Strict mode is opt-in: if you're falling behind in terms of your daily rep goal, it will block your prompts till you log some reps. Added a streak counter for some added fun. All local and data is stored as plain files in ~/.claude/fitness. Install: claude plugin marketplace add DrumAndCode/terminal-gym && claude plugin install terminal-gym@terminal-gym Overall, thought the mod API is super powerful and can't wait to see the stuff people build with it. Eg: I built a clickable onboarding process inside the terminal, and that felt quite powerful to use. Now you can enjoy spending both tokens and calories. :) Comments URL: https://news.ycombinator.com/item?id=49945600 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49945600"
+    },
+    {
+      "id": "34102d2572189b53686f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentMachinist: make your coding agent show its work",
+      "url": "https://github.com/vscarpenter/AgentMachinist",
+      "published_at": "2026-10-03T16:35:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vscarpenter/AgentMachinist Comments URL: https://news.ycombinator.com/item?id=49945696 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49945696"
+    },
+    {
+      "id": "fa9f9c86fdcb6b3ca9e1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ShipSlides – turn a URL into editable slides with a serverless agent",
+      "url": "https://shipslides.dev",
+      "published_at": "2026-10-03T16:37:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://shipslides.dev Comments URL: https://news.ycombinator.com/item?id=49945713 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49945713"
+    },
+    {
+      "id": "b1288525bea0fdb17f80",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: UI for answering agent questions async",
+      "url": "https://docs.plannotator.ai/open-source/workflows/questions",
+      "published_at": "2026-10-03T17:34:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://docs.plannotator.ai/open-source/workflows/questions Comments URL: https://news.ycombinator.com/item?id=49946139 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946139"
+    },
+    {
+      "id": "300b583e1cf7cb1b3901",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Claude Mods – Minesweeper",
+      "url": "https://github.com/reporails/arcade",
+      "published_at": "2026-10-03T17:40:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "A mod to kill time whilst waiting for the agent response. More on the building process: https://dev.to/reporails/claude-code-mods-minesweeper-and-te... Comments URL: https://news.ycombinator.com/item?id=49946184 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946184"
+    },
+    {
+      "id": "b8f053c8338c4735f27d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Clai – featured agentic harness at 10MB, as pkg or CLI",
+      "url": "https://github.com/baalimago/clai",
+      "published_at": "2026-10-03T17:44:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/baalimago/clai Comments URL: https://news.ycombinator.com/item?id=49946225 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946225"
+    },
+    {
+      "id": "d562f80e5d7bfa45ab6d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: LocalBolo (Voice Dictation using open source model only)",
+      "url": "https://localbolo.app",
+      "published_at": "2026-10-03T18:01:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://localbolo.app Comments URL: https://news.ycombinator.com/item?id=49946353 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946353"
+    },
+    {
+      "id": "709664c5cd9487f63fd3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Claude Code Routine Session Cleanup Skill",
+      "url": "https://github.com/naw103/claude-routine-cleanup",
+      "published_at": "2026-10-03T18:20:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Claude Code's scheduled tasks (routines) leaves a session behind on every run and in the desktop app you can only delete them one at a time. We had 618 open sessions in just one routine. The skill plans the clean up (keeps the newest N and protect any sessions where you typed a reply - optional) and then has Claude delete through the apps own session tool, 25 per call each behind an approval card. I tried just deleting the sessions on disk manually first but deleting the files directly dosnt work because the app keeps the list in memory and writes records back. The apps delete tool is turned off inside routine runs so the clean up command has to run from a normal conversation session. The planner is a single python file that dosnt delete by itself so you can run it by hand to see where everything exists. Comments URL: https://news.ycombinator.com/item?id=49946507 Points: 3 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946507"
+    },
+    {
+      "id": "03804441b9766d66cf7d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: RepoGuard – Architecture linter for AI-generated code (Cursor, Claude)",
+      "url": "https://github.com/taylormatematica-beep/repoguard",
+      "published_at": "2026-10-03T18:37:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/taylormatematica-beep/repoguard Comments URL: https://news.ycombinator.com/item?id=49946607 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946607"
+    },
+    {
+      "id": "f646603b852eac8f1f7d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Valet – Self-Hosted Cloud Agents with Computers",
+      "url": "https://github.com/dropalltables/valet",
+      "published_at": "2026-10-03T19:01:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/dropalltables/valet Comments URL: https://news.ycombinator.com/item?id=49946786 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946786"
+    },
+    {
+      "id": "1d102a18b17217c3f2d9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI code review optimized for precision over number of findings",
+      "url": "https://vetoo.dev",
+      "published_at": "2026-10-03T19:12:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vetoo.dev Comments URL: https://news.ycombinator.com/item?id=49946869 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946869"
+    },
+    {
+      "id": "f7c4d0d3662443103027",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Linnaeus, a daily biological taxonomy game",
+      "url": "https://play.linnaeus-game.workers.dev",
+      "published_at": "2026-10-03T20:16:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "What this is: Each day there's one target species, and you classify it level by level (from more general to more specific categories), with 10 seconds per choice. Faster answers score more, and there are daily and monthly leaderboards. Why: I wanted to try out agentic coding (a bit late to the party I know). A friend gifted me a week of Claude, and this is what I got in 3 afternoons of full vibe-coding. I've had the idea for this game for a while (I'm a philosopher of biology), and this was a good toy project for it. I'd never vibe-code like this in a serious project, but wanted to see how far I could get / how good frontier models were, and I'm honestly impressed. I have mixed feelings about the whole experience, but I could have never done this so fast without it. Stack: It's made with Svelte 5 and CF workers & D1. I've worked with both in the past and knew it's good for a little (free to host) side project like this. Feedback welcome, especially on whether the 10 seconds feels right (I wanted to avoid people googling the categories while playing). Comments URL: https://news.ycombinator.com/item?id=49947375 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49947375"
+    },
+    {
+      "id": "69e8d6794eef07d40d30",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Four LLMs play 20 questions for real money, live",
+      "url": "https://aquarium.money/twenty",
+      "published_at": "2026-10-03T20:29:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I wanted to explore how AI models behave when they have their own money. So I gave 4 frontier models their own USDC and had them compete in games of 20 questions. Anyone can watch live. Each round, one model takes a turn picking the secret word, and the others interrogate it in a group chat. Every move costs money: 10 cents to ask a question, $1.00 for a wrong guess, and a right guess takes the pot. Questions are paid for privately, but inform everyone. This introduces a free rider problem that's fun to observe. The models privately record their best guess and confidence level on every turn. This makes it possible to look for patterns in how they’re calibrated. Overconfident models bleed money, timid ones rarely win, and well-calibrated ones get rich. The money is real, and every transfer is on-chain. At the end of each game a referee model judges the transcript to make sure the host didn’t lie in any answers. If the host is caught lying, it forfeits all its fees (it happens). Season 1 ran for 85 games and Gemini turned $25 into $61 while Claude and Grok went broke. Models who had recently guessed wrong were 5x more likely to guess again. Full writeup at https://aquarium.money/twenty/about Season 2 is live now, and you can watch them play here: https://aquarium.money/twenty Built solo as a side project. Comments URL: https://news.ycombinator.com/item?id=49947482 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49947482"
+    },
+    {
+      "id": "acc8f6c6af1544c5e643",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: [Open-source] Sign JSON and send it as a business document",
+      "url": "https://json-doc.com",
+      "published_at": "2026-10-03T20:57:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi there. I used to work in international trade, and encountered many situations where people create a PDF from a system, send it to another party, and the other party parses the PDF to input into their system. As AI agents become first principles to deal with the documents, I believe the extra document creation and parsing step will become unnecessary. So I created a JSON viewer, where you can sign JSON and send it to other parties as a portable document. It can also display JSON data in a more document-like format. I’m wondering if such a format can be used as a replacement for some document communication today. I'd be so happy to hear your thoughts. Comments URL: https://news.ycombinator.com/item?id=49947702 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49947702"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-03T16:17:56.409123+00:00",
+      "last_success": "2026-10-03T21:14:22.354421+00:00",
       "count": 10,
       "earliest": "2026-10-01T19:11:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-03T16:17:56.589328+00:00",
+      "last_success": "2026-10-03T21:14:28.031850+00:00",
       "count": 20,
       "earliest": "2026-09-28T16:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-03T16:17:56.733869+00:00",
+      "last_success": "2026-10-03T21:14:28.189772+00:00",
       "count": 872,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-03T16:17:56.839516+00:00",
+      "last_success": "2026-10-03T21:14:28.434836+00:00",
       "count": 30,
-      "earliest": "2026-09-20T21:06:43+00:00",
+      "earliest": "2026-09-21T22:25:44+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-03T16:17:57.202159+00:00",
+      "last_success": "2026-10-03T21:14:29.761231+00:00",
       "count": 100,
-      "earliest": "2026-10-02T17:01:35+00:00",
+      "earliest": "2026-10-02T21:52:13+00:00",
       "gap": false,
       "error": null
     },
@@ -22110,59 +22290,59 @@
       "count": 100,
       "earliest": "2026-10-01T17:21:30+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-03T16:18:00.187447+00:00",
+      "last_success": "2026-10-03T21:14:36.958600+00:00",
       "count": 10,
       "earliest": "2026-09-19T03:10:40+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-03T16:18:01.218887+00:00",
+      "last_success": "2026-10-03T21:14:38.470832+00:00",
       "count": 30,
       "earliest": "2026-09-17T07:51:57+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-03T16:18:01.540218+00:00",
+      "last_success": "2026-10-03T21:14:38.964030+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-03T16:18:01.819165+00:00",
+      "last_success": "2026-10-03T21:14:39.365632+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-03T16:18:02.363829+00:00",
+      "last_success": "2026-10-03T21:14:39.943011+00:00",
       "count": 9,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-03T16:18:16.582096+00:00",
+      "last_success": "2026-10-03T21:15:02.875168+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-03T16:18:16.698582+00:00",
+      "last_success": "2026-10-03T21:15:03.077133+00:00",
       "count": 1245,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-03T16:18:33.587336+00:00",
+      "last_success": "2026-10-03T21:15:31.243580+00:00",
       "count": 11,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
@@ -22219,5 +22399,5 @@
       "to": "2026-10-01T16:30:10+00:00"
     }
   ],
-  "collected_at": "2026-10-03T16:18:33.587523+00:00"
+  "collected_at": "2026-10-03T21:15:31.243767+00:00"
 }
