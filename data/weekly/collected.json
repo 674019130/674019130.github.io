@@ -21803,102 +21803,234 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://data-sales-broker.app/ Comments URL: https://news.ycombinator.com/item?id=49941499 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49941499"
+    },
+    {
+      "id": "705cc641cfafc2ca61d1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rowan, an open-source SAST scanner for AI apps (code, models, MCP)\"",
+      "url": "https://github.com/hedgerow-dev/rowan",
+      "published_at": "2026-10-03T05:29:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/hedgerow-dev/rowan Comments URL: https://news.ycombinator.com/item?id=49941569 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49941569"
+    },
+    {
+      "id": "20b40caaba5e9c94450c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Taming Coding Agents Using Chemical Engineering Principles",
+      "url": "https://blog-konecny.xyz/blog/2026/taming-coding-agents-using-chemical-engineering-principles",
+      "published_at": "2026-10-03T06:34:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blog-konecny.xyz/blog/2026/taming-coding-agents-using-chemical-engineering-principles/ Comments URL: https://news.ycombinator.com/item?id=49941850 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49941850"
+    },
+    {
+      "id": "ecf9681e0ca388f7e239",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Offrun – manage every coding agent from one workspace",
+      "url": "https://offrun.dev",
+      "published_at": "2026-10-03T08:40:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Run Claude Code, Codex, AGY, and Grok Build side by side. See who is working, who needs you, and what every account has left. Comments URL: https://news.ycombinator.com/item?id=49942434 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49942434"
+    },
+    {
+      "id": "bda68d587b2202856f45",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Offrun – manage every coding agent from one workspace",
+      "url": "https://offrun.dev",
+      "published_at": "2026-10-03T08:40:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Run Claude Code, Codex, AGY, and Grok Build side by side. See who is working, who needs you, and what every account has left. Comments URL: https://news.ycombinator.com/item?id=49942434 Points: 6 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49942434"
+    },
+    {
+      "id": "20ac79184ae2e4b808cc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Collaborative AI Engineering",
+      "url": "https://griyd.com",
+      "published_at": "2026-10-03T08:40:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! I launched Griyd a few days ago to help tackle some of the challenges we faced at my workplace. I’m really passionate about this project and think it has a lot of potential. I hope others will find it useful. Any feedback would be greatly appreciated! Comments URL: https://news.ycombinator.com/item?id=49942439 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49942439"
+    },
+    {
+      "id": "6ce7eb4cd6d68966539a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: UsageAtlas(OSS), All your AI coding usage insights. One beautiful view",
+      "url": "https://usageatlas.com",
+      "published_at": "2026-10-03T09:01:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "Track AI coding usage across 14 providers. Token history, available cost estimates, credits, and usage limits in one free, open-source desktop app. Comments URL: https://news.ycombinator.com/item?id=49942530 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49942530"
+    },
+    {
+      "id": "bb7e217b388da2625bd7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: UsageAtlas(OSS), All your AI coding usage insights. One beautiful view",
+      "url": "https://usageatlas.com",
+      "published_at": "2026-10-03T09:01:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "Track AI coding usage across 14 providers. Token history, available cost estimates, credits, and usage limits in one free, open-source desktop app. Comments URL: https://news.ycombinator.com/item?id=49942530 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49942530"
+    },
+    {
+      "id": "51da51023b8888f93cf1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: GhostBench – do AI models recommend dead SaaS? I tested my own thesis",
+      "url": "https://github.com/kyv-attest/kyv",
+      "published_at": "2026-10-03T09:05:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/kyv-attest/kyv Comments URL: https://news.ycombinator.com/item?id=49942554 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49942554"
+    },
+    {
+      "id": "d48dc4834c59c01fe4c2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "An AI agent emailed researchers for help. It told us why",
+      "url": "https://www.science.org/content/article/exclusive-ai-agent-emailed-hundreds-researchers-help-it-told-us-why",
+      "published_at": "2026-10-03T10:07:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.science.org/content/article/exclusive-ai-agent-emailed-hundreds-researchers-help-it-told-us-why Comments URL: https://news.ycombinator.com/item?id=49942865 Points: 40 # Comments: 52",
+      "discussion_url": "https://news.ycombinator.com/item?id=49942865"
+    },
+    {
+      "id": "763c7f6da1a602f644b4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Beautiful form back end for AI agents – Nisuform",
+      "url": "https://nisuform.com",
+      "published_at": "2026-10-03T10:16:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi! everyone, really excited to share my latest project, which is a form backend service that's very easy to setup. Feel free to ask anything about it :) Comments URL: https://news.ycombinator.com/item?id=49942913 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49942913"
+    },
+    {
+      "id": "4f89766b7fecbd1df1d7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Germany's new sovereign AI model Kolibri",
+      "url": "https://tej.as/blog/aleph-alpha-kolibri",
+      "published_at": "2026-10-03T10:43:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tej.as/blog/aleph-alpha-kolibri Comments URL: https://news.ycombinator.com/item?id=49943034 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49943034"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-03T05:18:49.705063+00:00",
+      "last_success": "2026-10-03T11:39:51.272958+00:00",
       "count": 10,
       "earliest": "2026-10-01T19:11:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-03T05:18:49.900691+00:00",
+      "last_success": "2026-10-03T11:39:51.464448+00:00",
       "count": 20,
       "earliest": "2026-09-28T16:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-03T05:18:50.065895+00:00",
+      "last_success": "2026-10-03T11:39:51.641647+00:00",
       "count": 872,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-03T05:18:50.164834+00:00",
+      "last_success": "2026-10-03T11:39:51.812238+00:00",
       "count": 30,
       "earliest": "2026-09-20T21:06:43+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-03T05:19:07.732473+00:00",
+      "last_success": "2026-10-03T11:39:57.459585+00:00",
       "count": 100,
-      "earliest": "2026-10-02T11:24:52+00:00",
+      "earliest": "2026-10-02T14:03:59+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-03T05:19:08.629726+00:00",
+      "last_success": "2026-10-03T11:39:59.222012+00:00",
       "count": 100,
-      "earliest": "2026-10-01T14:07:03+00:00",
+      "earliest": "2026-10-01T15:33:25+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-03T05:19:09.030853+00:00",
+      "last_success": "2026-10-03T11:39:59.705448+00:00",
       "count": 10,
       "earliest": "2026-09-19T03:10:40+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-03T05:19:09.986768+00:00",
+      "last_success": "2026-10-03T11:40:00.984885+00:00",
       "count": 30,
       "earliest": "2026-09-17T07:51:57+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-03T05:19:10.324886+00:00",
+      "last_success": "2026-10-03T11:40:01.425920+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-03T05:19:10.643825+00:00",
+      "last_success": "2026-10-03T11:40:01.780398+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-03T05:19:11.043146+00:00",
+      "last_success": "2026-10-03T11:40:02.304563+00:00",
       "count": 9,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-03T05:19:25.358882+00:00",
+      "last_success": "2026-10-03T11:40:20.992242+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-03T05:19:25.517651+00:00",
+      "last_success": "2026-10-03T11:40:21.172586+00:00",
       "count": 1245,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-03T05:19:43.309449+00:00",
+      "last_success": "2026-10-03T11:40:45.139058+00:00",
       "count": 11,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
@@ -21955,5 +22087,5 @@
       "to": "2026-10-01T16:30:10+00:00"
     }
   ],
-  "collected_at": "2026-10-03T05:19:43.309678+00:00"
+  "collected_at": "2026-10-03T11:40:45.139272+00:00"
 }
