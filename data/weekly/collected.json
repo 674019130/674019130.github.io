@@ -21935,102 +21935,234 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://tej.as/blog/aleph-alpha-kolibri Comments URL: https://news.ycombinator.com/item?id=49943034 Points: 5 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49943034"
+    },
+    {
+      "id": "537509a58e2c5c5320b4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Kolibri is an open-weight LLM from Aleph Alpha for German and English",
+      "url": "https://tej.as/blog/aleph-alpha-kolibri",
+      "published_at": "2026-10-03T10:43:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tej.as/blog/aleph-alpha-kolibri Comments URL: https://news.ycombinator.com/item?id=49943034 Points: 281 # Comments: 117",
+      "discussion_url": "https://news.ycombinator.com/item?id=49943034"
+    },
+    {
+      "id": "d4a6cdc19e598fda27f5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Pool M2M economy where AI agents bid, execute work, and earn autonomously",
+      "url": "https://agent-pool-gateway-production.up.railway.app/llms.txt",
+      "published_at": "2026-10-03T13:25:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agent-pool-gateway-production.up.railway.app/llms.txt Comments URL: https://news.ycombinator.com/item?id=49944056 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944056"
+    },
+    {
+      "id": "05acafcc1f62595654b1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Web2MD – turn any URL into clean Markdown for AI agents",
+      "url": "https://github.com/astra-intelligence/web2md-mcp",
+      "published_at": "2026-10-03T13:36:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/astra-intelligence/web2md-mcp Comments URL: https://news.ycombinator.com/item?id=49944139 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944139"
+    },
+    {
+      "id": "4bda94f006ea5d61eb96",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "What Kubernetes' \"monolith\" lesson means for AI agent harnesses",
+      "url": "https://thenewstack.io/kubecon-agent-harness-koordinator",
+      "published_at": "2026-10-03T14:12:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://thenewstack.io/kubecon-agent-harness-koordinator/ Comments URL: https://news.ycombinator.com/item?id=49944432 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944432"
+    },
+    {
+      "id": "0d425f68cefe8efb4c34",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Lazy-clean Keep coding agents from overengineering",
+      "url": "https://github.com/JustasMonkev/lazy-clean",
+      "published_at": "2026-10-03T14:27:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/JustasMonkev/lazy-clean Comments URL: https://news.ycombinator.com/item?id=49944568 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944568"
+    },
+    {
+      "id": "c4e9a68ecff08e606fb9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Lazy-clean Keep coding agents from overengineering",
+      "url": "https://github.com/JustasMonkev/lazy-clean",
+      "published_at": "2026-10-03T14:27:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/JustasMonkev/lazy-clean Comments URL: https://news.ycombinator.com/item?id=49944568 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944568"
+    },
+    {
+      "id": "1cfa700cc0bd388d6356",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: RAG without embeddings, running in the browser (vanilla JavaScript)",
+      "url": "https://github.com/gmaterni/ragindex",
+      "published_at": "2026-10-03T14:29:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/gmaterni/ragindex Comments URL: https://news.ycombinator.com/item?id=49944594 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944594"
+    },
+    {
+      "id": "4b729cce44c9eb36c46b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: P(bloom), an Omarchy theme with 42 blueprint style wallpapers",
+      "url": "https://github.com/ncr/omarchy-p-bloom-theme",
+      "published_at": "2026-10-03T14:53:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi all! My name is Jacek Becela, this is my first Show HN. I wanted to create blueprint wallpapers for my desktop and got a bit carried away. These were created along the way: - 42 unique wallpapers, each in 3 color intensity versions, 18 resolutions and aspect ratios giving in total 2268 files (~700MB) served on demand from Cloudflare R2 - the color theme, - music video with two genre options - a companion app for downloading the versions correct for your screen. - a blog post describing the journey I used AI during the whole creative process: Opus 5.5 on medium/high and Suno. Used Suno for the first time and had so much fun! Completely new experience for me. I made almost 500 decisions during the process and I wrote about it here: https://jacekbecela.com/blog/omarchy-p-bloom-theme/ Feedback most welcome! Comments URL: https://news.ycombinator.com/item?id=49944831 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944831"
+    },
+    {
+      "id": "2b2755e682e848455f48",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Introudcing our latest frontier model",
+      "url": "https://yuv-glitch.github.io/elgato",
+      "published_at": "2026-10-03T15:07:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://yuv-glitch.github.io/elgato/ Comments URL: https://news.ycombinator.com/item?id=49944957 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944957"
+    },
+    {
+      "id": "f7ee550591755e94bd09",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Jabhook – Boxing Training (Computer Vision, 3D Biomechanics, Local LLM)",
+      "url": "https://jabhook.ai",
+      "published_at": "2026-10-03T15:10:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jabhook.ai/ Comments URL: https://news.ycombinator.com/item?id=49944983 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49944983"
+    },
+    {
+      "id": "aeb6df324d818c23753c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Agentlytics – cookieless analytics your AI agent can read and act on",
+      "url": "https://measuremy.site",
+      "published_at": "2026-10-03T15:43:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://measuremy.site Comments URL: https://news.ycombinator.com/item?id=49945236 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49945236"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-03T11:39:51.272958+00:00",
+      "last_success": "2026-10-03T16:17:56.409123+00:00",
       "count": 10,
       "earliest": "2026-10-01T19:11:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-03T11:39:51.464448+00:00",
+      "last_success": "2026-10-03T16:17:56.589328+00:00",
       "count": 20,
       "earliest": "2026-09-28T16:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-03T11:39:51.641647+00:00",
+      "last_success": "2026-10-03T16:17:56.733869+00:00",
       "count": 872,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-03T11:39:51.812238+00:00",
+      "last_success": "2026-10-03T16:17:56.839516+00:00",
       "count": 30,
       "earliest": "2026-09-20T21:06:43+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-03T11:39:57.459585+00:00",
+      "last_success": "2026-10-03T16:17:57.202159+00:00",
       "count": 100,
-      "earliest": "2026-10-02T14:03:59+00:00",
+      "earliest": "2026-10-02T17:01:35+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-03T11:39:59.222012+00:00",
+      "last_success": "2026-10-03T16:17:59.715725+00:00",
       "count": 100,
-      "earliest": "2026-10-01T15:33:25+00:00",
+      "earliest": "2026-10-01T17:21:30+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-03T11:39:59.705448+00:00",
+      "last_success": "2026-10-03T16:18:00.187447+00:00",
       "count": 10,
       "earliest": "2026-09-19T03:10:40+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-03T11:40:00.984885+00:00",
+      "last_success": "2026-10-03T16:18:01.218887+00:00",
       "count": 30,
       "earliest": "2026-09-17T07:51:57+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-03T11:40:01.425920+00:00",
+      "last_success": "2026-10-03T16:18:01.540218+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-03T11:40:01.780398+00:00",
+      "last_success": "2026-10-03T16:18:01.819165+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-03T11:40:02.304563+00:00",
+      "last_success": "2026-10-03T16:18:02.363829+00:00",
       "count": 9,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-03T11:40:20.992242+00:00",
+      "last_success": "2026-10-03T16:18:16.582096+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-03T11:40:21.172586+00:00",
+      "last_success": "2026-10-03T16:18:16.698582+00:00",
       "count": 1245,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-03T11:40:45.139058+00:00",
+      "last_success": "2026-10-03T16:18:33.587336+00:00",
       "count": 11,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
@@ -22087,5 +22219,5 @@
       "to": "2026-10-01T16:30:10+00:00"
     }
   ],
-  "collected_at": "2026-10-03T11:40:45.139272+00:00"
+  "collected_at": "2026-10-03T16:18:33.587523+00:00"
 }
