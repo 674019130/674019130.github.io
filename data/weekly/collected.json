@@ -22105,9 +22105,33 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49945696"
     },
     {
+      "id": "cf214acee384a9f41d70",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: AgentMachinist: make your coding agent show its work",
+      "url": "https://github.com/vscarpenter/AgentMachinist",
+      "published_at": "2026-10-03T16:35:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vscarpenter/AgentMachinist Comments URL: https://news.ycombinator.com/item?id=49945696 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49945696"
+    },
+    {
       "id": "fa9f9c86fdcb6b3ca9e1",
       "source": "hn-show",
       "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ShipSlides – turn a URL into editable slides with a serverless agent",
+      "url": "https://shipslides.dev",
+      "published_at": "2026-10-03T16:37:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://shipslides.dev Comments URL: https://news.ycombinator.com/item?id=49945713 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49945713"
+    },
+    {
+      "id": "f9cc14ba9001ce6dcd51",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
       "category": "discovery",
       "title": "Show HN: ShipSlides – turn a URL into editable slides with a serverless agent",
       "url": "https://shipslides.dev",
@@ -22126,6 +22150,18 @@
       "published_at": "2026-10-03T17:34:08+00:00",
       "date_kind": "community_post",
       "evidence": "Article URL: https://docs.plannotator.ai/open-source/workflows/questions Comments URL: https://news.ycombinator.com/item?id=49946139 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946139"
+    },
+    {
+      "id": "622f8c83d6edc36feb95",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: UI for answering agent questions async",
+      "url": "https://docs.plannotator.ai/open-source/workflows/questions",
+      "published_at": "2026-10-03T17:34:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://docs.plannotator.ai/open-source/workflows/questions Comments URL: https://news.ycombinator.com/item?id=49946139 Points: 5 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49946139"
     },
     {
@@ -22189,6 +22225,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49946607"
     },
     {
+      "id": "566c9018016a67f6716f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Steer a coding agent on your own machine from Claude/ChatGPT (via MCP)",
+      "url": "https://remote.phyra.ai",
+      "published_at": "2026-10-03T18:55:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://remote.phyra.ai/ Comments URL: https://news.ycombinator.com/item?id=49946733 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946733"
+    },
+    {
       "id": "f646603b852eac8f1f7d",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -22211,6 +22259,30 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://vetoo.dev Comments URL: https://news.ycombinator.com/item?id=49946869 Points: 1 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=49946869"
+    },
+    {
+      "id": "84b6a07cdd1a4f55744b",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Television: GUI for your personal agent.",
+      "url": "https://github.com/telepath-computer/television",
+      "published_at": "2026-10-03T19:18:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/telepath-computer/television Comments URL: https://news.ycombinator.com/item?id=49946919 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49946919"
+    },
+    {
+      "id": "209e4c95b0b2453ae85c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AgentSight: System-wide AI agent profiling and monitoring with eBPF",
+      "url": "https://github.com/eunomia-bpf/agentsight",
+      "published_at": "2026-10-03T20:07:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/eunomia-bpf/agentsight Comments URL: https://news.ycombinator.com/item?id=49947306 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49947306"
     },
     {
       "id": "f7c4d0d3662443103027",
@@ -22237,6 +22309,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49947482"
     },
     {
+      "id": "a96fb0a105c9d859cf83",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent-blackbox – a tamper-evident flight recorder for Claude Code",
+      "url": "https://github.com/developerfred/agent-blackbox",
+      "published_at": "2026-10-03T20:51:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/developerfred/agent-blackbox Comments URL: https://news.ycombinator.com/item?id=49947646 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49947646"
+    },
+    {
       "id": "acc8f6c6af1544c5e643",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -22247,102 +22331,342 @@
       "date_kind": "community_post",
       "evidence": "Hi there. I used to work in international trade, and encountered many situations where people create a PDF from a system, send it to another party, and the other party parses the PDF to input into their system. As AI agents become first principles to deal with the documents, I believe the extra document creation and parsing step will become unnecessary. So I created a JSON viewer, where you can sign JSON and send it to other parties as a portable document. It can also display JSON data in a more document-like format. I’m wondering if such a format can be used as a replacement for some document communication today. I'd be so happy to hear your thoughts. Comments URL: https://news.ycombinator.com/item?id=49947702 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49947702"
+    },
+    {
+      "id": "2369cc7df300891a98cc",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "iNoU Agent",
+      "url": "https://marketplace.visualstudio.com/items?itemName=MauricioGraciaGutierrez.inou-vscode",
+      "published_at": "2026-10-03T21:02:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://marketplace.visualstudio.com/items?itemName=MauricioGraciaGutierrez.inou-vscode Comments URL: https://news.ycombinator.com/item?id=49947748 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49947748"
+    },
+    {
+      "id": "25db20476bae8178eb94",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Is library building obsoleted by AI coding?",
+      "url": "https://news.ycombinator.com/item?id=49947975",
+      "published_at": "2026-10-03T21:29:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Huge open source projects have been successful by building upon dozens to hundreds of small libraries that encapsulate functionality and complexity. AI coding uses these libraries to quickly build applications. With the latest round of model releases I am seeing that AI can now generate the functionality of almost any library in-line as it generates the application. When building took a long time, breaking things down into well defined modules, shipping incrementally, and reusing code, were essential techniques. They seem much less important when AI is doing the work. Is software library creation obsolete? Comments URL: https://news.ycombinator.com/item?id=49947975 Points: 3 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=49947975"
+    },
+    {
+      "id": "cb68024fa6ab24cbc20c",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "September sponsors-only newsletter",
+      "url": "https://simonwillison.net/2026/Oct/3/newsletter",
+      "published_at": "2026-10-03T22:00:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "I just sent the September edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: More Fable class models A pricing war 3D graphics, Blender, and pixel art LLMs come for mathematics So many more accidental cyberattacks The vulnapocalypse comes for Datasette What I'm using right now My software releases this month 2026 in LLMs (so far) Here's a copy of the August newsletter as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy! Tags: newsletter",
+      "discussion_url": ""
+    },
+    {
+      "id": "6a40f6673c70e04782c7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Merging With An LLM: Can an LLM reconstruct my values from small data?",
+      "url": "https://chillphysicsenjoyer.substack.com/p/merging-with-an-llm",
+      "published_at": "2026-10-03T22:24:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://chillphysicsenjoyer.substack.com/p/merging-with-an-llm Comments URL: https://news.ycombinator.com/item?id=49948376 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49948376"
+    },
+    {
+      "id": "7bac3f53146d2e453580",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Cliproxy-rs, a Rust port of the CLIProxyAPI LLM subscription proxy",
+      "url": "https://github.com/vayungodara/cliproxy-rs",
+      "published_at": "2026-10-03T22:36:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vayungodara/cliproxy-rs Comments URL: https://news.ycombinator.com/item?id=49948441 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49948441"
+    },
+    {
+      "id": "09418ead3493f5e5c214",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Cliproxy-rs, a Rust port of the CLIProxyAPI LLM subscription proxy",
+      "url": "https://github.com/vayungodara/cliproxy-rs",
+      "published_at": "2026-10-03T22:36:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vayungodara/cliproxy-rs Comments URL: https://news.ycombinator.com/item?id=49948441 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49948441"
+    },
+    {
+      "id": "df6d7dfbc5910492c1b6",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "published_at": "2026-10-03T22:56:48+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
+      "id": "ccab666fe3b4a4341648",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.289",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.289",
+      "published_at": "2026-10-03T23:07:17+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines - Fixed the terminal freezing on short code blocks with many unclosed `",
+      "discussion_url": ""
+    },
+    {
+      "id": "f412e0eb04c236294960",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentiLoop Agent Mac GUI Agent Loop for macOS 14.6 or Later",
+      "url": "https://agentiloop.ai",
+      "published_at": "2026-10-03T23:27:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Agent! originally appeared on Hacker News last April. A lot has changed since there. Recently a new feature has been developed called Auto-Pilot. It is given a goal and will not stop until the goal is reached. Think of it as tasks on steroids. What Agent does is create multi tasks. Each task is referred to as a Cycle. By default Auto-Pilot triggered by /auto [goal] do not have a time frame. Agent! is told to keep running until its goal is reached. Auto-Pilot has a kill switch, a \"Stop All\" button. The user can also kill the current Cycle only using /auto stop and can also kill all using /auto stop all. In November a user will be able to have Multiple Auto-Pilots running on the same project. And an Auto-Pilot tab will be able to automatically spawn other tabs. Currently we are developing a Mario Kart like clone called \"GoKart\" written in GoDot 4. So far over 20 hours have been recorded developing and improving the game. Comments URL: https://news.ycombinator.com/item?id=49948810 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49948810"
+    },
+    {
+      "id": "cedfdbd02cf2be608666",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: AgentiLoop Agent Mac GUI Agent Loop for macOS 14.6 or Later",
+      "url": "https://agentiloop.ai",
+      "published_at": "2026-10-03T23:27:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Agent! originally appeared on Hacker News last April. A lot has changed since there. Recently a new feature has been developed called Auto-Pilot. It is given a goal and will not stop until the goal is reached. Think of it as tasks on steroids. What Agent does is create multi tasks. Each task is referred to as a Cycle. By default Auto-Pilot triggered by /auto [goal] do not have a time frame. Agent! is told to keep running until its goal is reached. Auto-Pilot has a kill switch, a \"Stop All\" button. The user can also kill the current Cycle only using /auto stop and can also kill all using /auto stop all. In November a user will be able to have Multiple Auto-Pilots running on the same project. And an Auto-Pilot tab will be able to automatically spawn other tabs. Currently we are developing a Mario Kart like clone called \"GoKart\" written in GoDot 4. So far over 20 hours have been recorded developing and improving the game. Comments URL: https://news.ycombinator.com/item?id=49948810 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49948810"
+    },
+    {
+      "id": "09207da09a26bddf2371",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps",
+      "published_at": "2026-10-03T23:34:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps . I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and return errors\". These need to be hard limits. Soft caps, \"after $X/month, send me a warning email\", will not cut it. Coding agents, and personal agents (coding agents wrapped in a less threatening UI), greatly reduce the friction of spinning up code that can do useful things. Sometimes those things cost money - calls to paid APIs, or hosted web applications, or systems that can bill for additional storage and compute. Nobody wants to wake up to an email sent at midnight warning about a budget limit and find that, while they slept, their rogue service had consumed several hundred (or several thousand) more dollars of usage. An argument against this is that businesses don't want their hosted applications to start throwing errors because some budget was exceeded. I expect that most businesses and individuals would prefer errors to a surprise $10,000+ bill. I think hard budget caps need to be the default. If someone wants to live dangerously they should be able to do that, but it needs to be on an opt-in basis. Have a nice, clear checkbox somewhere prominent: Remove the budget cap. My application will not be shut down if I exceed the configured budget limit, and I will be responsible for subsequent charges. The service I most want to see this from is AWS. I've heard plenty of stories from people who refuse to use AWS for personal projects out of (justified) fear that a runaway service might bankrupt them. I've also heard stories from people who didn't anticipate this and ended up seriously burned. ... and it turns out AWS finally launched spending limits a few weeks ago! From their announcement New AWS experience helps builders get started and ship faster on 16th September: When you're ready to upgrade to a paid plan, you can set a monthly spend limit for your project based on your usage patterns so that you stay within your budget. If a project's usage reaches its spend limit, your project is paused for that month. See also Create a spend limit in AWS Settings , though that page warns that \"We're currently releasing our new experience to a limited number of customers.\" Here's hoping that hits general availability for existing accounts soon. Google Cloud launched a similar feature in July, called Spend Caps, which lets you \"set a monthly financial cap on specific services within a project\". Looks like this is becoming a trend! In an ideal world, our agents could help with this. It would be great if agents started biasing towards recommending providers with hard budget caps, and warning new and inexperienced builders against deploying applications using uncapped services that might get them into trouble. Tags: amazon-web-services , ai , coding-agents",
+      "discussion_url": ""
+    },
+    {
+      "id": "30565fe8f23c53113f92",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: jpm – a JavaScript package manager in Rust, every line by Claude Code",
+      "url": "https://getjpm.sh",
+      "published_at": "2026-10-04T00:11:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://getjpm.sh/ Comments URL: https://news.ycombinator.com/item?id=49949172 Points: 6 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=49949172"
+    },
+    {
+      "id": "6521bb1b718280dda3df",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ViralWiz – AI captions, clips and thumbnails for short-form video",
+      "url": "https://viralwiz.co",
+      "published_at": "2026-10-04T00:13:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://viralwiz.co Comments URL: https://news.ycombinator.com/item?id=49949190 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49949190"
+    },
+    {
+      "id": "5608d935ffd03da9b7d6",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Give your AI agent awareness of what's happening around you",
+      "url": "https://github.com/SyncSo-Inc/syncso",
+      "published_at": "2026-10-04T03:08:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/SyncSo-Inc/syncso Comments URL: https://news.ycombinator.com/item?id=49950236 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49950236"
+    },
+    {
+      "id": "19486c45a5243c947e5c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Pi-based coding agent with hard budget caps",
+      "url": "https://kimchi.dev",
+      "published_at": "2026-10-04T03:29:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kimchi.dev/ Comments URL: https://news.ycombinator.com/item?id=49950321 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49950321"
+    },
+    {
+      "id": "ce21a99bc4e58bf21aaa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: SuperLocalMemory 4.0 \"Governed Memory Operating System for AI Agents\"",
+      "url": "https://arxiv.org/abs/2608.08253",
+      "published_at": "2026-10-04T03:57:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2608.08253 Comments URL: https://news.ycombinator.com/item?id=49950478 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49950478"
+    },
+    {
+      "id": "df420e90f2c11b321753",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Gentle AI: AI Coding Ecosystem",
+      "url": "https://gentle-ai.gentlemanprogramming.com",
+      "published_at": "2026-10-04T04:20:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://gentle-ai.gentlemanprogramming.com/ Comments URL: https://news.ycombinator.com/item?id=49950595 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49950595"
+    },
+    {
+      "id": "28adfc1e4fc15c272920",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Changelog to README: testing LLM update strategies",
+      "url": "https://codecut.ai/readme-update-from-release-notes",
+      "published_at": "2026-10-04T04:30:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://codecut.ai/readme-update-from-release-notes/ Comments URL: https://news.ycombinator.com/item?id=49950649 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49950649"
+    },
+    {
+      "id": "cedca6096f59683268dd",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Oversight Has Capacity: Calibrating Agent Guards to a Subjective Fatiguing Human",
+      "url": "https://arxiv.org/abs/2606.08919",
+      "published_at": "2026-10-04T04:35:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2606.08919 Comments URL: https://news.ycombinator.com/item?id=49950671 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49950671"
+    },
+    {
+      "id": "5358c9176600a07c0786",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "MBTI for AI coding agents, complete with a self-awareness score",
+      "url": "https://github.com/joonfjp/16agents",
+      "published_at": "2026-10-04T05:52:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/joonfjp/16agents Comments URL: https://news.ycombinator.com/item?id=49951064 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951064"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-03T21:14:22.354421+00:00",
+      "last_success": "2026-10-04T05:53:32.867784+00:00",
       "count": 10,
       "earliest": "2026-10-01T19:11:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-03T21:14:28.031850+00:00",
+      "last_success": "2026-10-04T05:53:33.203877+00:00",
       "count": 20,
       "earliest": "2026-09-28T16:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-03T21:14:28.189772+00:00",
-      "count": 872,
+      "last_success": "2026-10-04T05:53:33.445818+00:00",
+      "count": 873,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-03T21:14:28.434836+00:00",
+      "last_success": "2026-10-04T05:53:33.646145+00:00",
       "count": 30,
-      "earliest": "2026-09-21T22:25:44+00:00",
+      "earliest": "2026-09-22T15:54:16+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-03T21:14:29.761231+00:00",
+      "last_success": "2026-10-04T05:53:34.191973+00:00",
       "count": 100,
-      "earliest": "2026-10-02T21:52:13+00:00",
+      "earliest": "2026-10-03T04:27:15+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-03T16:17:59.715725+00:00",
+      "last_success": "2026-10-04T05:53:37.174825+00:00",
       "count": 100,
-      "earliest": "2026-10-01T17:21:30+00:00",
+      "earliest": "2026-10-01T21:44:44+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-03T21:14:36.958600+00:00",
-      "count": 10,
-      "earliest": "2026-09-19T03:10:40+00:00",
+      "last_success": "2026-10-04T05:53:38.521497+00:00",
+      "count": 20,
+      "earliest": "2026-09-11T19:17:55+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-03T21:14:38.470832+00:00",
+      "last_success": "2026-10-04T05:53:40.494406+00:00",
       "count": 30,
       "earliest": "2026-09-17T07:51:57+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-03T21:14:38.964030+00:00",
+      "last_success": "2026-10-04T05:53:41.033135+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-03T21:14:39.365632+00:00",
+      "last_success": "2026-10-04T05:53:41.453549+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-03T21:14:39.943011+00:00",
+      "last_success": "2026-10-04T05:53:42.138535+00:00",
       "count": 9,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-03T21:15:02.875168+00:00",
+      "last_success": "2026-10-04T05:54:09.406979+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-03T21:15:03.077133+00:00",
+      "last_success": "2026-10-04T05:54:09.688870+00:00",
       "count": 1245,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-03T21:15:31.243580+00:00",
+      "last_success": "2026-10-04T05:54:42.546610+00:00",
       "count": 11,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
@@ -22399,5 +22723,5 @@
       "to": "2026-10-01T16:30:10+00:00"
     }
   ],
-  "collected_at": "2026-10-03T21:15:31.243767+00:00"
+  "collected_at": "2026-10-04T05:54:42.546823+00:00"
 }
