@@ -22775,41 +22775,305 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/laughingmandev/loa Comments URL: https://news.ycombinator.com/item?id=49953223 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49953223"
+    },
+    {
+      "id": "dd54eaff0ab52a652e4d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Colorful Design System for Agents",
+      "url": "https://orbeez-kit.vercel.app/chat",
+      "published_at": "2026-10-04T12:41:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://orbeez-kit.vercel.app/chat Comments URL: https://news.ycombinator.com/item?id=49953430 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49953430"
+    },
+    {
+      "id": "1f27f0ccd4925bd45296",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A complete web build of OrcaSlicer for 3D printing",
+      "url": "https://cubbycad.com/slicer",
+      "published_at": "2026-10-04T12:43:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Using a good deal of Claude, I got OrcaSlicer (and preFlight slicer) engines running in client-side WebAssembly with a full feature set for painting, slicing, assembling, and printing 3d models. The UI is also mobile friendly for slicing on the go. Direct print is supported for many models, though CORS proxying is often needed. It also supports a minimal level of TinkerCAD-style CSG modeling, as well as importing models from https://cubbycad.com I've been using it extensively when I need to trigger prints at home from my work computer. Take it for a test drive! The frontend is built on Nuxt UI. GitHub repo here: https://github.com/JoshTheDerf/cubbyslicer Comments URL: https://news.ycombinator.com/item?id=49953441 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49953441"
+    },
+    {
+      "id": "c84057b512b5fe950c24",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Untyped – check recorded agent runs against a TLA+ spec",
+      "url": "https://github.com/untyped-ai/untyped",
+      "published_at": "2026-10-04T13:33:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi, lots of talk about TLA+ lately, so I just published my work on the topic. The tool checks an agent harness design and its recorded runs to find invariant breaks. I believe it will help make your code hold up under retries and crashes. Sure you know your invariants? Comments URL: https://news.ycombinator.com/item?id=49953789 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49953789"
+    },
+    {
+      "id": "0f8a52bb370bf3679f59",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: B1 Sprechen – Practise German B1 Speaking Exams with AI",
+      "url": "https://b1sprechen.com",
+      "published_at": "2026-10-04T13:36:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://b1sprechen.com/ Comments URL: https://news.ycombinator.com/item?id=49953820 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49953820"
+    },
+    {
+      "id": "8f6d106751ea98c37f37",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Create Git workflows using Jev",
+      "url": "https://github.com/Ayush0054/metis",
+      "published_at": "2026-10-04T14:26:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Introducing Metis , A minimal clean workflow orchestrator framework to create workflows using Jev. Comments URL: https://news.ycombinator.com/item?id=49954220 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49954220"
+    },
+    {
+      "id": "a9021a71b173e8345e15",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The first ever competition of AI personal agents on the internet",
+      "url": "https://instapath.ai/personal-agent-challenge",
+      "published_at": "2026-10-04T14:48:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm starting the first competition of AI personal agents on the internet in the next few days. When you join the challenge the agent creates for you bitcoin wallet and connect you to instapath mailbox. The competition consists of a fews days of challenges that spread across the internet. It will be fun, register now with your preffered agent Comments URL: https://news.ycombinator.com/item?id=49954394 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49954394"
+    },
+    {
+      "id": "5db7b29b719caa3371f0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agents Sleep Preventer – keep your Mac awake only while AI agents work",
+      "url": "https://github.com/CharlonTank/agents-sleep-preventer",
+      "published_at": "2026-10-04T15:01:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "I run several Claude Code and Codex sessions in parallel and kept coming back to either a sleeping Mac with half-finished work, or a Mac that stayed up all night because I'd left caffeinate on. Agents Sleep Preventer hooks into the agents' own configs (Claude Code, Codex, Hermes), so it knows when each session is actually working. It keeps the Mac awake only then, lid closed included, and lets it sleep when they're done. The menu bar lists every session by project and branch: which are working, which need you and why (\"Claude needs your permission to use Bash\"), and the background commands each one still runs, with a Stop button. \"Sleep when done\" puts the Mac to sleep once everything finishes, with an optional time limit for agents that poll forever. It also does local push-to-talk dictation (Whisper or Parakeet, nothing leaves the Mac). Free, MIT, Rust + Swift. macOS 14+ on Apple Silicon, plus a Windows build. Comments URL: https://news.ycombinator.com/item?id=49954491 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49954491"
+    },
+    {
+      "id": "a225713c9e3f8f8b6e89",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Borehole – acquisition tech due diligence from a repo's Git history",
+      "url": "https://borehole.dev",
+      "published_at": "2026-10-04T15:26:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've done technical due diligence on acquisitions for years. Most of what changes a deal is answerable from the repository: does the team review its code, does one person carry the recent work, did the licence just change, are releases cut from what's on main, do the tests run in CI. So I built a tool that reads all of that from the history and working tree, and writes a report a deal team can act on. Seven dimensions, 100+ deterministic checks. No model writes the findings. Every finding cites a commit, a file or a line. What code can't settle becomes a question for a person, not a guess. Public repositories are free: paste a GitHub, GitLab, Codeberg or SourceHut address at borehole.dev. Private repositories never reach our servers. pip install borehole, then borehole collect . --dry-run prints exactly what would be sent: counts, paths, short matched lines, hashed author identities. Never whole files. The technology is new, and I'd rather hear about issues here than not. The first 20 people who email support@borehole.dev with \"HN beta\" get a free Report key for their own private repository, in exchange for a short survey after the report. Website: https://borehole.dev/ Example report: https://borehole.dev/r/rustdesk/rustdesk/b5d8b97 Comments URL: https://news.ycombinator.com/item?id=49954718 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49954718"
+    },
+    {
+      "id": "d0d990a3d5c39f50c884",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Bearbits – AI copilot that helps during meetings instead of only after",
+      "url": "https://bearbits.io",
+      "published_at": "2026-10-04T15:35:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built this app mainly for myself and my wife. We both work in consulting and have tons of meetings every week. I had tried many of the existing meeting copilots but never found something that actually fulfilled what I wanted. Mainly, I wanted to be able to see in real time what's being said, irrespective of the language being spoken, including when people switch languages mid-meeting, which happens a lot in my work. I also wanted it translated in real time into my language, and I wanted suggestions for what to say that are grounded in actual web search rather than just the model making something up. I use Soniox for transcription and Exa.ai for web search. Bearbits runs in the browser and doesn't join the meeting as a bot. Looking forward to your feedback, especially on whether this kind of real-time assistance is useful to you or just distracting. Comments URL: https://news.ycombinator.com/item?id=49954800 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49954800"
+    },
+    {
+      "id": "e2949f89490649ac2d56",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Pve-agents – coding agents on your existing Proxmox infrastructure",
+      "url": "https://pve-agents.sh",
+      "published_at": "2026-10-04T15:45:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Built as a side-project after getting used to Cursor cloud agents at work. I wanted a similar environment for my personal projects, running on my own infra. Comments URL: https://news.ycombinator.com/item?id=49954905 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49954905"
+    },
+    {
+      "id": "4ac31d592f98914d3b31",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Google Trends for Hacker News Comments",
+      "url": "https://hntrends.hughparry.com",
+      "published_at": "2026-10-04T15:50:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've seen a fair few posts recently that try to categorise HN posts, so I thought google trends for hacker news would be fun. - chart the popularity of phrases up to 3 words long - includes all hn comments, apart from stuff like who's hiring threads - quite fun for looking at trends you'd expect with words/phrases you'd expect llms to use more frequently words/phrases are only in there if they have been used over 40 times in total there are some words/phrases that appear to fall off a cliff around the time that https://news.ycombinator.com/item?id=47340079 was posted Comments URL: https://news.ycombinator.com/item?id=49954954 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49954954"
+    },
+    {
+      "id": "19e388f81840714bddc6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Skins.dev – add the features missing from the web apps you use",
+      "url": "https://skins.dev",
+      "published_at": "2026-10-04T16:06:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm building skins.dev : Most AI tools help you build your own tool from scratch, but usually there's already a tool that gets you 80% there. Skins is for the other 20%: you describe what's missing in a web app you use, and we handle the rest, whatever it takes: from simple JS scripts and styles up to new backend features (hosted on our Cloudflare-compatible serverless cloud), so your feature can call other APIs and even have its own SQLite database. How it works: go to the page you'd like to change and press \"Record\" in the extension. We use the DOM snapshots and network requests to build a replica environment where coding agents can iterate safely. The Chromium extension then injects the changes per site via chrome.userScripts (à la Tampermonkey). I'm building a library of ready-made templates, inspired by long-open feature requests on SaaS forums (Salesforce, Jira, HubSpot): https://skins.dev/blog/ Currently Chromium only (we're working on getting the latest version into the Chrome Web Store). I would love feedback, and curious what you'd change first in a tool you use daily :) Comments URL: https://news.ycombinator.com/item?id=49955117 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49955117"
+    },
+    {
+      "id": "76335f3f6855bcd76d24",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: UsageGuru – Cut log noise and save context in Claude Code",
+      "url": "https://usageguru.com",
+      "published_at": "2026-10-04T16:07:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://usageguru.com/ Comments URL: https://news.ycombinator.com/item?id=49955121 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49955121"
+    },
+    {
+      "id": "4f027227fabc14d7ab70",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: EchoPod – Learn Languages with Podcasts via AI Transcripts",
+      "url": "https://echopod.clothpath.com",
+      "published_at": "2026-10-04T16:53:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://echopod.clothpath.com/ Comments URL: https://news.ycombinator.com/item?id=49955585 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49955585"
+    },
+    {
+      "id": "99caa4263153204f584c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Stateful Linux microVMs for coding agents",
+      "url": "https://github.com/mariobm/agent-house",
+      "published_at": "2026-10-04T17:17:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "I always wanted to have fly.io's sprite \"at home\" or orbs or whatever else there is. The VMs are based on libkrun. There is also an option of replicated storage (based on S3/R2 API): https://ahvm.app/docs/#replicated-storage Still in progress. Trash it. Yes I used AI. Comments URL: https://news.ycombinator.com/item?id=49955804 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49955804"
+    },
+    {
+      "id": "ccd5b981e06cc2ad6646",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Jev-pages – Building landing pages real time with Jev",
+      "url": "https://github.com/sagapranav/jev-pages",
+      "published_at": "2026-10-04T17:30:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "An experiment using Jev to generate landing pages in real time. Jev is great at picking between different options so I attempted to break down the langing page UI into a set of choices for the model to choose from. How this works: 1. Users type what kind of page they want and Jev decides what each line is (headline, fact, assertion etc.) 2. Jev makes choices for each layer of the page (opening, stage, light, depth etc.). Parameterizing design is hard (impossible?) but this took some tuning with Claude 3. A full page is constructed with a single call of about 90 questions. Of course using an LLM would be more prudent for step 1, but I wanted to check the limits of Jev's understanding (it works pretty well in my opinion!). Comments URL: https://news.ycombinator.com/item?id=49955930 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49955930"
+    },
+    {
+      "id": "5bbf3b4462befedff99b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Exro – I got tired of cleaning up copy/paste between apps",
+      "url": "https://www.exro.ai",
+      "published_at": "2026-10-04T17:48:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Between Slack, Claude, GPT, and Gmail, I'm constantly making formatting changes: deleting timestamps and Slack's (edited), making API fields inline code, removing weird highlighting, etc. I tried changing this with prompts, but for things like formatting rules, it didn't get applied consistently. So I built Exro. It scans the pasted text and applies deterministic changes with no grammar/copy changes whatsoever. You can paste something in and try it directly. Let me know if you have any suggestions! Comments URL: https://news.ycombinator.com/item?id=49956108 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49956108"
+    },
+    {
+      "id": "b2ba85628bb520f04b62",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Shlexball, describe a file and a local 1.5B model finds it on your Mac",
+      "url": "https://shlexball.com",
+      "published_at": "2026-10-04T18:27:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Describe a file in plain English and Shlexball finds it on your Mac. Files stay local. Base model: Qwen2.5 Coder 1.5B Instruct, fine tuned (SFT) by me to write search plans that a read only sandbox runs, on Apple's MLX. FindBench ( https://shlexball.com/findbench/ ), my benchmark, passes a test only on an exact file match. 312 tests unseen in training; other models got 30 examples: Model Params Raw With plural step (pilot) Shlexball 1.5B 280 89.7% 308 98.7% Gemini 3.5 Flash Lite undisclosed 151 48.4% 250 80.1% Gemini 3.8 Flash undisclosed 180 57.7% 295 94.6% Gemma 4 31B 31B 145 46.5% 264 84.6% Caveats: tests and scorer are private for now. My training data generator also wrote these tests, and they helped me pick the checkpoint. The app adds plural forms; the last column applies that. macOS 15, Apple silicon, 16 GB. 30 free searches, then 9 USD a month. Also the UI is realy cute. Comments URL: https://news.ycombinator.com/item?id=49956497 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49956497"
+    },
+    {
+      "id": "871f35acfd2a8f1dc969",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ranking the most AI agent friendly tools",
+      "url": "https://www.anchorterminal.com/tools",
+      "published_at": "2026-10-04T19:09:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.anchorterminal.com/tools/ Comments URL: https://news.ycombinator.com/item?id=49956865 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49956865"
+    },
+    {
+      "id": "83d5f89d44abccc337b5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Magic File Renamer 8 – AI rewrote my 26-year-old app",
+      "url": "https://www.finebytes.com/mfr",
+      "published_at": "2026-10-04T19:29:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.finebytes.com/mfr/ Comments URL: https://news.ycombinator.com/item?id=49957017 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49957017"
+    },
+    {
+      "id": "3162329f3ad2e7d59f6a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Make Claude Code sessions talk to each other",
+      "url": "https://phonebook.dev",
+      "published_at": "2026-10-04T19:41:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "It lets one Claude Code session ask another a question, whether that session is your own in another project or a teammates, and get the answer back. Typical use is a frontend project asking the API project how something behaves. Let me know if you find it useful. Comments URL: https://news.ycombinator.com/item?id=49957109 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49957109"
+    },
+    {
+      "id": "e67a21b27a545e3ac33f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN : How I am talking to my agents from my WhatsApp",
+      "url": "https://news.ycombinator.com/item?id=49957202",
+      "published_at": "2026-10-04T19:50:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "I recently built this repo : agent-bridge which allows you to reach your agents like claude-code, codex, opencode, etc.. from your WhatsApp self-chat. This is fully open-sourced and comes with a npm package as well (@mayurathavale18/agent-bridge) Do check this out and any improvement suggestions, contributions are greatly appreciated ! https://github.com/mayurathavale18/agent-bridge Comments URL: https://news.ycombinator.com/item?id=49957202 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49957202"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-04T12:21:47.947094+00:00",
+      "last_success": "2026-10-04T21:25:01.323744+00:00",
       "count": 10,
       "earliest": "2026-10-01T19:11:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-04T12:21:48.227398+00:00",
+      "last_success": "2026-10-04T21:25:01.584702+00:00",
       "count": 20,
       "earliest": "2026-09-28T16:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-04T12:21:48.339059+00:00",
+      "last_success": "2026-10-04T21:25:01.860717+00:00",
       "count": 873,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-04T12:21:48.449103+00:00",
+      "last_success": "2026-10-04T21:25:02.019333+00:00",
       "count": 30,
       "earliest": "2026-09-22T15:54:16+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-04T12:21:59.911478+00:00",
+      "last_success": "2026-10-04T21:25:04.046430+00:00",
       "count": 100,
-      "earliest": "2026-10-03T10:16:04+00:00",
+      "earliest": "2026-10-03T19:41:54+00:00",
       "gap": false,
       "error": null
     },
@@ -22818,61 +23082,61 @@
       "count": 100,
       "earliest": "2026-10-02T01:33:35+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-04T12:22:04.907011+00:00",
-      "count": 20,
-      "earliest": "2026-09-11T19:17:55+00:00",
+      "last_success": "2026-10-04T21:25:12.239724+00:00",
+      "count": 10,
+      "earliest": "2026-09-22T16:38:14+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-04T12:22:05.957057+00:00",
-      "count": 30,
-      "earliest": "2026-09-17T07:51:57+00:00",
+      "last_success": "2026-10-04T21:25:12.986285+00:00",
+      "count": 20,
+      "earliest": "2026-09-24T05:43:55+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-04T12:22:06.261758+00:00",
+      "last_success": "2026-10-04T21:25:13.290663+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-04T12:22:06.492640+00:00",
+      "last_success": "2026-10-04T21:25:13.608485+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-04T12:22:06.876840+00:00",
+      "last_success": "2026-10-04T21:25:14.092150+00:00",
       "count": 9,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-04T12:22:21.933784+00:00",
-      "count": 2,
-      "earliest": "2026-09-14T18:27:29+00:00",
+      "last_success": "2026-10-04T21:25:23.777060+00:00",
+      "count": 1,
+      "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-04T12:22:22.083446+00:00",
+      "last_success": "2026-10-04T21:25:23.946148+00:00",
       "count": 1245,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-04T12:22:40.141243+00:00",
-      "count": 11,
-      "earliest": "2026-09-18T20:03:04+00:00",
+      "last_success": "2026-10-04T21:25:34.397237+00:00",
+      "count": 7,
+      "earliest": "2026-09-26T01:02:31+00:00",
       "gap": false,
       "error": null
     }
@@ -22927,5 +23191,5 @@
       "to": "2026-10-01T16:30:10+00:00"
     }
   ],
-  "collected_at": "2026-10-04T12:22:40.141499+00:00"
+  "collected_at": "2026-10-04T21:25:34.397465+00:00"
 }
