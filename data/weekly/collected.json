@@ -22571,102 +22571,306 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/joonfjp/16agents Comments URL: https://news.ycombinator.com/item?id=49951064 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49951064"
+    },
+    {
+      "id": "9abca7acf84f4234eaed",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Repetitive Task Agent Automateion",
+      "url": "https://news.ycombinator.com/item?id=49951228",
+      "published_at": "2026-10-04T06:28:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey everyone, we are currently a group of Berkeley students building a tool that watches how a team works, finds the repetitive tasks eating their time, shows what each one costs in hours, and then builds an agent to automate it. It runs locally with sensitive data redacted. We have a working MVP and are looking for a few early testers, starting with accounting firms but really applicable to all businesses. We've previously gotten top 10% of batches and are looking to push through to get real companies to implement out service. If anyone has any feedback or is willing to chat about this, feel free to let me know! Comments URL: https://news.ycombinator.com/item?id=49951228 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951228"
+    },
+    {
+      "id": "643f6d76f228644975da",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Launching: Nautilus – Run a coding agent from your phone, merge on your PC",
+      "url": "https://github.com/itamarhanan/nautilus",
+      "published_at": "2026-10-04T06:39:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/itamarhanan/nautilus Comments URL: https://news.ycombinator.com/item?id=49951281 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951281"
+    },
+    {
+      "id": "52d501ac3c400728ffc0",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Where can a solo dev still find a moat in LLM inference?",
+      "url": "https://news.ycombinator.com/item?id=49951356",
+      "published_at": "2026-10-04T06:56:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Comments URL: https://news.ycombinator.com/item?id=49951356 Points: 1 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951356"
+    },
+    {
+      "id": "3ffb2fee29fd85cf32ec",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Startup TypeSafe AI's Jev Model Sparks Copycats, Talk of LLM Alternatives",
+      "url": "https://www.wsj.com/tech/ai/startup-typesafe-ais-jev-model-sparks-copycats-talk-of-llm-alternatives-e39ff57d",
+      "published_at": "2026-10-04T07:44:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.wsj.com/tech/ai/startup-typesafe-ais-jev-model-sparks-copycats-talk-of-llm-alternatives-e39ff57d Comments URL: https://news.ycombinator.com/item?id=49951597 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951597"
+    },
+    {
+      "id": "03f74dab6ee6f8ebcb3b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Artbucket – OSS brand assets and portals for humans and AI agents",
+      "url": "https://github.com/pwnera/artbucket",
+      "published_at": "2026-10-04T07:49:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello HN, I wanted to share a project I am working on. Artbucket is a way to manage brand guidelines and design asset, fully open source you can self-host with all the capabilites available. I built also a hosted version with free tier. All feedbacks are welcome x) Comments URL: https://news.ycombinator.com/item?id=49951620 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951620"
+    },
+    {
+      "id": "9f5a087a1765a49ea6f2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Thirds.ai – Beautiful, on-brand images and PDFs from templates",
+      "url": "https://thirds.ai",
+      "published_at": "2026-10-04T07:50:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://thirds.ai Comments URL: https://news.ycombinator.com/item?id=49951624 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951624"
+    },
+    {
+      "id": "b320551d8c3cc6d4c745",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Solvi 1.0 – an LLM proposes, checks decide, every decision replays",
+      "url": "https://github.com/solvi-ai/solvi",
+      "published_at": "2026-10-04T07:50:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/solvi-ai/solvi Comments URL: https://news.ycombinator.com/item?id=49951625 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951625"
+    },
+    {
+      "id": "9b6d395f7fd3cbf91139",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Solvi 1.0 – an LLM proposes, checks decide, every decision replays",
+      "url": "https://github.com/solvi-ai/solvi",
+      "published_at": "2026-10-04T07:50:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/solvi-ai/solvi Comments URL: https://news.ycombinator.com/item?id=49951625 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951625"
+    },
+    {
+      "id": "ea0e9e7fe58e2d863de0",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How does the AI and Agent Gateway market will shape up going forward",
+      "url": "https://news.ycombinator.com/item?id=49951873",
+      "published_at": "2026-10-04T08:39:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Comments URL: https://news.ycombinator.com/item?id=49951873 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951873"
+    },
+    {
+      "id": "0d75e5f04b7eae1a1db2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Aura – a self-hosted AI agent with temporal graph memory, written in Go",
+      "url": "https://github.com/chetto1983/Aura",
+      "published_at": "2026-10-04T08:42:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/chetto1983/Aura Comments URL: https://news.ycombinator.com/item?id=49951895 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49951895"
+    },
+    {
+      "id": "ff769ddf21222fdccb0e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Agent Said It Was Done. The Database Disagreed",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "published_at": "2026-10-04T09:07:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/blog/microsoft/thinkingbox Comments URL: https://news.ycombinator.com/item?id=49952030 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49952030"
+    },
+    {
+      "id": "59ed33c9b7c267548646",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI search for every photo and every frame of video on macOS",
+      "url": "https://github.com/allenv0/SCM",
+      "published_at": "2026-10-04T09:24:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/allenv0/SCM Comments URL: https://news.ycombinator.com/item?id=49952111 Points: 6 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49952111"
+    },
+    {
+      "id": "c4b1ed7c30e7ea4f0677",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Wazn-2B – decision model with separate encoding and competition",
+      "url": "https://huggingface.co/numidlabs/wazn-2b-v0.1",
+      "published_at": "2026-10-04T10:02:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/numidlabs/wazn-2b-v0.1 Comments URL: https://news.ycombinator.com/item?id=49952373 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49952373"
+    },
+    {
+      "id": "cf8788876bbff95eefd9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Telegram AI Video Generator – Create AI Videos in Chat",
+      "url": "https://videoall.ai/telegram-ai-video-generator",
+      "published_at": "2026-10-04T10:19:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "A Telegram bot that generates AI videos from text prompts or images. Supports 8 top models including Kling, Runway, Seedance, Veo, Wan, Hailuo, MiniMax, and Grok. No desktop software needed - just chat with the bot and get videos in seconds. Comments URL: https://news.ycombinator.com/item?id=49952489 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49952489"
+    },
+    {
+      "id": "455a5969966c7abd7e6d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ViralReel – Make the viral Hotel Lobby AI template video in 60 seconds",
+      "url": "https://www.viralreel.app",
+      "published_at": "2026-10-04T10:21:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hotel lobby AI template: upload two photos, star in the viral orange-booth video in 60 seconds. Auto lip-sync, gestures and lighting for couples, pets, babies. Comments URL: https://news.ycombinator.com/item?id=49952515 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49952515"
+    },
+    {
+      "id": "e0de1697ae76889e2da1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Loa – a local coding agent built around a mutable DAG",
+      "url": "https://github.com/laughingmandev/loa",
+      "published_at": "2026-10-04T12:13:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/laughingmandev/loa Comments URL: https://news.ycombinator.com/item?id=49953223 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49953223"
+    },
+    {
+      "id": "00bba6fde1b409e07b25",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Loa – a local coding agent built around a mutable DAG",
+      "url": "https://github.com/laughingmandev/loa",
+      "published_at": "2026-10-04T12:13:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/laughingmandev/loa Comments URL: https://news.ycombinator.com/item?id=49953223 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49953223"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-04T05:53:32.867784+00:00",
+      "last_success": "2026-10-04T12:21:47.947094+00:00",
       "count": 10,
       "earliest": "2026-10-01T19:11:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-04T05:53:33.203877+00:00",
+      "last_success": "2026-10-04T12:21:48.227398+00:00",
       "count": 20,
       "earliest": "2026-09-28T16:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-04T05:53:33.445818+00:00",
+      "last_success": "2026-10-04T12:21:48.339059+00:00",
       "count": 873,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-04T05:53:33.646145+00:00",
+      "last_success": "2026-10-04T12:21:48.449103+00:00",
       "count": 30,
       "earliest": "2026-09-22T15:54:16+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-04T05:53:34.191973+00:00",
+      "last_success": "2026-10-04T12:21:59.911478+00:00",
       "count": 100,
-      "earliest": "2026-10-03T04:27:15+00:00",
+      "earliest": "2026-10-03T10:16:04+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-04T05:53:37.174825+00:00",
+      "last_success": "2026-10-04T12:22:04.070714+00:00",
       "count": 100,
-      "earliest": "2026-10-01T21:44:44+00:00",
+      "earliest": "2026-10-02T01:33:35+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-04T05:53:38.521497+00:00",
+      "last_success": "2026-10-04T12:22:04.907011+00:00",
       "count": 20,
       "earliest": "2026-09-11T19:17:55+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-04T05:53:40.494406+00:00",
+      "last_success": "2026-10-04T12:22:05.957057+00:00",
       "count": 30,
       "earliest": "2026-09-17T07:51:57+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-04T05:53:41.033135+00:00",
+      "last_success": "2026-10-04T12:22:06.261758+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-04T05:53:41.453549+00:00",
+      "last_success": "2026-10-04T12:22:06.492640+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-04T05:53:42.138535+00:00",
+      "last_success": "2026-10-04T12:22:06.876840+00:00",
       "count": 9,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-04T05:54:09.406979+00:00",
+      "last_success": "2026-10-04T12:22:21.933784+00:00",
       "count": 2,
       "earliest": "2026-09-14T18:27:29+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-04T05:54:09.688870+00:00",
+      "last_success": "2026-10-04T12:22:22.083446+00:00",
       "count": 1245,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-04T05:54:42.546610+00:00",
+      "last_success": "2026-10-04T12:22:40.141243+00:00",
       "count": 11,
       "earliest": "2026-09-18T20:03:04+00:00",
       "gap": false,
@@ -22723,5 +22927,5 @@
       "to": "2026-10-01T16:30:10+00:00"
     }
   ],
-  "collected_at": "2026-10-04T05:54:42.546823+00:00"
+  "collected_at": "2026-10-04T12:22:40.141499+00:00"
 }
