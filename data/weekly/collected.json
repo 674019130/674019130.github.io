@@ -23039,41 +23039,197 @@
       "date_kind": "community_post",
       "evidence": "I recently built this repo : agent-bridge which allows you to reach your agents like claude-code, codex, opencode, etc.. from your WhatsApp self-chat. This is fully open-sourced and comes with a npm package as well (@mayurathavale18/agent-bridge) Do check this out and any improvement suggestions, contributions are greatly appreciated ! https://github.com/mayurathavale18/agent-bridge Comments URL: https://news.ycombinator.com/item?id=49957202 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49957202"
+    },
+    {
+      "id": "d18e43e72befa84a8c9c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Recly – turn your watch into a Plaud-style AI recorder",
+      "url": "https://recly.dev",
+      "published_at": "2026-10-04T20:52:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://recly.dev/ Comments URL: https://news.ycombinator.com/item?id=49957724 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49957724"
+    },
+    {
+      "id": "ca39f018f32bd0f9ed2e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Baloo, self-hosted AI code review for GitHub",
+      "url": "https://github.com/bluebear-io/baloo-bear",
+      "published_at": "2026-10-04T21:01:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/bluebear-io/baloo-bear Comments URL: https://news.ycombinator.com/item?id=49957815 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49957815"
+    },
+    {
+      "id": "39ab6d4a5cf0555342f9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: DoubtBench – does Jev know when humans disagree?",
+      "url": "https://github.com/deeplearningguy/doubtbench",
+      "published_at": "2026-10-04T21:24:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/deeplearningguy/doubtbench Comments URL: https://news.ycombinator.com/item?id=49958040 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49958040"
+    },
+    {
+      "id": "900ffdc4249cff1b255a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Runescape but its a parody of SF",
+      "url": "https://fogscape.vercel.app",
+      "published_at": "2026-10-04T21:48:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted to have fun and how far models could get one a parody game. This is fully Opus 5.5 work using Convex backend and vanilla typescript to see how well realtime works. Will mine the chat and keep improving it (or making the math harder) . But dropping here for fun! Comments URL: https://news.ycombinator.com/item?id=49958239 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49958239"
+    },
+    {
+      "id": "683b9ac5a03b8dc13d22",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sortbot.io – Your physical inventory, with an API and MCP access",
+      "url": "https://www.sortbot.io",
+      "published_at": "2026-10-04T22:10:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.sortbot.io Comments URL: https://news.ycombinator.com/item?id=49958422 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49958422"
+    },
+    {
+      "id": "6238b4a2c17b4158d746",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Redactpdf.ai: Open-source AI-based PDF redaction tool",
+      "url": "https://redactpdf.ai",
+      "published_at": "2026-10-04T23:18:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://redactpdf.ai Comments URL: https://news.ycombinator.com/item?id=49958950 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=49958950"
+    },
+    {
+      "id": "8cd455a5af8e4e22fc74",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: C++ LSP for the LeetCode editor and Vim keybindings",
+      "url": "https://twitter.com/emerald_d3v/status/2106885158360195426",
+      "published_at": "2026-10-04T23:18:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Pretty self-explanatory tbh. I kept hitting the same friction using LeetCode, the built-in editor has no real language support and none of the Vim muscle memory I rely on everywhere else. So I started building it in. This is also where I love AI, I had started to work on it years ago, at first it was only snippets of most used classes (vector, string, etc...) and a few vim keymaps. Being able to tell Codex \"Improve this, make no mistakes\" is pretty fun. Also side note, I've always used Leetcode as a game to practice problem solving (Graph Algorithms < 3333), but I feel like now more than ever it is a good platform to code manually and challenge yourself, especially when vibe coding is so present. (I don't recommend grinding if you don't enjoy it tho) Comments URL: https://news.ycombinator.com/item?id=49958951 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49958951"
+    },
+    {
+      "id": "0d6894b1365313d78607",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Soulor – Rehearse hard conversations with simulated people",
+      "url": "https://soulor.app",
+      "published_at": "2026-10-04T23:27:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built Soulor independently as a 16y/o high school student. It helps reading social situations with multiple perspectives, and helps users rehearse hard conversations by simulating others with analyses and suggestions, there are also companions that knows the full context if users choose to share that can chat with them naturally. It can be both serious and entertaining, by switching different world views, and it fully respects users' privacy by keeping all texts encrypted. In order to achieve modest performance, I built multi-regional gateway and a fine-tuned model integrating both quality and responding speed. The models are served on GPUs via Modal, with a second adapter just for the simulation, and reply latency went from 7.9s to about 2.0s. It already has several users and I'm building it up quickly. Happy to answer questions about the app or the tech, and any feedback is welcome. Comments URL: https://news.ycombinator.com/item?id=49959008 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49959008"
+    },
+    {
+      "id": "927537f3792595fa6032",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: EditUI – Cursor/Claude Design-style UI editing directly in the browser",
+      "url": "https://www.editui.app",
+      "published_at": "2026-10-04T23:33:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.editui.app/ Comments URL: https://news.ycombinator.com/item?id=49959046 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49959046"
+    },
+    {
+      "id": "7b19301f09ad6e88ac63",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The Poteto Frontier for AI Agents",
+      "url": "https://poteto-frontier.vercel.app",
+      "published_at": "2026-10-05T00:03:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "I made this lil meme app based on @poteto (lauren tan)'s amazing talk asking: how many agents do you generally have working on your behalf? her original talk: https://x.com/poteto/status/2102050467505430555 source: https://github.com/transitive-bullshit/poteto-frontier Comments URL: https://news.ycombinator.com/item?id=49959257 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49959257"
+    },
+    {
+      "id": "e4c0791806817c25453e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ramen – self-hosted multi-zone MCP server for Kubernetes(Rust & Python)",
+      "url": "https://github.com/bkraad47/ramen",
+      "published_at": "2026-10-05T03:27:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/bkraad47/ramen Comments URL: https://news.ycombinator.com/item?id=49960371 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49960371"
+    },
+    {
+      "id": "4bd806aa1b6529960387",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: SRA-RiskGate-4B – Local LLM for stablecoin risk gating and disputes",
+      "url": "https://huggingface.co/sriram1983007/SRA-RiskGate-4B",
+      "published_at": "2026-10-05T03:57:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/sriram1983007/SRA-RiskGate-4B Comments URL: https://news.ycombinator.com/item?id=49960513 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49960513"
+    },
+    {
+      "id": "3fa49b92321a04fb1f79",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Recursant, the agent-aware model router built for hybrid workloads",
+      "url": "https://github.com/ajensenwaud/recursant",
+      "published_at": "2026-10-05T04:01:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Sharing Recursant, the agent-aware model router for private/public workloads. Cut your AI agent bill by 30% and seamlessly operate agents across private and public inference infrastructure. Recursant is agent-aware, routes intelligently, built to be fast (C), and intended for privacy. github.com/ajensenwaud/re… It’s still rough around the edges, but good enough to run across private/public routing to your own vLLMs and OpenRouter. I am working on support for other providers as well. Hoping to get feedback from HN on use and efficiency. Comments URL: https://news.ycombinator.com/item?id=49960535 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49960535"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-04T21:25:01.323744+00:00",
+      "last_success": "2026-10-05T05:40:36.804180+00:00",
       "count": 10,
       "earliest": "2026-10-01T19:11:23+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-04T21:25:01.584702+00:00",
+      "last_success": "2026-10-05T05:40:37.090757+00:00",
       "count": 20,
       "earliest": "2026-09-28T16:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-04T21:25:01.860717+00:00",
+      "last_success": "2026-10-05T05:40:37.373291+00:00",
       "count": 873,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-04T21:25:02.019333+00:00",
+      "last_success": "2026-10-05T05:40:37.593229+00:00",
       "count": 30,
       "earliest": "2026-09-22T15:54:16+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-04T21:25:04.046430+00:00",
+      "last_success": "2026-10-05T05:40:38.315836+00:00",
       "count": 100,
-      "earliest": "2026-10-03T19:41:54+00:00",
+      "earliest": "2026-10-04T08:06:29+00:00",
       "gap": false,
       "error": null
     },
@@ -23085,58 +23241,58 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-04T21:25:12.239724+00:00",
+      "last_success": "2026-10-05T05:40:47.139529+00:00",
       "count": 10,
       "earliest": "2026-09-22T16:38:14+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-04T21:25:12.986285+00:00",
+      "last_success": "2026-10-05T05:40:48.249181+00:00",
       "count": 20,
       "earliest": "2026-09-24T05:43:55+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-04T21:25:13.290663+00:00",
+      "last_success": "2026-10-05T05:40:48.800789+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-04T21:25:13.608485+00:00",
+      "last_success": "2026-10-05T05:40:49.245403+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-04T21:25:14.092150+00:00",
+      "last_success": "2026-10-05T05:40:49.951991+00:00",
       "count": 9,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-04T21:25:23.777060+00:00",
+      "last_success": "2026-10-05T05:41:08.425326+00:00",
       "count": 1,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-04T21:25:23.946148+00:00",
+      "last_success": "2026-10-05T05:41:08.711132+00:00",
       "count": 1245,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-04T21:25:34.397237+00:00",
-      "count": 7,
-      "earliest": "2026-09-26T01:02:31+00:00",
+      "last_success": "2026-10-05T05:41:28.484776+00:00",
+      "count": 8,
+      "earliest": "2026-09-25T02:31:06+00:00",
       "gap": false,
       "error": null
     }
@@ -23191,5 +23347,5 @@
       "to": "2026-10-01T16:30:10+00:00"
     }
   ],
-  "collected_at": "2026-10-04T21:25:34.397465+00:00"
+  "collected_at": "2026-10-05T05:41:28.485011+00:00"
 }
