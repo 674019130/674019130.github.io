@@ -1,0 +1,200 @@
+{
+  "request_evidence": [
+    {
+      "id": "4ac31d592f98914d3b31",
+      "title": "Show HN: Google Trends for Hacker News Comments",
+      "category": "discovery",
+      "evidence": "I've seen a fair few posts recently that try to categorise HN posts, so I thought google trends for hacker news would be fun. - chart the popularity of phrases up to 3 words long - includes all hn comments, apart from stuff like who's hiring threads - quite fun for looking at trends you'd expect with words/phrases you'd expect llms to use more frequently words/phrases are only in there if they hav PRIMARY PAGE: HN Word Trends HN Word Trends How often a word or phrase (up to three words) appears in Hacker News comments per million words Loading… Add a word or phrase add average none 3 months 6 months 12 months These could just be people talking about AI rather than AI writing the comments: \"load-bearing\", for example, took off as people started discussing how often chatbots use it. try: yearly figures Phrases never cross sentence punctuation and need at least 40 uses to be tracked. Flagged and killed comments and \"Who is hiring?\" posts are left out. Data: Hacker News API ."
+    },
+    {
+      "id": "7842148edc09173fd54a",
+      "title": "Show HN: Pve-agents – coding agents on your existing Proxmox infrastructure",
+      "category": "discovery",
+      "evidence": "Built as a side-project after getting used to Cursor cloud agents at work. I wanted a similar environment for my personal projects, running on my own infra. PRIMARY PAGE: pve-agents — self-hosted sandboxes for coding agents pve-agents Docs Quick start GitHub Self-hosted sandboxes for coding agents. Give it a repository, a ref and a purpose. It builds a disposable LXC on your Proxmox host, starts a Claude Code agent inside it, and streams the whole thing to your browser. repo ndom91/pve-agents ref main purpose Port the reaper to the new operation queue 01 clone golden template → new LXC 02 boot container up, address assigned 03 checkout repository at your ref 04 agent Claude Code, handed the purpose Get started Source Run as many as your host will hold. Each workspace is its own container, so nothing an agent does touches your workstation. Every one starts from the same clean template, they run in parallel rather than in turn, and the hardware is already yours. What is running, what has been destroyed, and the form that starts the next one. The loop Watch it work, answer it, keep or throw away the result. Watch The transcript streams Tool calls and all, over SSE, replayed from the b"
+    },
+    {
+      "id": "00bba6fde1b409e07b25",
+      "title": "Show HN: Loa – a local coding agent built around a mutable DAG",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/laughingmandev/loa Comments URL: https://news.ycombinator.com/item?id=49953223 Points: 1 # Comments: 0 PRIMARY PAGE: <div align=\"center\">\n  <img src=\"loa.png\" alt=\"Loa Logo\" width=\"400\"/>\n  <h1>Loa</h1>\n  <p><strong>The Autonomous Local Coding Agent</strong></p>\n  <p>\n    <a href=\"#core-characteristics\">Core Characteristics</a> •\n    <a href=\"#quick-start\">Quick Start</a> •\n    <a href=\"#documentation\">Documentation</a> •\n    <a href=\"#faq\">FAQ</a> •\n    <a href=\"#contributing\">Contributing</a> •\n    <a href=\"LICENSE\">License</a>\n  </p>\n</div>\n\n<br/>\n\n## Summary\n\nLoa is a local-first, stateful coding agent intended for project-wide engineering tasks and long-running autonomous work. Its control layer is built around explicit state transitions, structured tool use, persistent task state, memory retrieval, evaluation, and recovery rather than one open-ended model/tool loop.\n\nFor complex work, Loa uses a mutable Directed Acyclic Graph (DAG). The graph is both an execution plan and part of the context topology: a step's dependencies determine which completed step results are injected as direct prerequisites for that step. The plan can be decomposed or re"
+    },
+    {
+      "id": "09207da09a26bddf2371",
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "category": "discovery",
+      "evidence": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps . I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and return errors\". These need to be hard limits. Soft caps, \"after $X/month, send me a warning email\", will not cut it. Coding agents, and per PRIMARY PAGE: We’re going to need default hard budget caps on pretty much everything Simon Willison’s Weblog Subscribe Sponsored by: Deepgram — Flux TTS remembers the conversation, so your agent sounds right on reply 20. Hear the demo We’re going to need default hard budget caps on pretty much everything 3rd October 2026 Here’s a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps . I’m talking about the feature of pay-by-usage services and APIs that lets you say “after $X/month, cut this thing off and return errors”. These need to be hard limits. Soft caps, “after $X/month, send me a warning email”, will not cut it. Coding agents, and personal agents (coding agents wrapped in a less threatening UI), greatly reduc"
+    },
+    {
+      "id": "ccab666fe3b4a4341648",
+      "title": "Claude Code v2.1.289",
+      "category": "official_update",
+      "evidence": "## What's changed - Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines - Fixed the terminal freezing on short code blocks with many unclosed `"
+    },
+    {
+      "id": "34aa8cda583a5ca0e7e5",
+      "title": "Cline Desktop v0.0.43",
+      "category": "official_update",
+      "evidence": "- Existing users get a one-time **What's new** dialog introducing Connectors, with connector logos, a clickable example prompt, and an **Open Connectors** button. You can replay it from **Settings → About → Show what's new** **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.42...desktop-v0.0.43"
+    },
+    {
+      "id": "28bc3340e4c7a1a2b9c1",
+      "title": "Copilot code review: API support and new default effort level",
+      "category": "official_update",
+      "evidence": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default review effort level. These changes are generally available to Copilot Pro, Pro+, Max, Business, and Enterprise plans. 🔌 Request Copilot code review with the API You can now request a review from Copilot using the supported REST and GraphQL APIs. When you make a request, you can optionally set the review effort level for that review. This lets you bring Copilot code review into your own scripts, workflows, and internal tools, so reviews can start from the systems your team already uses. ⚖️ Balanced is now the default review effort level As announced on August 28, 2026, the Default review effort level now uses Balanced for new and existing repositories and organizations using Copilot code review. If you explicitly selected Lite in your settings, that selection was respected. This change took effect September 28, 2026. ⚙️ Configure your review effort level If you prefer Lite or want to try out the options available to you, you can change the review effort level from Default to Lite at the level you manage: Enterprise: In "
+    },
+    {
+      "id": "303881807cbe8ac378ff",
+      "title": "A model guide for the GPT-6 family",
+      "category": "official_update",
+      "evidence": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
+    },
+    {
+      "id": "ee5fe6605fdfdcf79ca2",
+      "title": "Codex 0.160.0",
+      "category": "official_update",
+      "evidence": "## New Features - Browse older tasks in the agent command center with a keyboard-accessible “Show more” action. (#49106) - Select transcript text and paste with middle-click in fullscreen mode on supported local Linux X11 terminals. (#49112) - Start sessions outside a project with workspace defaults when policy permits, and restore saved permissions when resuming. (#49160) - Added opt-in Guardian review capabilities to retrieve earlier user instructions and include context from agent handoffs. (#49036, #49057) ## Bug Fixes - Unsent queued messages now resume after reconnection once uncertain submissions are resolved, avoiding duplicate sends. (#49105) - The terminal UI now preserves server provider, reasoning-summary, and verbosity settings and shows the correct sessions in resume and fork history. (#49144, #49161, #49171) - Fixed Windows sandbox PowerShell fallbacks and long-path permission repairs, and suppressed unwanted console windows from background helpers. (#49019, #49058, #49098, #49164, #49386) - Subagents now retain environments that are still starting and receive their configuration or preparation failure. (#49075) - Prevented SQLite stalls during connection setup and l"
+    },
+    {
+      "id": "bf13298258fe0476272a",
+      "title": "Ollama v0.35.1",
+      "category": "official_update",
+      "evidence": "## Clef decision models Ollama now supports [Clef](https://ollama.com/library/clef) and [Clef Flash](https://ollama.com/library/clef), Cloudflare's new open-source decision models, through `/v1/systemone`. Clef (27B) and Clef Flash (9B) are multimodal: requests can now include images alongside the text state, shared by all questions and scored jointly with it. ```sh curl http://localhost:11434/v1/systemone -d '{ \"model\": \"clef-flash\", \"state\": \"The user took this screenshot.\", \"images\": [\" \"], \"questions\": { \"has_ollama\": {\"type\": \"noul\", \"instructions\": \"Does this image contain Ollama?\"} } }' ``` ``` { \"model\": \"clef-flash\", \"answers\": { \"has_ollama\": { \"type\": \"noul\", \"noul\": 0.958 } }, \"usage\": { \"input_tokens\": 548, \"output_tokens\": 0 } } ``` ## What's Changed * Models using web search can now perform up to ten searches per response, up from three * Modelfiles now support `CAPABILITY` declarations, so model creators can explicitly declare what a model can do. Declarations are preserved when creating from GGUF or safetensors, through model inheritance, and on Modelfile export * `ollama show` and the model list now report only `decision` as the capability for decision models, so "
+    },
+    {
+      "id": "69a62189878b952929dd",
+      "title": "Show HN: Bearbits – AI copilot that helps during meetings instead of only after",
+      "category": "discovery",
+      "evidence": "I built this app mainly for myself and my wife. We both work in consulting and have tons of meetings every week. I had tried many of the existing meeting copilots but never found something that actually fulfilled what I wanted. Mainly, I wanted to be able to see in real time what's being said, irrespective of the language being spoken, including when people switch languages mid-meeting, which happ PRIMARY PAGE: Bearbits: Your AI copilot for meetings. Bearbits: Your AI copilot for meetings. Live transcription, instant answers, and context while the conversation is happening. No meeting bot. Try Bearbits free."
+    },
+    {
+      "id": "ff769ddf21222fdccb0e",
+      "title": "The Agent Said It Was Done. The Database Disagreed",
+      "category": "discovery",
+      "evidence": "Article URL: https://huggingface.co/blog/microsoft/thinkingbox Comments URL: https://news.ycombinator.com/item?id=49952030 Points: 1 # Comments: 0 PRIMARY PAGE: The Agent Said It Was Done. The Database Disagreed. Hugging Face Models Datasets Spaces Buckets new Docs Enterprise Pricing Website Tasks HuggingChat Collections Languages Organizations Community Blog Posts Daily Papers Hardware Learn Discord Forum GitHub Solutions Team & Enterprise Hugging Face PRO Enterprise Support Inference Providers Inference Endpoints Storage Buckets Log In Sign Up Back to Articles The Agent Said It Was Done. The Database Disagreed. Enterprise Article Published October 3, 2026 Upvote 26 +20 Tuhin Kundu tuhink Follow microsoft A tool call is not an outcome One success is not reliability Can you depend on the model behind your agent? What consistency costs Pareto cost frontier Now price consistency Failure signatures How it works Run it yourself Before you start Install Start Typesense Start the MCP servers Start the OpenEnv server Check readiness Score an episode Where this goes next Microsoft ThinkingBox grades AI agents on the records they leave behind, not the sentences they generate, and then asks "
+    },
+    {
+      "id": "cb68024fa6ab24cbc20c",
+      "title": "September sponsors-only newsletter",
+      "category": "discovery",
+      "evidence": "I just sent the September edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: More Fable class models A pricing war 3D graphics, Blender, and pixel art LLMs come for mathematics So many more accidental cyberattacks The vulnapocalypse comes for Datasette What I'm using right now My software releases this month 2026  PRIMARY PAGE: September sponsors-only newsletter Simon Willison’s Weblog Subscribe Sponsored by: Deepgram — Flux TTS remembers the conversation, so your agent sounds right on reply 20. Hear the demo 3rd October 2026 I just sent the September edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: More Fable class models A pricing war 3D graphics, Blender, and pixel art LLMs come for mathematics So many more accidental cyberattacks The vulnapocalypse comes for Datasette What I'm using right now My software releases this month 2026 in LLMs (so far) Here's a copy of the August newsletter as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy! Posted 3rd October 2026 at 10 pm Recent "
+    },
+    {
+      "id": "0ce4b44616ab39ef58f9",
+      "title": "Claude Code v2.1.288",
+      "category": "official_update",
+      "evidence": "## What's changed - Added `$.ui.selection()` for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row - Added a built-in `gh api` to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the terminal - Added recovery for a prompt cleared with Ctrl+C: pressing Up on the empty prompt brings the draft back, including pasted text and images - Added a re-authenticate prompt when an MCP server asks for more OAuth scope during a tool call - Added `--max-findings |all` to /code-review to report more or fewer findings than the usual limit; the choice is reused until you pass `--max-findings default` - Added Ctrl+F to find a session by name and Alt+↑/↓ to jump between groups in the agents view; both, and rename, can be rebound in keybindings.json - Added a screen reader mode announcement of the new permission mode when you approve a plan, including with Shift+Tab - Fixed mid-response API timeouts failing the turn: non-interactive sessions and subagents now continue from the partial response, and thinking-only responses are retried -"
+    },
+    {
+      "id": "42ddc7a95efe080249c1",
+      "title": "Cline Desktop v0.0.42",
+      "category": "official_update",
+      "evidence": "- New `/compact` slash command. It summarizes the conversation so far to free up context. The summary uses your session's provider settings and is not sent to the model as a prompt - **Connectors** is now the first and default tab in **Customize**. A new **Browse** section lists the full connector catalog in two columns with search, so you no longer need the Marketplace to find a connector. Installed and Browse each have their own search box - Connectors now show their brand logo, both in Customize and in Marketplace rows - If connectors aren't available to you, the Connectors tab now says why: a sign-in card when you're signed out, or a rollout notice with **Check again** when your account doesn't have beta access yet **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.41...desktop-v0.0.42"
+    },
+    {
+      "id": "cb33c3297d2f4de20279",
+      "title": "Selected models in GitHub Copilot deprecated",
+      "category": "official_update",
+      "evidence": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model Deprecation date Suggested alternative Gemini 3.5 Flash 2026-10-02 Gemini 3.8 Flash Gemini 3.6 Flash 2026-10-02 Gemini 3.8 Flash Kimi K2.7 Code 2026-10-02 Kimi K3 Claude Opus 4.7 2026-10-02 Claude Opus 5.5 Please update your workflows and integrations to use supported models. Copilot Enterprise administrators may need to enable access to alternative models through their model policies in Copilot settings. As an administrator, you can verify availability by checking your individual Copilot settings and confirming that the policy is enabled for the specific model. Once enabled, you’ll see the model in the Copilot Chat model selector in VS Code and on github.com. No action is required to remove the deprecated models. GitHub Enterprise customers with questions or concerns are encouraged to reach out to their account manager for further assistance. Share your feedback To learn more about the models available in Copilot, see our documentation on models and get started with Copilot today. Join t"
+    },
+    {
+      "id": "0c7a3b978dbc9413fd49",
+      "title": "The eternal complement",
+      "category": "official_update",
+      "evidence": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
+    },
+    {
+      "id": "91bd45c1765fc5436872",
+      "title": "Guided Vision in Gemini Live: built for accessibility",
+      "category": "official_update",
+      "evidence": "Guided Vision in Gemini Live is built alongside the blind and low-vision community and offers real-time visual assistance."
+    },
+    {
+      "id": "6bb0caa3341106225a7f",
+      "title": "Codex 0.159.3",
+      "category": "official_update",
+      "evidence": "## New Features - Eligible local sessions signed in with ChatGPT can now show optional reminders to complete account security setup. (#49744) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.159.2...rust-v0.159.3 - #49744 [0.159] Backport account security setup reminders for 0.159.3 @andrewgu-oai"
+    },
+    {
+      "id": "81cb0393e6f86b3f54a7",
+      "title": "Ollama v0.35.0",
+      "category": "official_update",
+      "evidence": "## Decision models Ollama now supports decision models through `/v1/systemone`, based on [TypeSafe’s Jev API](https://typesafe.ai). Decision models return choices, probabilities, and scores instead of text. Use them for tasks such as ticket triage, model routing, and content classification. Available models: - [**Nimble**](https://ollama.com/library/nimble) from Bespoke Labs - [**Tev1**](https://ollama.com/library/tev1) from Together AI ```sh ollama pull nimble ``` Send context and one or more questions: ```sh curl http://localhost:11434/v1/systemone \\ -H 'Content-Type: application/json' \\ -d '{ \"model\": \"nimble\", \"state\": \"Our checkout has returned 500 errors since 9am.\", \"questions\": { \"label\": { \"type\": \"choice\", \"instructions\": \"Which label fits this ticket?\", \"criteria\": { \"billing\": \"Payments and refunds\", \"bug\": \"Software errors\", \"account\": \"Login and account access\" } } } }' ``` Example response: ```json { \"model\": \"nimble\", \"answers\": { \"label\": { \"type\": \"choice\", \"choice\": \"bug\", \"probabilities\": { \"billing\": 0.0125, \"bug\": 0.9781, \"account\": 0.0093 }, \"confidence\": 0.8906 } }, \"usage\": { \"input_tokens\": 174, \"output_tokens\": 1 } } ``` The API supports three question ty"
+    },
+    {
+      "id": "3b6e864eb144da7f689d",
+      "title": "Show HN: Agents Sleep Preventer – keep your Mac awake only while AI agents work",
+      "category": "discovery",
+      "evidence": "I run several Claude Code and Codex sessions in parallel and kept coming back to either a sleeping Mac with half-finished work, or a Mac that stayed up all night because I'd left caffeinate on. Agents Sleep Preventer hooks into the agents' own configs (Claude Code, Codex, Hermes), so it knows when each session is actually working. It keeps the Mac awake only then, lid closed included, and lets it  PRIMARY PAGE: <div align=\"center\">\n\n<img src=\"assets/logo-animated.svg\" width=\"140\" alt=\"Agents Sleep Preventer logo: a crescent moon cradling a terminal prompt\">\n\n# Agents Sleep Preventer\n\n### Keep your computer awake while coding agents are working\n**Sleep prevention and local voice dictation on macOS and Windows.**\n\n<br>\n\n[![Download DMG](https://img.shields.io/badge/Download-DMG%20Installer-blue?style=for-the-badge&logo=apple)](https://github.com/CharlonTank/agents-sleep-preventer/releases/latest/download/AgentsSleepPreventer-5.2.4.dmg)\n\n<br>\n\n![macOS](https://img.shields.io/badge/macOS-000000?style=flat&logo=apple&logoColor=white)\n![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg"
+    },
+    {
+      "id": "0d75e5f04b7eae1a1db2",
+      "title": "Aura – a self-hosted AI agent with temporal graph memory, written in Go",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/chetto1983/Aura Comments URL: https://news.ycombinator.com/item?id=49951895 Points: 2 # Comments: 0 PRIMARY PAGE: <div align=\"center\">\n\n<img src=\"public/Logo.png\" alt=\"Aura logo\" width=\"160\" height=\"160\" />\n\n# Aura\n\n**A local-first, provider-neutral AI agent platform — in Go.**\n\nAn agent for ongoing work: tools, document retrieval, temporal memory, scheduled\njobs, and a web cockpit on infrastructure you control.\n\n[![CI](https://github.com/chetto1983/Aura/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/chetto1983/Aura/actions/workflows/ci.yml)\n[![CodeQL](https://github.com/chetto1983/Aura/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/chetto1983/Aura/actions/workflows/codeql.yml)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n[![Go](https://img.shields.io/badge/Go-1.27-00ADD8?logo=go)](go.mod)\n\n[What is Aura?](#what-is-aura) · [Features](#key-features) · [Studio](#studio) · [Compare](#how-aura-compares) · [Architecture](#architecture-one-screen) · [Quick Start](#quick-start) · [Docs](#documentation) · [Development](#development)\n\n<a href=\"https://buymeacoffee.com/chetto9"
+    },
+    {
+      "id": "21c0d8013ca2f6287227",
+      "title": "Quoting Matthew Green",
+      "category": "discovery",
+      "evidence": "[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could leave instructions for each other in a shared package cache, and those instructions changed what the recipients did. Replace the package cache with email, Slack and sha PRIMARY PAGE: A quote from Matthew Green Simon Willison’s Weblog Subscribe Sponsored by: Deepgram — Flux TTS remembers the conversation, so your agent sounds right on reply 20. Hear the demo 1st October 2026 [...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could leave instructions for each other in a shared package cache, and those instructions changed what the recipients did. Replace the package cache with email, Slack and shared documents or WhatsApp, and replace independently-sandboxed training runs with independently-deployed personal agents like Muse, and you have exactly the ingredients that a worm needs. — M"
+    },
+    {
+      "id": "ee6d12beb2489706add3",
+      "title": "Claude Code v2.1.287",
+      "category": "official_update",
+      "evidence": "## What's changed - Added Claude Mods: plugins may now modify deeper behavior - Added You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with `/plugin enable cc-plugin-you-should-know@builtin` (for first-party sessions with telemetry on) - Added an `n: ` filter to the agents view that matches session names and tasks; a filter now shows matches in collapsed sections and Enter opens the first match - Added `prompt_text` to the OpenTelemetry `user_prompt` event, a copy of `prompt` for backends that nest dotted keys; drop or mask it wherever you drop or mask `prompt` (anthropics/claude-code#70763) - Added URL prompts from MCP servers on the 2025-11-25 protocol, for example to sign in. If a server no longer connects after this update, add \"bareElicitationCapability\": true to its MCP config entry - Windows: Added a startup warning when denying the Bash tool also turns off the PowerShell tool, so Claude has no shell tool - Self-hosted runner: Added a built-in `gh api` (REST only) for sessions that use Anthropic-managed git on macOS and Linux machines where the GitHub CLI is not installed - Fixed fast mode staying off "
+    },
+    {
+      "id": "886649fba9b297cdcad7",
+      "title": "Cline Desktop v0.0.41",
+      "category": "official_update",
+      "evidence": "- Cloud sessions can now use the same models as Cline on the web. The model picker lists **Cline Usage-Billing**, **ClinePass**, and **ClineFree** models (organization accounts don't get ClinePass), instead of only Cline. A new Cloud session waits until a model is ready before sending, and you can retry if the model list fails to load - An unsent prompt is no longer lost when you switch to another session and back. **New** in the sidebar returns to your unfinished draft; **Cmd/Ctrl+N** still starts a fresh session - Sessions you start in the app are now highlighted in the sidebar while open, instead of only sessions reopened from history. They also no longer get marked unread by their own messages - **Customize → Connectors** now matches the Skills, Plugins, and MCP tabs, with search, a refresh button, and an Installed section. A new Suggested section offers ready-made connector combos (such as incident root-cause analysis or organizing your day), each with an example prompt and one-click installs for its connectors - Marketplace rows now show what type each item is, so same-named entries like the Figma MCP server and the Figma connector are easy to tell apart. Category filters mov"
+    },
+    {
+      "id": "8ecdaf5f232b09147bb9",
+      "title": "Structured forms for private vulnerability reports",
+      "category": "official_update",
+      "evidence": "Private vulnerability reports can now use a structured form that asks reporters for the details you need to assess a vulnerability, including a reproducible proof of concept. A single free-text box made it easy to submit low-quality or AI-generated reports and hard for you to find the signal in them. Now, by default, reporters must fill in four required fields: summary, details, proof of concept (at least 150 characters), and impact. Their answers are combined into the advisory description, so you review and edit the report as you do today. With this update: You can customize the form by adding a .github/VULNERABILITY_REPORT.yml file to your repository’s default branch. To apply a form to all repositories you own, add it to your organization or account’s .github repository. Forms use issue form syntax, and fields support min_length so you can require a minimum level of detail. If your form is invalid, the default form is used. You can require reporters to assign a CWE before they submit, from Settings > Advanced Security > Private vulnerability reporting . Organization and enterprise owners can enforce this setting through a policy. If your repository has a security policy, reporte"
+    },
+    {
+      "id": "788af1cae4deaea16385",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "category": "official_update",
+      "evidence": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation."
+    },
+    {
+      "id": "5508f2fb09d764da1cca",
+      "title": "1,400 educators joined our Badge-a-thon: Day of AI Learning.",
+      "category": "official_update",
+      "evidence": "1,400 educators earned 4,000+ digital badges at the Google Badge-a-thon. Watch the on-demand sessions on YouTube and claim your first badge today."
+    }
+  ],
+  "response": {
+    "id": "3da853a7-2482-441a-9663-fd5b00a077c3_d85c90fb09714b5791a6350d5eeae26c",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"items\":[{\"id\":\"ccab666fe3b4a4341648\",\"product\":\"Claude Code\",\"change\":\"修复短代码块冻结与嵌套规则问题\",\"change_en\":\"Fixed compound-command rule and terminal freeze bugs\",\"title\":\"Claude Code v2.1.289\",\"summary\":\"Claude Code发布v2.1.289，修复复合shell命令嵌套部分的deny或ask规则在托管机器上不遵守用户安装mod审批的问题，并修复含大量未闭合括号的短代码块导致终端冻结的缺陷。\",\"kind\":\"changed\"},{\"id\":\"28bc3340e4c7a1a2b9c1\",\"product\":\"GitHub Copilot 代码审查\",\"change\":\"支持API调用并默认Balanced力度\",\"change_en\":\"Added API support, made Balanced the default effort\",\"title\":\"Copilot 代码审查支持API\",\"summary\":\"GitHub Copilot代码审查现可通过REST和GraphQL API发起，并可为每次请求设置审查力度级别；Balanced已成新旧仓库和组织的默认审查力度（9月28日生效），Lite选择仍被尊重。\",\"kind\":\"added\"},{\"id\":\"ee5fe6605fdfdcf79ca2\",\"product\":\"Codex CLI\",\"change\":\"新增会话恢复与Guardian审查功能\",\"change_en\":\"Added session resume features and opt-in Guardian review\",\"title\":\"Codex 0.160.0\",\"summary\":\"Codex 0.160.0新增：命令中心键盘可达的“显示更多”、全屏模式中间键粘贴、项目外启动会话及恢复权限、可选Guardian审查能力以检索先前指令与handoff上下文；修复重连后未发送消息恢复、终端UI设置丢失、Windows沙箱权限等问题。\",\"kind\":\"added\"},{\"id\":\"bf13298258fe0476272a\",\"product\":\"Ollama\",\"change\":\"支持Clef决策模型与网页搜索上限提高\",\"change_en\":\"Added Clef decision models; raised web-search limit to ten\",\"title\":\"Ollama v0.35.1\",\"summary\":\"Ollama v0.35.1通过/v1/systemone支持Cloudflare开源决策模型Clef与Clef Flash（多模态，图片与文本状态联合评分）；网页搜索每次响应最多10次（原为3次）；Modelfile支持CAPABILITY声明，ollama show仅报告decision能力。\",\"kind\":\"added\"},{\"id\":\"34aa8cda583a5ca0e7e5\",\"product\":\"Cline Desktop\",\"change\":\"新增Connectors介绍弹窗\",\"change_en\":\"Added one-time What's new dialog for Connectors\",\"title\":\"Cline Desktop v0.0.43\",\"summary\":\"Cline Desktop v0.0.43为现有用户新增一次性“What's new”对话框，介绍Connectors，包含连接器图标、可点击示例提示与“打开Connectors”按钮；可从Settings→About→Show what's new重播。\",\"kind\":\"added\"},{\"id\":\"cb33c3297d2f4de20279\",\"product\":\"GitHub Copilot\",\"change\":\"多款模型停用并给出替代方案\",\"change_en\":\"Deprecated several models with suggested alternatives\",\"title\":\"Copilot选定模型停用\",\"summary\":\"自2026年10月2日起，GitHub Copilot全体验（Chat、内联编辑、ask与agent模式、代码补全）停用Gemini 3.5 Flash、Gemini 3.6 Flash、Kimi K2.7 Code、Claude Opus 4.7，分别建议改用Gemini 3.8 Flash、Kimi K3、Claude Opus 5.5；企业管理员需在模型策略中启用替代模型。\",\"kind\":\"removed\"},{\"id\":\"00bba6fde1b409e07b25\",\"product\":\"Loa 本地编码Agent\",\"change\":\"基于可变DAG的本地编码Agent\",\"change_en\":\"Author: builds a local coding agent around a mutable DAG\",\"title\":\"Loa：可变DAG编码Agent\",\"summary\":\"作者介绍：Loa是本地优先、有状态的编码Agent，用于项目级与长时自主任务。控制层围绕显式状态转换、结构化工具调用、持久任务状态、记忆检索、评估与恢复构建；复杂工作使用可变DAG作为执行计划与上下文拓扑，步骤依赖决定前置结果注入。\",\"kind\":\"discovery\"},{\"id\":\"21c0d8013ca2f6287227\",\"product\":\"Agent蠕虫风险引述\",\"change\":\"引述agent间通过共享缓存传播指令风险\",\"change_en\":\"Quoted risk of agents leaving cross-agent instructions via caches\",\"title\":\"Agent蠕虫风险引述\",\"summary\":\"引述Matthew Green观点：隔离沙箱中的agent可经共享包缓存为彼此留下指令并改变其行为；将包缓存换成邮件、Slack、共享文档，将独立训练换为独立部署的个人agent，即构成蠕虫所需的全部要素。\",\"kind\":\"warning\"}]}",
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1791186122,
+    "model": "mimo-v2.6-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1124,
+      "prompt_tokens": 7461,
+      "total_tokens": 8585,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  }
+}
