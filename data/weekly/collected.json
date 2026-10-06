@@ -28741,6 +28741,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=49972195"
     },
     {
+      "id": "d007db4437a97c738f1f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Headline Arena – public forecasting records for AI agents",
+      "url": "https://headlinearena.com",
+      "published_at": "2026-10-05T23:55:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://headlinearena.com Comments URL: https://news.ycombinator.com/item?id=49972374 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49972374"
+    },
+    {
       "id": "46c673f10512ffdee161",
       "source": "simon",
       "publisher": "Simon Willison",
@@ -28751,102 +28763,234 @@
       "date_kind": "community_post",
       "evidence": "The \"old\" version of Cowork runs model inference in the cloud, executing tool calls in an Anthropic-provided VM we shipped to your computer. We added the VM for capability, safety, and security reasons - mapping in just the data you explicitly added to your session. People loved what they were able to do with Claude but didn't love the disk, battery, and performance cost of running the VM locally. Also, people didn't love that closing your laptop means the work stops. The \"new\" version of Cowork runs model inference and the VM in the cloud. Each session gets its own sandbox, not sharing state with other sessions. When the VM needs something on the users' device (like a file), the desktop app is responsible for that file access tool call. [...] We think this solves a lot of problems we've heard about (like using Cowork from a phone, keeping work running, or getting all the same power without losing battery to the VM) — Felix Rieseberg , Anthropic, see also this help page Tags: claude-cowork , anthropic , claude , generative-ai , ai , general-agents , llms",
       "discussion_url": ""
+    },
+    {
+      "id": "8e0aa991feee017b4062",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Mind control of smart devices enabled by space-time-coding metasurface",
+      "url": "https://www.nature.com/articles/s41467-025-63326-0",
+      "published_at": "2026-10-06T01:40:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.nature.com/articles/s41467-025-63326-0 Comments URL: https://news.ycombinator.com/item?id=49973126 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49973126"
+    },
+    {
+      "id": "f1781e79eb6a3b1a4d60",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Agents: Zero to Hero – Learn AI Agents from Scratch in Pure Python",
+      "url": "https://github.com/tradertanmay/ai-agents-zero-to-hero",
+      "published_at": "2026-10-06T01:49:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/tradertanmay/ai-agents-zero-to-hero Comments URL: https://news.ycombinator.com/item?id=49973196 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49973196"
+    },
+    {
+      "id": "7b449b76bb7f9aea5c4b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hand your agent's browser clicks to TypeSafe's Jev via an MCP proxy",
+      "url": "https://github.com/coderexpert123/jev-browser-wingman",
+      "published_at": "2026-10-06T01:57:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/coderexpert123/jev-browser-wingman Comments URL: https://news.ycombinator.com/item?id=49973266 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49973266"
+    },
+    {
+      "id": "e14b334b0e7d580f1e54",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Hand your agent's browser clicks to TypeSafe's Jev via an MCP proxy",
+      "url": "https://github.com/coderexpert123/jev-browser-wingman",
+      "published_at": "2026-10-06T01:57:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/coderexpert123/jev-browser-wingman Comments URL: https://news.ycombinator.com/item?id=49973266 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49973266"
+    },
+    {
+      "id": "5c239b25a88b77ab016f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: LopeBase – monitor your SaaS side projects, automate content",
+      "url": "https://lopebase.com",
+      "published_at": "2026-10-06T02:04:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "My biggest focus lately has been building tools to build tools. I started with tackling developer documentation, later evolving to build out a desktop harness/orchestrator for agents, and now connecting multiple projects with a shared admin / management dashboard for coordinating pipelines, SEO, observation, and tracking to scale out my side projects, opening up to a wider audience. Comments URL: https://news.ycombinator.com/item?id=49973312 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49973312"
+    },
+    {
+      "id": "f713d18a791e826301bd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built an application to work with multiple coding agents",
+      "url": "https://crowsnest.app",
+      "published_at": "2026-10-06T03:01:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://crowsnest.app/ Comments URL: https://news.ycombinator.com/item?id=49973649 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49973649"
+    },
+    {
+      "id": "e87d838b6c61ff733b9d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: I built an application to work with multiple coding agents",
+      "url": "https://crowsnest.app",
+      "published_at": "2026-10-06T03:01:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://crowsnest.app/ Comments URL: https://news.ycombinator.com/item?id=49973649 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=49973649"
+    },
+    {
+      "id": "fe59cdabd3b93e2c78d2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Counterbranch – See how your PR changes access control",
+      "url": "https://github.com/marketplace/actions/counterbranch-access-control-change-review",
+      "published_at": "2026-10-06T03:24:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi, we just released Counterbranch as a GitHub Action (alpha) and are looking for feedback. The action scans your codebase looking for unintended changes to authorization. This can happen in custom code, endpoints, guards, rbac, abac, policy-as-code files, etc. and can lead to broken access control or data exposure. The scanner doesn't use LLMs and is blazing fast. The results show up as a comment on each pull request so you can maintain and improve authz for any volume of human and agentic coders. Comments URL: https://news.ycombinator.com/item?id=49973798 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49973798"
+    },
+    {
+      "id": "d7c19ff704e263d2cac4",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.291",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+      "published_at": "2026-10-06T03:55:19+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Fixed a regression in 2.1.290 where cloud sessions could drop answers to permission prompts - Fixed a regression in 2.1.288 where the last messages of a session could be lost when quitting",
+      "discussion_url": ""
+    },
+    {
+      "id": "66e89b696d4153096c27",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How LiteLLM Lens finds repeated failures across 1,000s of agent traces",
+      "url": "https://docs.litellm.ai/blog/lens-failure-patterns",
+      "published_at": "2026-10-06T04:11:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://docs.litellm.ai/blog/lens-failure-patterns Comments URL: https://news.ycombinator.com/item?id=49974074 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49974074"
+    },
+    {
+      "id": "2d4802251ed39e474889",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Autonomous AI Agent Security Incidents of 2026 (Dataset and Defense Harness)",
+      "url": "https://github.com/mars2021y-gif/autonomous-ai-agent-security-incidents-2026",
+      "published_at": "2026-10-06T06:03:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/mars2021y-gif/autonomous-ai-agent-security-incidents-2026 Comments URL: https://news.ycombinator.com/item?id=49974784 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=49974784"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-06T00:03:35.706854+00:00",
+      "last_success": "2026-10-06T06:21:11.206998+00:00",
       "count": 10,
       "earliest": "2026-10-01T19:57:39+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-06T00:03:35.925243+00:00",
+      "last_success": "2026-10-06T06:21:11.369862+00:00",
       "count": 20,
       "earliest": "2026-09-30T21:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-06T00:03:36.165047+00:00",
+      "last_success": "2026-10-06T06:21:11.603169+00:00",
       "count": 874,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-06T00:03:36.304875+00:00",
+      "last_success": "2026-10-06T06:21:11.741028+00:00",
       "count": 30,
       "earliest": "2026-09-22T23:46:41+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-06T00:03:37.211960+00:00",
+      "last_success": "2026-10-06T06:21:24.176651+00:00",
       "count": 100,
-      "earliest": "2026-10-05T11:56:57+00:00",
+      "earliest": "2026-10-05T13:10:07+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-06T00:03:46.057529+00:00",
+      "last_success": "2026-10-06T06:21:41.446104+00:00",
       "count": 100,
-      "earliest": "2026-10-03T21:02:15+00:00",
+      "earliest": "2026-10-04T03:29:36+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-06T00:03:46.474934+00:00",
+      "last_success": "2026-10-06T06:21:42.188142+00:00",
       "count": 10,
-      "earliest": "2026-09-23T19:19:15+00:00",
+      "earliest": "2026-09-24T18:38:05+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-06T00:03:47.180066+00:00",
+      "last_success": "2026-10-06T06:21:43.434875+00:00",
       "count": 20,
       "earliest": "2026-09-24T05:43:55+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-06T00:03:47.493172+00:00",
+      "last_success": "2026-10-06T06:21:44.020138+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-06T00:03:47.796926+00:00",
+      "last_success": "2026-10-06T06:21:44.524873+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-06T00:03:48.151836+00:00",
+      "last_success": "2026-10-06T06:21:45.309729+00:00",
       "count": 9,
       "earliest": "2026-08-27T20:31:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-06T00:04:00.202265+00:00",
+      "last_success": "2026-10-06T06:22:06.742169+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-06T00:04:00.413254+00:00",
+      "last_success": "2026-10-06T06:22:06.926947+00:00",
       "count": 1247,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-06T00:04:12.062376+00:00",
+      "last_success": "2026-10-06T06:22:28.554958+00:00",
       "count": 9,
       "earliest": "2026-09-25T02:31:06+00:00",
       "gap": false,
@@ -28903,5 +29047,5 @@
       "to": "2026-10-01T16:30:10+00:00"
     }
   ],
-  "collected_at": "2026-10-06T00:04:12.062664+00:00"
+  "collected_at": "2026-10-06T06:22:28.555221+00:00"
 }
