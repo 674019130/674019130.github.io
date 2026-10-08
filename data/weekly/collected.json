@@ -31799,41 +31799,137 @@
       "date_kind": "community_post",
       "evidence": "Hey HN, Yakko here from Railcode. Railcode is like an internal Vercel for your company. We built it after speaking to dozens of engineering leaders at various companies where employees were given access to Claude Code or Codex and started to build little tools (apps, agents) locally, but then struggled to share it with coworkers securely. Typical scenarios are: 1. Employees can't share what they've built because of internal policies 2. Agents find the path of least resistance and deploy things on e.g. Vercel, leading to a sprawl of software that's a nightmare to manage (disjointed auth or no auth, API keys handled insecurely, no centralized management, etc.) 3. Companies set up templates to ensure some standardization but still require engineers in the loop to review and deploy code Neither of these options felt great, so we built Railcode to be the place to deploy and manage internal software inside a company, ensuring projects are deployed securely, follow the same patterns, and can be easily managed from one place. The goal is to unblock users to deploy and share what they've built while removing the burden on Engineering/DevOps to review and manage it all. How we do this: - Company auth in front of everything that's deployed - Permissioned connectors to access data instead of shared API keys - Infrastructure building blocks that make it easy to store data or use an LLM but allows admins to oversee everything (via a simple SDK) - Centralized audit logs - Unified design system (optional) - Role-based access control with granular permissions that can be inherited by the projects themselves The platform is built to be really low friction for agents and to not require folks changing their workflows. We support static frontends and serverless JS functions for the backend, meaning Tanstack, Hono, Vite, React, etc will all work. Even Next.js with OpenNext though that has some quirks :D Projects run locally and everything Railcode-specific comes from an optional SDK. We ship a skill and a CLI and that's all you need to build and deploy projects or have agents manage configuration. Keen to hear feedback! https://railcode.dev/ Comments URL: https://news.ycombinator.com/item?id=49999322 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=49999322"
+    },
+    {
+      "id": "31f0e94cab650c92b46b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: StayLeet – keeping skills sharp in AI coding era",
+      "url": "https://stayleet.com",
+      "published_at": "2026-10-07T23:19:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "As AI writes more and more of the code, it's quite important to maintain sufficient skill and knowledge to even review or judge AI's output. Here is a little project I whipped up - I personally found deliberate practice quite useful. It focusses on non-coding skills (as I think LOC production is basically solved by AI, IMO). Rather I start with two tracks: general technical fluency (CS / systems / practical fundamentals), and system design. And yes it was built primarily with help of AI tooling. Would love to get some feedback - in particular, do others feel the same way about skill atrophy risk on-the-job nowadays, and whether this tool is helpful potentially or not. What else do folks do instead, if anything. Comments URL: https://news.ycombinator.com/item?id=50000084 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50000084"
+    },
+    {
+      "id": "4dfd83614cacc4f50161",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.1",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.1",
+      "published_at": "2026-10-07T23:22:59+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's Changed * server: proxy cloud usage and balance APIs by @drifkin in https://github.com/ollama/ollama/pull/18829 * llama: fix clef head reads past 2GiB on windows by @Gigrise in https://github.com/ollama/ollama/pull/18777 * cmd: remove account step from CLI onboarding by @hoyyeva in https://github.com/ollama/ollama/pull/18826 * manifest: avoid symlinks on Windows by @dhiltgen in https://github.com/ollama/ollama/pull/18852 * docs: fix 6 dead links in README community integrations list by @aniketkrs in https://github.com/ollama/ollama/pull/18814 * docs: fix broken download links in app README by @chenlichao in https://github.com/ollama/ollama/pull/18233 * mlx: drop carried metal residency patch now that it is upstream by @dhiltgen in https://github.com/ollama/ollama/pull/18854 ## New Contributors * @Gigrise made their first contribution in https://github.com/ollama/ollama/pull/18777 * @aniketkrs made their first contribution in https://github.com/ollama/ollama/pull/18814 * @chenlichao made their first contribution in https://github.com/ollama/ollama/pull/18233 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.0...v0.40.1-rc0",
+      "discussion_url": ""
+    },
+    {
+      "id": "a5b18ff7932c794cdb65",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: agentc: < 1mb static/no-libc, minimal, embeddable agent with Rust/C API",
+      "url": "https://github.com/abird-ai/agentc",
+      "published_at": "2026-10-08T01:53:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Sharing an agent that I built since most of the agents that's nice to work with, take hefty deps like node or is provider dependent. It's heavily inspired by the wonderful pi agent - and builds on it as something that you can run on tiny hardware or embed easily in your own binaries without needing it's hefty dependency chain. An agent doesn't really need much - a minimal networking stack, a TUI and an agent loop. Then comes tools, mcp, skills and prompts. agentc does exactly that - a minimal, static, embeddable coding agent in C - no libc, less than 1MB, starts up using < 1MB of RAM, and RSS comfortably sits under a few MBs during usage. It's extensible and everything including status, mcp, tools is architected as an extension. The embeddable part is by design, but exposing it as an API is still a pending plan and should be done in a few days. Also: would love some human testing on a Mac! CI builds for: linux - x64, arm64, risv64; win - x64, arm64 and darwin - arm64. Comments URL: https://news.ycombinator.com/item?id=50001109 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50001109"
+    },
+    {
+      "id": "a222756c6af0fac08977",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rhyven – A marketplace for agents",
+      "url": "https://rhyvenai.com",
+      "published_at": "2026-10-08T02:44:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "My name is Caleb and I am the creator of rhyven marketplace. Why did I make it: I create and use a lot of mcps for my daily job. I noticed that most mcps did not have much uniformity and a lot of them were to connect to platforms with large UIs for humans even though agents are the only one using them now. So I thought why not make apps for agents to improve the end human user's experience, in both using and trying new apps. From this rhyven became two things. 1. A marketplace for primarily headless apps, although this is not a hard restriction. 2. A sort of extendable harness/tool kit for llms with or without a harness. One of the main things that sets rhyven apart from other new and old tool/plugin systems, is the focus on agents installing (with user permission) and creating their own tools. Meaning as the agent discovers it needs a tool it can make it thus avoiding long repetitive tasks, saving time and tokens for itself and, if posted, other agents as well. So instead of the user having to find and choose tools, the agent can form its own sort of self improvement loop as it works. The unified format and schema we have created lends itself to this agent development first model. Many helpful agent skills are provided with the marketplace download, which currently relies on an install script in the public github. Packaged forms are being worked on. Please reach out with any questions or feedback. I would love to see the apps other people and their agents come up with. Comments URL: https://news.ycombinator.com/item?id=50001374 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50001374"
+    },
+    {
+      "id": "aebccb40b4e1e46d881e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Pacer – will your AI coding subscription last until the reset?",
+      "url": "https://github.com/dkremsa/claude-pacer",
+      "published_at": "2026-10-08T04:10:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/dkremsa/claude-pacer Comments URL: https://news.ycombinator.com/item?id=50001750 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50001750"
+    },
+    {
+      "id": "f20ccb0a79fcf4701515",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.294",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
+      "published_at": "2026-10-08T05:03:54+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Fixed `prompt` and `agent` hooks written as instructions (such as \"Block commands that...\") allowing what they should block - Improved how `prompt` hooks on Stop and SubagentStop written as instructions (such as \"Carry on if the build is broken\") are judged, so Claude is less likely to stop early",
+      "discussion_url": ""
+    },
+    {
+      "id": "ad2c4bc439a866d12d64",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline SDK v0.0.92",
+      "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.92",
+      "published_at": "2026-10-08T05:09:49+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- The AI SDK moves together to one release line: `ai` 7.0.120 and every `@ai-sdk/*` package on `@ai-sdk/provider-utils` 5.0.50 (previously `ai` 7.0.79 with packages bumped one by one). Turning reasoning off no longer sends `reasoning.effort: \"none\"` to OpenAI models that can't turn it off, such as GPT-6 Astra and GPT-6.1 Sol (GPT-6 Astra answered with a 400, for example from commit message generation); GPT-5.x and GPT-6 Sol/Luna still get `\"none\"`. Turning reasoning off also no longer sends `thinking: {type: \"disabled\"}` to Claude models that can't turn thinking off, such as Claude Fable 5 and Opus 5.5 (they answered with `\"thinking.type.disabled\" is not supported for this model`); other Claude models still get `disabled` - Stdio MCP clients handle EPIPE when a server exits before reading all of its input. Previously that raised an uncaught exception on the host process. The SAP AI Core provider also no longer installs winston's process-wide `uncaughtException` handler, which called `process.exit(1)` three seconds after any uncaught error - The legacy provider-settings migration no longer adds an empty `sapaicore` entry to `providers.json`. It used to do this for every migrated user, because the extension writes `sapAiCoreUseOrchestrationMode` as a default - `@cline/core` exports `parseMcpHeaders`, used by the CLI's `mcp add` wizard to keep `--header` values - Refreshed the model catalog. Adds Claude Haiku 5.5. Default models change for Google Vertex AI (Claude Sonnet 5.5 → Claude Haiku 5.5), Cortecs, DevPass (LLM Gateway), Eden AI, GitHub Copilot, LLM Gateway, NanoGPT, OpenCode Go, Requesty, and Vivgrid (most now Claude Haiku 5.5) **Full Changelog**: https://github.com/cline/cline/compare/sdk/sdk/v0.0.91...sdk/sdk/v0.0.92",
+      "discussion_url": ""
+    },
+    {
+      "id": "57baa374b7222a12bc35",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline CLI v3.0.70",
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.70",
+      "published_at": "2026-10-08T05:55:09+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Commit message generation and tasks with reasoning off no longer fail with a 400 error on GPT-6 Astra, GPT-6.1 Sol, Claude Fable 5 or Claude Opus 5.5 - Cline no longer exits about 3 seconds after an MCP server or hook quits before reading all of its input - Settings migrated from the VS Code extension no longer add an empty SAP AI Core provider - `cline mcp add` keeps your `--header` values when it opens the setup wizard. Before, accepting the prefilled answers saved a remote server without its headers (for example, `Authorization`). The wizard now asks for one header per prompt and validates each one the same way as `--yes` - `cline dashboard` is now `cline hub dashboard`. The old command still works as a hidden alias - A bare `cline hub` prints its subcommands - `cline doctor log` opens the file set by `CLINE_LOG_PATH` when that variable is set - `cline --help` is corrected: `--retries` shows its real default of 3 (it said 6), and `--thinking` explains that it falls back to the level picked in `/model` - A bare `--retries` with no count is now rejected with an error instead of crashing - Options that were accepted but never did anything are removed and now fail with \"unknown option\": `cline history --page`, and `cline schedule create`/`update` `--autonomous`, `--no-autonomous`, `--idle-timeout`, `--poll-interval` and `--delivery-channel`. Remove them from scripts. Existing schedules saved with them still load - `cline schedule create`, `update` and `import` reject a delivery that could never be posted, such as `--delivery-adapter` without `--delivery-thread` or an adapter that isn't a known connector. Before, the schedule was saved and its results were silently never posted. Errors name the flag or `--metadata-json` path to fix - Refreshed the model catalog. Adds Claude Haiku 5.5. Default models change for Google Vertex AI (Claude Sonnet 5.5 → Claude Haiku 5.5), Cortecs, DevPass (LLM Gateway), Eden AI, GitHub Copilot, LLM Gateway, NanoGPT, OpenCode Go, Requesty, and Vivgrid (most now Claude Haiku 5.5) **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.69...cli-v3.0.70",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-07T23:05:36.561395+00:00",
+      "last_success": "2026-10-08T06:04:53.745813+00:00",
       "count": 10,
       "earliest": "2026-10-02T19:13:50+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-07T23:05:36.840970+00:00",
+      "last_success": "2026-10-08T06:04:53.952635+00:00",
       "count": 20,
       "earliest": "2026-10-05T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-07T23:05:37.044753+00:00",
+      "last_success": "2026-10-08T06:04:54.140919+00:00",
       "count": 874,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-07T23:05:37.184298+00:00",
+      "last_success": "2026-10-08T06:04:54.223372+00:00",
       "count": 30,
-      "earliest": "2026-09-27T23:54:15+00:00",
+      "earliest": "2026-09-28T04:01:30+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-07T23:05:37.739507+00:00",
+      "last_success": "2026-10-08T06:04:57.786599+00:00",
       "count": 100,
-      "earliest": "2026-10-07T12:28:51+00:00",
+      "earliest": "2026-10-07T12:51:08+00:00",
       "gap": false,
       "error": null
     },
@@ -31845,56 +31941,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-07T23:05:45.585222+00:00",
+      "last_success": "2026-10-08T06:05:28.003589+00:00",
       "count": 20,
-      "earliest": "2026-09-15T20:23:03+00:00",
+      "earliest": "2026-09-17T00:12:02+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-07T23:05:46.428484+00:00",
-      "count": 20,
-      "earliest": "2026-09-25T09:21:23+00:00",
+      "last_success": "2026-10-08T06:05:29.241914+00:00",
+      "count": 30,
+      "earliest": "2026-09-22T03:26:20+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-07T23:05:46.854550+00:00",
+      "last_success": "2026-10-08T06:05:29.597275+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-07T23:05:47.224607+00:00",
+      "last_success": "2026-10-08T06:05:29.924619+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-07T23:05:47.734044+00:00",
+      "last_success": "2026-10-08T06:05:30.361650+00:00",
       "count": 10,
-      "earliest": "2026-08-27T20:31:47+00:00",
+      "earliest": "2026-09-02T00:11:33+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-07T23:06:06.576122+00:00",
+      "last_success": "2026-10-08T06:05:45.085195+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-07T23:06:06.743903+00:00",
-      "count": 1254,
+      "last_success": "2026-10-08T06:05:45.272716+00:00",
+      "count": 1255,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-07T23:06:23.406103+00:00",
+      "last_success": "2026-10-08T06:05:58.656611+00:00",
       "count": 10,
       "earliest": "2026-09-25T02:31:06+00:00",
       "gap": false,
@@ -31957,5 +32053,5 @@
       "to": "2026-10-06T11:23:17+00:00"
     }
   ],
-  "collected_at": "2026-10-07T23:06:23.406464+00:00"
+  "collected_at": "2026-10-08T06:05:58.656942+00:00"
 }
