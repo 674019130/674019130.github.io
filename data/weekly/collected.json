@@ -32257,6 +32257,30 @@
       "discussion_url": ""
     },
     {
+      "id": "16c27625eaa225687aa7",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "The model that didn't exist, so you made it yourself",
+      "url": "https://huggingface.co/blog/building-with-ml-intern",
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
+      "id": "5c22161ec03b301a65bc",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "discussion_url": ""
+    },
+    {
       "id": "9c7e6748ad4b1016f0f7",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -32677,6 +32701,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50004719"
     },
     {
+      "id": "b8439382e4927a89c799",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "published_at": "2026-10-08T12:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "discussion_url": ""
+    },
+    {
       "id": "82be830c82b42426a0c7",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -32951,34 +32987,82 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://blog.getcassis.com/new-llms-is-your-app-keeping-up/ Comments URL: https://news.ycombinator.com/item?id=50005574 Points: 3 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50005574"
+    },
+    {
+      "id": "69c2b1298cb5126bb866",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.162.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.162.0",
+      "published_at": "2026-10-08T18:55:59+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## New Features - Add tools for creating and listing managed Git worktrees from trusted local projects when the worktrees feature is enabled. (#50148) - Pin tasks in the agent Command Center with `p` and keep them in a shared Pinned group when supported by the server. (#51500) - Navigate and copy transcript blocks with `/copy`, use `Ctrl+Insert` to copy selections, and tune mouse-wheel scrolling with `tui.mouse_scroll_speed`. (#50434, #50215, #50209) - Make URLs clickable in approval headers, questions, MCP prompts, warnings, banners, and verification prompts, including when links wrap across lines. (#51439, #51449, #51450, #51451, #51452, #51458) - Configure live web access and remote compaction capabilities for custom Responses-compatible model providers. (#50459) - Add JavaScript helpers for streaming promise results as they settle, plus opt-in ranked tool search in Code Mode. (#51126, #51209) ## Bug Fixes - Respect server model and reasoning-summary defaults for new TUI threads while retaining explicit launch overrides. (#50013, #50811, #50913) - Preserve existing CRLF line endings in `apply_patch` updates without requiring an opt-in. (#51203) - Fix Linux sandbox startup with multiple denied files, reject writable sandbox-construction executables, and keep ripgrep configuration from weakening deny-glob masks. (#50059, #51211, #51407, #51527) - Restore ordinary drive-letter file access on Windows 10 and match Windows sandbox temp permissions to the child process environment. (#51511, #51512) - Honor server `Retry-After` advice for retryable Responses and WebSocket failures. (#50418, #51440) - Fix archive checksum verification when installing through Windows PowerShell with PowerShell 7 module paths present. (#51257) ## Chores - Publish a signed PowerShell installer with Windows releases. (#51158) - Keep older stable releases and prereleases from replacing newer stable download targets or installer aliases. (#51186, #51425) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.161.0...rust-v0.162.0 - #50013 Honor server model defaults when starting fresh TUI threads @etraut-openai - #50018 Use descriptor-safe helpers for executable test fixtures @jif-oai - #50019 Protect the guardian decisions API key from environment forwarding @swastik-oai - #50026 Preserve user restrictions in Guardian handoff context @jif-oai - #50035 Follow MCP tool pagination in legacy protocol mode @jif-oai - #50039 Keep transcript Find results readable after closing the query @fcoury-oai - #50045 Keep transcript Find expansion scoped to the current match @fcoury-oai - #50046 Stabilize Windows voice build cache keys across tool reinstalls @anp-oai - #50050 Keep plugin and skill snapshots scoped to each step @sayan-oai - #50052 Preserve question context in recovered TUI answer drafts @imac-oai - #50054 Check token estimate filtering directly on the tracing subscriber @tamird - #50058 Upgrade Windows bindings to `windows-sys` 0.61.2 @tamird - #50059 Fix Linux sandbox startup with multiple denied files @yuzhu-oai - #50066 Add a bounded Decisions transport for Guardian comparison classification @swastik-oai - #50082 Enable dynamic tool inheritance for fresh V2 subagents @ke-oai - #50083 Add paginated reverse lookup for thread attachments @joeytrasatti-openai - #50087 Preserve queued agent mail across session eviction @jif-oai - #50093 Prevent shared instruction providers from delegating to themselves @bryanashley - #50094 Add attachment owner lookup to the app-server @joeytrasatti-openai - #50099 Add opt-in Decisions comparison for Guardian V2 @swastik-oai - #50105 Consolidate chat composer footer logic in `footer_state` @imac-oai - #50109 Keep fullscreen prompts bounded and scrollable @imac-oai - #50112 Centralize TUI loading glyphs and frame scheduling @imac-oai - #50113 Add a native gRPC client for cloud thread resume and attach @bc-openai - #50128 Expose the model selected for a running turn's next step @sayan-oai - #50129 Prese",
+      "discussion_url": ""
+    },
+    {
+      "id": "c0486cf365f56eeba3cc",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.295",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
+      "published_at": "2026-10-08T19:48:38+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `onFailure: \"block\"` for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through - Added Program Status Protocol (OSC 7501) support: terminals that implement it can show whether Claude Code is working, waiting on you, or done - Added quoted text to the `/copy` picker, so a drafted message copies without its `>` markers - Added a warning to `claude plugin install`, `enable`, `disable` and `marketplace add` when the settings file they write to does not load - Added a line on stderr, when it is a terminal, that says what a `claude -p` run is waiting for when it stays open after its last turn - Added support for `timeouts.upstream_ttfb_ms` on the Claude apps gateway's Bedrock, Vertex, Foundry and other cloud upstreams: a value you set now limits how long a stream may take to start there, after which it fails over or gets a 502 - Added a \"Backgrounding cancelled\" message when you stop the turn while `←` is waiting for the current tool to finish - Added an optional `models` list to every Claude apps gateway upstream: only the listed models are sent there, on failover too, and one `*` in an entry is a wildcard - Added support for `forceLoginMethod: \"gateway\"` and `forceLoginGatewayUrl` in your own user settings on machines with no managed settings, so `/login` opens on that Claude apps gateway - Added advice to `claude plugin validate` when a plugin's README has no install line: it prints the line to paste and never changes the exit code, even with `--strict` - Added `upstream_request_id` to the Claude apps gateway's `inference` audit event: the request ID from Amazon Bedrock, the Anthropic API or another upstream, for support cases - Added `$.ui.notify` for mods: raises a native notification through your own notification setting and says which channel sent it - Added children to a mod's `Button`: strings and `Text`, so a row of a list is one pressable with a chip or a dim detail inside - Added `CLAUDE_CODE_RETRY_WATCHDOG_MAX_WAIT_MS` to limit how long unattended retry mode (`CLAUDE_CODE_RETRY_WATCHDOG`) waits out 429 and 529 errors - Added a `request-id` header to the Claude apps gateway's successful inference responses, so `request_id` in Claude Code telemetry matches the gateway's audit log - Fixed every request failing on a `[1m]` model when a gateway, Bedrock, Vertex or Foundry refuses the context-1m beta; Claude Code now resends without it - Fixed `claude -p` text output dropping earlier responses when background work started another turn; each turn's response now prints when the turn ends - Fixed remote MCP servers in headless and SDK sessions staying disconnected after an outage longer than 15 seconds, or reconnecting in a tight loop to a server that drops each connection right after it connects; repeated drops now back off, up to 30s - Fixed remote MCP connections being dropped when a server's error reply happened to contain a network error name - Fixed MCP servers that repeat a pagination cursor being asked for the same page up to 20 times at every connect - Fixed CSS, JavaScript and XML files returned by MCP tools being saved as .bin, which the Read tool refuses; font and icon files now get their own extension too - Fixed Bash tool calls failing when the model passes `command_description` instead of `description` - Fixed Claude in Chrome not applying a site deny rule written with port 80 (`host:80`) to plain `http://` pages on that host - Fixed `/plugin`'s Errors tab removing a marketplace that failed to load, and uninstalling its plugins, on Enter without asking first - Fixed `claude plugin marketplace add` reporting success for a marketplace whose name no plugin can be installed under; such an add is now refused - Fixed `CLAUDE_AUTO_BACKGROUND_TASKS` moving a subagent to the background while an edit or shell command waited behind it, which started that call before the subagent finished - Fixed PushNotification s",
+      "discussion_url": ""
+    },
+    {
+      "id": "e5708c5d081971432096",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting Carson Gross",
+      "url": "https://simonwillison.net/2026/Oct/8/carson-gross",
+      "published_at": "2026-10-08T21:05:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Computer programming is, fundamentally, about two things: Problem-solving using computers Learning to control complexity while solving these problems I have a hard time imagining a future where knowing how to solve problems with computers and how to control the complexity of those solutions is less valuable than it is today, so I think it will continue to be a viable career even with the advent of AI tools. — Carson Gross Tags: computer-science , carson-gross , careers , ai",
+      "discussion_url": ""
+    },
+    {
+      "id": "969bac352a44d7e42a0b",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Study in The Lancet suggests AI could improve patient-physician relationships.",
+      "url": "https://blog.google/innovation-and-ai/technology/health/amie-clinical-study-lancet",
+      "published_at": "2026-10-08T22:30:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "A peer-reviewed study in The Lancet evaluates Google's AMIE medical AI in a real-world primary care clinic.",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-08T13:29:38.977999+00:00",
+      "last_success": "2026-10-08T23:21:17.119713+00:00",
       "count": 10,
-      "earliest": "2026-10-02T19:13:50+00:00",
+      "earliest": "2026-10-06T10:23:38+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-08T13:29:39.197622+00:00",
+      "last_success": "2026-10-08T23:21:17.473168+00:00",
       "count": 20,
       "earliest": "2026-10-05T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-08T13:29:39.422188+00:00",
-      "count": 874,
+      "last_success": "2026-10-08T23:21:17.671827+00:00",
+      "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-08T13:29:39.519424+00:00",
+      "last_success": "2026-10-08T23:21:17.940478+00:00",
       "count": 30,
-      "earliest": "2026-09-28T04:01:30+00:00",
+      "earliest": "2026-09-28T19:11:42+00:00",
       "gap": false,
       "error": null
     },
@@ -32987,68 +33071,68 @@
       "count": 99,
       "earliest": "2026-10-07T16:33:38+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-10-08T13:29:49.335855+00:00",
       "count": 100,
       "earliest": "2026-10-06T20:57:32+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-08T13:29:51.079805+00:00",
+      "last_success": "2026-10-08T23:21:30.584619+00:00",
       "count": 20,
-      "earliest": "2026-09-17T00:12:02+00:00",
+      "earliest": "2026-09-17T22:33:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-08T13:29:53.289247+00:00",
+      "last_success": "2026-10-08T23:21:32.327793+00:00",
       "count": 30,
       "earliest": "2026-09-22T03:26:20+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-08T13:29:54.129177+00:00",
+      "last_success": "2026-10-08T23:21:32.872235+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-08T13:29:54.654699+00:00",
+      "last_success": "2026-10-08T23:21:33.273240+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-08T13:29:55.557036+00:00",
-      "count": 10,
-      "earliest": "2026-09-02T00:11:33+00:00",
+      "last_success": "2026-10-08T23:21:33.878004+00:00",
+      "count": 9,
+      "earliest": "2026-09-05T23:49:00+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-08T13:30:26.302504+00:00",
+      "last_success": "2026-10-08T23:21:56.233846+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-08T13:30:26.484505+00:00",
-      "count": 1255,
+      "last_success": "2026-10-08T23:21:56.452178+00:00",
+      "count": 1257,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-08T13:30:54.236538+00:00",
-      "count": 9,
-      "earliest": "2026-09-26T01:02:31+00:00",
+      "last_success": "2026-10-08T23:22:17.510790+00:00",
+      "count": 11,
+      "earliest": "2026-09-25T02:31:06+00:00",
       "gap": false,
       "error": null
     }
@@ -33109,5 +33193,5 @@
       "to": "2026-10-06T11:23:17+00:00"
     }
   ],
-  "collected_at": "2026-10-08T13:30:54.236847+00:00"
+  "collected_at": "2026-10-08T23:22:17.511111+00:00"
 }
