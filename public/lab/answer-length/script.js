@@ -57,7 +57,7 @@ function sync() {
   $('.level').textContent = c().levels[level];
   $('#shorter').disabled = level === 0; $('#longer').disabled = level === 3;
   const tokenCount = body.querySelectorAll('.word').length;
-  const seconds = Math.max(1, Math.ceil(tokenCount / (language === 'zh' ? 7 : 3.5))); 
+  const seconds = Math.max(1, Math.ceil(tokenCount / (language === 'zh' ? 7 : 3.5)));
   $('.read-time').textContent = `${seconds} ${c().time}`;
   $('.status').textContent = `${c().copied}: ${c().levels[level]}`;
 }
