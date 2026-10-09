@@ -46,10 +46,12 @@
     </article>
     <section class="implementation-notes" aria-labelledby="tricks-title">
       <h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
-      <article><h3 data-copy="emptyTitle"></h3><p data-copy="emptyTrick"></p><pre><code>// Start with no groups. Stream headers and items separately.
+      <article><h3 data-copy="emptyTitle"></h3><p data-copy="emptyTrick"></p><pre><code>// One stream: empty → groups → late group → date → reorder.
 groups = [];
 { type: 'add_group', group: { ...header, items: [] } }
 { type: 'add_item', groupId: header.id, item }
+// The late group is appended before its date is known.
+groups = receiveGroupDate(groups, lateGroup.id, receivedDate);
 /* Reserve a quiet space before the first group arrives. */
 .timeline-list { min-height: 180px; }</code></pre></article>
       <article><h3 data-copy="detectionTitle"></h3><p data-copy="detection"></p><pre><code>// Date metadata arrives: detect and correct in the same handler.

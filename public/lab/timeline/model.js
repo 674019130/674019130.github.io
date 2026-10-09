@@ -18,11 +18,12 @@ export function receiveGroupDate(groups, id, sortDate) {
 }
 
 // Stream a header before its items, without mutating the source fixture.
-export function buildFromEmptyEvents(sourceGroups) {
-  return sourceGroups.flatMap((group, index) => [
+export function buildFromEmptyEvents(sourceGroups, lateEvents = []) {
+  const initialEvents = sourceGroups.flatMap((group, index) => [
     { type: 'add_group', groupId: group.id, groupNumber: index + 1,
       group: { ...group, items: [], diff: 'added' } },
     ...group.items.slice(0, 2).map(item => ({ type: 'add_item', groupId: group.id,
       groupNumber: index + 1, itemId: item.id, item: { ...item } })),
   ]);
+  return [...initialEvents, ...structuredClone(lateEvents)];
 }

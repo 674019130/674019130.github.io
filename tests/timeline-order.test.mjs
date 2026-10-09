@@ -78,3 +78,32 @@ test('from-zero events introduce every empty group before streaming its items', 
   assert.deepEqual(buildFromEmptyEvents(fixture), events, 'replay produces the same stream');
   assert.deepEqual(buildFromEmptyEvents([]), []);
 });
+
+test('the actual from-zero scenario includes an out-of-order arrival and corrects it in the same stream', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { runInNewContext } = await import('node:vm');
+  const { buildFromEmptyEvents } = await import('../public/lab/timeline/model.js');
+  const source = await readFile(new URL('../public/lab/timeline/script.js', import.meta.url), 'utf8');
+  const fixture = JSON.parse(source.split('const PREVIEW_GROUPS = ')[1].split(';\n\nconst CHANGE_EVENTS')[0]);
+  const setup = source.slice(source.indexOf('const regroupEvents ='), source.indexOf('function initialGroups()'));
+  const events = runInNewContext(`${setup}\nemptyEvents`, { PREVIEW_GROUPS: fixture, buildFromEmptyEvents });
+  let groups = [];
+  let corrected = false;
+  let movedGroup;
+  for (const event of events) {
+    if (event.type === 'add_group') groups.push({ ...event.group, rows: event.group.items.map(item => ({ ...item })) });
+    if (event.type === 'add_item') groups.find(group => group.id === event.groupId).rows.push(event.item);
+    if (event.type === 'group_date') {
+      assert.deepEqual(groups.map(group => group.id), ['group-1', 'group-2', 'group-4', 'late-spring']);
+      movedGroup = groups.at(-1);
+      groups = receiveGroupDate(groups, event.groupId, event.sortDate);
+      assert.deepEqual(groups.map(group => group.id), ['group-1', 'late-spring', 'group-2', 'group-4']);
+      assert.equal(groups[1], movedGroup);
+      corrected = true;
+    }
+  }
+  assert.equal(corrected, true, 'building from zero must also demonstrate correction');
+  assert.equal(groups.length, 4);
+  assert.equal(groups.reduce((count, group) => count + group.rows.length, 0), 8);
+  assert.equal(groups[1].rows.at(-1).id, 'late-2', 'stream continues into the relocated group');
+});

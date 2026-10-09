@@ -331,13 +331,16 @@ let removedRun = [];
 const scenarioControls = document.querySelector('.scenario-control');
 const requestedScenario = new URLSearchParams(location.search).get('scenario');
 let scenario = ['edits', 'regroup', 'empty'].includes(requestedScenario) ? requestedScenario : 'edits';
-const emptyEvents = buildFromEmptyEvents(PREVIEW_GROUPS);
 let status = { key: 'ready', state: '', values: [] };
 const regroupEvents = [
   { type: 'add_group', groupId: 'late-spring', group: { id: 'late-spring', dateLabel: 'Date pending', summary: 'Testing soil and sunlight', diff: 'added', pending: true, items: [{ id: 'late-1', headline: 'A soil trial identifies two areas needing compost', date: 'Just received', diff: 'added' }] } },
   { type: 'group_date', groupId: 'late-spring', sortDate: '2025-04-09', dateLabel: 'Apr–Jun 2025', date: '09 Apr 2025' },
   { type: 'add_item', groupId: 'late-spring', itemId: 'late-2', item: { id: 'late-2', headline: 'Morning shade is mapped before the beds are built', date: '07 May 2025' } },
 ];
+const emptyEvents = buildFromEmptyEvents(
+  PREVIEW_GROUPS.map((group, index) => ({ ...group, sortDate: ['2025-01-08', '2025-07-04', '2026-01-14'][index] })),
+  regroupEvents.map(event => ({ ...event, groupNumber: 4 })),
+);
 function initialGroups() {
   if (scenario === 'empty') return [];
   if (scenario !== 'regroup') return PREVIEW_GROUPS;
@@ -648,7 +651,13 @@ async function replay() {
 
   const events = scenario === 'empty' ? emptyEvents : scenario === 'regroup' ? regroupEvents : CHANGE_EVENTS;
   for (const [index, event] of events.entries()) {
-    if (scenario === 'empty') updateStatus(event.type === 'add_group' ? 'groupArriving' : 'itemArriving', 'running', event.groupNumber);
+    if (scenario === 'empty') {
+      const key = event.type === 'group_date' ? 'correcting'
+        : event.group?.pending ? 'arrival'
+        : event.groupId === 'late-spring' ? 'continuing'
+        : event.type === 'add_group' ? 'groupArriving' : 'itemArriving';
+      updateStatus(key, 'running', event.groupNumber);
+    }
     else if (scenario === 'regroup') updateStatus(index === 0 ? 'arrival' : index === 1 ? 'correcting' : 'continuing', 'running');
     else updateStatus('progress', 'running', index + 1, events.length);
     if (removedRun.length && !nextEventContinuesRemoval(event)) {
