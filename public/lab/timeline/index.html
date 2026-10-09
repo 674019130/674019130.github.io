@@ -15,27 +15,49 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#demo">Skip to timeline</a>
+  <a class="skip-link" href="#demo" data-copy="skip">Skip to timeline</a>
   <main class="page-shell">
-    <nav class="lab-nav" aria-label="Breadcrumb"><a href="/lab">← UI lab</a><span>01 / Streaming timeline</span></nav>
+    <nav class="lab-nav" aria-label="Breadcrumb"><a href="/lab" data-copy="back">← UI lab</a><span data-copy="number">01 / Streaming timeline</span><button id="language" class="language-button" type="button" aria-label="切换中文">中</button></nav>
     <header class="intro">
-      <h1>Streaming timeline</h1>
-      <p class="intro-copy">A garden taking shape, one update at a time.</p>
-      <p class="sample-note">Fictional data · 24 updates · about 9 seconds</p>
+      <h1 data-copy="title">Streaming timeline</h1>
+      <p class="intro-copy" data-copy="intro">A garden taking shape, one update at a time.</p>
+      <p class="sample-note" data-copy="sample">Fictional data · 24 updates · about 9 seconds</p>
     </header>
+    <label class="scenario-control" for="scenarioSelect"><span data-copy="scenario">Scenario</span><select id="scenarioSelect"><option value="edits" data-copy="edits">Add, change &amp; remove</option><option value="regroup" data-copy="regroup">New group, corrected position</option></select></label>
+    <p id="scenarioHint" class="scenario-hint" data-copy="hint" hidden></p>
     <div class="playback-bar" role="group" aria-label="Playback controls">
-      <button class="primary-button" id="replayButton" type="button">Replay changes</button>
-      <button class="secondary-button" id="resetButton" type="button">Reset</button>
-      <label class="speed-control" for="speedSelect"><span>Speed</span><select id="speedSelect"><option value="1.35">Slow</option><option value="1" selected>Normal</option><option value="0.65">Fast</option></select></label>
+      <button class="primary-button" id="replayButton" type="button" data-copy="replay">Replay changes</button>
+      <button class="secondary-button" id="resetButton" type="button" data-copy="reset">Reset</button>
+      <label class="speed-control" for="speedSelect"><span data-copy="speed">Speed</span><select id="speedSelect"><option value="1.35" data-copy="slow">Slow</option><option value="1" selected data-copy="normal">Normal</option><option value="0.65" data-copy="fast">Fast</option></select></label>
     </div>
-    <div class="legend" aria-label="Diff legend"><span><i class="legend-swatch is-added"></i>Added</span><span><i class="legend-swatch is-changed"></i>Changed</span><span><i class="legend-swatch is-removed"></i>Removed</span></div>
+    <div class="legend" aria-label="Diff legend"><span><i class="legend-swatch is-added"></i><span data-copy="added">Added</span></span><span><i class="legend-swatch is-changed"></i><span data-copy="changed">Changed</span></span><span><i class="legend-swatch is-removed"></i><span data-copy="removed">Removed</span></span></div>
     <article class="timeline-card" id="demo" aria-labelledby="demo-title">
-      <header class="timeline-card-header"><h2 id="demo-title">The shared garden</h2><span class="mode-label" id="modeLabel">Preview</span></header>
+      <header class="timeline-card-header"><h2 id="demo-title" data-copy="garden">The shared garden</h2><span class="mode-label" id="modeLabel">Preview</span></header>
       <div class="timeline-list" id="timelineList"></div>
       <noscript><p>This interactive demo needs JavaScript.</p></noscript>
       <footer class="timeline-footer" aria-live="polite"><span class="status-dot" id="statusDot" aria-hidden="true"></span><span id="statusText">Preview ready</span></footer>
     </article>
+    <section class="implementation-notes" aria-labelledby="tricks-title">
+      <h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
+      <article><h3 data-copy="detectionTitle"></h3><p data-copy="detection"></p><pre><code>// Date metadata arrives: detect and correct in the same handler.
+groups = receiveGroupDate(groups, event.groupId, event.sortDate);
+// Stable IDs, chronological order. Undated groups stay last.</code></pre></article>
+      <article><h3 data-copy="motionTitle"></h3><p data-copy="motion"></p><pre><code>const before = layoutSnapshot();
+timelineList.append(...orderedNodes); // Same nodes, new order.
+const after = layoutSnapshot();
+// FLIP: invert the displacement, then animate back to zero.
+node.animate([
+  { transform: `translate(0, ${beforeY - afterY}px)` },
+  { transform: 'translate(0, 0)' }
+], { duration: 640, easing: 'cubic-bezier(.22,1,.36,1)' });</code></pre></article>
+      <article><h3 data-copy="cancelTitle"></h3><p data-copy="cancel"></p><pre><code>playbackToken += 1; // Invalidate the old stream on reset.
+if (token !== playbackToken) return;
+@media (prefers-reduced-motion: reduce) {
+  .timeline-group { animation: none; }
+}</code></pre></article>
+      <p data-copy="source"></p><a href="./script.js">JavaScript ↗</a> · <a href="./styles.css">CSS ↗</a>
+    </section>
   </main>
-  <script src="./script.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 </html>

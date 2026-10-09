@@ -1,3 +1,16 @@
+import { readLocale, saveLocale, followLocale } from '../shared/locale.js';
+import { copy, translations } from './content.js';
+import { receiveGroupDate } from './model.js';
+let language = readLocale();
+saveLocale(language);
+const t = (key, ...values) => values.reduce((text, value, index) => text.replace(`{${index}}`, value), copy[language][key] || key);
+function tr(value) {
+  if (language !== 'zh') return value;
+  if (translations[value]) return translations[value];
+  const date = /^(\d{2}) ([A-Za-z]{3}) (\d{4})$/.exec(value);
+  const month = date && ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].indexOf(date[2]) + 1;
+  return month ? `${date[3]}/${String(month).padStart(2, "0")}/${date[1]}` : value;
+}
 // Entirely fictional garden project; no real people, organisations or records.
 const PREVIEW_GROUPS = [
   {
@@ -315,6 +328,20 @@ const modeLabel = document.querySelector("#modeLabel");
 let groups = [];
 let playbackToken = 0;
 let removedRun = [];
+const scenarioSelect = document.querySelector('#scenarioSelect');
+scenarioSelect.value = new URLSearchParams(location.search).get('scenario') === 'regroup' ? 'regroup' : 'edits';
+let status = { key: 'ready', state: '', values: [] };
+const regroupEvents = [
+  { type: 'add_group', groupId: 'late-spring', group: { id: 'late-spring', dateLabel: 'Date pending', summary: 'Testing soil and sunlight', diff: 'added', pending: true, items: [{ id: 'late-1', headline: 'A soil trial identifies two areas needing compost', date: 'Just received', diff: 'added' }] } },
+  { type: 'group_date', groupId: 'late-spring', sortDate: '2025-04-09', dateLabel: 'Apr–Jun 2025', date: '09 Apr 2025' },
+  { type: 'add_item', groupId: 'late-spring', itemId: 'late-2', item: { id: 'late-2', headline: 'Morning shade is mapped before the beds are built', date: '07 May 2025' } },
+];
+function initialGroups() {
+  if (scenarioSelect.value !== 'regroup') return PREVIEW_GROUPS;
+  return PREVIEW_GROUPS.map((group, index) => ({ ...group,
+    sortDate: ['2025-01-08', '2025-07-04', '2026-01-14'][index], items: [group.items[0]],
+  }));
+}
 
 function cloneGroups(value) {
   return value.map((group) => ({
@@ -334,26 +361,26 @@ function escapeHtml(value) {
 
 function diffTag(diff) {
   if (!diff) return "";
-  return `<span class="diff-tag ${diff}">${escapeHtml(diff)}</span>`;
+  return `<span class="diff-tag ${diff}">${escapeHtml(t(diff))}</span>`;
 }
 
 function rowHtml(item) {
   const diff = item.diff || "";
   return `<li class="timeline-row" data-item-id="${escapeHtml(item.id)}" data-diff="${escapeHtml(diff)}">
     <span class="row-marker" aria-hidden="true"></span>
-    <span class="row-copy"><span class="row-headline diff-field">${escapeHtml(item.headline)}</span>${diffTag(diff)}</span>
-    <time class="row-date diff-field">${escapeHtml(item.date)}</time>
+    <span class="row-copy"><span class="row-headline diff-field">${escapeHtml(tr(item.headline))}</span>${diffTag(diff)}</span>
+    <time class="row-date diff-field">${escapeHtml(tr(item.date))}</time>
   </li>`;
 }
 
 function removedClusterHtml(cluster) {
   const controlId = `removed-${cluster.id}`;
-  const label = `${cluster.items.length} removed entries`;
+  const label = t("removedCount", cluster.items.length);
   return `<li class="removed-cluster" data-cluster-id="${escapeHtml(cluster.id)}" data-expanded="false">
     <button class="removed-cluster-toggle" type="button" aria-expanded="false" aria-controls="${controlId}">
       <span class="row-marker" aria-hidden="true"></span>
       <span class="removed-cluster-label">${label}${diffTag("removed")}</span>
-      <span class="removed-cluster-action">Show</span>
+      <span class="removed-cluster-action">${t("show")}</span>
     </button>
     <div class="removed-cluster-content" id="${controlId}" aria-hidden="true" inert>
       <div><ul class="removed-cluster-items">${cluster.items.map(rowHtml).join("")}</ul></div>
@@ -366,9 +393,9 @@ function groupHtml(group) {
   return `<section class="timeline-group" data-group-id="${escapeHtml(group.id)}" data-diff="${escapeHtml(group.diff || "")}">
     <span class="timeline-group-dot" aria-hidden="true"></span>
     <div class="timeline-group-head">
-      <span class="timeline-date">${escapeHtml(group.dateLabel)}</span>
-      <span class="timeline-summary">${escapeHtml(group.summary)}</span>
-      ${group.diff ? diffTag(group.diff) : ""}
+      <span class="timeline-date">${escapeHtml(tr(group.dateLabel))}</span>
+      <span class="timeline-summary">${escapeHtml(tr(group.summary))}</span>
+      ${group.diff ? diffTag(group.diff) : ""}${group.pending ? `<span class="position-state">${t("pending")}</span>` : group.moved ? `<span class="position-state is-sorted">↥ ${t("moved")}</span>` : ""}
     </div>
     <ul class="timeline-items">
       ${rows.map((row) => row.type === "cluster" ? removedClusterHtml(row) : rowHtml(row)).join("")}
@@ -377,22 +404,47 @@ function groupHtml(group) {
 }
 
 function render() {
+  const expanded = [...timelineList.querySelectorAll('[data-expanded="true"]')].map(node => node.dataset.clusterId);
+  const focused = document.activeElement?.closest('.removed-cluster')?.dataset.clusterId;
+  timelineList.getAnimations({ subtree: true }).forEach(animation => animation.cancel());
   timelineList.innerHTML = groups.map(groupHtml).join("");
+  for (const id of expanded) {
+    const node = timelineList.querySelector(`[data-cluster-id="${CSS.escape(id)}"]`);
+    if (node) setExpanded(node, true);
+  }
+  if (focused) timelineList.querySelector(`[data-cluster-id="${CSS.escape(focused)}"] button`)?.focus({ preventScroll: true });
 }
-
-function updateStatus(text, state = "") {
-  statusText.textContent = text;
+function paintStatus() {
+  statusText.textContent = t(status.key, ...status.values);
+  const state = status.state;
   statusDot.className = `status-dot${state ? ` is-${state}` : ""}`;
   modeLabel.className = `mode-label${state === "running" ? " is-running" : state === "complete" ? " is-complete" : ""}`;
-  modeLabel.textContent = state === "running" ? "Updating" : state === "complete" ? "Updated" : "Preview";
+  modeLabel.textContent = t(state === 'running' ? 'running' : state === 'complete' ? 'complete' : 'preview');
+}
+function updateStatus(key, state = "", ...values) {
+  status = { key, state, values }; paintStatus();
+}
+function localize() {
+  document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+  document.title = `${t('title')} · Su UI lab`;
+  document.querySelector('meta[name="description"]').content = t('intro');
+  document.querySelectorAll('[data-copy]').forEach(node => { node.textContent = t(node.dataset.copy); });
+  document.querySelector('.sample-note').textContent = t(scenarioSelect.value === 'regroup' ? 'regroupSample' : 'sample');
+  document.querySelector('#scenarioHint').hidden = scenarioSelect.value !== 'regroup';
+  document.querySelector('#language').textContent = language === 'zh' ? 'EN' : '中';
+  document.querySelector('#language').setAttribute('aria-label', t('language'));
+  document.querySelector('.lab-nav').setAttribute('aria-label', language === 'zh' ? '导航' : 'Breadcrumb');
+  document.querySelector('.playback-bar').setAttribute('aria-label', language === 'zh' ? '播放控制' : 'Playback controls');
+  document.querySelector('.legend').setAttribute('aria-label', language === 'zh' ? '变化图例' : 'Diff legend');
+  render(); paintStatus();
 }
 
 function reset() {
   playbackToken += 1;
   removedRun = [];
-  groups = cloneGroups(PREVIEW_GROUPS).map((group) => ({ ...group, rows: group.items }));
+  groups = cloneGroups(initialGroups()).map((group) => ({ ...group, rows: group.items }));
   render();
-  updateStatus("Preview ready");
+  updateStatus("ready");
   replayButton.disabled = false;
   resetButton.disabled = false;
 }
@@ -405,7 +457,10 @@ function wait(milliseconds, token) {
 
 function playbackDelay(base) {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return 0;
-  return Math.round(base * Number(speedSelect.value || 1));
+  // Local-only slow motion for inspecting intermediate frames, never a public setting.
+  const qaScale = ['localhost', '127.0.0.1'].includes(location.hostname)
+    ? Math.max(1, Math.min(8, Number(new URLSearchParams(location.search).get('motion')) || 1)) : 1;
+  return Math.round(base * Number(speedSelect.value || 1) * qaScale);
 }
 
 function groupById(groupId) {
@@ -433,18 +488,49 @@ function layoutSnapshot() {
   return positions;
 }
 
-function animateLayout(previousPositions) {
+function animateLayout(previousPositions, movingId = '') {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  timelineList.querySelectorAll(".timeline-group").forEach((element) => {
+  // Batch every layout read before the first animation write.
+  const entries = [...timelineList.querySelectorAll('.timeline-group')].map(element => ({ element, top: element.getBoundingClientRect().top }));
+  for (const { element, top } of entries) {
     const previousTop = previousPositions.get(element.dataset.groupId);
-    if (previousTop === undefined) return;
-    const offset = previousTop - element.getBoundingClientRect().top;
-    if (Math.abs(offset) < 1) return;
-    element.animate(
-      [{ transform: `translateY(${offset}px)` }, { transform: "translateY(0)" }],
-      { duration: 180, easing: "cubic-bezier(0.16, 1, 0.3, 1)" },
-    );
-  });
+    if (previousTop === undefined) continue;
+    const offset = previousTop - top;
+    if (Math.abs(offset) < 1) continue;
+    const moving = element.dataset.groupId === movingId;
+    const frames = moving ? [
+      { transform: `translate(0, ${offset}px)`, offset: 0 },
+      { transform: `translate(12px, ${offset * .7}px)`, offset: .25 },
+      { transform: 'translate(0, 0)', offset: 1 },
+    ] : [{ transform: `translateY(${offset}px)` }, { transform: 'translateY(0)' }];
+    element.animate(frames, { duration: playbackDelay(movingId ? 640 : 180), easing: 'cubic-bezier(.22,1,.36,1)' });
+  }
+}
+
+async function receiveDate(event, token) {
+  const group = groupById(event.groupId);
+  const previous = layoutSnapshot();
+  groups = receiveGroupDate(groups, event.groupId, event.sortDate);
+  if (group?.sortDate !== event.sortDate) return true;
+  group.dateLabel = event.dateLabel;
+  group.rows[0].date = event.date;
+  group.pending = false;
+  group.moved = true;
+  const node = timelineList.querySelector(`[data-group-id="${CSS.escape(group.id)}"]`);
+  node.classList.remove('is-arriving');
+  node.querySelector('.timeline-date').textContent = tr(group.dateLabel);
+  node.querySelector('.row-date').textContent = tr(event.date);
+  const badge = node.querySelector('.position-state');
+  badge.textContent = `↥ ${t('moved')}`;
+  badge.classList.add('is-sorted');
+  node.classList.add('is-reordering');
+  const orderedNodes = groups.map(group => timelineList.querySelector(`[data-group-id="${CSS.escape(group.id)}"]`));
+  timelineList.append(...orderedNodes);
+  updateStatus('correcting', 'running');
+  animateLayout(previous, group.id);
+  if (!(await wait(playbackDelay(640), token))) return false;
+  node.classList.remove('is-reordering');
+  return wait(playbackDelay(500), token);
 }
 
 function nextEventContinuesRemoval(event) {
@@ -494,6 +580,8 @@ async function applyEvent(event, token) {
   const group = groupById(event.groupId);
   if (event.type !== "add_group" && !group) return true;
 
+  if (event.type === "group_date") return receiveDate(event, token);
+
   if (event.type === "review_item") {
     animateClass(rowElement(event.groupId, event.itemId), "is-reviewing");
     return wait(playbackDelay(230), token);
@@ -536,7 +624,7 @@ async function applyEvent(event, token) {
     animateLayout(previousPositions);
     const groupElement = timelineList.querySelector(`[data-group-id="${CSS.escape(event.groupId)}"]`);
     animateClass(groupElement, "is-arriving");
-    return wait(playbackDelay(420), token);
+    return wait(playbackDelay(scenarioSelect.value === 'regroup' ? 1100 : 420), token);
   }
 
   return true;
@@ -547,11 +635,13 @@ async function replay() {
   const token = playbackToken;
   replayButton.disabled = true;
   resetButton.disabled = false;
-  updateStatus("Reviewing timeline changes", "running");
+  updateStatus("reviewing", "running");
   if (!(await wait(playbackDelay(260), token))) return;
 
-  for (const [index, event] of CHANGE_EVENTS.entries()) {
-    updateStatus(`Updating ${index + 1} of ${CHANGE_EVENTS.length}`, "running");
+  const events = scenarioSelect.value === 'regroup' ? regroupEvents : CHANGE_EVENTS;
+  for (const [index, event] of events.entries()) {
+    if (scenarioSelect.value === 'regroup') updateStatus(index === 0 ? 'arrival' : index === 1 ? 'correcting' : 'continuing', 'running');
+    else updateStatus('progress', 'running', index + 1, events.length);
     if (removedRun.length && !nextEventContinuesRemoval(event)) {
       if (!(await collapseRemovedRun(token))) return;
     }
@@ -559,28 +649,40 @@ async function replay() {
   }
 
   if (removedRun.length && !(await collapseRemovedRun(token))) return;
-  updateStatus("Timeline update complete", "complete");
+  updateStatus(scenarioSelect.value === 'regroup' ? 'ordered' : 'done', 'complete');
   replayButton.disabled = false;
 }
 
-timelineList.addEventListener("click", (event) => {
-  const toggle = event.target.closest(".removed-cluster-toggle");
-  if (!toggle) return;
-  const cluster = toggle.closest(".removed-cluster");
-  const content = cluster?.querySelector(".removed-cluster-content");
-  if (!cluster || !content) return;
-  const expanded = cluster.dataset.expanded !== "true";
+function setExpanded(cluster, expanded) {
+  const toggle = cluster.querySelector('.removed-cluster-toggle');
+  const content = cluster.querySelector('.removed-cluster-content');
   cluster.dataset.expanded = String(expanded);
-  toggle.setAttribute("aria-expanded", String(expanded));
-  toggle.querySelector(".removed-cluster-action").textContent = expanded ? "Hide" : "Show";
-  content.setAttribute("aria-hidden", String(!expanded));
-  if (expanded) content.removeAttribute("inert");
-  else content.setAttribute("inert", "");
+  toggle.setAttribute('aria-expanded', String(expanded));
+  toggle.querySelector('.removed-cluster-action').textContent = t(expanded ? 'hide' : 'show');
+  content.setAttribute('aria-hidden', String(!expanded));
+  content.inert = !expanded;
+}
+timelineList.addEventListener('click', event => {
+  const cluster = event.target.closest('.removed-cluster-toggle')?.closest('.removed-cluster');
+  if (cluster) setExpanded(cluster, cluster.dataset.expanded !== 'true');
+});
+scenarioSelect.addEventListener('change', () => {
+  const url = new URL(location.href); url.searchParams.set('scenario', scenarioSelect.value);
+  history.replaceState(history.state, '', url);
+  reset(); localize();
+});
+document.querySelector('#language').addEventListener('click', () => {
+  language = language === 'zh' ? 'en' : 'zh'; saveLocale(language); localize();
+});
+followLocale(next => { if (next !== language) { language = next; localize(); } });
+window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', event => {
+  if (event.matches) timelineList.getAnimations({ subtree: true }).forEach(animation => animation.cancel());
 });
 
 replayButton.addEventListener("click", replay);
 resetButton.addEventListener("click", reset);
 reset();
+localize();
 
 
 // The lab hover mounts this document only while the entry is being previewed.
