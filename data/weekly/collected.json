@@ -34079,34 +34079,214 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/007STAN/HODGE-COMPLEX-STANDARD-MODEL-HCSM- Comments URL: https://news.ycombinator.com/item?id=50016594 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50016594"
+    },
+    {
+      "id": "eb29749d38be238a7b4b",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Are you a subscribed LLM or a locally deployed open-source model?",
+      "url": "https://news.ycombinator.com/item?id=50016644",
+      "published_at": "2026-10-09T06:15:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Could you briefly introduce the reason or what it's used for? Comments URL: https://news.ycombinator.com/item?id=50016644 Points: 8 # Comments: 11",
+      "discussion_url": "https://news.ycombinator.com/item?id=50016644"
+    },
+    {
+      "id": "32dbd6662e8ac58e5765",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "--help on your CLI is all you need for LLM context until you don't",
+      "url": "https://ghuntley.com/tier",
+      "published_at": "2026-10-09T07:13:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ghuntley.com/tier/ Comments URL: https://news.ycombinator.com/item?id=50017124 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50017124"
+    },
+    {
+      "id": "fda20aa1a3008be2fe96",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Prux is a minimal terminal coding agent",
+      "url": "https://github.com/heng30/prux",
+      "published_at": "2026-10-09T08:21:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/heng30/prux Comments URL: https://news.ycombinator.com/item?id=50017597 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50017597"
+    },
+    {
+      "id": "985e67d78e5f830ed620",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "TokenRouter: A serving engine for token-level LLM routing",
+      "url": "https://fuvty.github.io/thinking_yard_project_page/projects/tokenrouter",
+      "published_at": "2026-10-09T09:10:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://fuvty.github.io/thinking_yard_project_page/projects/tokenrouter/ Comments URL: https://news.ycombinator.com/item?id=50017997 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50017997"
+    },
+    {
+      "id": "62e50b7eec701e9299c5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: VendIQ – AI agent for vendor follow-ups and ops automation",
+      "url": "https://vendiq.rishailabs.com",
+      "published_at": "2026-10-09T09:33:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vendiq.rishailabs.com/ Comments URL: https://news.ycombinator.com/item?id=50018161 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50018161"
+    },
+    {
+      "id": "7abbce5a3534d2b5202d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Long term Memory and 50M token window for LLM",
+      "url": "https://huggingface.co/papers/2610.10845",
+      "published_at": "2026-10-09T09:35:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/papers/2610.10845 Comments URL: https://news.ycombinator.com/item?id=50018178 Points: 6 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50018178"
+    },
+    {
+      "id": "195d55237db1a636ba57",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Agent Experience (Ax) Practitioner Playbook",
+      "url": "https://developer.microsoft.com/blog/introducing-the-agent-experience-ax-practitioner-playbook",
+      "published_at": "2026-10-09T09:54:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://developer.microsoft.com/blog/introducing-the-agent-experience-ax-practitioner-playbook/ Comments URL: https://news.ycombinator.com/item?id=50018309 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50018309"
+    },
+    {
+      "id": "c86a5555c968d30a612d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Spectra – A drop-in optimizer that cuts LLM training VRAM by 50%",
+      "url": "https://github.com/SpectraSI/SpectraAdamw",
+      "published_at": "2026-10-09T10:51:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/SpectraSI/SpectraAdamw Comments URL: https://news.ycombinator.com/item?id=50018712 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50018712"
+    },
+    {
+      "id": "e895855659102ccbbe0a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A GTA-like vibe coding game that's currently taking Taiwan by storm",
+      "url": "https://www.taipei-rush.app",
+      "published_at": "2026-10-09T10:57:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.taipei-rush.app/ Comments URL: https://news.ycombinator.com/item?id=50018757 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50018757"
+    },
+    {
+      "id": "6d2f57cf1762e2860caa",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Client-side image cropping for any file input, without coding",
+      "url": "https://cropguide.io",
+      "published_at": "2026-10-09T11:01:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! We built CropGuide for people who don't code (or use platforms that don't allow custom code) but do want to improve the quality of images uploaded by their users. To make that possible, we've built an admin tool where you configure your image requirements. Then you add a script tag to the page with the file upload field, either a standard file input or something more exotic powered by a library, and that's it. The script catches images before they're added to the file input and lets the user edit them. Once edited, CropGuide places the resulting image back in the file input and everything continues as normal. We really wanted to stay away from storing or processing images on our servers, so all of this happens client-side. Only the image requirements are fetched from the server. Of course we're sharing because we're excited about having built and launched something new. Now it's fingers crossed that we can get some traction. Would love to hear what you think! Comments URL: https://news.ycombinator.com/item?id=50018802 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50018802"
+    },
+    {
+      "id": "b9c35bec28a382549152",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: LLM skill to generate editable 3D house designs",
+      "url": "https://arcadium3d.com/create-with-ai",
+      "published_at": "2026-10-09T12:24:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "I loved the stunning 3D designs created with Astra but they typically require a decent knowledge of Blender or Unreal engine which made it inaccessible. It also generated something you couldn't edit which is tricky for the design process where you typically need to try different ideas out. This is especially painful if each series of Astra loop's took 4 hours to complete. So... using Arcadium's online house editor tool - I created a skill to generate JSON that it can understand. It's still early stages - structures work pretty well but textures and complex models will need refinement (coming soon!). Would love to get feedback! thanks Comments URL: https://news.ycombinator.com/item?id=50019488 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50019488"
+    },
+    {
+      "id": "41acad52d7b191b70534",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Narwhal – LLM serving that moves GPUs between prefill/decode in seconds",
+      "url": "https://github.com/athrael-soju/Narwhal",
+      "published_at": "2026-10-09T12:45:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/athrael-soju/Narwhal Comments URL: https://news.ycombinator.com/item?id=50019698 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50019698"
+    },
+    {
+      "id": "9547fd62c6d35ed886fd",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Voxlocal: A minimal voice agent written in Rust",
+      "url": "https://samkhawase.com/blog/voxlocal-minimal-voice-agent",
+      "published_at": "2026-10-09T12:51:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://samkhawase.com/blog/voxlocal-minimal-voice-agent/ Comments URL: https://news.ycombinator.com/item?id=50019764 Points: 8 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50019764"
+    },
+    {
+      "id": "304a16f9f5dce1d1ddd4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: UserAlertX – let your AI agent text you (only you)",
+      "url": "https://useralertx.com",
+      "published_at": "2026-10-09T12:56:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://useralertx.com Comments URL: https://news.ycombinator.com/item?id=50019807 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50019807"
+    },
+    {
+      "id": "8603b4d4b1ef20bfb65a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Claude Dashboards: The Jupyter Notebooks of Agent Age",
+      "url": "https://www.ssp.sh/brain/claude-dashboards",
+      "published_at": "2026-10-09T13:01:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.ssp.sh/brain/claude-dashboards/ Comments URL: https://news.ycombinator.com/item?id=50019878 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50019878"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-09T06:09:01.800290+00:00",
+      "last_success": "2026-10-09T13:17:22.084021+00:00",
       "count": 10,
       "earliest": "2026-10-06T10:23:38+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-09T06:09:02.040483+00:00",
+      "last_success": "2026-10-09T13:17:22.341630+00:00",
       "count": 20,
       "earliest": "2026-10-05T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-09T06:09:02.224066+00:00",
+      "last_success": "2026-10-09T13:17:22.544413+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-09T06:09:02.349261+00:00",
+      "last_success": "2026-10-09T13:17:22.733320+00:00",
       "count": 30,
-      "earliest": "2026-09-28T23:06:21+00:00",
+      "earliest": "2026-09-29T15:55:13+00:00",
       "gap": false,
       "error": null
     },
@@ -34115,66 +34295,66 @@
       "count": 99,
       "earliest": "2026-10-08T14:32:11+00:00",
       "gap": true,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
-      "last_success": "2026-10-09T06:09:06.659588+00:00",
+      "last_success": "2026-10-09T13:17:34.542858+00:00",
       "count": 100,
-      "earliest": "2026-10-07T15:44:19+00:00",
+      "earliest": "2026-10-07T18:36:50+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-09T06:09:08.420020+00:00",
+      "last_success": "2026-10-09T13:17:35.687895+00:00",
       "count": 20,
       "earliest": "2026-09-17T22:33:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-09T06:09:10.374083+00:00",
+      "last_success": "2026-10-09T13:17:37.055473+00:00",
       "count": 30,
       "earliest": "2026-09-22T03:26:20+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-09T06:09:10.965897+00:00",
+      "last_success": "2026-10-09T13:17:37.493856+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-09T06:09:11.518165+00:00",
+      "last_success": "2026-10-09T13:17:37.920184+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-09T06:09:12.332140+00:00",
+      "last_success": "2026-10-09T13:17:38.479823+00:00",
       "count": 10,
       "earliest": "2026-09-05T23:49:00+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-09T06:09:45.255698+00:00",
+      "last_success": "2026-10-09T13:18:00.460878+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-09T06:09:45.445906+00:00",
-      "count": 1258,
+      "last_success": "2026-10-09T13:18:00.597745+00:00",
+      "count": 1259,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-09T06:10:12.747858+00:00",
+      "last_success": "2026-10-09T13:18:19.877451+00:00",
       "count": 10,
       "earliest": "2026-09-26T01:02:31+00:00",
       "gap": false,
@@ -34243,5 +34423,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-09T06:10:12.748131+00:00"
+  "collected_at": "2026-10-09T13:18:19.877780+00:00"
 }
