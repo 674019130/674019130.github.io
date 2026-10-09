@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useHead } from '@unhead/vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
+import { useBlogLocale } from '../composables/useBlogLocale'
 import archive from '../data/weekly/issues.json'
 
 const route = useRoute()
-const router = useRouter()
+const { zh } = useBlogLocale('zh')
 const issues = archive.issues
 const current = computed(() => issues.find(issue => issue.id === route.query.issue) || issues[0])
-const zh = computed(() => route.query.lang !== 'en')
 const visible = computed(() => current.value?.items.map(item => ({ ...item, text: zh.value ? item.change : item.change_en })) || [])
 const playing = ref(false)
 const revealed = ref(999)
@@ -36,7 +36,7 @@ function replay() {
 }
 function toggleLanguage() {
   stop()
-  void router.replace({ query: { ...route.query, lang: zh.value ? 'en' : 'zh' } })
+  zh.value = !zh.value
 }
 function visibility() { if (document.hidden) stop() }
 onMounted(() => {
@@ -57,7 +57,7 @@ useHead(computed(() => ({ title: zh.value ? 'AI / Agents 周报' : 'This week in
   <main class="portfolio-home weekly-page" :lang="zh ? 'zh-CN' : 'en'">
     <section v-if="current" class="weekly-frame" :aria-label="zh ? '本周 AI 变化' : 'This week in agents'">
       <header class="board-header">
-        <h1>this week in agents</h1>
+        <h1>{{ zh ? '本周 AI 动态' : 'this week in agents' }}</h1>
         <div class="board-meta"><span>{{ current.period_start.slice(5).replace('-', '.') }} — {{ current.period_end.slice(5).replace('-', '.') }}, {{ current.period_start.slice(0, 4) }}</span><button class="language" :aria-label="zh ? 'Switch to English' : '切换中文'" @click="toggleLanguage">{{ zh ? 'EN' : '中' }}</button></div>
       </header>
       <ol class="weekly-list">

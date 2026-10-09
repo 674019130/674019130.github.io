@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
 const props = defineProps<{ zh: boolean; slug: string; title: string; titleZh: string; date: string; dateLabel: string; dateLabelZh: string }>()
 const link = ref<HTMLAnchorElement>()
@@ -23,7 +23,7 @@ function show() {
     timer = undefined
     const dark = document.documentElement.classList.contains('dark')
     const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    source.value = `/lab/${props.slug}/?preview=1&theme=${dark ? 'dark' : 'light'}${still ? '&still=1' : ''}`
+    source.value = `/lab/${props.slug}/?preview=1&lang=${props.zh ? 'zh' : 'en'}&theme=${dark ? 'dark' : 'light'}${still ? '&still=1' : ''}`
     open.value = true
   }, 70)
 }
@@ -38,6 +38,13 @@ function close() {
   timer = undefined
   open.value = false
 }
+watch(() => props.zh, () => {
+  if (source.value) {
+    const url = new URL(source.value, window.location.origin)
+    url.searchParams.set('lang', props.zh ? 'zh' : 'en')
+    source.value = url.pathname + url.search
+  }
+})
 function leave() {
   suppressed = false
   if (!keyboard) close()
@@ -67,7 +74,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <a ref="link" class="experiment-row" :href="`/lab/${props.slug}/`" @pointermove="move" @pointerleave="leave" @focus="focus" @blur="close" @click="close">
+  <a ref="link" class="experiment-row" :href="`/lab/${props.slug}/?lang=${props.zh ? 'zh' : 'en'}`" @pointermove="move" @pointerleave="leave" @focus="focus" @blur="close" @click="close">
     <span>{{ props.zh ? props.titleZh : props.title }}</span>
     <span class="row-rule" aria-hidden="true" />
     <time :datetime="props.date">{{ props.zh ? props.dateLabelZh : props.dateLabel }}</time>

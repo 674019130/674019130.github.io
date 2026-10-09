@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
+import { useBlogLocale } from '../composables/useBlogLocale'
 
-const zh = ref(false)
+const { zh } = useBlogLocale()
 const experiments = [
   { slug: 'answer-length', title: 'A little less', titleZh: '再简短一点', date: '2026-10-09', dateLabel: 'Oct 9, 2026', dateLabelZh: '2026 年 10 月 9 日' },
   { slug: 'ascii-background', title: 'ASCII atmosphere', titleZh: '字符氛围', date: '2026-10-09', dateLabel: 'Oct 9, 2026', dateLabelZh: '2026 年 10 月 9 日' },

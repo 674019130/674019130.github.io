@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@unhead/vue'
-import { useSiteConfig } from 'valaxy'
+import { useLocale, useSiteConfig } from 'valaxy'
 import { computed } from 'vue'
 
 type ArticleLocale = 'en' | 'zh'
@@ -12,6 +12,7 @@ const props = defineProps<{
 }>()
 
 const siteConfig = useSiteConfig()
+const { toggleLocale } = useLocale()
 const languages = computed(() => [
   { code: 'en', hreflang: 'en', label: 'English', path: props.englishPath },
   { code: 'zh', hreflang: 'zh-CN', label: '中文', path: props.chinesePath },
@@ -46,6 +47,7 @@ useHead(computed(() => ({
       v-for="language in languages"
       :key="language.code"
       :to="language.path"
+      @click="toggleLocale(language.hreflang)"
       :lang="language.hreflang"
       :hreflang="language.hreflang"
       :aria-current="language.code === current ? 'page' : undefined"

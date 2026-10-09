@@ -1,3 +1,4 @@
+import { readLocale, saveLocale, followLocale } from '../shared/locale.js';
 const scene = document.querySelector('.scene');
 const art = document.querySelector('.artwork');
 const landscape = document.querySelector('#landscape');
@@ -43,7 +44,8 @@ const copy = {
     description: '柔焦风景、蓝紫与朱红调色，以及随明暗变化的 ASCII 字符纹理。'
   }
 };
-let language = new URLSearchParams(location.search).get('lang') === 'zh' ? 'zh' : 'en';
+let language = readLocale();
+saveLocale(language);
 let statusKey = 'loading';
 const t = key => copy[language][key];
 function say(key) { statusKey = key; status.textContent = t(key); }
@@ -66,10 +68,10 @@ function applyLanguage() {
 }
 document.querySelector('#language').addEventListener('click', () => {
   language = language === 'en' ? 'zh' : 'en';
-  const url = new URL(location.href); url.searchParams.set('lang', language);
-  history.replaceState(null, '', url);
+  saveLocale(language);
   applyLanguage();
 });
+followLocale(next => { if (next !== language) { language = next; applyLanguage(); } });
 applyLanguage();
 function colorAt(value, colors) {
   const p = clamp(value) * (colors.length - 1);

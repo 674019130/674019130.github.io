@@ -2,16 +2,17 @@
 import { useHead } from '@unhead/vue'
 import { computed, defineAsyncComponent, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useSiteConfig } from 'valaxy'
+import { useBlogLocale } from '../composables/useBlogLocale'
 import projects from '../data/projects.json'
 
 const HomeComments = defineAsyncComponent(() => import('./HomeComments.vue'))
 const site = useSiteConfig()
 const motionReady = ref(false)
 onMounted(() => { motionReady.value = true })
-const locale = ref<'en' | 'zh'>('en')
-const zh = computed(() => locale.value === 'zh')
+const { locale, zh } = useBlogLocale()
 const email = 'nostarsbutmyeyes@gmail.com'
-const notice = ref('')
+const noticeState = ref<'copied' | 'fallback' | ''>('')
+const notice = computed(() => noticeState.value === 'copied' ? (zh.value ? '邮箱已复制' : 'Email copied') : noticeState.value === 'fallback' ? email : '')
 const commentsMounted = ref(false)
 const commentsOpen = ref(false)
 const commentHeading = ref<HTMLElement>()
@@ -39,13 +40,13 @@ useHead(computed(() => ({
 async function copyEmail() {
   try {
     await navigator.clipboard.writeText(email)
-    notice.value = zh.value ? '邮箱已复制' : 'Email copied'
+    noticeState.value = 'copied'
   }
   catch {
-    notice.value = email
+    noticeState.value = 'fallback'
   }
   if (noticeTimer) clearTimeout(noticeTimer)
-  noticeTimer = setTimeout(() => { notice.value = '' }, 4000)
+  noticeTimer = setTimeout(() => { noticeState.value = '' }, 4000)
 }
 
 async function toggleComments() {
@@ -111,7 +112,7 @@ onBeforeUnmount(() => { if (noticeTimer) clearTimeout(noticeTimer) })
           <nav :aria-label="zh ? '更多页面' : 'More pages'">
             <RouterLink to="/about/">{{ zh ? '关于' : 'about' }}</RouterLink>
             <RouterLink to="/archives/">{{ zh ? '文章' : 'writing' }}</RouterLink>
-            <RouterLink :to="{ path: '/weekly/', query: { lang: locale } }">{{ zh ? 'AI 周报' : 'AI weekly' }}</RouterLink>
+            <RouterLink :to="{ path: '/weekly/', query: { lang: zh ? 'zh-CN' : 'en' } }">{{ zh ? 'AI 周报' : 'AI weekly' }}</RouterLink>
             <RouterLink to="/home-classic">{{ zh ? '旧版首页' : 'classic home' }}</RouterLink>
           </nav>
           <div class="letter-language" role="group" :aria-label="zh ? '语言' : 'Language'">

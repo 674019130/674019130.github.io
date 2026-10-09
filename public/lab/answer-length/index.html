@@ -13,7 +13,11 @@ word.animate([
 #handle { position: absolute; bottom: -22px; }
 /* Animate measured height, never scale the text. */
 card.animate([{ height: `${from}px` }, { height: `${to}px` }],
-  { duration: 420, easing: 'cubic-bezier(.22,1,.36,1)' });</code></pre></article><article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre><code>#handle { touch-action: none; cursor: ns-resize; }
+  { duration: 420, easing: 'cubic-bezier(.22,1,.36,1)' });</code></pre></article><article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre><code>// Read together, then write together.
+const rects = words.map(word =&gt; word.getBoundingClientRect());
+// Pointer events only schedule one update for the next frame.
+if (!dragFrame) dragFrame = requestAnimationFrame(flushDrag);
+// Words animate transform + opacity; no per-character blur.</code></pre></article><article><h3 id="note-title-3"></h3><p id="note-body-3"></p><pre><code>#handle { touch-action: none; cursor: ns-resize; }
 handle.setPointerCapture(event.pointerId);
 // Pointer cancellation and Escape restore the drag's start.
 @media (prefers-reduced-motion: reduce) {

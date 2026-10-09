@@ -9,6 +9,7 @@ export const copy = {
   notes: [
    ['Keep the words that survive', 'Match unchanged English words or Chinese characters in reading order. Measure their old and new positions, then animate only the difference. The text stays the same size; it travels to its next line instead of shrinking with the card.'],
    ['Give the container its own timeline', 'The card’s top edge stays anchored. Its height follows the pointer during a drag, then settles to the measured content height on release. The handle belongs to the bottom edge, so it never drifts away from the card.'],
+   ['Keep the drag within a frame', 'Coalesce pointer events with requestAnimationFrame. Read every word position before starting animations, skip words that do not move, and fade new or removed words without per-character blur. A small threshold dead band prevents repeated rewrites near a boundary.'],
    ['Make interruption part of the interaction', 'Capture the pointer so a drag continues outside the handle. Before interrupting an animation, read its visible position. Escape or a cancelled pointer restores the starting level. Reduced motion changes the content immediately.']
   ],
   answers: [
@@ -28,6 +29,7 @@ export const copy = {
   notes: [
    ['让保留下来的词接着走', '按阅读顺序匹配没有改变的英文单词或汉字，测量它们前后的位置，再只动画这段位移。文字字号不变，只是移到新的行里，不会随卡片一起被压扁。'],
    ['容器高度单独交接', '卡片顶边保持固定。拖动时高度跟随指针，松手后再收拢到内容的实测高度。把手属于卡片底边，因此始终贴着边缘，不会与卡片脱节。'],
+   ['把拖动更新合并到每一帧', '用 requestAnimationFrame 合并密集的指针事件。先统一读取所有文字位置，再启动动画；没有位移的文字不启动动画，新增和删除的文字只淡入淡出，不再逐字模糊。档位边界保留一小段缓冲，避免轻微抖动反复重排。'],
    ['把中断也当作交互的一部分', '用指针捕获让拖动在离开把手后继续。打断动画之前，先读取它当前可见的位置。按 Escape 或指针被取消时恢复拖动前的档位；减少动态效果时直接切换内容。']
   ],
   answers: [

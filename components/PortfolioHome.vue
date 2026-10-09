@@ -3,6 +3,7 @@ import { useHead } from '@unhead/vue'
 import type { Post } from 'valaxy/types'
 import { usePostListWithCollections } from 'valaxy'
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useBlogLocale } from '../composables/useBlogLocale'
 import projectsSnapshot from '../data/projects.json'
 import writingDates from '../data/writing-dates.json'
 
@@ -20,7 +21,7 @@ interface ProjectSnapshot {
   language: string | null
 }
 
-const locale = ref<HomeLocale>('en')
+const { locale } = useBlogLocale()
 const posts = usePostListWithCollections({})
 const emailAddress = 'nostarsbutmyeyes@gmail.com'
 const emailToastVisible = ref(false)

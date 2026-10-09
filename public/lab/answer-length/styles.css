@@ -18,7 +18,8 @@ nav { align-items: center; } nav > span { margin-left: auto; } #language { borde
 #handle::before { content: ''; width: 40px; height: 14px; position: absolute; border-radius: 0 0 10px 10px; background: var(--card); top: 21px; box-shadow: 0 4px 6px -4px #40455355; }
 #handle span { width: 16px; height: 2px; border-radius: 2px; background: #a0a0a4; position: relative; top: 5px; transition: width 160ms, background 160ms; }
 #handle:hover span, #handle:focus-visible span, .dragging #handle span { width: 22px; background: var(--text); }
-#handle:focus-visible { outline: 2px solid #9385b6; outline-offset: 4px; border-radius: 12px; }
+#handle:focus { outline: none; }
+#handle:focus-visible:not([data-pointer-focus])::before { box-shadow: 0 0 0 2px var(--text); }
 .dragging { user-select: none; }
 .read-time { position: absolute; top: calc(100% + 16px); right: 2px; font-size: 9px; color: var(--secondary); font-variant-numeric: tabular-nums; }
 .controls { justify-content: center; gap: 12px; }

@@ -19,13 +19,13 @@ const exports = {}
 vm.runInNewContext(outputText, { exports, require })
 
 test('lab links render during SSR without teleporting into the document body', async () => {
-  for (const slug of ['timeline', 'receipt', 'mascot', 'folding-card', 'live-numbers', 'color-drift']) {
+  for (const zh of [false, true]) for (const slug of ['answer-length', 'ascii-background', 'share-sheet', 'timeline', 'receipt', 'mascot', 'folding-card', 'live-numbers', 'color-drift']) {
     const context = {}
     const html = await renderToString(createSSRApp(exports.default, {
-      zh: false, slug, title: slug, titleZh: slug, date: '2026-09-15',
+      zh, slug, title: slug, titleZh: slug, date: '2026-09-15',
       dateLabel: 'Sep 15, 2026', dateLabelZh: '2026 年 9 月 15 日',
     }), context)
-    assert.ok(html.includes(`href="/lab/${slug}/"`))
+    assert.ok(html.includes(`href="/lab/${slug}/?lang=${zh ? 'zh' : 'en'}"`))
     assert.equal(context.teleports?.body, undefined)
     assert.ok(!html.includes('<iframe'))
   }
