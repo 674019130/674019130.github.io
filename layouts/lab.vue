@@ -4,6 +4,7 @@ import { useHead } from '@unhead/vue'
 
 const zh = ref(false)
 const experiments = [
+  { slug: 'ascii-background', title: 'ASCII atmosphere', titleZh: '字符氛围', date: '2026-10-09', dateLabel: 'Oct 9, 2026', dateLabelZh: '2026 年 10 月 9 日' },
   { slug: 'share-sheet', title: 'Share sheet', titleZh: '分享面板', date: '2026-10-09', dateLabel: 'Oct 9, 2026', dateLabelZh: '2026 年 10 月 9 日' },
   { slug: 'color-drift', title: 'Color drift', titleZh: '流动色彩', date: '2026-09-22', dateLabel: 'Sep 22, 2026', dateLabelZh: '2026 年 9 月 22 日' },
   { slug: 'live-numbers', title: 'Live numbers', titleZh: '动态数字', date: '2026-09-22', dateLabel: 'Sep 22, 2026', dateLabelZh: '2026 年 9 月 22 日' },
