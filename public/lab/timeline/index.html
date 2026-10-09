@@ -23,8 +23,15 @@
       <p class="intro-copy" data-copy="intro">A garden taking shape, one update at a time.</p>
       <p class="sample-note" data-copy="sample">Fictional data · 24 updates · about 9 seconds</p>
     </header>
-    <label class="scenario-control" for="scenarioSelect"><span data-copy="scenario">Scenario</span><select id="scenarioSelect"><option value="edits" data-copy="edits">Add, change &amp; remove</option><option value="regroup" data-copy="regroup">New group, corrected position</option></select></label>
-    <p id="scenarioHint" class="scenario-hint" data-copy="hint" hidden></p>
+    <fieldset class="scenario-control">
+      <legend data-copy="scenario">Scenario</legend>
+      <div class="scenario-segments">
+        <label><input type="radio" name="scenario" value="edits" checked><span data-copy="editsTab">Updates</span></label>
+        <label><input type="radio" name="scenario" value="regroup"><span data-copy="regroupTab">Auto-order</span></label>
+        <label><input type="radio" name="scenario" value="empty"><span data-copy="emptyTab">From zero</span></label>
+      </div>
+    </fieldset>
+    <p id="scenarioHint" class="scenario-hint"></p>
     <div class="playback-bar" role="group" aria-label="Playback controls">
       <button class="primary-button" id="replayButton" type="button" data-copy="replay">Replay changes</button>
       <button class="secondary-button" id="resetButton" type="button" data-copy="reset">Reset</button>
@@ -39,6 +46,12 @@
     </article>
     <section class="implementation-notes" aria-labelledby="tricks-title">
       <h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
+      <article><h3 data-copy="emptyTitle"></h3><p data-copy="emptyTrick"></p><pre><code>// Start with no groups. Stream headers and items separately.
+groups = [];
+{ type: 'add_group', group: { ...header, items: [] } }
+{ type: 'add_item', groupId: header.id, item }
+/* Reserve a quiet space before the first group arrives. */
+.timeline-list { min-height: 180px; }</code></pre></article>
       <article><h3 data-copy="detectionTitle"></h3><p data-copy="detection"></p><pre><code>// Date metadata arrives: detect and correct in the same handler.
 groups = receiveGroupDate(groups, event.groupId, event.sortDate);
 // Stable IDs, chronological order. Undated groups stay last.</code></pre></article>

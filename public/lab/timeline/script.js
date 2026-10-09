@@ -1,6 +1,6 @@
 import { readLocale, saveLocale, followLocale } from '../shared/locale.js';
 import { copy, translations } from './content.js';
-import { receiveGroupDate } from './model.js';
+import { receiveGroupDate, buildFromEmptyEvents } from './model.js';
 let language = readLocale();
 saveLocale(language);
 const t = (key, ...values) => values.reduce((text, value, index) => text.replace(`{${index}}`, value), copy[language][key] || key);
@@ -328,8 +328,10 @@ const modeLabel = document.querySelector("#modeLabel");
 let groups = [];
 let playbackToken = 0;
 let removedRun = [];
-const scenarioSelect = document.querySelector('#scenarioSelect');
-scenarioSelect.value = new URLSearchParams(location.search).get('scenario') === 'regroup' ? 'regroup' : 'edits';
+const scenarioControls = document.querySelector('.scenario-control');
+const requestedScenario = new URLSearchParams(location.search).get('scenario');
+let scenario = ['edits', 'regroup', 'empty'].includes(requestedScenario) ? requestedScenario : 'edits';
+const emptyEvents = buildFromEmptyEvents(PREVIEW_GROUPS);
 let status = { key: 'ready', state: '', values: [] };
 const regroupEvents = [
   { type: 'add_group', groupId: 'late-spring', group: { id: 'late-spring', dateLabel: 'Date pending', summary: 'Testing soil and sunlight', diff: 'added', pending: true, items: [{ id: 'late-1', headline: 'A soil trial identifies two areas needing compost', date: 'Just received', diff: 'added' }] } },
@@ -337,7 +339,8 @@ const regroupEvents = [
   { type: 'add_item', groupId: 'late-spring', itemId: 'late-2', item: { id: 'late-2', headline: 'Morning shade is mapped before the beds are built', date: '07 May 2025' } },
 ];
 function initialGroups() {
-  if (scenarioSelect.value !== 'regroup') return PREVIEW_GROUPS;
+  if (scenario === 'empty') return [];
+  if (scenario !== 'regroup') return PREVIEW_GROUPS;
   return PREVIEW_GROUPS.map((group, index) => ({ ...group,
     sortDate: ['2025-01-08', '2025-07-04', '2026-01-14'][index], items: [group.items[0]],
   }));
@@ -407,7 +410,9 @@ function render() {
   const expanded = [...timelineList.querySelectorAll('[data-expanded="true"]')].map(node => node.dataset.clusterId);
   const focused = document.activeElement?.closest('.removed-cluster')?.dataset.clusterId;
   timelineList.getAnimations({ subtree: true }).forEach(animation => animation.cancel());
-  timelineList.innerHTML = groups.map(groupHtml).join("");
+  timelineList.dataset.empty = String(!groups.length);
+  timelineList.innerHTML = groups.length ? groups.map(groupHtml).join("")
+    : `<div class="timeline-empty"><span class="empty-mark" aria-hidden="true"></span><div><strong>${t('emptyReady')}</strong><p class="empty-prompt"></p></div></div>`;
   for (const id of expanded) {
     const node = timelineList.querySelector(`[data-cluster-id="${CSS.escape(id)}"]`);
     if (node) setExpanded(node, true);
@@ -417,6 +422,8 @@ function render() {
 function paintStatus() {
   statusText.textContent = t(status.key, ...status.values);
   const state = status.state;
+  const emptyPrompt = timelineList.querySelector('.empty-prompt');
+  if (emptyPrompt) emptyPrompt.textContent = t(state === 'running' ? 'emptyWaiting' : 'emptyPrompt');
   statusDot.className = `status-dot${state ? ` is-${state}` : ""}`;
   modeLabel.className = `mode-label${state === "running" ? " is-running" : state === "complete" ? " is-complete" : ""}`;
   modeLabel.textContent = t(state === 'running' ? 'running' : state === 'complete' ? 'complete' : 'preview');
@@ -429,8 +436,9 @@ function localize() {
   document.title = `${t('title')} · Su UI lab`;
   document.querySelector('meta[name="description"]').content = t('intro');
   document.querySelectorAll('[data-copy]').forEach(node => { node.textContent = t(node.dataset.copy); });
-  document.querySelector('.sample-note').textContent = t(scenarioSelect.value === 'regroup' ? 'regroupSample' : 'sample');
-  document.querySelector('#scenarioHint').hidden = scenarioSelect.value !== 'regroup';
+  document.querySelector('.sample-note').textContent = t(scenario === 'empty' ? 'emptySample' : scenario === 'regroup' ? 'regroupSample' : 'sample');
+  document.querySelector('#scenarioHint').textContent = t(scenario === 'empty' ? 'emptyHint' : scenario === 'regroup' ? 'hint' : 'editsHint');
+  scenarioControls.querySelectorAll('input').forEach(input => { input.checked = input.value === scenario; });
   document.querySelector('#language').textContent = language === 'zh' ? 'EN' : '中';
   document.querySelector('#language').setAttribute('aria-label', t('language'));
   document.querySelector('.lab-nav').setAttribute('aria-label', language === 'zh' ? '导航' : 'Breadcrumb');
@@ -608,7 +616,7 @@ async function applyEvent(event, token) {
     group.rows.push({ ...event.item, diff: "added" });
     render();
     animateClass(rowElement(event.groupId, event.item.id), "is-arriving");
-    return wait(playbackDelay(360), token);
+    return wait(playbackDelay(scenario === 'empty' ? 650 : 360), token);
   }
 
   if (event.type === "add_group") {
@@ -624,7 +632,7 @@ async function applyEvent(event, token) {
     animateLayout(previousPositions);
     const groupElement = timelineList.querySelector(`[data-group-id="${CSS.escape(event.groupId)}"]`);
     animateClass(groupElement, "is-arriving");
-    return wait(playbackDelay(scenarioSelect.value === 'regroup' ? 1100 : 420), token);
+    return wait(playbackDelay(scenario === 'empty' ? 750 : scenario === 'regroup' ? 1100 : 420), token);
   }
 
   return true;
@@ -635,12 +643,13 @@ async function replay() {
   const token = playbackToken;
   replayButton.disabled = true;
   resetButton.disabled = false;
-  updateStatus("reviewing", "running");
-  if (!(await wait(playbackDelay(260), token))) return;
+  updateStatus(scenario === "empty" ? "emptyWaiting" : "reviewing", "running");
+  if (!(await wait(playbackDelay(scenario === 'empty' ? 900 : 260), token))) return;
 
-  const events = scenarioSelect.value === 'regroup' ? regroupEvents : CHANGE_EVENTS;
+  const events = scenario === 'empty' ? emptyEvents : scenario === 'regroup' ? regroupEvents : CHANGE_EVENTS;
   for (const [index, event] of events.entries()) {
-    if (scenarioSelect.value === 'regroup') updateStatus(index === 0 ? 'arrival' : index === 1 ? 'correcting' : 'continuing', 'running');
+    if (scenario === 'empty') updateStatus(event.type === 'add_group' ? 'groupArriving' : 'itemArriving', 'running', event.groupNumber);
+    else if (scenario === 'regroup') updateStatus(index === 0 ? 'arrival' : index === 1 ? 'correcting' : 'continuing', 'running');
     else updateStatus('progress', 'running', index + 1, events.length);
     if (removedRun.length && !nextEventContinuesRemoval(event)) {
       if (!(await collapseRemovedRun(token))) return;
@@ -649,7 +658,7 @@ async function replay() {
   }
 
   if (removedRun.length && !(await collapseRemovedRun(token))) return;
-  updateStatus(scenarioSelect.value === 'regroup' ? 'ordered' : 'done', 'complete');
+  updateStatus(scenario === 'empty' ? 'emptyDone' : scenario === 'regroup' ? 'ordered' : 'done', 'complete');
   replayButton.disabled = false;
 }
 
@@ -666,8 +675,10 @@ timelineList.addEventListener('click', event => {
   const cluster = event.target.closest('.removed-cluster-toggle')?.closest('.removed-cluster');
   if (cluster) setExpanded(cluster, cluster.dataset.expanded !== 'true');
 });
-scenarioSelect.addEventListener('change', () => {
-  const url = new URL(location.href); url.searchParams.set('scenario', scenarioSelect.value);
+scenarioControls.addEventListener('change', event => {
+  if (!event.target.matches('input[name="scenario"]')) return;
+  scenario = event.target.value;
+  const url = new URL(location.href); url.searchParams.set('scenario', scenario);
   history.replaceState(history.state, '', url);
   reset(); localize();
 });

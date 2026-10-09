@@ -755,8 +755,21 @@ html[data-preview][data-theme="dark"] .diff-tag.changed { color: var(--changed);
 html[data-preview][data-theme="dark"] .diff-tag.removed { color: var(--removed); }
 
 /* Arrival is provisional; a confirmed date gives the same group its new place. */
-.scenario-control { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 12px; color: var(--muted); }
-.scenario-control select { min-height: 38px; max-width: 100%; padding: 6px 10px; border: 1px solid #ddd; border-radius: 5px; background: var(--surface); color: var(--ink); }
+.scenario-control { min-width: 0; margin: 0 0 12px; padding: 0; border: 0; }
+.scenario-control legend { padding: 0; margin-bottom: 9px; color: var(--muted); font-size: 11px; }
+.scenario-segments { display: inline-grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 100%; padding: 4px; gap: 3px; border-radius: 9px; background: #f2f2f2; }
+.scenario-segments label { position: relative; min-width: 0; cursor: pointer; }
+.scenario-segments input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.scenario-segments span { display: grid; place-items: center; min-height: 38px; padding: 8px 16px; border-radius: 6px; color: #777; font-size: 12px; line-height: 1.4; white-space: nowrap; transition: background-color 180ms, color 180ms, box-shadow 180ms; }
+.scenario-segments label:hover span { color: #333; }
+.scenario-segments input:checked + span { background: #fff; color: #252525; box-shadow: 0 1px 4px #00000012; }
+.scenario-segments input:focus-visible + span { outline: 2px solid #777; outline-offset: 2px; }
+.timeline-list { min-height: 180px; }
+.timeline-list[data-empty="true"]::before { display: none; }
+.timeline-empty { display: flex; align-items: center; gap: 18px; min-height: 156px; padding: 24px 28px; color: var(--muted); }
+.timeline-empty strong { font-size: 13px; font-weight: 500; color: #555; }
+.timeline-empty p { margin: 7px 0 0; font-size: 12px; line-height: 1.6; }
+.empty-mark { flex: 0 0 4px; width: 4px; height: 4px; margin: 16px 4px; border-radius: 50%; background: #bbb; box-shadow: 0 -13px #ddd, 0 13px #ddd; }
 .scenario-hint { max-width: 60ch; margin: 0 0 18px; font-size: 13px; line-height: 1.6; color: #666; }
 .language-button { padding: 0 4px; border: 0; background: none; color: inherit; cursor: pointer; }
 .language-button:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; }
@@ -773,4 +786,4 @@ html[data-preview][data-theme="dark"] .diff-tag.removed { color: var(--removed);
 .implementation-notes a { color: var(--ink); font-size: 12px; }
 [hidden] { display: none !important; }
 html[data-preview] .scenario-control, html[data-preview] .scenario-hint, html[data-preview] .implementation-notes { display: none; }
-@media (max-width: 420px) { .scenario-control { align-items: flex-start; flex-direction: column; gap: 7px; } .speed-control { margin-left: 0; } }
+@media (max-width: 420px) { .scenario-segments { display: grid; width: 100%; } .scenario-segments span { padding-inline: 10px; } .speed-control { margin-left: 0; } }

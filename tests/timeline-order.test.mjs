@@ -55,3 +55,26 @@ test('the original 24-event fixture retains complete Chinese text coverage', asy
   visit(initial); visit(events);
   assert.deepEqual(Object.keys(copy.en).sort(), Object.keys(copy.zh).sort());
 });
+
+test('from-zero events introduce every empty group before streaming its items', async () => {
+  const { buildFromEmptyEvents } = await import('../public/lab/timeline/model.js');
+  const fixture = ['spring', 'summer', 'winter'].map(id => ({ id, items: [0, 1, 2].map(n => ({ id: `${id}-${n}`, headline: 'Example' })) }));
+  const snapshot = structuredClone(fixture);
+  const events = buildFromEmptyEvents(fixture);
+  assert.equal(events.length, 9);
+  const received = new Set();
+  for (const event of events) {
+    if (event.type === 'add_group') {
+      assert.equal(received.has(event.groupId), false);
+      assert.deepEqual(event.group.items, []);
+      received.add(event.groupId);
+    } else {
+      assert.ok(received.has(event.groupId), 'items require an already received group');
+      assert.equal(event.itemId, event.item.id);
+    }
+  }
+  assert.equal(received.size, 3);
+  assert.deepEqual(fixture, snapshot, 'replays cannot consume or change the original fixture');
+  assert.deepEqual(buildFromEmptyEvents(fixture), events, 'replay produces the same stream');
+  assert.deepEqual(buildFromEmptyEvents([]), []);
+});
