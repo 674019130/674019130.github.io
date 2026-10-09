@@ -134,3 +134,9 @@ postTitleClass: 'text-#颜色值'
 ### Tags
 
 使用具体关键词，避免与分类名完全重复。读书笔记统一添加 `读书笔记` 标签。常用标签参见 `.cursor/rules/categories_and_tags_guide.mdc`。
+
+### UI lab publication standard
+
+- Every new UI lab experiment must include an on-page “Key CSS / implementation tricks” section, with concrete snippets from its implementation and an explanation of why each technique matters. Document continuity, gesture handling, layout/animation handoffs and reduced-motion behavior where relevant; do not substitute generic animation advice for the actual trick.
+- Provide Chinese and English versions of descriptive copy, controls, status feedback and implementation notes. A page-level language switch is acceptable and must preserve the current interaction state.
+- Retain source attribution, mobile and keyboard support, reduced-motion behavior, and the existing static lab/preview conventions. Verify intermediate motion states and narrow layouts in the running browser, then run typecheck, relevant tests and production build before publishing.

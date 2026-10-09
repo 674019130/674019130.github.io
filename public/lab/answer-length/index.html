@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Drag an answer shorter. A bilingual study in word motion, direct manipulation and continuous layout."><title>A little less · Su UI lab</title><script src="../shared/setup.js"></script><link rel="stylesheet" href="../shared/lab.css"><link rel="stylesheet" href="./styles.css"></head><body><main>
+<nav><a href="/lab" data-copy="back">← UI lab</a><span data-copy="edition">09 / Answer length</span><button id="language" aria-label="切换为中文">中</button></nav><header class="page-heading"><h1 data-copy="title">A little less</h1><p class="intro" data-copy="intro">An answer with room to breathe. Pull upward to make it shorter.</p></header>
+<section class="stage" aria-label="Answer length experiment"><div class="conversation"><p class="question" data-copy="question">How can I make a small room feel bigger?</p><div class="answer-wrap"><div class="answer"><div class="answer-content" id="answer-content"></div><div class="ghosts" aria-hidden="true"></div></div><div id="handle" tabindex="0" role="slider" aria-label="Answer detail" aria-valuemin="0" aria-valuemax="3" aria-valuenow="3" aria-orientation="vertical" aria-controls="answer-content"><span></span></div><div class="read-time" aria-hidden="true"></div></div></div></section>
+<div class="controls"><button id="shorter" data-copy="shorter">Shorter</button><span class="level"></span><button id="longer" data-copy="longer">Longer</button><button id="reset" data-copy="reset">Reset</button></div><p class="hint" data-copy="hint">Drag the little handle up or down. Or use the arrow keys.</p><p class="status" role="status"></p><p class="demo-note" data-copy="demo">Four prewritten versions. An interaction study, not a live AI service.</p>
+<section class="tricks"><h2 data-copy="tricks">Key CSS &amp; implementation tricks</h2><article><h3 id="note-title-0"></h3><p id="note-body-0"></p><pre><code>// FLIP: read the visible old pose before cancelling.
+const dx = oldRect.left - newRect.left;
+const dy = oldRect.top - newRect.top;
+word.animate([
+  { transform: `translate(${dx}px, ${dy}px)` },
+  { transform: 'translate(0, 0)' }
+], { duration: 420, easing: 'cubic-bezier(.22,1,.36,1)' });</code></pre></article><article><h3 id="note-title-1"></h3><p id="note-body-1"></p><pre><code>.answer-wrap { position: relative; }
+.answer { overflow: hidden; }
+#handle { position: absolute; bottom: -22px; }
+/* Animate measured height, never scale the text. */
+card.animate([{ height: `${from}px` }, { height: `${to}px` }],
+  { duration: 420, easing: 'cubic-bezier(.22,1,.36,1)' });</code></pre></article><article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre><code>#handle { touch-action: none; cursor: ns-resize; }
+handle.setPointerCapture(event.pointerId);
+// Pointer cancellation and Escape restore the drag's start.
+@media (prefers-reduced-motion: reduce) {
+  .answer { transition: none; }
+}</code></pre></article><div class="source-links"><a href="./styles.css">CSS ↗</a><a href="./script.js" data-copy="source">View the source</a></div></section>
+<footer><span data-copy="inspired">Inspired by</span> <a href="https://x.com/dominikmartn/status/2108179881926574321" target="_blank" rel="noopener noreferrer">Dom ↗</a></footer><noscript>Enable JavaScript to explore the answer. / 请启用 JavaScript 体验回答长度交互。</noscript></main><script type="module" src="./script.js"></script></body></html>
