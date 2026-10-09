@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A share button unfolds, gathers people, and settles into a confirmation."><title>Share sheet · Su UI lab</title><script src="../shared/setup.js"></script><link rel="stylesheet" href="../shared/lab.css"><link rel="stylesheet" href="./styles.css"></head>
+<body><main>
+<nav><a href="/lab">← UI lab</a><span>07 / Share sheet</span></nav>
+<header class="page-heading"><h1>Share sheet</h1><p class="intro">One little button. A little more room to share.</p></header>
+<section class="stage" aria-label="Share sheet experiment">
+<div class="shape" id="shape" data-state="closed">
+<button id="trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="sheet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7"/></svg>Share</button>
+<section id="sheet" class="face" role="dialog" aria-labelledby="sheet-title" hidden>
+<header class="sheet-heading"><h2 id="sheet-title">Share “UI lab”</h2><button class="close" id="close" aria-label="Close share panel">×</button></header>
+<div class="link-box"><div class="link-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7H7a5 5 0 0 0 0 10h3m4-10h3a5 5 0 0 1 0 10h-3M8 12h8"/></svg><input id="link" aria-label="Link to copy" readonly value="https://674019130.github.io/lab"><button id="copy"><span class="button-content"><span data-icon="copy"></span><span>Copy</span></span></button></div>
+<label class="access"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span><span class="sr-only">Demo access level</span><select id="access"><option>Anyone with the link</option><option>People invited</option></select><small id="access-description">Can view · demo setting</small></span></label></div>
+<div class="channels" aria-label="Simulated sharing channels"><button data-channel="Email"><span class="mail" data-icon="mail"></span><span>Email</span></button><button data-channel="Slack"><span data-icon="slack"></span><span>Slack</span></button><button data-channel="X"><span data-icon="x"></span><span>X</span></button></div>
+<div class="recipients"><p class="label">Send to</p><div id="selected"><span class="placeholder">Pick people below</span></div></div>
+<div id="people" class="people" aria-label="Demo recipients"></div>
+<p id="error" role="alert" hidden></p><button id="send" disabled><span id="send-label">Send</span></button>
+</section>
+<section id="confirmation" class="face confirmation" role="dialog" aria-labelledby="sent-title" hidden><div id="sent-avatars" class="sent-avatars"></div><h2 id="sent-title">Sent</h2><p id="sent-detail"></p><div class="confirmation-actions"><button id="undo">Undo</button><button id="done">Done</button></div></section>
+</div></section>
+<div class="demo-controls"><div role="group" aria-label="Simulated send outcome"><button id="works" aria-pressed="true">Send works</button><button id="fails" aria-pressed="false">Send fails</button></div><p>Demo recipients and delivery. Copy link is real.</p></div>
+<p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+<section class="motion-notes" lang="zh-CN" aria-labelledby="motion-notes-title">
+<header><p class="notes-eyebrow">Behind the motion</p><h2 id="motion-notes-title">让动画连续的三个细节</h2><p class="notes-intro">这次最明显的改善，来自让旧状态的最后一帧，接上新状态的第一帧。下面是这个实验从“有动画”到“顺滑”的三个修正。</p></header>
+<article>
+<h3>Copy：让两层内容交接</h3>
+<p>直接把 Copy 替换成 Copied，再给新文字加淡入，旧状态会突然消失。这里保留两层内容：Copy 向上离开，✓ Copied 从下方进入，两者在同一个裁切窗口里交接。</p>
+<p>按钮固定为 <code>92px</code> 宽，文字轨道固定为 <code>18px</code> 高；变化只发生在内部的 <code>transform</code> 和 <code>opacity</code> 上。文字长短改变时，按钮和旁边的链接都不必重新让位。</p>
+<details><summary>查看 Copy 的核心 CSS</summary><div class="code-note"><p>简化示意：状态切换时保留旧层，为新旧两层分别加上进入、退出类；退出动画完成后再移除旧层。</p><pre tabindex="0" aria-label="Copy 双层切换 CSS"><code>.copy-window {
+  display: grid;
+  height: 18px;
+  overflow: hidden;
+}
+.copy-face { grid-area: 1 / 1; }
+
+.copy-enter {
+  animation: enter 340ms
+    cubic-bezier(.2, .85, .25, 1.12) both;
+}
+.copy-leave {
+  animation: leave 340ms
+    cubic-bezier(.22, 1, .36, 1) both;
+}
+
+@keyframes enter {
+  from { transform: translateY(110%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+@keyframes leave {
+  from { transform: translateY(0);     opacity: 1; }
+  to   { transform: translateY(-110%); opacity: 0; }
+}</code></pre><p>实际实现还会从被打断时的可见位置继续退出，并在重复点击时保留当前 Copied 状态。</p></div></details>
+</article>
+<article>
+<h3>头像：落点先稳定，飞行层再交接</h3>
+<p>上一版让收件人标签也从 <code>scale(.85)</code> 放大到 <code>scale(1)</code>。飞行开始时，原本 <code>22px</code> 的目标头像被测成了约 <code>18.7px</code>。飞行层缩到这个尺寸后，突然切回真正的 <code>22px</code> 头像，就出现了肉眼可见的一抖。</p>
+<p>修正后，标签只淡入，尺寸始终稳定。头像沿路径连续缩小到准确的落点尺寸，飞行层用 <code>fill: 'forwards'</code> 保持末帧，然后在同一次更新里显示真实头像、移除飞行层。交接前后的位置和尺寸一致，眼睛就不会察觉到“换了一个元素”。</p>
+<p class="implementation-note">这里的头像飞行使用原生 Web Animations API；Copy 的文字切换使用 CSS keyframes。两者都没有新增动画库。</p>
+</article>
+<article>
+<h3>缓动：最后一点弹性，留给位置</h3>
+<p>Copy 的进入曲线 <code>cubic-bezier(.2, .85, .25, 1.12)</code> 带一点轻微越过终点的回弹，退出则平稳减速。头像的尺寸变化保持单向，不叠加忽大忽小的弹簧。每一层负责自己的动作，就少了一层互相拉扯。</p>
+<p>这次用慢放和放大截图检查了动画中间帧，再回到正常速度验证手感；也保留了减少动态效果的直接切换。只比较起点和终点，很容易漏掉发生在交接那一刻的跳变。</p>
+</article>
+<footer class="notes-links"><a href="./styles.css" target="_blank" rel="noopener noreferrer">本页完整 CSS ↗</a><a href="./script.js" target="_blank" rel="noopener noreferrer">本页交互脚本 ↗</a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-fill-mode" target="_blank" rel="noopener noreferrer">MDN：动画填充模式 ↗</a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/easing-function/cubic-bezier" target="_blank" rel="noopener noreferrer">MDN：缓动曲线 ↗</a></footer>
+</section>
+<footer class="credit">An interaction study inspired by <a href="https://x.com/eliakuratli/status/2107743325294068148" target="_blank" rel="noopener noreferrer">Elia ↗</a> · <a href="https://uiarc.dev/components/share-sheet" target="_blank" rel="noopener noreferrer">UI Arc ↗</a> · Portraits from <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash</a></footer>
+<noscript><p>Enable JavaScript to try the share panel.</p></noscript>
+</main><script src="./script.js"></script></body></html>
