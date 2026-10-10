@@ -35195,41 +35195,161 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://twitter.com/reversedoofz/status/2108668397148094910 Comments URL: https://news.ycombinator.com/item?id=50027132 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50027132"
+    },
+    {
+      "id": "d3631f2819cb60616773",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: See How Your Competitors Get Customers with AI",
+      "url": "https://findwinningfunnels.com",
+      "published_at": "2026-10-09T22:41:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://findwinningfunnels.com/ Comments URL: https://news.ycombinator.com/item?id=50027493 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50027493"
+    },
+    {
+      "id": "0bd7a4e7632a1479f832",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Deno is joining Cloudflare",
+      "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare",
+      "published_at": "2026-10-09T22:48:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Deno is joining Cloudflare The Deno team released the first version of celld back in August - their open source implementation of the Durable Objects pattern from Cloudflare Workers. Today, Cloudflare are acquiring Deno outright, with the goal of building on celld to \"make workerd self-hosting a first-class supported way to build and run apps using the Workers programming model\" (see the Cloudflare blog .) The bad news is that Deno itself will not be maintained by Cloudflare beyond the next year: We will support the Deno runtime for another year with monthly releases containing bug fixes and security updates. After that year we will end our development of the Deno runtime. Deno will remain open source, and we welcome others who want to continue its development. Deno (and Node.js) creator Ryan Dahl explained that decision in a comment on Hacker News: It's a joint decision and I agree with it. I'm most invested in its success and have put the most work into it - and I no longer think it's where I can do the most important work. There are some good ideas in Deno and it's well engineered - but it ultimately is not solving big problems. It has been sucked into the gravity well of node compatibility, which forces it to behave exactly as Node does. Why reimplement Node? It works. Marginal performance or UX or security benefits are not enough. I'm interested in building powerful new abstractions. celld has been working remarkably well, depending only on object storage for coordination and persistence. It is not just a slightly different API to interact with the file system or network - it's an entirely new model for server development. My favorite feature of Deno has long been the permissions system, where you can run a Deno script and specify exactly which files and folders it can read and write to, and which network hosts it can access. Node.js has a similar permissions model these days, added in Node v20.0.0 in April 2023 and declared stable in Node v22.13.0 in January 2025. They don't yet support allow-listing specific network hosts though - networking is either on or off. Via Hacker News Tags: cloudfront , javascript , nodejs , ryan-dahl , sandboxing , deno",
+      "discussion_url": ""
+    },
+    {
+      "id": "8173560892bd29c44aad",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub Copilot weekly releases — October 5",
+      "url": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5",
+      "published_at": "2026-10-09T22:58:23+00:00",
+      "date_kind": "source_publication",
+      "evidence": "This week’s updates make Copilot easier to use across accounts and environments, with more control over what agents can access and how you manage their work. GitHub Copilot Claude Haiku 5.5 is available to Copilot Pro, Pro+, Max, Business, and Enterprise users. Limit agents’ access to files, networks, and credentials with local sandboxing, now generally available in Copilot CLI, the Copilot app, and VS Code sessions using Agent Host. This is included with Copilot at no extra cost. Learn more about local sandboxing . GitHub Copilot app The Copilot app now lets you use separate GitHub accounts for your Copilot license and your repositories. For example, use an enterprise-provided Copilot license while accessing repositories through another account. Download the Copilot app . GitHub Copilot CLI GitHub Copilot CLI makes it easier to choose a local model without leaving your existing workflow. Use /model to discover supported models from a running local Ollama instance, alongside your configured models and cloud models provided by GitHub Copilot. Discover local models in GitHub Copilot CLI . GitHub Copilot in VS Code (1.141 release) View agent sessions side by side in the Agents window. Arrange them in a grid to compare results or follow multiple tasks. Free up disk space with “Open worktree cleanup” in chat. See how much space inactive session worktrees use and choose which to remove. Explore everything that’s new in the full VS Code release notes . The post GitHub Copilot weekly releases — October 5 appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "45dfa81ff20f61dd6f14",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Clanking – Turn your coding agents' activity into a subtle soundscape",
+      "url": "https://github.com/chrchr/clanking",
+      "published_at": "2026-10-09T23:40:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/chrchr/clanking Comments URL: https://news.ycombinator.com/item?id=50027932 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50027932"
+    },
+    {
+      "id": "1ab1123bc3759da5f06b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Claude Opus 5.5 Video prompts and skills",
+      "url": "https://www.reclip.io/claude-opus-5-5-video-prompts",
+      "published_at": "2026-10-10T00:48:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "A collection of motion videos made with Claude Opus 5.5, with the prompts and skills behind them. Comments URL: https://news.ycombinator.com/item?id=50028341 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50028341"
+    },
+    {
+      "id": "87728fd5598379972782",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Faplex – like `Claude agents` but all machines and harnesses",
+      "url": "https://github.com/kkrausse/faplex",
+      "published_at": "2026-10-10T01:06:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/kkrausse/faplex Comments URL: https://news.ycombinator.com/item?id=50028461 Points: 4 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50028461"
+    },
+    {
+      "id": "183857fc9587360d6bbd",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting The New York Times",
+      "url": "https://simonwillison.net/2026/Oct/10/the-new-york-times",
+      "published_at": "2026-10-10T02:04:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa applications through a form available on the State Department’s website. All the applications were incomplete and were not processed, they said. — The New York Times , Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website Tags: accidental-cyberattacks , anthropic , generative-ai , ai , llms",
+      "discussion_url": ""
+    },
+    {
+      "id": "a2938e14cff249bac095",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: tgv: Genome viewer for you and your agents",
+      "url": "https://github.com/zeqianli/tgv",
+      "published_at": "2026-10-10T03:12:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I’m sharing tgv, a new kind of genome viewer built for humans-agent collaboration in genomics. I work in a cancer diagnostics lab and we check cancer patients’ sequencing data in genome viewers every day. Frustrated by the standard tools, last year I built tgv, a Vim-style, keyboard-driven genome viewer. In 2026, while agents are scarily good at bioinformatics, bioinformatics tools haven’t kept up. tgv now brings a new kind of research workflow: expose multi-omics data to agents through a fast SQL data layer and they explain the analysis right in the viewer. The TUI is just the start. Comments URL: https://news.ycombinator.com/item?id=50029175 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50029175"
+    },
+    {
+      "id": "8712cac3247c10ab22f0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A simple to-do app for iPhone, Mac, and your agent",
+      "url": "https://ilia.page/writing/introducing-nagare",
+      "published_at": "2026-10-10T04:37:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ilia.page/writing/introducing-nagare Comments URL: https://news.ycombinator.com/item?id=50029607 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50029607"
+    },
+    {
+      "id": "8270a7032d0acc71b463",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MCP to measure human arm in Blender",
+      "url": "https://github.com/hpdkhoa/poselab-mcp",
+      "published_at": "2026-10-10T04:55:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/hpdkhoa/poselab-mcp Comments URL: https://news.ycombinator.com/item?id=50029698 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50029698"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-09T22:38:51.555759+00:00",
+      "last_success": "2026-10-10T05:53:05.007448+00:00",
       "count": 10,
-      "earliest": "2026-10-06T23:43:00+00:00",
+      "earliest": "2026-10-07T15:46:13+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-09T22:38:52.052382+00:00",
+      "last_success": "2026-10-10T05:53:05.253357+00:00",
       "count": 20,
       "earliest": "2026-10-05T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-09T22:38:52.484600+00:00",
+      "last_success": "2026-10-10T05:53:05.507849+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-09T22:38:52.823741+00:00",
+      "last_success": "2026-10-10T05:53:05.619091+00:00",
       "count": 30,
-      "earliest": "2026-09-29T16:45:27+00:00",
+      "earliest": "2026-09-29T22:20:28+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-09T22:39:01.983909+00:00",
-      "count": 100,
-      "earliest": "2026-10-09T04:02:23+00:00",
+      "last_success": "2026-10-10T05:53:09.523509+00:00",
+      "count": 99,
+      "earliest": "2026-10-09T07:45:48+00:00",
       "gap": false,
       "error": null
     },
@@ -35238,61 +35358,61 @@
       "count": 100,
       "earliest": "2026-10-08T12:34:33+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-09T22:39:23.857864+00:00",
+      "last_success": "2026-10-10T05:53:20.353564+00:00",
       "count": 20,
       "earliest": "2026-09-18T02:12:26+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-09T22:39:25.817786+00:00",
+      "last_success": "2026-10-10T05:53:22.308548+00:00",
       "count": 30,
       "earliest": "2026-09-22T03:26:20+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-09T22:39:26.509531+00:00",
+      "last_success": "2026-10-10T05:53:22.954183+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-09T22:39:27.033833+00:00",
+      "last_success": "2026-10-10T05:53:23.442341+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-09T22:39:27.893849+00:00",
+      "last_success": "2026-10-10T05:53:24.218184+00:00",
       "count": 10,
       "earliest": "2026-09-05T23:49:00+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-09T22:39:59.018631+00:00",
+      "last_success": "2026-10-10T05:53:54.186916+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-09T22:39:59.350946+00:00",
+      "last_success": "2026-10-10T05:53:54.397350+00:00",
       "count": 1287,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-09T22:40:28.107686+00:00",
-      "count": 12,
-      "earliest": "2026-09-25T02:31:06+00:00",
+      "last_success": "2026-10-10T05:54:22.165604+00:00",
+      "count": 11,
+      "earliest": "2026-09-26T01:02:31+00:00",
       "gap": false,
       "error": null
     }
@@ -35359,5 +35479,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-09T22:40:28.107992+00:00"
+  "collected_at": "2026-10-10T05:54:22.165957+00:00"
 }
