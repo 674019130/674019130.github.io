@@ -35315,41 +35315,125 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/hpdkhoa/poselab-mcp Comments URL: https://news.ycombinator.com/item?id=50029698 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50029698"
+    },
+    {
+      "id": "5e2b5a1053e4db1fc4a3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Iimos – an AI app that ships as one chat box and rewrites itself",
+      "url": "https://github.com/yanglongyun/iimos",
+      "published_at": "2026-10-10T05:17:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/yanglongyun/iimos Comments URL: https://news.ycombinator.com/item?id=50029789 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50029789"
+    },
+    {
+      "id": "bd49724c547c28aa2dce",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rutter – shared decision memory across AI tools",
+      "url": "https://ruttermemory.com",
+      "published_at": "2026-10-10T05:18:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ruttermemory.com/ Comments URL: https://news.ycombinator.com/item?id=50029798 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50029798"
+    },
+    {
+      "id": "68097ba446c20aaa833b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Kenerate – One workspace for AI image, video and music models",
+      "url": "https://kenerateai.app",
+      "published_at": "2026-10-10T06:12:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kenerateai.app/ Comments URL: https://news.ycombinator.com/item?id=50030134 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50030134"
+    },
+    {
+      "id": "5a184b2570626ba458d6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Check how readable your docs are to AI agents",
+      "url": "https://www.veludocs.com/agent-friendly-documentation",
+      "published_at": "2026-10-10T06:48:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm Aravind. We build Velu, a docs platform. Coding agents increasingly read docs before humans do, but most docs sites are hard for them: client-rendered pages, no llms.txt, no markdown versions, soft 404s, pages too big for a context window. This tool scores any docs URL against the open Agent-Friendly Documentation Spec (agentdocsspec.com), using its reference implementation, afdocs. Comments URL: https://news.ycombinator.com/item?id=50030369 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50030369"
+    },
+    {
+      "id": "0e13b6d6ed968fbf2b13",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Chrome Relay – background tabs in your real Chrome for coding agents",
+      "url": "https://github.com/aindeev/agent-chrome-relay",
+      "published_at": "2026-10-10T08:15:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/aindeev/agent-chrome-relay Comments URL: https://news.ycombinator.com/item?id=50030811 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50030811"
+    },
+    {
+      "id": "3bd319763e1aac5a9f1b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Open Components – UI Components standard for people, devs and AI agents",
+      "url": "https://opencomponents.dev",
+      "published_at": "2026-10-10T08:24:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello awesome people, I've been thinking a lot lately about how I can make my knowledge and craft more valuable in the times we live in. I've been building UI libraries for the past 10 years, and I've been on a quest to perfect the components that I build. I want to share my knowledge with you. Like most of you, probably, I've been using a lot of AI in my craft, and I feel most of the time the code is just good enough, but never at the level of quality that I strive for or that I would reach if I wrote it by hand. That needs to change, and I want it to change for everyone else, too. That's how the Open Components initiative was born. Each component gets a single page that walks through four directions: User Interface, User Experience, Developer Experience, and Agentic Experience, and ends with a checklist. Every rule in it has an ID like `button/keep-focus`, a level and a way to check it, so you or your agents can cite it in a code review. Every page is also published as markdown, and provides the contract as a YAML file, containing every rule in about an eighth of the page’s length. It’s still early. Right now there are only the Button and Input components and a page on how to name your design tokens. Each component comes with a reference implementation that meets every rule, along with its tests. Reference implementation is in Vue for now, since that’s my daily driver, but the documentation comes with code examples from multiple UI frameworks. More components will follow, with the same structure. It isn’t a component library, so there’s nothing to install. It’s a set of rules you can hold your own components to, whichever library or framework you use. I’d love your feedback and contribution. Tell me what you think of the rules, what I’ve missed, and which component you’d like to see next. Thanks for reading! Site: https://opencomponents.dev Button: https://opencomponents.dev/docs/components/button GitHub: https://github.com/uxfront-com/open-components Comments URL: https://news.ycombinator.com/item?id=50030849 Points: 5 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50030849"
+    },
+    {
+      "id": "5d40a7c1fb6f9f336c52",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MCP to find the cheapest GPU to run your model",
+      "url": "https://www.gpufind.cloud/mcp-tool",
+      "published_at": "2026-10-10T11:18:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.gpufind.cloud/mcp-tool Comments URL: https://news.ycombinator.com/item?id=50031782 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50031782"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-10T05:53:05.007448+00:00",
+      "last_success": "2026-10-10T12:32:24.889008+00:00",
       "count": 10,
       "earliest": "2026-10-07T15:46:13+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-10T05:53:05.253357+00:00",
+      "last_success": "2026-10-10T12:32:51.740663+00:00",
       "count": 20,
       "earliest": "2026-10-05T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-10T05:53:05.507849+00:00",
+      "last_success": "2026-10-10T12:32:51.893123+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-10T05:53:05.619091+00:00",
+      "last_success": "2026-10-10T12:32:52.024708+00:00",
       "count": 30,
       "earliest": "2026-09-29T22:20:28+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-10T05:53:09.523509+00:00",
+      "last_success": "2026-10-10T12:32:52.684581+00:00",
       "count": 99,
-      "earliest": "2026-10-09T07:45:48+00:00",
+      "earliest": "2026-10-09T12:09:11+00:00",
       "gap": false,
       "error": null
     },
@@ -35361,56 +35445,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-10T05:53:20.353564+00:00",
+      "last_success": "2026-10-10T12:33:25.166186+00:00",
       "count": 20,
       "earliest": "2026-09-18T02:12:26+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-10T05:53:22.308548+00:00",
+      "last_success": "2026-10-10T12:33:27.119085+00:00",
       "count": 30,
       "earliest": "2026-09-22T03:26:20+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-10T05:53:22.954183+00:00",
+      "last_success": "2026-10-10T12:33:27.799510+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-10T05:53:23.442341+00:00",
+      "last_success": "2026-10-10T12:33:28.276020+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-10T05:53:24.218184+00:00",
+      "last_success": "2026-10-10T12:33:29.113698+00:00",
       "count": 10,
       "earliest": "2026-09-05T23:49:00+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-10T05:53:54.186916+00:00",
+      "last_success": "2026-10-10T12:33:59.049066+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-10T05:53:54.397350+00:00",
+      "last_success": "2026-10-10T12:33:59.237509+00:00",
       "count": 1287,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-10T05:54:22.165604+00:00",
+      "last_success": "2026-10-10T12:34:26.901328+00:00",
       "count": 11,
       "earliest": "2026-09-26T01:02:31+00:00",
       "gap": false,
@@ -35479,5 +35563,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-10T05:54:22.165957+00:00"
+  "collected_at": "2026-10-10T12:34:26.901657+00:00"
 }
