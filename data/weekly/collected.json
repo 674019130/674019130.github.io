@@ -36037,6 +36037,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50038883"
     },
     {
+      "id": "d95c0aa560479c7cc6c0",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.3",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
+      "published_at": "2026-10-11T01:39:04+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's Changed * `ollama launch claude` no longer shows a warning about Claude connectors by @hoyyeva in https://github.com/ollama/ollama/pull/18878 * `ollama launch codex` no longer warns about service tiers by @hoyyeva in https://github.com/ollama/ollama/pull/18879 * Paused background model upgrade for embedding and other request performance, by @jmorganca in https://github.com/ollama/ollama/pull/18908 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.2...v0.40.3",
+      "discussion_url": ""
+    },
+    {
       "id": "8d08a8042a860cf6c4a0",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -36107,41 +36119,209 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/vscarpenter/gsd-task-manager Comments URL: https://news.ycombinator.com/item?id=50039633 Points: 6 # Comments: 3",
       "discussion_url": "https://news.ycombinator.com/item?id=50039633"
+    },
+    {
+      "id": "75a97817a3d58ce5cc82",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: SynoRing – An input ring for smart glasses and everything",
+      "url": "https://www.synoring.ai",
+      "published_at": "2026-10-11T05:41:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.synoring.ai Comments URL: https://news.ycombinator.com/item?id=50040122 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50040122"
+    },
+    {
+      "id": "645b3e40653e9d0e89eb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Suta – A skill to reduce AI slop in generated UIs",
+      "url": "https://github.com/Guksu/suta",
+      "published_at": "2026-10-11T06:10:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Guksu/suta Comments URL: https://news.ycombinator.com/item?id=50040224 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50040224"
+    },
+    {
+      "id": "f609a3ea2465985e4524",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Modelship – an open source ray backed model cluster",
+      "url": "https://github.com/modelship-ai/modelship",
+      "published_at": "2026-10-11T07:28:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey all, just wanted to share how my spare time has been spent for quite some time now. Ok, this one started oddly. My aim initially was just to serve multiple models on one GPU and fire it up in my unraid machine. By the time that first bit was done, I realised I could just add one more thing... and another... and well, from beginning of this year when, imho, AI became useful, the whole thing it kind of blew up. So here's what it does: - spins a ray cluster - deploys models using various loaders (vllm, llamacpp, diffusers, sherpa_onnx, etc.) - serves an openai responses ready api on top of them Now some the details, already listed in my production readiness ( https://docs.model-ship.ai/production-readiness/#production-... ) plan: - scores 17/17 on the Open Responses conformance suite and it's got its own responses redis backed store - currently supports cpu, metal and cuda - it has prometheus metrics and grafana dashboard - can run under docker, k8s or simply native install - automatically sizes model context - has MCP support Feedback would be much appreciated. https://github.com/modelship-ai/modelship Comments URL: https://news.ycombinator.com/item?id=50040528 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50040528"
+    },
+    {
+      "id": "e0ce5891aa1f3bf2b243",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Four Questions to stop AI-gen PRs from DDoSing your GitHub repository",
+      "url": "https://github.com/ktwu01/agent-pr-gate",
+      "published_at": "2026-10-11T08:12:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ktwu01/agent-pr-gate Comments URL: https://news.ycombinator.com/item?id=50040727 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50040727"
+    },
+    {
+      "id": "b88217221688bcf71369",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Pi-Loop (Prototype) – A CLI for Reference Intake loop on DGX Spark",
+      "url": "https://github.com/donutloop/donutloop-genesis/tree/main/tools/pi-loop",
+      "published_at": "2026-10-11T08:17:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "NVIDIA DGX Spark Designed to build and run autonomous agents. https://www.nvidia.com/en-us/products/workstations/dgx-spark... Comments URL: https://news.ycombinator.com/item?id=50040782 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50040782"
+    },
+    {
+      "id": "8e2a872e3520bb54bfc1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: An Agentic Virtual Machine",
+      "url": "https://github.com/plurnk/plurnk",
+      "published_at": "2026-10-11T08:27:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm interested in feedback pertaining to the features in my agentic harness project. * Addressable Memory Everything in the context is divided into receipts with internal urls that the model can address, with a \"pulled preview\" approach where dozens of spammy tools can be streaming output at the same time without flooding the attention window. * Perpetual Context Plurnk has no compaction algorithm because the addressable memory empowers the model to curate its context on its own terms. This has an incredible impact over extended sessions, with the agent retaining its bearings for weeks on end. * Model-Oriented Programming Language Plurnk presents the model with a \"virtual machine\" that it \"programs,\" with all core and extended tools having a common markdown-adjacent shape. * First-Party Benchmarks The architecture is basically sqlite+node, with the only dependency weight being ANTLR for building the programming language AST and the giant bag of wasm treesitters necessary for all of the integrated pattern dialect functionality (glob, regex, jsonpath, xpath, graph, fts). My latest benchmark, published on the separate bench repo, is comparable with bare pi agent, despite all of these bells and whistles. Looking for honest, including brutally honest, feedback. All MIT. No telemetry. Works on everything node can be installed on (tested on mac, android, arm64, etc). Comments URL: https://news.ycombinator.com/item?id=50040855 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50040855"
+    },
+    {
+      "id": "02e6456a1c803b6df234",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rezoom – one chat list for all your Claude Code sessions",
+      "url": "https://github.com/BEX-Robotics/rezoom",
+      "published_at": "2026-10-11T08:53:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/BEX-Robotics/rezoom Comments URL: https://news.ycombinator.com/item?id=50041068 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50041068"
+    },
+    {
+      "id": "a78703b156695696a490",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: THX-01 – Free API for our open-source decision model",
+      "url": "https://twitter.com/reversedoofz/status/2109005792246657448",
+      "published_at": "2026-10-11T10:12:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/reversedoofz/status/2109005792246657448 Comments URL: https://news.ycombinator.com/item?id=50041545 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50041545"
+    },
+    {
+      "id": "50c7a5e745e57ae49ece",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: WhimKid, an AI storybook generator for children",
+      "url": "https://whimkid.com",
+      "published_at": "2026-10-11T10:32:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://whimkid.com/ Comments URL: https://news.ycombinator.com/item?id=50041648 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50041648"
+    },
+    {
+      "id": "38a790ccf04ddbdd0478",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A free coding agent that writes its own multi-agent workflows",
+      "url": "https://kolega.ai/code",
+      "published_at": "2026-10-11T11:01:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kolega.ai/code Comments URL: https://news.ycombinator.com/item?id=50041856 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50041856"
+    },
+    {
+      "id": "2cb208f1755cdb0791a9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Guard hooks for Claude Code, tested against a public corpus",
+      "url": "https://github.com/skillkeel/skillkeel-starter",
+      "published_at": "2026-10-11T11:41:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/skillkeel/skillkeel-starter Comments URL: https://news.ycombinator.com/item?id=50042172 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50042172"
+    },
+    {
+      "id": "77596541980ca2a4c10e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I'm a 14-year-old building my first startup, Titan",
+      "url": "https://titan-ai.co",
+      "published_at": "2026-10-11T11:50:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello HN! My name is Vidit, I am 14 years old and Titan is my first start-up. Titan is your personal team of AI agents. Give it a command via voice or desktop app and it will execute tasks: research, emails, plans, your apps, and your goals. The whole idea behind the product is to save you time and money and help you pursue what you really want to do. First 100 users get $5 worth of free credits. Free plan is there as well but, being a bootstrapper myself, it is quite constrained. Sorry for that! Works only on Mac at the moment. Short video demo here: https://www.youtube.com/watch?v=SrAUXxzMWm4 Comments URL: https://news.ycombinator.com/item?id=50042240 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50042240"
+    },
+    {
+      "id": "2528d3a1cad7999c9098",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A newsletter powered by Jev",
+      "url": "https://stashletter.dev",
+      "published_at": "2026-10-11T12:03:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://stashletter.dev/ Comments URL: https://news.ycombinator.com/item?id=50042345 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50042345"
+    },
+    {
+      "id": "38e6b7f8b67a91c56c92",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hexnoth. Dark fantasy turn-based tactics in the browser",
+      "url": "https://hexnoth.com",
+      "published_at": "2026-10-11T12:38:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi, I'm Jakub and I used to dream to publish a novel before turning 40, but life is life -- yesterday was my 40th birthday and I'm publishing a game instead. A few months ago I started experimenting with building a turn based tactics game with a combat system heavily inspired by the Battle for Wesnoth. The main reason was that I could not make Wesnoth work on my phone :D I iterated on it over and over, polishing graphics, finding background music, balancing units, and here it is. There is a fully playable skirmish mode -- 3 factions x 3 units x 3 levels. AI opponent, 4 difficulty levels, fog of war, time of day changing unit stats, various terrain types and traits (poison, healing, others). It runs in the browser and -- if you choose to sign in -- it syncs across devices. You can start on desktop and finish on mobile. I wanted to make it casual, but also serious at the same time. For me many games are either too complex and require much time (like most of 4x) or too naive in terms of combat system or graphics (like many mobile games). I'm developing campaigns -- I already have a rough scenario for the first campaign, and the first playable match (not released yet). My main focus is on single player game, while there is also a multiplayer in progress. My goal was to make all game modes free and with no ads. There is a single paid feature -- verified play, which basically means we verify your games server side, so you can participate in future global ranks. I'm not sure if that's enough to cover costs, but we'll see. I’m still a dev with a full-time job. Hexnoth is so far mostly a hobby project, and it's fulfilling in terms of artistic expression and storytelling. I won't create the next Baldur's Gate or Age of Wonders, but I feel great power and agency, and I can shape it nearly entirely the way I want. Or the way you'd like to have it -- just drop a message. Comments URL: https://news.ycombinator.com/item?id=50042663 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50042663"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-11T05:47:02.373842+00:00",
+      "last_success": "2026-10-11T12:50:24.934196+00:00",
       "count": 10,
       "earliest": "2026-10-07T15:46:17+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-11T05:47:02.553731+00:00",
+      "last_success": "2026-10-11T12:50:25.292931+00:00",
       "count": 20,
       "earliest": "2026-10-05T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-11T05:47:02.767227+00:00",
+      "last_success": "2026-10-11T12:50:25.527054+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-11T05:47:03.008811+00:00",
+      "last_success": "2026-10-11T12:50:25.682075+00:00",
       "count": 30,
       "earliest": "2026-10-01T06:29:01+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-11T05:47:03.372386+00:00",
-      "count": 99,
-      "earliest": "2026-10-09T21:25:21+00:00",
+      "last_success": "2026-10-11T12:50:33.658746+00:00",
+      "count": 100,
+      "earliest": "2026-10-10T07:22:35+00:00",
       "gap": false,
       "error": null
     },
@@ -36150,59 +36330,59 @@
       "count": 100,
       "earliest": "2026-10-08T20:46:37+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-11T05:47:12.126508+00:00",
+      "last_success": "2026-10-11T12:50:42.181269+00:00",
       "count": 20,
       "earliest": "2026-09-18T02:12:26+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-11T05:47:13.656832+00:00",
+      "last_success": "2026-10-11T12:50:43.982655+00:00",
       "count": 30,
       "earliest": "2026-09-22T03:26:20+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-11T05:47:15.108753+00:00",
+      "last_success": "2026-10-11T12:50:44.547235+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-11T05:47:15.539239+00:00",
+      "last_success": "2026-10-11T12:50:44.993985+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-11T05:47:16.173430+00:00",
-      "count": 9,
+      "last_success": "2026-10-11T12:50:45.754041+00:00",
+      "count": 10,
       "earliest": "2026-09-14T22:14:03+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-11T05:47:37.875152+00:00",
+      "last_success": "2026-10-11T12:51:15.274753+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-11T05:47:38.074242+00:00",
+      "last_success": "2026-10-11T12:51:15.547269+00:00",
       "count": 1287,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-11T05:47:58.101685+00:00",
+      "last_success": "2026-10-11T12:51:41.388214+00:00",
       "count": 11,
       "earliest": "2026-09-26T01:02:31+00:00",
       "gap": false,
@@ -36271,5 +36451,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-11T05:47:58.102015+00:00"
+  "collected_at": "2026-10-11T12:51:41.388517+00:00"
 }
