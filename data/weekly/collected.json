@@ -35941,6 +35941,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50036814"
     },
     {
+      "id": "3a51ee8d98954d368404",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Try Free Long-Term Memory for AI 50M-Token Window",
+      "url": "https://github.com/corbenicai/galahad",
+      "published_at": "2026-10-10T21:36:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/corbenicai/galahad Comments URL: https://news.ycombinator.com/item?id=50037428 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50037428"
+    },
+    {
       "id": "7b05994b4d8cc70415d5",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -35951,102 +35963,246 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://www.ascendaflow.com/waterline Comments URL: https://news.ycombinator.com/item?id=50037448 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50037448"
+    },
+    {
+      "id": "c59ae6107df160900e32",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built a macOS screensaver that reacts to AI coding agents",
+      "url": "https://www.ascendaflow.com/waterline",
+      "published_at": "2026-10-10T21:39:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.ascendaflow.com/waterline Comments URL: https://news.ycombinator.com/item?id=50037448 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50037448"
+    },
+    {
+      "id": "20dda5d92d79044d2f0d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Aporium – A UMAP galaxy of 5800 philosophy excerpts in conversation",
+      "url": "https://www.aporium.app/explore",
+      "published_at": "2026-10-10T23:36:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "The Starfield is Aporium’s 3d topic explorer made using the embeddings of 5800 philosophy excerpts styled to resemble a navigable galaxy. It utilizes UMAP for excerpt-placement and extracted excerpt metadata for thematic region labeling. Scroll adjusts zoom, right click pans, and left click orbits. Aporium is my solo effort to bring the wisdom of the great works of philosophy into a format that balances depth of analysis, ease of reading, and multi-author perspective. I started this project 8 months ago to reduce my social media screen time, hoping to replace it with something addictive yet enriching. By extracting short yet meaningful 2-8 sentence excerpts from public-domain works and generating their embeddings, I created a pipeline utilizing cosine similarity and AI judging to form synthetic conversation ‘threads’ of dialogue using the real writings of philosophers. Not AI-generated ‘what would this author have said on X topic’; their real words. A byproduct of these embeddings is the ability to create structured, explorable 3d maps with distinct regions of thought. This went on to become the Starfield linked above. Here are a few representative examples of near-conversational sounding threads. Francis Bacon on anger, Cicero in disagreement: https://www.aporium.app/thread/ex_248310dbc3aff2ceb529d093 Emerson on self-reliance, Marcus Aurelius in opposition: https://www.aporium.app/thread/ex_57ea1e2ac8cc9b6f493f57c1 Montaigne on lying, Nietzsche disagreeing: https://www.aporium.app/thread/ex_6d7c367d5530d3b3e0fa34b2 Thoreau on vanity, Pascal shifting emphasis: https://www.aporium.app/thread/ex_6b6f8b13fcfc0e50cbab1af0 My goal is to extract and link together in conversation the most impactful ideas and excerpts from humanity’s greatest works, creating separate corpora for poetry, theology, psychology, history, and more. Any feedback is much appreciated. Comments URL: https://news.ycombinator.com/item?id=50038215 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50038215"
+    },
+    {
+      "id": "88098cd2c99041c4079b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Dewey: a connectome-driven fruit fly for your macOS menu bar",
+      "url": "https://github.com/JorenSix/Dewey",
+      "published_at": "2026-10-10T23:44:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "I have connected the a reduced circuit from the Janelia FlyEM male CNS connectome (v1.0) to a 3D model of a fruit fly and now have a fruit fly living in my macOS menu bar. Next to continuing the long lineage of desktop creatures (the 90s Dancing Baby!) it raises a few questions: with Dewey driven by a 'real' connectome is it OK to bring this thing alive in a virtual environment? Is it purely reflexive? What about a bee, a social animal? To be on the safe side: Dewey can get some company on your desktop by adding a few friends. see also: https://0110.be/posts/Dewey%3A_a_connectome-driven_fruit_fly... Comments URL: https://news.ycombinator.com/item?id=50038276 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50038276"
+    },
+    {
+      "id": "2f606de2bc9a5f2096f7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM Pareto Frontier over time [video]",
+      "url": "https://www.youtube.com/watch?v=I01v36VIrno",
+      "published_at": "2026-10-11T00:41:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=I01v36VIrno Comments URL: https://news.ycombinator.com/item?id=50038599 Points: 5 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50038599"
+    },
+    {
+      "id": "001de99df94ba7ffd066",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Long-term memory for AI coding agents as a tree of plain files",
+      "url": "https://github.com/gonzaroman/IHMT-MEMORY",
+      "published_at": "2026-10-11T01:02:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/gonzaroman/IHMT-MEMORY Comments URL: https://news.ycombinator.com/item?id=50038733 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50038733"
+    },
+    {
+      "id": "2b0132659d262525b280",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Littleguys – Claude Code, Codex and OpenClaw agents in your menu bar",
+      "url": "https://littleguys.hervalicio.us",
+      "published_at": "2026-10-11T01:19:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://littleguys.hervalicio.us Comments URL: https://news.ycombinator.com/item?id=50038883 Points: 15 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50038883"
+    },
+    {
+      "id": "8d08a8042a860cf6c4a0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I wrote Dependency Hell 5 years ago. Today I updated it for AI Era [pdf]",
+      "url": "https://github.com/jaronilan/stories/blob/main/Agent%20Loop.pdf",
+      "published_at": "2026-10-11T01:52:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/jaronilan/stories/blob/main/Agent%20Loop.pdf Comments URL: https://news.ycombinator.com/item?id=50039051 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50039051"
+    },
+    {
+      "id": "b44e5b485336843db68f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Barnaby: Self-hosted Matrix agent that reads the room",
+      "url": "https://github.com/pkulak/barnaby-home",
+      "published_at": "2026-10-11T02:28:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/pkulak/barnaby-home Comments URL: https://news.ycombinator.com/item?id=50039234 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50039234"
+    },
+    {
+      "id": "eee980fa64fc7d8cb9ec",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
+      "url": "https://www.bbc.com/news/articles/cqkg50j1yd5lo",
+      "published_at": "2026-10-11T02:41:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.bbc.com/news/articles/cqkg50j1yd5lo Comments URL: https://news.ycombinator.com/item?id=50039318 Points: 5 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=50039318"
+    },
+    {
+      "id": "9f6687b60825b7c90714",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Best Local LLM Box ?",
+      "url": "https://news.ycombinator.com/item?id=50039529",
+      "published_at": "2026-10-11T03:19:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "What are people using for local AI setups? This is for my startup usecase where lower intelligence, cleanups, routine tasks, logs/summaries type LLM usage I can see that catching up to use in cost in the next year or so. I am really considering buying a AMD strix Halo or something similiar wanted to understand what people have thought of it and where it falls short? Comments URL: https://news.ycombinator.com/item?id=50039529 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50039529"
+    },
+    {
+      "id": "6589fb4f137f1d5c0b16",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: GSD Task Manager – an MCP server that gives your AI agent a task list",
+      "url": "https://github.com/vscarpenter/gsd-task-manager",
+      "published_at": "2026-10-11T03:42:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vscarpenter/gsd-task-manager Comments URL: https://news.ycombinator.com/item?id=50039633 Points: 6 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50039633"
+    },
+    {
+      "id": "1e08e5c2dbad566abe81",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: GSD Task Manager – an MCP server that gives your AI agent a task list",
+      "url": "https://github.com/vscarpenter/gsd-task-manager",
+      "published_at": "2026-10-11T03:42:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vscarpenter/gsd-task-manager Comments URL: https://news.ycombinator.com/item?id=50039633 Points: 6 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50039633"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-10T21:44:08.809208+00:00",
+      "last_success": "2026-10-11T05:47:02.373842+00:00",
       "count": 10,
       "earliest": "2026-10-07T15:46:17+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-10T21:44:08.986484+00:00",
+      "last_success": "2026-10-11T05:47:02.553731+00:00",
       "count": 20,
       "earliest": "2026-10-05T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-10T21:44:09.209259+00:00",
+      "last_success": "2026-10-11T05:47:02.767227+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-10T21:44:09.397503+00:00",
+      "last_success": "2026-10-11T05:47:03.008811+00:00",
       "count": 30,
-      "earliest": "2026-09-29T22:20:28+00:00",
+      "earliest": "2026-10-01T06:29:01+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-10T21:44:10.749619+00:00",
+      "last_success": "2026-10-11T05:47:03.372386+00:00",
       "count": 99,
-      "earliest": "2026-10-09T17:39:44+00:00",
+      "earliest": "2026-10-09T21:25:21+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-10T21:44:44.573517+00:00",
+      "last_success": "2026-10-11T05:47:11.027136+00:00",
       "count": 100,
-      "earliest": "2026-10-08T18:58:49+00:00",
+      "earliest": "2026-10-08T20:46:37+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-10T21:44:45.846644+00:00",
+      "last_success": "2026-10-11T05:47:12.126508+00:00",
       "count": 20,
       "earliest": "2026-09-18T02:12:26+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-10T21:44:47.361086+00:00",
+      "last_success": "2026-10-11T05:47:13.656832+00:00",
       "count": 30,
       "earliest": "2026-09-22T03:26:20+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-10T21:44:47.828961+00:00",
+      "last_success": "2026-10-11T05:47:15.108753+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-10T21:44:48.201864+00:00",
+      "last_success": "2026-10-11T05:47:15.539239+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-10T21:44:48.826718+00:00",
-      "count": 10,
-      "earliest": "2026-09-05T23:49:00+00:00",
+      "last_success": "2026-10-11T05:47:16.173430+00:00",
+      "count": 9,
+      "earliest": "2026-09-14T22:14:03+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-10T21:45:11.911876+00:00",
+      "last_success": "2026-10-11T05:47:37.875152+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-10T21:45:12.163562+00:00",
+      "last_success": "2026-10-11T05:47:38.074242+00:00",
       "count": 1287,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-10T21:45:33.413956+00:00",
+      "last_success": "2026-10-11T05:47:58.101685+00:00",
       "count": 11,
       "earliest": "2026-09-26T01:02:31+00:00",
       "gap": false,
@@ -36115,5 +36271,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-10T21:45:33.414300+00:00"
+  "collected_at": "2026-10-11T05:47:58.102015+00:00"
 }
