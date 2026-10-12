@@ -5,6 +5,7 @@ import { useBlogLocale } from '../composables/useBlogLocale'
 
 const { zh } = useBlogLocale()
 const experiments = [
+  { slug: 'project-card', title: 'Project card', titleZh: '项目卡片', date: '2026-10-12', dateLabel: 'Oct 12, 2026', dateLabelZh: '2026 年 10 月 12 日' },
   { slug: 'answer-length', title: 'A little less', titleZh: '再简短一点', date: '2026-10-09', dateLabel: 'Oct 9, 2026', dateLabelZh: '2026 年 10 月 9 日' },
   { slug: 'ascii-background', title: 'ASCII atmosphere', titleZh: '字符氛围', date: '2026-10-09', dateLabel: 'Oct 9, 2026', dateLabelZh: '2026 年 10 月 9 日' },
   { slug: 'share-sheet', title: 'Share sheet', titleZh: '分享面板', date: '2026-10-09', dateLabel: 'Oct 9, 2026', dateLabelZh: '2026 年 10 月 9 日' },
