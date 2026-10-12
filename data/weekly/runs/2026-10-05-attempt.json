@@ -1,0 +1,200 @@
+{
+  "request_evidence": [
+    {
+      "id": "e89fbf372b6e74715faf",
+      "title": "Show HN: Running EmbeddingGemma2 on the Browser",
+      "category": "discovery",
+      "evidence": "During this summer I wanted to start a side project, and I got the idea of embedding image search directly on your browser. This wasn't a new idea for me as i had built it at work as a small internal tool for me to search the company icons semantically instead of scrolling in the company deck. This week (October 2026) Google released EmbeddingGemma 2, which puts text, images, audio and video in th PRIMARY PAGE: Examples | Search Your Collection Search Your Collection How it works Examples Pricing Contact Sign in Get started menu ← Back Example collections Packaged collections you can search right now Everything runs in your browser search download upload share folder favorite notifications bar_chart settings alarm person cloud home mail star Find the perfect icon Search flowers by vibes Venice Grand Canal Gondolas The Street The Promenade Rooftops Your trip photos Stock footage Search Your Collection Contact Privacy Policy Terms of Service light_mode © 2026"
+    },
+    {
+      "id": "b81b66a397e91a8597d6",
+      "title": "Do Agent Benchmarks Do What They Say?",
+      "category": "discovery",
+      "evidence": "Article URL: https://arxiv.org/abs/2609.37315 Comments URL: https://news.ycombinator.com/item?id=50043658 Points: 1 # Comments: 0 PRIMARY PAGE: [2609.37315] Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments Skip to main content Search Submit Donate Log in Search arXiv Press Enter to search · Advanced search Computer Science > Software Engineering arXiv:2609.37315 (cs) [Submitted on 29 Sep 2026] Title: Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments Authors: Rohith Reddy Bellibatlu , Zichong Wang , Wenbin Zhang View a PDF of the paper titled Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments, by Rohith Reddy Bellibatlu and 2 other authors View PDF HTML (experimental) Abstract: Tool-using agents are entering settings where a wrong action carries real cost, and the benchmarks certifying them grade what each simulated tool call reports having done, assuming the tool did what its interface advertises. The audit taxonomies we survey publish no category for that assumption, and a defect beneath a score is present on every rerun. We treat a "
+    },
+    {
+      "id": "d95c0aa560479c7cc6c0",
+      "title": "Ollama v0.40.3",
+      "category": "official_update",
+      "evidence": "## What's Changed * `ollama launch claude` no longer shows a warning about Claude connectors by @hoyyeva in https://github.com/ollama/ollama/pull/18878 * `ollama launch codex` no longer warns about service tiers by @hoyyeva in https://github.com/ollama/ollama/pull/18879 * Paused background model upgrade for embedding and other request performance, by @jmorganca in https://github.com/ollama/ollama/pull/18908 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.2...v0.40.3"
+    },
+    {
+      "id": "a103d2a575ed8d401f47",
+      "title": "New controls and chat improvements in Copilot for JetBrains",
+      "category": "official_update",
+      "evidence": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and strengthens reliability across agent sessions, customizations, and worktrees. What’s new Enterprise-managed default models Enterprise administrators can now use managed settings to choose any available Copilot agent model as the default for new conversations. This gives organizations more control over the starting model while still preserving an explicit model picker choice. Faster fixes from diagnostics Diagnostic intention menus now include a Fix action that opens inline chat and asks Copilot to repair the issue. The action uses agent mode when it is available and ask mode otherwise, helping you move from a reported problem to a proposed fix with fewer steps. More control over MCP server startup A new MCP setting lets you disable automatic server startup for Copilot and Claude, giving you more control over when configured tools become active. User experience enhancements This release makes everyday chat, account, and navigation workflows clearer: Account controls : Signed-in Copilot acco"
+    },
+    {
+      "id": "183857fc9587360d6bbd",
+      "title": "Quoting The New York Times",
+      "category": "discovery",
+      "evidence": "Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa applications through a form available on the State Department’s website. All the applications were incomplete and were not processed, they said. — The New York Times , Anthropic Agents T PRIMARY PAGE: A quote from The New York Times Simon Willison’s Weblog Newsletter Sponsored by: Pomerium — Static OAuth scopes won't stop AI agent breakouts. Upgrade to Pomerium's agentic access management trusted by NVIDIA and OpenAI 10th October 2026 Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa applications through a form available on the State Department’s website. All the applications were incomplete and were not processed, they said. — The New York Times , Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website Posted 10th October 2026 at 2:04 am Recent articles A new feature for my blog, built using my vo"
+    },
+    {
+      "id": "f9b600017dda3d534459",
+      "title": "Codex 0.162.1",
+      "category": "official_update",
+      "evidence": "## Bug Fixes - Fixed a TUI crash when asynchronous questions contain multiple lines, preserving line breaks and complete hyperlink destinations. (#51866) - Fixed startup failures caused by differences between a running background server's feature settings and CLI defaults. Compatibility checks now apply only to explicit command-line feature overrides. (#52648) Full Changelog: https://github.com/openai/codex/compare/rust-v0.162.0...rust-v0.162.1"
+    },
+    {
+      "id": "8c4b037ec194b38ec94e",
+      "title": "Claude Code v2.1.296",
+      "category": "official_update",
+      "evidence": "## What's changed - Added a `code` key to the Claude apps gateway's `managed.policies[]`: the same settings as `cli`, also applied in Claude Desktop's Code tab; beside `desktop`, it turns on Claude Desktop's gateway mode - Added `autoCompactWindow` to subagent frontmatter and `--agents` definitions, so a subagent can auto-compact earlier than the main conversation's window - Added `CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL` to run every workflow agent on one model while other subagents keep theirs - Added `CLAUDE_CODE_OVERLOADED_RETRY_MAX_DELAY_MS` environment variable to set a longer maximum delay for the backoff when retrying an overloaded (529) request - Added a note in `/plugin` on a plugin whose hooks are left out because another enabled plugin has the same name - Added an `allow_large` option to the Read tool so Claude can read a text file past the usual size limits in one call when it needs the whole file and the context has room - Fixed managed-settings `PreToolUse` hooks that deny a tool call with `\"continue\": false`, and managed `prompt` hooks that block one, refusing the call but not ending the turn - Fixed PostToolUse hooks in managed settings not applying `updatedMCPToolOutp"
+    },
+    {
+      "id": "24ffab4ab2810a56f784",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "category": "official_update",
+      "evidence": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
+    },
+    {
+      "id": "969bac352a44d7e42a0b",
+      "title": "Study in The Lancet suggests AI could improve patient-physician relationships.",
+      "category": "official_update",
+      "evidence": "A peer-reviewed study in The Lancet evaluates Google's AMIE medical AI in a real-world primary care clinic."
+    },
+    {
+      "id": "9ddca357af41233d4ef1",
+      "title": "Cline Desktop v0.0.45",
+      "category": "official_update",
+      "evidence": "- SSH remotes start again. Since 0.0.38, connecting to an SSH environment failed with `SyntaxError: Invalid character` - On SSH environments, the git branch label no longer opens two new SSH logins every 5 seconds. It checks every 30 seconds now, and switching branches from the picker still updates it right away - Long model names in the composer show in full when the row has room, and only truncate when it runs out - Turning reasoning off no longer fails with a 400 error on GPT-6 Astra, GPT-6.1 Sol, Claude Fable 5 or Claude Opus 5.5 - The background service no longer crashes about 3 seconds after an MCP server or hook quits before reading all of its input - Settings migrated from the VS Code extension no longer add an empty SAP AI Core provider - Refreshed the model catalog. Adds Claude Haiku 5.5. Default models change for Google Vertex AI (Claude Sonnet 5.5 → Claude Haiku 5.5), Cortecs, DevPass (LLM Gateway), Eden AI, GitHub Copilot, LLM Gateway, NanoGPT, OpenCode Go, Requesty, and Vivgrid (most now Claude Haiku 5.5) **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.44...desktop-v0.0.45"
+    },
+    {
+      "id": "e66d81f317608835f26a",
+      "title": "llama.cpp v0.6.0",
+      "category": "official_update",
+      "evidence": "## Overview llama.cpp v0.6.0 introduces the new `llama_batch_ext` extended batch API (with `llama_process`) for mixed token/embedding inputs and MTP/deepstack state embeddings, adds support for the GLM-5.3-Flash (GLM5-Next) 320B hybrid model, the Clef decision model (text and vision) and MTP speculative decoding for Qwen4Exp, ships a new `/v1/systemone` server API for decision models (laya, julia-1, lev, openjev, kev, nimble), overhauls the Web UI with a Hugging Face Hub data layer and model download pipeline, adds a Metal tensor-API flash attention kernel for F16 KV, sparse flash attention for quantized K/V on Vulkan, and updates ggml to v0.26.0. ### Highlights - New `llama_batch_ext` extended batch API with `llama_process()`, supporting mixed token/embedding batches and per-token \"state\" embeddings for MTP and deepstack models [#24669](https://github.com/ggml-org/llama.cpp/pull/24669) - New models: GLM-5.3-Flash (GLM5-Next), a 320B text+vision hybrid model [#27773](https://github.com/ggml-org/llama.cpp/pull/27773), and the Clef decision model, fully supported with both text and vision [#29831](https://github.com/ggml-org/llama.cpp/pull/29831) [#29969](https://github.com/ggml-org/"
+    },
+    {
+      "id": "dc782f650d85274793a4",
+      "title": "Show HN: Burning Bridges AI – Put yourself into a viral music-video clip",
+      "category": "discovery",
+      "evidence": "Show HN: Burning Bridges AI – Put yourself into a viral music-video clip PRIMARY PAGE: Burning Bridges AI Video Generator — Drake Trend, With Song Burning Bridges AI Tools Blog How it works Pricing FAQ Make my video Burning Bridges AI Video Generator One photo in. Burning Bridges AI takes the motion from Drake’s viral Burning Bridges clip, right through the “where she at?” finish, and performs it with you as the star — no filming, no learning the routine. 1 photo Song included Trend motion built in HD 720p Make your Burning Bridges AI video 5 more trends to try Just added: Bulin 47 AI New Add photo Your photo One person or pet, head to waist in frame, good light. JPG, PNG or WebP. Template Chandelier banquet (original) Preview Hotel suite after-party Preview Quality HD 720p 100 credits I only use photos of myself or of people who agreed to appear, and I accept the Terms . The video is AI-generated, not real footage. Sign in to make your video The Burning Bridges motion every video copies. You only add the photo. What happens in your Burning Bridges AI video Every video follows the beats of the Burning Bridges clip, set to Drake’s 2026 song “Burning Bridges”. Your photo takes the le"
+    },
+    {
+      "id": "85dda19639463c516ca5",
+      "title": "Simulate coding pre-AI by year",
+      "category": "discovery",
+      "evidence": "Article URL: https://beforetheprompt.xipu.li/ Comments URL: https://news.ycombinator.com/item?id=50043221 Points: 1 # Comments: 0 PRIMARY PAGE: Before the Prompt A WEBGPU TIME MACHINE · 1975 — 2022 Before the Prompt On November 30, 2022, a chat window changed how software gets written. Before that, people wrote every line themselves — in octal on graph paper, then BASIC, HyperTalk, C, Perl, PHP, Rails, Angular and React. Sit at their desks. Use their tools. Build their apps. 01 Pick a year in the dock to travel between nine eras. 02 Click the computer to sit down. Fill in the blanks. Run it. 03 Stuck? The manual is on the desk. The phone is slow. 04 Click anything. Play the games of the day. Watch the TV. 05 There is no AI. It hasn't been invented yet. BOOTING HISTORY 1975 1975 2022 ▸ Loading the time machine … 0 %"
+    },
+    {
+      "id": "5c651c89ef46ee4edafd",
+      "title": "Ollama v0.40.2",
+      "category": "official_update",
+      "evidence": "## Model upgrades Models downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and compatibility when running on llama.cpp. To make downgrading safe, Ollama keeps the original copy as a backup, so upgraded models are temporarily kept on disk. A future release will remove these backups automatically. To remove backed up models now (requires `jq`): ```shell curl -s localhost:11434/api/tags | jq -r '.models[].name' | while read -r m; do curl -s localhost:11434/api/show -d \"{\\\"model\\\":\\\"$m\\\"}\" | jq -r \\ 'select(any(.manifests[]?; .runner == \"llamacpp\")) | .manifests[] | select(.runner == \"ggml\") | .digest' done | sort -u | xargs -n1 ollama rm ``` This only deletes the backups. If you later downgrade to a version older than 0.40, you'll need to re-pull those models. **Other changes** * `ollama list` no longer shows duplicate entries for upgraded models by @dhiltgen in https://github.com/ollama/ollama/pull/18874 * `ollama launch claude` uses the model's full context length by @jberg5 in https://github.com/ollama/ollama/pull/18855 * README: add oxi to community integrations by @maziluiosif in https://github.com/ollama"
+    },
+    {
+      "id": "8173560892bd29c44aad",
+      "title": "GitHub Copilot weekly releases — October 5",
+      "category": "official_update",
+      "evidence": "This week’s updates make Copilot easier to use across accounts and environments, with more control over what agents can access and how you manage their work. GitHub Copilot Claude Haiku 5.5 is available to Copilot Pro, Pro+, Max, Business, and Enterprise users. Limit agents’ access to files, networks, and credentials with local sandboxing, now generally available in Copilot CLI, the Copilot app, and VS Code sessions using Agent Host. This is included with Copilot at no extra cost. Learn more about local sandboxing . GitHub Copilot app The Copilot app now lets you use separate GitHub accounts for your Copilot license and your repositories. For example, use an enterprise-provided Copilot license while accessing repositories through another account. Download the Copilot app . GitHub Copilot CLI GitHub Copilot CLI makes it easier to choose a local model without leaving your existing workflow. Use /model to discover supported models from a running local Ollama instance, alongside your configured models and cloud models provided by GitHub Copilot. Discover local models in GitHub Copilot CLI . GitHub Copilot in VS Code (1.141 release) View agent sessions side by side in the Agents window."
+    },
+    {
+      "id": "0bd7a4e7632a1479f832",
+      "title": "Deno is joining Cloudflare",
+      "category": "discovery",
+      "evidence": "Deno is joining Cloudflare The Deno team released the first version of celld back in August - their open source implementation of the Durable Objects pattern from Cloudflare Workers. Today, Cloudflare are acquiring Deno outright, with the goal of building on celld to \"make workerd self-hosting a first-class supported way to build and run apps using the Workers programming model\" (see the Cloudflar PRIMARY PAGE: Deno is joining Cloudflare Simon Willison’s Weblog Newsletter Sponsored by: Pomerium — Static OAuth scopes won't stop AI agent breakouts. Upgrade to Pomerium's agentic access management trusted by NVIDIA and OpenAI 9th October 2026 - Link Blog Deno is joining Cloudflare ( via ) The Deno team released the first version of celld back in August - their open source implementation of the Durable Objects pattern from Cloudflare Workers. Today, Cloudflare are acquiring Deno outright, with the goal of building on celld to \"make workerd self-hosting a first-class supported way to build and run apps using the Workers programming model\" (see the Cloudflare blog .) The bad news is that Deno itself will not be maintained by Cloudflare beyond the next year: We will support the Deno runtim"
+    },
+    {
+      "id": "69c2b1298cb5126bb866",
+      "title": "Codex 0.162.0",
+      "category": "official_update",
+      "evidence": "## New Features - Add tools for creating and listing managed Git worktrees from trusted local projects when the worktrees feature is enabled. (#50148) - Pin tasks in the agent Command Center with `p` and keep them in a shared Pinned group when supported by the server. (#51500) - Navigate and copy transcript blocks with `/copy`, use `Ctrl+Insert` to copy selections, and tune mouse-wheel scrolling with `tui.mouse_scroll_speed`. (#50434, #50215, #50209) - Make URLs clickable in approval headers, questions, MCP prompts, warnings, banners, and verification prompts, including when links wrap across lines. (#51439, #51449, #51450, #51451, #51452, #51458) - Configure live web access and remote compaction capabilities for custom Responses-compatible model providers. (#50459) - Add JavaScript helpers for streaming promise results as they settle, plus opt-in ranked tool search in Code Mode. (#51126, #51209) ## Bug Fixes - Respect server model and reasoning-summary defaults for new TUI threads while retaining explicit launch overrides. (#50013, #50811, #50913) - Preserve existing CRLF line endings in `apply_patch` updates without requiring an opt-in. (#51203) - Fix Linux sandbox startup with m"
+    },
+    {
+      "id": "c0486cf365f56eeba3cc",
+      "title": "Claude Code v2.1.295",
+      "category": "official_update",
+      "evidence": "## What's changed - Added `onFailure: \"block\"` for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through - Added Program Status Protocol (OSC 7501) support: terminals that implement it can show whether Claude Code is working, waiting on you, or done - Added quoted text to the `/copy` picker, so a drafted message copies without its `>` markers - Added a warning to `claude plugin install`, `enable`, `disable` and `marketplace add` when the settings file they write to does not load - Added a line on stderr, when it is a terminal, that says what a `claude -p` run is waiting for when it stays open after its last turn - Added support for `timeouts.upstream_ttfb_ms` on the Claude apps gateway's Bedrock, Vertex, Foundry and other cloud upstreams: a value you set now limits how long a stream may take to start there, after which it fails over or gets a 502 - Added a \"Backgrounding cancelled\" message when you stop the turn while `←` is waiting for the current tool to finish - Added an optional `models` list to every Claude apps gateway upstream: only the listed models are sent there, on failover too, and on"
+    },
+    {
+      "id": "b8439382e4927a89c799",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "category": "official_update",
+      "evidence": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
+    },
+    {
+      "id": "e8e2cb77bae77f73d81d",
+      "title": "Google Cloud introduces the Gemini agent.",
+      "category": "official_update",
+      "evidence": "Google Cloud’s new Gemini agent automates workflows by connecting to your business systems. See how it streamlines enterprise tasks in one prompt."
+    },
+    {
+      "id": "57baa374b7222a12bc35",
+      "title": "Cline CLI v3.0.70",
+      "category": "official_update",
+      "evidence": "- Commit message generation and tasks with reasoning off no longer fail with a 400 error on GPT-6 Astra, GPT-6.1 Sol, Claude Fable 5 or Claude Opus 5.5 - Cline no longer exits about 3 seconds after an MCP server or hook quits before reading all of its input - Settings migrated from the VS Code extension no longer add an empty SAP AI Core provider - `cline mcp add` keeps your `--header` values when it opens the setup wizard. Before, accepting the prefilled answers saved a remote server without its headers (for example, `Authorization`). The wizard now asks for one header per prompt and validates each one the same way as `--yes` - `cline dashboard` is now `cline hub dashboard`. The old command still works as a hidden alias - A bare `cline hub` prints its subcommands - `cline doctor log` opens the file set by `CLINE_LOG_PATH` when that variable is set - `cline --help` is corrected: `--retries` shows its real default of 3 (it said 6), and `--thinking` explains that it falls back to the level picked in `/model` - A bare `--retries` with no count is now rejected with an error instead of crashing - Options that were accepted but never did anything are removed and now fail with \"unknown op"
+    },
+    {
+      "id": "336e9e2a2acd0df92417",
+      "title": "Show HN: Korosta – Remember and highlight job postings you've seen",
+      "category": "discovery",
+      "evidence": "# What is and whats not Korosta is a privacy-first user-customizable tool to highlight job postings based on how frequent are those, and your ratings: * how often the job postings appeared to the user -> fade repeatedly seen job postings * learns from your ratings with a simple local model -> highlight relevant ones * 2 versions: free and pro * almost everything is kept local (ratings, recipes, cu PRIMARY PAGE: Korosta - Chrome Web Store Skip to main content Chrome Web Store My extensions & themes Appearance Developer Dashboard Give feedback Sign in Discover Extensions Themes Korosta Share Extension Workflow & Planning 2 users Add to Chrome Overview Find, score, and organize job roles across supported job boards. Review and organize your job search with Korosta. Korosta helps you review job postings directly on compatible websites. Rate opportunities, recognize roles you have seen before, and focus on postings that interest you. • Rate roles by relevance and highlight your favorites with silver and gold outlines. • See tentative relevance suggestions based on your previous ratings. • Fade previously seen postings, including matching roles recognized across supported sources. • Hide"
+    },
+    {
+      "id": "a13052da1c38645249b0",
+      "title": "Show HN: Guilds – Open-source inspectable multi-agents collaboration framework",
+      "category": "discovery",
+      "evidence": "Getting AI to handle long-running tasks reliably takes more than good prompts. There’s a lot of system design involved: figuring out how agents should work together, anticipating edge cases, and being able to debug and tune the system when things go wrong. That’s why we built guilds.run. The goal is to make the whole system understandable, so you can trace how mistakes propagate between agents, fi PRIMARY PAGE: # guilds.run\n\nguilds.run runs standing teams of AI agents you can inspect.\n\nA guild is a department: named roles, a shared room, shared tables.\nEvery run keeps the prompt the model saw, every tool call, and every\nmemory change.\n\nAgent-to-agent work opens uses of LLMs a single agent cannot cover,\nand it accentuates the ways those models fail. guilds.run is the\nframework Cigale built so that collaboration stays tractable.\n\nSystem thinking used to belong to people who already wrote software.\nWith LLMs it is work anyone with a need or an interest can do, at a\ndifferent level of abstraction.\n\n- **Deeply inspectable.** What the model sees is what you see.\n- **Deeply customizable.** Each connection, each tool, and the model\n  for each agent is chosen for the job.\n- **Iterate till p"
+    },
+    {
+      "id": "fd9ecaea1aba2d65420d",
+      "title": "MCP servers that tell your agent \"dont tell the user\" are stopping it from lying",
+      "category": "discovery",
+      "evidence": "Article URL: https://semantik.tech/risk-watch/2026-w41 Comments URL: https://news.ycombinator.com/item?id=50043137 Points: 1 # Comments: 0 PRIMARY PAGE: Most MCP servers that tell your agent “don’t tell the user” are stopping it from lying | Semantik Skip to content Semantik The gap How it works Your data Risk Watch Switch to light theme Switch to dark theme Book a demo AI Tools Risk Watch · 2026-W41 Most MCP servers that tell your agent “don’t tell the user” are stopping it from lying Week ending 5 October 2026 · Published 11 October 2026 Share LinkedIn X Bluesky Reddit Hacker News Email 3,372 MCP packages published or updated 139 brand new 142 with a high-severity flag, before review 53% not published with npm trusted publishing We scanned every MCP server published or updated on npm in the seven days to 5 October 2026: 3,372 packages , 139 of them brand new. We then checked every high-severity flag by hand. 45% can run shell commands on the machine they are installed on. 16% read or write the MCP configuration of other AI tools (Claude, Cursor, VS Code, Windsurf and others). 5% run code automatically on npm install , before you have configured anything. 53% were not published th"
+    },
+    {
+      "id": "4dfd83614cacc4f50161",
+      "title": "Ollama v0.40.1",
+      "category": "official_update",
+      "evidence": "## What's Changed * server: proxy cloud usage and balance APIs by @drifkin in https://github.com/ollama/ollama/pull/18829 * llama: fix clef head reads past 2GiB on windows by @Gigrise in https://github.com/ollama/ollama/pull/18777 * cmd: remove account step from CLI onboarding by @hoyyeva in https://github.com/ollama/ollama/pull/18826 * manifest: avoid symlinks on Windows by @dhiltgen in https://github.com/ollama/ollama/pull/18852 * docs: fix 6 dead links in README community integrations list by @aniketkrs in https://github.com/ollama/ollama/pull/18814 * docs: fix broken download links in app README by @chenlichao in https://github.com/ollama/ollama/pull/18233 * mlx: drop carried metal residency patch now that it is upstream by @dhiltgen in https://github.com/ollama/ollama/pull/18854 ## New Contributors * @Gigrise made their first contribution in https://github.com/ollama/ollama/pull/18777 * @aniketkrs made their first contribution in https://github.com/ollama/ollama/pull/18814 * @chenlichao made their first contribution in https://github.com/ollama/ollama/pull/18233 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.0...v0.40.1-rc0"
+    },
+    {
+      "id": "72c17423938ea0e679d3",
+      "title": "CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis",
+      "category": "official_update",
+      "evidence": "CodeQL 2.27.2 is now available, adding a C++ regular-expression parser and analysis improvements across several languages. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find and remediate security issues in your code. The Default suite runs 498 security queries covering 170 CWEs. The Extended suite adds 131 queries covering 32 more CWEs. Language and framework support C/C++ CodeQL now parses regular expressions that use the ECMAScript grammar in std::regex . We’ve added SQL-injection sink models for the Comdb2 C API as well as flow summaries for Bloomberg BDE codecs and byte-stream deserializers. Go CodeQL now models the github.com/coder/websocket import path, in addition to nhooyr.io/websocket . Rust The Rust extractor now supports the AnyAttr and DocComment classes. We’ve improved data flow for async blocks used with await as well as added flow summaries for native-tls , async-native-tls , and tokio-native-tls . JavaScript/TypeScript CodeQL now recognizes the Workflow SDK’s \"use workflow\" and \"use step\" directives. We’ve improved Hapi route-handler and request-input tracking through custom route-registration helpers and higher-order functions. "
+    },
+    {
+      "id": "653e50f777bc85f2adf9",
+      "title": "Quoting Matthew Green",
+      "category": "discovery",
+      "evidence": "Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confidence in our existing public-key encryption algorithms. [...] The problem here is that the speed of AI producing surprises, and the speed of human beings replacing standards (even with  PRIMARY PAGE: A quote from Matthew Green Simon Willison’s Weblog Newsletter Sponsored by: Pomerium — Static OAuth scopes won't stop AI agent breakouts. Upgrade to Pomerium's agentic access management trusted by NVIDIA and OpenAI 9th October 2026 Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confidence in our existing public-key encryption algorithms. [...] The problem here is that the speed of AI producing surprises, and the speed of human beings replacing standards (even with the very best AI assistance) are just orders of magnitude different. You only recover from a surprise like this if you do the preparation in advance. — M"
+    },
+    {
+      "id": "384aaa8772527cfdb685",
+      "title": "Codex 0.161.0",
+      "category": "official_update",
+      "evidence": "## New Features - GPT-6.1 Sol is now the default model in the bundled and Amazon Bedrock catalogs. (#49318, #49339) - Amazon Bedrock supports multi-agent V2 and Ultra reasoning on compatible models; Bedrock Mantle also accepts AWS GovCloud regions. (#49345, #49813) - Sign in to MCP servers from an active terminal session with `/mcp login `. (#49290) - Choose your microphone, speaker, and microphone input channels for voice conversations, with preferences saved locally. (#49437, #49836) - Daybreak is opt-in through `--enable cli_daybreak` or `features.cli_daybreak=true`; `daybreak=true` alone is insufficient. By default, controls and indicators are hidden, `/daybreak` is unavailable, and automatic Cyber routing is omitted—even for saved Daybreak threads. Saved preferences remain intact. Opt-in routing requires eligible ChatGPT sign-in, the OpenAI provider, and advertised model/program support. (#49856, #49858, #49859, #49861, #51207) - Select a Cyber access program per turn with `codex exec --cyber-access-program` or the TypeScript SDK’s `cyberAccessProgram` option. The explicit exec override remains available with `cli_daybreak` disabled and leaves the saved choice unchanged. (#499"
+    }
+  ],
+  "response": {
+    "id": "8d3ae3bc-71e4-49d1-bf3e-8f41dd7f2df5_f57607833f57457eb28705222c76a7d5",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "```json\n{\"items\": [{\"id\": \"f9b600017dda3d534459\", \"product\": \"Codex\", \"change\": \"修复TUI异步提问换行崩溃与启动失败\", \"change_en\": \"Fixed TUI crash on multi-line questions and startup failures\", \"title\": \"Codex 0.162.1 修复TUI崩溃\", \"summary\": \"Codex 0.162.1 修复异步提问包含多行时 TUI 崩溃问题，保留换行与超链接目标；同时修复后台服务器功能设置与 CLI 默认值差异导致的启动失败，兼容性检查现仅应用于显式命令行特性覆盖。\", \"kind\": \"changed\"}, {\"id\": \"8c4b037ec194b38ec94e\", \"product\": \"Claude Code\", \"change\": \"新增子代理自动压缩窗口与模型环境变量\", \"change_en\": \"Added subagent autoCompactWindow and workflow model env var\", \"title\": \"Claude Code v2.1.296 更新\", \"summary\": \"Claude Code v2.1.296 新增网关 managed.policies 的 code 键、子代理 frontmatter 的 autoCompactWindow、CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL 环境变量、过载重试最大延迟设置，以及 Read 工具 allow_large 选项；修复托管 PreToolUse/PostToolUse 钩子若干问题。\", \"kind\": \"added\"}, {\"id\": \"69c2b1298cb5126bb866\", \"product\": \"Codex\", \"change\": \"新增托管Git工作树与任务置顶功能\", \"change_en\": \"Added managed Git worktrees tools and task pinning in Command Center\", \"title\": \"Codex 0.162.0 新功能\", \"summary\": \"Codex 0.162.0 新增从受信任本地项目创建和列出托管 Git 工作树的工具、命令中心任务置顶、转录块导航复制、可点击 URL、自定义 Responses 兼容提供商的实时网络访问与远程压缩配置；修复 apply_patch 保留 CRLF 换行等问题。\", \"kind\": \"added\"}, {\"id\": \"e66d81f317608835f26a\", \"product\": \"llama.cpp\", \"change\": \"新增扩展批处理API与多款模型支持\", \"change_en\": \"Added llama_batch_ext API, GLM-5.3-Flash, Clef models, new server API\", \"title\": \"llama.cpp v0.6.0 发布\", \"summary\": \"llama.cpp v0.6.0 引入 llama_batch_ext 扩展批处理 API（llama_process），支持混合 token/embedding 输入和 MTP/deepstack 状态嵌入；新增 GLM-5.3-Flash (GLM5-Next) 320B 混合模型、Clef 决策模型、Qwen4Exp 的 MTP 投机解码、/v1/systemone 服务器 API、Web UI 重做以及 Metal/Vulkan 闪存注意力内核。\", \"kind\": \"added\"}, {\"id\": \"d95c0aa560479c7cc6c0\", \"product\": \"Ollama\", \"change\": \"取消启动命令警告并暂停后台模型升级\", \"change_en\": \"Removed launch warnings; paused background model upgrade\", \"title\": \"Ollama v0.40.3 更新\", \"summary\": \"Ollama v0.40.3 中 ollama launch claude 不再对 Claude 连接器显示警告，ollama launch codex 不再对服务层级警告；同时暂停了针对嵌入等请求性能的后台模型升级。\", \"kind\": \"changed\"}, {\"id\": \"b81b66a397e91a8597d6\", \"product\": \"Agent 基准审计\", \"change\": \"工具型Agent环境基准存在可执行契约缺陷\", \"change_en\": \"Executable-contract audit exposes defects beneath tool-using agent benchmark scores\", \"title\": \"工具型Agent基准可信度研究\", \"summary\": \"arXiv 论文《Do Agent Benchmarks Do What They Say?》对工具使用型 Agent 环境进行可执行契约审计，指出当前基准评分假设工具按接口宣称执行，缺少验证该假设的审计分类，且分数下层的缺陷会在每次重跑中复现。\", \"kind\": \"discovery\"}, {\"id\": \"fd9ecaea1aba2d65420d\", \"product\": \"MCP 生态扫描\", \"change\": \"周扫描发现MCP包多项高危安全问题\", \"change_en\": \"Weekly MCP scan found shell-exec and config-writes in many packages\", \"title\": \"MCP包周度安全风险扫描\", \"summary\": \"Semantik 对 npm 上一周内发布或更新的 3372 个 MCP 包扫描显示：45% 可在安装机器上执行 shell 命令，16% 读写其他 AI 工具的 MCP 配置，5% 在 npm install 时自动运行代码，53% 未使用 npm trusted publishing 发布；文章称多数「不要告诉用户」的 MCP 指令实际在阻止 Agent 说谎。\", \"kind\": \"discovery\"}]}\n```",
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1791791983,
+    "model": "mimo-v2.6-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1214,
+      "prompt_tokens": 8252,
+      "total_tokens": 9466,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  }
+}
