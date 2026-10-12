@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A kanban board with pointer, touch and keyboard drag, work-in-progress limits, and a Status/Swimlanes switch animated with FLIP."><title>Kanban board · Su UI lab</title><script src="../shared/setup.js"></script><link rel="stylesheet" href="../shared/lab.css"><link rel="stylesheet" href="./styles.css"></head><body><main>
+<nav><a href="/lab" data-copy="back">← UI lab</a><span data-copy="edition">11 / Kanban board</span><button id="language" type="button" aria-label="切换为中文">中</button></nav>
+<header class="page-heading"><h1 data-copy="title">Kanban board</h1><p class="intro" data-copy="intro">Drag cards between columns, watch the limits, and flip the same board into swimlanes.</p></header>
+<section class="stage" aria-label="Kanban board experiment">
+<div class="board-top"><h2><span data-copy="board">Billing v2</span> <span class="board-count" id="board-count"></span></h2>
+<div class="view-toggle" id="view-group" role="group"><span class="view-thumb" aria-hidden="true"></span><button type="button" data-view="status" aria-pressed="true" data-copy="viewStatus">Status</button><button type="button" data-view="lanes" aria-pressed="false" data-copy="viewLanes">Swimlanes</button></div></div>
+<div class="board-scroll" id="scroller"><div class="board" id="board" data-view="status"><div class="heads" id="heads"></div><div class="lanes" id="lanes"></div></div></div>
+</section>
+<p id="kb-help" class="sr-only" data-copy="kbHelp">Press Space to pick up the card. Arrow keys move it, Space drops it, Escape puts it back.</p>
+<div class="drag-layer" id="drag-layer" aria-hidden="true"></div>
+<div class="controls"><button id="reset" type="button" data-copy="reset">Reset</button><span class="spacer"></span><div class="segmented" role="group" id="theme-group"><button type="button" data-theme-choice="light" data-copy="light">Light</button><button type="button" data-theme-choice="dark" data-copy="dark">Dark</button></div></div>
+<p class="status" role="status" id="announce"></p>
+<p class="hint" data-copy="hint">Drag a card by mouse, or press and hold on touch. Tab to a card and press Space to move it with the arrow keys.</p>
+<p class="demo-note" data-copy="demo">Sample project and people. An interaction study, nothing is saved.</p>
+<section class="tricks" aria-labelledby="tricks-title"><h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
+<article><h3 id="note-title-0"></h3><p id="note-body-0"></p><pre tabindex="0"><code>// Touch must hold still briefly, so a swipe still scrolls.
+if (e.pointerType !== 'mouse') {
+  pending.timer = setTimeout(() =&gt; begin(pending.x, pending.y), 220);
+}
+// Only a live drag blocks scrolling; this must be non-passive.
+document.addEventListener('touchmove', e =&gt; {
+  if (drag) e.preventDefault();
+}, { passive: false });
+
+slot.style.height = `${rect.height}px`;
+el.replaceWith(slot);   // the gap keeps its exact size
+layer.append(el);       // same element, now in a fixed layer</code></pre></article>
+<article><h3 id="note-title-1"></h3><p id="note-body-1"></p><pre tabindex="0"><code>function flip(mutate) {
+  const before = new Map();
+  for (const el of cardEls.values())
+    before.set(el, el.getBoundingClientRect()); // visible, mid-flight
+  for (const el of before.keys()) flips.get(el)?.cancel();
+  mutate();
+  for (const [el, a] of before) {
+    const b = el.getBoundingClientRect();
+    flips.set(el, el.animate([
+      { transform: `translate(${a.left - b.left}px, ${a.top - b.top}px)` },
+      { transform: 'none' },
+    ], { duration: 340, easing }));
+  }
+}
+// Hit-testing ignores transforms, so sliding cards can't flicker the slot.
+siblings.findIndex(el =&gt; y &lt; el.offsetTop + el.offsetHeight / 2);</code></pre></article>
+<article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre tabindex="0"><code>drag.vx += ((drag.px - drag.lastX) - drag.vx) * .3;
+const lean = Math.max(-7, Math.min(7, 1.6 + drag.vx * .45));
+drag.r += (lean - drag.r) * .18;
+drag.el.style.translate = `${drag.x}px ${drag.y}px`;
+drag.el.style.rotate = `${drag.r.toFixed(2)}deg`;
+
+// Drop: settle from the exact lifted pose.
+el.animate([
+  { translate: `${from.x - to.left}px ${from.y - to.top}px`,
+    rotate: `${from.r}deg`, scale: 1.03 },
+  { translate: '0 0', rotate: '0deg', scale: 1 },
+], { duration: 360, easing });</code></pre></article>
+<article><h3 id="note-title-3"></h3><p id="note-body-3"></p><pre tabindex="0"><code>export function wouldExceed(cards, id, status) {
+  const card = cards.find(item =&gt; item.id === id);
+  if (!card || card.status === status) return false;
+  const { count, limit } = load(cards, status);
+  return limit != null &amp;&amp; count + 1 &gt; limit;
+}
+.cell[data-target][data-warn] { background: var(--warn-bg); }
+
+// Moving a focused element normally blurs it.
+try { parent.moveBefore(el, ref); }
+catch { parent.insertBefore(el, ref); }
+if (focused &amp;&amp; document.activeElement !== el) el.focus({ preventScroll: true });</code></pre></article>
+<div class="source-links"><a href="./styles.css">CSS ↗</a><a href="./script.js" data-copy="source">View the source</a></div></section>
+<footer><span data-copy="inspired">Inspired by</span> <a href="https://x.com/eliakuratli/status/2109299245891416065" target="_blank" rel="noopener noreferrer">Elia ↗</a></footer>
+<noscript><p>Enable JavaScript to try the kanban board. / 请启用 JavaScript 体验看板。</p></noscript>
+</main><script type="module" src="./script.js"></script></body></html>
