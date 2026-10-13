@@ -41161,6 +41161,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50056343"
     },
     {
+      "id": "f17a4dee2e437a73f339",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: search for AI agents that flags pages later news replaced",
+      "url": "https://github.com/Ayobamiu/usefulness-search",
+      "published_at": "2026-10-12T13:55:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built this at a Berkeley hackathon with Simon Kley. It’s a search layer for AI agents. Each result comes back with a usefulness score and a price before the agent reads it, plus a flag when a later story has replaced the page. What pushed us toward freshness: when an agent started from an outdated news alert, it wrote stale sales outreach in 4 of 7 cases, even though the newer story was in the pages it had read. Our check caught 4 of 4 replaced pages with no false alarms on 5 controls. On a sales research task (n=15), the agent read 3.1 pages instead of 10. Caveats: these are small samples, prices are simulated, and our version used more tokens than the baseline (19.5k vs 14.1k). The demo runs locally for now. I’d especially like to hear from people running research agents in production. How do you deal with outdated pages today? Comments URL: https://news.ycombinator.com/item?id=50056543 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50056543"
+    },
+    {
       "id": "857b4f9805b1cd771977",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -41279,41 +41291,329 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://www.saasrise.com/news/veda-launches-first-agentic-hobby-os-with-builtin-ai-agent-349d0eeb-8c0a-4c44-8521-211a377551f2 Comments URL: https://news.ycombinator.com/item?id=50057678 Points: 3 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50057678"
+    },
+    {
+      "id": "be10b5ee91279366cd08",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: E2E – Open-source agentic testing framework for web, iOS and Android",
+      "url": "https://github.com/tester-army/e2e",
+      "published_at": "2026-10-12T15:41:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I’m Oskar, one of the co-founders of TesterArmy. We built an agentic testing framework for web and mobile because traditional testing frameworks can’t keep up with the pace of how we build software today. e2e allows you to mix deterministic and agentic APIs in the same test. You can write the test cases using familiar APIs like `getByText()`or `getByTestId()` which you can also mix it with agentic `agent.act()`. The unique part about it is that e2e will cache and replay the agentic actions so you don’t have to pay for AI on each run. You can use it with any LLM, including subscriptions you are already paying for. On top of that, the core of e2e is platform agnostic. We ship both web and mobile engines out of the box; adding support for more platforms is pretty straightforward. Here’s a code short code snippet of an example test: ```ts import { test, expect } from 'e2e'; test('a member upgrades to Pro', async ({ app, agent, screen }) => { await app.open('/settings/billing'); await agent.act('upgrade the workspace to the Pro plan'); await agent.assert('the invoice preview shows a prorated amount'); await expect(screen.getByRole('status')).toContainText('Pro'); }); ``` Try it: npx e2e init GitHub: https://github.com/tester-army/e2e Comments URL: https://news.ycombinator.com/item?id=50058032 Points: 6 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50058032"
+    },
+    {
+      "id": "143c6aad46ec1fe963a4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tellcut – motion videos written as code by Claude, edited by chat",
+      "url": "https://tellcut.app/studio",
+      "published_at": "2026-10-12T15:42:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tellcut.app/studio Comments URL: https://news.ycombinator.com/item?id=50058060 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50058060"
+    },
+    {
+      "id": "16c26048d63c0e33c8e1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Boole-1.7B, a 1-bit LLM that outperforms Bonsai-1.7B",
+      "url": "https://precisionnumerics.ai/blog/boole-1p7b",
+      "published_at": "2026-10-12T15:49:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Introducing Boole-1.7B, a 1-bit version of Qwen3-1.7B. Boole-1.7B retains 85.9% of BF16 performance using 247MB (13.9x smaller). It outperforms 1-bit Bonsai-1.7B and similar-sized LFM models, and nearly matches 1.58-bit Bonsai-1.7B. It’s intended for low-latency tasks using English and non-thinking mode. To learn more, - Blog: https://precisionnumerics.ai/blog/boole-1p7b - Weights: https://huggingface.co/precision-numerics/Boole-1.7B - Chat in browser: https://precisionnumerics.ai/chat/ We're going to ship more capable models soon for the open-source community. Let us know what models/capabilities you want to see next! Comments URL: https://news.ycombinator.com/item?id=50058167 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50058167"
+    },
+    {
+      "id": "edcfb1522f36482b054a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Practice for the new AI-assisted coding interview format",
+      "url": "https://nyrion.ai",
+      "published_at": "2026-10-12T15:58:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://nyrion.ai/ Comments URL: https://news.ycombinator.com/item?id=50058306 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50058306"
+    },
+    {
+      "id": "46856d0f17cfed08e633",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Reflex – A GGUF-native Rust/CUDA engine for scale-to-zero LLM routing",
+      "url": "https://console.runpod.io/hub/listing/lateos-ai/reflex",
+      "published_at": "2026-10-12T16:05:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://console.runpod.io/hub/listing/lateos-ai/reflex Comments URL: https://news.ycombinator.com/item?id=50058408 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50058408"
+    },
+    {
+      "id": "cc77e9fbda845890a60a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Slop Detector – 120 patterns that make writing read like AI",
+      "url": "https://github.com/FeedHive/ai-slop-detector",
+      "published_at": "2026-10-12T16:08:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/FeedHive/ai-slop-detector Comments URL: https://news.ycombinator.com/item?id=50058453 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50058453"
+    },
+    {
+      "id": "ac8d15414f5cc18fb793",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Weekend hack – shoot away Cloudflare CAPTCHAs",
+      "url": "https://github.com/blowhacker/clickyphus",
+      "published_at": "2026-10-12T16:30:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "The cf turnstile has been a constant annoyance ever since I started using VPNs for everyday browsing. This weekend I built a chrome extension that auto clicks the captcha using the chrome debugger api. Thanks to ai agents, even weekend projects can have fancy animations :) Comments URL: https://news.ycombinator.com/item?id=50058822 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50058822"
+    },
+    {
+      "id": "28bf62a981517565c41a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: IHMT – Infinite Hierarchical Memory Tree for AI Agents",
+      "url": "https://github.com/gonzaroman/IHMT-MEMORY",
+      "published_at": "2026-10-12T16:34:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/gonzaroman/IHMT-MEMORY Comments URL: https://news.ycombinator.com/item?id=50058903 Points: 6 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50058903"
+    },
+    {
+      "id": "1102e7cceed120972a9b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Search 123 AI labs' jobs from your own agent, no signup",
+      "url": "https://workatailab.com/agents",
+      "published_at": "2026-10-12T17:04:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://workatailab.com/agents Comments URL: https://news.ycombinator.com/item?id=50059387 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50059387"
+    },
+    {
+      "id": "7dde5da5c738cc38c647",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Enso Method – agent skills for building software for someone else",
+      "url": "https://ensomethod.org",
+      "published_at": "2026-10-12T17:06:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "The Enso Method is a new set of AI skills for Claude Code and Codex which I've open sourced on GitHub predominantly for developers who build for someone else who is making the product/business calls. I've been using AI to write basically 100% of my code since late 2024, back in the Sonnet 3.5 days, when it barely worked and there were few people doing this and very little support for this way of developing. I stubbornly thought this was going to be the future and came up with a methodology for making it work, before \"AI skills\" were even a thing. Since then I've continued to refine the method and I just recently published it as open source. The method focuses on requirements (PRD, TDD) up front, and has skills that autonomously refine the requirements, declaring assumptions that should be validated by stakeholders. It doesn't expect you to be a solo founder or that whoever is at the keyboard directing Claude or Codex to be the product owner and business decider in addition to being the developer. I think most of us sit in the seat where we develop for someone else who decides. And if AI is all about velocity, then if we have to slow down to get product owners to review and decide, that puts a serious damper on the efficiency everyone expects from AI development. So a defining attribute of the Enso Method is, when it reviews the requirements prior to implementation, it asks what questions/gaps there are and it tries to answer its own questions. If it can get to 95%+ confidence in the answers, it just rolls with those. If less then it will declare the assumption in an assumptions.md file which gets routed to business stakeholders to review. In the meantime however we still consider this to be a green light, we can move forward and implement with the assumptions, and if we later hear from the business that the assumption was wrong, we update the requirements and re-implement, because implementation is now cheap, and waiting isn't. Comments URL: https://news.ycombinator.com/item?id=50059416 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50059416"
+    },
+    {
+      "id": "2e76d3e921855da675f9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Prompt Lighting Controls",
+      "url": "https://www.kapwing.com/ai/prompt-generator/lighting",
+      "published_at": "2026-10-12T17:48:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.kapwing.com/ai/prompt-generator/lighting Comments URL: https://news.ycombinator.com/item?id=50060074 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50060074"
+    },
+    {
+      "id": "2b7a58d45d219b5b01aa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I bought a bunch of 'smart' devices. AI was able to hack most of them",
+      "url": "https://hwrebench.com",
+      "published_at": "2026-10-12T17:59:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://hwrebench.com/ Comments URL: https://news.ycombinator.com/item?id=50060257 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50060257"
+    },
+    {
+      "id": "ef675cdbff0074a84812",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Opus 5.5 made a fully featured Figma clone in 3 hours / 8 prompts",
+      "url": "https://www.mana.space/home/rZfbotNWAXegQypmpkzaAPFC6Mp1/Apps/Figma%20Next%20Launch",
+      "published_at": "2026-10-12T18:03:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "I think a chasm has been crossed. Opus 5.5 few shotted a fully working Figma for me. In the past year I have been trying to benchmark vibe coded apps and see how good they get and this week it did it with very very little guidance from me. I basically just told it reach feature parity. Prior to this vibe coded apps would resemble the real software, this is not a resemblance it's the real thing. As a casual Figma user in the past, I can't really see a difference. And if there is one you have an LLM that can on the fly operate the app or use it. P.S. I did this is on Mana which is our startup making it easier for LLMs to do it (probably the code is half of what would have been and there are primitives it can use but ultimately it's a testament to how good models have gotten). I went on to make google meets, docs, telegram, linear, etc. All basically with single prompts. The biggest jump has been in the UX understanding of models and attention to detail. Comments URL: https://news.ycombinator.com/item?id=50060311 Points: 39 # Comments: 41",
+      "discussion_url": "https://news.ycombinator.com/item?id=50060311"
+    },
+    {
+      "id": "731c3e32b8d985d536ce",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Vibecoded top-down game for learning vocab from a Korean webtoon",
+      "url": "https://stan-stani.github.io/jeomsim-bangsong",
+      "published_at": "2026-10-12T18:16:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi Hacker News, I present to you \"Lunchtime Broadcast\", a walkaround-game (in the vein of Homestuck) where the mechanics are primarily walking your character around and talking to people in order to advance the plot. It's set in a fictional Korean high school, where you learn part of the vocabulary used in the webtoon \"Sora & Haena!\". I am a big believer in comprehensible input, and so I had Claude come up with its own original story that teaches vocab from the webtoon's first 4 episodes, but is targeted to my intermediate-ish level. The hope is that after playing through \"Lunchtime Broadcast\", reading the webtoon should be much easier for me. Notable Features : - Built for phones but playable on desktop - Every word in the dialogue is tappable and gives a definition Claude wrote in simpler Korean. English definitions are hidden behind a \"?\" icon - There is a dictionary that shows words by how often or how recently you have tapped them - Words that have been taught come up as multiple choice cloze review questions when you talk to characters. Many scenes have unique questions that use and quiz the taught vocabulary, even vocab from previous chapters - As players progress, they unlock some culture and grammar notes (which I had Claude generate and then fact-check against online sources) The development process (ongoing) involves me having Claude Opus 5.5 and GPT 6.1 Sol play through the chapters multiple times as a player in polishing passes, as well as feedback from me as I played through. I have currently only played completely through chapters 1 and 2, but there are 4 game chapters. The Korean lines were generated by Claude, not by native speakers, so there may be mistakes. Repo: https://github.com/Stan-Stani/jeomsim-bangsong Live Game: https://stan-stani.github.io/jeomsim-bangsong/ Comments URL: https://news.ycombinator.com/item?id=50060489 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50060489"
+    },
+    {
+      "id": "9aef64026351e3b56a7c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Portable Guided Reviews you can send as HTML",
+      "url": "https://guides.show",
+      "published_at": "2026-10-12T18:25:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Inspired by Linear's guided reviews feature, this is an open source alternative: https://github.com/backnotprop/plannotator video demo: https://plannotator.ai/assets/guided-review-demo.mp4 Comments URL: https://news.ycombinator.com/item?id=50060644 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50060644"
+    },
+    {
+      "id": "44d608a261999a569d00",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: BellRun: An Agentic Day Trading Game",
+      "url": "https://bellrun.com/menu/how-to-play",
+      "published_at": "2026-10-12T18:29:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://bellrun.com/menu/how-to-play Comments URL: https://news.ycombinator.com/item?id=50060696 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50060696"
+    },
+    {
+      "id": "b36d9ff65be6ba276afa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ramet – Persistent, forkable workspaces for AI agents",
+      "url": "https://github.com/shenli/ramet",
+      "published_at": "2026-10-12T19:28:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/shenli/ramet Comments URL: https://news.ycombinator.com/item?id=50061655 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50061655"
+    },
+    {
+      "id": "429b4b75743b3492f681",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Wordless – a social network where AI bots can only post in symbols",
+      "url": "https://wordless.one",
+      "published_at": "2026-10-12T20:05:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Show HN: Wordless – a social network where AI bots can only post in symbols I like watching bots on Moltbook, but a lot of what gets attention there is engagement bait, like agents announcing they've found religion. The bits I actually enjoyed were the odd ASCII art and cryptic messages, so I built a feed where that's the only option: no words, just emoji and symbols. Comments URL: https://news.ycombinator.com/item?id=50062217 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50062217"
+    },
+    {
+      "id": "44ff7acdc817eee12b42",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Vibecheck – merge gate that checks you understand your AI-written code",
+      "url": "https://github.com/bhurghundii/vibecheck.dev",
+      "published_at": "2026-10-12T21:13:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Good evening folks, I built Github merge gate which that checks whether developers understand their own code when they create a PR. I kept getting sent PRs to review where it was obvious the author had pasted the ticket into an LLM and called it a day. It's self-hosted (so you can use it in your enterprise environments or privately) It is BYOK (Anthropic) obviously. I have two demos in the pull requests here: https://github.com/bhurghundii/vibecheck.dev/pulls - you can see what Vibecheck does (it blocks a PR for clearly showing no attempt vs a PR which gets it right) I would love feedback, especially from anyone dealing with a similar problem. I do use it for my own projects a lot so expect improvements. Comments URL: https://news.ycombinator.com/item?id=50063154 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50063154"
+    },
+    {
+      "id": "c95afbb612fab7e0f757",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: 20 Questions with Jev",
+      "url": "https://thesecretsproject.com/20-questions",
+      "published_at": "2026-10-12T21:24:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://thesecretsproject.com/20-questions Comments URL: https://news.ycombinator.com/item?id=50063259 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50063259"
+    },
+    {
+      "id": "80720c464324c9c922a3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I ran the same founder dilemma through ChatGPT, Claude, and BAAB AI",
+      "url": "https://askbaab.com/blog/same-prompt-test-chatgpt-claude-baab-ai",
+      "published_at": "2026-10-12T23:16:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://askbaab.com/blog/same-prompt-test-chatgpt-claude-baab-ai Comments URL: https://news.ycombinator.com/item?id=50064398 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50064398"
+    },
+    {
+      "id": "2135bdca9e126521d2db",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: An experimental pattern-first DAW that supports MCP",
+      "url": "https://github.com/andrewfader/blokkily",
+      "published_at": "2026-10-12T23:21:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/andrewfader/blokkily Comments URL: https://news.ycombinator.com/item?id=50064438 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50064438"
+    },
+    {
+      "id": "3a32f6f8c831bffa6cca",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Indigene – native plants for where you stand",
+      "url": "https://indigene.app",
+      "published_at": "2026-10-12T23:25:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Back when I lived in Central Florida, it took me years to learn what native plants could benefit wildlife and the local ecosystem as I slowly replaced parts of my yard to make it more resilient to drought. After moving to Seattle a few years ago, I had to start all of that from scratch. LLMs made the process a bit easier but I still had to routinely ask the same kinds of questions over and over, despite being far more familiar with native plants these days and leaning more on native plant societies and botany resources like Doug Tallamy and Joey Santore whose excellent Crime Pays But Botany Doesn't site was recently posted here[1]. A good friend was visiting from Orlando over the summer and told me she was struggling to decide what to plant in her own yard despite her landlord being ok with it. That was enough of an excuse for me to kick off work on Indigene, which is aimed at giving folks just-in-time knowledge about what to plant based on their locale, sun exposure, soil conditions, and their own ecosystem support goals. Candidly, as many of us have, I've also leaned heavily on LLMs (mostly Claude here) to bring this to life. Largely to avoid saying demonstrably false things, which might be an absurd statement. You can find the GitHub repository[2] a wild array of open data sources I've dug out and cross-referenced to ensure mistakes and hallucinations are unlikely to survive for long. But given today's Indigenous Peoples Day I figured it was past time I shared the projects and invited more scrutiny. Being the Keep a Changelog guy, you can bet it has extensive release notes[3] generated from the project changelog. Those are also parsed into feature-specific guides so each also lists relevant recent updates. Lastly, I put together a post[5] that goes into a bit more detail on the story of the project and what I've learned along the way. I really, really hope people here (and beyond) find it as useful and enlightening as I do. PS: before it comes up, all the LLM usage for the project is documented[6] and used as warning system in every PR but I think there's a lot more I can do to further reduce it [1]: https://news.ycombinator.com/item?id=49192566 [2]: https://github.com/olivierlacan/indigene [3]: https://indigene.app/release-notes/ [4]: https://indigene.app/guide/ [5]: https://constantvariable.net/blog/2026/indigene-native-plant... [6]: https://indigene.app/llm/ Comments URL: https://news.ycombinator.com/item?id=50064470 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50064470"
+    },
+    {
+      "id": "305d4e23c18f99a8eb47",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Personal Agent Proxy (Open Source)",
+      "url": "https://github.com/personalagentproxy/proxy",
+      "published_at": "2026-10-12T23:30:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Every (personal) agent (like Muse, Instinct, Grokbot, Poke) asks you to connect your email, calendar, and tools again. Permissions are intransparent and every provider ends up building the same integrations. We think there needs to be an independent tool that holds all connections to third party companies. That way you can keep auth separate, audit what an agent does, set fine-grained permissions and easily switch between the agent apps. I built this over the last few days with my friend Konsti. It's open source and we’ve put a lot of care into the self-hosting experience. Now my Instinct has the same tools as Claude Code and Codex on my laptop. What are your thoughts about this and how are you handling this today? Comments URL: https://news.ycombinator.com/item?id=50064514 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50064514"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-12T15:25:50.067364+00:00",
+      "last_success": "2026-10-13T00:39:49.093828+00:00",
       "count": 10,
-      "earliest": "2026-10-07T15:46:17+00:00",
+      "earliest": "2026-10-07T20:12:18+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-12T15:25:50.161528+00:00",
+      "last_success": "2026-10-13T00:39:49.298231+00:00",
       "count": 20,
-      "earliest": "2026-10-06T13:30:00+00:00",
+      "earliest": "2026-10-06T14:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-12T15:25:50.251305+00:00",
+      "last_success": "2026-10-13T00:39:49.439155+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-12T15:25:50.411152+00:00",
+      "last_success": "2026-10-13T00:39:49.603341+00:00",
       "count": 30,
-      "earliest": "2026-10-01T06:29:01+00:00",
+      "earliest": "2026-10-02T22:57:38+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-12T15:25:58.128537+00:00",
+      "last_success": "2026-10-13T00:39:50.147000+00:00",
       "count": 100,
-      "earliest": "2026-10-11T19:02:04+00:00",
+      "earliest": "2026-10-12T10:42:44+00:00",
       "gap": false,
       "error": null
     },
@@ -41322,59 +41622,59 @@
       "count": 100,
       "earliest": "2026-10-09T19:34:45+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-12T15:26:01.697548+00:00",
+      "last_success": "2026-10-13T00:39:55.515696+00:00",
       "count": 10,
       "earliest": "2026-10-01T18:00:22+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-12T15:26:02.142783+00:00",
+      "last_success": "2026-10-13T00:39:55.942900+00:00",
       "count": 10,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-12T15:26:02.555953+00:00",
+      "last_success": "2026-10-13T00:39:56.377115+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-12T15:26:02.888011+00:00",
+      "last_success": "2026-10-13T00:39:56.746544+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-12T15:26:03.520898+00:00",
-      "count": 10,
-      "earliest": "2026-09-14T22:14:03+00:00",
+      "last_success": "2026-10-13T00:39:57.261762+00:00",
+      "count": 9,
+      "earliest": "2026-09-15T21:21:07+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-12T15:26:21.520175+00:00",
+      "last_success": "2026-10-13T00:40:19.996064+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-12T15:26:21.696545+00:00",
+      "last_success": "2026-10-13T00:40:20.155967+00:00",
       "count": 1287,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-12T15:26:28.956822+00:00",
+      "last_success": "2026-10-13T00:40:29.360700+00:00",
       "count": 5,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -41443,5 +41743,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-12T15:26:28.957205+00:00"
+  "collected_at": "2026-10-13T00:40:29.361109+00:00"
 }
