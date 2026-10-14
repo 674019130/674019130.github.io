@@ -43801,6 +43801,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50080450"
     },
     {
+      "id": "c4b4b215680ca75395a2",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "The EU’s next chapter in AI is agentic",
+      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "published_at": "2026-10-14T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+      "discussion_url": ""
+    },
+    {
       "id": "a1cc1845568c7695537f",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -43859,6 +43871,18 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://gemini.google.com/share/ac24e893cfcf Comments URL: https://news.ycombinator.com/item?id=50081095 Points: 5 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50081095"
+    },
+    {
+      "id": "c360970f2b8a850b2ba8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built a tool to track what AI leaders say and how their views change",
+      "url": "https://blumify.io/people",
+      "published_at": "2026-10-14T01:09:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blumify.io/people Comments URL: https://news.ycombinator.com/item?id=50081151 Points: 102 # Comments: 63",
+      "discussion_url": "https://news.ycombinator.com/item?id=50081151"
     },
     {
       "id": "01855f52ecdedf5e9a24",
@@ -43991,41 +44015,293 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://heyfabee.app/ Comments URL: https://news.ycombinator.com/item?id=50082451 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50082451"
+    },
+    {
+      "id": "a560effe3ba739360792",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agent-trials – a smoke-test runner for coding agent CLIs",
+      "url": "https://github.com/princejain756/agent-trials",
+      "published_at": "2026-10-14T06:10:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/princejain756/agent-trials Comments URL: https://news.ycombinator.com/item?id=50083067 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50083067"
+    },
+    {
+      "id": "1323cd34345ea3aa9587",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Enabling an AI-first European economy",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/european-economic-impact-report",
+      "published_at": "2026-10-14T07:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Announcing Google’s European Economic Impact Report",
+      "discussion_url": ""
+    },
+    {
+      "id": "538de6e0f1b828aca694",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sgrep; fast, accurate code search for agents",
+      "url": "https://github.com/context-dot-dev/sgrep",
+      "published_at": "2026-10-14T07:15:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/context-dot-dev/sgrep Comments URL: https://news.ycombinator.com/item?id=50083619 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50083619"
+    },
+    {
+      "id": "2d35b5f6d69f51600b4c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agent Identity – Identity and communication infrastructure for AI agent",
+      "url": "https://www.agent-identity.dev",
+      "published_at": "2026-10-14T07:20:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.agent-identity.dev/ Comments URL: https://news.ycombinator.com/item?id=50083670 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50083670"
+    },
+    {
+      "id": "79add56649282a73040d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ruleherd – audits agent instruction files for contradictions and drift",
+      "url": "https://github.com/princejain756/ruleherd",
+      "published_at": "2026-10-14T07:30:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/princejain756/ruleherd Comments URL: https://news.ycombinator.com/item?id=50083765 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50083765"
+    },
+    {
+      "id": "df8325807c2fcd7317f7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Recreating Gemini Argon 3D demo using ExtrudeAI and FreeCAD",
+      "url": "https://chat.extrudeai.com",
+      "published_at": "2026-10-14T07:35:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://chat.extrudeai.com/ Comments URL: https://news.ycombinator.com/item?id=50083808 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50083808"
+    },
+    {
+      "id": "9d70e3ee43efc212e719",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models",
+      "published_at": "2026-10-14T08:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Google DeepMind and Google Cloud are providing up to 200 top European scientific researchers with direct access to our frontier models, together with $3 million in compu…",
+      "discussion_url": ""
+    },
+    {
+      "id": "43ff30bb44b9f2f57c8a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Omnis Watchtower – a supply-chain tripwire for Claude Code agents",
+      "url": "https://github.com/Fortitude-Group/omnis-watchtower",
+      "published_at": "2026-10-14T08:30:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Fortitude-Group/omnis-watchtower Comments URL: https://news.ycombinator.com/item?id=50084271 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50084271"
+    },
+    {
+      "id": "9a5ff7871a9e8745c04f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Extending X402 for MoR fiat payments and budget attenuation",
+      "url": "https://github.com/mceleri/attenuated-agent-budgets",
+      "published_at": "2026-10-14T08:32:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/mceleri/attenuated-agent-budgets Comments URL: https://news.ycombinator.com/item?id=50084291 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50084291"
+    },
+    {
+      "id": "5c8acb5c3a5a8c81b539",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Chiplab - Give your AI agent access to virtual hardware",
+      "url": "https://veecle.ai/chiplab",
+      "published_at": "2026-10-14T08:43:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://veecle.ai/chiplab Comments URL: https://news.ycombinator.com/item?id=50084365 Points: 5 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50084365"
+    },
+    {
+      "id": "9734b2b4cb0e072fc817",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Shrine, a calm pixel room on your Mac for all your coding agents",
+      "url": "https://agentshrine.com",
+      "published_at": "2026-10-14T08:52:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agentshrine.com/ Comments URL: https://news.ycombinator.com/item?id=50084455 Points: 5 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50084455"
+    },
+    {
+      "id": "df0e6a841d19867383bc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Panelize – Ask ChatGPT, Claude, Gemini and DeepSeek Side by Side",
+      "url": "https://github.com/Manho/Panelize",
+      "published_at": "2026-10-14T08:56:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Manho/Panelize Comments URL: https://news.ycombinator.com/item?id=50084490 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50084490"
+    },
+    {
+      "id": "31e815243b4f30989dc2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI investment agreement review for startup founders",
+      "url": "https://www.orchardagentic.cloud",
+      "published_at": "2026-10-14T09:13:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! First, congrats to the founders who received a term sheet(and those who will!) I made an investment agreement review tool for founders who recently received a term sheet! You can review your term sheets, SAFEs, convertible notes, and financing agreements if your corporation is incorporated in Delaware, from pre-seed through Series A. It also reviews equity purchase agreements, investor rights, voting terms, and side letters. Try it and check your potential risks before signing! Comments URL: https://news.ycombinator.com/item?id=50084642 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50084642"
+    },
+    {
+      "id": "61f2f3cd907980d4420c",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "17 organizations using AI to accelerate scientific breakthroughs",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/impact-challenge-ai-science-recipients",
+      "published_at": "2026-10-14T09:30:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "These groups are receiving $36 million through the Google.org Impact Challenge: AI for Science.",
+      "discussion_url": ""
+    },
+    {
+      "id": "e36abd23ad5c8cd08801",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Graft – open-source source control for agent-scale monorepos",
+      "url": "https://github.com/VishiATChoudhary/graft",
+      "published_at": "2026-10-14T10:14:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/VishiATChoudhary/graft Comments URL: https://news.ycombinator.com/item?id=50085180 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50085180"
+    },
+    {
+      "id": "30048fb79d6c9d18346a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Building an LLM from Scratch in TypeScript",
+      "url": "https://book.humanexperiences.io",
+      "published_at": "2026-10-14T10:29:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted to understand transformers at a level where nothing is magic, so I'm building a ChatGPT-style model from first principles in TypeScript. Why not Python? I've found that reimplementing concepts in a different language forces me to grasp the nuance of the implementation. Chapters cover dataloaders, embeddings, and the attention mechanism so far. Feedback welcome if anything's unclear. Comments URL: https://news.ycombinator.com/item?id=50085332 Points: 14 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50085332"
+    },
+    {
+      "id": "dc6133b31b16eeb3780c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Mnemify – 3D terrain map merging Confluence, Notion, Obsidian",
+      "url": "https://github.com/mnemify-ai/mnemify",
+      "published_at": "2026-10-14T10:36:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "I have been working on documents for last 5 years. Recently I realized I was using Confluence to structure execution notes, Notion for thoughts during meetings, Obsidian for quick local notes, and then reading back notes from Googles note taking apps. My colleague had the exact same problem. We had MCP connected to Claude, but there was no way to bring all of that into one place that was intuitive. So we built Mnemify. Which converted all our notes from every app to a 3D traversable terrain instead. We’ve been using it daily for last two months and found it useful so decided to share it. What it does: it harvests your sources into a local folder, then using your AI subscriptions compiles them into a 3D terrain you can traverse. Regions and peaks come from context, so related things end up adjacent from all your connected apps. We also have chat over the compiled graph that cites the exact source passages. You can also view time wise how the terrain was modified over time and see all your note higlights and action items in workspaces. Everything stays on your machine. It never writes back to any source. Models are bring your own: OpenAI, Claude (your claude CLI or a subscription), or a fully offline mode with an on-device embedding model. Currently supported sources: Confluence, Notion, Obsidian and local files. Jira, Linear, Slack, Gmail and Google Meet notes are built and coming... Please try it out, would appreciate your feedback. Repo: https://github.com/mnemify-ai/mnemify Our Landing: https://mnemify.ai Comments URL: https://news.ycombinator.com/item?id=50085405 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50085405"
+    },
+    {
+      "id": "71f04c51d352c5ddfc88",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Decision Models in a Game",
+      "url": "https://news.ycombinator.com/item?id=50085535",
+      "published_at": "2026-10-14T10:49:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "i've heard a lot about jev lately and i wanted to understand what the interest of decision models is. so i made a little game to compare the cost and latency of OpenAI models including the decision one based on luna normally I have enough credits. i still set a limit of 50c/day/user it is live at https://juke.keff.uk Comments URL: https://news.ycombinator.com/item?id=50085535 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50085535"
+    },
+    {
+      "id": "d6b58882004f0fb42cf9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: What are vector embeddings? An interactive guide",
+      "url": "https://isaacus.com/blog/what-are-vector-embeddings",
+      "published_at": "2026-10-14T10:52:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I'm Abdur-Rahman Butler, a machine learning engineer at Isaacus. I made an interactive write-up that walks you through the A to Z of vector embeddings, inspired by Brendan Bycroft's incredible interactive LLM visualisation guide (see here - https://bbycroft.net/llm ). Most of my work is on encoder models, and I kept noticing how few good interactive resources there are on embeddings. The ones that do exist tend to either plot some embeddings in 3D or only explain a narrow applied technique like semantic search or RAG. So I wanted to make something that teaches how embeddings work by letting you play with them. In the write-up, there are interactive visualisations that allow you to explore the concepts of vectorisation, cosine similarity, semantic search, hierarchical retrieval, clustering, zero-shot classification and deduplication. The centrepiece of the post is a game I've dubbed 'SemanticGeussr'. It's inspired by Wordle and GeoGuessr, and the goal is to draw a loop around a random target word by triangulating guesses on a 2D map of 43,339 common English words. It's admittedly a bit intimidating at first, as semantic space does not perfectly match our intuition of meaning. But once you get the hang of it, the game becomes really addictive. I recently had the pleasure of demoing the game to some law students at the University of Melbourne, and we had a lot of fun throwing different vector equations at it to see where they'd land. Some fun ones to get started with: london - english + french running - land + water avg(breakfast, lunch, dinner) 0.4 * noodles + 0.6 * pasta Although the post uses our embedding model, Kanon 2 Embedder, everything is pre-embedded so it all runs statically in your browser. We reduced the dimensions and quantised the vectors to shrink the whole vocabulary from about 311 MB down to 12.3 MB. I've also included Python snippets alongside some of the visualisations if you want to follow along with the techniques later. It was great fun to make and I hope you have fun playing around with it. Happy to take any questions, and if there's enough interest I might set up a dedicated games page for some of the other encoder-based games I've been working on. Do let me know what highest score you get based on your target word and chosen path :) Comments URL: https://news.ycombinator.com/item?id=50085561 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50085561"
+    },
+    {
+      "id": "e59e2689acb3ae07334f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Kryzz AI – local-first Android agent workspace (MIT)",
+      "url": "https://github.com/kriddss3/kryzz-ai",
+      "published_at": "2026-10-14T10:56:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/kriddss3/kryzz-ai Comments URL: https://news.ycombinator.com/item?id=50085614 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50085614"
+    },
+    {
+      "id": "05f6c7f9d05f43dcbf38",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: boostmyagents – A README badge lets your users pay for your AI usage",
+      "url": "https://boostmyagents.com",
+      "published_at": "2026-10-14T11:19:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://boostmyagents.com/ Comments URL: https://news.ycombinator.com/item?id=50085877 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50085877"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-14T04:54:08.162456+00:00",
+      "last_success": "2026-10-14T11:52:18.516764+00:00",
       "count": 10,
       "earliest": "2026-10-12T16:30:11+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-14T04:54:08.360964+00:00",
+      "last_success": "2026-10-14T11:52:18.824083+00:00",
       "count": 20,
-      "earliest": "2026-10-08T12:00:00+00:00",
+      "earliest": "2026-10-08T15:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-14T04:54:08.577015+00:00",
+      "last_success": "2026-10-14T11:52:19.073871+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-14T04:54:08.800887+00:00",
+      "last_success": "2026-10-14T11:52:19.185112+00:00",
       "count": 30,
       "earliest": "2026-10-06T18:20:58+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-14T04:54:09.576087+00:00",
+      "last_success": "2026-10-14T11:52:19.601516+00:00",
       "count": 100,
-      "earliest": "2026-10-13T14:46:51+00:00",
+      "earliest": "2026-10-13T17:50:50+00:00",
       "gap": false,
       "error": null
     },
@@ -44034,59 +44310,59 @@
       "count": 100,
       "earliest": "2026-10-12T13:21:48+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-14T04:54:11.556674+00:00",
+      "last_success": "2026-10-14T11:52:29.594914+00:00",
       "count": 10,
       "earliest": "2026-10-02T20:19:57+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-14T04:54:12.777286+00:00",
+      "last_success": "2026-10-14T11:52:30.981077+00:00",
       "count": 20,
       "earliest": "2026-09-30T02:32:48+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-14T04:54:13.416303+00:00",
+      "last_success": "2026-10-14T11:52:31.716050+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-14T04:54:13.927720+00:00",
+      "last_success": "2026-10-14T11:52:32.243618+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-14T04:54:14.747027+00:00",
+      "last_success": "2026-10-14T11:52:33.084872+00:00",
       "count": 10,
       "earliest": "2026-09-15T21:21:07+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-14T04:54:49.284747+00:00",
+      "last_success": "2026-10-14T11:53:09.122554+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-14T04:54:49.488182+00:00",
-      "count": 1288,
+      "last_success": "2026-10-14T11:53:09.314309+00:00",
+      "count": 1289,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-14T04:55:03.599643+00:00",
+      "last_success": "2026-10-14T11:53:23.852805+00:00",
       "count": 5,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -44155,5 +44431,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-14T04:55:03.600037+00:00"
+  "collected_at": "2026-10-14T11:53:23.853181+00:00"
 }
