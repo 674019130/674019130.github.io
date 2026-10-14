@@ -45251,41 +45251,269 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/IshekKhal/bitrun Comments URL: https://news.ycombinator.com/item?id=50090994 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50090994"
+    },
+    {
+      "id": "75587ad0bdbd4dbcdaa3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: botsay – cowsay for the AI Era",
+      "url": "https://github.com/maebert/botsay",
+      "published_at": "2026-10-14T17:16:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Does this need to exist? Probably not. Does it add whimsy to the sterile, cold terminal environment that has become our chosen home? Well maybe. Comments URL: https://news.ycombinator.com/item?id=50091196 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091196"
+    },
+    {
+      "id": "4f409d90e263d6e9ff32",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Model Atlas – An LLM leaderboard you can reweight",
+      "url": "https://philippdubach.com/model-atlas",
+      "published_at": "2026-10-14T17:24:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://philippdubach.com/model-atlas/ Comments URL: https://news.ycombinator.com/item?id=50091376 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091376"
+    },
+    {
+      "id": "5753b7a22725d0d10f8f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Library for building synthetic agent environments [MIT]",
+      "url": "https://kiln.tech/blog/introducing_seahaven",
+      "published_at": "2026-10-14T17:35:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kiln.tech/blog/introducing_seahaven Comments URL: https://news.ycombinator.com/item?id=50091594 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091594"
+    },
+    {
+      "id": "c0de86a5c9009bcf1627",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A webcomic for AI agents, written and drawn by Claude",
+      "url": "https://stop-sequence.com",
+      "published_at": "2026-10-14T17:35:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://stop-sequence.com/ Comments URL: https://news.ycombinator.com/item?id=50091610 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091610"
+    },
+    {
+      "id": "38300fa49cc2ad837d6b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Logistic regression beats billion-parameter models at classification",
+      "url": "https://jeffyclassify.com/benchmark",
+      "published_at": "2026-10-14T17:49:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jeffyclassify.com/benchmark/ Comments URL: https://news.ycombinator.com/item?id=50091856 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091856"
+    },
+    {
+      "id": "331461b3d9715e63ff14",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Golang DL/ML primitives with inference, diffusion, vision, systemone",
+      "url": "https://github.com/computerex/dlgo",
+      "published_at": "2026-10-14T17:53:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "I created a DL inference engine that slowly grew to have more and functionality. - Inference for a bunch of open weights architectures - Diffusion image generation fir Z ai turbo - Vision input into LLM for inference - Vulkan/fast CPU, optimized kernels - Playground for testing - Last but not least, system one fast inference mode with same API semantics as Jev It's MIT, so go nuts Comments URL: https://news.ycombinator.com/item?id=50091939 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091939"
+    },
+    {
+      "id": "c039fedac684d9cbdbe1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Collaborative money tracker, E2E encryption, MCP",
+      "url": "https://finance.rivaire.pro/demo",
+      "published_at": "2026-10-14T18:06:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm Andrei. I built a money tracker for myself with everything I ever wanted from one. What was important for me is wallets in different currencies (I travel a lot), planning future payments, seeing what balances would look like at certain date in the future and having external API and MCP. I had plans of maybe making it public one day so I decided to encrypt amounts and balances to stand out from gazillion of other trackers, then I kept adding more stuff like semantic search, charts, shared wallets for collaboration, passkey-only sign in and so on. It's a web app, I use it as PWA and it works fine for now. Native mobile apps are worth making only if there is demand, so current stack is Nextjs, Hono, Postgres, a VPS and Cloudflare. I'd love feedback, especially on encryption and collaboration part and what would make you switch from your current tracker. Comments URL: https://news.ycombinator.com/item?id=50092178 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50092178"
+    },
+    {
+      "id": "7edea5ff95924e136451",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.300",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300",
+      "published_at": "2026-10-14T18:24:25+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `virtualText` to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt - Added `cache_creation_5m_tokens` and `cache_creation_1h_tokens` to the OpenTelemetry `api_request` event, splitting cache writes by lifetime - Added `$.ui.view({ agentId })` for mods: shows an agent's transcript in the main view when you ask, and `$.ui.view({})` goes back - Added a `dir` prop on a mod's `Text` for right-to-left text: on Windows and in VS Code's terminal its rows read in that direction and sit flush right - Added `/advisor` on Claude Platform on AWS; no advisor runs until you pick one with `/advisor`, `advisorModel` or `--advisor`, and `CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1` turns it off - Added OpenTelemetry GenAI semantic-convention attributes to trace spans, such as `gen_ai.provider.name`, `gen_ai.conversation.id`, `gen_ai.tool.name` and `error.type` - Added support for rewriting a workflow agent's `prompt` and `model` in the `agent.spawn` mod hook, which could only refuse workflow agents before - Added the `prompt.change` mod hook, raised when the prompt box's text changes without a typed edit: a recalled history entry, a clear, an undo, or a plugin's fill - Fixed cloud sessions telling Claude that an organization policy blocked a host when the session's own network settings did - Fixed `/autocompact` warning about high token usage when you choose a smaller auto-compact window - Fixed SessionEnd hooks sometimes not running when you exit while a background command is still running - Fixed `claude --help` naming a removed tool in its description of `--restricted` - Fixed `claude agents` not refreshing any pull request's status when the data for one of them came back incomplete - Fixed Claude being told a background agent was lost, not resumable, after a cloud session's container was replaced, when the agent had already been resumed once - Fixed subagents you had typed messages to disappearing from `/tasks` shortly after finishing, leaving no way back to the conversation - Fixed a completed parent agent dropping off the breadcrumb (its child shown re-rooted at top level) while you were viewing the child - Fixed the agents view taking a typed word such as \"up\", \"down\" or \"escape\" for that key when input arrived in a burst, which could move the peek mid-reply or clear a draft - Fixed automatic tool search (`ENABLE_TOOL_SEARCH=auto`) turning off part-way through a conversation, for example while MCP servers reconnect after a resume - Fixed a login refused by `forceLoginOrgUUID` leaving the refused organization's token stored, or live after `/login` - Fixed the diff view in Claude Desktop and Remote Control sessions not noticing a conflicted cherry-pick or revert in reftable repositories - Fixed the Artifact tool's verbose and ctrl+o line reading `Artifact(\"(unprintable path)\")` while a call's input arrives; its row now shows \"Waiting…\" and \"Running…\" as Bash's does - Fixed the first transcript entry written after resuming a session being lost when a crash had cut the transcript's last line short - Fixed `/branch` dropping messages, and `claude purge` skipping subfolder projects, when they contain a Unicode line or paragraph separator (U+2028, U+2029) - Fixed plugin `WorktreeCreate` and `WorktreeRemove` hooks not running when Claude Code starts with `--worktree` (not yet with `--tmux`) - Fixed OpenTelemetry `tool_result` events missing `git_commit_id` after `git commit -q` in repositories using reftable ref storage - Fixed a prompt that a mod's `prompt.submit` hook rewrote or dropped still being recorded as typed in the OpenTelemetry `user_prompt` event and interaction span, and in session title requests - Fixed a note meant for Claude about mod hot-reloading appearing in the transcript as if you had typed it - Fixed agent hooks ignoring their `model`: aliases like `haiku` now resolve, a subagent's model no longer overrides it, and an unavailable model falls back to",
+      "discussion_url": ""
+    },
+    {
+      "id": "cfdb15571547bb58a24a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Nerudo, building a new way to work on changes concurrently",
+      "url": "https://nerudo.dev",
+      "published_at": "2026-10-14T18:30:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Had fun designing something for the Cloudflare's next Git competition. Here's my take if you want to check it out. https://nerudo.dev/ - Signed delegations with Ed25519 allowances with expiration and binding to the current rules. - Batch integration: the sequencer groups changes with non-overlapping write footprints, validates their combined state, and atomically advances trunk. - Failure isolation: the native sequencer recursively bisects failed batches, rejecting failing changes while landing passing subsets. Also having Jev to assess how much human attention a change needs before merging Full demo available on Linkedin post: https://lnkd.in/p/gmQEs2QA https://www.cloudflare.com/git-competition/ Comments URL: https://news.ycombinator.com/item?id=50092604 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50092604"
+    },
+    {
+      "id": "a46c7c1e5cac31fc1837",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Eevo – Consequential Decision Model",
+      "url": "https://www.uprightproject.com/eevo",
+      "published_at": "2026-10-14T18:52:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm Juho from Upright. I think we may have stumbled upon an interesting approach to AI alignment. The idea is as follows: 1. train a decision model to be really good at comparative sizing of consequences, expected value problems, and modelling overlap between different consequences 2. create a harness around that model that accepts a decision context, list of options, and identified consequences, then runs pairwise comparisons and overlap modelling for the consequences using the decision model in (1), and finally solves implied relative consequences \"sizes\" and finally EV (for different stakeholders) 3. Make AI agents running on general purpose LLMs use (2) to make better decisions. So the agent provides the context, options, and identifies the consequences, Eevo model just sizes them, models their overlap, and computes EV. In practice this seems to improve agent judgement a lot (in addition to adding lots of practical observability) It seems the (well-motivated) emphasis on instruction-following hurts model's performance on expected value tasks. The underlying decision model we trained beats Jev, Clef, MS decision-1 the model on OpenAI decisions API on economic rationality benchmarks like STEEP, expected value tasks, poker, and even Pacman (Jevman benchmark). I swear to you we did not Benchmaxx on Pacman Also it seems to be useful also for human decisions. Just getting other people's decisions presented to you in standard format with consequences listed and sized is just very pleasant. There are some testers though who think this is useful for improving everyone's judgement, except their own Comments URL: https://news.ycombinator.com/item?id=50093003 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50093003"
+    },
+    {
+      "id": "7ab2b75b781fc8060d1f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Run AI-generated logic safely inside your app",
+      "url": "https://stof.dev",
+      "published_at": "2026-10-14T19:18:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Stof is an open-source runtime for logic you don't own or fully trust. Imagine a JSON document with functions inside, scoped to just the document that contains them. Stof instantiates this doc as a small wasm env, and makes these functions safe to call. They can't access or manipulate anything but their own doc. WebAssembly by itself is large in binary form, requires a lot of tooling, etc. Stof can be sent over the wire easily, is a superset of JSON for compatibility, and keeps the guarantees. I created Stof not to replace a data format or anything, but to be a glue layer for data and distributed systems to work with one another. This includes I/O for interchange data like JSON, YAML, TOML, etc., but also complex data like PDFs, images, binaries, both structured and unstructured (good layer to turn one into the other). The fact is, the layer of data and communication between apps tends to be a bit messy, and strict adapters compiled at build time tend to be insufficient for the dynamism of modern software. This applies directly to AI-generated data and code, which is basically like calling into another untrusted service. With this, you can safely embed the execution, pick where things run, and combine harnesses like data. Works well as a \"living\" context, also with the JSON interop - just parse into or stringify sections of the Stof doc at runtime when needed, like agent tool defs. The playground on the site runs entirely in your browser. Stof is written in Rust and has support for JS/TS and Python today. I'd especially like feedback on whether the idea makes sense from the landing page, and where the docs need help. GitHub: https://github.com/dev-formata-io/stof Thank you!! -CJ Comments URL: https://news.ycombinator.com/item?id=50093435 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50093435"
+    },
+    {
+      "id": "c1ca8a5b896302fa213d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Interview Index – which companies allow AI in coding interviews",
+      "url": "https://aiinterviewindex.com",
+      "published_at": "2026-10-14T19:35:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://aiinterviewindex.com Comments URL: https://news.ycombinator.com/item?id=50093749 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50093749"
+    },
+    {
+      "id": "a23234079cb2b7900d4f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Dub Anything – Dub videos in each actor's own voice",
+      "url": "https://github.com/swax/dub-anything",
+      "published_at": "2026-10-14T19:49:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "There are many movies and shows out there with neither subtitles or dubs in English (or any other language). Pretty much impossible to watch. With SOTA AI now directing the process, you can do it locally on your machine. You basically just clone the repo, open up Codex or Claude and tell it to dub the video you want in the language you want. The repo contains all the scripts and guidance I've developed over the past few weeks to create dubs that are watchable, as an added bonus the voices in the dub are the actors own voices which is really nice. Also it's self improving, each dub may modify the scripts for better fidelity. So feel free to push them back to the repo so everyone benefits. Thanks. Comments URL: https://news.ycombinator.com/item?id=50094005 Points: 4 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50094005"
+    },
+    {
+      "id": "5181509ec3a9b83b5e07",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: OSS AI engineering telemetry without collecting prompts or code",
+      "url": "https://github.com/ascendaone-com/ai-engineer-tools",
+      "published_at": "2026-10-14T19:51:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ascendaone-com/ai-engineer-tools Comments URL: https://news.ycombinator.com/item?id=50094034 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50094034"
+    },
+    {
+      "id": "2530ea68e73b463c44e1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Checkobot – Detect Deepfakes and AI Images",
+      "url": "https://checkobot.ai",
+      "published_at": "2026-10-14T19:52:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello HN, I am Kartikeya & we are building the best AI Slop Detector - Checkobot. Current AI Image Detectors are functionally jagged. Some are not able to detect deepfakes, some fail on the latest flux models. Some have an unacceptable false flag rate on genuine images. We have been solving the deepfake detection problem at our parent company - SpoofSense.ai for a while now & we wanted to train a general purpose AI Image Detector that actually works. Checkobot does 3 things: 1.Full Image Model - Detect for AI generator signals in the entire image. 2. Face Specialist - Focuses only on the face to spot face-swaps, edits. 3. C2PA - Checks if the file has signed Content Credentials that record AI generation or editing. Free checks are processed in memory and not stored; we keep the SHA-256 and the verdict. 3 free checks a day. I'd like to hear where it gets things wrong, especially images it misses or flags unfairly. Comments URL: https://news.ycombinator.com/item?id=50094049 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50094049"
+    },
+    {
+      "id": "2e2596e95db5a0d24b4e",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "HydraFusion updates and new Max option",
+      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "published_at": "2026-10-14T20:01:35+00:00",
+      "date_kind": "source_publication",
+      "evidence": "HydraFusion has an updated model pool, improved orchestration workflows, and introduces HydraFusion Max. Both HydraFusion and HydraFusion Max are available across VS Code, the GitHub Copilot app, and GitHub Copilot CLI and remain in research preview. HydraFusion orchestrates multiple models to produce a single response, bringing together their strengths so you don’t have to choose an individual model for each task. What’s new in HydraFusion Latest frontier models: HydraFusion and HydraFusion Max draw from a pool that now includes Claude Opus 5.5, GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna. The models used for each task vary based on the orchestration workflow. Reasoning effort tailored to each step: Previously, HydraFusion only used each model’s default reasoning effort. With this update, it explicitly tailors effort to each stage, using medium effort for initial drafts and high effort for review. This keeps drafting efficient while dedicating deeper reasoning to checking and improving the work. Optimized Cascade and Critique workflows: Cascade: Previously used an initial model to solve the task, with escalation to a stronger model when needed. It can now include a judging step that inspects the initial work and requests a repair only when needed. Critique: Previously relied heavily on text summaries. It now relies more on tools to inspect the actual workspace directly. Critique now also uses parallel critic models to inspect work. Introducing HydraFusion Max HydraFusion Max is built on the same architecture and uses the same workflow techniques as HydraFusion, but is tuned for frontier capability on more demanding tasks. It applies higher reasoning efforts where depth and thoroughness matter most, while still using orchestration to consider token efficiency. Option Description Typical use case HydraFusion Balanced approach with moderate token savings. Agentic tasks that require a balance of speed, cost, and performance. HydraFusion Max Frontier capability for more demanding tasks, with token efficiency considered through orchestration. Tasks requiring the deepest possible reasoning and most thorough analysis. Both options are supported across all three clients, so you can access the latest HydraFusion experience whether you work in VS Code, the GitHub Copilot app, or the terminal. HydraFusion and HydraFusion Max are available on Copilot Pro, Pro+, Business, and Enterprise plans with experimental or preview features enabled, subject to your organization’s model policies. Learn more in the HydraFusion documentation . Share your feedback in the HydraFusion discussion . The post HydraFusion updates and new Max option appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "a51f9cddc1d90947d857",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Beaniebrand – Easy way to create a cute logo for your product",
+      "url": "https://beaniebrand.com",
+      "published_at": "2026-10-14T20:04:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm Jayanth. Beaniebrand helps you generate a cute logo + interactive mascot for your brand/product/company. You describe your product, and it generates 4 different logo + mascot combinations to choose from. You can then describe changes in plain english. Once you find one you like, you get a downloadable kit with: - SVG and PNG logos, icons, and favicons in multiple sizes and colors - An animated React mascot with multiple expressions that can react to what's happening in your app (think Clippy!) - An agent skill so your coding agent knows how to add the kit to your app and use it You can see our own mascot guiding you around the homepage too :) The problem: As I built and shipped apps of various kinds, I noticed I'd get stuck trying to find a logo that I liked. I'd go back and forth with Claude/Codex or try using tools like Looka. Then came the SVGs, different icon sizes, color variations, favicons, and so on. Would love feedback! It takes a few minutes to generate the options but the wait is worth it :) Comments URL: https://news.ycombinator.com/item?id=50094265 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50094265"
+    },
+    {
+      "id": "a6a2a62ecce48b8b918e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PTD – one-click timer plus agent token costs, per task",
+      "url": "https://github.com/danimoya/ptd",
+      "published_at": "2026-10-14T20:58:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/danimoya/ptd Comments URL: https://news.ycombinator.com/item?id=50095134 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50095134"
+    },
+    {
+      "id": "5363e087351f9f36d618",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A Claude skill that answers B2B marketing questions from one method",
+      "url": "https://github.com/zachbrown29/lintel-marketing-playbooks",
+      "published_at": "2026-10-14T21:25:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/zachbrown29/lintel-marketing-playbooks Comments URL: https://news.ycombinator.com/item?id=50095555 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50095555"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-14T17:10:34.093379+00:00",
+      "last_success": "2026-10-14T21:41:34.678767+00:00",
       "count": 10,
-      "earliest": "2026-10-12T22:38:00+00:00",
+      "earliest": "2026-10-13T12:03:17+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-14T17:10:34.234399+00:00",
+      "last_success": "2026-10-14T21:41:34.899380+00:00",
       "count": 20,
       "earliest": "2026-10-12T13:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-14T17:10:34.321526+00:00",
+      "last_success": "2026-10-14T21:41:35.031908+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-14T17:10:34.406776+00:00",
+      "last_success": "2026-10-14T21:41:35.119396+00:00",
       "count": 30,
       "earliest": "2026-10-06T19:07:31+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-14T17:10:36.935005+00:00",
+      "last_success": "2026-10-14T21:41:35.409644+00:00",
       "count": 100,
-      "earliest": "2026-10-14T06:56:09+00:00",
+      "earliest": "2026-10-14T10:57:04+00:00",
       "gap": false,
       "error": null
     },
@@ -45294,59 +45522,59 @@
       "count": 100,
       "earliest": "2026-10-13T12:08:53+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-14T17:10:42.925184+00:00",
+      "last_success": "2026-10-14T21:41:41.812939+00:00",
       "count": 10,
-      "earliest": "2026-10-02T20:19:57+00:00",
+      "earliest": "2026-10-03T23:07:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-14T17:10:43.694724+00:00",
+      "last_success": "2026-10-14T21:41:42.613044+00:00",
       "count": 20,
       "earliest": "2026-09-30T02:32:48+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-14T17:10:44.076830+00:00",
+      "last_success": "2026-10-14T21:41:42.991731+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-14T17:10:44.400674+00:00",
+      "last_success": "2026-10-14T21:41:43.297216+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-14T17:10:44.959905+00:00",
-      "count": 10,
-      "earliest": "2026-09-15T21:21:07+00:00",
+      "last_success": "2026-10-14T21:41:44.130328+00:00",
+      "count": 9,
+      "earliest": "2026-09-19T00:02:57+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-14T17:11:07.041171+00:00",
+      "last_success": "2026-10-14T21:42:03.098224+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-14T17:11:07.279045+00:00",
-      "count": 1291,
+      "last_success": "2026-10-14T21:42:03.249160+00:00",
+      "count": 1292,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-14T17:11:15.615101+00:00",
+      "last_success": "2026-10-14T21:42:11.225461+00:00",
       "count": 5,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -45415,5 +45643,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-14T17:11:15.615508+00:00"
+  "collected_at": "2026-10-14T21:42:11.225938+00:00"
 }
