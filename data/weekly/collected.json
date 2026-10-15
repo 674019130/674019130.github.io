@@ -44077,6 +44077,18 @@
       "discussion_url": ""
     },
     {
+      "id": "bb7b9c49a7fbbe3904f6",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "url": "https://openai.com/index/block-ai-powered-security",
+      "published_at": "2026-10-14T07:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
+      "discussion_url": ""
+    },
+    {
       "id": "538de6e0f1b828aca694",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -45169,6 +45181,18 @@
       "discussion_url": ""
     },
     {
+      "id": "101b8d67ef69cc4235d2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Why do LLM pelicans look like this?",
+      "url": "https://arcfu.com/post/the-emperor-pelican-has-no-clothes",
+      "published_at": "2026-10-14T16:33:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arcfu.com/post/the-emperor-pelican-has-no-clothes/ Comments URL: https://news.ycombinator.com/item?id=50090443 Points: 155 # Comments: 134",
+      "discussion_url": "https://news.ycombinator.com/item?id=50090443"
+    },
+    {
       "id": "4191b5475925a4ed8617",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -45277,9 +45301,33 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50091376"
     },
     {
+      "id": "2c1eddd417b548672603",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Model Atlas – An LLM leaderboard you can reweight",
+      "url": "https://philippdubach.com/model-atlas",
+      "published_at": "2026-10-14T17:24:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://philippdubach.com/model-atlas/ Comments URL: https://news.ycombinator.com/item?id=50091376 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091376"
+    },
+    {
       "id": "5753b7a22725d0d10f8f",
       "source": "hn-show",
       "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Library for building synthetic agent environments [MIT]",
+      "url": "https://kiln.tech/blog/introducing_seahaven",
+      "published_at": "2026-10-14T17:35:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kiln.tech/blog/introducing_seahaven Comments URL: https://news.ycombinator.com/item?id=50091594 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091594"
+    },
+    {
+      "id": "07931df5069d97d21b1f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
       "category": "discovery",
       "title": "Show HN: Library for building synthetic agent environments [MIT]",
       "url": "https://kiln.tech/blog/introducing_seahaven",
@@ -45301,6 +45349,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50091610"
     },
     {
+      "id": "e33372f64cd2682d3835",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The fastest database an agent ever built stored nothing",
+      "url": "https://www.motivenotes.ai/p/correct-isnt-admissible",
+      "published_at": "2026-10-14T17:39:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.motivenotes.ai/p/correct-isnt-admissible Comments URL: https://news.ycombinator.com/item?id=50091674 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091674"
+    },
+    {
+      "id": "39573d1685d88f051959",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Neckbeard – A DevOps/platform/SRE plugin for your agent",
+      "url": "https://github.com/bealesh/neckbeard",
+      "published_at": "2026-10-14T17:45:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/bealesh/neckbeard Comments URL: https://news.ycombinator.com/item?id=50091794 Points: 64 # Comments: 49",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091794"
+    },
+    {
       "id": "38300fa49cc2ad837d6b",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -45311,6 +45383,18 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://jeffyclassify.com/benchmark/ Comments URL: https://news.ycombinator.com/item?id=50091856 Points: 2 # Comments: 2",
       "discussion_url": "https://news.ycombinator.com/item?id=50091856"
+    },
+    {
+      "id": "d06b5479d7a04b66afe2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How to build a code review agent",
+      "url": "https://www.greptile.com/blog/how-to-build-a-code-review-agent",
+      "published_at": "2026-10-14T17:52:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.greptile.com/blog/how-to-build-a-code-review-agent Comments URL: https://news.ycombinator.com/item?id=50091917 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50091917"
     },
     {
       "id": "331461b3d9715e63ff14",
@@ -45361,6 +45445,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50092604"
     },
     {
+      "id": "8629a85b867906ad5f52",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "SurrealDB Agent Memory: 77% on Beam, Alternative to Mem0 / Honcho / Cognee",
+      "url": "https://surrealdb.com/agent-memory",
+      "published_at": "2026-10-14T18:49:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://surrealdb.com/agent-memory Comments URL: https://news.ycombinator.com/item?id=50092941 Points: 7 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50092941"
+    },
+    {
       "id": "a46c7c1e5cac31fc1837",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -45371,6 +45467,18 @@
       "date_kind": "community_post",
       "evidence": "Hi HN, I'm Juho from Upright. I think we may have stumbled upon an interesting approach to AI alignment. The idea is as follows: 1. train a decision model to be really good at comparative sizing of consequences, expected value problems, and modelling overlap between different consequences 2. create a harness around that model that accepts a decision context, list of options, and identified consequences, then runs pairwise comparisons and overlap modelling for the consequences using the decision model in (1), and finally solves implied relative consequences \"sizes\" and finally EV (for different stakeholders) 3. Make AI agents running on general purpose LLMs use (2) to make better decisions. So the agent provides the context, options, and identifies the consequences, Eevo model just sizes them, models their overlap, and computes EV. In practice this seems to improve agent judgement a lot (in addition to adding lots of practical observability) It seems the (well-motivated) emphasis on instruction-following hurts model's performance on expected value tasks. The underlying decision model we trained beats Jev, Clef, MS decision-1 the model on OpenAI decisions API on economic rationality benchmarks like STEEP, expected value tasks, poker, and even Pacman (Jevman benchmark). I swear to you we did not Benchmaxx on Pacman Also it seems to be useful also for human decisions. Just getting other people's decisions presented to you in standard format with consequences listed and sized is just very pleasant. There are some testers though who think this is useful for improving everyone's judgement, except their own Comments URL: https://news.ycombinator.com/item?id=50093003 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50093003"
+    },
+    {
+      "id": "81915a79670218764464",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Coding agent can now ask Bluebox about production",
+      "url": "https://blog.bluebox.ai/your-coding-agent-can-now-ask-bluebox",
+      "published_at": "2026-10-14T19:10:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blog.bluebox.ai/your-coding-agent-can-now-ask-bluebox/ Comments URL: https://news.ycombinator.com/item?id=50093285 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50093285"
     },
     {
       "id": "7ab2b75b781fc8060d1f",
@@ -45385,6 +45493,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50093435"
     },
     {
+      "id": "3d23361f4d39f4cd98dd",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Can Coding Agents Act Like Staff Engineers?",
+      "url": "https://twitter.com/HelloSurgeAI/status/2110116853406367853",
+      "published_at": "2026-10-14T19:23:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/HelloSurgeAI/status/2110116853406367853 Comments URL: https://news.ycombinator.com/item?id=50093519 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50093519"
+    },
+    {
       "id": "c1ca8a5b896302fa213d",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -45395,6 +45515,30 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://aiinterviewindex.com Comments URL: https://news.ycombinator.com/item?id=50093749 Points: 1 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=50093749"
+    },
+    {
+      "id": "20074ddb64f7d80870c8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: AI Interview Index – which companies allow AI in coding interviews",
+      "url": "https://aiinterviewindex.com",
+      "published_at": "2026-10-14T19:35:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://aiinterviewindex.com Comments URL: https://news.ycombinator.com/item?id=50093749 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50093749"
+    },
+    {
+      "id": "698ca17487d1e2493a64",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How to Instrument a Multi-Agent System for Complete Causal Lineage",
+      "url": "https://medium.com/@MirArshadTalpur/how-to-instrument-a-multi-agent-system-for-complete-causal-lineage-e75d61150f9b",
+      "published_at": "2026-10-14T19:38:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://medium.com/@MirArshadTalpur/how-to-instrument-a-multi-agent-system-for-complete-causal-lineage-e75d61150f9b Comments URL: https://news.ycombinator.com/item?id=50093801 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50093801"
     },
     {
       "id": "a23234079cb2b7900d4f",
@@ -45433,6 +45577,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50094049"
     },
     {
+      "id": "703cf6c5f3a46f043f1c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM vs. Decision models like Jev and use-cases",
+      "url": "https://grigio.org/llm-vs-decision-models-like-jev-and-use-cases",
+      "published_at": "2026-10-14T19:55:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://grigio.org/llm-vs-decision-models-like-jev-and-use-cases/ Comments URL: https://news.ycombinator.com/item?id=50094103 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50094103"
+    },
+    {
       "id": "2e2596e95db5a0d24b4e",
       "source": "github",
       "publisher": "GitHub Changelog",
@@ -45457,6 +45613,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50094265"
     },
     {
+      "id": "9c096066bab7ce7e8785",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Scientists make contact with an uncontrolled agent swarm",
+      "url": "https://swarmcha.se/posts/chinese-agent-fleet-full-report",
+      "published_at": "2026-10-14T20:32:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://swarmcha.se/posts/chinese-agent-fleet-full-report Comments URL: https://news.ycombinator.com/item?id=50094726 Points: 7 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50094726"
+    },
+    {
       "id": "a6a2a62ecce48b8b918e",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -45469,6 +45637,42 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50095134"
     },
     {
+      "id": "4e4523f78fee92727f1f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: PTD – one-click timer plus agent token costs, per task",
+      "url": "https://github.com/danimoya/ptd",
+      "published_at": "2026-10-14T20:58:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/danimoya/ptd Comments URL: https://news.ycombinator.com/item?id=50095134 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50095134"
+    },
+    {
+      "id": "11b008ba2401665c26af",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Tell HN: Don't mass spam employers with LLM generated emails",
+      "url": "https://news.ycombinator.com/item?id=50095323",
+      "published_at": "2026-10-14T21:09:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "If you're looking for a job, do -not- have Claude bulk email every company on \"Who's Hiring\". These things all look the same and your message is just going to get marked spam. For example, it's painfully obvious that our staff eng role's \"combination of distributed execution, workload optimization, and cost-aware infrastructure\" is not, in fact, \"unusually close\" to whatever line on your resume Claude decided is tangentially relevant. Just write a normal email by hand and send it. If you it looks like you spent 5 minutes looking up what we do and are actually excited I'll at least look at your resume; if you spent 0 minutes thinking about the job posting I'm going to spend 0 minutes on this too. Comments URL: https://news.ycombinator.com/item?id=50095323 Points: 5 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50095323"
+    },
+    {
+      "id": "464df9ee36ec66e056b0",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Tree Appreciator",
+      "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator",
+      "published_at": "2026-10-14T21:23:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode) where I prompted Claude Opus 5.5 Max with: Build a three js game called \"Tree appreciator\" - it shows you two algorithmically generated trees and the game mechanics is about appreciating the differences between them. Think hard about how to make sure it is both fun and beautiful. Somewhat embarrassingly given my recent talk , I've found that telling Opus 5.5 \"make sure it is fun\" works uncomfortably well. In this case Claude crunched for 3 hours and 7 minutes before retuning a cosy little spot-the-difference game with music and animation and achievements that's quite compelling to play. Tags: game-design , javascript , ai , generative-ai , llms , claude , vibe-coding , three-js",
+      "discussion_url": ""
+    },
+    {
       "id": "5363e087351f9f36d618",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -45479,102 +45683,246 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/zachbrown29/lintel-marketing-playbooks Comments URL: https://news.ycombinator.com/item?id=50095555 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50095555"
+    },
+    {
+      "id": "a06b8848ef597e83d773",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Art of Building AI Coding Agents: The book that builds itself",
+      "url": "https://github.com/waywardgeek/ensemble",
+      "published_at": "2026-10-14T21:44:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/waywardgeek/ensemble Comments URL: https://news.ycombinator.com/item?id=50095802 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50095802"
+    },
+    {
+      "id": "2502e914295799d7e70e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Reflex, a TUI that compiles Claude Code and Codex transcripts into agent skills",
+      "url": "https://github.com/sumervaid/reflex-tui",
+      "published_at": "2026-10-14T22:17:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/sumervaid/reflex-tui Comments URL: https://news.ycombinator.com/item?id=50096217 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50096217"
+    },
+    {
+      "id": "c87d41e5ef633ad5743e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Coding with AI stopped feeling like craft, so I built a tiny desk radio",
+      "url": "https://radiowaveshare.vercel.app",
+      "published_at": "2026-10-14T22:30:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://radiowaveshare.vercel.app Comments URL: https://news.ycombinator.com/item?id=50096393 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50096393"
+    },
+    {
+      "id": "0f5b6ad600f0f72d37c5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Fantastic Canvas",
+      "url": "https://github.com/aisixteen/fantastic",
+      "published_at": "2026-10-14T22:33:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Fantastic is my own harness. It runs on an Erlang-like, OS-like meta-runtime instead of agent loops or agent graphs. I believe this is the right design for an AI runtime: it puts humans, AI agents and tools on equal footing. It will grow into a convenient multi-OS runtime that can do what other AI libraries and harnesses do. For now it’s a technical demo with two modes: a CLI coder, and a spatial canvas that’s very handy for a lot of everyday work. I think the canvas mode is the kind of software we’ll all be using in the 2030s. I don’t have a name for it yet, so for now let’s call it “emergent software”. The idea is that you build, run and engineer your own systems visually, with help from AI, inside your own dynamic interface that you build for yourself. It’s a lot of fun, especially for multimedia projects. For example, in a canvas project I’m still working on, a third-party AI agent generates UI and agents: it builds a control panel for making a Manim animation, and a viewport for a Blender video built from the Manim animation’s guidelines. I’ll record a video later; for now I just want to share the general idea. Maybe someone will like it. If anyone wants to talk about it more, let me know in the comments and I’ll respond. Have a fantastic day! Oleksandr Comments URL: https://news.ycombinator.com/item?id=50096424 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50096424"
+    },
+    {
+      "id": "8ddaa8c8ff205a70005f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A friend of mine built an agent-first group chat/social network",
+      "url": "https://lamoom.com",
+      "published_at": "2026-10-14T23:00:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://lamoom.com/ Comments URL: https://news.ycombinator.com/item?id=50096749 Points: 4 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=50096749"
+    },
+    {
+      "id": "a3725467b59874d855f4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Things we wish we'd known before building an AI chat agent",
+      "url": "https://trigger.dev/blog/seven-tips-for-building-better-chat-agents",
+      "published_at": "2026-10-14T23:10:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://trigger.dev/blog/seven-tips-for-building-better-chat-agents Comments URL: https://news.ycombinator.com/item?id=50096863 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50096863"
+    },
+    {
+      "id": "a812acd542732d56cd2f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Open-source LLM trading bots vs. the government bond, on paper money",
+      "url": "https://blueprintau.com/knives",
+      "published_at": "2026-10-15T00:33:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blueprintau.com/knives/ Comments URL: https://news.ycombinator.com/item?id=50097607 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50097607"
+    },
+    {
+      "id": "b1f9019f106c354907d1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I'll Call You Later, an interactive 3D browser short film",
+      "url": "https://film.jashtechno.com",
+      "published_at": "2026-10-15T01:41:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm Jas (Jashwanth Palleti), and this is a solo project: a short night-time story in a car on a city street, with a red light, traffic, and a phone call. It runs in the browser with no install, built with React and Three.js via React Three Fiber. For the character's movement, I filmed myself on my phone, used AI pose estimation to turn the footage into SMPL-X body motion, then retargeted that onto a 3D character. The movement is my performance, and the voice is mine. The face is a 3D character model, not a scan of me. At the end, you can talk to the character live with your voice, and he answers in character using LiveKit and OpenAI realtime voice. There's also a guide mode at https://film.jashtechno.com/?director where you can ask how it was made. Talk directly at https://film.jashtechno.com/?talk . Quality tiers adapt to the device; best on desktop Chrome with headphones. I'd appreciate feedback on the motion, performance on lower-end devices, and the voice conversation. Comments URL: https://news.ycombinator.com/item?id=50098087 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50098087"
+    },
+    {
+      "id": "820f13b39fbd97c3605b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Visual Scripting for Golang",
+      "url": "https://symphony.q3k.app",
+      "published_at": "2026-10-15T02:07:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi Folks, For a long time I wanted to build a universal visual scripting program that was like unreal's blueprints but for the languages that I enjoy. I've given a fair few attempts but AI has allowed me to build something I really enjoy using and with tools that I have found make working with complex code bases a bit more visual which is something that helps me a lot. I also have sons who love coding in various languages so I wanted to build something that helped people who are learning to code transition from stuff like scratch. Give it a go, see what you think. Enjoy! Comments URL: https://news.ycombinator.com/item?id=50098278 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50098278"
+    },
+    {
+      "id": "17be13ddd06d03209c3f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Verifiability Gap in Quantized LLM Supply Chains",
+      "url": "https://arxiv.org/abs/2610.19498",
+      "published_at": "2026-10-15T02:13:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2610.19498 Comments URL: https://news.ycombinator.com/item?id=50098319 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50098319"
+    },
+    {
+      "id": "c7dd25889916938a5266",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent identity is a really hard problem",
+      "url": "https://12gramsofcarbon.com/p/agentics-agent-identity-is-a-really",
+      "published_at": "2026-10-15T03:03:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://12gramsofcarbon.com/p/agentics-agent-identity-is-a-really Comments URL: https://news.ycombinator.com/item?id=50098626 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50098626"
+    },
+    {
+      "id": "a8da462e2b5c222464a3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Observability on the Claude Platform",
+      "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+      "published_at": "2026-10-15T04:20:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://claude.com/resources/articles/agent-observability-on-the-claude-platform Comments URL: https://news.ycombinator.com/item?id=50099105 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50099105"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-14T21:41:34.678767+00:00",
+      "last_success": "2026-10-15T04:39:14.572441+00:00",
       "count": 10,
       "earliest": "2026-10-13T12:03:17+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-14T21:41:34.899380+00:00",
+      "last_success": "2026-10-15T04:39:14.746566+00:00",
       "count": 20,
       "earliest": "2026-10-12T13:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-14T21:41:35.031908+00:00",
+      "last_success": "2026-10-15T04:39:14.853477+00:00",
       "count": 876,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-14T21:41:35.119396+00:00",
+      "last_success": "2026-10-15T04:39:15.000936+00:00",
       "count": 30,
-      "earliest": "2026-10-06T19:07:31+00:00",
+      "earliest": "2026-10-06T20:18:19+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-14T21:41:35.409644+00:00",
-      "count": 100,
-      "earliest": "2026-10-14T10:57:04+00:00",
+      "last_success": "2026-10-15T04:39:15.239103+00:00",
+      "count": 99,
+      "earliest": "2026-10-14T12:30:54+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-14T17:10:42.450886+00:00",
+      "last_success": "2026-10-15T04:39:15.973938+00:00",
       "count": 100,
-      "earliest": "2026-10-13T12:08:53+00:00",
+      "earliest": "2026-10-13T15:20:03+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-14T21:41:41.812939+00:00",
+      "last_success": "2026-10-15T04:39:16.368233+00:00",
       "count": 10,
       "earliest": "2026-10-03T23:07:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-14T21:41:42.613044+00:00",
+      "last_success": "2026-10-15T04:39:17.089303+00:00",
       "count": 20,
       "earliest": "2026-09-30T02:32:48+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-14T21:41:42.991731+00:00",
+      "last_success": "2026-10-15T04:39:17.401088+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-14T21:41:43.297216+00:00",
+      "last_success": "2026-10-15T04:39:17.743732+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-14T21:41:44.130328+00:00",
+      "last_success": "2026-10-15T04:39:18.178610+00:00",
       "count": 9,
       "earliest": "2026-09-19T00:02:57+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-14T21:42:03.098224+00:00",
+      "last_success": "2026-10-15T04:39:38.005069+00:00",
       "count": 2,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-14T21:42:03.249160+00:00",
-      "count": 1292,
+      "last_success": "2026-10-15T04:39:38.157256+00:00",
+      "count": 1293,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-14T21:42:11.225461+00:00",
+      "last_success": "2026-10-15T04:39:45.803091+00:00",
       "count": 5,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -45643,5 +45991,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-14T21:42:11.225938+00:00"
+  "collected_at": "2026-10-15T04:39:45.803518+00:00"
 }
