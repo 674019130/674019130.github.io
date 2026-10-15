@@ -45541,6 +45541,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50093801"
     },
     {
+      "id": "e081e82ca66458b5dbc0",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.5",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.5",
+      "published_at": "2026-10-14T19:45:22+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## NVIDIA Nemotron 3.5 Super [NVIDIA Nemotron 3.5 Super](https://ollama.com/library/nemotron-3.5-super) is a vision-language model for coding, reasoning, tool use, and document understanding. It pairs a 120B-parameter hybrid Mamba-2/Transformer mixture-of-experts backbone (12B active per token) with a C-RADIO vision encoder, and supports tool calling, an on/off thinking mode, and context up to 1M tokens. ``` ollama run nemotron-3.5-super ``` A compact sibling, [Nemotron 3.5 Bolt](https://ollama.com/library/nemotron-3.5-bolt), distills Super down to 74B parameters (9B active) tuned to fit a 24 GB NVIDIA GPU for everyday agentic tasks, with speculative decoding via its included drafter. ## What's Changed * Decision models are now available on cloud — use `clef:cloud` and `clef-flash:cloud` to run decision models through ollama.com cloud without pulling them locally * Continuing an OpenAI-compatible Responses conversation that includes custom tool calls no longer fails with an error * Clearer error messages when cloud access fails: sign-in problems, payment issues in the desktop app, and upstream access errors from the ChatGPT gateway now explain what went wrong * Updated llama.cpp (adding Nemotron 3.5 support) and MLX ## New Contributors * @willietran made their first contribution in https://github.com/ollama/ollama/pull/18986 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.4...v0.40.5",
+      "discussion_url": ""
+    },
+    {
       "id": "a23234079cb2b7900d4f",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -45755,6 +45767,18 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://trigger.dev/blog/seven-tips-for-building-better-chat-agents Comments URL: https://news.ycombinator.com/item?id=50096863 Points: 3 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50096863"
+    },
+    {
+      "id": "ba19651b5361b0764589",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "published_at": "2026-10-15T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
     },
     {
       "id": "a812acd542732d56cd2f",
@@ -46607,41 +46631,257 @@
       "date_kind": "community_post",
       "evidence": "Simply put, Relay is just a copy-paster between Claude, Codex and Cursor. It adds a /relay command to those GUIs that just sends the chat history since last over to the other side. I’ve been working on this small Mac app called Kanary that offers essential features. While building it, I found myself stupidly repeating the process of being a messenger between Claude and Codex. Then I thought, why not build a feature that helps my development process? What if Kanary could be a meta-app that bridges between harnesses? That’s when I hit on the idea of a meta harness. A wrapper that works IN the GUI apps that we already use, not a new app. It’s still just a copy-paster, but it has changed how I work tremendously. So far it’s a painkiller for me, not a vitamin. I’d love to hear what you think of this simple tool that does this one simple thing. Comments URL: https://news.ycombinator.com/item?id=50106258 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50106258"
+    },
+    {
+      "id": "239631b46f8e6a8e2038",
+      "source": "ggml-org-llama.cpp",
+      "publisher": "llama.cpp",
+      "category": "official_update",
+      "title": "llama.cpp v0.7.0",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0",
+      "published_at": "2026-10-15T17:13:19+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Overview llama.cpp v0.7.0 adds the LiliCorr speculative decoding technique and MTP for GLM5-Next, a new GPU cache for MoE experts kept in host memory (`--moe-cache-mib`, up to ~2.2x decode speedup when experts are offloaded), and a large batch of new models: K2 Horizon (dense and MoVA), Prism Bonsai 2 27B, EmbeddingGemma-2 (text+vision+audio), the LiquidAI d1/d1-omni and vLLM decision 2/d3 decision models, pplx-decider, MiniCPM-V 4.7, Nemotron Super 3.5 VL / Nemotron Bolt and maion-coder. The server gets a refactored chat session API (`common_chat_session`, part-based formatted output), much better slot and prompt-cache restore behavior, decision-model support for the new architectures and a new default port (9931), the web UI gains a full models manager, and ggml is updated to v0.27.0. ### Highlights - New GPU cache for host-memory MoE experts (`--moe-cache-mib`): experts run on the GPU from an LRU cache, up to 2.2x faster decode [#29887](https://github.com/ggml-org/llama.cpp/pull/29887) - The expert cache is now shared across multiple GPUs [#30112](https://github.com/ggml-org/llama.cpp/pull/30112) - LiliCorr speculative decoding: candidate selection with a small draft transformer on top of DFlash [#30506](https://github.com/ggml-org/llama.cpp/pull/30506) - GLM5-Next: MTP speculative decoding with an optimized sparse attention path [#29928](https://github.com/ggml-org/llama.cpp/pull/29928) - K2 Horizon support in both dense and MoVA variants: conversion, tokenizer, chat template, `-sm tensor` splitting [#29535](https://github.com/ggml-org/llama.cpp/pull/29535) - Prism Bonsai 2 27B ternary model support [#29600](https://github.com/ggml-org/llama.cpp/pull/29600) - EmbeddingGemma-2: text + vision + audio embedding model [#30054](https://github.com/ggml-org/llama.cpp/pull/30054) - New decision models: LiquidAI d1-3B, d1-omni-600M, vLLM decision 2, vLLM d3 and pplx-decider [#30110](https://github.com/ggml-org/llama.cpp/pull/30110) [#30114](https://github.com/ggml-org/llama.cpp/pull/30114) [#30378](https://github.com/ggml-org/llama.cpp/pull/30378) [#30383](https://github.com/ggml-org/llama.cpp/pull/30383) [#30044](https://github.com/ggml-org/llama.cpp/pull/30044) - PLaMo-3 tokenizer implements reference pre-segmentation for exact tokenization parity [#30045](https://github.com/ggml-org/llama.cpp/pull/30045) - RPC server supports `-sm tensor` (tensor-parallel RPC, RPC protocol v8) [#26610](https://github.com/ggml-org/llama.cpp/pull/26610) - Server now listens on port 9931 by default instead of 8080 [#30159](https://github.com/ggml-org/llama.cpp/pull/30159) ### API changes - `include/llama.h`: new `moe_cache_size` context param for the host-expert GPU cache [#29887](https://github.com/ggml-org/llama.cpp/pull/29887) - `include/llama.h`: new `LLAMA_VOCAB_TYPE_PLAMO3` vocab type [#30045](https://github.com/ggml-org/llama.cpp/pull/30045) - `include/llama.h`: `llama_perf_context_data` reports graph reallocations during inference [#30329](https://github.com/ggml-org/llama.cpp/pull/30329) - `include/llama.h`: `embeddings` now skips the LM head when a pooling type other than NONE is used [#30445](https://github.com/ggml-org/llama.cpp/pull/30445) - `include/llama.h`: `llama_batch_ext_set_embd_state` returns false when the context has no state embedding, M-RoPE order documented [#30506](https://github.com/ggml-org/llama.cpp/pull/30506) - `tools/server`: chat layer refactored around `common_chat_session` with `feed()` / `finish()` [#30210](https://github.com/ggml-org/llama.cpp/pull/30210) - `tools/server`: formatted chat output is now an array of parts instead of a single string [#30389](https://github.com/ggml-org/llama.cpp/pull/30389) - `tools/server`: default listening port changed to 9931 (Docker images keep 8080 inside the container) [#30159](https://github.com/ggml-org/llama.cpp/pull/30159) ### New models - K2 Horizon: dense and MoVA variants with conversion, tokenizer, chat template and `-sm tensor` support [#29535](https://github.com",
+      "discussion_url": ""
+    },
+    {
+      "id": "174e5c6e47340d2a9bc5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A curated directory of AI Tools",
+      "url": "https://github.com/QAInsights/awesome-ai-tools",
+      "published_at": "2026-10-15T17:27:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "A curated directory of AI-powered coding tools, autonomous agents, and developer utilities. Comments URL: https://news.ycombinator.com/item?id=50107075 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50107075"
+    },
+    {
+      "id": "03b1a58c646d00884e20",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Check if a text message is a scam using Circle to Search.",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/circle-to-search-android-text-message-scams",
+      "published_at": "2026-10-15T17:30:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Use Google Circle to Search to analyze suspicious texts for scams. Long-press your home button to get AI insights on messages. See how it works.",
+      "discussion_url": ""
+    },
+    {
+      "id": "e48b6987cf582a06acb6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Voice Standard Bench – Open benchmark of LLMs on speech transcripts",
+      "url": "https://github.com/AssemblyAI/voice-standard-bench",
+      "published_at": "2026-10-15T17:41:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/AssemblyAI/voice-standard-bench Comments URL: https://news.ycombinator.com/item?id=50107279 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50107279"
+    },
+    {
+      "id": "8f3f27166e8de635410a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Receptive Field – Learn Convolutional Neural Networks Interactively",
+      "url": "https://receptive-field-flame.vercel.app/appendix",
+      "published_at": "2026-10-15T17:59:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "As a current student at UC Berkeley, I mostly have been leveraging AI as a tutor to get me through my classes. As a result, I have a collection of artifacts and tools that primarily help interact with and visualize complex concepts. I've turned this into a side project in the hopes some other people would find this helpful as well. As a broke college student I understand the need behind free educational resources, so this is completely free and will stay free. Looking for feedback, let me know what you think! Comments URL: https://news.ycombinator.com/item?id=50107564 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50107564"
+    },
+    {
+      "id": "9136e03c8ae426a75f56",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Bringing the magic: Google breaks open a bottleneck in quantum computing",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/quantum-computing/magic-state-cultivation-quantum-computing",
+      "published_at": "2026-10-15T18:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "In a paper published in Science, Google has shown that Magic State Cultivation works on Google Quantum AI hardware.",
+      "discussion_url": ""
+    },
+    {
+      "id": "2263af261dae52c57df5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Just gave Claude Code the website and ad budget to see what it would do",
+      "url": "https://snitch.alphaventure.com/gate.php",
+      "published_at": "2026-10-15T18:00:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "I build websites for a living. Lately, it's more about prompting than actually writing the code (the art part is still there). So I decided to leave that part to Claude too and see what it would come up with. So far, I have given it - A baseline website - Full access to Google, X, LinkedIn and Reddit Ads, with a budget - Apify access - Openrouter access I also wanted it to personalize the website completely based on the user. No 2 users see the same website, most of the content is rendered on the client side using Deepseek. It uses - Device (GPU model, battery percentage, fonts installed, resolution, adblock installed, camera and mic connected, mouse polling rate, scroll speed, etc) - Demographics (Weather, time of the day, news around you, ..) - Behavior (Scroll speed, clicks, selection, referrer, etc) - Tons of other connected services through Apify So far it's doing tomfoolery for the most part. Like creating a gazzilion pages for SEO (exactly what our interns say every time), trying to go viral by adding share buttons, etc. But it's still super fun to see it make decisions every 4 hours. Comments URL: https://news.ycombinator.com/item?id=50107586 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50107586"
+    },
+    {
+      "id": "07e20e6d2fb1b9ed4d87",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: RDST – A local agent that watches Postgres/MySQL for query regressions",
+      "url": "https://github.com/readysettech/rdst",
+      "published_at": "2026-10-15T18:09:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "We noticed during the course of many many years of DBA related work that fixes to database issues and queries are always reactive. An entire database can fall over extremely quickly when an unbounded query grows without warning. Traditionally, DBAs hear complaints of slowness and follow a methodical process: - manually browse pg_stats or other database related performance internal tables - see which queries are slowest - figure out what indexes are missing - figure out which indexes are actually bad and slowing down writes - painstakingly implement a fix In the age of cheap intelligence, we decided that there is no reason we can’t have an always-on agent that is designed to do this job for you. Databases need something or someone that is always watching with a massive amount of contextual understanding to be able to take quick actions. We’ve watched the alternative play out repeatedly. One of our users’s checkout page went from loading instantly to taking 11 seconds in a single night with no code change. How? Well somehow their order table grew by 40M rows because BI team had injected historical data and suddenly postgres started doing full table scans. Sometimes routine operations have unintended results and can easily destroy your database. We wanted to catch these kinds of regressions instantly. So we built RDST. RDST is a desktop agent that runs on your PC and connects to PostgreSQL / MYSQL (read only) and compares every query against its own performance every minute. Every expensive query is automatically EXPLAIN ANALYZED, stripped of PII and sent to U.S. based frontier or open model providers to analyze which indexes are missing, how the query could be rewritten, and provides the fix. We then run a classifier model (JEV) to decide if you should be notified (is this standard behavior for this particular query?), and the full history of the query performance is kept for years. RDST also keeps track of your entire database health in general, and recommends more fixes than simply bad queries. Since it runs locally we can keep the database credentials stored in your OS Keychain (RDST never keeps them in its own storage layer), and the connection goes straight to your database (using a jump host or SSH tunnel for private connections). You can read more about how we handle data especially as it pertains to LLM use here. https://readyset.io/docs/readyset-ai/rdst/desktop/privacy We really want feedback from the community from people running Postgres and MySQL in production. We are giving inference away completely for free. Just as a reminder, RDST will NOT run any updates or indexes against your database at this time. We are considering a fully autonomous auto-pilot mode in the future, but for now we are leaving the actual fixes in your hands. Let us know what you think! Comments URL: https://news.ycombinator.com/item?id=50107729 Points: 6 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50107729"
+    },
+    {
+      "id": "caf4f88dd2477d6c7271",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CoolDock – a second Dock for macOS with live widgets and an MCP server",
+      "url": "https://cooldock.app",
+      "published_at": "2026-10-15T18:27:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "I always hated desktop widgets because I never see them. They sit behind every window I have open. Same problem with Notification Center, it's hidden away so I never use it. The dock, however, is always there, it's already taking the real estate from the bottom of my screen, so why not add a second dock on the exact same real estate, that shows up as soon as the dock hides and vice versa, but not for apps - for widgets! CoolDock is that solution with 20+ widget categories - music, weather, AI usage, 3rd party integrations, mail, todo, habit tracker, posture reminder, water reminder and over 150 wallpapers to switch to based on my mood. And the best part is that it looks completely native with Liquid Glass, doesn't require disabling the macOS default dock and runs completely local, no telemetry, no account, only widgets and your integrations. Oh and best part #2 - I added an MCP server so I don't actually have to clickops my way to complete setup, I could just ask my AI to add a widget and configure it however I want it (MCP starts as read-only, you can choose to give it permission to actually change things). I actually acquired CoolDock from its original developer, and it's the second dock app I acquired from a developer (ExtraDock was the first). CoolDock currently has passed 1,200 users I am constantly adding new widgets based on user requests, currently at 160+ widgets to choose from, you can see them on the website https://cooldock.app Happy to answer any question! Comments URL: https://news.ycombinator.com/item?id=50108054 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50108054"
+    },
+    {
+      "id": "b473102accc2ff4c4f0d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Life Sprites – custom trackers, briefings and guides",
+      "url": "https://lifesprites.com/demo",
+      "published_at": "2026-10-15T18:33:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "There's a no login demo if you want to try it. There's also an MCP server if you'd rather use your favorite or local AI. Landing Page: https://lifesprites.com Demo Page: https://lifesprites.com/demo MCP Setup Page: https://lifesprites.com/connect Comments URL: https://news.ycombinator.com/item?id=50108154 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50108154"
+    },
+    {
+      "id": "4af4c080b80c1c9acdf6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HireReady, interview prep with spaced repetition and AI voice mocks",
+      "url": "https://imhireready.com",
+      "published_at": "2026-10-15T19:06:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://imhireready.com Comments URL: https://news.ycombinator.com/item?id=50108667 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50108667"
+    },
+    {
+      "id": "89760d3164c239054f78",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.301",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+      "published_at": "2026-10-15T19:22:06+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS` so unattended retry mode (`CLAUDE_CODE_RETRY_WATCHDOG`) ends a request at a usage limit that resets too far away instead of waiting - Added OpenTelemetry tracing guidance to the `claude-api` skill, including setting up trace destinations with the `ant` CLI - Added the `%` motion to vim mode: jump to the matching bracket, alone or with d/c/y - Added `rows` to a mod's `Input`: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line - Added `classifier_verdict` and `permission_mode` to OpenTelemetry `tool_decision` events, so auto mode classifier decisions can be told apart from permission rules - Added `classifier_category` to OpenTelemetry `tool_decision` events, naming the built-in rule a classifier block matched, when `OTEL_LOG_TOOL_DETAILS=1` - Fixed quitting removing a worktree made by a `WorktreeCreate` hook without asking when it may hold unpushed commits - Fixed the `fable` (and `best`) model alias erroring on the Anthropic API when the newest Fable model is not available to your organization: Claude Code now retries once on the previous Fable model - Fixed a misleading \"Please run /login\" error when a full disk keeps the login from being refreshed; the error now names the disk and says to delete files - Fixed Grep and Glob reporting no matches when the search program failed unexpectedly before returning any results; they now return an error saying the search failed - Fixed workflow agents sometimes skipping their step, and the run still reporting success, after reading the harness note that their task text carries no user authority - Fixed artifact updates being refused where a PreToolUse hook covers Edit or Write; Claude now edits the file and then republishes instead of changing it in the publish call - Fixed skills and commands with very many or very long argument names stalling for seconds when invoked; only the first 64 names, each up to 64 characters, are now filled in - Fixed skills, commands and hooks using very large amounts of memory when their arguments fill many placeholders - Fixed stray characters such as `>0q` covering the folder trust prompt, and `>4m` before the shell prompt at exit, in terminals built on VTE older than 0.53 such as MATE Terminal on RHEL 8 - Fixed stray `GOK` text appearing in the prompt at startup in some versions of iTerm2 - Fixed switching to a model whose name contains `application-inference-profile` running your `awsAuthRefresh` command and delaying model-switch hooks when the provider is not Bedrock - Fixed sign-in refresh timeouts and unexpected sign-outs after a short command such as `claude auth status` or `claude plugin list` exited in the middle of a token refresh - Fixed a tool call cut off by a message sent mid-turn during its permission check being reported to the model as rejected by the user - Fixed a case where switching to a model with a smaller context window could spend usage credits on a summary by the previous model without asking first - Fixed conversations being compacted over and over, on a model you didn't pick, behind an LLM gateway whose responses name a different model than the one requested - Fixed vim mode sometimes staying in INSERT after Escape on a slow or busy machine - Fixed Esc discarding a typed AskUserQuestion answer in vim mode: the free-text field now supports vim NORMAL mode, and Esc cancels only from NORMAL - Fixed the Read tool reading binary files such as .xlsm, .parquet, .epub and .heic as text - Fixed a Markdown table with only a header row drawing nothing when too wide for the terminal, including in plans on the plan approval card - Fixed the /claude-api skill saying CMEK external-key endpoints aren't available on Claude Platform on AWS - Fixed skills no longer being listed to the model after using `/rewind` - Fixed the compaction row in a resumed session offering ctrl+o for history that is",
+      "discussion_url": ""
+    },
+    {
+      "id": "086fe8cff33994ff022a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ReliaMesh – Open-source reliability monitoring for AI agents",
+      "url": "https://github.com/PrefilerLabs/reliamesh",
+      "published_at": "2026-10-15T19:25:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/PrefilerLabs/reliamesh Comments URL: https://news.ycombinator.com/item?id=50108933 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50108933"
+    },
+    {
+      "id": "f7cb553e0018c829c880",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "published_at": "2026-10-15T19:35:13+00:00",
+      "date_kind": "source_publication",
+      "evidence": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date Suggested alternative Claude Opus 4.8* 2026-11-16 Claude Opus 5.5 Claude Opus 5 2026-11-16 Claude Opus 5.5 GPT-5.6 Terra 2026-11-16 GPT-6.1 Sol or GPT-6 Luna *Claude Opus 4.8 will remain available to individual GitHub Copilot subscribers on annual plans so they retain an Opus offering. The deprecation of Claude Opus 4.8 does not apply to these customers. Please update your workflows and integrations to use the supported models before this date. Under default model enablement, the suggested alternatives are automatically enabled for Copilot Enterprise and Copilot Business customers unless an administrator has turned off the global default or explicitly disabled the model. If you’ve turned off the global default, you can enable access to the alternative models through their model policies in Copilot settings. Once enabled, users will see the model in the Copilot Chat model selector in supported GitHub Copilot experiences. No action is required to remove the models after they have been deprecated. GitHub Enterprise customers with questions or concerns are encouraged to contact their account team for assistance. Share your feedback To learn more about the models available in Copilot, see our documentation on supported models . Join the GitHub Community to share your feedback. The post Upcoming deprecation of selected GitHub Copilot models in mid-November appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "8d4eda2611ce4fa97ef0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Explanations and follow-ons for OpenAI/math",
+      "url": "https://thecompanygardener.yaks.app/openai-math",
+      "published_at": "2026-10-15T19:45:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "The official openai/math repo is closed to issues, PRs, and discussion. I made this app to share some explanatory videos that help us all make sense of the release, catalogue follow-ons and improvements that build on the openai research, and more broadly provide a set of community tools for distributed research. I am not a trained mathematician and most of the math exceeds my understanding. As such, the videos _are_ AI-generated, but IMHO, go a long ways towards helping folks like me understand the problems, proofs, and related ideas. Suggestions are welcome. Comments URL: https://news.ycombinator.com/item?id=50109249 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50109249"
+    },
+    {
+      "id": "fa23819b493159698e0f",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Chirp Pong",
+      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong",
+      "published_at": "2026-10-15T19:47:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tool: Chirp Pong Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where the networking code uses chirps sent via the microphone. It seems to work! Build a two player competitive pong like game where two players use their phones close to each other and the game state is sent via audio noises which the web microphone API can interpret - but add graphical and gameplay twists to make it a lot more fun and intertwine than pong Claude Opus 5.5 Extra in Claude Code . Tags: game-design , ai , generative-ai , llms , claude-code",
+      "discussion_url": ""
+    },
+    {
+      "id": "a15257b56684d3f4329a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Slop City, a FOSS game that embeds social media posts",
+      "url": "https://github.com/hollingsworthd/SLOP_CITY",
+      "published_at": "2026-10-15T19:48:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I created this game with Codex Astra and Astra subagents. It went remarkably well. SLOP CITY is an autobiographical first-person lounge that embeds my TikTok posts. I use it to market my Digilore podcast app which is in the Apple App store. However this submission is not a shameless plug, only partially, because it's free and open source so I encourage everyone to download the code and ask Codex or another LLM to sync social media posts from any source. Or... try doing that by hand :) Just note that all trademarks would need to be replaced as called out in the license (which is AGPL-v3+). Enjoy! Comments URL: https://news.ycombinator.com/item?id=50109286 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50109286"
+    },
+    {
+      "id": "e370f540ac61368c6b85",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Brod – Quick cloud to deploy AI apps",
+      "url": "https://github.com/brodsh/brod",
+      "published_at": "2026-10-15T20:29:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi YC, With AI, we’ve started building entire web apps just by chatting. But once the app is built, there’s still a lot to do: push the code to GitHub, set up a database, configure user management and access control, and deploy everything. Brod makes this simple. Connect an MCP, deploy your app, and everything you need to get it running is taken care of. Comments URL: https://news.ycombinator.com/item?id=50109773 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50109773"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-15T17:01:09.343290+00:00",
+      "last_success": "2026-10-15T21:23:17.809089+00:00",
       "count": 10,
-      "earliest": "2026-10-13T15:20:10+00:00",
+      "earliest": "2026-10-13T17:58:36+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-15T17:01:09.638549+00:00",
+      "last_success": "2026-10-15T21:23:17.998075+00:00",
       "count": 20,
-      "earliest": "2026-10-13T16:00:00+00:00",
+      "earliest": "2026-10-13T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-15T17:01:09.836640+00:00",
-      "count": 878,
+      "last_success": "2026-10-15T21:23:18.131247+00:00",
+      "count": 880,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-15T17:01:10.110949+00:00",
+      "last_success": "2026-10-15T21:23:18.254242+00:00",
       "count": 30,
-      "earliest": "2026-10-06T20:37:53+00:00",
+      "earliest": "2026-10-06T21:32:34+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-15T17:01:41.620273+00:00",
+      "last_success": "2026-10-15T21:23:25.988878+00:00",
       "count": 100,
-      "earliest": "2026-10-15T05:24:46+00:00",
+      "earliest": "2026-10-15T11:02:03+00:00",
       "gap": false,
       "error": null
     },
@@ -46653,56 +46893,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-15T17:01:50.611270+00:00",
-      "count": 10,
-      "earliest": "2026-10-03T23:07:17+00:00",
+      "last_success": "2026-10-15T21:23:34.758093+00:00",
+      "count": 20,
+      "earliest": "2026-09-22T16:38:14+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-15T17:01:51.697766+00:00",
+      "last_success": "2026-10-15T21:23:35.526857+00:00",
       "count": 20,
       "earliest": "2026-09-30T02:32:48+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-15T17:01:52.275490+00:00",
+      "last_success": "2026-10-15T21:23:35.873557+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-15T17:01:52.728303+00:00",
+      "last_success": "2026-10-15T21:23:36.172434+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-15T17:01:53.360528+00:00",
-      "count": 9,
+      "last_success": "2026-10-15T21:23:36.541800+00:00",
+      "count": 10,
       "earliest": "2026-09-19T00:02:57+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-15T17:02:26.127746+00:00",
-      "count": 2,
+      "last_success": "2026-10-15T21:23:57.070682+00:00",
+      "count": 3,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-15T17:02:26.346199+00:00",
+      "last_success": "2026-10-15T21:23:57.269656+00:00",
       "count": 1294,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-15T17:02:38.165023+00:00",
+      "last_success": "2026-10-15T21:24:05.915158+00:00",
       "count": 5,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -46771,5 +47011,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-15T17:02:38.165468+00:00"
+  "collected_at": "2026-10-15T21:24:05.915631+00:00"
 }
