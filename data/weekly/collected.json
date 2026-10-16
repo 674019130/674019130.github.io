@@ -47579,41 +47579,185 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://lobby.domains/ Comments URL: https://news.ycombinator.com/item?id=50113913 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50113913"
+    },
+    {
+      "id": "fcc85d2a5e8bda4c8b7e",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline CLI v3.0.72",
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.72",
+      "published_at": "2026-10-16T05:35:42+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Plugins now run in a worker instead of directly inside the hub. If this build can't run plugins, Cline says so in `cline config tools`, `cline hub plugins`, and the session-start warnings instead of quietly running them inside the hub. `CLINE_PLUGIN_MODE=in_process` is no longer supported; use `worker` (the default) or `sandbox` - When a provider error interrupts a response mid-stream, Cline retries it up to 3 times before failing the turn - Failed model requests now log the provider's request id, which makes support tickets easier to trace - `cline hub ensure` and `cline hub start` gain `--json` (prints the hub URL and auth token), `--allow-port-fallback`, `--no-connectors`, and `--login-shell-path`. `cline hub` accepts `--discovery-path` to use a dedicated discovery record - `cline hub` commands no longer count as a CLI activation in usage stats - With no model chosen, the Cline provider now uses Gemini 4 Argon, the new first model in Cline's recommended list - Refreshed the model catalog. Adds the Boundless and Standard Compute providers, and SambaNova now comes from the catalog with MiniMax M3 as its default. The Cline recommended list adds Gemini 4 Argon and drops Grok 4.7, and the Cline free list replaces Step 5 Preview with Nemotron 3.5 Super VL. OpenCode Go no longer lists MiniMax M2.7. Default models change for Cortecs, CrossModel, Eden AI, Google Gemini, GitHub Copilot, Google Vertex AI, LLM Gateway, Ofox, OpenCode Go, and Prime Inference (Gemini 4 Argon), Fireworks AI, Nebius Token Factory, and Requesty (Muse Spark Open), CoreWeave, DigitalOcean, NanoGPT, and Nvidia (Nemotron 3.5 Super VL), Aixy and Neon (Claude Haiku 5.5), Agnes AI, Ambient, IteraCompute, Poe, Scaleway, and SenseNova **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.71...cli-v3.0.72",
+      "discussion_url": ""
+    },
+    {
+      "id": "7a1337fb033951768b4b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Gitsu.app – A Linear-alternative built on GitHub Projects",
+      "url": "https://gitsu.app",
+      "published_at": "2026-10-16T05:42:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Issue tracking isn't dead. It's moving closer to code. Gitsu is a fast, AI-native, keyboard-first Mac and web app on top of your existing GitHub Projects and issues. Everything syncs with GitHub in the background. Gitsu is free on the web. Pro is $4.99/seat/month and adds the native Mac client, advanced AI panels, and MCP agent workflows. Give gitsu.app a go and write us your suggestions/opinions/bug reports. Comments URL: https://news.ycombinator.com/item?id=50114512 Points: 4 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=50114512"
+    },
+    {
+      "id": "a6e14c424e23d83749fd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CiteProof – Catch fake AI legal citations",
+      "url": "https://getciteproof.com",
+      "published_at": "2026-10-16T06:02:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://getciteproof.com/ Comments URL: https://news.ycombinator.com/item?id=50114653 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50114653"
+    },
+    {
+      "id": "2a9f88765a4ba08b1b6c",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline v4.1.25",
+      "url": "https://github.com/cline/cline/releases/tag/v4.1.25",
+      "published_at": "2026-10-16T06:39:24+00:00",
+      "date_kind": "source_publication",
+      "evidence": "### Added - Cline Cloud sessions, rolling out gradually: run a task in a hosted sandbox on a GitHub repo and branch you pick. Turn it on in Settings. Cloud tasks show in Recent and History with their status, notify you when they finish, and keep running after you close your editor. ### Changed - With no model chosen, the Cline provider now uses Gemini 4 Argon, the new first model in Cline's recommended list. OpenRouter stays on Claude Sonnet 5.5. - Refreshed the model catalog. Adds the Boundless and Standard Compute providers, and SambaNova now comes from the catalog with MiniMax M3 as its default. The Cline recommended list adds Gemini 4 Argon and drops Grok 4.7, and the Cline free list replaces Step 5 Preview with Nemotron 3.5 Super VL. OpenCode Go no longer lists MiniMax M2.7. Default models change for Cortecs, CrossModel, Eden AI, Google Gemini, GitHub Copilot, Google Vertex AI, LLM Gateway, Ofox, OpenCode Go, and Prime Inference (Gemini 4 Argon), Fireworks AI, Nebius Token Factory, and Requesty (Muse Spark Open), CoreWeave, DigitalOcean, NanoGPT, and Nvidia (Nemotron 3.5 Super VL), Aixy and Neon (Claude Haiku 5.5), Agnes AI, Ambient, IteraCompute, Poe, Scaleway, and SenseNova. If you use one of those providers without pinning a model, expect a different default. ### Fixed - Long requests to local models (LM Studio, Ollama) no longer fail after 5 minutes of silence with `terminated: BodyTimeoutError` while the server is still processing a large prompt. - OpenAI Compatible base URLs are used exactly as entered. A host-only URL like `https://abc.com` used to get `/v1` added silently. Host-only URLs saved by earlier versions get `/v1` added once, so existing setups keep working. - Images and files attached to an answer to one of Cline's questions now reach the model instead of being dropped. - When a provider error interrupts a response mid-stream, Cline retries it up to 3 times before failing the turn. - In JetBrains, the Run task card stays above the Auto-approve bar. - Auto Compact and its strategy setting sit together again in Feature settings. **Full Changelog**: https://github.com/cline/cline/compare/v4.1.24...v4.1.25",
+      "discussion_url": ""
+    },
+    {
+      "id": "8d3aba111d7bc7b0a777",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline Desktop v0.0.47",
+      "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.47",
+      "published_at": "2026-10-16T06:51:13+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Marketplace plugins such as goal load again. In 0.0.46 they failed with `Cannot find module '@cline/sdk'` because the packaged app didn't include the SDK packages plugins import - The Cloud sessions toggle is gone from Settings. Cloud sessions are on wherever they are available - When a provider error interrupts a response mid-stream, Cline retries it up to 3 times before failing the turn - The Cline provider's default model is now Gemini 4 Argon, the new first model in Cline's recommended list - Refreshed the model catalog. Adds the Boundless and Standard Compute providers, and SambaNova now comes from the catalog with MiniMax M3 as its default. The Cline recommended list adds Gemini 4 Argon and drops Grok 4.7, and the Cline free list replaces Step 5 Preview with Nemotron 3.5 Super VL. OpenCode Go no longer lists MiniMax M2.7. Default models change for Cortecs, CrossModel, Eden AI, Google Gemini, GitHub Copilot, Google Vertex AI, LLM Gateway, Ofox, OpenCode Go, and Prime Inference (Gemini 4 Argon), Fireworks AI, Nebius Token Factory, and Requesty (Muse Spark Open), CoreWeave, DigitalOcean, NanoGPT, and Nvidia (Nemotron 3.5 Super VL), Aixy and Neon (Claude Haiku 5.5), Agnes AI, Ambient, IteraCompute, Poe, Scaleway, and SenseNova **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.46...desktop-v0.0.47",
+      "discussion_url": ""
+    },
+    {
+      "id": "db0c0649a97720278bcf",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built 7 B2B APIs and 5 MCP servers for compliance and trade",
+      "url": "https://jsonexlab.com",
+      "published_at": "2026-10-16T07:12:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jsonexlab.com Comments URL: https://news.ycombinator.com/item?id=50115150 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50115150"
+    },
+    {
+      "id": "08f09e5030afc0ff21b6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Trustmux – Async tmux from your phone, now in Ubuntu, Debian, Fedora",
+      "url": "https://news.ycombinator.com/item?id=50115537",
+      "published_at": "2026-10-16T08:06:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm Dustin Kirkland, author of Byobu. I recently flew to Australia and kept nudging my Claude, Codex, and Bash jobs along back home from somewhere over the Pacific, at 700ms of latency. That's what Trustmux is for: secure, asynchronous access to your tmux or Byobu sessions from your phone. I first posted this in June and since then there have been many point releases, lots of new features and testing, and a growing base of users. It's now packaged in Ubuntu 26.10, Debian, Fedora, and Chainguard OS. Why not SSH, Mosh, or Claude Mobile? - SSH/Mosh: a live, synchronous connection is brutal on a phone. Latency and WiFi-to-cellular handoffs make it laggy and fragile. - Claude Mobile: great for Claude, but I wanted access to whatever is running in my tmux session: shells, Claude, other code assistants. Trustmux is async by design. Connect, look, type a command, disconnect, with no fragile connection state to babysit. Security: TLS with real certificates, end to end. Uses Tailscale (cert provisioning via tailscale serve, no port forwarding) optionally, bind to your own network address, or bring your own or self-signed certs. Two security experts reviewed the design and I implemented their recommendations. More scrutiny is very welcome. Quick start: trustmux enable trustmux start trustmux pair # shows a QR code if qrencode is installed Open the URL on your phone, enter the 6-digit code, and add it to your home screen. It's a PWA, so there's no app store. Install: apt, dnf, pip install trustmux, or brew tap dustinkirkland/trustmux && brew install trustmux Under the hood: Python, libtmux, WebSockets, Tailscale, and no polling. The UI shell is cached for offline use. Part of Byobu, GPLv3. Trustmux isn't affiliated with the tmux project. https://trustmux.dev https://github.com/dustinkirkland/byobu https://pypi.org/project/trustmux/ Comments URL: https://news.ycombinator.com/item?id=50115537 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50115537"
+    },
+    {
+      "id": "6b157fae1347acb15b5a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: WP Replai – AI chatbot built right into WordPress",
+      "url": "https://wpreplai.com",
+      "published_at": "2026-10-16T08:06:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://wpreplai.com/ Comments URL: https://news.ycombinator.com/item?id=50115538 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50115538"
+    },
+    {
+      "id": "65d5e01f1c8d86405972",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CanvoWP – Agent first website builder for WordPress (completely free)",
+      "url": "https://canvowp.com",
+      "published_at": "2026-10-16T08:32:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://canvowp.com/ Comments URL: https://news.ycombinator.com/item?id=50115725 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50115725"
+    },
+    {
+      "id": "d587134dfb273197f069",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Three philosophers vote on your questions",
+      "url": "https://sage-verdict.vercel.app",
+      "published_at": "2026-10-16T09:32:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm RN developer in South Korea, i built this on my own. Non-native speaker, sorry for my English. - Sometimes it is very hard to decide something. - So I made simple service for get decisions from \"Three Old Awesome philosophers’ vote\". - No sign-up needed. - Using Jev(Probabilistic Classification Model) to calculate philosophers’ emotion and decision. These result are based on their written philosophy. - While typing your question, philosophers show their emotion through their faces(simply created by blender 3D). - For make questions to YES/NO style, so I use Haiku to polishing questions. - At night mode, philosophers’ opinions is way stronger than day lights. - This service doesn't save your question, it temporarily exist on our server memory within one hour. but it will be sent to TypeSafe and Anthropic for question/decision processing in Jev and Claude. I'm looking forward to hear your opinions, like you agree with their decision result or your favorite philosopher or something. Thank you for read it! Comments URL: https://news.ycombinator.com/item?id=50116191 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50116191"
+    },
+    {
+      "id": "994a98a387347414ab7e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A music video made end to end by Claude Code, full production repo",
+      "url": "https://github.com/mortenbrudvik/always-allow",
+      "published_at": "2026-10-16T09:43:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/mortenbrudvik/always-allow Comments URL: https://news.ycombinator.com/item?id=50116272 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50116272"
+    },
+    {
+      "id": "e87ca1757e9317b5fc13",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Control how much your AI agent can spend with Keydris",
+      "url": "https://www.youtube.com/watch?v=fboNucIC3uU",
+      "published_at": "2026-10-16T09:56:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=fboNucIC3uU Comments URL: https://news.ycombinator.com/item?id=50116382 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50116382"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-16T04:32:08.716599+00:00",
+      "last_success": "2026-10-16T11:24:47.542821+00:00",
       "count": 10,
       "earliest": "2026-10-13T18:39:56+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-16T04:32:08.841754+00:00",
+      "last_success": "2026-10-16T11:24:47.777727+00:00",
       "count": 20,
       "earliest": "2026-10-13T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-16T04:32:08.946770+00:00",
+      "last_success": "2026-10-16T11:24:47.943369+00:00",
       "count": 879,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-16T04:32:09.061423+00:00",
+      "last_success": "2026-10-16T11:24:48.096261+00:00",
       "count": 30,
       "earliest": "2026-10-06T21:32:34+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-16T04:32:28.600194+00:00",
+      "last_success": "2026-10-16T11:24:53.701207+00:00",
       "count": 99,
-      "earliest": "2026-10-15T14:12:40+00:00",
+      "earliest": "2026-10-15T15:32:56+00:00",
       "gap": false,
       "error": null
     },
@@ -47622,59 +47766,59 @@
       "count": 100,
       "earliest": "2026-10-14T15:28:08+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-16T04:32:31.891321+00:00",
+      "last_success": "2026-10-16T11:25:01.604385+00:00",
       "count": 20,
       "earliest": "2026-09-22T16:38:14+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-16T04:32:32.636303+00:00",
+      "last_success": "2026-10-16T11:25:02.843835+00:00",
       "count": 20,
-      "earliest": "2026-09-30T02:32:48+00:00",
+      "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-16T04:32:32.936202+00:00",
+      "last_success": "2026-10-16T11:25:03.488474+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-16T04:32:33.222529+00:00",
+      "last_success": "2026-10-16T11:25:03.997290+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-16T04:32:33.673892+00:00",
+      "last_success": "2026-10-16T11:25:04.860989+00:00",
       "count": 10,
       "earliest": "2026-09-19T00:02:57+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-16T04:32:53.453614+00:00",
+      "last_success": "2026-10-16T11:25:42.907457+00:00",
       "count": 3,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-16T04:32:53.643066+00:00",
+      "last_success": "2026-10-16T11:25:43.143689+00:00",
       "count": 1296,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-16T04:33:02.113704+00:00",
+      "last_success": "2026-10-16T11:25:58.639709+00:00",
       "count": 6,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -47743,5 +47887,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-16T04:33:02.114198+00:00"
+  "collected_at": "2026-10-16T11:25:58.640127+00:00"
 }
