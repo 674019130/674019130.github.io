@@ -45829,6 +45829,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50098278"
     },
     {
+      "id": "04a590d7bd9be311cf75",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "LaTeX renderer",
+      "url": "https://simonwillison.net/2026/Oct/15/latex",
+      "published_at": "2026-10-15T02:07:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation Builder, Spreadsheet, Calculator, Drawing Tool, Diagram Maker, Animator, Calendar, and Trip Planner). Tiny Little Office's signature trick is to store all of the document data in the #fragment section of the URL, so every document created using it becomes a bookmarkable and shareable link. It also has an llms.txt file telling agents how to construct URLs that will render as documents. Claude used that file to generate this link to a deck that explains how the URL format works: Tiny Little Office inspired me to have Claude Code (Opus 5.5 Extra) build a similar tool that works with LaTeX. Here's the sequence of prompts I used: I want a tool where you can link to it with a fragment hash #code-here and it treats that code as LaTeX and renders it really effectively. It should also support a prefix which means the latex is compressed with a custom compression dictionary optimized for latex. Use the best available latex render library from a CDN (consider WebAssembly too). If loaded without a fragment hash show an editor you can paste latex into and then toggle to a \"rendered\" view. That rendered view should be bookmarkable. The #fragment view should let you switch to edit source too. Since it was working in my tools repo I told it to take inspiration from the <iframe sandbox=\"...\"> mechanism used by my existing SVG in Markdown tool as protection against XSS risks: Safe from XSS? We could run in an iframe sandbox like we do on the SVG markdown render project I had it copy the Gist/URL loading feature from that tool as well: We should have an option to load latex from a URL (or gist) similar to the markdown SVG tool Here's an example link . The tool uses Pako 2.1.0 , MathJax 4.1.3 , faster-latex 0.3.1 , and DOMPurify 3.4.16 . Tags: latex , paul-ford , tools , urls , ai , generative-ai , llms",
+      "discussion_url": ""
+    },
+    {
       "id": "17be13ddd06d03209c3f",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -48301,6 +48313,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50119778"
     },
     {
+      "id": "2dbe8f378683e16167e2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Muse Jailbreak – Let Muse use your own Chrome",
+      "url": "https://gitlab.com/pablosanzo/musejailbreak",
+      "published_at": "2026-10-16T15:42:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN. I built a small macOS menu bar app that lets the Muse agent use the Chrome browser on your own Mac. I built it because I kept hitting the same wall. I'd ask Muse to do something on the web and it would come back holding a login page. I'm already signed in to a thousand places in my own Chrome; I don't want to hand every one of those logins over to an agent, or sign in all over again inside some cloud browser. So I built a bridge that lets Muse use the browser I already have: my Chrome, my sessions, signed in as me. How it works: the app launches a dedicated Chrome profile on your Mac and exposes it over CDP. You turn it on, it shows a one-time code, you give that code to Muse, and Muse connects through a tunnel (Cloudflare Quick Tunnel by default, or a self-hosted sish fallback if you prefer your own infrastructure). The browser never leaves your machine: cookies, sessions and logins stay on your computer. The tunnel only carries the agent's control traffic, and it is end-to-end encrypted (AES-256-GCM). Muse sees screenshots and sends back clicks and keystrokes; where a page needs a genuine mouse event it can also click at the OS level via the Accessibility API. It is native Swift with no third-party dependencies, and everything is open source (app, protocol, tunnel client) so you can audit exactly what it does before running it. Honest caveats: this gives an AI real control of a browser where you are logged in. That is the point, and also the risk. Use the dedicated profile, don't leave it running unattended, and only connect agents you trust. macOS only for now. I built it for my own use and would genuinely like feedback on the security model: what is missing, and what would make you comfortable (or uncomfortable) running something like this? Comments URL: https://news.ycombinator.com/item?id=50119806 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50119806"
+    },
+    {
       "id": "325421dce1b1bc1b35ab",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -48409,6 +48433,102 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50120470"
     },
     {
+      "id": "aa360a7f25114a1a75d9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Brian2 Atlas, a Rust engine for distributed neural simulation",
+      "url": "https://next-brain.ai/brian2-atlas",
+      "published_at": "2026-10-16T16:42:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://next-brain.ai/brian2-atlas/ Comments URL: https://news.ycombinator.com/item?id=50120752 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50120752"
+    },
+    {
+      "id": "cd8648bd497128b1405d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Camera Controls and Motion for AI Video Prompts",
+      "url": "https://www.kapwing.com/ai/prompt-generator/camera",
+      "published_at": "2026-10-16T18:25:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.kapwing.com/ai/prompt-generator/camera Comments URL: https://news.ycombinator.com/item?id=50122324 Points: 5 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50122324"
+    },
+    {
+      "id": "0cb46489d0252fa1b7f1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Weatherdeck – a read-only status board for AI coding agent lanes",
+      "url": "https://github.com/Moshik21/weatherdeck",
+      "published_at": "2026-10-16T18:54:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Moshik21/weatherdeck Comments URL: https://news.ycombinator.com/item?id=50122767 Points: 8 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50122767"
+    },
+    {
+      "id": "59f16d21f47886093459",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Stoke Money – Personal finance app built around a cash flow forecast",
+      "url": "https://stoke.money",
+      "published_at": "2026-10-16T18:54:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I've been through many finance tracking apps, starting with Personal Capital, then Monarch, and most recently Copilot. None of them have worked perfectly for my needs. All of these apps tend to model “cash flow” as the net sum of your transactions during a month, yet while credit card charges are reported immediately, they are typically deducted from checking (cash) accounts the following month when the bill is due. As a result, I've always had to maintain a separate spreadsheet to track my actual cash flow. These apps also have a huge focus on managing budgets, which has never been for me. My spending is rarely consistent month-to-month, so every month I'm comparing my fully justified spending against my budget, and tweaking my budget until I “pass”. So I built yet another finance tracking app. It has the usual components - accounts, transactions, categories - but the core is a cash flow projection engine, and everything else is built around it. Budgets are gone. Instead, each income/spending category is projected forward from your historical activity, but not as a flat monthly number. They land in whatever account you historically use (e.g. checking account for paychecks/rent/bills, credit/debit cards for daily spending). Credit card payments are modeled automatically based on your projected credit card balance. You can set up your own recurring transfers between accounts as well, to model savings, for example. The end result is that the app can forecast how your cash moves, and you can see in advance when any account might run low. If all of your accounts look good for the next 12 months, maybe you don't have a budgeting problem. What’s made the biggest difference for me has been the MCP integration, which I have connected to Claude (but can be connected to any AI agent of your choice). I have asked it to import historical transactions by uploading PDF account statements, categorize/tag all transactions that took place while I was on vacation, and plan transfers across my accounts to cover expected payments. I hope some people that share my frustrations will find this app useful. Comments URL: https://news.ycombinator.com/item?id=50122776 Points: 25 # Comments: 18",
+      "discussion_url": "https://news.ycombinator.com/item?id=50122776"
+    },
+    {
+      "id": "e5594e5c3d0e8e4ea9d8",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "published_at": "2026-10-16T19:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+      "discussion_url": ""
+    },
+    {
+      "id": "0ef974b852ef0877548d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Make house walkthrough videos only from photos – TensorPix",
+      "url": "https://tensorpix.ai/usecases/real-estate-video-maker",
+      "published_at": "2026-10-16T19:26:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tensorpix.ai/usecases/real-estate-video-maker Comments URL: https://news.ycombinator.com/item?id=50123249 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50123249"
+    },
+    {
+      "id": "582e9c013fc012274604",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CoastMath: (Open Source) Personal Finance and Retirement Planner",
+      "url": "https://github.com/blank-slate-labs/coastmath",
+      "published_at": "2026-10-16T20:17:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Self-hosting instructions in the README. Hosted version: https://coastmath.com/ iOS app: https://apps.apple.com/app/id6809539979 This post is partially inspired by this thread: https://news.ycombinator.com/item?id=50048344 ``` > Somewhere around 20M people (0.2%) see first-hand that large, complex projects that used to take them weeks/months can now be completed by agents with a prompt. >> No, they can't, at least not any semblance of quality. The cases we're seeing where this does kinda work is in ports and translation where all the rules are already documented in the best specification language possible with a way for the LLM to verify itself: code. We saw this close to a year ago now with Cloudflare and NextJS ``` This post mostly outlines how I am personally building with agents, as I am almost entirely hands-off. Desired feature-set determined by having agents research existing products and feedback / feature requests on FIRE subreddits. Features built using Opus 5.5 (xhigh) / Fable 5.1 (med/high) as orchestrator and Opus-5-5 low/medium as worker subagents. Quality is attempted by running Opus-5-5 agents in a perpetual audit + fixer loop on the calculation / compliance engine until no medium+ severity can be found. The origin of each rule / logic must be backed up and documented in the codebase with a source. Sonnet subagents run UX / QA audit on iOS simulators within the Claude Code desktop app, and Opus agents resolve all medium+ sev issues; also run on a perpetual loop. I have not manually tested or used the app(s) for more than 30 minutes. For UX quality, agents' screenshots + associated context are fed to a combination of GPT / Gemini / Claude agents until consensus is achieved on quality (7/10+). Early feedback from beta testers report extremely close results to Boldin / Projection Lab. There is also a feature to import your data from Boldin and Projection Lab into CoastMath if you wish to compare the results yourself. There is also a SimpleFIN integration, if you wish to pull in your own transaction data and see how your financial future changes based on your monthly spending habits (e.g. when I will get to retire if I spend like I did in June vs. July?). I'm sure there are other features I don't yet know about. Again, I've barely used the app. Anyway, feel free to use / roast / steal. I don't think that any moat can exist in this class of products in the future (where the rules are laws that are visible to everyone) and I don't expect to turn a profit. Estimated cost: maybe $2000 if done over the API? I did most of this using the $200 Max subscription. Comments URL: https://news.ycombinator.com/item?id=50123996 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50123996"
+    },
+    {
+      "id": "6c971c5f420a81a335c3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I benchmarked 6 MCP proxies in Claude Code, then built my own",
+      "url": "https://rabin-a.github.io/mcp-router",
+      "published_at": "2026-10-16T20:45:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "I compared 6 MCP proxies inside Claude Code. Most advertise 85–99% token savings, but those numbers assume every tool schema is loaded upfront, and Claude Code already avoids that. On real tasks, 4 of them used more tokens than no proxy at all, and 2 couldn't finish the tasks. So I built my own router, which cut tokens by 13–44% and completed every task. Comments URL: https://news.ycombinator.com/item?id=50124411 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50124411"
+    },
+    {
       "id": "901225acb33eeedf123f",
       "source": "anthropics-claude-code",
       "publisher": "Claude Code",
@@ -48419,43 +48539,187 @@
       "date_kind": "source_publication",
       "evidence": "## What's changed - Added `CLAUDE_CODE_AUTO_MODE_MODEL` to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode - Added an `Idle compaction` row to `/config` for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off - Added a notice to `/design-sync` and `/design-login` that standalone Claude Design (claude.ai/design) closes by December 14, 2026 - Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted - Fixed requests failing with \"diagnostics: Extra inputs are not permitted\" after switching to Vertex or Bedrock mid-session - Fixed the Read tool loading an image file of any size, or a pipe or device named like an image, entirely into memory; image sources over 128 MB are now refused - Fixed `/autocompact` and `/effort` saving to the wrong model when a gateway names Opus 4 or 4.1 with a prefix, such as `anthropic/claude-opus-4-1` - Fixed a prompt cache miss when a tool added mid-session was loaded again through ToolSearch or after compaction - Fixed `claude plugin` and other subcommands sometimes exiting before a queued settings or config write finished, which could lose the change or leave a `.tmp` file behind - Fixed plugin marketplaces re-cloning on every refresh, and newly installed git plugins showing version \"unknown\", when git defaults to the reftable ref format - Fixed the PowerShell tool not finding commands in a plugin's `bin/` folder, and reporting an error when a search that finds nothing (rg, grep, findstr, git grep) is piped into `Select-Object` or another formatting cmdlet - Fixed Claude in the desktop app pointing you to claude.ai settings or `/mcp` to authorize or reconnect an MCP server where that option isn't available - Fixed artifact publishes sometimes failing when Claude sent an empty list of edits, and Claude retrying an artifact update the wrong way after a newer version of the artifact turned it away - Fixed `classifier_category` missing from OpenTelemetry `tool_decision` events for most auto mode classifier blocks, and new `tool_decision` attributes pushing out `tool_use_id`, `tool_source` and `tool_parameters` when `OTEL_LOGRECORD_ATTRIBUTE_COUNT_LIMIT` is low - Fixed rows in the agents view staying blank after moving down a long list or folding a section - Fixed `claude remote-control --help` not printing its usage and exiting when not signed in - Fixed `/design consent` and `/design revoke` suggesting `/design-login` when they fail in a cloud session, where it isn't available; the message now points to claude.ai/design/settings - Fixed MCP servers showing no tools, or every tool call failing, when the server negotiates protocol version 2026-07-28 but omits `resultType`, `ttlMs` or `cacheScope` - Fixed prompt suggestions spending usage credits on models your plan pays for only with credits: they are now skipped after a reply billed to credits - Fixed URLs written in backticks being clickable only on their first row when they wrap; the whole URL is now one link in terminals that support hyperlinks - Fixed `claude plugin details @builtin` suggesting `claude plugin list`, which never shows built-in plugins, when the plugin isn't found; it now points to `/plugin` - Fixed an emoji that a link starts inside wrapping one column too wide, which hid it in question previews and turned tables into lists - Fixed worktree isolation refusing to create or resume worktrees under git 2.56 or later when a stray `.git` file points at a directory that doesn't exist - Fixed a cloud session's cost and usage restarting from zero after the session resumed in a new process - Self-hosted runner: Fixed git fetches failing with \"bad object refs/heads\" in sessions that reuse a checkout stored in git's reftable format - Windows: Fixed every file write being refused or asked about for projects on exFAT or FAT32 drives, including in sessions started with `--plugin-dir` - ",
       "discussion_url": ""
+    },
+    {
+      "id": "a9dffe1c610b1292b049",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Play a 5 minutes match of CS 1.6 1v1 while you wait for your agent",
+      "url": "https://csfor.fun",
+      "published_at": "2026-10-16T21:18:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "I just made it and I think it's fun to play while I wait for claude, but I need more users to play with Comments URL: https://news.ycombinator.com/item?id=50124893 Points: 5 # Comments: 8",
+      "discussion_url": "https://news.ycombinator.com/item?id=50124893"
+    },
+    {
+      "id": "a44fb3c24a52dbe3f6b6",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+      "url": "https://simonwillison.net/2026/Oct/16/code-review",
+      "published_at": "2026-10-16T22:06:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "We think \"did a human read the code?\" is an imprecise proxy for \"what could go wrong with this change, and which check—automated or human—is the right one to catch it?\" Asking that question also changed when review happens. Before, review was a gate at the end of the road: write the code, open a PR, wait for your colleague. Now, review runs continuously, more like spellcheck while you write. Most changes have been reviewed and fixed by Claude at least once before a human is asked to look. This catches most routine mistakes, and saves team attention for higher-level questions and scrutiny. — Addy Osmani, Morgan Westlee Lunt, and Qing Wang , How the Claude Code team does code review Tags: anthropic , claude , ai , claude-code , llms , addy-osmani , coding-agents , generative-ai , agentic-engineering , code-review",
+      "discussion_url": ""
+    },
+    {
+      "id": "ea08347e4b2cb11ac25a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ozil AI – Turn one photo into the viral Ozil goal video",
+      "url": "https://ozilai.net",
+      "published_at": "2026-10-16T22:46:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ozilai.net/ Comments URL: https://news.ycombinator.com/item?id=50125797 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50125797"
+    },
+    {
+      "id": "3e44955c60997585f0b9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CtxWise – MCP schema tree-shaker and firewall for Claude and Codex",
+      "url": "https://github.com/FramY2/ctxwise",
+      "published_at": "2026-10-16T23:08:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/FramY2/ctxwise Comments URL: https://news.ycombinator.com/item?id=50125990 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50125990"
+    },
+    {
+      "id": "b49d4ea054524824069f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Fakeipedia – Wikipedia for worlds that don't exist",
+      "url": "https://fakeipedia.org",
+      "published_at": "2026-10-16T23:52:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! Fakeipedia is an automatic world-building platform which takes an imagined world and makes a whole wiki that you can endlessly explore by clicking red links. I came up with this idea a few months ago after playing around with worldbuilding in Gemini, but I didn't want to release it until a powerful enough model could do it justice, and I decided that Argon is creative enough to write articles that are worth reading. I was surprised how well it turned out and how engaging some of the writing actually is. If you want to generate an article there is a nominal charge attached ($0.90), which helps cover AI/Stripe costs, and I think I just about break even. You can also steer the generation ala choose-your-own-adventure books when generating a new article. Everything generated is free and public for everyone to see. I hope you like it and I'm very much open to hearing about new world ideas/features that would make this project better. Comments URL: https://news.ycombinator.com/item?id=50126334 Points: 7 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50126334"
+    },
+    {
+      "id": "c231638955c9f7448b93",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Things to Do API",
+      "url": "https://thingstodoapi.com",
+      "published_at": "2026-10-16T23:58:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built an api/mcp for local events: pop-ups, one-off events, concerts, etc. currently covering the SF bay area. I've been building a bunch of consumer apps lately around personalization and recommendation and have had a hard time finding this data in one spot. agents can find useful stuff through tool calls / web search, but slow. you can scrape on demand too, but i wanted a faster data set and couldn't find an existing provider for the mix of event types I was searching for. the methodology for it is to find influential accounts/posters/etc. and do a fan out across things that they co-post with. mcp: `claude mcp add --transport http thingstodo https://api.thingstodoapi.com/mcp ` I'm considering adding other cities. If you're building something that needs local event data, would something like this be useful and where would you want coverage? Comments URL: https://news.ycombinator.com/item?id=50126384 Points: 6 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50126384"
+    },
+    {
+      "id": "6a53ba54cd1d7d0b28c9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Twain, a diff viewer like Meld, but for the age of AI",
+      "url": "https://github.com/andunieee/twain",
+      "published_at": "2026-10-17T02:03:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "I love Meld, I've been using it for a while now, it's amazing how many diff viewers exist these days and how they are all awful compared to Meld. But Meld was missing some features that I thought were worth having: - all files from a Git diff shown in the same view, sequentially + a file tree on the side. - show either the full files or only the parts that changed. - tree-sitter-based syntax highlighting. - the ability to comment on sets of changes and lines, and AIs can read these comments. - the ability to search through the entire set of modified files. Twain is in Rust and based on GTK4. Comments URL: https://news.ycombinator.com/item?id=50127157 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50127157"
+    },
+    {
+      "id": "390e013aacc11fbb9b9c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Let AI order DoorDash for me – under my watch – no playwright",
+      "url": "https://www.wysebee.com",
+      "published_at": "2026-10-17T02:18:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.wysebee.com Comments URL: https://news.ycombinator.com/item?id=50127256 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50127256"
+    },
+    {
+      "id": "fad641cb92a671ceb3ac",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Connectio – One local address for all your development servers",
+      "url": "https://connectio.pulkitbanta.com",
+      "published_at": "2026-10-17T02:37:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built this tool while working on MCP servers locally as I wanted to work on the UI as well as back-end server and was continuously iterating on the same. Since it needs a top level ./well-known url, I either had to run a docker with redirects but that meant building the applications again and again which took time or adding a redirect and making UI application a server redirecting the URLs. Instead, I built Connectio which allowed me to create a config and save that as JSON in my machine. connect both servers and having route config similar to what it will run in AWS LB to redirect the traffic, then seeing the errors I was not sure if something was hitting the server or not so also added the capability to see the details and what was happening, how claude / openai will request some resources, tools or other details and how the server was sending this, having issues etc. Would love to get some feedback on this and see what you guys think! Comments URL: https://news.ycombinator.com/item?id=50127349 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50127349"
+    },
+    {
+      "id": "227baa255948c767366f",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline SDK v0.0.95",
+      "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.0.95",
+      "published_at": "2026-10-17T03:00:13+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- OpenAI-compatible requests for GPT-6 models (`gpt-6-sol`, `gpt-6.1-sol`, `gpt-6-1-sol`, and later gpt-5 through gpt-9 ids) send `max_completion_tokens` instead of `max_tokens`, so OpenAI and Azure no longer reject them. Azure's `gpt-35-turbo` keeps `max_tokens` - The hub daemon records which client started it (`CLINE_HUB_LAUNCHER_CLIENT`, `CLINE_HUB_LAUNCHER_VERSION`, `CLINE_HUB_LAUNCHER_TRANSPORT`) and publishes that as OTel resource attributes. SSH remote hubs report the local client with transport `ssh`. `@cline/shared` adds `withHubLauncherIdentity`, `claimHubLauncherIdentity` and `readHubLauncherIdentity` - The telemetry self-check report includes `traces_exporter` - Refreshed the model catalog (6,952 → 7,041 models). Adds the CommandCode and Reflection providers. The Cline recommended list leads with Claude Sonnet 5.5 again, so the `cline` provider's bundled default goes back to Claude Sonnet 5.5 from Gemini 4 Argon. Default models change for 302.AI (Gemini 4 Argon), Eden AI and Prime Inference (Muse Spark Open), CoreWeave (Reflection Beam 1.0), NanoGPT, Pioneer (Nemotron 3.5 Super VL), and Scaleway (DeepSeek V4.1 Flash). OpenCode Go keeps its `https://opencode.ai/inference/go/v1` base URL, now pinned, because models.dev moved its provider-level URL to an OpenAI-only path **Full Changelog**: https://github.com/cline/cline/compare/sdk/sdk/v0.0.94...sdk/sdk/v0.0.95",
+      "discussion_url": ""
+    },
+    {
+      "id": "3463ef38feec082787f6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI agent follows instructions you never approved",
+      "url": "https://github.com/Paraphern/rugsnare/blob/main/docs/blog/2026-10-17-mcp-contract-drift.md",
+      "published_at": "2026-10-17T03:33:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Paraphern/rugsnare/blob/main/docs/blog/2026-10-17-mcp-contract-drift.md Comments URL: https://news.ycombinator.com/item?id=50127659 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50127659"
+    },
+    {
+      "id": "4316b89d45812218fae4",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline CLI v3.0.73",
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.73",
+      "published_at": "2026-10-17T03:59:11+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- GPT-6 models (such as `gpt-6-sol` and `gpt-6.1-sol`) work on OpenAI and Azure OpenAI-compatible endpoints. Before, every request was rejected because Cline sent `max_tokens` instead of `max_completion_tokens` - With no model chosen, the Cline provider uses Claude Sonnet 5.5 again, which is back at the top of Cline's recommended list - Refreshed the model catalog. Adds the CommandCode and Reflection providers. Default models change for 302.AI (Gemini 4 Argon), Eden AI and Prime Inference (Muse Spark Open), CoreWeave (Reflection Beam 1.0), NanoGPT, Pioneer (Nemotron 3.5 Super VL), and Scaleway (DeepSeek V4.1 Flash) **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.72...cli-v3.0.73",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-16T21:08:38.087674+00:00",
+      "last_success": "2026-10-17T04:26:15.692015+00:00",
       "count": 10,
       "earliest": "2026-10-14T13:49:15+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-16T21:08:38.493083+00:00",
+      "last_success": "2026-10-17T04:26:15.871842+00:00",
       "count": 20,
       "earliest": "2026-10-13T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-16T21:08:38.711166+00:00",
+      "last_success": "2026-10-17T04:26:16.049451+00:00",
       "count": 880,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-16T21:08:38.921340+00:00",
+      "last_success": "2026-10-17T04:26:16.143746+00:00",
       "count": 30,
-      "earliest": "2026-10-06T21:32:34+00:00",
+      "earliest": "2026-10-06T23:58:56+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-16T16:40:20.623517+00:00",
+      "last_success": "2026-10-17T04:26:16.462355+00:00",
       "count": 100,
-      "earliest": "2026-10-15T21:41:23+00:00",
+      "earliest": "2026-10-16T09:56:12+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "hn-topics": {
       "last_success": "2026-10-16T16:40:21.527737+00:00",
@@ -48465,56 +48729,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-16T21:08:52.805977+00:00",
+      "last_success": "2026-10-17T04:26:20.716706+00:00",
       "count": 20,
       "earliest": "2026-09-23T19:19:15+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-16T21:08:53.814391+00:00",
+      "last_success": "2026-10-17T04:26:21.434283+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-16T21:08:54.262266+00:00",
+      "last_success": "2026-10-17T04:26:21.759030+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-16T21:08:54.651292+00:00",
+      "last_success": "2026-10-17T04:26:22.004166+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-16T21:08:55.266642+00:00",
-      "count": 10,
-      "earliest": "2026-09-19T00:02:57+00:00",
+      "last_success": "2026-10-17T04:26:22.401542+00:00",
+      "count": 9,
+      "earliest": "2026-09-23T02:24:43+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-16T21:09:25.749352+00:00",
+      "last_success": "2026-10-17T04:26:42.032774+00:00",
       "count": 3,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-16T21:09:26.064613+00:00",
-      "count": 1297,
+      "last_success": "2026-10-17T04:26:42.188306+00:00",
+      "count": 1298,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-16T21:09:39.235771+00:00",
+      "last_success": "2026-10-17T04:26:50.934513+00:00",
       "count": 6,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -48583,5 +48847,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-16T21:09:39.236254+00:00"
+  "collected_at": "2026-10-17T04:26:50.934977+00:00"
 }
