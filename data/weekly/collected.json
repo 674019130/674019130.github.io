@@ -48683,32 +48683,44 @@
       "date_kind": "source_publication",
       "evidence": "- GPT-6 models (such as `gpt-6-sol` and `gpt-6.1-sol`) work on OpenAI and Azure OpenAI-compatible endpoints. Before, every request was rejected because Cline sent `max_tokens` instead of `max_completion_tokens` - With no model chosen, the Cline provider uses Claude Sonnet 5.5 again, which is back at the top of Cline's recommended list - Refreshed the model catalog. Adds the CommandCode and Reflection providers. Default models change for 302.AI (Gemini 4 Argon), Eden AI and Prime Inference (Muse Spark Open), CoreWeave (Reflection Beam 1.0), NanoGPT, Pioneer (Nemotron 3.5 Super VL), and Scaleway (DeepSeek V4.1 Flash) **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.72...cli-v3.0.73",
       "discussion_url": ""
+    },
+    {
+      "id": "d7612717781b110b0ae0",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline Desktop v0.0.48",
+      "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.48",
+      "published_at": "2026-10-17T04:34:20+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- GPT-6 models (such as `gpt-6-sol` and `gpt-6.1-sol`) work on OpenAI and Azure OpenAI-compatible endpoints. Before, every request was rejected because Cline sent `max_tokens` instead of `max_completion_tokens` - The Cline provider's default model is Claude Sonnet 5.5 again, which is back at the top of Cline's recommended list - Refreshed the model catalog. Adds the CommandCode and Reflection providers. Default models change for 302.AI (Gemini 4 Argon), Eden AI and Prime Inference (Muse Spark Open), CoreWeave (Reflection Beam 1.0), NanoGPT, Pioneer (Nemotron 3.5 Super VL), and Scaleway (DeepSeek V4.1 Flash) **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.47...desktop-v0.0.48",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-17T04:26:15.692015+00:00",
+      "last_success": "2026-10-17T10:44:05.975829+00:00",
       "count": 10,
       "earliest": "2026-10-14T13:49:15+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-17T04:26:15.871842+00:00",
+      "last_success": "2026-10-17T10:44:06.143378+00:00",
       "count": 20,
       "earliest": "2026-10-13T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-17T04:26:16.049451+00:00",
+      "last_success": "2026-10-17T10:44:06.249842+00:00",
       "count": 880,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-17T04:26:16.143746+00:00",
+      "last_success": "2026-10-17T10:44:06.361219+00:00",
       "count": 30,
       "earliest": "2026-10-06T23:58:56+00:00",
       "gap": false,
@@ -48719,7 +48731,7 @@
       "count": 100,
       "earliest": "2026-10-16T09:56:12+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-10-16T16:40:21.527737+00:00",
@@ -48729,56 +48741,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-17T04:26:20.716706+00:00",
+      "last_success": "2026-10-17T10:44:24.369109+00:00",
       "count": 20,
       "earliest": "2026-09-23T19:19:15+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-17T04:26:21.434283+00:00",
+      "last_success": "2026-10-17T10:44:25.065310+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-17T04:26:21.759030+00:00",
+      "last_success": "2026-10-17T10:44:25.402117+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-17T04:26:22.004166+00:00",
+      "last_success": "2026-10-17T10:44:25.714791+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-17T04:26:22.401542+00:00",
+      "last_success": "2026-10-17T10:44:26.184478+00:00",
       "count": 9,
       "earliest": "2026-09-23T02:24:43+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-17T04:26:42.032774+00:00",
+      "last_success": "2026-10-17T10:44:45.788459+00:00",
       "count": 3,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-17T04:26:42.188306+00:00",
-      "count": 1298,
+      "last_success": "2026-10-17T10:44:45.920564+00:00",
+      "count": 1299,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-17T04:26:50.934513+00:00",
+      "last_success": "2026-10-17T10:44:54.704729+00:00",
       "count": 6,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -48847,5 +48859,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-17T04:26:50.934977+00:00"
+  "collected_at": "2026-10-17T10:44:54.705147+00:00"
 }
