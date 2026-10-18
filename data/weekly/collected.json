@@ -49489,6 +49489,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50135240"
     },
     {
+      "id": "7b83b7cfdb1f780aad1e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Neoism – An open-source agent harness and native IDE in Rust",
+      "url": "https://neoism.ai",
+      "published_at": "2026-10-17T21:53:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://neoism.ai/ Comments URL: https://news.ycombinator.com/item?id=50135496 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135496"
+    },
+    {
       "id": "3947cc05cd47899df2f2",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -49501,6 +49513,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50135614"
     },
     {
+      "id": "5050a01f987862e28a2e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AI coding interfaces make approval easy and understanding hard",
+      "url": "https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/10/10/ai-coding-interfaces-make-approval-easy-and-understanding-hard.html",
+      "published_at": "2026-10-17T22:07:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/10/10/ai-coding-interfaces-make-approval-easy-and-understanding-hard.html Comments URL: https://news.ycombinator.com/item?id=50135617 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135617"
+    },
+    {
       "id": "3f7f77ceb98e9ee6f96b",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -49511,6 +49535,42 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://primerkit.ai/ Comments URL: https://news.ycombinator.com/item?id=50135649 Points: 3 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=50135649"
+    },
+    {
+      "id": "04ba05542ee57f07bf08",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: PrimerKit, financial market work at agent speed",
+      "url": "https://primerkit.ai",
+      "published_at": "2026-10-17T22:13:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://primerkit.ai/ Comments URL: https://news.ycombinator.com/item?id=50135649 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135649"
+    },
+    {
+      "id": "4f05b454f956b40bf513",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Cloudroom – Every agent. One app",
+      "url": "https://www.cloudroom.dev",
+      "published_at": "2026-10-17T22:23:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.cloudroom.dev Comments URL: https://news.ycombinator.com/item?id=50135735 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135735"
+    },
+    {
+      "id": "1aef8b19ca456c4f7953",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Gartner says only about 130 'AI agent' companies are real",
+      "url": "https://devanshranjan.medium.com/gartner-says-only-about-130-ai-agent-companies-are-real-i-build-agents-heres-how-to-tell-b79fdd03d764",
+      "published_at": "2026-10-17T23:04:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://devanshranjan.medium.com/gartner-says-only-about-130-ai-agent-companies-are-real-i-build-agents-heres-how-to-tell-b79fdd03d764 Comments URL: https://news.ycombinator.com/item?id=50135988 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135988"
     },
     {
       "id": "eaa2faca54ab6c69b6fb",
@@ -49549,6 +49609,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50136645"
     },
     {
+      "id": "e4fc03cf4088011b298c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Lazyagents – Lazygit for AI coding agents",
+      "url": "https://github.com/rogeriojunior31/lazyagents",
+      "published_at": "2026-10-18T00:42:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/rogeriojunior31/lazyagents Comments URL: https://news.ycombinator.com/item?id=50136701 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50136701"
+    },
+    {
       "id": "a9f5829d5e5560296c8c",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -49571,6 +49643,18 @@
       "date_kind": "community_post",
       "evidence": "Hi everyone, This started as an exploration into harnesses and locally hostable LLMs (the kind that uses less power than a small electric heater), and I used it as an opportunity to retool. I've tried popular ones like Cline, Claude Code, and Pi, but wanted a different UX and integrated sandboxes. The solution that I've landed on is a responsive web interface where I can quickly drive progress. It feels like a microcosm of my day job: define and delegate tasks, organize using kanban, then review deliverables. And it also feels like the time I used to spend coding is now spent in code review with the agent, so I tried to optimize the UX to make review feel nicer. One of my (maybe a bit niche) benchmark use-cases is how pleasant it is to make progress on hobby software projects while also out on a hike. This meant specifying low bandwidth usage and offline mode. Now I can jot down an idea, start the task, and at some point down the trail: get a notification* that either clarification is needed, a decision needs to be made, or the code is ready for review. I've been having a good time with this. To build MIKE, I exclusively used locally hostable LLMs (from Google, Meta, Qwen, Poolside, and DeepSeek) hosted with llama.cpp on my machines at home (Strix Halo and a 5090) to \"compile\" the code. The experience has gotten substantially better ever since DeepSeek’s release in July. Side note: I have a soft spot for llama.cpp since it was one of the first that made it possible to run this new tech at home, and its maintainers accepted a tiny improvement I made to error reporting. Oh the joys of having a PR get approved. I plan on maintaining this, at least until similar features are supported by better tools. Until then, hope you find this useful! 5 minute demo: https://youtu.be/jexzLkZ50FU p.s. I didn't mention details about the sandbox earlier since most people seem to find this a bit boring. It was one of my critical requirements, and I opted to use an existing battle-tested sandbox. I'm not an expert on how the Linux kernel works, but seeing all the VM escape exploits recently is a bit scary, and I liked gVisor’s approach to the problem. I'm also using Git worktrees to provision the agent’s workspace, as well as a read-only repository mount to provide relevant context when the agent looks for it. *off by default Comments URL: https://news.ycombinator.com/item?id=50137043 Points: 2 # Comments: 3",
       "discussion_url": "https://news.ycombinator.com/item?id=50137043"
+    },
+    {
+      "id": "53ae8bcf3069b0cb49f3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Turn your coding-agent sessions into private evals",
+      "url": "https://github.com/ibragim-bad/evals-from-sessions",
+      "published_at": "2026-10-18T03:26:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ibragim-bad/evals-from-sessions Comments URL: https://news.ycombinator.com/item?id=50137653 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50137653"
     },
     {
       "id": "9b5f7956bdaa28e5c7bd",
@@ -49609,6 +49693,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50138306"
     },
     {
+      "id": "c60de06444e1a9e1f545",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "We poisoned an agent's procedural memory and every test still passed",
+      "url": "https://thewariend.com/papers/proof-before-reuse.pdf",
+      "published_at": "2026-10-18T07:00:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://thewariend.com/papers/proof-before-reuse.pdf Comments URL: https://news.ycombinator.com/item?id=50138594 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50138594"
+    },
+    {
+      "id": "e2330a3fa8088ebf6699",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "If you don't run your own LLM proxy how the fuck do you even know whats going on",
+      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on",
+      "published_at": "2026-10-18T07:12:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/ Comments URL: https://news.ycombinator.com/item?id=50138678 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50138678"
+    },
+    {
       "id": "819ea289e516e3f800be",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -49631,6 +49739,18 @@
       "date_kind": "community_post",
       "evidence": "I noticed that a lot of non-technical people don’t use AI to its full extent. Like they use the wrong model for the task, the wrong reasoning effort, or vague prompts. That gap between \"what the AI can do\" and \"what people actually get\" is what I wanted to fix. So I spent the last two years in my spare time building a consumer AI product that tries to fix this issue. This is how it works: When it receives the request, an LLM decides the task type (chat, reasoning, coding, writing) and the tool calls that are needed (web search, image generation, video generation, audio generation). Then it routes it to a suitable model and applies a prompt based on the task type. If it's a media generation task, it rewrites the prompt into a detailed one using prompt formulas (the prompt formulas for specific styles are mentioned in the system prompt). The LLM that is used for answering the request can also use a map, generate a mermaid diagram, generate a quiz or flashcards, generate files, etc. A limitation right now is that routing adds latency, but I'm currently experimenting with decision-models like Jev, PPLX Decider, etc. and might use decision-models to route to the right LLM and give the tool calls like web search and media generation to the answering LLM. It launched this week, so it's still early and I will keep improving it and adding new things. Also sign-up/in is required to prevent abuse. I’d really like honest feedback: what’s confusing, what’s missing, etc. Comments URL: https://news.ycombinator.com/item?id=50139344 Points: 1 # Comments: 2",
       "discussion_url": "https://news.ycombinator.com/item?id=50139344"
+    },
+    {
+      "id": "1596b7931b52cf37a3aa",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Shadow-debugger – Background LLM error diagnosis for Python and FastAPI",
+      "url": "https://github.com/GaspareDev/shadow-debugger",
+      "published_at": "2026-10-18T09:42:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/GaspareDev/shadow-debugger Comments URL: https://news.ycombinator.com/item?id=50139501 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139501"
     },
     {
       "id": "30bed9b5eeecb7682302",
@@ -49657,6 +49777,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50139549"
     },
     {
+      "id": "42d88c0e515a6d556b43",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Benchmarking LLM ability to code in an adversarial language",
+      "url": "https://bench.killswitch-lang.org",
+      "published_at": "2026-10-18T09:53:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://bench.killswitch-lang.org/ Comments URL: https://news.ycombinator.com/item?id=50139549 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139549"
+    },
+    {
+      "id": "5cee9f28969342259d22",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Open-source tax rules for 100 countries that your LLM can use",
+      "url": "https://github.com/openaccountants/openaccountants",
+      "published_at": "2026-10-18T10:09:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/openaccountants/openaccountants Comments URL: https://news.ycombinator.com/item?id=50139629 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139629"
+    },
+    {
       "id": "abc9e8a90d2c862fb748",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -49681,6 +49825,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50139795"
     },
     {
+      "id": "f2d23f45ecb8901d458d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering",
+      "url": "https://machinelearning.apple.com/research/harness-autonomous-ml-engineering",
+      "published_at": "2026-10-18T10:49:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://machinelearning.apple.com/research/harness-autonomous-ml-engineering Comments URL: https://news.ycombinator.com/item?id=50139872 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139872"
+    },
+    {
+      "id": "a8119d84f273397833c7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agentgateway – One high-performance gateway for service, LLM, and MCP traffic",
+      "url": "https://agentgateway.dev",
+      "published_at": "2026-10-18T11:20:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agentgateway.dev/ Comments URL: https://news.ycombinator.com/item?id=50140027 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140027"
+    },
+    {
       "id": "4f48d35d198099ef2a12",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -49703,6 +49871,42 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/aldohushi1-stack/shipback-sftp Comments URL: https://news.ycombinator.com/item?id=50140229 Points: 4 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50140229"
+    },
+    {
+      "id": "310db4622bd29bc18576",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Shipback – SFTP deploys your AI agent can undo",
+      "url": "https://github.com/aldohushi1-stack/shipback-sftp",
+      "published_at": "2026-10-18T11:48:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/aldohushi1-stack/shipback-sftp Comments URL: https://news.ycombinator.com/item?id=50140229 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140229"
+    },
+    {
+      "id": "8fa4e1c5f498ca998ed6",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "I've been using an AI agent for a month, and I'm both impressed and terrified",
+      "url": "https://www.androidauthority.com/using-ai-agent-instinct-one-month-later-impressions-3720825",
+      "published_at": "2026-10-18T11:54:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.androidauthority.com/using-ai-agent-instinct-one-month-later-impressions-3720825/ Comments URL: https://news.ycombinator.com/item?id=50140278 Points: 1 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140278"
+    },
+    {
+      "id": "770e358416c68965a008",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent-bridge – an OpenAI-compatible API for headless coding-agent CLIs",
+      "url": "https://github.com/R3n3r0/agent-bridge",
+      "published_at": "2026-10-18T12:02:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/R3n3r0/agent-bridge Comments URL: https://news.ycombinator.com/item?id=50140329 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140329"
     },
     {
       "id": "756fdef514b46280a1e1",
@@ -49753,6 +49957,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50140560"
     },
     {
+      "id": "c2f0828d3aaebbc9dede",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Independent LLM benchmark index tracking 22 frontier models",
+      "url": "https://vibecoderjournal.com/rankings",
+      "published_at": "2026-10-18T12:36:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vibecoderjournal.com/rankings/ Comments URL: https://news.ycombinator.com/item?id=50140560 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140560"
+    },
+    {
       "id": "f47316269c6966cc94dc",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -49777,9 +49993,45 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50140880"
     },
     {
+      "id": "a07d0f84ae46dfe5b762",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "User-Agent Reduction: Why Chrome Froze Your Version Number",
+      "url": "https://browserinsight.net/blog/user-agent-reduction-explained",
+      "published_at": "2026-10-18T13:33:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://browserinsight.net/blog/user-agent-reduction-explained Comments URL: https://news.ycombinator.com/item?id=50140970 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140970"
+    },
+    {
+      "id": "c6d52d8bfc4f5e34228c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Okl – hold your agent to rules proven by checks and gated at push",
+      "url": "https://github.com/emeraldleaf/okl",
+      "published_at": "2026-10-18T14:04:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/emeraldleaf/okl Comments URL: https://news.ycombinator.com/item?id=50141202 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141202"
+    },
+    {
       "id": "43a93a7f9761a98e6f7a",
       "source": "hn-show",
       "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: DocuMemory – Persistent memory and context for AI coding tools",
+      "url": "https://www.documemory.dev",
+      "published_at": "2026-10-18T14:22:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.documemory.dev/ Comments URL: https://news.ycombinator.com/item?id=50141365 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141365"
+    },
+    {
+      "id": "ea7851ec006945ffba06",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
       "category": "discovery",
       "title": "Show HN: DocuMemory – Persistent memory and context for AI coding tools",
       "url": "https://www.documemory.dev",
@@ -49811,104 +50063,416 @@
       "date_kind": "community_post",
       "evidence": "About a year ago I was wondering how hard it'd be to build an e2e enabled emacs matrix client similar to how telega does things: use mature libraries to build a daemon that speaks JSON to emacs. I did a proof of concept for the e2e bits, and over time built a chat client on top. I recently switched to it as my only client on most devices - and thought maybe it's time to give it a better name than \"matrix\", and cut it out of my .emacs.d it was developed in. So I asked an LLM to write tests for everything to have a sensible baseline, split it out, and renamed everything. There probably is still a bit of breakage linking back to my config, but I'm relatively confident all major issues got fixed over the last week of testing. Comments URL: https://news.ycombinator.com/item?id=50141597 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50141597"
+    },
+    {
+      "id": "e9025571c2efa2b7b1bf",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: BricksChat – Generate Lego builds from images, including Technic",
+      "url": "https://brickschat.com",
+      "published_at": "2026-10-18T15:13:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've been working on generative LEGO assembly models recently, but there are similar projects already, so I wanted to try some harder cases: specialized parts (incl. technic), multi-modal prompting (incl. using images, 3D meshes or almost any input), constrained inventory (so you could upload just parts you have), ensuring physical validity and generating buildable instructions, being able to tweak, modify or rebuild entirely an existing build etc. TL;DR the pipeline got more complex than expected and I ended up with an agentic harness leveraging recursive program synthesis, combinatorial diffusion, semantic 3D search and operations on assembly hypergraphs. Yet I am quite happy with the result. It should be able to handle as well a functional mechanism, LEGO robot, artistic landscape or fancy animal. Most importantly, it also checks for subgraph matches of builds present in catalogue, being able to check (and possibly enforce) originality and prevent copying existing MOCs. Have fun! Comments URL: https://news.ycombinator.com/item?id=50141798 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141798"
+    },
+    {
+      "id": "8950f6862a00adc01d79",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Wisp – a voice AI on your shoulder, with spatial audio in the browser",
+      "url": "https://wispplayer.com?tab=ai",
+      "published_at": "2026-10-18T15:18:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://wispplayer.com/?tab=ai Comments URL: https://news.ycombinator.com/item?id=50141830 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141830"
+    },
+    {
+      "id": "1f410fbda1a7c1092d70",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Secret Guard – a local LLM gateway; keys never leave your machine",
+      "url": "https://github.com/luochen1990/secret-guard",
+      "published_at": "2026-10-18T15:24:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/luochen1990/secret-guard Comments URL: https://news.ycombinator.com/item?id=50141886 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141886"
+    },
+    {
+      "id": "295a38e38d37070c5eaa",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Secret Guard – a local LLM gateway; keys never leave your machine",
+      "url": "https://github.com/luochen1990/secret-guard",
+      "published_at": "2026-10-18T15:24:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/luochen1990/secret-guard Comments URL: https://news.ycombinator.com/item?id=50141886 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141886"
+    },
+    {
+      "id": "0714d0fc425411c4f2d6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Zombie Trend–Generating multi-shot narrative videos from two photos",
+      "url": "https://aizombietrend.online",
+      "published_at": "2026-10-18T15:25:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://aizombietrend.online/ Comments URL: https://news.ycombinator.com/item?id=50141889 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141889"
+    },
+    {
+      "id": "87f2f37812c17bac3207",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Pi-cowboy – use Codex, Claude Code, OpenCode as subagents",
+      "url": "https://github.com/electric-dragon-80000v/pi-cowboy",
+      "published_at": "2026-10-18T16:04:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "pi-cowboy is an agent orchestrator for Pi( https://pi.dev ) and Herdr( https://github.com/herdrdev/herdr ). Break large jobs into focused subtasks, hand them off to background agents running in parallel, and consolidate the results when they finish. Each agent runs in an isolated copy-on-write Git work-tree, minimising disk overhead. pi-cowboy can orchestrate foreign harnesses too, including Claude Code, Codex, OpenCode and more. Feature highlights: - Foreign harnesses: pi-cowboy agents can run in Claude Code, Codex, OpenCode, Pig and Pi-Bolt, as well as Pi. This gives you great flexibility in choosing how to spend your tokens. Running out of Codex usage? Switch your pi-cowboy harness to OpenCode, select one of its free models, and let it handle the rest. Pig and Pi-Bolt are pi variants that are more efficient, with a lower memory footprint and faster performance than pi. Because pi-cowboy is designed to run multiple agents in parallel, having a lower per-agent footprint is crucial. It prevents your machine from running out of resources and lets you have higher concurrency without choking your system. - Concurrency limits: You can configure concurrency limits at every level. Running a local model with limited resources? If a simple task already takes hours to complete, the last thing you want is to overload your machine by running too many of them at once. Set concurrency limits for that model specifically to keep resource usage under control. You can install it on Pi as a package: pi install npm:pi-cowboy #(requires `herdr` 0.8+) Comments URL: https://news.ycombinator.com/item?id=50142277 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142277"
+    },
+    {
+      "id": "1fb95561d47636fca39a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Replacing an LLM judge with a deterministic model: 9.2x faster, 4.5x cheaper",
+      "url": "https://medium.com/@gbenga-awodokun/building-clinical-ai-agents-with-langchain-and-jev-decision-healthcare-trustworthy-ai-lab-v2-1b81e271f1c9",
+      "published_at": "2026-10-18T16:07:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://medium.com/@gbenga-awodokun/building-clinical-ai-agents-with-langchain-and-jev-decision-healthcare-trustworthy-ai-lab-v2-1b81e271f1c9 Comments URL: https://news.ycombinator.com/item?id=50142310 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142310"
+    },
+    {
+      "id": "6530ceeba802c48378fa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A GitHub contribution for my newborn's feedings, turned into SaaS",
+      "url": "https://milo.baby",
+      "published_at": "2026-10-18T16:19:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I am a new dad, and as I started paternity leave I had all this time on my hands and started building with Claude. I built a GitHub contribution chart for my baby’s feeding and one thing led to another. I had a full blown baby tracker in a week. People liked it, the pricing of everything else was obscene so I decided to make it open for other parents with the idea that I keep building it as my baby grows. We’re not trying to make money, just paying the postgres bill. And it was nice to connect with my wife while building something together, she’s not technical, but she can build! We also wrote (well, Claude did, my wife keeps saying she wants to rewrite it) our story, and we called the product like our son. There is a demo page here https://fennimore.milo.baby/demo . I then hooked it up to an agent for stats, and also automated my Divoom (see https://imgur.com/a/iKat7rD ) We’re entering a phase where software costs nothing to build and nothing to run, and I am ready for the “Parents that code phase of my life”. Comments URL: https://news.ycombinator.com/item?id=50142443 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142443"
+    },
+    {
+      "id": "ac787b0616580cfe4ba3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Muse, dots, Instinct, and the question every agent will be asked",
+      "url": "https://twitter.com/worldnetwork/status/2105989118287134752",
+      "published_at": "2026-10-18T16:26:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/worldnetwork/status/2105989118287134752 Comments URL: https://news.ycombinator.com/item?id=50142517 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142517"
+    },
+    {
+      "id": "36ca086af4e1fe52a331",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HedgePick – nine AI agents that argue against your stock thesis",
+      "url": "https://hedgepick.com",
+      "published_at": "2026-10-18T16:33:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://hedgepick.com/ Comments URL: https://news.ycombinator.com/item?id=50142592 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142592"
+    },
+    {
+      "id": "0d08928618a870a95b5e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Tell HN: I picked up knitting while waiting for my AI agent to complete",
+      "url": "https://news.ycombinator.com/item?id=50142650",
+      "published_at": "2026-10-18T16:39:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Any new hobbies you are willing to share that AI made you start? Comments URL: https://news.ycombinator.com/item?id=50142650 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142650"
+    },
+    {
+      "id": "dff81a5c25efd2695ba8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: FR/EN search engine built with Chez Scheme and Claude Code for €150",
+      "url": "https://h9p3r.fr",
+      "published_at": "2026-10-18T16:44:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://h9p3r.fr Comments URL: https://news.ycombinator.com/item?id=50142710 Points: 1 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142710"
+    },
+    {
+      "id": "d2f690e5cf33fa1c4f43",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Radxa Linkr – A KVM for Your AI Agent",
+      "url": "https://taoofmac.com/space/reviews/2026/10/18/1646",
+      "published_at": "2026-10-18T16:45:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://taoofmac.com/space/reviews/2026/10/18/1646 Comments URL: https://news.ycombinator.com/item?id=50142724 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142724"
+    },
+    {
+      "id": "6fef32994b545884cb10",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "url": "https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1",
+      "published_at": "2026-10-18T16:45:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1/ Comments URL: https://news.ycombinator.com/item?id=50142726 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142726"
+    },
+    {
+      "id": "96aaa15dc0c7d64b04f5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A reusable agent skill for auditing and rewriting website copy",
+      "url": "https://github.com/wvvb/website-coprighting",
+      "published_at": "2026-10-18T16:56:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/wvvb/website-coprighting Comments URL: https://news.ycombinator.com/item?id=50142859 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50142859"
+    },
+    {
+      "id": "c92cf64444045a834c83",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I recreated Contra in a custom NES game engine (NOT an emulator)",
+      "url": "https://news.ycombinator.com/item?id=50143302",
+      "published_at": "2026-10-18T17:35:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Here's a demo video I recorded for a friend that I decided to repost. Sorry for the terrible sound quality and my cough -- hope it's mostly understandable. https://s3.us-east-2.amazonaws.com/jeffluntgames.com/the-sur... --- Here's the technical breakdown of what I did: * Worked with an AI agent (of course) * Described the basic features of the NES * Sprite engine * Input handling * Sound and music Had the AI build what I'll call a microengine around this. Why do I call it a microengine? Because games on the NES were, I assume, written in assembly, without game engines. But my micro engine (which I named `neo8`) looks like a high-level language, has a basic camera system, and event-based sound system, a polling and event-based input handler that maps inputs to in-game events, a way to model game entities (entity attributes, rendering, animation state machines, etc.), but really just the very basics of what you'd need to create NES-style games on modern hardware. To be clear, `neo8` is _not_ an emulator. It cannot run NES ROMs. But part of the engine, for the purpose of this demo, involved creating an image, audio, and code structure analysis tool so that I could convert the raw binary data from an actual ROM into .png files, mp3 files, and high-level code. That high-level code is then compiled to a zero-dependency, native binary, and the little engine supports win/mac/linux as binary outputs. Anyway, it was fun. Why not just port Contra directly (the \"reverse engineer anything\" repo, I'm sure could do it direct from the ROM to Rust or something). But I didn't want Contra, because I could just play the real Contra on original hardware or an emulator. Recreating Contra wasn't the point. The point was to create the engine so I could create new, cross-platform NES-style games using a tiny engine. The Contra demo was simply a proof-of-concept to see if my little engine could replicate Contra's gameplay style, and sure enough it pretty much worked. Comments URL: https://news.ycombinator.com/item?id=50143302 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50143302"
+    },
+    {
+      "id": "784649ad44fe876ec58b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Videolabs – narrated terminal-style courses",
+      "url": "https://videolabs.pages.dev",
+      "published_at": "2026-10-18T17:44:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "I enjoy learning new tools watching videos on youtube of people showing their experiments, and sometimes i cannot find a good video explaining exactly what i need. So i created this project to help me solve that problem. Creating a video is one prompt, using claude skill to generate the video (@remotion + elevenlabs) and publishing into the page via cloudflare R2 the video script is tested by creating the lab in my local server, all commands/scripts/output is shared in the video page in case i need to verify something or copy the command ran in the video. the whole project (website+ how to generate a new video) is in github https://github.com/bigzaqui/videolabs This was my first weekend project with a single Claude Pro subscription, mind blown Comments URL: https://news.ycombinator.com/item?id=50143391 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50143391"
+    },
+    {
+      "id": "6787a37bb660e6d43600",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The LLM Comments Are Not for You",
+      "url": "https://danilafe.com/blog/comments_not_for_you",
+      "published_at": "2026-10-18T17:51:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://danilafe.com/blog/comments_not_for_you/ Comments URL: https://news.ycombinator.com/item?id=50143476 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50143476"
+    },
+    {
+      "id": "7ecf284a56e92c8f3754",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agentic-Coding-Biolerplate",
+      "url": "https://github.com/ulrischa/agentic-coding-biolerplate",
+      "published_at": "2026-10-18T18:04:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ulrischa/agentic-coding-biolerplate Comments URL: https://news.ycombinator.com/item?id=50143628 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50143628"
+    },
+    {
+      "id": "8e2f56b436cca679bcfc",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Agentic-Coding-Biolerplate",
+      "url": "https://github.com/ulrischa/agentic-coding-biolerplate",
+      "published_at": "2026-10-18T18:04:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ulrischa/agentic-coding-biolerplate Comments URL: https://news.ycombinator.com/item?id=50143628 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50143628"
+    },
+    {
+      "id": "dc25ea0e901a4cc3fbaf",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A protocol for LLM intent search",
+      "url": "https://zenodo.org/records/23452266",
+      "published_at": "2026-10-18T18:59:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://zenodo.org/records/23452266 Comments URL: https://news.ycombinator.com/item?id=50144145 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50144145"
+    },
+    {
+      "id": "c985238811f057bebdec",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Trustbut checks if an AI agent's new tests fail without its change",
+      "url": "https://github.com/isAlmogK/trustbut",
+      "published_at": "2026-10-18T19:07:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/isAlmogK/trustbut Comments URL: https://news.ycombinator.com/item?id=50144227 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50144227"
+    },
+    {
+      "id": "9e90484a942256c61789",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Neurastheniacc: LLM-based C->WASM compiler you didn't need",
+      "url": "https://github.com/vivshaw/neurastheniacc",
+      "published_at": "2026-10-18T19:20:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vivshaw/neurastheniacc Comments URL: https://news.ycombinator.com/item?id=50144358 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50144358"
+    },
+    {
+      "id": "dea8ef13bd8cdb00b435",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Leviathan LLM Inference",
+      "url": "https://github.com/CuppaTea1983/Leviathan",
+      "published_at": "2026-10-18T19:38:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/CuppaTea1983/Leviathan Comments URL: https://news.ycombinator.com/item?id=50144588 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50144588"
+    },
+    {
+      "id": "5d9ef32c296e54989af8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Keel – One event-sourced context graph for all your agents",
+      "url": "https://github.com/angelkurten/keel",
+      "published_at": "2026-10-18T19:40:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/angelkurten/keel Comments URL: https://news.ycombinator.com/item?id=50144600 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50144600"
+    },
+    {
+      "id": "4b6dd959ba3c0d9c983b",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: LLM Usage Desktop Widget",
+      "url": "https://github.com/aleph-void/LLM-Usage-Desktop-Widget",
+      "published_at": "2026-10-18T20:41:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "A Linux / Windows / MacOS task bar widget for monitoring LLM usage. Also has signed installers if you don't want to install from source Comments URL: https://news.ycombinator.com/item?id=50145276 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50145276"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-18T15:52:08.712345+00:00",
+      "last_success": "2026-10-18T20:43:41.960319+00:00",
       "count": 10,
       "earliest": "2026-10-14T13:49:15+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-18T15:52:08.948088+00:00",
+      "last_success": "2026-10-18T20:43:42.231435+00:00",
       "count": 20,
       "earliest": "2026-10-13T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-18T15:52:09.114338+00:00",
+      "last_success": "2026-10-18T20:43:42.587104+00:00",
       "count": 880,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-18T15:52:09.230294+00:00",
+      "last_success": "2026-10-18T20:43:42.846233+00:00",
       "count": 30,
       "earliest": "2026-10-07T04:47:55+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-18T15:52:09.699580+00:00",
+      "last_success": "2026-10-18T20:43:44.460078+00:00",
       "count": 99,
-      "earliest": "2026-10-17T11:47:34+00:00",
+      "earliest": "2026-10-17T19:15:11+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-17T20:37:07.281441+00:00",
-      "count": 100,
-      "earliest": "2026-10-15T15:38:27+00:00",
+      "last_success": "2026-10-18T20:43:48.393611+00:00",
+      "count": 99,
+      "earliest": "2026-10-16T09:49:55+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-18T15:52:17.685507+00:00",
-      "count": 20,
-      "earliest": "2026-09-23T19:19:15+00:00",
+      "last_success": "2026-10-18T20:43:49.130481+00:00",
+      "count": 10,
+      "earliest": "2026-10-06T03:55:19+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-18T15:52:18.570867+00:00",
+      "last_success": "2026-10-18T20:43:50.408034+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-18T15:52:19.023604+00:00",
+      "last_success": "2026-10-18T20:43:50.981236+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-18T15:52:19.369279+00:00",
+      "last_success": "2026-10-18T20:43:51.435123+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-18T15:52:19.876829+00:00",
+      "last_success": "2026-10-18T20:43:52.166498+00:00",
       "count": 9,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-18T15:52:46.529453+00:00",
-      "count": 3,
-      "earliest": "2026-09-23T20:50:06+00:00",
+      "last_success": "2026-10-18T20:44:13.184163+00:00",
+      "count": 2,
+      "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-18T15:52:46.645247+00:00",
+      "last_success": "2026-10-18T20:44:13.494335+00:00",
       "count": 1299,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-18T15:52:57.937714+00:00",
-      "count": 6,
-      "earliest": "2026-10-01T20:19:13+00:00",
+      "last_success": "2026-10-18T20:44:18.278780+00:00",
+      "count": 2,
+      "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
       "error": null
     }
@@ -49975,5 +50539,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-18T15:52:57.938137+00:00"
+  "collected_at": "2026-10-18T20:44:18.279270+00:00"
 }
