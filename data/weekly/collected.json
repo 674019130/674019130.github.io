@@ -49451,43 +49451,403 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://chrystianschutz.com/blog/ai-poker-holdembench/ Comments URL: https://news.ycombinator.com/item?id=50134322 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50134322"
+    },
+    {
+      "id": "6d0aa4246ed1474404d0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Thoreau's Walden as a 3D browser game with an AI guide",
+      "url": "https://walden.learnmer.com",
+      "published_at": "2026-10-17T20:33:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://walden.learnmer.com/ Comments URL: https://news.ycombinator.com/item?id=50134868 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50134868"
+    },
+    {
+      "id": "13962e514a9e3838d77b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: KIRA – Sovereign, local-first AI and media workstation for Windows",
+      "url": "https://apps.microsoft.com/detail/9n2dr3g0jw0z?hl=en-US&gl=US",
+      "published_at": "2026-10-17T20:48:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://apps.microsoft.com/detail/9n2dr3g0jw0z?hl=en-US&gl=US Comments URL: https://news.ycombinator.com/item?id=50135001 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135001"
+    },
+    {
+      "id": "ed83253498b74c1663d6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ayafy: A free app to memorise and revise the Quran",
+      "url": "https://ayafy.com",
+      "published_at": "2026-10-17T21:18:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built Ayafy, a free Quran learning app on iOS and Android. It lets you manage memorisation, automatically prepares revision tests as you study, measure progress, establish goals and review your recitation with AI-powered word-by-word feedback. It has also a quran reader, voice search and much more. I would love to hear your open feedback & ideas for improvements! Website: https://ayafy.com iOS: https://apps.apple.com/us/app/ayafy/id1549129832 Android: https://play.google.com/store/apps/details?id=com.ayafy.app Comments URL: https://news.ycombinator.com/item?id=50135240 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135240"
+    },
+    {
+      "id": "3947cc05cd47899df2f2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Put AI to work across your company",
+      "url": "https://vstorm-co.github.io/vstormos-landing",
+      "published_at": "2026-10-17T22:07:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vstorm-co.github.io/vstormos-landing/ Comments URL: https://news.ycombinator.com/item?id=50135614 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135614"
+    },
+    {
+      "id": "3f7f77ceb98e9ee6f96b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PrimerKit, financial market work at agent speed",
+      "url": "https://primerkit.ai",
+      "published_at": "2026-10-17T22:13:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://primerkit.ai/ Comments URL: https://news.ycombinator.com/item?id=50135649 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50135649"
+    },
+    {
+      "id": "eaa2faca54ab6c69b6fb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Serve Nix closures to k8s pods",
+      "url": "https://github.com/Kranzes/nix-store-csi",
+      "published_at": "2026-10-17T23:24:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "I’ve been working on a Nix CSI for kubernetes since NixCon when I realized that everyone seems to working towards killing OCI layers (and images) in Kubernetes deployments. I’m hoping to get people to give it a spin and report back to me bugs, feature requests or general feedback. I don’t have a lot of data on how this scales and that makes it hard to decide whether to justify adding a feature or not (e.g. cache locality scheduling). An LLM was used in the development of this project. Comments URL: https://news.ycombinator.com/item?id=50136139 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50136139"
+    },
+    {
+      "id": "7f1100b15b6f7a00b86d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HardwareOS - Turn a prompt into hardware project you can wire and flash",
+      "url": "https://hardwareos.ai",
+      "published_at": "2026-10-17T23:55:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://hardwareos.ai Comments URL: https://news.ycombinator.com/item?id=50136365 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50136365"
+    },
+    {
+      "id": "a4a8b54d351c6dde98d4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MCPX – MCP server directory scanning for tool poisoning, leaked keys",
+      "url": "https://www.mcpx.digital",
+      "published_at": "2026-10-18T00:32:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.mcpx.digital/ Comments URL: https://news.ycombinator.com/item?id=50136645 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50136645"
+    },
+    {
+      "id": "a9f5829d5e5560296c8c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Env-tabs – Pin your projects in Claude Desktop's Code tab",
+      "url": "https://github.com/ahmtsahin/claude-env-tabs",
+      "published_at": "2026-10-18T01:44:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ahmtsahin/claude-env-tabs Comments URL: https://news.ycombinator.com/item?id=50137006 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50137006"
+    },
+    {
+      "id": "0c81deac98c4f28ea6ac",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Cosplay as a tech lead, using gVisor to sandbox agents",
+      "url": "https://github.com/SoftwareRenderer/MIKE",
+      "published_at": "2026-10-18T01:49:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi everyone, This started as an exploration into harnesses and locally hostable LLMs (the kind that uses less power than a small electric heater), and I used it as an opportunity to retool. I've tried popular ones like Cline, Claude Code, and Pi, but wanted a different UX and integrated sandboxes. The solution that I've landed on is a responsive web interface where I can quickly drive progress. It feels like a microcosm of my day job: define and delegate tasks, organize using kanban, then review deliverables. And it also feels like the time I used to spend coding is now spent in code review with the agent, so I tried to optimize the UX to make review feel nicer. One of my (maybe a bit niche) benchmark use-cases is how pleasant it is to make progress on hobby software projects while also out on a hike. This meant specifying low bandwidth usage and offline mode. Now I can jot down an idea, start the task, and at some point down the trail: get a notification* that either clarification is needed, a decision needs to be made, or the code is ready for review. I've been having a good time with this. To build MIKE, I exclusively used locally hostable LLMs (from Google, Meta, Qwen, Poolside, and DeepSeek) hosted with llama.cpp on my machines at home (Strix Halo and a 5090) to \"compile\" the code. The experience has gotten substantially better ever since DeepSeek’s release in July. Side note: I have a soft spot for llama.cpp since it was one of the first that made it possible to run this new tech at home, and its maintainers accepted a tiny improvement I made to error reporting. Oh the joys of having a PR get approved. I plan on maintaining this, at least until similar features are supported by better tools. Until then, hope you find this useful! 5 minute demo: https://youtu.be/jexzLkZ50FU p.s. I didn't mention details about the sandbox earlier since most people seem to find this a bit boring. It was one of my critical requirements, and I opted to use an existing battle-tested sandbox. I'm not an expert on how the Linux kernel works, but seeing all the VM escape exploits recently is a bit scary, and I liked gVisor’s approach to the problem. I'm also using Git worktrees to provision the agent’s workspace, as well as a read-only repository mount to provide relevant context when the agent looks for it. *off by default Comments URL: https://news.ycombinator.com/item?id=50137043 Points: 2 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50137043"
+    },
+    {
+      "id": "9b5f7956bdaa28e5c7bd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: 500 clocks in one 6.3 MB HTML file by Opus 5.5",
+      "url": "https://tkgally.github.io/500-clocks",
+      "published_at": "2026-10-18T04:04:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Lately I've been testing frontier models by having them create self-contained web pages that display clocks--sort of my personal version of Simon Willison’s pelican-on-a-bicycle metric. I have been particularly impressed by the variety, interest, and quality of the clocks created by Claude Opus 5.5. Over the course of several sessions in the Claude chat interface, I had it build a total of 500 clocks. Claude’s summary of the prompting process and page design is here: https://github.com/tkgally/500-clocks/tree/main Comments URL: https://news.ycombinator.com/item?id=50137820 Points: 55 # Comments: 19",
+      "discussion_url": "https://news.ycombinator.com/item?id=50137820"
+    },
+    {
+      "id": "644e4700eb9efadc45fb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "url": "https://sphinx-six-theta.vercel.app",
+      "published_at": "2026-10-18T04:33:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing works. Comments URL: https://news.ycombinator.com/item?id=50137950 Points: 193 # Comments: 61",
+      "discussion_url": "https://news.ycombinator.com/item?id=50137950"
+    },
+    {
+      "id": "63c1e792405f2a8cac57",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Parents Inbox – Communication Guide for Schools",
+      "url": "https://helptheparents.org",
+      "published_at": "2026-10-18T06:00:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "At a dinner party with other parents recently, the conversation turned to the challenges we all have with communication coming from our children's schools. Emails and Texts and App notifications, coming from Teachers, Admins, PTA, After-Care programs. Overlapping information, buried key details, verbose fluff. An avalanche of text every day that must be carefully parsed to find important info. This seems to be a universal problem and certainly one I experience every day. So literally before dinner was over I built the first version of this site on my phone with Claude. I think the main problem is that the folks who are responsible for communication just don't have the tools and experience to know what good communication really looks like, or the parents perspective hasn't been demonstrated to them to give them more empathy. So I am hoping this can help. Feel free to share if you have the same problem with your school. Comments URL: https://news.ycombinator.com/item?id=50138306 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50138306"
+    },
+    {
+      "id": "819ea289e516e3f800be",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Connecting Captions Local Private AI Interpreter",
+      "url": "https://local-host.ai/connectingCaptions",
+      "published_at": "2026-10-18T07:41:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I built Connecting Captions, a live captioning and translation overlay for macOS that runs entirely on-device. Nothing goes over the network: no API calls, no audio leaving your machine, and it keeps working offline. I wanted live translation I could use in meetings and conversations without worrying about connectivity, latency spikes, or sending sensitive audio to a third party. The technically interesting part is a low-latency, self-correcting pipeline for speech-to-text and translation. It has two modes: Sentence mode: buffers until a sentence boundary, then translates with full context. It’s more accurate, especially between languages with different word order. Streaming mode: translates word by word as speech arrives, trading grammatical accuracy for minimal delay. Current state: Platform: macOS Models: Whisper Latency: ~200 ms Languages: 25 Code: https://github.com/chrisswimlee/connectingCaptions I’d love feedback, especially on the self-correction approach and which use cases matter most to people. Comments URL: https://news.ycombinator.com/item?id=50138839 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50138839"
+    },
+    {
+      "id": "dbd8d1fce255d95bda35",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Risphai – picks the AI model, tools and prompt for each request",
+      "url": "https://risphai.com",
+      "published_at": "2026-10-18T09:11:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "I noticed that a lot of non-technical people don’t use AI to its full extent. Like they use the wrong model for the task, the wrong reasoning effort, or vague prompts. That gap between \"what the AI can do\" and \"what people actually get\" is what I wanted to fix. So I spent the last two years in my spare time building a consumer AI product that tries to fix this issue. This is how it works: When it receives the request, an LLM decides the task type (chat, reasoning, coding, writing) and the tool calls that are needed (web search, image generation, video generation, audio generation). Then it routes it to a suitable model and applies a prompt based on the task type. If it's a media generation task, it rewrites the prompt into a detailed one using prompt formulas (the prompt formulas for specific styles are mentioned in the system prompt). The LLM that is used for answering the request can also use a map, generate a mermaid diagram, generate a quiz or flashcards, generate files, etc. A limitation right now is that routing adds latency, but I'm currently experimenting with decision-models like Jev, PPLX Decider, etc. and might use decision-models to route to the right LLM and give the tool calls like web search and media generation to the answering LLM. It launched this week, so it's still early and I will keep improving it and adding new things. Also sign-up/in is required to prevent abuse. I’d really like honest feedback: what’s confusing, what’s missing, etc. Comments URL: https://news.ycombinator.com/item?id=50139344 Points: 1 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139344"
+    },
+    {
+      "id": "30bed9b5eeecb7682302",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Epoptes – Run Claude Code and Codex for hours with human oversight",
+      "url": "https://github.com/ramigb/epoptes",
+      "published_at": "2026-10-18T09:51:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ramigb/epoptes Comments URL: https://news.ycombinator.com/item?id=50139543 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139543"
+    },
+    {
+      "id": "4e218e70569a41b2c108",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Benchmarking LLM ability to code in an adversarial language",
+      "url": "https://bench.killswitch-lang.org",
+      "published_at": "2026-10-18T09:53:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://bench.killswitch-lang.org/ Comments URL: https://news.ycombinator.com/item?id=50139549 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139549"
+    },
+    {
+      "id": "abc9e8a90d2c862fb748",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AIOps Cockpit – An open-source AI SRE with human-in-the-loop safety",
+      "url": "https://github.com/matricphase-dot/aiops",
+      "published_at": "2026-10-18T10:11:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/matricphase-dot/aiops Comments URL: https://news.ycombinator.com/item?id=50139640 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139640"
+    },
+    {
+      "id": "17470fcbbd9c50cc6325",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Chrome extension that types one prompt into many AI chat tabs",
+      "url": "https://chromewebstore.google.com/detail/use-multiple-chat-ai-at-o/pcpciffaliaooacnhiefjiegigjidehp",
+      "published_at": "2026-10-18T10:36:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://chromewebstore.google.com/detail/use-multiple-chat-ai-at-o/pcpciffaliaooacnhiefjiegigjidehp Comments URL: https://news.ycombinator.com/item?id=50139795 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50139795"
+    },
+    {
+      "id": "4f48d35d198099ef2a12",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Flying Car AI – make your car or your product fly from one photo",
+      "url": "https://flyingcar-ai.org",
+      "published_at": "2026-10-18T11:38:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://flyingcar-ai.org Comments URL: https://news.ycombinator.com/item?id=50140152 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140152"
+    },
+    {
+      "id": "9d949785dde2a4f7be79",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Shipback – SFTP deploys your AI agent can undo",
+      "url": "https://github.com/aldohushi1-stack/shipback-sftp",
+      "published_at": "2026-10-18T11:48:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/aldohushi1-stack/shipback-sftp Comments URL: https://news.ycombinator.com/item?id=50140229 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140229"
+    },
+    {
+      "id": "756fdef514b46280a1e1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built a smart audiobook converter that sounds human (not KokoroTTS)",
+      "url": "https://www.book2speech.com",
+      "published_at": "2026-10-18T12:17:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi again! Existing text to speech or ebook to audiobook apps usually rely on KokoroTTS and don't process the pdf in a reliable way, so it often ends up reading all the front matter/opening section OCR artifacts and other crap in a machine-sounding voice. My app first fixes the content structure using an LLM and then uses heavier models to get voices with natural intonation across more than 40 languages. About a year ago when I posted this it was still just an idea, now its becoming a real thing. Any feedback appreciated. Comments URL: https://news.ycombinator.com/item?id=50140422 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140422"
+    },
+    {
+      "id": "6ead77e235a1e0d45d9d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A 3D catalog of rocket engines you can take apart",
+      "url": "https://farsidelab.com/concept/rocket-engines",
+      "published_at": "2026-10-18T12:20:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Here you have 13 different rocket engine technologies, 9 have flown, 3 built and test fired, but not flown and 1 never completed. I created this site because I wanted to learn more about rocket engines and how they work. My background is HVAC/plumbing engineer and 3D artist, not rocket engineer, so I built this just out of my personal curiosity. Here you can investigate each motor type and learn what each part does, explode and cutaway the model and see how fuel and oxidizer flow to generate the thrust. Site is created using Claude Opus 5.5. Claude made also the 3D models using Blender MCP. Site runs on Babylon.js 9.16.1 on WebGL2. What I did was basically art direction and fact checking. It took me about one week, among other projects, to get this site finalized so that I was happy about the design and outcome. Any improvements, corrections and comments are welcome! Comments URL: https://news.ycombinator.com/item?id=50140443 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140443"
+    },
+    {
+      "id": "48fb9dacf6f4e9dfad6a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CallSitter – bot that answers my calls and wastes scammers' time",
+      "url": "https://github.com/szerintedmi/callsitter",
+      "published_at": "2026-10-18T12:24:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Anyone else get a lot of dumb scam calls? These days I mostly get them on my mobile. I used to just ignore them, but then I got fed up and built a bot that answers my calls and wastes their time. It runs on OpenAI Live 1. Jev classifies each call as spam, scam or genuine and steers the bot accordingly. Works like a charm. All my calls go to the bot now. I can also steer it from Telegram mid-call. In this one the bot ended up accusing the scammer of being an AI :) https://www.youtube.com/watch?v=SpuTzRg8_fU Comments URL: https://news.ycombinator.com/item?id=50140472 Points: 4 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140472"
+    },
+    {
+      "id": "9162d2abeb30b621de14",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Independent LLM benchmark index tracking 22 frontier models",
+      "url": "https://vibecoderjournal.com/rankings",
+      "published_at": "2026-10-18T12:36:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vibecoderjournal.com/rankings/ Comments URL: https://news.ycombinator.com/item?id=50140560 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140560"
+    },
+    {
+      "id": "f47316269c6966cc94dc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
+      "url": "https://legendofhyrule.com",
+      "published_at": "2026-10-18T13:06:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "I made this ahead of the Ocarina of Time remake which comes out in 17 days. I remember the feeling of playing it as a kid but I hadn’t kept up with the story so I built a timeline to catch up before the Door of Time reopens. Nintendo’s own timeline is the authority here (Hyrule Historia and their chronicle page). The fun part was rethinking how to visualize it. It branches at the end of Ocarina into three eras depending on whether Link wins or loses, so each era is its own thread on the cloth. The threads meet again much later with Breath of the Wild. I had a lot of help from Claude. I’d often thought about building things like this but never found the time between the day job and the rest of life. Comments URL: https://news.ycombinator.com/item?id=50140769 Points: 11 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140769"
+    },
+    {
+      "id": "feb6c6b89b484d09bb3a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Spomory – graph-based MCP memory with an RL-trained forgetting policy",
+      "url": "https://spomory.yliuai.com",
+      "published_at": "2026-10-18T13:22:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://spomory.yliuai.com/ Comments URL: https://news.ycombinator.com/item?id=50140880 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140880"
+    },
+    {
+      "id": "43a93a7f9761a98e6f7a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: DocuMemory – Persistent memory and context for AI coding tools",
+      "url": "https://www.documemory.dev",
+      "published_at": "2026-10-18T14:22:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.documemory.dev/ Comments URL: https://news.ycombinator.com/item?id=50141365 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141365"
+    },
+    {
+      "id": "3a894bb2112c72e878d7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: TaskPocket, a to-do app with an MCP server instead of built-in AI",
+      "url": "https://taskpocket.io",
+      "published_at": "2026-10-18T14:39:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://taskpocket.io/ Comments URL: https://news.ycombinator.com/item?id=50141513 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141513"
+    },
+    {
+      "id": "7362b911847b356bf8dc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ElNeo, a E2E enabled matrix client for Emacs, inspired by telega",
+      "url": "https://github.com/aard-fi/elneo",
+      "published_at": "2026-10-18T14:51:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "About a year ago I was wondering how hard it'd be to build an e2e enabled emacs matrix client similar to how telega does things: use mature libraries to build a daemon that speaks JSON to emacs. I did a proof of concept for the e2e bits, and over time built a chat client on top. I recently switched to it as my only client on most devices - and thought maybe it's time to give it a better name than \"matrix\", and cut it out of my .emacs.d it was developed in. So I asked an LLM to write tests for everything to have a sensible baseline, split it out, and renamed everything. There probably is still a bit of breakage linking back to my config, but I'm relatively confident all major issues got fixed over the last week of testing. Comments URL: https://news.ycombinator.com/item?id=50141597 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50141597"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-18T11:05:32.215639+00:00",
+      "last_success": "2026-10-18T15:52:08.712345+00:00",
       "count": 10,
       "earliest": "2026-10-14T13:49:15+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-18T11:05:32.451630+00:00",
+      "last_success": "2026-10-18T15:52:08.948088+00:00",
       "count": 20,
       "earliest": "2026-10-13T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-18T11:05:32.660835+00:00",
+      "last_success": "2026-10-18T15:52:09.114338+00:00",
       "count": 880,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-18T11:05:32.816004+00:00",
+      "last_success": "2026-10-18T15:52:09.230294+00:00",
       "count": 30,
       "earliest": "2026-10-07T04:47:55+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-17T20:36:59.420276+00:00",
+      "last_success": "2026-10-18T15:52:09.699580+00:00",
       "count": 99,
-      "earliest": "2026-10-16T19:24:28+00:00",
+      "earliest": "2026-10-17T11:47:34+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "hn-topics": {
       "last_success": "2026-10-17T20:37:07.281441+00:00",
@@ -49497,56 +49857,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-18T11:06:41.698409+00:00",
+      "last_success": "2026-10-18T15:52:17.685507+00:00",
       "count": 20,
       "earliest": "2026-09-23T19:19:15+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-18T11:06:42.765967+00:00",
+      "last_success": "2026-10-18T15:52:18.570867+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-18T11:06:43.271886+00:00",
+      "last_success": "2026-10-18T15:52:19.023604+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-18T11:06:43.705428+00:00",
+      "last_success": "2026-10-18T15:52:19.369279+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-18T11:06:44.378154+00:00",
+      "last_success": "2026-10-18T15:52:19.876829+00:00",
       "count": 9,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-18T11:07:16.866770+00:00",
+      "last_success": "2026-10-18T15:52:46.529453+00:00",
       "count": 3,
       "earliest": "2026-09-23T20:50:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-18T11:07:17.104376+00:00",
+      "last_success": "2026-10-18T15:52:46.645247+00:00",
       "count": 1299,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-18T11:07:30.697291+00:00",
+      "last_success": "2026-10-18T15:52:57.937714+00:00",
       "count": 6,
       "earliest": "2026-10-01T20:19:13+00:00",
       "gap": false,
@@ -49615,5 +49975,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-18T11:07:30.697676+00:00"
+  "collected_at": "2026-10-18T15:52:57.938137+00:00"
 }
