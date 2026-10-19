@@ -49981,6 +49981,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50140769"
     },
     {
+      "id": "0e7eb122491b6b4d14a4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MeetCap – Free on-device meeting transcription your AI agent can run",
+      "url": "https://meetcap.seacen.dev",
+      "published_at": "2026-10-18T13:21:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "MeetCap records your meetings, transcribes them on your computer, and works with your AI agent in both directions. Your agent can run it. In Claude Code, Codex or any agent that can load a skill, say \"record this meeting\" and the menu bar icon turns into a red dot. The agent can also stop the recording, name speakers, get the minutes, and search past meetings. It can run your agent. Pick one you already use and MeetCap calls it in the background to write the live summaries and the minutes, on the subscription you already pay for. It works with 20+ agents, including Claude Code, Codex, Cursor, Copilot CLI and Qwen Code. No agent? Use your own API key, or let MeetCap download a local model. Speech recognition, live captions, speaker diarization and recognizing voices you've named all run on your computer, and recording, captions and diarization keep going offline. With the local model, the summaries and minutes are written on your computer too, so not even the text leaves it. During the call you get a summary every few minutes, with background on terms you might not know. Afterward, each point in the minutes links to the transcript line it came from, and you can play the audio back from there. Transcripts and minutes are Markdown files in a folder you pick. The app and the command line are free, with no account and no time limits. macOS 14.2 or later, Apple silicon or Intel: curl -fsSL https://meetcap.seacen.dev/install.sh | bash That installs the app, the meetcap command, and the MeetCap skill for each agent it finds on your computer. Or download it from https://meetcap.seacen.dev/download/ Comments URL: https://news.ycombinator.com/item?id=50140879 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140879"
+    },
+    {
+      "id": "03391268f98a82b003cf",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: MeetCap – Free on-device meeting transcription your AI agent can run",
+      "url": "https://meetcap.seacen.dev",
+      "published_at": "2026-10-18T13:21:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "MeetCap records your meetings, transcribes them on your computer, and works with your AI agent in both directions. Your agent can run it. In Claude Code, Codex or any agent that can load a skill, say \"record this meeting\" and the menu bar icon turns into a red dot. The agent can also stop the recording, name speakers, get the minutes, and search past meetings. It can run your agent. Pick one you already use and MeetCap calls it in the background to write the live summaries and the minutes, on the subscription you already pay for. It works with 20+ agents, including Claude Code, Codex, Cursor, Copilot CLI and Qwen Code. No agent? Use your own API key, or let MeetCap download a local model. Speech recognition, live captions, speaker diarization and recognizing voices you've named all run on your computer, and recording, captions and diarization keep going offline. With the local model, the summaries and minutes are written on your computer too, so not even the text leaves it. During the call you get a summary every few minutes, with background on terms you might not know. Afterward, each point in the minutes links to the transcript line it came from, and you can play the audio back from there. Transcripts and minutes are Markdown files in a folder you pick. The app and the command line are free, with no account and no time limits. macOS 14.2 or later, Apple silicon or Intel: curl -fsSL https://meetcap.seacen.dev/install.sh | bash That installs the app, the meetcap command, and the MeetCap skill for each agent it finds on your computer. Or download it from https://meetcap.seacen.dev/download/ Comments URL: https://news.ycombinator.com/item?id=50140879 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50140879"
+    },
+    {
       "id": "feb6c6b89b484d09bb3a",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -50375,102 +50399,378 @@
       "date_kind": "community_post",
       "evidence": "A Linux / Windows / MacOS task bar widget for monitoring LLM usage. Also has signed installers if you don't want to install from source Comments URL: https://news.ycombinator.com/item?id=50145276 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50145276"
+    },
+    {
+      "id": "ceb75055ddf3b32c3832",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: LLM Usage Desktop Widget",
+      "url": "https://github.com/aleph-void/LLM-Usage-Desktop-Widget",
+      "published_at": "2026-10-18T20:41:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "A Linux / Windows / MacOS task bar widget for monitoring LLM usage. Also has signed installers if you don't want to install from source Comments URL: https://news.ycombinator.com/item?id=50145276 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50145276"
+    },
+    {
+      "id": "14d0dad6278813b78690",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "published_at": "2026-10-18T20:48:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "https://x.com/Jiaru_Zou/status/2110400256647340476 https://github.com/togethercomputer/HybridAgent https://huggingface.co/collections/togethercomputer/hybridag... Evaluations: https://arxiv.org/html/2610.18861v1#S5 Comments URL: https://news.ycombinator.com/item?id=50145337 Points: 282 # Comments: 156",
+      "discussion_url": "https://news.ycombinator.com/item?id=50145337"
+    },
+    {
+      "id": "044dedb6e3367cf8b1c5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rubi – A knowledge graph that cuts how much Claude Code re-reads",
+      "url": "https://github.com/YURIBEDRAN/rubi",
+      "published_at": "2026-10-18T20:54:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/YURIBEDRAN/rubi Comments URL: https://news.ycombinator.com/item?id=50145380 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50145380"
+    },
+    {
+      "id": "6a4cdadf88f16612b9fd",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "ParetoOps – CI gate on cost per successful task for LLM evals",
+      "url": "https://paretoops.dev",
+      "published_at": "2026-10-18T21:25:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://paretoops.dev/ Comments URL: https://news.ycombinator.com/item?id=50145643 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50145643"
+    },
+    {
+      "id": "8cbfa7a190cfc513a736",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: WhatsApp MCP running free on Cloudflare",
+      "url": "https://github.com/finereli/whatsapp-mcp",
+      "published_at": "2026-10-18T21:36:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted my humble Claude on mobile to access my WhatsApp messages but the only options I could find either required WhatsApp Business or an actual server to run Baileys on. I wanted to run it for free on ClaudeFlare and with my personal WhatsApp account, so I built this. Important feature - it connects to your Google account as well as WhatsApp to grab the names of all your WhatsApp contacts, otherwise you get only phone numbers for many of them and search doesn't work properly. This is a single user install because it's both gray area and very private - so point your agent at the repo and let it set things up. Comments URL: https://news.ycombinator.com/item?id=50145715 Points: 54 # Comments: 37",
+      "discussion_url": "https://news.ycombinator.com/item?id=50145715"
+    },
+    {
+      "id": "15b3a7c5d2a0fa4fe482",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Is Agentic Coding really faster?",
+      "url": "https://news.ycombinator.com/item?id=50145991",
+      "published_at": "2026-10-18T22:08:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "I am trying to get a grasp of what we can do with agents. I am an avid user of agentic coding. But somehow I think I code faster by hand (by IDEs I mean). I've always had a sketch approach to coding. Where I kinda lay out the pieces of what needs to be done and then finish them in chunks. That way you keep building a mental picture of what needs doing. Lately I've noticed something - its quite fast to analyze a new code-base with agents for sure especially messy ones. But once I do get a hold of the codebase (even larger ones), I can change things by hand quite quickly. My bottleneck seems to be typing, but manipulating the mental map is a lot faster. Does this match other folks experience or am I deluding myself ? Comments URL: https://news.ycombinator.com/item?id=50145991 Points: 2 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50145991"
+    },
+    {
+      "id": "01dfc10ece15d4a766f7",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.303",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
+      "published_at": "2026-10-18T22:26:54+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Bug fixes and reliability improvements",
+      "discussion_url": ""
+    },
+    {
+      "id": "e6040d41da432e3fff2c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Tkmd – A local CLI task manager and MCP server with AI agent review gates`",
+      "url": "https://github.com/ktreharrison/tkmd",
+      "published_at": "2026-10-18T22:27:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ktreharrison/tkmd Comments URL: https://news.ycombinator.com/item?id=50146130 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50146130"
+    },
+    {
+      "id": "371fd4e2d7321289a0fa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Gspot, a tool to lint gstack code",
+      "url": "https://generativespotting.com",
+      "published_at": "2026-10-18T22:54:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! I just launched gspot. It's a tool that auto detects languages and frameworks you use in a repo and then sets up linters and agent rules. It handles JS, TS, Python and Swift. You can turn any rule and tool on and off. You can also create templates from any repo that uses gspot. Templates tell gspot what rules, tools and exceptions to install in a completely different repo. It makes it easy for you to share your linting setup and agent rules. Feedback would be much appreciated. Comments URL: https://news.ycombinator.com/item?id=50146332 Points: 1 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50146332"
+    },
+    {
+      "id": "3e8e181ecec086ebc50d",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "llm-echo 0.5",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-echo",
+      "published_at": "2026-10-18T23:16:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account. Example usage: uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage Outputs: First I consider the prompt, then I decide what to say. { \"prompt\": \"hi there\", \"system\": \"\", \"attachments\": [], \"stream\": true, \"previous\": [] } Token usage: 2 input, 24 output Tags: llm",
+      "discussion_url": ""
+    },
+    {
+      "id": "11b23c6fb4badf3016b2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenFlow – Ultimate Agent Orchestration",
+      "url": "https://github.com/SeeRay11/OpenFlow",
+      "published_at": "2026-10-18T23:18:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/SeeRay11/OpenFlow Comments URL: https://news.ycombinator.com/item?id=50146493 Points: 6 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50146493"
+    },
+    {
+      "id": "9ba18182fdb8da0c8319",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Google Harness2: Recursive Agent Harnessing for an Open World",
+      "url": "https://github.com/google-research/harness2",
+      "published_at": "2026-10-18T23:19:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/google-research/harness2 Comments URL: https://news.ycombinator.com/item?id=50146503 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50146503"
+    },
+    {
+      "id": "f29b1ac199cc4c168ef7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hybro – an open interoperability engine for AI agents",
+      "url": "https://github.com/hybroai/hybro",
+      "published_at": "2026-10-18T23:41:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built an open interoperability engine for AI agents. Connect your favorite agents and harnesses. Work together. Appreciate for any feedback. Comments URL: https://news.ycombinator.com/item?id=50146655 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50146655"
+    },
+    {
+      "id": "d29cebe6e6af448f614b",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "llm-tools-datasette 0.1.1",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette",
+      "published_at": "2026-10-18T23:43:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those plugins, now fixed. Tags: datasette , llm",
+      "discussion_url": ""
+    },
+    {
+      "id": "304bc97dd7a1e9b28de5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A free MCP server for facts LLMs get wrong (time zones, holidays, FX)",
+      "url": "https://apistack.online/mcp",
+      "published_at": "2026-10-19T00:20:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://apistack.online/mcp Comments URL: https://news.ycombinator.com/item?id=50146910 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50146910"
+    },
+    {
+      "id": "816892ca38b98784b09c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How are you measuring your agent's memory layer?",
+      "url": "https://www.memstrata.dev",
+      "published_at": "2026-10-19T00:32:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.memstrata.dev/ Comments URL: https://news.ycombinator.com/item?id=50146979 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50146979"
+    },
+    {
+      "id": "4de32e79878fe63529d3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Local-first macOS video recorder and editor with MCP support",
+      "url": "https://github.com/TriHerm/cutmark",
+      "published_at": "2026-10-19T00:52:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/TriHerm/cutmark Comments URL: https://news.ycombinator.com/item?id=50147099 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50147099"
+    },
+    {
+      "id": "c7e6906d693d3c707f51",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Notify me about this coding session, not all coding sessions",
+      "url": "https://docs.cmd-ctrl.ai/blog/notifications-per-session",
+      "published_at": "2026-10-19T01:47:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://docs.cmd-ctrl.ai/blog/notifications-per-session Comments URL: https://news.ycombinator.com/item?id=50147416 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50147416"
+    },
+    {
+      "id": "a9b54337ebbaa3aa7506",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Neuron, agents that set themselves up from your GitHub repo",
+      "url": "https://www.neuronbot.in",
+      "published_at": "2026-10-19T02:43:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.neuronbot.in Comments URL: https://news.ycombinator.com/item?id=50147781 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50147781"
+    },
+    {
+      "id": "8cf08ea94d72e269e048",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Simulate an engineering blog, or an idea or an incident",
+      "url": "https://github.com/smarchone/sim-xp",
+      "published_at": "2026-10-19T03:05:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "A new way for engineers to share and build experience. Agents (with a skill) turn any blog, incident or concept into a simulation that brings you closer to reality. Comments URL: https://news.ycombinator.com/item?id=50147906 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50147906"
+    },
+    {
+      "id": "4ff2988faa50f24c62d3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Stream Reducer – Audio AI Summarization at Scale",
+      "url": "https://reducer.xgoose.org",
+      "published_at": "2026-10-19T03:13:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi I have just open sourced a project https://github.com/hmumixaM/stream-reducer . This project can summarize videos, podcasts, and blog posts at scale. I also have a hosted website that's completely free. Checkout this website for details https://reducer.xgoose.org Any suggestions on improving the usage and avaialbility will be greatly appreciated. Comments URL: https://news.ycombinator.com/item?id=50147957 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50147957"
+    },
+    {
+      "id": "c09145f9566a70ea1a3c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Designing LLM failover as a route change, not a retry loop",
+      "url": "https://modelflare-blog.static.hf.space/model-groups-and-failover.html",
+      "published_at": "2026-10-19T03:32:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://modelflare-blog.static.hf.space/model-groups-and-failover.html Comments URL: https://news.ycombinator.com/item?id=50148071 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50148071"
+    },
+    {
+      "id": "891957dd2adecb1b8d31",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Strot – Compile an LLM's intent once, run decisions locally forever",
+      "url": "https://github.com/strot-ai/Project-STROT",
+      "published_at": "2026-10-19T04:32:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/strot-ai/Project-STROT Comments URL: https://news.ycombinator.com/item?id=50148396 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50148396"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-18T20:43:41.960319+00:00",
+      "last_success": "2026-10-19T04:41:03.462036+00:00",
       "count": 10,
       "earliest": "2026-10-14T13:49:15+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-18T20:43:42.231435+00:00",
+      "last_success": "2026-10-19T04:41:03.806370+00:00",
       "count": 20,
       "earliest": "2026-10-13T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-18T20:43:42.587104+00:00",
+      "last_success": "2026-10-19T04:41:03.989450+00:00",
       "count": 880,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-18T20:43:42.846233+00:00",
+      "last_success": "2026-10-19T04:41:04.117186+00:00",
       "count": 30,
-      "earliest": "2026-10-07T04:47:55+00:00",
+      "earliest": "2026-10-07T20:56:21+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-18T20:43:44.460078+00:00",
+      "last_success": "2026-10-19T04:41:04.615157+00:00",
       "count": 99,
-      "earliest": "2026-10-17T19:15:11+00:00",
+      "earliest": "2026-10-18T06:55:11+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-18T20:43:48.393611+00:00",
+      "last_success": "2026-10-19T04:41:13.614362+00:00",
       "count": 99,
-      "earliest": "2026-10-16T09:49:55+00:00",
+      "earliest": "2026-10-16T14:09:18+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-18T20:43:49.130481+00:00",
+      "last_success": "2026-10-19T04:41:14.120631+00:00",
       "count": 10,
-      "earliest": "2026-10-06T03:55:19+00:00",
+      "earliest": "2026-10-06T18:59:30+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-18T20:43:50.408034+00:00",
+      "last_success": "2026-10-19T04:41:15.023610+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-18T20:43:50.981236+00:00",
+      "last_success": "2026-10-19T04:41:15.426729+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-18T20:43:51.435123+00:00",
+      "last_success": "2026-10-19T04:41:15.822478+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-18T20:43:52.166498+00:00",
+      "last_success": "2026-10-19T04:41:16.335057+00:00",
       "count": 9,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-18T20:44:13.184163+00:00",
+      "last_success": "2026-10-19T04:41:29.771945+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-18T20:44:13.494335+00:00",
+      "last_success": "2026-10-19T04:41:29.907363+00:00",
       "count": 1299,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-18T20:44:18.278780+00:00",
+      "last_success": "2026-10-19T04:41:33.531755+00:00",
       "count": 2,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -50539,5 +50839,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-18T20:44:18.279270+00:00"
+  "collected_at": "2026-10-19T04:41:33.532293+00:00"
 }
