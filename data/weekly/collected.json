@@ -54397,6 +54397,18 @@
       "discussion_url": ""
     },
     {
+      "id": "f4ee528ebeab768db01f",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "published_at": "2026-10-19T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
       "id": "304bc97dd7a1e9b28de5",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -54695,32 +54707,92 @@
       "date_kind": "community_post",
       "evidence": "I’ve always been facinated by talks on erlang and elixir. It was intriguing to me how Erlandson was used to do amazing fault-tolerant deployments of cell phone technology, how it could do live software patching etc. I haven’t had the time since I heard about it to really try and build something similar in a language I enjoyed so I turned to Claude and built as many erlang/beam features into a golang superset I guess you could say. I wanted something that was practically go but had erlang paradigms and this was where my experiment landed. I’m still yet to find a practical use case for it, but it’s a fun experiment that I enjoyed putting together. Comments URL: https://news.ycombinator.com/item?id=50151976 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50151976"
+    },
+    {
+      "id": "f97069a1804ac8ff080e",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "4 tips for styling outfits with Gemini",
+      "url": "https://blog.google/products-and-platforms/products/gemini/stylist-outfit-tips-gemini",
+      "published_at": "2026-10-19T16:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Here’s how athlete stylist Sydney Bordonaro uses Gemini to build looks for clients — and how you can build your own, too.",
+      "discussion_url": ""
+    },
+    {
+      "id": "e9046edc8b1a2135d3e5",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "How to shape your slides and videos with Gemini Notebook",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos",
+      "published_at": "2026-10-19T17:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Gemini Notebook is giving more creative control in the creation of Slide Decks and Video Overviews.",
+      "discussion_url": ""
+    },
+    {
+      "id": "54916afdbb38c1fd190e",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub Copilot models deprecated on October 19, 2026",
+      "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
+      "published_at": "2026-10-19T21:27:10+00:00",
+      "date_kind": "source_publication",
+      "evidence": "As of today, October 19, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). These deprecations were announced on September 18, 2026 . Model Deprecation date Suggested alternative Gemini 3.7 Flash 2026-10-19 Gemini 3.8 Flash GPT-5.5 2026-10-19 GPT-6.1 Sol GPT-5.4 2026-10-19 GPT-6.1 Sol GPT-5.4 mini 2026-10-19 GPT-6 Luna GPT-5 mini 2026-10-19 GPT-6 Luna Grok 4.5 2026-10-19 Grok 4.7 Please update your workflows and integrations to use supported models. Copilot Enterprise administrators may need to enable access to alternative models through their model policies in Copilot settings. As an administrator, you can verify availability by checking your individual Copilot settings and confirming that the policy is enabled for the specific model. Once enabled, you’ll see the model in the Copilot Chat model selector in VS Code and on github.com. No action is required to remove the deprecated models. GitHub Enterprise customers with questions or concerns are encouraged to reach out to their account manager for further assistance. Share your feedback To learn more about the models available in Copilot, see our documentation on models and get started with Copilot today. Join the GitHub Community to share your feedback. The post GitHub Copilot models deprecated on October 19, 2026 appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "69c1e80ae00588677c88",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Copilot model policy API for enterprise, orgs, and teams",
+      "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+      "published_at": "2026-10-19T21:32:18+00:00",
+      "date_kind": "source_publication",
+      "evidence": "You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, enterprise apps, and organizations. What’s new GET and PATCH endpoints are now generally available for model policies at four levels: Enterprise: /enterprises/{enterprise}/copilot/model-policies Enterprise teams: /enterprises/{enterprise}/teams/{team_slug}/copilot/model-policies Enterprise apps: /enterprises/{enterprise}/copilot/apps/model-policies Organization: /orgs/{org}/copilot/model-policies Together, these endpoints make it easier to manage Copilot model availability across your enterprise. Enterprise policies can delegate model control to organizations in organization mode, or to teams and apps in enterprise teams mode. Reference our documentation on managing availability of models in your enterprise and our REST API documentation to get started. The post Copilot model policy API for enterprise, orgs, and teams appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "9a20dd198359946337cf",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.304",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
+      "published_at": "2026-10-19T21:34:39+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin - Added `decider: \"person\"` to a mod's `tool.check` answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked - Added `e.isReadOnly` to a mod's `tool.check` event, set when the tool call is read-only - Added `/auto-mode-setup`: a guided setup that reads your project and recent sessions to teach auto mode about your environment, now also available on Bedrock, Vertex, Foundry, Claude apps gateway and telemetry-disabled sessions - Added `/claude-api managed-agents-secure`, which compares a Managed Agents agent's settings with Anthropic's published security guide, without changing anything - Added the names of the tools called earlier to the compaction summary in the transcript view (Ctrl+O) - Added a warning on Pro and Max plans when resuming an inactive conversation would use a noticeable share of your 5-hour usage limit: resume anyway, or start a new conversation and Claude can look up the previous one if you refer to it - Fixed the organization policy not refreshing until the hourly check after approving an `ANTHROPIC_API_KEY` at startup or switching \"Use custom API key\" in `/config` - Fixed sandboxed commands failing to start on Linux when a `sandbox.filesystem.denyRead` glob contains brackets that are not a character class, such as a `[user-id]` route folder - Fixed `rm -r` of a mounted drive or a folder at its top level (`/Volumes`, `/media`, WSL's `/mnt/c`) not getting the safety prompt that `rm -rf /Applications` gets - Fixed `CLAUDE_CODE_TRANSCRIPT_LOCAL_GC` dropping messages from the saved transcript when the disk filled up while the file was being trimmed - Fixed a plugin keeping a headless run going past `--max-turns`, Stop, or ended input by spawning subagents or re-running a finished one - Fixed a failed mod reload removing the tools and commands of the version that stays loaded, and its messages being wrong or silent about whether the previous version is still loaded - Fixed a click on a mod's button being lost when buttons with the same label and no `key` were redrawn unchanged - Fixed mod sharing in the built-in `plugin-authoring` skill stopping at the secret scan on machines with managed settings and on Team and Enterprise plans - Fixed scheduled Cowork cloud sessions waiting five minutes again for each subagent whose WebFetch needed a URL approval that nobody was there to give - Fixed Write results and rejected edits showing a file outside the working directory as `../../…`; they now show `~/…` or the full path - Fixed a claude.ai Directory plugin's skills not running as commands when picked from the \"/\" menu in Cowork cloud sessions - Fixed Remote Control permanently withholding a desktop conversation's history when a different account was signed in to the terminal - Fixed Remote Control failing to start from Claude Desktop when DISABLE_TELEMETRY or DO_NOT_TRACK is set on a paid plan - Fixed model switches, messages and interrupts waiting behind a context usage check in SDK and desktop sessions - Fixed `context_management: Extra inputs are not permitted` errors behind LLM gateways; Claude Code now resends the request without that field - Fixed OpenTelemetry settings delivered through server-managed settings being ignored for the whole session after signing in during first-run setup or the first start after /logout - Fixed unsandboxed Bash commands in Claude Desktop Code tab sessions on macOS and Linux not seeing environment variables exported in shell startup files such as ~/.zshrc - Fixed the Consumer Terms notice being skipped for a day or longer after a server error - Fixed `/privacy-settings` offering choices that may not apply to you after a network or server error - Fixed a \"Context limit reached\" or \"Prompt is too long\" error after stopping a turn while Claude Code was compacting a con",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-19T13:15:46.788389+00:00",
+      "last_success": "2026-10-19T22:21:15.703426+00:00",
       "count": 10,
-      "earliest": "2026-10-14T20:01:35+00:00",
+      "earliest": "2026-10-15T15:04:51+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-19T13:15:46.981039+00:00",
+      "last_success": "2026-10-19T22:21:15.833123+00:00",
       "count": 20,
-      "earliest": "2026-10-13T18:00:00+00:00",
+      "earliest": "2026-10-14T12:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-19T13:15:47.224888+00:00",
-      "count": 881,
+      "last_success": "2026-10-19T22:21:15.937224+00:00",
+      "count": 882,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-19T13:15:47.372781+00:00",
+      "last_success": "2026-10-19T22:21:16.061751+00:00",
       "count": 30,
       "earliest": "2026-10-07T20:56:21+00:00",
       "gap": false,
@@ -54731,7 +54803,7 @@
       "count": 99,
       "earliest": "2026-10-18T15:24:48+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-10-19T04:41:13.614362+00:00",
@@ -54741,56 +54813,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-19T13:16:12.933368+00:00",
+      "last_success": "2026-10-19T22:21:25.505224+00:00",
       "count": 10,
-      "earliest": "2026-10-06T18:59:30+00:00",
+      "earliest": "2026-10-07T18:10:20+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-19T13:16:14.503122+00:00",
+      "last_success": "2026-10-19T22:21:26.243732+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-19T13:16:15.210291+00:00",
+      "last_success": "2026-10-19T22:21:26.614714+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-19T13:16:15.754353+00:00",
+      "last_success": "2026-10-19T22:21:26.941581+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-19T13:16:16.603831+00:00",
+      "last_success": "2026-10-19T22:21:27.369599+00:00",
       "count": 9,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-19T13:16:37.407263+00:00",
+      "last_success": "2026-10-19T22:21:39.014911+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-19T13:16:37.606524+00:00",
+      "last_success": "2026-10-19T22:21:39.170995+00:00",
       "count": 1299,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-19T13:16:43.360847+00:00",
+      "last_success": "2026-10-19T22:21:42.657988+00:00",
       "count": 2,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -54859,5 +54931,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-19T13:16:43.361317+00:00"
+  "collected_at": "2026-10-19T22:21:42.658553+00:00"
 }
