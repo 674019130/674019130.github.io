@@ -1,0 +1,198 @@
+{
+  "request_evidence": [
+    {
+      "id": "0714d0fc425411c4f2d6",
+      "title": "Show HN: AI Zombie Trend–Generating multi-shot narrative videos from two photos",
+      "category": "discovery",
+      "evidence": "Article URL: https://aizombietrend.online/ Comments URL: https://news.ycombinator.com/item?id=50141889 Points: 1 # Comments: 0 PRIMARY PAGE: AI Zombie Trend Video Generator | Zombie Love Story AI AI Zombie Trend Trends My Stories Pricing Blog EN Switch language Sign In Create Story MAKE THE VIRAL TIKTOK ZOMBIE AI VIDEO AI Zombie Trend Video Generator Create the viral TikTok Zombie AI Video from two photos. Turn your partner, best friend, sibling, parent or pet into the emotional Zombie Love Story ? preview your scene free before generating the full 15-second video. See your preview before you pay 15s · 9:16 · sound included No watermark Photos deleted after 7 days STEP 1 · CAST YOUR STORY Who's in your story? 0 / 2 EXAMPLE · CLICK TO REPLACE SURVIVOR You Swap roles EXAMPLE · CLICK TO REPLACE ZOMBIE Them What's your relationship? Couple Best Friends Siblings Parent & Adult Child Pet Owner Video Aspect Ratio Mobile, TikTok, Reels, Shorts 9:16 Vertical 16:9 Horizontal My photos, or I have permission. No minors or public figures. Private by default — never published, never used to train AI. See Free Preview Choose both photos to unlock your free personalized preview. No card required 1"
+    },
+    {
+      "id": "295a38e38d37070c5eaa",
+      "title": "Show HN: Secret Guard – a local LLM gateway; keys never leave your machine",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/luochen1990/secret-guard Comments URL: https://news.ycombinator.com/item?id=50141886 Points: 1 # Comments: 0 PRIMARY PAGE: <p align=\"center\">\n  <img src=\"assets/logo.svg\" width=\"110\" alt=\"Secret Guard logo\">\n</p>\n\n<p align=\"center\">\n  <a href=\"https://codecov.io/gh/luochen1990/secret-guard\"><img src=\"https://codecov.io/gh/luochen1990/secret-guard/graph/badge.svg\" alt=\"codecov badge\"></a>\n</p>\n\n# Secret Guard\n\n**A lightweight local LLM gateway: outbound requests have their Secrets replaced with\nequal-length realistic Mocks; responses are restored back to real values on the way in —\nthe LLM never touches a real Secret, while your Agent tools keep working.**\n\n[Docs](https://secret-guard.lambda.lc/en/) · [Download](https://secret-guard.lambda.lc/en/download/) · [Quick Start](https://secret-guard.lambda.lc/en/tutorial-quick-start/) · [Protocol Support](#protocol-support) · [简体中文](./README.zh-CN.md)\n\n## Why Secret Guard?\n\nThe local Agent Harness (claude-code / opencode / hermes-agent and friends) does your work\nby stuffing material wholesale into the prompt — code, configuration, terminal output,\nalong with the passwords, private keys, tokens, and cookies "
+    },
+    {
+      "id": "d7612717781b110b0ae0",
+      "title": "Cline Desktop v0.0.48",
+      "category": "official_update",
+      "evidence": "- GPT-6 models (such as `gpt-6-sol` and `gpt-6.1-sol`) work on OpenAI and Azure OpenAI-compatible endpoints. Before, every request was rejected because Cline sent `max_tokens` instead of `max_completion_tokens` - The Cline provider's default model is Claude Sonnet 5.5 again, which is back at the top of Cline's recommended list - Refreshed the model catalog. Adds the CommandCode and Reflection providers. Default models change for 302.AI (Gemini 4 Argon), Eden AI and Prime Inference (Muse Spark Open), CoreWeave (Reflection Beam 1.0), NanoGPT, Pioneer (Nemotron 3.5 Super VL), and Scaleway (DeepSeek V4.1 Flash) **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.47...desktop-v0.0.48"
+    },
+    {
+      "id": "a44fb3c24a52dbe3f6b6",
+      "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+      "category": "discovery",
+      "evidence": "We think \"did a human read the code?\" is an imprecise proxy for \"what could go wrong with this change, and which check—automated or human—is the right one to catch it?\" Asking that question also changed when review happens. Before, review was a gate at the end of the road: write the code, open a PR, wait for your colleague. Now, review runs continuously, more like spellcheck while you write. Most  PRIMARY PAGE: A quote from Addy Osmani, Morgan Westlee Lunt, and Qing Wang Simon Willison’s Weblog Newsletter Sponsored by: Teleport — AI agents (and sub-agents they spawn) are given the same access as humans, but they never sleep. Learn how to monitor and constrain their behavior with isolated ephemeral trusted runtimes. 16th October 2026 We think \"did a human read the code?\" is an imprecise proxy for \"what could go wrong with this change, and which check—automated or human—is the right one to catch it?\" Asking that question also changed when review happens. Before, review was a gate at the end of the road: write the code, open a PR, wait for your colleague. Now, review runs continuously, more like spellcheck while you write. Most changes have been reviewed and fixed by Claude at least o"
+    },
+    {
+      "id": "ac7d78671a3c389bb408",
+      "title": "Ollama v0.40.6",
+      "category": "official_update",
+      "evidence": "## What's Changed * win: prevent orphaned runners by @dhiltgen in https://github.com/ollama/ollama/pull/18500 * gguf: add the q2_0 tensor and file types by @jmorganca in https://github.com/ollama/ollama/pull/18967 * Launch clef in Ollama's cloud by @jberg5 in https://github.com/ollama/ollama/pull/19036 * use identifiers for --ask mode question keys by @jberg5 in https://github.com/ollama/ollama/pull/19041 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.5...v0.40.6-rc0"
+    },
+    {
+      "id": "901225acb33eeedf123f",
+      "title": "Claude Code v2.1.302",
+      "category": "official_update",
+      "evidence": "## What's changed - Added `CLAUDE_CODE_AUTO_MODE_MODEL` to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode - Added an `Idle compaction` row to `/config` for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off - Added a notice to `/design-sync` and `/design-login` that standalone Claude Design (claude.ai/design) closes by December 14, 2026 - Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted - Fixed requests failing with \"diagnostics: Extra inputs are not permitted\" after switching to Vertex or Bedrock mid-session - Fixed the Read tool loading an image file of any size, or a pipe or device named like an image, entirely into memory; image sources over 128 MB are now refused - Fixed `/autocompact` and `/effort` saving to the wrong model when a gateway names Opus 4 or 4.1 with a prefix, such as `anthropic/claude-opus-4-1` - Fixed a prompt cache miss when a tool added mid-session was loaded again through ToolSearch or after compaction - Fixed `claude plugin` and other subcommands sometimes exiting before a queued set"
+    },
+    {
+      "id": "e5594e5c3d0e8e4ea9d8",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "category": "official_update",
+      "evidence": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors."
+    },
+    {
+      "id": "8077df106a25b9b5700f",
+      "title": "We’re sharing 3 tips to study smarter with Gemini Notebook.",
+      "category": "official_update",
+      "evidence": "Master your exams with Google Gemini Notebook’s new 60-second video overviews and interactive quiz formats. Try these study tools at notebook.google."
+    },
+    {
+      "id": "9945834141f39c6e2973",
+      "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+      "category": "official_update",
+      "evidence": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or catching up on project activity, you can get the information you need across repositories without switching between conversations. For example, you can ask Copilot to: Track your work: “@GitHub Show me all my open pull requests across repositories and highlight which ones need my attention.” Get updates: “@GitHub What pull requests were merged this week across my repositories?” Investigate issues: “@GitHub Help me investigate an issue that spans our frontend and backend repositories.” Review progress: “@GitHub Summarize recent activity across our repositories.” You can ask these questions directly in Slack or Microsoft Teams, making it easier to stay on top of work across projects without leaving the conversation. Additional improvements We’ve also made several improvements to GitHub Copilot in Slack and Microsoft Teams: More natural conversations: Mention @GitHub anywhere in your message, not just at the beginning. Smoother repository switching: Move be"
+    },
+    {
+      "id": "dd083ba9146bfc1fbcbe",
+      "title": "Codex 0.163.0",
+      "category": "official_update",
+      "evidence": "## New Features - Open `/config` to search preferences across categories, change supported settings immediately, and see which changes require a restart. (#52990, #53429) - Send a follow-up while Codex is responding to steer it immediately. Interrupting a turn also stops active Code Mode cells and their nested tool calls. (#51812, #51835) - Configure a leader key in `/keymap`. The default is `Ctrl+X`, shortcut hints stay open until you choose or cancel, and voice mute moves to `F9`. (#52273) - Restart a managed background server from `/daemon`. Codex warns about work the restart could interrupt, then reconnects automatically. (#53173) - Codex can run independent read-only tools in parallel, including skill, memory, and conversation-history lookups. (#52245) - Daybreak is enabled by default for eligible accounts. `codex exec` can also select it with an OpenAI API key when the server offers access. (#53701, #53717) ## Bug Fixes - Resuming a saved thread restores its permissions and network approvals, while respecting explicit overrides and current managed policy. (#53150, #53419, #53424) - The network proxy now checks permission before a DNS lookup, rejects duplicate `Host` headers, "
+    },
+    {
+      "id": "239631b46f8e6a8e2038",
+      "title": "llama.cpp v0.7.0",
+      "category": "official_update",
+      "evidence": "## Overview llama.cpp v0.7.0 adds the LiliCorr speculative decoding technique and MTP for GLM5-Next, a new GPU cache for MoE experts kept in host memory (`--moe-cache-mib`, up to ~2.2x decode speedup when experts are offloaded), and a large batch of new models: K2 Horizon (dense and MoVA), Prism Bonsai 2 27B, EmbeddingGemma-2 (text+vision+audio), the LiquidAI d1/d1-omni and vLLM decision 2/d3 decision models, pplx-decider, MiniCPM-V 4.7, Nemotron Super 3.5 VL / Nemotron Bolt and maion-coder. The server gets a refactored chat session API (`common_chat_session`, part-based formatted output), much better slot and prompt-cache restore behavior, decision-model support for the new architectures and a new default port (9931), the web UI gains a full models manager, and ggml is updated to v0.27.0. ### Highlights - New GPU cache for host-memory MoE experts (`--moe-cache-mib`): experts run on the GPU from an LRU cache, up to 2.2x faster decode [#29887](https://github.com/ggml-org/llama.cpp/pull/29887) - The expert cache is now shared across multiple GPUs [#30112](https://github.com/ggml-org/llama.cpp/pull/30112) - LiliCorr speculative decoding: candidate selection with a small draft transfor"
+    },
+    {
+      "id": "ea7851ec006945ffba06",
+      "title": "Show HN: DocuMemory – Persistent memory and context for AI coding tools",
+      "category": "discovery",
+      "evidence": "Article URL: https://www.documemory.dev/ Comments URL: https://news.ycombinator.com/item?id=50141365 Points: 2 # Comments: 0 PRIMARY PAGE: DocuMemory — The Living Memory Engine for AI-First Engineers Loading DocuMemory… Skip to content Docu Memory How it works Features Pricing Developers Sign In BUILT FOR YOUR NEXT SESSION The Living Memory Engine for AI-First Engineers Passively distil raw AI chat sessions into permanent architecture decisions and reusable, prompt-injectable context blocks. Sign Up View Integration Spec Private & Encrypted MCP Native Sub-50ms Hybrid RRF Search MEMORY ENGINE PIPELINE READY Chat stream becomes structured engineering memory Chat messages flow through a glowing neural matrix, discarding noise and storing facts in a vector database. AI CHAT STREAM DISTILLATION MATRIX VECTOR STORE facts in. noise out. ai_context_snippet Use HNSW for pgvector. ready for recall MEMORY ADR capture → distil → recall INTEGRATED WITH YOUR EXISTING AI STACK Claude Code ChatGPT Cursor Windsurf + Any MCP Client 01 / THE MEMORY PIPELINE From conversation to compounding knowledge. Keep the insight. Lose the noise. Give every new session a head start. 0 1 Capture in AI Client Claud"
+    },
+    {
+      "id": "4316b89d45812218fae4",
+      "title": "Cline CLI v3.0.73",
+      "category": "official_update",
+      "evidence": "- GPT-6 models (such as `gpt-6-sol` and `gpt-6.1-sol`) work on OpenAI and Azure OpenAI-compatible endpoints. Before, every request was rejected because Cline sent `max_tokens` instead of `max_completion_tokens` - With no model chosen, the Cline provider uses Claude Sonnet 5.5 again, which is back at the top of Cline's recommended list - Refreshed the model catalog. Adds the CommandCode and Reflection providers. Default models change for 302.AI (Gemini 4 Argon), Eden AI and Prime Inference (Muse Spark Open), CoreWeave (Reflection Beam 1.0), NanoGPT, Pioneer (Nemotron 3.5 Super VL), and Scaleway (DeepSeek V4.1 Flash) **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.72...cli-v3.0.73"
+    },
+    {
+      "id": "fa23819b493159698e0f",
+      "title": "Chirp Pong",
+      "category": "discovery",
+      "evidence": "Tool: Chirp Pong Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where the networking code uses chirps sent via the microphone. It seems to work! Build a two player competitive pong like game where two players use their phones close to each other and the game state is sent via audio noises which the web microphone PRIMARY PAGE: Tool: Chirp Pong Simon Willison’s Weblog Newsletter Sponsored by: Teleport — AI agents (and sub-agents they spawn) are given the same access as humans, but they never sleep. Learn how to monitor and constrain their behavior with isolated ephemeral trusted runtimes. 15th October 2026 Tool Chirp Pong — Chirp Pong is a two-player paddle game where two phones pair and exchange the ball over sound, using each device's speaker and microphone instead of Wi-Fi or Bluetooth. The page offers a duel mode that pairs two phones through a chirp handshake and a practice mode against a CPU opponent, with selectable match lengths of 7, 11, or 15 points. Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where t"
+    },
+    {
+      "id": "e081e82ca66458b5dbc0",
+      "title": "Ollama v0.40.5",
+      "category": "official_update",
+      "evidence": "## NVIDIA Nemotron 3.5 Super [NVIDIA Nemotron 3.5 Super](https://ollama.com/library/nemotron-3.5-super) is a vision-language model for coding, reasoning, tool use, and document understanding. It pairs a 120B-parameter hybrid Mamba-2/Transformer mixture-of-experts backbone (12B active per token) with a C-RADIO vision encoder, and supports tool calling, an on/off thinking mode, and context up to 1M tokens. ``` ollama run nemotron-3.5-super ``` A compact sibling, [Nemotron 3.5 Bolt](https://ollama.com/library/nemotron-3.5-bolt), distills Super down to 74B parameters (9B active) tuned to fit a 24 GB NVIDIA GPU for everyday agentic tasks, with speculative decoding via its included drafter. ## What's Changed * Decision models are now available on cloud — use `clef:cloud` and `clef-flash:cloud` to run decision models through ollama.com cloud without pulling them locally * Continuing an OpenAI-compatible Responses conversation that includes custom tool calls no longer fails with an error * Clearer error messages when cloud access fails: sign-in problems, payment issues in the desktop app, and upstream access errors from the ChatGPT gateway now explain what went wrong * Updated llama.cpp (a"
+    },
+    {
+      "id": "89760d3164c239054f78",
+      "title": "Claude Code v2.1.301",
+      "category": "official_update",
+      "evidence": "## What's changed - Added `CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS` so unattended retry mode (`CLAUDE_CODE_RETRY_WATCHDOG`) ends a request at a usage limit that resets too far away instead of waiting - Added OpenTelemetry tracing guidance to the `claude-api` skill, including setting up trace destinations with the `ant` CLI - Added the `%` motion to vim mode: jump to the matching bracket, alone or with d/c/y - Added `rows` to a mod's `Input`: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line - Added `classifier_verdict` and `permission_mode` to OpenTelemetry `tool_decision` events, so auto mode classifier decisions can be told apart from permission rules - Added `classifier_category` to OpenTelemetry `tool_decision` events, naming the built-in rule a classifier block matched, when `OTEL_LOG_TOOL_DETAILS=1` - Fixed quitting removing a worktree made by a `WorktreeCreate` hook without asking when it may hold unpushed commits - Fixed the `fable` (and `best`) model alias erroring on the Anthropic API when the newest Fable model is not available to your organization: Claude Code now retries once on t"
+    },
+    {
+      "id": "78e00e19327e3fc7e60b",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "category": "official_update",
+      "evidence": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation."
+    },
+    {
+      "id": "9136e03c8ae426a75f56",
+      "title": "Bringing the magic: Google breaks open a bottleneck in quantum computing",
+      "category": "official_update",
+      "evidence": "In a paper published in Science, Google has shown that Magic State Cultivation works on Google Quantum AI hardware."
+    },
+    {
+      "id": "f7cb553e0018c829c880",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "category": "official_update",
+      "evidence": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date Suggested alternative Claude Opus 4.8* 2026-11-16 Claude Opus 5.5 Claude Opus 5 2026-11-16 Claude Opus 5.5 GPT-5.6 Terra 2026-11-16 GPT-6.1 Sol or GPT-6 Luna *Claude Opus 4.8 will remain available to individual GitHub Copilot subscribers on annual plans so they retain an Opus offering. The deprecation of Claude Opus 4.8 does not apply to these customers. Please update your workflows and integrations to use the supported models before this date. Under default model enablement, the suggested alternatives are automatically enabled for Copilot Enterprise and Copilot Business customers unless an administrator has turned off the global default or explicitly disabled the model. If you’ve turned off the global default, you can enable access to the alternative models through their model policies in Copilot settings. Once enabled, users will see the model in the Copilot Chat model selector in supported GitHub Copilot experiences. No action is required to remove the models after they have b"
+    },
+    {
+      "id": "c6d52d8bfc4f5e34228c",
+      "title": "Okl – hold your agent to rules proven by checks and gated at push",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/emeraldleaf/okl Comments URL: https://news.ycombinator.com/item?id=50141202 Points: 1 # Comments: 0 PRIMARY PAGE: <!-- mcp-name: io.github.emeraldleaf/okl -->\n<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/emeraldleaf/okl/main/docs/brand/okl-logo-dark.png\">\n  <img src=\"https://raw.githubusercontent.com/emeraldleaf/okl/main/docs/brand/okl-logo-light.png\" alt=\"okl logo: a tree's growth rings around a healed scar, in an engraved frame with okl in the gap\" width=\"240\">\n</picture>\n\n# okl — Observed Knowledge Ledger\n\n**Guardrails and a learning loop for AI coding agents.**<br>\nEngineering rules, architecture decisions, documentation and diagrams: recorded once, briefed to\nyour agent before every task (by a hook in Claude Code; any MCP agent can ask for the same\nbriefing), proven by checks you choose, and flagged before you push (or in CI) when what they\ngovern changes. Each session's lessons are fed back in. Use it\nin one repo, or share one store across every repo your team runs.\n\n[![PyPI](https://img.shields.io/pypi/v/observed-knowledge-ledger?color=blue&label=PyPI)](https://pypi.or"
+    },
+    {
+      "id": "227baa255948c767366f",
+      "title": "Cline SDK v0.0.95",
+      "category": "official_update",
+      "evidence": "- OpenAI-compatible requests for GPT-6 models (`gpt-6-sol`, `gpt-6.1-sol`, `gpt-6-1-sol`, and later gpt-5 through gpt-9 ids) send `max_completion_tokens` instead of `max_tokens`, so OpenAI and Azure no longer reject them. Azure's `gpt-35-turbo` keeps `max_tokens` - The hub daemon records which client started it (`CLINE_HUB_LAUNCHER_CLIENT`, `CLINE_HUB_LAUNCHER_VERSION`, `CLINE_HUB_LAUNCHER_TRANSPORT`) and publishes that as OTel resource attributes. SSH remote hubs report the local client with transport `ssh`. `@cline/shared` adds `withHubLauncherIdentity`, `claimHubLauncherIdentity` and `readHubLauncherIdentity` - The telemetry self-check report includes `traces_exporter` - Refreshed the model catalog (6,952 → 7,041 models). Adds the CommandCode and Reflection providers. The Cline recommended list leads with Claude Sonnet 5.5 again, so the `cline` provider's bundled default goes back to Claude Sonnet 5.5 from Gemini 4 Argon. Default models change for 302.AI (Gemini 4 Argon), Eden AI and Prime Inference (Muse Spark Open), CoreWeave (Reflection Beam 1.0), NanoGPT, Pioneer (Nemotron 3.5 Super VL), and Scaleway (DeepSeek V4.1 Flash). OpenCode Go keeps its `https://opencode.ai/inference"
+    },
+    {
+      "id": "04a590d7bd9be311cf75",
+      "title": "LaTeX renderer",
+      "category": "discovery",
+      "evidence": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation Builder, Spreadsheet, Calculator, Drawing Tool, Diagram Maker, Animator, Calendar, and Trip Planner). Tiny Little Office's signature trick is to store all of the document data in the #fragment section of the UR PRIMARY PAGE: Tool: LaTeX renderer Simon Willison’s Weblog Newsletter Sponsored by: Teleport — AI agents (and sub-agents they spawn) are given the same access as humans, but they never sleep. Learn how to monitor and constrain their behavior with isolated ephemeral trusted runtimes. 15th October 2026 Tool LaTeX renderer — LaTeX renderer turns LaTeX source into a rendered view, either a single display equation typeset by MathJax or a full document or prose fragment typeset by faster-latex, with a live preview beside the editor and a toolbar switch between Edit and Rendered views. Source can be typed, loaded from a URL or GitHub Gist, or picked from built-in examples, and the page keeps the LaTeX in the URL fragment so it can be shared as a readable or compressed link. Inspired by Paul Ford"
+    },
+    {
+      "id": "3a69128b8ffceed30859",
+      "title": "Ollama v0.40.4",
+      "category": "official_update",
+      "evidence": "## Decision models in the CLI Decision models can now be used directly from the terminal with `ollama run` — ask yes/no questions, classify text into labels, or score against a rubric: `ollama run nimble --ask \"Is a refund being requested?\" < ticket.txt` ## What's Changed * Kev decision models are now supported by the MLX runner on Apple silicon * `ollama launch` can now be used with usage credits without upgrading to a paid plan * `ollama launch codex` now includes locally installed Ollama models in its model picker. Use `/model` within the Codex CLI to swap models. * Improved inference performance by reusing verified manifests and already loaded models * Added support for multimodal embeddings through llama-server * Fixed loading multimodal embedding models with small context windows * Improved Gemma 4 prefill performance on NVIDIA GPUs with the MLX runner * MLX runner now clips long Laya states instead of rejecting them * Improved speculative decoding reliability in the MLX runner, including recurrent state handling after rollback * Updated llama.cpp with native decision model support * Updated README and documentation with clearer privacy and cloud-services wording **Full Chang"
+    },
+    {
+      "id": "7edea5ff95924e136451",
+      "title": "Claude Code v2.1.300",
+      "category": "official_update",
+      "evidence": "## What's changed - Added `virtualText` to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt - Added `cache_creation_5m_tokens` and `cache_creation_1h_tokens` to the OpenTelemetry `api_request` event, splitting cache writes by lifetime - Added `$.ui.view({ agentId })` for mods: shows an agent's transcript in the main view when you ask, and `$.ui.view({})` goes back - Added a `dir` prop on a mod's `Text` for right-to-left text: on Windows and in VS Code's terminal its rows read in that direction and sit flush right - Added `/advisor` on Claude Platform on AWS; no advisor runs until you pick one with `/advisor`, `advisorModel` or `--advisor`, and `CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1` turns it off - Added OpenTelemetry GenAI semantic-convention attributes to trace spans, such as `gen_ai.provider.name`, `gen_ai.conversation.id`, `gen_ai.tool.name` and `error.type` - Added support for rewriting a workflow agent's `prompt` and `model` in the `agent.spawn` mod hook, which could only refuse workflow agents before - Added the `prompt.change` mod hook, raised when the prompt box's text changes without a typed edit: a recalled history "
+    },
+    {
+      "id": "1d658f807225ca36a5aa",
+      "title": "Teaching students to think and learn through questions",
+      "category": "official_update",
+      "evidence": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
+    },
+    {
+      "id": "03b1a58c646d00884e20",
+      "title": "Check if a text message is a scam using Circle to Search.",
+      "category": "official_update",
+      "evidence": "Use Google Circle to Search to analyze suspicious texts for scams. Long-press your home button to get AI insights on messages. See how it works."
+    },
+    {
+      "id": "c4e4a41d4c57c72f3e35",
+      "title": "AI Scan for pull requests generally available",
+      "category": "official_update",
+      "evidence": "Code scanning AI Scan for pull requests is now generally available. It complements CodeQL by finding vulnerabilities in pull request changes for languages and frameworks that CodeQL does not currently cover, including PHP, Shell/Bash, Terraform configuration (HCL), Dockerfiles, JSP for Java, Blazor for C#, and more. How it works AI Scan runs automatically on pull requests when code scanning and the repository’s effective AI Scan setting are enabled. Findings appear alongside CodeQL results on the Conversation and Files changed tabs, with an “AI” indicator to distinguish them from CodeQL alerts. Findings can include an explanation of the security risk and a suggested autofix. AI Scan findings are advisory. They do not fail the code scanning check and cannot block pull request merges through ruleset requirements. AI Scan does not run on pull requests from forks or pull requests created by Dependabot. Availability AI Scan is available for public repositories owned by organizations or personal accounts. For private and internal organization-owned repositories, GitHub Code Security or GitHub Advanced Security is required. A GitHub Copilot license is not required. Billing AI Scan for pul"
+    },
+    {
+      "id": "e9025571c2efa2b7b1bf",
+      "title": "Show HN: BricksChat – Generate Lego builds from images, including Technic",
+      "category": "discovery",
+      "evidence": "I've been working on generative LEGO assembly models recently, but there are similar projects already, so I wanted to try some harder cases: specialized parts (incl. technic), multi-modal prompting (incl. using images, 3D meshes or almost any input), constrained inventory (so you could upload just parts you have), ensuring physical validity and generating buildable instructions, being able to twea PRIMARY PAGE: BricksChat — Your AI brick designer Bricks Chat Get started I want to build | Describe an idea, or drop in a photo or a drawing. BricksChat designs a real brick model you can build, with a 3D view, a parts list and instructions. Add Inspiration Made with BricksChat See all builds Animals Vehicles Robots & machines Buildings & places Pop culture Fantasy & sci-fi Science See it built Fantasy & sci-fi Storm-chasing tea house a little tea house on crab legs that follows rainclouds around to refill its kettle. Cozy inside, absolutely terrible weather outside. Can you build that in bricks? 100% Instructions Parts 613 See it built Animals Kingfisher about to dive Build a vivid blue-and-orange kingfisher poised to dive from a reed. Use SNOT construction for its smooth breast and cri"
+    }
+  ],
+  "response": {
+    "id": "656c32b2-5728-485d-a818-d5bf9aacef2c_dd09a20062364d66b2882ba922154d47",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"items\": [\n    {\n      \"id\": \"239631b46f8e6a8e2038\",\n      \"product\": \"llama.cpp\",\n      \"change\": \"新增MoE专家GPU缓存与多款新模型\",\n      \"change_en\": \"Adds host-memory MoE expert GPU cache and many new models\",\n      \"title\": \"llama.cpp v0.7.0发布\",\n      \"summary\": \"llama.cpp v0.7.0引入LiliCorr投机解码与GLM5-Next的MTP支持；新增面向主机内存MoE专家的GPU LRU缓存（--moe-cache-mib），专家卸载时解码最高提速约2.2倍并可跨多GPU共享。同时批量新增K2 Horizon、Prism Bonsai 2、EmbeddingGemma-2等模型；服务端重构聊天会话API、支持新默认端口9931，Web UI新增完整模型管理器，ggml升级至v0.27.0。\",\n      \"kind\": \"added\"\n    },\n    {\n      \"id\": \"e081e82ca66458b5dbc0\",\n      \"product\": \"Ollama\",\n      \"change\": \"上架Nemotron 3.5系列并支持云决策模型\",\n      \"change_en\": \"Adds Nemotron 3.5 Super/Bolt models and cloud decision models\",\n      \"title\": \"Ollama v0.40.5更新\",\n      \"summary\": \"Ollama v0.40.5上架NVIDIA Nemotron 3.5 Super视觉语言模型，采用120B参数混合Mamba-2/Transformer MoE骨干（每token激活12B）与C-RADIO视觉编码器，支持工具调用、思考开关及最长1M上下文；并推出适配24GB显卡的74B精简版Nemotron 3.5 Bolt。决策模型现可通过clef:cloud在云端运行；同时改进OpenAI兼容Responses对话中自定义工具调用的续接，并优化云访问错误提示。\",\n      \"kind\": \"added\"\n    },\n    {\n      \"id\": \"901225acb33eeedf123f\",\n      \"product\": \"Claude Code\",\n      \"change\": \"新增自动模式模型变量与空闲压缩配置\",\n      \"change_en\": \"Adds CLAUDE_CODE_AUTO_MODE_MODEL and idle compaction toggle\",\n      \"title\": \"Claude Code v2.1.302\",\n      \"summary\": \"Claude Code v2.1.302新增CLAUDE_CODE_AUTO_MODE_MODEL环境变量，用于指定客户端auto mode分类器所用模型（不影响服务端）；在/config中新增Idle compaction开关行。同时提示独立Claude Design将于2026年12月14日关闭。修复包括：会话压缩期间停止回合导致的“Prompt is too long”错误、切换到Vertex/Bedrock时请求报“Extra inputs are not permitted”、Read工具将任意大小图片全量载入内存（超128MB图片源现拒绝）、以及网关带前缀命名Opus时/autocompact与/effort保存到错误模型等问题。\",\n      \"kind\": \"changed\"\n    },\n    {\n      \"id\": \"dd083ba9146bfc1fbcbe\",\n      \"product\": \"Codex CLI\",\n      \"change\": \"新增响应中追问引导与并行只读工具调用\",\n      \"change_en\": \"Adds follow-up steering during response and parallel read-only tools\",\n      \"title\": \"Codex 0.163.0更新\",\n      \"summary\": \"Codex 0.163.0新增在响应过程中发送追问以立即引导模型的能力，中断回合时同步停止Code Mode单元及其嵌套工具调用；/config支持跨分类搜索偏好并即时修改，/keymap可配置引导键（默认Ctrl+X）。可在/daemon重启受管后台服务器；独立只读工具（skill、memory、会话历史查询）可并行执行。Daybreak对合格账户默认启用，codex exec可凭OpenAI API key选用。修复包括：恢复已保存线程时正确还原权限与网络批准，以及网络代理在DNS查询前先检查权限、拒绝重复Host头等安全问题。\",\n      \"kind\": \"changed\"\n    },\n    {\n      \"id\": \"f7cb553e0018c829c880\",\n      \"product\": \"GitHub Copilot\",\n      \"change\": \"11月16日下线多款模型并推荐替代\",\n      \"change_en\": \"Deprecates multiple Copilot models on Nov 16 with alternatives\",\n      \"title\": \"Copilot部分模型将弃用\",\n      \"summary\": \"GitHub宣布将于2026年11月16日在所有Copilot体验（含Chat、内联编辑、问答与代理模式、代码补全）中弃用Claude Opus 4.8、Claude Opus 5、GPT-5.6 Terra等模型，推荐替代依次为Claude Opus 5.5、Claude Opus 5、GPT-6.1 Sol或GPT-6 Luna。Claude Opus 4.8对年付个人订阅用户保留。默认模型启用策略下，企业与商业客户将自动启用替代模型（除非管理员关闭全局默认）。请在日期前更新工作流与集成。\",\n      \"kind\": \"warning\"\n    },\n    {\n      \"id\": \"9945834141f39c6e2973\",\n      \"product\": \"Copilot Slack/Teams\",\n      \"change\": \"新增跨多仓库协作与消息中@提及\",\n      \"change_en\": \"Adds multi-repo support and mention-anywhere in Slack/Teams\",\n      \"title\": \"Copilot Slack/Teams支持多仓库\",\n      \"summary\": \"GitHub Copilot在Slack与Microsoft Teams中新增多仓库支持，可在单个会话中跨仓库追踪PR、调查跨前后端的Issue、汇总各仓库近期活动，无需切换会话。同时改进交互体验：可在消息任意位置@GitHub（不限于开头），并优化仓库切换的流畅度。\",\n      \"kind\": \"added\"\n    }\n  ]\n}",
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1792392566,
+    "model": "mimo-v2.6-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1399,
+      "prompt_tokens": 7874,
+      "total_tokens": 9273,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": null
+    }
+  }
+}
