@@ -1,0 +1,90 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="An agent opens a pull request, finds conflicts with main, resolves them, runs checks and merges, all inside one card."><title>Merge conflicts · Su UI lab</title><script src="../shared/setup.js"></script><link rel="stylesheet" href="../shared/lab.css"><link rel="stylesheet" href="./styles.css"></head><body><main>
+<nav><a href="/lab" data-copy="back">← UI lab</a><span data-copy="edition">12 / Merge conflicts</span><button id="language" type="button" aria-label="切换为中文">中</button></nav>
+<header class="page-heading"><h1 data-copy="title">Merge conflicts</h1><p class="intro" data-copy="intro">An agent opens a pull request, finds that main has moved underneath it, resolves the conflicts and merges, all inside one card.</p></header>
+<section id="stage" aria-label="Merge conflicts experiment">
+<div id="convo"></div>
+<div class="chips" id="chips"></div>
+<form class="composer" id="composer">
+<label for="prompt" class="sr-only" data-copy-composer="label">Message</label>
+<textarea id="prompt" rows="1" placeholder="Ask anything, or type / for skills"></textarea>
+<div class="cbar">
+<button type="button" class="round fill" data-aria="attach" aria-label="Attach"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3.5v9M3.5 8h9"/></svg></button>
+<button type="button" class="pillbtn"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5a1 1 0 0 1 1-1h3l1.5 1.5h4.5a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1z"/></svg><span class="lbl">acme-webapp</span></button>
+<span class="seg"><span class="on"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="4" width="10" height="6.5" rx="1"/><path d="M1.5 12.5h13"/></svg><span data-copy-composer="local">Local</span></span><span class="cloud" data-aria="cloud" role="img" aria-label="Cloud"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 12.5h6.5a2.5 2.5 0 0 0 .3-5A3.5 3.5 0 0 0 5 6.6 3 3 0 0 0 5 12.5z"/></svg></span></span>
+<span class="sp"></span>
+<span class="model"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="10" width="2" height="3" rx=".5" fill="var(--fg-2)"/><rect x="5.3" y="8" width="2" height="5" rx=".5" fill="var(--fg-2)"/><rect x="8.6" y="6" width="2" height="7" rx=".5" fill="var(--cl-2)"/><rect x="11.9" y="4" width="2" height="9" rx=".5" fill="var(--cl-2)"/></svg><span class="lbl" data-copy-composer="model">Medium</span></span>
+<button type="button" class="round" data-aria="dictate" aria-label="Dictate"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><rect x="6" y="2.5" width="4" height="7" rx="2"/><path d="M3.8 8a4.2 4.2 0 0 0 8.4 0M8 12.2v1.8"/></svg></button>
+<button type="submit" class="send" data-aria="send" aria-label="Send"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3.5M4 7.5l4-4 4 4"/></svg></button>
+</div>
+</form>
+</section>
+<div class="controls">
+<div class="segmented" role="group" id="jump-group" aria-label="Jump to a state"><button type="button" data-jump="idle">Start</button><button type="button" data-jump="conflicts">Conflicts</button><button type="button" data-jump="resolving">Resolving</button><button type="button" data-jump="ready">Ready</button><button type="button" data-jump="merged">Merged</button></div>
+<button id="auto" type="button" aria-pressed="false" data-copy="autoplay">Autoplay</button>
+<button id="replay" type="button" data-copy="replay">Replay</button>
+<div class="segmented" role="group" id="theme-group" aria-label="Theme"><button type="button" data-theme-choice="light" data-copy="light">Light</button><button type="button" data-theme-choice="dark" data-copy="dark">Dark</button></div>
+</div>
+<p class="status" role="status" id="announce"></p>
+<p class="hint" data-copy="hint">Press Create PR, or type in the box and press Enter. Hover or focus “3 conflicts” to see the lines, and the check chips to see each command.</p>
+<p class="demo-note" data-copy="demo">Sample repository, people and commits. Nothing is pushed anywhere.</p>
+<section class="tricks" aria-labelledby="tricks-title"><h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
+<article><h3 id="note-title-0"></h3><p id="note-body-0"></p><pre tabindex="0"><code>// model.js: a segment never leaves its own row
+if (i &gt; top1 &amp;&amp; i &lt;= iBase) {
+  const d = i === iBase
+    ? `M${x1} -16C${x1} 6 ${x0} 2 ${x0} 16` // curve off main
+    : `M${x1} -16V16`;                      // straight through
+  line(d, branch);
+}
+// main joins the branch at the merge commit, rows above
+const ty = 16 - ROW * (i - iMm);
+
+.g svg { position: absolute; inset: 0; overflow: visible; }
+.row { height: 32px; transition: height .34s var(--ease), opacity .34s; }
+.row.enter { height: 0; opacity: 0; }</code></pre></article>
+<article><h3 id="note-title-1"></h3><p id="note-body-1"></p><pre tabindex="0"><code>.shim {
+  --sb: var(--mut); --sh: var(--fg);
+  background: linear-gradient(100deg, var(--sb) 36%,
+    var(--sh) 47%, var(--sh) 53%, var(--sb) 64%);
+  background-size: 280% 100%;
+  background-clip: text; color: transparent;
+  animation: shim 2s linear infinite;
+}
+.ttl.shim.tone-you { --sb: var(--fg); --sh: var(--faint); }
+
+/* 4 + 28 = one 32px row */
+.g path.flow { stroke-dasharray: 4 28; animation: flow 1.6s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: 32; } }
+
+S.card.flow = ['m', 'mm'];  // resolving: main flows into the branch
+S.card.flow = [];           // waiting for you: lights out</code></pre></article>
+<article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre tabindex="0"><code>export function scrambleFrame(text, progress, random = Math.random) {
+  const n = Math.floor(progress * progress * text.length); // fast, then slow
+  let tail = '';
+  for (let i = n; i &lt; text.length; i++)
+    tail += text[i] === ' ' ? ' ' : NOISE[Math.floor(random() * NOISE.length)];
+  return { head: text.slice(0, n), tail };      // tail is drawn fainter
+}
+
+// Only a change of shape blurs; a ticking counter does not.
+export const shape = s =&gt; String(s).replace(/\d+/g, '#');
+if (shape(before) !== shape(after)) restart(el, 'blurin');</code></pre></article>
+<article><h3 id="note-title-3"></h3><p id="note-body-3"></p><pre tabindex="0"><code>const wait = ms =&gt; new Promise(r =&gt; ff ? r() : setTimeout(r, ms))
+  .then(() =&gt; { if (id !== runId) throw CANCEL; });
+
+async function flow() {
+  mark('idle');
+  await gate('start');        // Create PR, Enter, or Autoplay
+  /* … */
+  mark('conflicts');
+  await gate('resolve');
+}
+function start(target) {      // jump: replay instantly up to a mark
+  runId++; ff = target;
+  root.classList.add('ff');
+  flow();
+}
+foot = { icon: 'spin', step: ['testing', n, TESTS] }; // keys, not strings</code></pre></article>
+<div class="source-links"><a href="./styles.css">CSS ↗</a><a href="./script.js" data-copy="source">View the source</a></div></section>
+<footer><span data-copy="inspired">Inspired by</span> <a href="https://x.com/pitus_/status/2111519352503873866" target="_blank" rel="noopener noreferrer">Phil Pitus ↗</a></footer>
+<noscript><p>Enable JavaScript to try the merge conflicts card. / 请启用 JavaScript 体验合并冲突卡片。</p></noscript>
+</main><script type="module" src="./script.js"></script></body></html>

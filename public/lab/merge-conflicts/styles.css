@@ -1,0 +1,223 @@
+/* Everything inside the experiment lives under #stage, so lab.css's global button styles never leak in. */
+:root { --fg: #1d1f23; --fg-2: #3a3d44; --mut: #7b8089; --faint: #a9adb4; --cl: #ececef; --cl-2: #e1e2e6; --surface: #f4f4f6; --pop: #fff;
+  --shadow: 0 1px 2px #14161e0a, 0 6px 22px #14161e0b; --shadow-pop: 0 2px 6px #14161e0f, 0 16px 40px #14161e1f;
+  --blue: #4f86ec; --blue-ink: #2c5fd6; --blue-wash: #eef3fe; --send: #2f6fe6;
+  --teal: #2fc39c; --teal-ink: #13866a; --teal-wash: #e9f9f3;
+  --amber: #e3a21a; --amber-ink: #ad651b; --amber-wash: #fdf3dc;
+  --green: #2fb764; --green-ink: #1e8b48; --green-wash: #e8f7ee;
+  --purple: #8b5cf6; --purple-ink: #6f35dc; --purple-wash: #f2eefe;
+  --main: #c4c7cd; --add: #2a9a4c; --del: #c8364f; --lena-bar: #f1b48c; --you-bar: #a3c3f5;
+  --mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --ease: cubic-bezier(.2, .7, .2, 1); }
+:root[data-theme="dark"] { --fg: #eceeec; --fg-2: #cdd0cd; --mut: #969b96; --faint: #6a6f6a; --cl: #343734; --cl-2: #414541; --surface: #2a2d2a; --pop: #2a2d2a;
+  --shadow: 0 1px 2px #0000004d, 0 6px 22px #00000040; --shadow-pop: 0 2px 6px #00000059, 0 16px 40px #00000073;
+  --blue: #5b92f5; --blue-ink: #8db4ff; --blue-wash: #1f2b40; --send: #3b7af0;
+  --teal: #34c9a2; --teal-ink: #5fdcb9; --teal-wash: #1a332c;
+  --amber: #e8aa2a; --amber-ink: #f0b75a; --amber-wash: #3a2e17;
+  --green: #3cc46f; --green-ink: #62d88d; --green-wash: #1b3324;
+  --purple: #9b74f8; --purple-ink: #b89bff; --purple-wash: #2c2442;
+  --main: #565a56; --add: #55c977; --del: #f06b80; --lena-bar: #b8714a; --you-bar: #3f6db8; }
+
+[hidden] { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+nav { align-items: center; } nav > span { margin-left: auto; }
+#language { border: 0; background: none; padding: 6px 8px; color: var(--muted); }
+
+#stage { margin: 34px auto 8px; max-width: 640px; display: flex; flex-direction: column; gap: 18px; font-size: 14px; color: var(--fg); }
+#stage button { border: 0; padding: 0; background: none; color: inherit; font: inherit; border-radius: 0; transition: none; transform: none; cursor: pointer; }
+#stage button:focus-visible, #stage textarea:focus-visible, #stage .chk:focus-visible { outline: 2px solid #7181a5; outline-offset: 2px; border-radius: 8px; }
+#stage svg.i { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+#stage code { font-family: var(--mono); }
+#convo { display: flex; flex-direction: column; gap: 18px; }
+#stage .appear { animation: appear .42s var(--ease) both; }
+@keyframes appear { from { opacity: 0; transform: translateY(6px); } }
+
+#stage .bubble { align-self: flex-end; background: var(--surface); border-radius: 16px; padding: 8px 14px; font-size: 15px; max-width: 80%; overflow-wrap: anywhere; }
+#stage .think { display: flex; flex-direction: column; gap: 8px; color: var(--mut); }
+#stage .think > button { display: inline-flex; align-items: center; gap: 10px; align-self: flex-start; padding: 2px 0; }
+#stage .think > button svg { transition: transform .2s; }
+#stage .think > button[aria-expanded="true"] svg { transform: rotate(90deg); }
+#stage .secs { color: var(--faint); }
+#stage .think ol { margin: 0; padding: 0 0 0 26px; list-style: none; display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+#stage .think li::before { content: ""; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: var(--faint); margin: 0 10px 2px -14px; vertical-align: middle; }
+
+/* Flowing light on text that is still in progress; base and band swap per tone. */
+#stage .shim { --sb: var(--mut); --sh: var(--fg); background: linear-gradient(100deg, var(--sb) 0%, var(--sb) 36%, var(--sh) 47%, var(--sh) 53%, var(--sb) 64%, var(--sb) 100%); background-size: 280% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shim 2s linear infinite; }
+@keyframes shim { from { background-position: 100% 0; } to { background-position: 0% 0; } }
+#stage .fs .shim, #stage .chip .shim { --sb: var(--fg-2); --sh: var(--faint); }
+#stage .ttl.shim.tone-you { --sb: var(--fg); --sh: var(--faint); }
+#stage .ttl.shim.tone-other, #stage .ttl.shim.tone-faint { --sb: var(--mut); --sh: var(--fg); }
+#stage .scr { color: var(--faint); }
+#stage .blurin { animation: blurin .4s var(--ease) both; }
+@keyframes blurin { from { opacity: 0; filter: blur(5px); transform: translateY(2px); } }
+#stage .spin { width: 12px; height: 12px; border-radius: 50%; border: 1.6px solid var(--cl-2); border-top-color: var(--mut); animation: rot .75s linear infinite; flex: none; display: inline-block; }
+@keyframes rot { to { transform: rotate(360deg); } }
+
+/* PR card */
+#stage .card { position: relative; border: 1px solid var(--cl); border-radius: 14px; padding: 14px 16px 10px; background: var(--bg); box-shadow: var(--shadow); container: card / inline-size; }
+#stage .card-h { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+#stage .card-h h2 { margin: 0; font-size: 14.5px; font-weight: 600; letter-spacing: -.005em; text-wrap: balance; }
+#stage .num { color: var(--mut); font-weight: 400; margin-left: 2px; }
+#stage .pill-state { font-size: 13px; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+#stage .pill-state::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+#stage .pill-state.open { color: var(--green-ink); } #stage .pill-state.merged { color: var(--purple-ink); }
+
+#stage .rows { display: flex; flex-direction: column; }
+#stage .row { position: relative; display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; align-items: center; column-gap: 8px; height: 32px; margin-inline: -8px; padding-inline: 8px; border-radius: 7px; transition: height .34s var(--ease), opacity .34s; font-variant-numeric: tabular-nums; }
+#stage .row.enter { height: 0; opacity: 0; }
+#stage .row.flash { animation: flash 1.4s ease-out; }
+@keyframes flash { 0%, 30% { background: var(--amber-wash); } 100% { background: transparent; } }
+#stage .row.sweep { animation: sweep 1.5s ease-out both; animation-delay: var(--d, 0ms); }
+@keyframes sweep { 0% { background: transparent; } 22% { background: var(--purple-wash); } 100% { background: transparent; } }
+/* Each row's graph cell draws from the previous row's centre (y -16) to its own (y 16). */
+#stage .g { position: relative; width: 52px; height: 32px; align-self: start; }
+#stage .g svg { position: absolute; inset: 0; overflow: visible; width: 52px; height: 32px; }
+#stage .g path { fill: none; stroke-width: 1.5; stroke-linecap: round; transition: stroke .4s; }
+/* 4 + 28 = one 32px row, so pulses in neighbouring rows join into one stream. */
+#stage .g path.flow { stroke: var(--fc); stroke-dasharray: 4 28; animation: flow 1.6s linear infinite; opacity: .85; }
+#stage .g path.flow.rev { animation-direction: reverse; }
+@keyframes flow { from { stroke-dashoffset: 0; } to { stroke-dashoffset: 32; } }
+#stage .node { position: absolute; top: 16px; transform: translate(-50%, -50%); border-radius: 50%; display: grid; place-items: center; transition: background .3s, border-color .3s; }
+#stage .node.dot { width: 7px; height: 7px; background: var(--c); }
+#stage .node.ring { width: 9px; height: 9px; border: 1.6px solid var(--c); background: var(--bg); }
+#stage .node.ring.busy { width: 11px; height: 11px; border-color: var(--cl-2); border-top-color: var(--c); border-right-color: var(--c); animation: rot .9s linear infinite; }
+#stage .node.ring.busy::before { content: ""; width: 3px; height: 3px; border-radius: 50%; background: var(--c); }
+#stage .node.dash { width: 10px; height: 10px; border: 1.4px dashed var(--faint); background: var(--bg); animation: rot 4s linear infinite; }
+#stage .node.ping::after { content: ""; position: absolute; inset: -1px; border-radius: 50%; border: 1.5px solid var(--c); animation: ping .9s ease-out both; pointer-events: none; }
+@keyframes ping { from { transform: scale(1); opacity: .75; } to { transform: scale(2.8); opacity: 0; } }
+#stage .node.big { width: 15px; height: 15px; background: var(--c); color: var(--bg); font: 700 10px/1 system-ui, sans-serif; }
+#stage .node.big svg { width: 10px; height: 10px; stroke-width: 2.2; }
+#stage .node.spinner { width: 12px; height: 12px; background: var(--bg); }
+#stage .node.merged { width: 12px; height: 12px; background: var(--purple); }
+#stage .node.pulse { animation: pulse 1.4s ease-out infinite; }
+@keyframes pulse { from { box-shadow: 0 0 0 0 var(--amber-wash); } to { box-shadow: 0 0 0 7px transparent; } }
+
+#stage .tt { display: flex; align-items: center; gap: 8px; min-width: 0; }
+#stage .ttl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: color .35s; }
+#stage .tone-you { color: var(--fg); } #stage .tone-other { color: var(--mut); } #stage .tone-faint { color: var(--faint); } #stage .tone-conflict { color: var(--amber-ink); }
+#stage .tag { font-family: var(--mono); font-size: 11.5px; padding: 1px 6px; border-radius: 5px; white-space: nowrap; transition: background .35s, color .35s; }
+#stage .tag.blue { background: var(--blue-wash); color: var(--blue-ink); }
+#stage .tag.teal { background: var(--teal-wash); color: var(--teal-ink); }
+#stage .tag.main { background: var(--surface); color: var(--mut); }
+#stage .tag.purple { background: var(--purple-wash); color: var(--purple-ink); }
+#stage .badge { min-width: 16px; height: 16px; padding: 0 4px; border-radius: 8px; display: inline-grid; place-items: center; font-size: 10.5px; background: var(--amber-wash); color: var(--amber-ink); animation: pop .3s cubic-bezier(.3, 1.6, .5, 1); }
+#stage .badge.ok { background: var(--green-wash); color: var(--green); }
+#stage .badge.ok svg { width: 10px; height: 10px; stroke-width: 2.2; }
+@keyframes pop { from { transform: scale(.4); opacity: 0; } }
+#stage .mt { font-size: 12.5px; color: var(--mut); white-space: nowrap; display: flex; align-items: baseline; gap: 6px; }
+#stage .hash { font-family: var(--mono); font-size: 11.5px; color: var(--faint); }
+#stage .st-checking { color: var(--mut); } #stage .st-amber { color: var(--amber-ink); } #stage .st-green { color: var(--green-ink); } #stage .st-purple { color: var(--purple-ink); }
+#stage .prog { position: absolute; left: 68px; right: 72px; bottom: 3px; height: 2px; border-radius: 2px; background: var(--cl); overflow: hidden; }
+#stage .prog i { display: block; height: 100%; width: calc(var(--p, 0) * 100%); background: var(--green); transition: width .12s linear; }
+
+#stage .checks { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows .36s var(--ease), opacity .36s; }
+#stage .checks.on { grid-template-rows: 1fr; opacity: 1; }
+#stage .checks > div { overflow: hidden; }
+#stage .checks.on > div { overflow: visible; }
+#stage .checks ul { list-style: none; margin: 0; padding: 8px 0 2px; display: flex; flex-wrap: wrap; gap: 6px; }
+#stage .chk { position: relative; display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 10px; border: 1px solid var(--cl); border-radius: 999px; font-size: 12.5px; color: var(--fg-2); }
+#stage .checks.on .chk { animation: blurin .45s var(--ease) both; animation-delay: calc(var(--i) * 80ms + 120ms); }
+#stage .chk svg { width: 12px; height: 12px; color: var(--green); stroke-width: 2; }
+#stage .chk em, #stage .tip em { font-style: normal; color: var(--mut); }
+#stage .tip { position: absolute; left: -4px; bottom: calc(100% + 6px); translate: 0 3px; background: var(--pop); border: 1px solid var(--cl); box-shadow: var(--shadow-pop); border-radius: 8px; padding: 5px 9px; white-space: nowrap; font-size: 12px; color: var(--fg-2); opacity: 0; pointer-events: none; transition: opacity .15s, translate .15s; z-index: 5; }
+#stage .tip em { margin-left: 8px; }
+#stage .chk:hover .tip, #stage .chk:focus-visible .tip { opacity: 1; translate: 0 0; }
+
+#stage .foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 40px; margin-top: 4px; }
+#stage .fs { display: flex; align-items: center; gap: 9px; min-width: 0; color: var(--fg-2); }
+#stage .ic { width: 16px; display: grid; place-items: center; flex: none; }
+#stage .ic svg { width: 15px; height: 15px; }
+#stage .ic.warn { color: var(--amber-ink); } #stage .ic.ok { color: var(--green); } #stage .ic.merged { color: var(--purple); }
+#stage .conf-link { color: var(--amber-ink); text-decoration: underline dotted; text-underline-offset: 4px; }
+#stage .btn { display: inline-flex; align-items: center; gap: 7px; height: 30px; padding: 0 13px; border-radius: 999px; font-size: 13.5px; white-space: nowrap; transition: background .2s, color .2s, transform .12s; }
+#stage .btn.soft { background: var(--blue-wash); color: var(--blue-ink); }
+#stage .btn.soft:hover { background: color-mix(in srgb, var(--blue-wash) 82%, var(--blue)); }
+#stage .btn.soft:active, #stage .btn.pressing { transform: scale(.96); }
+#stage .btn.busy { background: var(--surface); color: var(--mut); cursor: default; }
+#stage .btn.plain { border: 1px solid var(--cl); color: var(--fg-2); }
+#stage .btn svg { width: 14px; height: 14px; }
+
+#stage .pop { position: absolute; left: 8px; bottom: 46px; width: min(480px, calc(100% - 16px)); background: var(--pop); border: 1px solid var(--cl); border-radius: 12px; box-shadow: var(--shadow-pop); padding: 10px 0 6px; opacity: 0; translate: 0 4px; pointer-events: none; transition: opacity .16s, translate .16s; z-index: 6; }
+#stage .pop.show { opacity: 1; translate: 0 0; pointer-events: auto; }
+#stage .pop header { padding: 0 16px 8px; font-size: 13px; color: var(--mut); }
+#stage .pop header b { color: var(--fg); font-weight: 500; }
+#stage .pop section { border-top: 1px solid var(--cl); padding: 9px 16px; }
+#stage .pop h3 { margin: 0 0 6px; font-size: 13px; font-weight: 500; }
+#stage .pop h3 span { color: var(--mut); font-weight: 400; margin-left: 4px; }
+#stage .cl { display: grid; grid-template-columns: 44px minmax(0, 1fr); align-items: baseline; padding: 3px 0 3px 8px; border-left: 2px solid var(--you-bar); font-size: 12.5px; }
+#stage .cl.lena { border-left-color: var(--lena-bar); }
+#stage .cl span { color: var(--mut); }
+#stage .cl code { color: var(--fg-2); white-space: pre; overflow-x: auto; }
+
+#stage .reply { margin: 0; font-size: 15px; line-height: 1.65; }
+#stage .reply code { font-size: 13px; background: var(--surface); padding: 1px 5px; border-radius: 5px; }
+#stage .reply .w { animation: word .35s ease-out both; }
+@keyframes word { from { opacity: 0; filter: blur(2px); } }
+
+/* composer */
+#stage .chips { display: flex; flex-wrap: wrap; gap: 6px; position: relative; }
+#stage .chip { display: inline-flex; align-items: center; gap: 7px; height: 30px; padding: 0 11px; border: 1px solid var(--cl); border-radius: 999px; background: var(--bg); font-size: 13.5px; color: var(--fg-2); box-shadow: 0 1px 2px #00000008; white-space: nowrap; }
+#stage button.chip:hover { background: var(--surface); }
+#stage .chip .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+#stage .chip .amber { color: var(--amber-ink); } #stage .chip .green { color: var(--green-ink); } #stage .chip .purple { color: var(--purple-ink); }
+#stage .chip svg { width: 14px; height: 14px; }
+#stage .diff .a { color: var(--add); } #stage .diff .d { color: var(--del); }
+#stage .bars { display: inline-flex; gap: 2px; }
+#stage .bars i { width: 6px; height: 6px; border-radius: 1.5px; background: var(--add); }
+#stage .bars i.r { background: var(--del); } #stage .bars i.n { background: var(--cl-2); }
+#stage .diff svg { color: var(--mut); transition: transform .2s; }
+#stage .diff[aria-expanded="true"] svg { transform: rotate(180deg); }
+#stage .files { position: absolute; left: 0; bottom: calc(100% + 6px); min-width: min(340px, 100%); background: var(--pop); border: 1px solid var(--cl); border-radius: 12px; box-shadow: var(--shadow-pop); padding: 6px; z-index: 7; font-size: 13px; }
+#stage .files div { display: flex; justify-content: space-between; gap: 16px; padding: 5px 8px; }
+#stage .files code { font-size: 12.5px; color: var(--fg-2); }
+#stage .files .n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+#stage .composer { border: 1px solid var(--cl); border-radius: 18px; padding: 12px 12px 10px 16px; background: var(--bg); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 10px; margin-top: -8px; }
+#stage .composer textarea { border: 0; resize: none; background: transparent; color: var(--fg); font-family: inherit; font-size: 15px; line-height: 1.5; padding: 2px 0; min-height: 44px; outline: none; }
+#stage .composer textarea::placeholder { color: var(--faint); }
+#stage .cbar { display: flex; align-items: center; gap: 6px; margin-left: -4px; }
+#stage .round { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: var(--mut); }
+#stage .round.fill { background: var(--surface); }
+#stage .pillbtn { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border-radius: 999px; background: var(--surface); color: var(--fg-2); font-size: 13.5px; white-space: nowrap; }
+#stage .seg { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border-radius: 999px; background: var(--surface); }
+#stage .seg span { display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 10px; border-radius: 999px; font-size: 13.5px; color: var(--mut); }
+#stage .seg span.on { background: var(--bg); color: var(--fg); box-shadow: 0 1px 2px #00000014; }
+#stage .sp { flex: 1; }
+#stage .model { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--mut); padding: 0 6px; }
+#stage .model svg { width: 14px; height: 14px; }
+#stage .send { width: 34px; height: 34px; border-radius: 50%; background: var(--send); color: #fff; display: grid; place-items: center; }
+#stage .send svg { stroke-width: 1.9; }
+
+/* page controls (outside the stage keep lab.css buttons) */
+.controls { justify-content: center; }
+.segmented { display: inline-flex; flex-wrap: wrap; padding: 2px; border: 1px solid var(--line); border-radius: 7px; }
+.segmented button { border: 0; padding: 7px 11px; border-radius: 5px; color: var(--muted); background: transparent; }
+.segmented button[aria-pressed="true"], .segmented button[aria-current="step"] { background: var(--panel); color: var(--ink); }
+.status, .hint, .demo-note { text-align: center; }
+.hint, .demo-note { font-size: 12px; color: var(--muted); line-height: 1.7; max-width: 480px; margin: 6px auto; }
+.tricks { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 26px; }
+.tricks h2 { font-size: 17px; font-weight: 500; margin: 0 0 26px; }
+.tricks h3 { font-size: 14px; font-weight: 550; margin: 0 0 8px; }
+.tricks p { color: var(--muted); font-size: 13px; line-height: 1.85; }
+.tricks article { margin: 0 0 28px; }
+.tricks pre { overflow-x: auto; padding: 14px; background: var(--panel); border-radius: 8px; font-size: 12px; line-height: 1.65; }
+.tricks pre:focus-visible { outline: 2px solid #7181a5; outline-offset: 2px; }
+.source-links { display: flex; gap: 18px; font-size: 12px; color: var(--muted); }
+.source-links a, main > footer a { text-decoration: underline; text-underline-offset: 3px; }
+main > footer { font-size: 11px; color: var(--muted); margin-top: 30px; }
+
+/* Fast-forwarding to a state: land on it without replaying every transition. */
+.ff #stage *, .ff #stage *::before, .ff #stage *::after { transition: none !important; animation-duration: 0s !important; animation-delay: 0s !important; }
+.ff #stage :is(.spin, .shim, .node.ring.busy, .node.dash, .node.pulse, .flow) { animation-duration: revert !important; }
+:root[data-still] #stage *, :root[data-still] #stage *::before, :root[data-still] #stage *::after { transition: none !important; animation: none !important; }
+
+:root[data-preview] main { overflow: hidden; }
+:root[data-preview] #stage { margin: 0; padding: 16px 20px; width: 640px; max-width: none; transform: scale(.9); transform-origin: top left; }
+:root[data-preview] :is(.bubble, .think, .reply, .chips, .composer, .hint, .demo-note, .tricks, main > footer) { display: none; }
+
+@container card (max-width: 540px) { #stage .row .tag, #stage .hash { display: none; } }
+@container card (max-width: 380px) { #stage .who, #stage .num { display: none; } }
+@media (max-width: 520px) {
+  #stage .model .lbl, #stage .seg .cloud { display: none; }
+  #stage .pillbtn .lbl { max-width: 84px; overflow: hidden; text-overflow: ellipsis; }
+}
