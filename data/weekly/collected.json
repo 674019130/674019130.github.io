@@ -55825,6 +55825,18 @@
       "discussion_url": ""
     },
     {
+      "id": "09450086253c68907b36",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+      "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
       "id": "bf81fc2839405851d1fe",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -56291,32 +56303,92 @@
       "date_kind": "community_post",
       "evidence": "I wanted a way to filter my photo album using more creative continuous filters (scene complexity, presence of curvy lines, portion of photo occupied by mountains, etc.) Photo Ferret has two components: 1) Run the application on your computer and use the TypeSafe Jev API to generate a lot of metadata for each image. 2) Export as a static site that runs on Cloudflare. The site uses the metadata to enable powerful filtering. Demo site here: https://stevenjonesphotography.ca/ Repo here: https://github.com/JonesSteven/photo-ferret Would love to see any galleries you build with it or any ideas for additional filters. Comments URL: https://news.ycombinator.com/item?id=50164567 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50164567"
+    },
+    {
+      "id": "4d2b0e96dd70f5a04ab2",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+      "published_at": "2026-10-20T15:19:48+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
+      "id": "d7626a670afd641dcae7",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Ask a Scientist: How can AI help doctors spend more time on collaborative care?",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-clinical-study",
+      "published_at": "2026-10-20T16:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "AMIE, an AI system people can chat with before doctor’s appointments, securely gathers patient information, and saves doctors time.",
+      "discussion_url": ""
+    },
+    {
+      "id": "d60926e9aebdfbc5580d",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "New Gemini tools for small business owners",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
+      "published_at": "2026-10-20T16:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "We’re announcing new tools for Gemini — including a dedicated business landing page — to help small business owners around the world.",
+      "discussion_url": ""
+    },
+    {
+      "id": "1665ec3e92e8b01f1af1",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+      "url": "https://huggingface.co/blog/allenai/fairstress",
+      "published_at": "2026-10-20T16:09:19+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
+      "id": "10e22c649cf303908e85",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub package firewall in public preview",
+      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+      "published_at": "2026-10-20T16:11:53+00:00",
+      "date_kind": "source_publication",
+      "evidence": "An increasing number of malware attacks exploit systems at package installation time, harvesting credentials on CI/CD hosts or developer workstations without even running the package’s code. To stem this tide of attacks, GitHub is introducing a new package firewall capability. The package firewall sits between endpoints like Actions runners or coding agents and the upstream package repositories, inspecting both metadata requests and package downloads for signs of malicious activity. The package firewall is available today in public preview for all GitHub Enterprise Cloud customers, including data-resident GitHub Enterprise Cloud. How it works First, administrators set policy controls for their enterprise. The controls available today include a configurable cooldown period, checking the GitHub Advisory Database for malware or vulnerability alerts, and supply-chain checks like attestation downgrades. Then endpoints like coding agents and CI/CD hosts need configuration to use the firewall for their requests instead of pointing directly at the upstream package registries. Metadata requests for package lists as well as the actual package downloads then flow through the firewall, which evaluates them against the policy. If a package is blocked erroneously, the user can request an exception with a workflow similar to other GitHub Advanced Security features. Availability and limitations The package firewall is available in public preview as we scale up the infrastructure behind it and continue to add features based on customer demand. It is available to GitHub Enterprise Cloud customers, including GitHub Enterprise Cloud with data residency. The service is free while in the preview period. When it reaches general availability, it will be charged based on metered usage, similar to Actions billing. Currently the package firewall only supports npm packages. How to use it For detailed setup instructions, see Protecting endpoints with package firewall . Join the discussion in GitHub Community . The post GitHub package firewall in public preview appeared first on The GitHub Blog .",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-20T11:36:49.531918+00:00",
+      "last_success": "2026-10-20T17:04:38.863467+00:00",
       "count": 10,
-      "earliest": "2026-10-15T15:04:51+00:00",
+      "earliest": "2026-10-15T20:11:26+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-20T11:36:49.883970+00:00",
+      "last_success": "2026-10-20T17:04:39.046193+00:00",
       "count": 20,
-      "earliest": "2026-10-14T12:00:00+00:00",
+      "earliest": "2026-10-14T16:15:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-20T11:36:50.134835+00:00",
-      "count": 883,
+      "last_success": "2026-10-20T17:04:39.184041+00:00",
+      "count": 886,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-20T11:36:50.276267+00:00",
+      "last_success": "2026-10-20T17:04:39.343510+00:00",
       "count": 30,
       "earliest": "2026-10-07T23:14:58+00:00",
       "gap": false,
@@ -56327,66 +56399,66 @@
       "count": 100,
       "earliest": "2026-10-19T16:53:33+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-10-20T11:37:00.461754+00:00",
       "count": 100,
       "earliest": "2026-10-18T14:28:33+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-20T11:37:01.256456+00:00",
+      "last_success": "2026-10-20T17:04:50.985242+00:00",
       "count": 10,
       "earliest": "2026-10-07T18:10:20+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-20T11:37:02.591403+00:00",
+      "last_success": "2026-10-20T17:04:51.773369+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-20T11:37:03.216433+00:00",
+      "last_success": "2026-10-20T17:04:52.157531+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-20T11:37:03.731869+00:00",
+      "last_success": "2026-10-20T17:04:52.505662+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-20T11:37:04.563645+00:00",
+      "last_success": "2026-10-20T17:04:53.134935+00:00",
       "count": 9,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-20T11:37:28.157252+00:00",
+      "last_success": "2026-10-20T17:05:06.792642+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-20T11:37:28.385315+00:00",
+      "last_success": "2026-10-20T17:05:06.961854+00:00",
       "count": 1300,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-20T11:37:35.448246+00:00",
+      "last_success": "2026-10-20T17:05:11.742592+00:00",
       "count": 2,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -56455,5 +56527,5 @@
       "to": "2026-10-08T14:32:11+00:00"
     }
   ],
-  "collected_at": "2026-10-20T11:37:35.448947+00:00"
+  "collected_at": "2026-10-20T17:05:11.743200+00:00"
 }
