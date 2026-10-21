@@ -53185,6 +53185,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50136365"
     },
     {
+      "id": "2c04a8b6a936b7a1829a",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.7",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7",
+      "published_at": "2026-10-18T00:28:57+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's Changed * [pplx-decider](https://ollama.com/library/pplx-decider) is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B * Continuing an OpenAI-compatible Responses conversation no longer fails when switching between models with and without thinking, or when the history contains another provider's compaction items * Fixed streaming Responses requests where client tool calls (e.g. Codex with web search) could emit before open reasoning items, producing misordered/duplicate tool call events * Requests routed to remote models are now cancelled on ollama.com when the client disconnects, instead of continuing to run * `ollama show` now reports which renderer and parser a model uses and where its chat template comes from; the API exposes the same values in new `renderer`, `parser`, and `template_source` fields * More draft models now work with speculative decoding: llama-server infers the draft type automatically instead of requiring Ollama to identify it * `ollama launch claude` now clamps `CLAUDE_CODE_AUTO_COMPACT_WINDOW` to Claude Code's supported range, avoiding a \"window too large\" warning * Updated llama.cpp and MLX **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.6...v0.40.7",
+      "discussion_url": ""
+    },
+    {
       "id": "a4a8b54d351c6dde98d4",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -56077,6 +56089,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50162198"
     },
     {
+      "id": "7aae693ce26c77e0fba7",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "url": "https://openai.com/index/terminal-x",
+      "published_at": "2026-10-20T07:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "discussion_url": ""
+    },
+    {
       "id": "a188f2dbd92f2638308b",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -57623,34 +57647,154 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://tenbri.com/ Comments URL: https://news.ycombinator.com/item?id=50172642 Points: 1 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=50172642"
+    },
+    {
+      "id": "8e10a369af6429f45d47",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Economics: Who Keeps the Ledger of AI Labor?",
+      "url": "https://centrail.org/newsletter/agent-economics-who-keeps-the-ledger-of-ai-labor",
+      "published_at": "2026-10-20T22:41:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://centrail.org/newsletter/agent-economics-who-keeps-the-ledger-of-ai-labor Comments URL: https://news.ycombinator.com/item?id=50173680 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50173680"
+    },
+    {
+      "id": "191abd66abc8a55fe7b2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agentitter – a tiny plain-text social network you use through your AI agent",
+      "url": "https://agentitter.com",
+      "published_at": "2026-10-21T01:30:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agentitter.com/ Comments URL: https://news.ycombinator.com/item?id=50174971 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50174971"
+    },
+    {
+      "id": "2fcb14f18c3fcbc108a8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Running Agent Factory for Months",
+      "url": "https://medium.com/@deemwar/who-watches-the-agents-what-four-months-of-building-an-agent-factory-taught-us-e8855db9ea0a",
+      "published_at": "2026-10-21T01:45:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://medium.com/@deemwar/who-watches-the-agents-what-four-months-of-building-an-agent-factory-taught-us-e8855db9ea0a Comments URL: https://news.ycombinator.com/item?id=50175060 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50175060"
+    },
+    {
+      "id": "df3774479ec529e41e3c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: acplause – An ACP agent for OpenAI-compatible APIs",
+      "url": "https://github.com/anesthetised/acplause",
+      "published_at": "2026-10-21T02:16:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/anesthetised/acplause Comments URL: https://news.ycombinator.com/item?id=50175258 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50175258"
+    },
+    {
+      "id": "53e63bf3e6eef9a41505",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Your LLM is probably overkill for text classification",
+      "url": "https://jeffyclassify.com/blog/jeffy-vs-llm-classification",
+      "published_at": "2026-10-21T03:15:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jeffyclassify.com/blog/jeffy-vs-llm-classification/ Comments URL: https://news.ycombinator.com/item?id=50175649 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50175649"
+    },
+    {
+      "id": "0f7f4cb988a9712d1db0",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.306",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
+      "published_at": "2026-10-21T03:16:31+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Fixed `claude -p` inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables - Fixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools",
+      "discussion_url": ""
+    },
+    {
+      "id": "c8f6c40aa9271b8e09a2",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
+      "published_at": "2026-10-21T04:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
+      "discussion_url": ""
+    },
+    {
+      "id": "92d4ca6a61fcc01f1605",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Manager by HF",
+      "url": "https://github.com/huggingface/agent-manager",
+      "published_at": "2026-10-21T04:05:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/huggingface/agent-manager Comments URL: https://news.ycombinator.com/item?id=50175964 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50175964"
+    },
+    {
+      "id": "b4f1bcc3e297e37cd9da",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Have you observed this trend of building \"internal vibe-coding apps\"?",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal",
+      "published_at": "2026-10-21T04:24:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal Comments URL: https://news.ycombinator.com/item?id=50176063 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50176063"
+    },
+    {
+      "id": "e384b8b3800fa79f97c5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Using LLM for confidence scoring is a bad idea",
+      "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+      "published_at": "2026-10-21T04:27:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html Comments URL: https://news.ycombinator.com/item?id=50176082 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50176082"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-20T21:37:28.689330+00:00",
+      "last_success": "2026-10-21T04:47:22.065029+00:00",
       "count": 10,
       "earliest": "2026-10-16T14:00:32+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-20T21:37:28.923932+00:00",
+      "last_success": "2026-10-21T04:47:22.226340+00:00",
       "count": 20,
       "earliest": "2026-10-15T13:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-20T21:37:29.050056+00:00",
+      "last_success": "2026-10-21T04:47:22.404676+00:00",
       "count": 886,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-20T21:37:29.211449+00:00",
+      "last_success": "2026-10-21T04:47:22.536441+00:00",
       "count": 30,
-      "earliest": "2026-10-08T21:05:44+00:00",
+      "earliest": "2026-10-08T23:34:28+00:00",
       "gap": false,
       "error": null
     },
@@ -57659,66 +57803,66 @@
       "count": 100,
       "earliest": "2026-10-20T12:38:01+00:00",
       "gap": true,
-      "error": null
+      "error": "TimeoutError: The read operation timed out"
     },
     "hn-topics": {
-      "last_success": "2026-10-20T21:37:30.266997+00:00",
+      "last_success": "2026-10-21T04:47:53.878011+00:00",
       "count": 100,
-      "earliest": "2026-10-19T14:54:42+00:00",
+      "earliest": "2026-10-19T16:00:18+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-20T21:37:30.739959+00:00",
+      "last_success": "2026-10-21T04:47:54.271400+00:00",
       "count": 10,
-      "earliest": "2026-10-08T05:03:54+00:00",
+      "earliest": "2026-10-08T19:48:38+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-20T21:37:31.597991+00:00",
+      "last_success": "2026-10-21T04:47:55.035436+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-20T21:37:32.006691+00:00",
+      "last_success": "2026-10-21T04:47:55.359934+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-20T21:37:32.343301+00:00",
+      "last_success": "2026-10-21T04:47:55.622645+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-20T21:37:32.825866+00:00",
-      "count": 9,
+      "last_success": "2026-10-21T04:47:56.024209+00:00",
+      "count": 10,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-20T21:37:45.018894+00:00",
+      "last_success": "2026-10-21T04:48:09.839953+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-20T21:37:45.296840+00:00",
-      "count": 1302,
+      "last_success": "2026-10-21T04:48:09.996722+00:00",
+      "count": 1303,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-20T21:37:49.279205+00:00",
+      "last_success": "2026-10-21T04:48:14.538832+00:00",
       "count": 2,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -57793,5 +57937,5 @@
       "to": "2026-10-20T12:38:01+00:00"
     }
   ],
-  "collected_at": "2026-10-20T21:37:49.279812+00:00"
+  "collected_at": "2026-10-21T04:48:14.539403+00:00"
 }
