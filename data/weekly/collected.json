@@ -57685,6 +57685,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50174185"
     },
     {
+      "id": "5f006c40dde413a7bb34",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "url": "https://openai.com/index/empowering-cyber-defenders",
+      "published_at": "2026-10-21T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
+      "discussion_url": ""
+    },
+    {
       "id": "191abd66abc8a55fe7b2",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -58883,42 +58895,162 @@
       "date_kind": "community_post",
       "evidence": "I'm happy to announce the release of the web-based Pipe IDE, availablle by clicking button \"Try Pipe IDE\" on website. Pipe IDE requires no account - all data is stored locally in your browser's database, keeping friction to a minimum. ====== Frequently Asked Questions 1. Why now? The need for visual programming has become especially clear now that we're building with AI, which has introduced several serious problems that appear unrelated - yet visual programming addresses all of them at the root: - AI predictability and customization. Instead of relying on one unpredictable, hard-to-customize model - which can only be changed through costly, time-consuming retraining - you can split it into small, specialized, and therefore more predictable agents, then build an explicitly programmed orchestration layer on top to coordinate them. Customization then happens through that orchestration layer, and visual programming is a far more user-friendly way to do it. This shift is already underway - specialized models like TypeSafe's Jev are built for exactly this kind of orchestration. - Cybersecurity. AI makes it far easier for anyone to find and exploit vulnerabilities, so threats are growing. Because Pipe is semantically powerful enough to keep the entire program as a live visual graph in production rather than compiling it into a single opaque artifact, every block in an application stays directly accessible. That access solves two long-standing problems at once: slow patching, by swapping, disabling, or rerouting a faulty block in place instead of waiting on a full CI/CD deployment; and partially-blind monitoring, by tapping the inputs and outputs of any or all blocks directly, so telemetry no longer depends on log statements that may be missing where you need them.The EU Cyber Resilience Act's core demands map directly onto these capabilities - independent confirmation this approach is where regulation is heading. - Code review. AI writes code faster than developers can review it, and leaning on AI to review AI doesn't fix the root problem - that AI can hallucinate too, so human eyes are still required. Visual programming gives those eyes a far clearer representation of the logic to review. AI-introduced errors are already piling up in production code - one study found nearly a quarter survive for months as silent technical debt. 2. Why start with a book instead of building the software first? Most new languages start with an implementation. For visual languages, that software-first path is exactly what traps them in a single domain and keeps them from ever becoming general-purpose. I did the opposite and specified the full language first; the software is what I'm actively building now. It avoids both failure modes. Software-first visual languages get stuck in their first implementation's domain, while purely theoretical ones get buried in complexity - too intricate and incomplete to be practical. Pipe takes the middle ground: well-chosen, practical primitives within a complete, coherent architecture. The book's subtitle says it best - \"A Pragmatic Approach to Visual Programming.\" It rests on seven years of R&D but stays in the practical lane, and the result is a consistent, usable, end-to-end visual language. 3. Do we need to rewrite our existing system in Pipe? To some extent, yes - but the transition is far less disruptive than it sounds: - The migration is gradual - you don't have to discard all existing code at once. You start by wrapping your entire project in a single top-level block. That's the initial step. Then, whenever you're ready, you add a workflow inside that top-level block and distribute the code across the visual blocks of the newly created workflow - and you can keep going, level by level. - You choose how far to go. You can stop subdividing blocks at any point, so it's entirely your decision which parts of the system become visual and which remain as text. - Pipe makes integration easy. It provides a simple bridg",
       "discussion_url": "https://news.ycombinator.com/item?id=50183915"
+    },
+    {
+      "id": "d10ddc241ddefd6196d7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Decentralised AI Inference Network",
+      "url": "https://rootmode.ai",
+      "published_at": "2026-10-21T17:30:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://rootmode.ai/ Comments URL: https://news.ycombinator.com/item?id=50184593 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50184593"
+    },
+    {
+      "id": "faa8ea9f71810a19e43f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Aw-1 – Deterministic AST circuit breaker and kernel jail for AI agents",
+      "url": "https://github.com/MvikManners/aw1-circuit-breaker",
+      "published_at": "2026-10-21T18:08:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/MvikManners/aw1-circuit-breaker Comments URL: https://news.ycombinator.com/item?id=50185134 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185134"
+    },
+    {
+      "id": "092e2a812fa1d8e2a04c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Slidum – play AI-generated HTML slide decks from a link, sandboxed",
+      "url": "https://slidum.com/p/jIKOH_XgqwpjumtD-3dEWRAog_hB5Pq-TBnaIJpK8bQ",
+      "published_at": "2026-10-21T18:35:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://slidum.com/p/jIKOH_XgqwpjumtD-3dEWRAog_hB5Pq-TBnaIJpK8bQ Comments URL: https://news.ycombinator.com/item?id=50185516 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185516"
+    },
+    {
+      "id": "79c2bb2cb3c5baf90b91",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built ESP32-S3 LED tubes for live coding",
+      "url": "https://github.com/genbs/reactive-leds",
+      "published_at": "2026-10-21T18:55:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/genbs/reactive-leds Comments URL: https://news.ycombinator.com/item?id=50185772 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185772"
+    },
+    {
+      "id": "21a29a7dbce15593bf26",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Agent Security Audit Console – offline audit in 15 min",
+      "url": "https://theaioperatorstore.gumroad.com/l/uszyx",
+      "published_at": "2026-10-21T19:06:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://theaioperatorstore.gumroad.com/l/uszyx Comments URL: https://news.ycombinator.com/item?id=50185936 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185936"
+    },
+    {
+      "id": "9fa6b080a1df9bdf7739",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Renor – private memory for coding agents, shared across tools over MCP",
+      "url": "https://github.com/patrickpassosb/renor-engine",
+      "published_at": "2026-10-21T19:22:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/patrickpassosb/renor-engine Comments URL: https://news.ycombinator.com/item?id=50186146 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50186146"
+    },
+    {
+      "id": "9d4758f14bf7e03f2e81",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I made a free Mac app to annotate screen for AI agents",
+      "url": "https://www.trylasso.online",
+      "published_at": "2026-10-21T20:07:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I'm Nika. I've built a tool for myself that lets user draw on the screen to annotate important parts and use it as simpler pointers for AI agents screenshot inputs. Comments URL: https://news.ycombinator.com/item?id=50186893 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50186893"
+    },
+    {
+      "id": "5bde189c8ffebe62b6da",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: QAmcp – Automated test runner for MCP servers in your terminal",
+      "url": "https://github.com/QAmcp/qamcp-cli",
+      "published_at": "2026-10-21T20:14:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/QAmcp/qamcp-cli Comments URL: https://news.ycombinator.com/item?id=50186988 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50186988"
+    },
+    {
+      "id": "5f406277836795bda21b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MCP for Dubbing Video and Audio Files from ChatGPT, by Kapwing",
+      "url": "https://chatgpt.com/plugins/kapwing",
+      "published_at": "2026-10-21T20:41:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://chatgpt.com/plugins/kapwing Comments URL: https://news.ycombinator.com/item?id=50187327 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50187327"
+    },
+    {
+      "id": "858c7e2f55fb08d53c5b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built an app to stop doomscrolling while waiting for Codex to finish",
+      "url": "https://www.lightscroll.app",
+      "published_at": "2026-10-21T20:52:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I usually have a couple of threads running on Codex, but some time ago I realized I was opening X or Instagram and doomscrolling while the agents did the work. I went from regularly getting into a flow state while coding manually to almost the complete opposite. Basically speedrunning a shorter attention span. A friend and I built LightScroll partly to help with this. It's a screen time app for iOS and macOS that lets you choose your limits and how strict they should be. I'm aware there are 999 competing screen time apps, but none worked quite right for us. So now there are 1000 competing screen time apps :) It can range from just a short pause before opening a distracting app or website to needing a code from someone you've invited as an accountability partner. It's free to get started and most of our friends/family are having good results using the free version daily so far. Is anyone else finding themselves struggling to stay focused while waiting for coding agents to yield? What has helped you? Comments URL: https://news.ycombinator.com/item?id=50187455 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50187455"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-21T17:12:43.130460+00:00",
+      "last_success": "2026-10-21T21:43:10.148423+00:00",
       "count": 10,
       "earliest": "2026-10-19T10:29:09+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-21T17:12:43.416147+00:00",
+      "last_success": "2026-10-21T21:43:10.454973+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-21T17:12:43.674119+00:00",
-      "count": 887,
+      "last_success": "2026-10-21T21:43:10.691623+00:00",
+      "count": 888,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-21T17:12:43.819279+00:00",
+      "last_success": "2026-10-21T21:43:10.831144+00:00",
       "count": 30,
-      "earliest": "2026-10-09T12:54:06+00:00",
+      "earliest": "2026-10-09T15:02:29+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-21T17:12:44.837415+00:00",
+      "last_success": "2026-10-21T21:43:19.361306+00:00",
       "count": 100,
-      "earliest": "2026-10-20T23:36:17+00:00",
-      "gap": true,
+      "earliest": "2026-10-21T11:32:55+00:00",
+      "gap": false,
       "error": null
     },
     "hn-topics": {
@@ -58926,59 +59058,59 @@
       "count": 100,
       "earliest": "2026-10-20T11:48:47+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-21T17:12:51.122336+00:00",
+      "last_success": "2026-10-21T21:43:26.956619+00:00",
       "count": 10,
       "earliest": "2026-10-08T19:48:38+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-21T17:12:52.035804+00:00",
+      "last_success": "2026-10-21T21:43:28.039680+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-21T17:12:52.520856+00:00",
+      "last_success": "2026-10-21T21:43:28.606727+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-21T17:12:52.915057+00:00",
+      "last_success": "2026-10-21T21:43:29.030877+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-21T17:12:53.435796+00:00",
+      "last_success": "2026-10-21T21:43:29.753288+00:00",
       "count": 9,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-21T17:13:11.478331+00:00",
+      "last_success": "2026-10-21T21:43:47.565396+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-21T17:13:11.625977+00:00",
-      "count": 1308,
+      "last_success": "2026-10-21T21:43:47.750335+00:00",
+      "count": 1310,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-21T17:13:17.445474+00:00",
+      "last_success": "2026-10-21T21:43:53.703014+00:00",
       "count": 2,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -59059,5 +59191,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-21T17:13:17.446108+00:00"
+  "collected_at": "2026-10-21T21:43:53.703518+00:00"
 }
