@@ -58837,6 +58837,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50183471"
     },
     {
+      "id": "e32f88cfb39361716867",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.8",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+      "published_at": "2026-10-21T16:20:30+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Recursive Flint [Flint](https://ollama.com/library/flint) brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing features, and adding tests. Reasoning, multi-turn tool use, and a 262K-token context window support longer tasks across files and tool interactions. Flint is an Apache 2.0-licensed, 40B-parameter mixture-of-experts model with approximately 2.5B parameters active per token. In its [release evaluations](https://huggingface.co/RecursiveSI/flint#evaluation), Recursive reports 54.9% on Terminal-Bench 2.1 and 74.2% on SWE-bench Verified. ```sh ollama run flint ``` Note: Flint is supported on MacOS. Other GPU support will be enabled in a subsequent release. **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.7...v0.40.8",
+      "discussion_url": ""
+    },
+    {
       "id": "e9cbebaa0c36ece5017c",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -58885,6 +58897,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50183655"
     },
     {
+      "id": "32db3e8f57eb4e8ee791",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+      "url": "https://github.com/omnara-ai/omnara",
+      "published_at": "2026-10-21T16:44:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey all, Kartik from Omnara ( https://omnara.com ) here. We're building an open-source API for running durable agents. You create an agent with an API call, and Omnara runs the agent loop, gives the agent sandboxes to run commands in, and handles secrets, permissions, and RBAC. Each agent's state is stored in Postgres, so agents survive restarts and cost nothing while idle. You can message them and stream their events over the API. You may remember us from our early days, when we made a remote-control phone app for Claude Code and Codex. Since the harness ran on a laptop back then, we had to build a relay to reach it, it stopped when the laptop closed, and moving it to a cloud sandbox meant syncing code and agent state between machines. We didn't think remote-controlling a local agent was end-game for how people would run agents, so we built a new product where the agent runs in the cloud, any client can talk to it through an API, and it can still use your laptop as one of its machines. Anthropic and OpenAI are building hosted versions of this, like Claude Managed Agents and the OpenAI Agents API. Omnara is an open-source version you can run on your own servers and use your own models. It's basically a harness server like the opencode or codex servers, but durable, scalable, with the usual harness features like file and shell tools, subagents, compaction, permission prompts, MCP, skills, memory, yada yada yada. Here's some interesting architectural decisions we made while building this out: Most harnesses, like Claude Code, Codex, OpenCode, Pi, Goose, etc, run the agent loop in one long-lived process that keeps its log in a JSONL or SQLite file. In Omnara, the log is an append-only event log in Postgres, with inputs, model outputs and tool calls stored as typed rows in their own tables. The loop runs on stateless workers in the control plane. A worker runs one iteration of the loop, either a model call or the tool calls it produced, then releases the agent and puts the next iteration on a queue in Postgres. Whichever worker is free picks it up, so each iteration of an agent's loop can run in a different process on a different machine. Each iteration's result commits in one transaction, so the model output, its tool calls, usage and the next wakeup are saved together or not at all. If a worker dies mid-iteration, nothing commits, its lease expires, and another worker retries it. Agents waiting on a user, a tool or a retry don't hold a worker, so one worker can multiplex thousands of agents. Also unlike other harnesses, the machines that the workers (our agent loop) run on aren't where the agent runs its commands. Instead, any macOS or Linux machine with an internet connection, like your laptop or any cloud sandbox, can run a small daemon (omnarad) that connects out to Omnara, so it doesn't need any open inbound ports. The agent then gets tools for that machine, like running a command or editing a file. An agent can have any number of machines connected to it. A fun thing I like to do is I have my laptop and a cloud sandbox connected to the same agent, so when my laptop is on, my agent codes there and I can interact with it, and I have it often push to Github. When I close my laptop, my agent sees the laptop went offline, pulls the latest changes to its cloud sandbox, and continues there. The entire codebase is open source at https://github.com/omnara-ai/omnara , and it’s self hostable, even on a single machine with docker compose. You can also use the hosted version at https://omnara.com . Let me know what you think! Comments URL: https://news.ycombinator.com/item?id=50183892 Points: 43 # Comments: 12",
+      "discussion_url": "https://news.ycombinator.com/item?id=50183892"
+    },
+    {
       "id": "d1fd8f58672be0b3c2cd",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -58921,6 +58945,54 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50185134"
     },
     {
+      "id": "1c869097fe72c59ee895",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Most Improbable Agent of You",
+      "url": "https://kevinkelly.substack.com/p/most-improbable-agent-of-you",
+      "published_at": "2026-10-21T18:09:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kevinkelly.substack.com/p/most-improbable-agent-of-you Comments URL: https://news.ycombinator.com/item?id=50185150 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185150"
+    },
+    {
+      "id": "763274ef11cf43be2021",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "macOS 27 has a built-in, offline LLM you can call from Terminal",
+      "url": "https://news.ycombinator.com/item?id=50185265",
+      "published_at": "2026-10-21T18:17:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Apple appears to have made its Foundation Models accessible directly from Terminal in macOS 27. The interesting part is how little setup is required: ``` fm respond \"Your Question\" ``` You can also pipe text into it, request structured JSON output with `--schema`, and expose a local endpoint using `fm serve`. On-device inference reportedly works on M1 Macs with 8GB RAM, with a 4K context window. There's also a Private Cloud Compute option for larger requests. For me, the interesting use case isn't replacing Claude or ChatGPT. It's using a built-in local model for everyday shell automation: extracting information from logs, classifying files, summarizing documents, and generating structured data without API costs. Curious whether anyone here has benchmarked it against Ollama or llama.cpp for these smaller tasks. Comments URL: https://news.ycombinator.com/item?id=50185265 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185265"
+    },
+    {
+      "id": "b358b5510a38ba485c87",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "With AI coding the future of software development looks more grim",
+      "url": "https://unixdigest.com/articles/with-ai-coding-the-future-of-software-development-looks-more-grim-than-ever-before.html",
+      "published_at": "2026-10-21T18:20:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://unixdigest.com/articles/with-ai-coding-the-future-of-software-development-looks-more-grim-than-ever-before.html Comments URL: https://news.ycombinator.com/item?id=50185297 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185297"
+    },
+    {
+      "id": "98e241b3ed3d9eb67703",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Top AI Agent Skills for Building Live Streaming Apps",
+      "url": "https://www.red5.net/blog/ai-agent-skills-live-streaming-app-development",
+      "published_at": "2026-10-21T18:25:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.red5.net/blog/ai-agent-skills-live-streaming-app-development/ Comments URL: https://news.ycombinator.com/item?id=50185368 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185368"
+    },
+    {
       "id": "092e2a812fa1d8e2a04c",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -58931,6 +59003,30 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://slidum.com/p/jIKOH_XgqwpjumtD-3dEWRAog_hB5Pq-TBnaIJpK8bQ Comments URL: https://news.ycombinator.com/item?id=50185516 Points: 1 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=50185516"
+    },
+    {
+      "id": "7c6cb685506e1f29639d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Shift-1: a SOTA coding router that saves 55% compared to Astra",
+      "url": "https://shift.ac/sign-in",
+      "published_at": "2026-10-21T18:53:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://shift.ac/sign-in Comments URL: https://news.ycombinator.com/item?id=50185757 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185757"
+    },
+    {
+      "id": "d8f0e7b81d6ea8d50f26",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "An open source experiment: OSS as a set of agent prompts, not code",
+      "url": "https://github.com/briandilley/shifted",
+      "published_at": "2026-10-21T18:53:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/briandilley/shifted Comments URL: https://news.ycombinator.com/item?id=50185760 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185760"
     },
     {
       "id": "79c2bb2cb3c5baf90b91",
@@ -58945,6 +59041,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50185772"
     },
     {
+      "id": "e3d4c04f2e523fce8775",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: I built ESP32-S3 LED tubes for live coding",
+      "url": "https://github.com/genbs/reactive-leds",
+      "published_at": "2026-10-21T18:55:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/genbs/reactive-leds Comments URL: https://news.ycombinator.com/item?id=50185772 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185772"
+    },
+    {
+      "id": "c5ef19742916911a6255",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Flint 40B: Frontier Local LLM (Fast 125 Tps on MacBook)",
+      "url": "https://twitter.com/RichardSocher/status/2112944385415426249",
+      "published_at": "2026-10-21T18:57:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/RichardSocher/status/2112944385415426249 Comments URL: https://news.ycombinator.com/item?id=50185801 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185801"
+    },
+    {
       "id": "21a29a7dbce15593bf26",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -58957,6 +59077,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50185936"
     },
     {
+      "id": "3b17b0a3d9f476d0627a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: AI Agent Security Audit Console – offline audit in 15 min",
+      "url": "https://theaioperatorstore.gumroad.com/l/uszyx",
+      "published_at": "2026-10-21T19:06:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://theaioperatorstore.gumroad.com/l/uszyx Comments URL: https://news.ycombinator.com/item?id=50185936 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50185936"
+    },
+    {
+      "id": "58224b4584833e08f541",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Hospitals Solved Agent Handoffs",
+      "url": "https://jw.hn/agent-handoffs",
+      "published_at": "2026-10-21T19:16:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jw.hn/agent-handoffs Comments URL: https://news.ycombinator.com/item?id=50186075 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50186075"
+    },
+    {
       "id": "9fa6b080a1df9bdf7739",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -58967,6 +59111,18 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/patrickpassosb/renor-engine Comments URL: https://news.ycombinator.com/item?id=50186146 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50186146"
+    },
+    {
+      "id": "08cf767d954d9af59e40",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM-D 1.0 Takes Open-Source Kubernetes AI Inference into Production",
+      "url": "https://techstrong.ai/ai-infrastructure/llm-d-1-0-takes-open-source-kubernetes-ai-inference-into-production",
+      "published_at": "2026-10-21T19:31:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://techstrong.ai/ai-infrastructure/llm-d-1-0-takes-open-source-kubernetes-ai-inference-into-production/ Comments URL: https://news.ycombinator.com/item?id=50186310 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50186310"
     },
     {
       "id": "9d4758f14bf7e03f2e81",
@@ -59005,6 +59161,30 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50187327"
     },
     {
+      "id": "81cb7aba4cb3377bddbb",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "France's OVHcloud plans frontier AI models to become Europe's second LLM player",
+      "url": "https://www.reuters.com/world/asia-pacific/frances-ovhcloud-plans-frontier-ai-models-become-europes-second-llm-player-2026-06-17",
+      "published_at": "2026-10-21T20:47:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.reuters.com/world/asia-pacific/frances-ovhcloud-plans-frontier-ai-models-become-europes-second-llm-player-2026-06-17/ Comments URL: https://news.ycombinator.com/item?id=50187400 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50187400"
+    },
+    {
+      "id": "c44dead317167c12fdd2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Brain v2 – A minimal and extensible agent server for building agent applications",
+      "url": "https://github.com/aexhq/brain",
+      "published_at": "2026-10-21T20:49:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/aexhq/brain Comments URL: https://news.ycombinator.com/item?id=50187415 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50187415"
+    },
+    {
       "id": "858c7e2f55fb08d53c5b",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -59015,102 +59195,306 @@
       "date_kind": "community_post",
       "evidence": "Hi HN, I usually have a couple of threads running on Codex, but some time ago I realized I was opening X or Instagram and doomscrolling while the agents did the work. I went from regularly getting into a flow state while coding manually to almost the complete opposite. Basically speedrunning a shorter attention span. A friend and I built LightScroll partly to help with this. It's a screen time app for iOS and macOS that lets you choose your limits and how strict they should be. I'm aware there are 999 competing screen time apps, but none worked quite right for us. So now there are 1000 competing screen time apps :) It can range from just a short pause before opening a distracting app or website to needing a code from someone you've invited as an accountability partner. It's free to get started and most of our friends/family are having good results using the free version daily so far. Is anyone else finding themselves struggling to stay focused while waiting for coding agents to yield? What has helped you? Comments URL: https://news.ycombinator.com/item?id=50187455 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50187455"
+    },
+    {
+      "id": "8b9c50cf08996de63e42",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.307",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
+      "published_at": "2026-10-21T22:17:02+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `/claude-api api-version` to move Claude API code to API version `2026-10-21` - Added the `claude_code.safety_event` OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back - Fixed requests failing with a model-not-found error when `CLAUDE_CODE_DISABLE_1M_CONTEXT` is set and the model is an alias with the `[1m]` suffix, such as `opus[1m]` - Fixed the `prompt-caching-scope` beta header being sent behind custom `ANTHROPIC_BASE_URL` gateways and on Foundry, where it has no effect - Fixed MCP servers showing \"needs authentication\" in `claude -p` on macOS while the login keychain was locked; they now say why, and the next run after an unlock connects without a new sign-in - Fixed MCP servers being reported as timed out, and staying failed in headless runs, when a macOS or Linux computer went to sleep while they were connecting - Fixed HTTP MCP tool calls being sent twice when the connection closed mid-call; only read-only or idempotent tools are now retried - Fixed a turn sometimes starting without an SDK MCP server's latest tools when a background task was running - Fixed some \"Autocompact is thrashing\" errors in turns that read many PDF pages, images or other large tool results - Fixed `/autocompact` in cloud sessions going back to the default window after the session restarted - Fixed a conversation cleared with `/clear` sometimes coming back when a cloud or self-hosted runner session restarted - Fixed `CLAUDE_STREAM_FIRST_BYTE_TIMEOUT_MS` being ignored in Claude apps gateway sessions - Fixed telemetry from Claude Desktop sessions behind a Claude apps gateway being rejected when `OTEL_EXPORTER_OTLP_HEADERS` is set - Fixed `/permissions` > Recently denied not showing the denied shell command, and auto mode's local classifier ignoring an approval from there when it checks a retried command; approving a row now names the command, not its description - Fixed `/help` and the `/` command menu showing long model-facing descriptions for bundled skills such as `/claude-api` instead of their short descriptions - Fixed subagent transcripts recording placeholder token usage and an empty stop reason for streamed responses - Fixed model switches through the Agent SDK's `setModel()`, and apps built on it, being refused when the API took more than 5 seconds to confirm the model; Claude Code now waits up to 15 seconds - Fixed a background command stopped through a connected app (such as the desktop app archiving an idle session) being reported to Claude as stopped by the user; the notice now names its output file - Fixed WebFetch in Cowork cloud sessions reporting a tool error when a site answered with a 4xx status or a robots.txt refusal; it is now a normal result, as in local sessions - Fixed write tools on a directly configured GitHub MCP server showing a form that closed without creating anything in the desktop app's Code tab - Fixed Artifact tool reads failing with a connection reset when the server had closed a reused connection - Self-hosted runner: Fixed sessions with `--use-anthropic-git-proxy` committing a `.claude/settings.local.json` left in the clone by an earlier session - Self-hosted runner: Fixed archiving or requeueing a session, or stopping the runner, during its checkout hook leaving the hook's processes running and the runner's slot held - Improved recovery from unparseable tool calls: Claude Code now retries the call up to twice before ending the turn with an error - Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work - Improved browser sign-in: the success page now appears as soon as sign-in completes, without waiting for your account profile to load - Improved web search errors in cloud and self-hosted runner sessions: a search refused with a 403 that gives a reason now shows that reason instead of a generic \"Authenticati",
+      "discussion_url": ""
+    },
+    {
+      "id": "ba01c14d96c5e9a34516",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Recompiling the Lion King (SNES, 1994) with an Agent",
+      "url": "https://kinduff.com/2026/10/21/recompiling-the-lion-king-with-an-agent",
+      "published_at": "2026-10-21T22:17:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kinduff.com/2026/10/21/recompiling-the-lion-king-with-an-agent/ Comments URL: https://news.ycombinator.com/item?id=50188441 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50188441"
+    },
+    {
+      "id": "24ed876df02e981f6dde",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ReviewerAgent and StopContinue, for CC and Codex with Pi",
+      "url": "https://github.com/rladr-org/reviewer-agent",
+      "published_at": "2026-10-21T22:22:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "This package is designed to solve two problems: 1. Frontier models like Fable 5.1, Opus 5.5, Astra 6.0 and Sol 6.1 all make errors and bugs that can be found by another model (even a much smaller model like Luna). 2. In what is supposed to be a long development run, for example against a plan, models will decide to stop before they are finished, when there is obviously more work to do, or to ask a question they already should know the answer to. ReviewerAgent blocks git commits and sends them to another agent that reviews the staged files and either allows the commit or returns a list of issues to fix. StopContinue evaluates every agent stop and determines if it still has work to do or if it is asking a question that it has the answer to already. In either of those cases, it prompts the agent to keep working and specifies next steps or answers to questions, based on the current plan document and chat history. The system works for and is tested on Claude Code and Codex as the developer harness, and either of those or any other model, through Pi, as the reviewer. I've developed it over the last 4 months or so and used it daily over that period. Take a look if it sounds useful. It's been tested on MacOS and Linux (Ubuntu), and has agent assisted install, update, and removal scripts, for convenience. Stats: Over four months of daily use of the system while developing it (from late June til today), reviewerAgent (usually a GPT Luna model) gated 3,877 commits, running about 7,600 reviews in total, so about half of those commits were rejected at least once. The coding agent (Fable or Opus) almost never disagreed with the reviewer's judgements: over the last month, for example, it pushed back on just 3 of 693 rejections. Each rejection listed an average of two required fixes and most rejected commits were accepted after a second round (90% within five attempts). Rejection rates increased with commit size: only 23% of code commits under 50 lines were sent back, but 72% of those over 1,000 lines were initially rejected. Here's an example of a bug that it caught last month for me. More examples in the README: The Fable 5.1 developer agent wrote a wrapper script that runs a set of R validation checks against a freshly loaded database and records whether each one passed. (One of two required fixes shown.) REQUIRED FIXES (blocking) 2. docs/database-phase-loader/local-load/run_r_checks.sh:4-6 pipes each R check through tail without pipefail or explicit status handling, so a failed Rscript can still produce a zero exit status and be recorded as successful. Preserve and propagate each check's exit status. In a shell pipeline the exit status is that of the last command, so `Rscript check.R | tail` reports `tail`'s success even when the check fails. The script prints the tail of the failing check's output, exits 0, and records a pass. A broken load would have been certified as validated. Comments URL: https://news.ycombinator.com/item?id=50188494 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50188494"
+    },
+    {
+      "id": "46c1eaa32ef2ba143d5c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Anthropic opens research preview of Claude Duet, a agent for professionals",
+      "url": "https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21",
+      "published_at": "2026-10-21T23:12:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21/ Comments URL: https://news.ycombinator.com/item?id=50188944 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50188944"
+    },
+    {
+      "id": "5c37dcb40490a1ba35fc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Embodsi – Embodied Super Intelligence",
+      "url": "https://embodsi.com",
+      "published_at": "2026-10-21T23:15:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "embodsi is a generative AI MMO experience that runs in the browser. It allows people to communicate (text, audio, video, avatar emotes and movement) and collaboratively build 3D spaces and games via LLMs connected to harnesses and sandboxes for object modeling, space layout, game logic, and driving persistent avatars with shared context and memory. It’s different from existing 3D social apps (AFAIK) because it enables people to build multiplayer virtual worlds, games, and characters with generative AI right from their browser (desktop, mobile, or VR), in nearly infinitely-extendable recursively tiled interconnected spaces, while allowing people to interact in a public commons or easily create a private channel to enjoy the same spaces with their chosen friends and community. The brief backstory is I was running my personal “pelican benchmark” [1] on GPT-6 Astra, which when I ran on Gemini 3 Pro last November couldn’t even put heads on 3D models the right side up [2], and was astounded by the initial results. I gained inspiration for an art project and social experiment that was going to have nine interconnected, benevolent virtual worlds that people could explore and hang out in with AI characters, but by the time Opus 5.5 was released I was gaining so much momentum and having so many ideas and so much fun building I just kept building more and more with the constraint of minimizing MVP scope lifted by agentic coding. I let the project become an ever-evolving wishlist of capabilities for a more interesting social environment as I became increasingly fascinated with the prospect of embodying creative machine intelligence in 3D space with people, realizing that rather than just limiting to building the spaces and characters I imagined I might enable people to co-create endless spaces and characters in a shared world. There’s so much to do still but I’m sharing now even if it feels a little too soon (this is the first public announcement of embodsi’s existence) because I think it’s better to build in the open so people might guide the development and help it evolve in a good direction as model capability improves at a jaw-dropping pace. For people that have the budget to build I hope to see you in embodsi creating amazing things! And for everyone regardless of means (I’ve tried to keep as much free and accessible as financially feasible) I hope you meet amazing people, discover awesome spaces, and enjoy your time in embodsi :) I’ll be around here and embodsi to answer any questions! Thanks for your feedback and critique. - Laser P.S. SI != AI — but an emergent property of many people and what we create cascading and recursively interacting [3] [1] https://news.ycombinator.com/item?id=50074156 [2] https://x.com/lasernite/status/1991021951301923107 [3] https://en.wikipedia.org/wiki/Gaia_hypothesis Comments URL: https://news.ycombinator.com/item?id=50188964 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50188964"
+    },
+    {
+      "id": "a14f020be86acf8a3f40",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Unsupervised AI agent reportedly deletes TV show's edit before release",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-deletes-tv-shows-entire-edit-weeks-before-release-backup-failure-means-production-team-needs-to-re-edit",
+      "published_at": "2026-10-22T00:26:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-deletes-tv-shows-entire-edit-weeks-before-release-backup-failure-means-production-team-needs-to-re-edit Comments URL: https://news.ycombinator.com/item?id=50189499 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50189499"
+    },
+    {
+      "id": "fda4aa4d918034a4cb51",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Twine is a meta-harness with workflows, cross-agent memories and traces",
+      "url": "https://github.com/standing-desks/twine",
+      "published_at": "2026-10-22T00:33:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Built this out because I wasn’t happy with conductor, orca, or the other vscode derivative platforms. Please let me know if you guys have any feedback for me Comments URL: https://news.ycombinator.com/item?id=50189550 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50189550"
+    },
+    {
+      "id": "0e64be08672491304105",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Twine is a meta-harness with workflows, cross-agent memories and traces",
+      "url": "https://github.com/standing-desks/twine",
+      "published_at": "2026-10-22T00:33:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Built this out because I wasn’t happy with conductor, orca, or the other vscode derivative platforms. Please let me know if you guys have any feedback for me Comments URL: https://news.ycombinator.com/item?id=50189550 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50189550"
+    },
+    {
+      "id": "91b0d0c66f28812e9b62",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Can a malicious webpage hijack an AI agent?",
+      "url": "https://victorribeiro.com/bots",
+      "published_at": "2026-10-22T00:50:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://victorribeiro.com/bots/ Comments URL: https://news.ycombinator.com/item?id=50189688 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50189688"
+    },
+    {
+      "id": "7cfb0f6311de725d1d60",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HarnessHive – collaborative wiring harness design platform in browser",
+      "url": "https://harnesshive.com",
+      "published_at": "2026-10-22T01:32:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! We built https://harnesshive.com , a browser based tool to help you design wiring harnesses together. HarnessHive has three key features 1) multiple engineers editing the same harness in real time 2) BOM and drawings that stay in sync automatically and 3) AI-native agent + MCP to assist designing. We hope HarnessHive can make harness design less painful than Excel and Visio for some of you :). Let me know if you have any questions/comments/feature requests! Comments URL: https://news.ycombinator.com/item?id=50190012 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50190012"
+    },
+    {
+      "id": "c9fbc6291ee3533ed164",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM agents play Pokemon showdown",
+      "url": "https://olivergrabner.com/research/pokemon",
+      "published_at": "2026-10-22T02:13:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://olivergrabner.com/research/pokemon/ Comments URL: https://news.ycombinator.com/item?id=50190334 Points: 19 # Comments: 11",
+      "discussion_url": "https://news.ycombinator.com/item?id=50190334"
+    },
+    {
+      "id": "6b933ec01e81af4ee3f2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HN Sieve – every Show HN scored and summarized by AI",
+      "url": "https://hnsieve.com",
+      "published_at": "2026-10-22T02:24:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://hnsieve.com Comments URL: https://news.ycombinator.com/item?id=50190403 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50190403"
+    },
+    {
+      "id": "a2f213318f437b96c25c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agent Middleware – permits and signed receipts for agent tool calls",
+      "url": "https://github.com/agentmiddleware/agent-middleware",
+      "published_at": "2026-10-22T03:05:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/agentmiddleware/agent-middleware Comments URL: https://news.ycombinator.com/item?id=50190676 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50190676"
+    },
+    {
+      "id": "f8f5a994044193c26b82",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Agent Middleware – permits and signed receipts for agent tool calls",
+      "url": "https://github.com/agentmiddleware/agent-middleware",
+      "published_at": "2026-10-22T03:05:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/agentmiddleware/agent-middleware Comments URL: https://news.ycombinator.com/item?id=50190676 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50190676"
+    },
+    {
+      "id": "49d8e833cede092f5638",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AI agent on your notch, equipped with his own computer",
+      "url": "https://notcho.si",
+      "published_at": "2026-10-22T03:22:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://notcho.si Comments URL: https://news.ycombinator.com/item?id=50190792 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50190792"
+    },
+    {
+      "id": "2ca39b3d7b2a255b0099",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Learn Calculus by Coding in Python – Ed Pratowski (2025)",
+      "url": "https://www.freecodecamp.org/news/learn-college-calculus-and-implement-with-python",
+      "published_at": "2026-10-22T03:54:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.freecodecamp.org/news/learn-college-calculus-and-implement-with-python/ Comments URL: https://news.ycombinator.com/item?id=50190994 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50190994"
+    },
+    {
+      "id": "46f38528b3d3a41a513a",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.308",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
+      "published_at": "2026-10-22T04:34:55+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Bug fixes and reliability improvements",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-21T21:43:10.148423+00:00",
+      "last_success": "2026-10-22T04:45:49.499790+00:00",
       "count": 10,
       "earliest": "2026-10-19T10:29:09+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-21T21:43:10.454973+00:00",
+      "last_success": "2026-10-22T04:45:49.727216+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-21T21:43:10.691623+00:00",
+      "last_success": "2026-10-22T04:45:49.934674+00:00",
       "count": 888,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-21T21:43:10.831144+00:00",
+      "last_success": "2026-10-22T04:45:50.086179+00:00",
       "count": 30,
       "earliest": "2026-10-09T15:02:29+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-21T21:43:19.361306+00:00",
+      "last_success": "2026-10-22T04:45:50.432464+00:00",
       "count": 100,
-      "earliest": "2026-10-21T11:32:55+00:00",
+      "earliest": "2026-10-21T12:47:02+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-21T17:12:50.517205+00:00",
+      "last_success": "2026-10-22T04:45:51.095123+00:00",
       "count": 100,
-      "earliest": "2026-10-20T11:48:47+00:00",
+      "earliest": "2026-10-20T15:00:10+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-21T21:43:26.956619+00:00",
-      "count": 10,
-      "earliest": "2026-10-08T19:48:38+00:00",
+      "last_success": "2026-10-22T04:45:52.301292+00:00",
+      "count": 20,
+      "earliest": "2026-10-01T18:00:22+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-21T21:43:28.039680+00:00",
+      "last_success": "2026-10-22T04:45:53.275402+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-21T21:43:28.606727+00:00",
+      "last_success": "2026-10-22T04:45:53.730327+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-21T21:43:29.030877+00:00",
+      "last_success": "2026-10-22T04:45:54.105796+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-21T21:43:29.753288+00:00",
+      "last_success": "2026-10-22T04:45:54.752758+00:00",
       "count": 9,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-21T21:43:47.565396+00:00",
+      "last_success": "2026-10-22T04:46:14.206592+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-21T21:43:47.750335+00:00",
-      "count": 1310,
+      "last_success": "2026-10-22T04:46:14.415033+00:00",
+      "count": 1312,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-21T21:43:53.703014+00:00",
+      "last_success": "2026-10-22T04:46:21.848557+00:00",
       "count": 2,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -59191,5 +59575,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-21T21:43:53.703518+00:00"
+  "collected_at": "2026-10-22T04:46:21.849135+00:00"
 }
