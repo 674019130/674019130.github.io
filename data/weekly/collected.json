@@ -59317,6 +59317,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50190012"
     },
     {
+      "id": "661463b8133f99377b51",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.9",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+      "published_at": "2026-10-22T01:33:10+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Speech Ollama can now generate [speech](https://docs.ollama.com/capabilities/speech) with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible `/v1/audio/speech` endpoint. ```sh ollama run phonon \"Hello from Ollama.\" ``` ## d3 decision models [d3](https://ollama.com/library/d3) brings vLLM Semantic Router's decision models to Ollama. Give a model text, structured state, or an image, and ask it to classify, answer yes or no, or score options with probabilities. The family includes 2B, 4B, 9B, and 27B sizes. ```sh ollama run d3 \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\" ``` ## Flint on Linux and Windows [Flint](https://ollama.com/library/flint) now runs on Linux and Windows as well as macOS. ## Other improvements - Streaming OpenAI Responses and Anthropic Messages requests now report generation failures instead of ending silently after partial output. - `ollama launch` now passes cloud models' context lengths and capabilities to coding tools, fixing incorrect context and compaction settings. - Anthropic-compatible web search now uses the model's supported thinking setting in follow-up requests, preventing avoidable failures. **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.8...v0.40.9",
+      "discussion_url": ""
+    },
+    {
       "id": "c9fbc6291ee3533ed164",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -60827,103 +60839,415 @@
       "date_kind": "source_publication",
       "evidence": "In September, we announced a global default policy for generally available GitHub Copilot features and supported client capabilities on Copilot Business and Copilot Enterprise plans. Starting today, we’re gradually rolling out enforcement of the policy through October 26, so it may take effect at different times for different enterprises and organizations. Eligible features left unconfigured will be set according to the global policy. Administrators can still make explicit choices for individual features at any time. The policy applies to eligible settings on “Features & clients” and “MCP servers in Copilot”. You can review your setting under AI Controls → Copilot → Default policy for new features . For eligibility and exceptions, see the documentation on default availability . What’s changing Once the policy takes effect for your enterprise or organization: Eligible generally available features and capabilities left Unconfigured will be set according to the selected global default of Enabled , Disabled , or Let organizations decide . This is a one-time change. Subsequent changes to the default policy won’t change feature policies that are already set. Explicit choices are preserved. If you’ve enabled or disabled an individual feature, the rollout won’t change that setting. Preview features remain opt-in. If you opted into a preview that later becomes generally available, your choice will be preserved. Otherwise, the default policy will apply when it becomes eligible. Join the discussion within GitHub Community . The post Global default for Copilot features generally available appeared first on The GitHub Blog .",
       "discussion_url": ""
+    },
+    {
+      "id": "6238891e2365ec3fbe86",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Murmur, open-source push-to-talk dictation for Mac (BYO OpenAI key)",
+      "url": "https://github.com/leochaddad/murmur",
+      "published_at": "2026-10-22T20:47:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "I know there are many dictation apps out there, but I built one myself anyways based on my custom needs. Since OpenAI dictation is so good, my previous workflow would be speaking to ChatGPT UI and pasting a default prompt to turn my speech into a well formatted prompt Now I just hold a key (Fn for me), talk, let go, and the text gets pasted wherever the cursor is, mostly Claude Code in the terminal. The default prompt part became \"Modes\" where you write the instructions once (clean it up, translate to English, etc) and the transcript goes through an OpenAI model before it's pasted. It uses your own OpenAI key and calls their API directly, no server in between. My daily spend is usually around US$ 0.15. It's cloud only, so if you want local models Handy or VoiceInk are better picks. No signed release yet, you build it with Xcode using one script. MIT licensed. Comments URL: https://news.ycombinator.com/item?id=50200810 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50200810"
+    },
+    {
+      "id": "51fbef9e76424ccadd18",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI for Group Chats",
+      "url": "https://boba.app",
+      "published_at": "2026-10-22T21:08:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://boba.app Comments URL: https://news.ycombinator.com/item?id=50201068 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50201068"
+    },
+    {
+      "id": "62fc637d9dea1c5c5abd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Prompt Chain Builder – offline multi-step prompt workflows",
+      "url": "https://theaioperatorstore.gumroad.com/l/kjxamb",
+      "published_at": "2026-10-22T21:26:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://theaioperatorstore.gumroad.com/l/kjxamb Comments URL: https://news.ycombinator.com/item?id=50201281 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50201281"
+    },
+    {
+      "id": "f4718bfce2e8a716e993",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Stumble Upon for AI News",
+      "url": "https://ainews247.org",
+      "published_at": "2026-10-22T22:08:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built an AI news tabulator. Inspired by Stumble Upon from years ago. Cheers. Comments URL: https://news.ycombinator.com/item?id=50201754 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50201754"
+    },
+    {
+      "id": "dab7ccd7cbb89cc3171a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CATT 0.2.1: Test agents/services against a Muse/Instinct-alike, in CI",
+      "url": "https://github.com/Coverage-Cat/consumer-agent-testing-tool",
+      "published_at": "2026-10-22T22:18:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, we recently open sourced our Consumer Agent Testing Tool to help teams iterate against proprietary assistants like Muse and Instinct. We built this to reduce our own frustrations with building an MCP/API for these agents to consume. The problem: testing against these tools is hard! Agent memory + account statefulness make reproducibility, in the ways required for repeatable/reliable outcomes, between agents and the APIs/MCPs they interact with very challenging. The solution: CATT lets devs test their services against a surrogate Muse or Instinct agent (not affiliated with either of these companies). Testers define starting conditions, approvals, and success conditions for their service's state. CATT then records the full interaction (incl. tool calls, responses) so it can diff what happened from what the agent reports. Runs can be tested in local builds or via CI, with or without LLM backing. CATT is designed to emulate the important parts of personal assistant interactions. Its got: - Tool calls and command-line tool access - Simulated approvals for service actions - Outcomes tracking and comparison - Optional MCP profile based on an unofficial Muse template There are limitations to how much we know about different assistant specific behaviors so the tool labels its assumptions as `documented`, `unofficial`, `assumed` or `unknown` for developer review. We'll do our best to keep the tool updated as new insights about the internal workings of these assistants come to light. It is an area of active research and interest, a good example is this recent report on how Instinct uses Exa for web search [0]. Are you building a connector or MCP? If yes, we'd like to hear from you! Have you had assistants behave incoherently, use stale information, or procalim success without evidence? What else should we add tests for? The best way to get started is...to point your coding assistant at the repo and ask it to integrate the tool with your CI or local testing pipeline! Hope it's helpful! [0]: https://www.sunbeam.ai/thoughts/instinct-is-using-exa-for-we... Comments URL: https://news.ycombinator.com/item?id=50201860 Points: 7 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50201860"
+    },
+    {
+      "id": "ead0ab6be2e7b8872b62",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.309",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
+      "published_at": "2026-10-22T22:18:57+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command - Fixed macOS sandbox `denyWrite` glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink - Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with `--mcp-config` - Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions - Fixed the Bash permission check trusting a variable set by a command whose redirect can fail to open - Fixed Bash permission checks not prompting for some compound commands that change directory before running git when the `cd` is wrapped or prefixed, as they do for a plain `cd` - Fixed an `Edit(path)` deny rule not blocking a Bash redirect to that path in some commands that also held a subshell - Fixed worktree-isolated sessions accepting some locale-prefixed commands the isolation guard should refuse - Fixed worktree-isolated sessions on zsh accepting some arithmetic commands that the isolation guard should refuse - Fixed worktrees and branch checkouts that Claude Code creates so they ignore git replace refs, as its other git operations already do - Fixed profile store write protection not applying when the config directory is reached through a symlink - Fixed sessions compacting repeatedly after reading files under a very large nested CLAUDE.md; a nested CLAUDE.md over the size limit now loads only its start - Fixed ctrl+enter (send now) only queuing a message when pressed before the response had started, and restarting a prompt's hooks while leaving the message queued when pressed while those hooks were running - Fixed key-bound slash commands running in the shell from `!` mode - Fixed ctrl+o not showing messages from other agents and sessions that are still waiting to be delivered; they now appear in full under the transcript, marked as waiting - Fixed long tool output previews being cut through an emoji, leaving session transcripts that `jq` could not parse - Fixed Read reporting \"File does not exist\" for PDF page ranges in Linux sandboxes that share the parent's `/proc` - Fixed messages from a Claude Desktop-hosted session sometimes being lost when its connection refreshed - Fixed features missing from Claude Code sessions in the Claude desktop app when the terminal on the same computer was signed in to a different account or organization - Fixed the `claude remote-control` status line showing `HEAD` as the branch for a folder that is not in a git repository - Fixed split-pane agent teammates not inheriting the tool deny and `--tools` rules given on the leader's command line - Fixed sessions renamed with `/rename` appearing to other sessions under a generated name after a VS Code window reload or a non-interactive `--resume` - Fixed the `/rewind` list showing \"No code changes\" for a turn that changed checkpointed files through `/code-review --fix`, a subagent or a shell command - Fixed `/privacy-settings` showing an out-of-date \"Help improve our AI models\" value; it now also says when the setting can't be fetched - Fixed feedback saying \"try again later\" when your organization does not accept feedback; it now shows the server's reason and where to report a bug - Fixed oversized /feedback reports failing instead of being resent without the transcript - Fixed a skill in an `--add-dir` folder being unreachable when another skill already held its name; it is now offered as ` : ` - Fixed `/verify` and `/code-review` not finding a nested package's own skill when its files were changed from the shell - Fixed the /claude-api skill saying that `ant beta:worker poll --on-work` passes trace context to the command - Fixed the /claude-api skill's C# tracing setup missing spans from the cloud platform clients - Fixed the /claude-api skill saying that API spans for requests to Claude Platform on AWS can't join the caller's trace - Fixe",
+      "discussion_url": ""
+    },
+    {
+      "id": "a14b44727f86be0ec93c",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Custom skills, agents, and MCP servers in usage metrics API",
+      "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
+      "published_at": "2026-10-22T22:19:17+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Copilot usage metrics now show the names of the skills, custom agents, Model Context Protocol (MCP) servers, slash commands, and plugins that your organization creates, instead of grouping them under other or custom . This builds on the agentic CLI customization metrics released in September. What’s new Named entries: In enterprise and organization reports, including per-user 1-day and 28-day reports, aggregated 1-day reports, and day_totals in aggregated 28-day reports, the totals_by_skill , totals_by_custom_agent , totals_by_mcp , totals_by_slash_cmd , and totals_by_plugin arrays now show the configured name of a customer-defined item instead of other or custom . More entries: Each totals_by_* list now includes up to 25 entries per record, up from five, so you can see more of the long tail of customizations your developers use. Any remaining activity is combined into a trailing other entry. Unchanged counts: interaction_count and the distinct_*_use_count fields are calculated the same way as before. Why this matters The customizations that matter most to an organization are often the ones its own teams build. Administrators can now see which internal skills, custom agents, and MCP servers developers actually use, track adoption after rolling out a new one, and focus enablement where it is needed. Important notes Coverage: Names are reported from Copilot CLI (interactive sessions and prompt mode), the GitHub Copilot app, Agent Client Protocol (ACP) integrations such as JetBrains, and the Copilot SDK. Prompt mode, the app, and ACP integrations require Copilot CLI 1.0.97 or later. The Copilot SDK requires v1.0.21 or later. IDEs report names when their agent experiences run on the Copilot SDK v1.0.21 or later. Names aren’t reported from an IDE’s built-in chat telemetry. Configured names: Names are reported as they are configured, trimmed and limited to 128 characters. Names that look like file paths stay grouped under other or custom . Review names before sharing reports outside your organization. Accuracy: These metrics come from client telemetry and can undercount activity, for example when clients are outdated or telemetry is blocked. Use them to understand trends and adoption rather than for exact accounting. History: Names appear starting with report days processed after this release. Earlier days still show other or custom . Access: Reports are available to enterprise owners and billing managers, organization owners, and anyone with a custom organization or enterprise role that grants the “View Copilot Metrics” permission. The Copilot usage metrics policy must be enabled. Visit the Copilot usage metrics API documentation to get started. The post Custom skills, agents, and MCP servers in usage metrics API appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "de25393cc046ed8fab27",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "published_at": "2026-10-22T22:24:34+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
+      "id": "fe7020cbef797bed58af",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Coding Magic the Gathering in C# – Part Two – The Impossible Magic Card",
+      "url": "https://www.youtube.com/watch?v=Xbfzye07Xrg",
+      "published_at": "2026-10-22T23:19:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=Xbfzye07Xrg Comments URL: https://news.ycombinator.com/item?id=50202447 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50202447"
+    },
+    {
+      "id": "4e5c55a138d99c9226bc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Making a smart TV dumb and then smart",
+      "url": "https://github.com/anubhavmalhotra/r2d2-tv",
+      "published_at": "2026-10-23T00:10:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "A recent (unwanted) webOS update that got installed on TV prompted me to start going down the rabbit hole of writing new TV software. After a couple of weekends and massive help from 4 different models, finally managed to get v1 working. My daughter enjoys navigating TV through speech while I get to browse on the biggest screen at home. While all of the code was written by ML models, there were decisions I had to help with. In specific: using WebRTC to cut down latency, repurposing vendor logic for buffering voice samples and designing user experience. It was liberating to finally free the TV of bloatware and make it truly personalized! Comments URL: https://news.ycombinator.com/item?id=50202865 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50202865"
+    },
+    {
+      "id": "d1e7ca52bff8ece0dcef",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub Copilot in Visual Studio — September update",
+      "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
+      "published_at": "2026-10-23T00:17:51+00:00",
+      "date_kind": "source_publication",
+      "evidence": "September 2026 brought deeper visibility into your work: explore pull requests without leaving chat, bring the AI model your team trusts, and fix vulnerable packages the moment Visual Studio flags them. Highlights Here’s what’s new with GitHub Copilot in Visual Studio 2026. Check the Insiders channel for the latest: Explore pull requests with the Git agent : The Git agent can now explore a pull request for you. Open GitHub Copilot Chat, select the Git agent, and attach a pull request as context from the Git Repository window to get a summary with navigable links to the underlying comments and files. This functionality requires connecting your Git provider’s MCP servers; GitHub and Azure DevOps are both supported. Updates to Bring Your Own Model (BYOM) : BYOM is available in preview and lets you use the models your team prefers, through GitHub Copilot or your own model deployments, whether or not you’re signed in to GitHub. This feature is on by default across the Community, Professional, and Enterprise editions. Breaking change: BYOM now requires the new Agent (Preview), built on the GitHub Copilot SDK-powered harness. The previous Ask and Agent modes no longer support BYOM, and you’ll need to re-add previously configured Ollama models after updating. Supported providers include Microsoft Foundry, OpenAI, Anthropic, and Ollama. Fix NuGet Vulnerabilities from the Error List : NuGet Audit warnings in the Error List now include a fixer action that opens GitHub Copilot Chat in agent mode and asks Copilot to fix the vulnerable packages using the NuGet MCP server. This functionality requires signing in to GitHub Copilot and enabling the NuGet MCP server from the Copilot Chat tools menu. This update is available to users on all GitHub Copilot plans , including Copilot Free, Student, Pro, Pro+, Max, Business, and Enterprise. Download Visual Studio 2026 to experience all the new Copilot features today. To learn more about what’s new, check out the Visual Studio blog and release notes . What’s next for Copilot in Visual Studio Stay up to date on the latest Copilot features by following the Visual Studio blog , where you’ll find roadmap updates and opportunities to share feedback. The post GitHub Copilot in Visual Studio — September update appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "c5d6271fb76833b69a03",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Most feature complete Apple notes MCP bridge",
+      "url": "https://github.com/xiaofeng-han/apple-notes-mcp",
+      "published_at": "2026-10-23T01:00:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "With version check (avoid update confliction), smart list support, mostly swift and other more features. Previous reminders mcp: https://github.com/xiaofeng-han/apple-reminders-mcp Comments URL: https://news.ycombinator.com/item?id=50203225 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50203225"
+    },
+    {
+      "id": "453c9074d90b2b34a5e6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: GrillMyProfile – AI roast of your LinkedIn, scored against a job",
+      "url": "https://www.grillmyprofile.com",
+      "published_at": "2026-10-23T01:20:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.grillmyprofile.com Comments URL: https://news.ycombinator.com/item?id=50203354 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50203354"
+    },
+    {
+      "id": "b718f204aefaa837c77e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
+      "url": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent",
+      "published_at": "2026-10-23T01:41:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent Comments URL: https://news.ycombinator.com/item?id=50203538 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50203538"
+    },
+    {
+      "id": "688b5544367be7fc86eb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: bonds – not an agent, a friend with superpowers for Gen Z group chats",
+      "url": "https://bonds.chat",
+      "published_at": "2026-10-23T02:03:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://bonds.chat/ Comments URL: https://news.ycombinator.com/item?id=50203671 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50203671"
+    },
+    {
+      "id": "24b4202c4e4167cc8a5d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: bonds – not an agent, a friend with superpowers for Gen Z group chats",
+      "url": "https://bonds.chat",
+      "published_at": "2026-10-23T02:03:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://bonds.chat/ Comments URL: https://news.ycombinator.com/item?id=50203671 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50203671"
+    },
+    {
+      "id": "c1c5588581bc1799db92",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A wysiwyg Markdown editor for macOS that works with agents",
+      "url": "https://kirahowe.com/2026/oct/22/editmd-0-1-0",
+      "published_at": "2026-10-23T02:34:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "The first public release of editmd, a small native macOS editor that shows a markdown file as rendered text you can edit in place and saves it back as markdown. brew install --cask kirahowe/tap/editmd Comments URL: https://news.ycombinator.com/item?id=50203836 Points: 2 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50203836"
+    },
+    {
+      "id": "fa48495ed8b5527f01f9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Evals Considered Harmful",
+      "url": "https://twitter.com/noriagent/status/2113338229470441579",
+      "published_at": "2026-10-23T02:59:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/noriagent/status/2113338229470441579 Comments URL: https://news.ycombinator.com/item?id=50204001 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204001"
+    },
+    {
+      "id": "8e37c926f41d2fcb0f00",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Compute Engine deep dive",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive",
+      "published_at": "2026-10-23T03:12:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive Comments URL: https://news.ycombinator.com/item?id=50204084 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204084"
+    },
+    {
+      "id": "9c70977a5720ab0b2ad8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The Customer Is the Builder: how AI coding agents change software economics",
+      "url": "https://arxiv.org/abs/2610.30307",
+      "published_at": "2026-10-23T03:24:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2610.30307 Comments URL: https://news.ycombinator.com/item?id=50204149 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204149"
+    },
+    {
+      "id": "40bac6a8e7f5a8a09470",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: What LLM fits my GPU? – VRAM measured on real hardware for 117 models",
+      "url": "https://quantized.uk",
+      "published_at": "2026-10-23T03:25:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://quantized.uk/ Comments URL: https://news.ycombinator.com/item?id=50204153 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204153"
+    },
+    {
+      "id": "343ccaf3da03d12220a5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: What LLM fits my GPU? – VRAM measured on real hardware for 117 models",
+      "url": "https://quantized.uk",
+      "published_at": "2026-10-23T03:25:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://quantized.uk/ Comments URL: https://news.ycombinator.com/item?id=50204153 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204153"
+    },
+    {
+      "id": "017c49151a7419ac078f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Pristine – an agent skill that critiques and polishes web UI",
+      "url": "https://github.com/maddhruv/pristine",
+      "published_at": "2026-10-23T04:01:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/maddhruv/pristine Comments URL: https://news.ycombinator.com/item?id=50204389 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204389"
+    },
+    {
+      "id": "855e56483f840b3e59a6",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Pristine – an agent skill that critiques and polishes web UI",
+      "url": "https://github.com/maddhruv/pristine",
+      "published_at": "2026-10-23T04:01:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/maddhruv/pristine Comments URL: https://news.ycombinator.com/item?id=50204389 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204389"
+    },
+    {
+      "id": "e08641069999cefe3170",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Tools for Unreal Engine",
+      "url": "https://app.simplystream.com",
+      "published_at": "2026-10-23T04:38:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://app.simplystream.com/ Comments URL: https://news.ycombinator.com/item?id=50204580 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204580"
+    },
+    {
+      "id": "e3b8777b88b7a92dddd1",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.164.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0",
+      "published_at": "2026-10-23T04:48:10+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## New Features - Save reusable prompts and slash commands in ten numbered `/presets` slots, with a keyboard menu for quick access. (#54380, #54381) - Set model, reasoning effort, speed, and permission profiles directly with inline `/model` and `/permissions` arguments. (#54378, #54383) - Preview viewed and generated images in the fullscreen transcript on terminals supporting Kitty or Sixel graphics. (#54216) - Authenticate enterprise MCP connections using eligible Codex account grants or dedicated sign-in, including OAuth clients requiring secrets. (#55334, #55859, #56001) - Mask credentials during supported remote Bash commands and Zsh snapshot sessions, including credentials from custom providers. (#54309, #54432, #56049) - The Amazon Bedrock setup wizard is now enabled by default, with API key entry grouped alongside other AWS sign-in methods when credentials are detected. (#56033, #56023) ## Bug Fixes - Failed compaction no longer leaves partial summaries in conversation history, and background compaction failures fall back without panicking. (#53932, #55581) - Resuming sessions now finds compressed histories and restores saved thread settings instead of replacing them with global defaults. (#54008, #55923) - Windows HTTPS and WebSocket connections now handle proxy authentication challenges using the signed-in user’s Negotiate or NTLM credentials. (#55994, #56000) - CLI configuration overrides are preserved when `-c` or `--config` appears at multiple subcommand levels. (#56022) - Queued prompts now wait for pending permission selections to resolve before continuing. (#55682) - Hardened sandbox checks for case-variant metadata paths on macOS and replaceable symlinks used to locate executables. (#54273, #55384) ## Chores - Reduced disk usage by pruning unused installations, cleaning abandoned marketplace checkouts, and bounding daemon logs. (#53827, #55149, #55689, #55690, #55856) - Updated the embedded JavaScript runtime with safety checks for optimized `Array.sort` operations. (#54519) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.163.0...rust-v0.164.0 - #53725 Render Markdown web links as labels in Rex @bc-openai - #53728 Preserve the remote cwd filter in the in-app resume picker @fcoury-oai - #53732 Reuse compiled search patterns across compressed rollouts @ethernetdan-openai - #53733 Default Guardian v2 async classification to conversation mode @felixxia-oai - #53736 Acquire and cache opt-in executor capability inventories via V2 @TAFOYA-OAI - #53745 Remove `modelSlug` from the latest-model resolver output @kkahadze-oai - #53747 Prefer remote Visualize installs over the bundled plugin @philipp-oai - #53751 Apply feature overrides when restarting the app-server daemon @jif-oai - #53753 Extend copy-on-select to composer text @fcoury-oai - #53754 Support Command/Super shortcuts in the TUI keymap @fcoury-oai - #53763 Enrich V2 capability discovery with resolved plugin and skill metadata @TAFOYA-OAI - #53780 Remove redundant Codex manual cache directory check @kkahadze-oai - #53781 Remove the product-gating TODO from `SkillPolicy` @kkahadze-oai - #53784 Forward client voice session IDs in realtime requests @chrisdong-oai - #53790 Fix cancellation of macOS user-verification prompts @bz-openai - #53794 Retain rollout migration locks across worker cancellation @jif-oai - #53795 Use the bundled model catalog in the MCP startup invalidation test @OLI-OAI - #53797 Refresh Guardian reviews when review context changes @jif-oai - #53800 Wire background compaction into the turn lifecycle @rka-oai - #53804 Keep the Agent command center visible during archive and delete @etraut-openai - #53805 Add safe diagnostics to workspace routing configuration errors @etraut-openai - #53811 Support daemon installation from Windows WinGet packages @etraut-openai - #53816 Reject Guardian review threads during interactive CLI resume @dylan-hurd-oai - #53827 Prune unused app-server daemon releases safely @etraut-openai -",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-22T21:35:56.829727+00:00",
+      "last_success": "2026-10-23T04:49:25.255044+00:00",
       "count": 10,
-      "earliest": "2026-10-20T16:11:53+00:00",
+      "earliest": "2026-10-20T18:03:55+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-22T21:35:57.113446+00:00",
+      "last_success": "2026-10-23T04:49:25.452249+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-22T21:35:57.351948+00:00",
-      "count": 888,
+      "last_success": "2026-10-23T04:49:25.663758+00:00",
+      "count": 889,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-22T21:35:57.447710+00:00",
+      "last_success": "2026-10-23T04:49:25.805534+00:00",
       "count": 30,
       "earliest": "2026-10-10T23:58:04+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-22T21:35:57.944213+00:00",
+      "last_success": "2026-10-23T04:49:30.526857+00:00",
       "count": 100,
-      "earliest": "2026-10-22T13:08:32+00:00",
+      "earliest": "2026-10-22T14:58:37+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-22T21:36:00.852220+00:00",
+      "last_success": "2026-10-23T04:49:37.412019+00:00",
       "count": 100,
-      "earliest": "2026-10-21T13:18:08+00:00",
+      "earliest": "2026-10-21T14:25:40+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-22T21:36:02.029573+00:00",
+      "last_success": "2026-10-23T04:49:38.596633+00:00",
       "count": 20,
-      "earliest": "2026-10-01T18:00:22+00:00",
+      "earliest": "2026-10-02T20:19:57+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-22T21:36:02.987613+00:00",
+      "last_success": "2026-10-23T04:49:39.567127+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-22T21:36:03.457988+00:00",
+      "last_success": "2026-10-23T04:49:40.020812+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-22T21:36:03.869728+00:00",
+      "last_success": "2026-10-23T04:49:40.409257+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-22T21:36:04.439644+00:00",
-      "count": 9,
+      "last_success": "2026-10-23T04:49:41.032482+00:00",
+      "count": 10,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-22T21:36:25.339950+00:00",
+      "last_success": "2026-10-23T04:50:02.648210+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-22T21:36:25.497187+00:00",
+      "last_success": "2026-10-23T04:50:02.834469+00:00",
       "count": 1315,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-22T21:36:33.630755+00:00",
-      "count": 2,
+      "last_success": "2026-10-23T04:50:12.089033+00:00",
+      "count": 3,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
       "error": null
@@ -61003,5 +61327,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-22T21:36:33.631391+00:00"
+  "collected_at": "2026-10-23T04:50:12.089699+00:00"
 }
