@@ -60949,6 +60949,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50202447"
     },
     {
+      "id": "6f0f1dcc4bf6c5e61d29",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
+      "discussion_url": ""
+    },
+    {
       "id": "4e5c55a138d99c9226bc",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -61151,102 +61163,330 @@
       "date_kind": "source_publication",
       "evidence": "## New Features - Save reusable prompts and slash commands in ten numbered `/presets` slots, with a keyboard menu for quick access. (#54380, #54381) - Set model, reasoning effort, speed, and permission profiles directly with inline `/model` and `/permissions` arguments. (#54378, #54383) - Preview viewed and generated images in the fullscreen transcript on terminals supporting Kitty or Sixel graphics. (#54216) - Authenticate enterprise MCP connections using eligible Codex account grants or dedicated sign-in, including OAuth clients requiring secrets. (#55334, #55859, #56001) - Mask credentials during supported remote Bash commands and Zsh snapshot sessions, including credentials from custom providers. (#54309, #54432, #56049) - The Amazon Bedrock setup wizard is now enabled by default, with API key entry grouped alongside other AWS sign-in methods when credentials are detected. (#56033, #56023) ## Bug Fixes - Failed compaction no longer leaves partial summaries in conversation history, and background compaction failures fall back without panicking. (#53932, #55581) - Resuming sessions now finds compressed histories and restores saved thread settings instead of replacing them with global defaults. (#54008, #55923) - Windows HTTPS and WebSocket connections now handle proxy authentication challenges using the signed-in user’s Negotiate or NTLM credentials. (#55994, #56000) - CLI configuration overrides are preserved when `-c` or `--config` appears at multiple subcommand levels. (#56022) - Queued prompts now wait for pending permission selections to resolve before continuing. (#55682) - Hardened sandbox checks for case-variant metadata paths on macOS and replaceable symlinks used to locate executables. (#54273, #55384) ## Chores - Reduced disk usage by pruning unused installations, cleaning abandoned marketplace checkouts, and bounding daemon logs. (#53827, #55149, #55689, #55690, #55856) - Updated the embedded JavaScript runtime with safety checks for optimized `Array.sort` operations. (#54519) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.163.0...rust-v0.164.0 - #53725 Render Markdown web links as labels in Rex @bc-openai - #53728 Preserve the remote cwd filter in the in-app resume picker @fcoury-oai - #53732 Reuse compiled search patterns across compressed rollouts @ethernetdan-openai - #53733 Default Guardian v2 async classification to conversation mode @felixxia-oai - #53736 Acquire and cache opt-in executor capability inventories via V2 @TAFOYA-OAI - #53745 Remove `modelSlug` from the latest-model resolver output @kkahadze-oai - #53747 Prefer remote Visualize installs over the bundled plugin @philipp-oai - #53751 Apply feature overrides when restarting the app-server daemon @jif-oai - #53753 Extend copy-on-select to composer text @fcoury-oai - #53754 Support Command/Super shortcuts in the TUI keymap @fcoury-oai - #53763 Enrich V2 capability discovery with resolved plugin and skill metadata @TAFOYA-OAI - #53780 Remove redundant Codex manual cache directory check @kkahadze-oai - #53781 Remove the product-gating TODO from `SkillPolicy` @kkahadze-oai - #53784 Forward client voice session IDs in realtime requests @chrisdong-oai - #53790 Fix cancellation of macOS user-verification prompts @bz-openai - #53794 Retain rollout migration locks across worker cancellation @jif-oai - #53795 Use the bundled model catalog in the MCP startup invalidation test @OLI-OAI - #53797 Refresh Guardian reviews when review context changes @jif-oai - #53800 Wire background compaction into the turn lifecycle @rka-oai - #53804 Keep the Agent command center visible during archive and delete @etraut-openai - #53805 Add safe diagnostics to workspace routing configuration errors @etraut-openai - #53811 Support daemon installation from Windows WinGet packages @etraut-openai - #53816 Reject Guardian review threads during interactive CLI resume @dylan-hurd-oai - #53827 Prune unused app-server daemon releases safely @etraut-openai -",
       "discussion_url": ""
+    },
+    {
+      "id": "0d6b00d91f6d8e06b6be",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: An automated news site Distribute Software",
+      "url": "https://distribute.software",
+      "published_at": "2026-10-23T06:01:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted to see what it would look like building a fully automated news site monitoring different newsrooms, desks, feeds etc on the web. Creating an aggregator of aggregators. There is some AI utilized here, the new Deepseek API for search, classifiers from Cloudflare (and mostly hosted here). With almost 0 work. Amazing what you can spin up in an evening these days. Comments URL: https://news.ycombinator.com/item?id=50204971 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50204971"
+    },
+    {
+      "id": "ee44586f33d67e4da5de",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hlas-1: open-weight 3B params TTS with frontier performance",
+      "url": "https://huggingface.co/cekal/hlas-1",
+      "published_at": "2026-10-23T06:52:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "With the release and hype around Drama-3 by Fish Audio, I've decided to challenge myself & create my own TTS model in my spare time. It is 1/10th the size of Drama 3, can be just as expressive, and can take instructions about emotion and pacing for fine-grained output. Obviously it's not perfect, but from my experience still better than whatever is out there at this size. Burned 300 bucks on this thing so enjoy. Demo: https://vojtechcekal.com/hlas P.S.: it's a Breeze v2 finetune (best open weight base model out there overall) so their weird license applies (unfortunately). Might finetune on a more permissive base in the future. Comments URL: https://news.ycombinator.com/item?id=50205300 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50205300"
+    },
+    {
+      "id": "5f5b0147a5083752379f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Audimind – Create audiobooks in one AI-powered workspace",
+      "url": "https://www.audimind.ai",
+      "published_at": "2026-10-23T07:05:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.audimind.ai Comments URL: https://news.ycombinator.com/item?id=50205393 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50205393"
+    },
+    {
+      "id": "766d639b62530a2a1d2b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Kuron – A 5-device airline system from one prompt, no code generated",
+      "url": "https://claude.ai/artifact/UMMbf2FcV3ULi6d5WaW1yp",
+      "published_at": "2026-10-23T07:23:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://claude.ai/artifact/UMMbf2FcV3ULi6d5WaW1yp Comments URL: https://news.ycombinator.com/item?id=50205523 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50205523"
+    },
+    {
+      "id": "c0beb12b1f2bf04a290f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Building a cheaper review loop for coding agents using Jev",
+      "url": "https://oxtan-maker.github.io/parallix/articles/jev-review-evidence",
+      "published_at": "2026-10-23T07:41:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://oxtan-maker.github.io/parallix/articles/jev-review-evidence/ Comments URL: https://news.ycombinator.com/item?id=50205651 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50205651"
+    },
+    {
+      "id": "eb33eab538e0a3bc44a8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Slate Term – a native terminal your agents can control and extend",
+      "url": "https://slate.weichart.de",
+      "published_at": "2026-10-23T07:54:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://slate.weichart.de/ Comments URL: https://news.ycombinator.com/item?id=50205742 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50205742"
+    },
+    {
+      "id": "8a10707d3161ea7225d0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A dating SIM where 1k people run on models built from survey data",
+      "url": "https://sexandthecity.fun",
+      "published_at": "2026-10-23T08:29:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://sexandthecity.fun Comments URL: https://news.ycombinator.com/item?id=50205986 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50205986"
+    },
+    {
+      "id": "58367e10730061ae5fa0",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ultimate: A self-extending agent harness built on Pi Durable",
+      "url": "https://danielgriesser.com/posts/ultimate",
+      "published_at": "2026-10-23T08:33:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://danielgriesser.com/posts/ultimate/ Comments URL: https://news.ycombinator.com/item?id=50206015 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206015"
+    },
+    {
+      "id": "ce28ce075a76e89bc9a7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A super fast(est), staged zsh plugin manager (github.com/arastu/zflash)",
+      "url": "https://github.com/arastu/zflash",
+      "published_at": "2026-10-23T09:14:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Over time, I’ve made a bunch of tweaks and optimizations to make my Zsh setup and terminal startup faster. They worked well, but they were scattered across different scripts and configurations. With the help of Claude, I finally brought everything together into a new open-source project called *zflash* And the result? It’s now probably one of the fastest plugin managers for Zsh out there! I’d love for you to give it a try, share your feedback, or contribute! https://github.com/arastu/zflash Comments URL: https://news.ycombinator.com/item?id=50206320 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206320"
+    },
+    {
+      "id": "7fe1b351c96741cf0a44",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How to become a top-tier AI agent user (0.01%)?",
+      "url": "https://news.ycombinator.com/item?id=50206325",
+      "published_at": "2026-10-23T09:15:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Comments URL: https://news.ycombinator.com/item?id=50206325 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206325"
+    },
+    {
+      "id": "426e4020b00cfd1a072d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Kucedr (was Friday) – a desktop AI agent that runs on your machine",
+      "url": "https://www.kucedr.com",
+      "published_at": "2026-10-23T09:19:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.kucedr.com/ Comments URL: https://news.ycombinator.com/item?id=50206354 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206354"
+    },
+    {
+      "id": "3a2da221aa1f66ce1a18",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Kucedr (was Friday) – a desktop AI agent that runs on your machine",
+      "url": "https://www.kucedr.com",
+      "published_at": "2026-10-23T09:19:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.kucedr.com/ Comments URL: https://news.ycombinator.com/item?id=50206354 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206354"
+    },
+    {
+      "id": "38726fb4a499112377fa",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Would you let an AI agent fix things on your servers?",
+      "url": "https://github.com/dyablohunter/warden",
+      "published_at": "2026-10-23T09:54:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/dyablohunter/warden Comments URL: https://news.ycombinator.com/item?id=50206583 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206583"
+    },
+    {
+      "id": "eaf0592f84b245f49074",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Poly – A human readable programming language for Coding Agents",
+      "url": "https://github.com/cognitive-fab/poly",
+      "published_at": "2026-10-23T09:57:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/cognitive-fab/poly Comments URL: https://news.ycombinator.com/item?id=50206603 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206603"
+    },
+    {
+      "id": "e18ea79715320cd83d5b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Best otaku AI to chat about Anime with",
+      "url": "https://otaku.animearray.site",
+      "published_at": "2026-10-23T10:36:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://otaku.animearray.site/ Comments URL: https://news.ycombinator.com/item?id=50206876 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206876"
+    },
+    {
+      "id": "8d38c421b0e3786211d3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent management is people management?",
+      "url": "https://www.youtube.com/watch?v=VcIlkaI0mUk",
+      "published_at": "2026-10-23T10:38:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=VcIlkaI0mUk Comments URL: https://news.ycombinator.com/item?id=50206886 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206886"
+    },
+    {
+      "id": "76614336cd04dd5f216f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Is anybody still coding in PHP?",
+      "url": "https://news.ycombinator.com/item?id=50206985",
+      "published_at": "2026-10-23T10:51:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Comments URL: https://news.ycombinator.com/item?id=50206985 Points: 1 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50206985"
+    },
+    {
+      "id": "8ffd85c859978a8a93ef",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Go Time Patterns for Agent Scheduling",
+      "url": "https://cheikhhseck.medium.com/10-go-time-patterns-for-agent-scheduling-8e0b64dffb5e",
+      "published_at": "2026-10-23T11:11:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://cheikhhseck.medium.com/10-go-time-patterns-for-agent-scheduling-8e0b64dffb5e Comments URL: https://news.ycombinator.com/item?id=50207185 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50207185"
+    },
+    {
+      "id": "1574d0b8d663bdf4ceb1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Text-to-Diagram for AI Systems: Designing a DSL an LLM Gets Right",
+      "url": "https://zerowithdot.com/blog/text-to-diagram-for-ai-systems",
+      "published_at": "2026-10-23T11:31:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://zerowithdot.com/blog/text-to-diagram-for-ai-systems/ Comments URL: https://news.ycombinator.com/item?id=50207332 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50207332"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-23T04:49:25.255044+00:00",
+      "last_success": "2026-10-23T11:39:17.446950+00:00",
       "count": 10,
       "earliest": "2026-10-20T18:03:55+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-23T04:49:25.452249+00:00",
+      "last_success": "2026-10-23T11:39:17.542896+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-23T04:49:25.663758+00:00",
+      "last_success": "2026-10-23T11:39:17.716743+00:00",
       "count": 889,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-23T04:49:25.805534+00:00",
+      "last_success": "2026-10-23T11:39:17.830809+00:00",
       "count": 30,
       "earliest": "2026-10-10T23:58:04+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-23T04:49:30.526857+00:00",
+      "last_success": "2026-10-23T11:39:18.103313+00:00",
       "count": 100,
-      "earliest": "2026-10-22T14:58:37+00:00",
+      "earliest": "2026-10-22T16:43:47+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-23T04:49:37.412019+00:00",
+      "last_success": "2026-10-23T11:39:22.736800+00:00",
       "count": 100,
-      "earliest": "2026-10-21T14:25:40+00:00",
+      "earliest": "2026-10-21T16:03:32+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-23T04:49:38.596633+00:00",
+      "last_success": "2026-10-23T11:39:23.581359+00:00",
       "count": 20,
       "earliest": "2026-10-02T20:19:57+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-23T04:49:39.567127+00:00",
+      "last_success": "2026-10-23T11:39:24.271782+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-23T04:49:40.020812+00:00",
+      "last_success": "2026-10-23T11:39:24.619606+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-23T04:49:40.409257+00:00",
+      "last_success": "2026-10-23T11:39:24.922066+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-23T04:49:41.032482+00:00",
+      "last_success": "2026-10-23T11:39:25.383154+00:00",
       "count": 10,
       "earliest": "2026-09-25T03:31:52+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-23T04:50:02.648210+00:00",
+      "last_success": "2026-10-23T11:39:40.644860+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-23T04:50:02.834469+00:00",
-      "count": 1315,
+      "last_success": "2026-10-23T11:39:40.801537+00:00",
+      "count": 1316,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-23T04:50:12.089033+00:00",
+      "last_success": "2026-10-23T11:39:46.741741+00:00",
       "count": 3,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -61327,5 +61567,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-23T04:50:12.089699+00:00"
+  "collected_at": "2026-10-23T11:39:46.742357+00:00"
 }
