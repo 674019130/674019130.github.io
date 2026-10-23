@@ -60961,6 +60961,18 @@
       "discussion_url": ""
     },
     {
+      "id": "da1ead3b11c6daf9b818",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
       "id": "4e5c55a138d99c9226bc",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -61391,102 +61403,450 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://zerowithdot.com/blog/text-to-diagram-for-ai-systems/ Comments URL: https://news.ycombinator.com/item?id=50207332 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50207332"
+    },
+    {
+      "id": "64654dcd7e0b6b2f3c2b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Claude Code session-resumption plugin",
+      "url": "https://github.com/sofumel/claude-handoff-revive",
+      "published_at": "2026-10-23T11:39:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/sofumel/claude-handoff-revive Comments URL: https://news.ycombinator.com/item?id=50207407 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50207407"
+    },
+    {
+      "id": "41fcc99c6c8e76c4a279",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
+      "url": "https://www.thisandthat.chat/enron",
+      "published_at": "2026-10-23T12:02:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.thisandthat.chat/enron/ Comments URL: https://news.ycombinator.com/item?id=50207620 Points: 43 # Comments: 44",
+      "discussion_url": "https://news.ycombinator.com/item?id=50207620"
+    },
+    {
+      "id": "6678dbf1c7c97db9c3ba",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I gave my AI eyes for YouTube tutorials",
+      "url": "https://getframecap.com",
+      "published_at": "2026-10-23T12:05:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://getframecap.com/ Comments URL: https://news.ycombinator.com/item?id=50207650 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50207650"
+    },
+    {
+      "id": "5174ff12b34f78d42e23",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "I launched BIA – boot into agent – an agent that has full social presence",
+      "url": "https://ownbia.com",
+      "published_at": "2026-10-23T12:52:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ownbia.com/ Comments URL: https://news.ycombinator.com/item?id=50208204 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50208204"
+    },
+    {
+      "id": "9cae93344cc654413f03",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Running 50 AI agent threads at once made me the bottleneck",
+      "url": "https://thoughts.jock.pl/p/ai-agents-attention-bottleneck-decisions-2026",
+      "published_at": "2026-10-23T13:02:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://thoughts.jock.pl/p/ai-agents-attention-bottleneck-decisions-2026 Comments URL: https://news.ycombinator.com/item?id=50208342 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50208342"
+    },
+    {
+      "id": "22fecae8883ea06edb8a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Glyphh Ada – Precedent-based classifier and LLM fallthrough router",
+      "url": "https://glyphh.ai",
+      "published_at": "2026-10-23T13:02:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://glyphh.ai Comments URL: https://news.ycombinator.com/item?id=50208345 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50208345"
+    },
+    {
+      "id": "48bf7b926f6475a91d74",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CodeCatch gets 2FA codes from texts and email for you and your agents",
+      "url": "https://github.com/ugzv/CodeCatch",
+      "published_at": "2026-10-23T13:04:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ugzv/CodeCatch Comments URL: https://news.ycombinator.com/item?id=50208375 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50208375"
+    },
+    {
+      "id": "bb505ad5160ae06dd1b0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PlugVet, hygiene grades for AI agent plugins with the evidence shown",
+      "url": "https://plugvet.com",
+      "published_at": "2026-10-23T13:28:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://plugvet.com/ Comments URL: https://news.ycombinator.com/item?id=50208666 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50208666"
+    },
+    {
+      "id": "9f166e2314f0da1b03e9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: PlugVet, hygiene grades for AI agent plugins with the evidence shown",
+      "url": "https://plugvet.com",
+      "published_at": "2026-10-23T13:28:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://plugvet.com/ Comments URL: https://news.ycombinator.com/item?id=50208666 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50208666"
+    },
+    {
+      "id": "fa79d65b35b604b80949",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "I turned my spare computers into a network for AI coding agents",
+      "url": "https://www.sidefleet.xyz",
+      "published_at": "2026-10-23T13:50:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.sidefleet.xyz/ Comments URL: https://news.ycombinator.com/item?id=50208974 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50208974"
+    },
+    {
+      "id": "85e66ba4d847d90630c7",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: When can we trust AI in coding, and avoid the happy path issue?",
+      "url": "https://news.ycombinator.com/item?id=50209084",
+      "published_at": "2026-10-23T13:57:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "I have a question, and I hope you can clarify it. Consider this scenario: Claude code runs on a desktop to develop a solution, and its directive requires Codex to test everything it does under a different directive. The Codex directive is to refute Claude's test results, maintain its own test ledger, and return PASS or NO PASS. Claude cannot negotiate; it has to fix the NO PASS issues. Even with such a strict environment, I am ending up with problems, and of course, when asking Claude, the answer is \"This is on me; I did not do X and Y\"; when I ask it whether Codex checked it, \"Codex checked all but not this \"... So when can we trust the AI to do the full job, not just the happy path? Is there a better way to impose quality? I feel that on large projects, even if I upload Claude directives to re-read, Claude or Codex (we can switch roles) tends to drift and miss things. Comments URL: https://news.ycombinator.com/item?id=50209084 Points: 1 # Comments: 6",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209084"
+    },
+    {
+      "id": "ab76a565e2ed0c7a8043",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sonah, code reviewer that reads your agent's session, not only the diff",
+      "url": "https://github.com/getsonah/sonah",
+      "published_at": "2026-10-23T14:05:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey Everyone, After getting frustrated by Claude rewriting key functions and still making the test pass, was tinkering around with a review tool, that would track the assumptions and decisions the agent took, without me digging through the entire session. So ended up building Sonah. Sonah is basically a code reviewer that not only reads the code and diff but also the agent session that wrote the code, to understand the assumptions, and decisions your agent took along the way. And highlight important parts of the code that need your attention. Sonah uses your existing claude code/codex subscription (claude preferred for higher context window). You can try using below: npm install -g getsonah sonah doctor cd your-project && sonah review --format html --output ~/review.html Comments URL: https://news.ycombinator.com/item?id=50209232 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209232"
+    },
+    {
+      "id": "f7d6131ee89c59122d1d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Sonah, code reviewer that reads your agent's session, not only the diff",
+      "url": "https://github.com/getsonah/sonah",
+      "published_at": "2026-10-23T14:05:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey Everyone, After getting frustrated by Claude rewriting key functions and still making the test pass, was tinkering around with a review tool, that would track the assumptions and decisions the agent took, without me digging through the entire session. So ended up building Sonah. Sonah is basically a code reviewer that not only reads the code and diff but also the agent session that wrote the code, to understand the assumptions, and decisions your agent took along the way. And highlight important parts of the code that need your attention. Sonah uses your existing claude code/codex subscription (claude preferred for higher context window). You can try using below: npm install -g getsonah sonah doctor cd your-project && sonah review --format html --output ~/review.html Comments URL: https://news.ycombinator.com/item?id=50209232 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209232"
+    },
+    {
+      "id": "7c31fbde4e79ffccccce",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Turm.dev – Agent computers that are cheap, simple, and built in Europe",
+      "url": "https://turm.dev",
+      "published_at": "2026-10-23T14:06:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://turm.dev Comments URL: https://news.ycombinator.com/item?id=50209251 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209251"
+    },
+    {
+      "id": "ae55f75264bd82f8aa7e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Turm.dev – Agent computers that are cheap, simple, and built in Europe",
+      "url": "https://turm.dev",
+      "published_at": "2026-10-23T14:06:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://turm.dev Comments URL: https://news.ycombinator.com/item?id=50209251 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209251"
+    },
+    {
+      "id": "6acf50f754c10915dd9a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Popular AI Agent Skills Every Developer Should Know",
+      "url": "https://jsdev.space/30-agent-skills",
+      "published_at": "2026-10-23T14:11:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jsdev.space/30-agent-skills/ Comments URL: https://news.ycombinator.com/item?id=50209346 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209346"
+    },
+    {
+      "id": "8bd07c0a8ca20c2d1e79",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Vericto – Check AI agents' SQL before Postgres or MySQL runs it",
+      "url": "https://github.com/vericto/vericto-proxy",
+      "published_at": "2026-10-23T14:16:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vericto/vericto-proxy Comments URL: https://news.ycombinator.com/item?id=50209455 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209455"
+    },
+    {
+      "id": "fb8c2c9065bd392881db",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Kavela – AI Automations that do not fail silently",
+      "url": "https://kavela.ai",
+      "published_at": "2026-10-23T14:18:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Kavela’s closed beta is out. AI agent automations that do not fail silently. There are now 216 unique users in our closed-beta tests! It is my belief that Kavela will be a winner in the vertical of scaling the consumption of artificial intelligence. Most of our workflows today are manual, in Claude/Codex CLIs. Every workflow that works deserves a harness that can consume the intricacies, rulebooks and guidance it requires to succeed reliably, every single time. Kavela is that: a platform to scale prompts into repeatable workflows, with observability, task management and connectors all in one. Agents on Kavela are long-running and optimised for dynamic use. They maintain persistent file context, so Git repos run. Each agent run spins up an isolated computer to run tasks, so no two agents compete for the same resources, while still sharing and syncing files dynamically. Claude/Codex subs are one click away from being used on the platform. Kavela MCP allows you to promote sessions in your local workspace into repeatable cloud automations with a single ask. As mentioned, the closed beta is now live, and I am looking for testers! If creating reliable agent-first automations has been a pain for you, or you are looking to scale your use of tokens by bringing your workflows into the cloud, I want to work with you. Quick Links: App: https://kavela.ai Docs: https://docs.kavela.ai Closed Beta GC: https://t.me/kavelaAI Comments URL: https://news.ycombinator.com/item?id=50209500 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209500"
+    },
+    {
+      "id": "1a797b43bba2380558ba",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "MemoryTax: The Bitter Lesson of Agent Memory",
+      "url": "https://arxiv.org/abs/2610.29823",
+      "published_at": "2026-10-23T14:44:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2610.29823 Comments URL: https://news.ycombinator.com/item?id=50209933 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50209933"
+    },
+    {
+      "id": "7af8045d2ad114d9e616",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ask HN: Secure minimalistic web front-ends to Local LLM's?",
+      "url": "https://news.ycombinator.com/item?id=50210227",
+      "published_at": "2026-10-23T15:01:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Are there any secure minimalist web front-ends to Local LLM's? Anthropic are pushing me to local LLM's (opus 5.5 shock collars implemented on Opus 4.8) but if I am going to spend the duckets on the hardware I would like to share the hardware with others. Ideally No-JS. I plan to run Llama-3-70B-Abliterated or Hermes 3 70B. Comments URL: https://news.ycombinator.com/item?id=50210227 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50210227"
+    },
+    {
+      "id": "de799656a6fad7f0079e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How to get picked for authentication by coding agents",
+      "url": "https://armature.tech/library/auth-coding-agents-playbook",
+      "published_at": "2026-10-23T15:21:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://armature.tech/library/auth-coding-agents-playbook Comments URL: https://news.ycombinator.com/item?id=50210570 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50210570"
+    },
+    {
+      "id": "88ba2a1318aebe337506",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "SwapBacklinks – a free link exchange you run from your coding agent",
+      "url": "https://swapbacklinks.com",
+      "published_at": "2026-10-23T15:22:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://swapbacklinks.com Comments URL: https://news.ycombinator.com/item?id=50210579 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50210579"
+    },
+    {
+      "id": "0b29667aadce3e035c07",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Aurora Agentic Terminal",
+      "url": "https://aurora.shitworks.co",
+      "published_at": "2026-10-23T15:46:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://aurora.shitworks.co/ Comments URL: https://news.ycombinator.com/item?id=50210931 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50210931"
+    },
+    {
+      "id": "ade0011eef4f760e2ef5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Anyone else frustrated with mermaid diagrams?",
+      "url": "https://github.com/uberblick-ai/ablauf",
+      "published_at": "2026-10-23T15:52:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "I’ve been struggling with Mermaid in Markdown for a while. I appreciate the technical finesse of its rendering, but the diagrams are often unreadable. So we wrote an alternative that is optimized for MCP and LLMs while still looking good to humans. The LLM can position elements, and it stays Markdown-compatible. It’s MIT licensed, and I hope you can use it. our rational: https://uberblick.ai/blog/2026/why-we-dropped-mermaid Cheers Comments URL: https://news.ycombinator.com/item?id=50211015 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50211015"
+    },
+    {
+      "id": "70c51d5ffc074df0c260",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM Multi-Agent Systems Are Vulnerable to Herding and Runaway Cascades",
+      "url": "https://arxiv.org/abs/2610.30769",
+      "published_at": "2026-10-23T16:02:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2610.30769 Comments URL: https://news.ycombinator.com/item?id=50211188 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50211188"
+    },
+    {
+      "id": "f24cfab677e71e432e52",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Koala – Run AI Agents in Isolated Linux VMs on macOS",
+      "url": "https://kunalkushwaha.github.io/homebrew-koala",
+      "published_at": "2026-10-23T16:18:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kunalkushwaha.github.io/homebrew-koala/ Comments URL: https://news.ycombinator.com/item?id=50211429 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50211429"
+    },
+    {
+      "id": "10b84778a6dfbbaa1d5f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Open Source Mobile-Use MCP and AI Agent",
+      "url": "https://github.com/ghorbelhamdi/buddy-android",
+      "published_at": "2026-10-23T16:26:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ghorbelhamdi/buddy-android Comments URL: https://news.ycombinator.com/item?id=50211548 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50211548"
+    },
+    {
+      "id": "aa5603a6782dba228127",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "The model won't devour everything: three primitives of agent systems",
+      "url": "https://github.com/LiuBowenen/runtime-workspace-framework",
+      "published_at": "2026-10-23T16:46:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/LiuBowenen/runtime-workspace-framework Comments URL: https://news.ycombinator.com/item?id=50211851 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50211851"
+    },
+    {
+      "id": "9e8c73893e0f2942e0e8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "An LLM judge passed renders with defects I planted",
+      "url": "https://yamanahlawat.in/articles/llm-judge-same-code-different-scores",
+      "published_at": "2026-10-23T16:50:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://yamanahlawat.in/articles/llm-judge-same-code-different-scores Comments URL: https://news.ycombinator.com/item?id=50211931 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50211931"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-23T11:39:17.446950+00:00",
+      "last_success": "2026-10-23T17:07:22.474460+00:00",
       "count": 10,
-      "earliest": "2026-10-20T18:03:55+00:00",
+      "earliest": "2026-10-20T18:06:21+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-23T11:39:17.542896+00:00",
+      "last_success": "2026-10-23T17:07:22.742529+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-23T11:39:17.716743+00:00",
-      "count": 889,
+      "last_success": "2026-10-23T17:07:22.896077+00:00",
+      "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-23T11:39:17.830809+00:00",
+      "last_success": "2026-10-23T17:07:23.034895+00:00",
       "count": 30,
       "earliest": "2026-10-10T23:58:04+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-23T11:39:18.103313+00:00",
+      "last_success": "2026-10-23T17:07:30.384700+00:00",
       "count": 100,
-      "earliest": "2026-10-22T16:43:47+00:00",
+      "earliest": "2026-10-22T22:33:28+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-23T11:39:22.736800+00:00",
+      "last_success": "2026-10-23T17:07:38.492120+00:00",
       "count": 100,
-      "earliest": "2026-10-21T16:03:32+00:00",
+      "earliest": "2026-10-21T20:47:38+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-23T11:39:23.581359+00:00",
+      "last_success": "2026-10-23T17:07:40.050865+00:00",
       "count": 20,
       "earliest": "2026-10-02T20:19:57+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-23T11:39:24.271782+00:00",
+      "last_success": "2026-10-23T17:07:41.491322+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-23T11:39:24.619606+00:00",
+      "last_success": "2026-10-23T17:07:42.204336+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-23T11:39:24.922066+00:00",
+      "last_success": "2026-10-23T17:07:42.753935+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-23T11:39:25.383154+00:00",
-      "count": 10,
-      "earliest": "2026-09-25T03:31:52+00:00",
+      "last_success": "2026-10-23T17:07:43.581751+00:00",
+      "count": 9,
+      "earliest": "2026-10-07T23:22:59+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-23T11:39:40.644860+00:00",
+      "last_success": "2026-10-23T17:08:12.495020+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-23T11:39:40.801537+00:00",
-      "count": 1316,
+      "last_success": "2026-10-23T17:08:12.702608+00:00",
+      "count": 1317,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-23T11:39:46.741741+00:00",
+      "last_success": "2026-10-23T17:08:25.305329+00:00",
       "count": 3,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -61567,5 +61927,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-23T11:39:46.742357+00:00"
+  "collected_at": "2026-10-23T17:08:25.305800+00:00"
 }
