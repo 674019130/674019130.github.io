@@ -62123,34 +62123,82 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://pinrail.dev/blog/we-deserve-a-better-agent-human-interaction/ Comments URL: https://news.ycombinator.com/item?id=50215389 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50215389"
+    },
+    {
+      "id": "c94729453d882707e8dd",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Turn notifications into code with GitHub Copilot in Teams",
+      "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams",
+      "published_at": "2026-10-23T21:29:58+00:00",
+      "date_kind": "source_publication",
+      "evidence": "The new GitHub app in Teams brings notifications and Copilot together, helping teams turn issues into fixes and ship code faster without leaving the conversation. Get notified in channels, group chats, or private chats, then @mention GitHub to turn updates into action. Turn an issue notification into a pull request Get notified: A bug report arrives in Teams. Take action: @github investigates the issue, fixes the bug, and creates a pull request. Review and ship: Your team reviews, tests, and merges the fix. Get started Explore the new GitHub app in Microsoft Teams , previously called GitHub notifications. If you already have GitHub notifications installed, update the app to the latest version. Your existing notification capabilities will continue to work. If you use the legacy GitHub app, which will be renamed “GitHub (deprecated)” and retired on November 16, install the consolidated GitHub app using the link above to continue using Copilot in Teams. In the consolidated app, mention @GitHub and follow any prompts to connect your GitHub account and select a repository. Join the discussion within the GitHub Community . The post Turn notifications into code with GitHub Copilot in Teams appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "a081c914efee5b1169df",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quick Study",
+      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter",
+      "published_at": "2026-10-23T21:35:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no external libraries beyond Google Fonts. Tags: tools",
+      "discussion_url": ""
+    },
+    {
+      "id": "7a45885597b1415ccfa6",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.310",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
+      "published_at": "2026-10-23T23:39:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too - Fixed requests failing behind some gateways and compatible servers that reject the `effort-2025-11-24` beta value or mid-conversation system messages; Claude Code now retries without them - Fixed background cleanup deleting some recent files, such as pasted images, when `cleanupPeriodDays` is set to a very large value - Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense text, such as base64 or SVG, so the next request could fail again - Fixed file read permission prompts not showing where a symbolic link leads - Fixed a question's auto-continue timeout firing the moment the external editor closed after a long edit - Windows: Fixed PreToolUse and PermissionRequest hooks letting a tool call through when Git Bash is missing and the hook's command is only quoted strings, such as a quoted path - Improved auto mode's prompt before the first read outside the working directories: it now says when blocking those reads makes shell commands ask for permission - Improved memory use of non-interactive sessions (`-p`, Agent SDK) during compaction when the transcript file is very large - Improved a mod's `Image` to draw inside tmux with `allow-passthrough` and `focus-events` on, in kitty, Ghostty, and iTerm2 3.5+ with fullscreen rendering, where it showed only its `alt` text - Linux: Improved `/sandbox` and the sandbox startup warning to name Ubuntu's AppArmor restriction on user namespaces, and how to lift it, when it keeps bubblewrap from starting the sandbox - Changed the error for an MCP tool call that times out in a non-interactive session while the server's elicitation is unanswered: it now tells Claude that no answer came and not to repeat the call - [VSCode] Fixed pressing Enter on the plan review card's \"Send feedback and keep planning\" button approving the plan instead of sending your comments back - [VSCode] Fixed the panel showing \"Something went wrong\" after \"Switch branch & continue\" on a cloud session opened from Session history's Web tab - [Cloud sessions] Added Claude Code cloud sessions and Remote Control permissions to Enterprise custom roles, so Owners can control access to each by role - [Cloud sessions] Added a Choose file button to load a cloud environment's setup script from a file - [Cloud sessions] Fixed failed saves and archives in the cloud environment edit dialog showing no error inside the dialog - [Cloud sessions] Fixed failed routine API token actions showing only a toast; the error now appears in the routine edit dialog - [Cloud sessions] Improved the session start checklist to show a cloud environment's setup script output in a scrolling box - [Cloud sessions] Changed turning on Cloud sessions or Remote Control in admin settings to ask for confirmation and list the custom roles that have that permission - [Cloud sessions] Changed the cloud environment dialog to open network access, setup script and environment variables from rows instead of listing every editor at once - [Claude Tag] Fixed Claude Tag treating `!` commands such as `!restart` and `!help` as ordinary messages when sent in bold, italic or strikethrough - [Claude Tag] Fixed Claude Tag admin channel and workspace pages being replaced by a load error when a background refresh of the bundle list fails - [Claude Tag] Fixed Claude Tag's spend limits page in admin settings reporting that no channels match a filter while channel names are still loading - [Code Review] Fixed the Code Review admin section hiding its repositories and switches after a failed refresh of the repository list - [Code Review] Improved the Code Review admin section to retry the first load and show one Try again banner when it still fails",
+      "discussion_url": ""
+    },
+    {
+      "id": "448be8d2bcadca7bf016",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Usage metrics API adds usage from tools like OpenCode",
+      "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode",
+      "published_at": "2026-10-23T23:42:03+00:00",
+      "date_kind": "source_publication",
+      "evidence": "The Copilot usage metrics API now reports model usage from more of the tools your developers use with Copilot, including tools like OpenCode that weren’t previously captured in your reports. A new totals_by_client array is available in the enterprise, organization, enterprise-user, and organization-user 1-day and 28-day reports. What’s new Each totals_by_client entry represents one client and includes: client : The tool that sent the requests, such as opencode , claude_code , codex , zed , copilot_cli , github_app , cloud_agent , code_review , vscode , or jetbrains . Unrecognized clients are grouped under other . request_count : The number of successful model requests from the client. session_count : The number of distinct sessions from the client. token_usage : Prompt tokens, output tokens, and average tokens per request. totals_by_model : The same request and token metrics broken down by model, with a model_selection_mode that shows whether the model was requested directly ( user_selected ), chosen by auto ( auto ), or chosen by the product ( product_selected ). Selection modes that aren’t reported individually yet appear as other , and values that can’t be normalized appear as unknown . Why this matters More developers now use Copilot as the model provider behind tools outside the IDE. Because those tools often don’t send editor telemetry, their usage was missing from totals_by_ide and hard to account for. Counting requests on the server closes that gap, so you can see which tools drive Copilot usage, compare request and token volume across them, and base tool support and governance decisions on real usage. This is different from agent app activity , which counts jobs started by agent apps such as Claude and Codex on GitHub. totals_by_client measures model traffic, meaning requests and tokens, from any tool that uses Copilot. Important notes Scope: Enterprise, organization, enterprise-user, and organization-user reports, in both 1-day and 28-day versions. In the aggregated 28-day reports, totals_by_client appears in each day_totals entry. Access: Available to enterprise owners and billing managers, organization owners, and anyone with a custom organization or enterprise role that grants the View Copilot Metrics permission. The Copilot usage metrics policy must be enabled. Copilot code review and Copilot cloud agent: Requests from these clients report product_selected because the product chooses the model. Copilot code review models are reported as unknown . Request counts: request_count counts model calls, not prompts. One prompt can trigger several model calls, so don’t compare this field directly with prompt or interaction counts. Client identification: Clients are identified by the integration ID they send with each request. Treat client as a best-effort grouping, not a verified identity. Backward compatibility: This change is additive. Existing fields are unchanged, and totals_by_client is an empty array when there is no usage to report. Visit the Copilot usage metrics API documentation to get started. The post Usage metrics API adds usage from tools like OpenCode appeared first on The GitHub Blog .",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-23T21:24:34.929491+00:00",
+      "last_success": "2026-10-24T04:36:56.306013+00:00",
       "count": 10,
-      "earliest": "2026-10-20T18:06:21+00:00",
+      "earliest": "2026-10-22T18:12:58+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-23T21:24:35.062650+00:00",
+      "last_success": "2026-10-24T04:36:56.550848+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-23T21:24:35.213265+00:00",
+      "last_success": "2026-10-24T04:36:56.686963+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-23T21:24:35.333959+00:00",
+      "last_success": "2026-10-24T04:36:56.821973+00:00",
       "count": 30,
-      "earliest": "2026-10-11T00:52:37+00:00",
+      "earliest": "2026-10-12T04:57:07+00:00",
       "gap": false,
       "error": null
     },
@@ -62159,66 +62207,66 @@
       "count": 100,
       "earliest": "2026-10-23T07:09:02+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-10-23T21:24:38.473787+00:00",
       "count": 100,
       "earliest": "2026-10-22T05:23:03+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-23T21:24:39.284751+00:00",
+      "last_success": "2026-10-24T04:37:06.834477+00:00",
       "count": 20,
-      "earliest": "2026-10-02T20:19:57+00:00",
+      "earliest": "2026-10-03T23:07:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-23T21:24:40.030422+00:00",
+      "last_success": "2026-10-24T04:37:07.547757+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-23T21:24:40.376747+00:00",
+      "last_success": "2026-10-24T04:37:07.888349+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-23T21:24:40.741923+00:00",
+      "last_success": "2026-10-24T04:37:08.216201+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-23T21:24:41.196103+00:00",
-      "count": 10,
-      "earliest": "2026-10-07T23:22:59+00:00",
+      "last_success": "2026-10-24T04:37:08.617666+00:00",
+      "count": 9,
+      "earliest": "2026-10-08T16:53:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-23T21:24:56.257999+00:00",
+      "last_success": "2026-10-24T04:37:24.118148+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-23T21:24:56.428909+00:00",
+      "last_success": "2026-10-24T04:37:24.291438+00:00",
       "count": 1318,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-23T21:25:04.224013+00:00",
+      "last_success": "2026-10-24T04:37:31.525559+00:00",
       "count": 3,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -62299,5 +62347,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-23T21:25:04.224702+00:00"
+  "collected_at": "2026-10-24T04:37:31.526139+00:00"
 }
