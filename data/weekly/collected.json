@@ -62365,6 +62365,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50217069"
     },
     {
+      "id": "04c7d0cce5e80ae0c0a9",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.11",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.11",
+      "published_at": "2026-10-24T00:30:13+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Speech Ollama can now generate [speech](https://docs.ollama.com/capabilities/speech) on macOS. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible `/v1/audio/speech` endpoint. ```sh ollama run phonon \"Hello from Ollama.\" ``` ## d3 decision models [d3](https://ollama.com/library/d3) brings vLLM Semantic Router's decision models to Ollama. Give a model text, structured state, or an image, and ask it to classify, answer yes or no, or score options with probabilities. The family includes 2B, 4B, 9B, and 27B sizes. ```sh ollama run d3 \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\" ``` ## New Contributors * @SynapShift made their first contribution in https://github.com/ollama/ollama/pull/19173 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.10...v0.40.11-rc0",
+      "discussion_url": ""
+    },
+    {
       "id": "e2119866298525803290",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -62759,102 +62771,330 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://nokku.localhost/interview-prep/dsa/graphs Comments URL: https://news.ycombinator.com/item?id=50222316 Points: 2 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=50222316"
+    },
+    {
+      "id": "3fddecb8bde5767d6949",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI agent swarms test if new CVEs are exploitable in your env",
+      "url": "https://app.enclave.ai/threat-feed",
+      "published_at": "2026-10-24T16:00:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://app.enclave.ai/threat-feed Comments URL: https://news.ycombinator.com/item?id=50222559 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50222559"
+    },
+    {
+      "id": "85edceb73eaf433d263c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: AI agent swarms test if new CVEs are exploitable in your env",
+      "url": "https://app.enclave.ai/threat-feed",
+      "published_at": "2026-10-24T16:00:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://app.enclave.ai/threat-feed Comments URL: https://news.ycombinator.com/item?id=50222559 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50222559"
+    },
+    {
+      "id": "339b051d4c5ddb79dbb3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Giving an agent a tool does not make it use the tool",
+      "url": "https://yamanahlawat.in/articles/agent-ignores-your-mcp-tool",
+      "published_at": "2026-10-24T16:18:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://yamanahlawat.in/articles/agent-ignores-your-mcp-tool Comments URL: https://news.ycombinator.com/item?id=50222721 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50222721"
+    },
+    {
+      "id": "d86dbc99c7b475fcfbb5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "I'm Addicted to Coding the N64's GPU [video]",
+      "url": "https://www.youtube.com/watch?v=WEoRgQH08MA",
+      "published_at": "2026-10-24T16:34:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=WEoRgQH08MA Comments URL: https://news.ycombinator.com/item?id=50222873 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50222873"
+    },
+    {
+      "id": "0ccb3af695fd3bcea4c1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
+      "url": "https://github.com/eliasaronson/lobole",
+      "published_at": "2026-10-24T16:58:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "I could never get used to FreeCAD, so I built my own. It turns out Claude is really good at using it. Loböle is a parametric B-Rep CAD built on OpenCASCADE and Vulkan, with sketches, assemblies, drawings, FEM and CAM. The GUI, Python scripts and AI agents all go through the same commands, so an agent can do anything you can in the GUI. The engine, watch and bicycle in the README were each built by Claude writing a script against it. Comments URL: https://news.ycombinator.com/item?id=50223070 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223070"
+    },
+    {
+      "id": "16e74c8acb1284327a34",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Argus- open source security platform to protect against agentic attacks",
+      "url": "https://github.com/thomasunise/argus",
+      "published_at": "2026-10-24T17:13:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/thomasunise/argus Comments URL: https://news.ycombinator.com/item?id=50223201 Points: 16 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223201"
+    },
+    {
+      "id": "b18eed4cc60b96b7ea82",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How LLM-Based Penetration Testing Harnesses Work",
+      "url": "https://utkusen.substack.com/p/how-llm-based-penetration-testing",
+      "published_at": "2026-10-24T17:15:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://utkusen.substack.com/p/how-llm-based-penetration-testing Comments URL: https://news.ycombinator.com/item?id=50223210 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223210"
+    },
+    {
+      "id": "31d0110cb59364cf0c63",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
+      "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring",
+      "published_at": "2026-10-24T17:20:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/ Comments URL: https://news.ycombinator.com/item?id=50223240 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223240"
+    },
+    {
+      "id": "fb1a1baec3155f74961c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Don't Sleep on Single-Agent Systems",
+      "url": "https://www.openhands.dev/blog/dont-sleep-on-single-agent-systems",
+      "published_at": "2026-10-24T17:44:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.openhands.dev/blog/dont-sleep-on-single-agent-systems Comments URL: https://news.ycombinator.com/item?id=50223461 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223461"
+    },
+    {
+      "id": "6668e050eaa045654462",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A Platform to Find Essays, personally recommended to you",
+      "url": "https://essaypod.com",
+      "published_at": "2026-10-24T18:01:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Reading a book is great, when you know it will be good. Reading news is great, when you know it will be interesting, and the same with essays. Inability to find great content to read became a huge pain point for me after I read through Paul Graham's essays. Then I decided to build a tiny scraper app that would crawl seed websites (I crawled paulgraham.com and situationalawareness.ai) and then embed the content of the site. Among the scraped essays, there were ones I was extremely happy about. To find essays that best fit my taste, I just represented myself as a mean vector of essays I liked, then I used cosine similarity to find gems among tons of garbage that the scraper found. I turned this into a platform which in principle is quite similar, except that people are the ones sharing essays (of their own or external, like on hacker news) and the algorithm is more advanced. What differentiates this from substack or HN is summaries of essays which save time and reduce risk of wasting time and an algorithm that ensures that you find essays that people like you liked the most. I can explain the technical details, if you'd like. Thanks, for your attention. Comments URL: https://news.ycombinator.com/item?id=50223618 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223618"
+    },
+    {
+      "id": "fbb3e0469d8721dc952a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Trend Video – Put your photo into viral AI video templates",
+      "url": "https://aitrendvideo.net",
+      "published_at": "2026-10-24T18:03:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://aitrendvideo.net Comments URL: https://news.ycombinator.com/item?id=50223635 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223635"
+    },
+    {
+      "id": "fca75f3541a86dc0eb79",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The missing clipboard history for macOS that idles at 16 MB",
+      "url": "https://roush.io/paste-buff",
+      "published_at": "2026-10-24T18:15:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Been using Raycast solely for it's paste history feature. When profiling saw high memory usage and decided to see how performant I could make a tool that only does paste history. Had Claude start with Tauri, GPUI then finally appkit code. Comments URL: https://news.ycombinator.com/item?id=50223715 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223715"
+    },
+    {
+      "id": "a9822b55adb3903aeb6d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agentsh – A Decentralized, Scalable Multiagent Harness",
+      "url": "https://github.com/microsoft/Agensh",
+      "published_at": "2026-10-24T18:19:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/microsoft/Agensh Comments URL: https://news.ycombinator.com/item?id=50223759 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223759"
+    },
+    {
+      "id": "ccdcc59cb1089e9315f1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A randomized controlled trial run inside an agent simulation",
+      "url": "https://jameswniu.github.io/multi-agent-causal-marriage-simulation",
+      "published_at": "2026-10-24T18:20:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jameswniu.github.io/multi-agent-causal-marriage-simulation/ Comments URL: https://news.ycombinator.com/item?id=50223763 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223763"
+    },
+    {
+      "id": "c2399bb10bf9b571dd4a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: A randomized controlled trial run inside an agent simulation",
+      "url": "https://jameswniu.github.io/multi-agent-causal-marriage-simulation",
+      "published_at": "2026-10-24T18:20:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jameswniu.github.io/multi-agent-causal-marriage-simulation/ Comments URL: https://news.ycombinator.com/item?id=50223763 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50223763"
+    },
+    {
+      "id": "b2aa94bd900de7e3657f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Building agents: When to fold subagents into your main agent loop",
+      "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+      "published_at": "2026-10-24T19:02:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop Comments URL: https://news.ycombinator.com/item?id=50224068 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50224068"
+    },
+    {
+      "id": "287b7fe5c4676095d5f8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Narro – Read web pages and Kindle books using local AI voices",
+      "url": "https://github.com/swrdfish/narro",
+      "published_at": "2026-10-24T19:37:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted a read-aloud extension that could read from the Kindle Online Reader. The ones I tried used voices I did not enjoy listening to or had a UX that was too cluttered or annoying or needed a signup. So I decided to vibe code my own. It is open source and uses open weight models that run in the browser. https://swrdfish.github.io/Narro/ Comments URL: https://news.ycombinator.com/item?id=50224373 Points: 5 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50224373"
+    },
+    {
+      "id": "eddc6e5a701437f0c41a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Mini-Swe-Agent",
+      "url": "https://github.com/swe-agent/mini-swe-agent",
+      "published_at": "2026-10-24T19:46:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/swe-agent/mini-swe-agent Comments URL: https://news.ycombinator.com/item?id=50224453 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50224453"
+    },
+    {
+      "id": "251f9e10aa0f464823d1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Agent Compute Engine and expanded agent governance",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
+      "published_at": "2026-10-24T20:44:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance Comments URL: https://news.ycombinator.com/item?id=50225056 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50225056"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-24T15:57:34.830711+00:00",
+      "last_success": "2026-10-24T20:49:54.066923+00:00",
       "count": 10,
       "earliest": "2026-10-22T18:12:58+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-24T15:57:35.063790+00:00",
+      "last_success": "2026-10-24T20:49:54.249842+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-24T15:57:35.270812+00:00",
+      "last_success": "2026-10-24T20:49:54.379148+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-24T15:57:35.418577+00:00",
+      "last_success": "2026-10-24T20:49:54.490515+00:00",
       "count": 30,
       "earliest": "2026-10-12T15:54:36+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-24T15:57:44.925691+00:00",
+      "last_success": "2026-10-24T20:49:55.078559+00:00",
       "count": 100,
-      "earliest": "2026-10-23T15:53:08+00:00",
+      "earliest": "2026-10-23T19:33:30+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-24T15:57:46.009467+00:00",
+      "last_success": "2026-10-24T20:49:55.978671+00:00",
       "count": 100,
-      "earliest": "2026-10-22T12:07:59+00:00",
+      "earliest": "2026-10-22T14:28:05+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-24T15:57:47.501313+00:00",
+      "last_success": "2026-10-24T20:49:56.733654+00:00",
       "count": 20,
       "earliest": "2026-10-03T23:07:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-24T15:57:48.833508+00:00",
+      "last_success": "2026-10-24T20:49:57.423140+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-24T15:57:49.435175+00:00",
+      "last_success": "2026-10-24T20:49:57.780746+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-24T15:57:49.969460+00:00",
+      "last_success": "2026-10-24T20:49:58.126135+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-24T15:57:50.790513+00:00",
-      "count": 9,
+      "last_success": "2026-10-24T20:49:58.565930+00:00",
+      "count": 10,
       "earliest": "2026-10-08T16:53:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-24T15:58:20.947016+00:00",
+      "last_success": "2026-10-24T20:50:15.122721+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-24T15:58:21.162374+00:00",
+      "last_success": "2026-10-24T20:50:15.283303+00:00",
       "count": 1318,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-24T15:58:33.943181+00:00",
+      "last_success": "2026-10-24T20:50:22.747139+00:00",
       "count": 3,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -62935,5 +63175,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-24T15:58:33.943801+00:00"
+  "collected_at": "2026-10-24T20:50:22.747781+00:00"
 }
