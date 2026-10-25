@@ -63145,6 +63145,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50227330"
     },
     {
+      "id": "42567a1a84786ed871ec",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ReVault – new secure archive format",
+      "url": "https://news.ycombinator.com/item?id=50227527",
+      "published_at": "2026-10-25T02:01:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "reVault is a new, secure-by-default archive format called a lockbox, designed to be simple to use. I've been working on reVault for about 2 years. It was originally written in Dart, but with the improvements in AI, I decided to port it to Rust using AI. It's now in beta, so I'm looking for feedback, particularly around the different language bindings. A lockbox is encrypted, signed and compressed by default. Each can be disabled selectively. - Hybrid post-quantum or passphrase encryption, including metadata. - Zstd compression. - Pure Rust libraries wherever possible. We intend to phase out remaining C code as alternatives become available. The project has been scanned using OpenAI's Daybreak cyber security tools. The manual is a work in progress: https://docs.revault.onepub.dev/ reVault supports Linux, macOS and Windows, x64 and arm64, plus Wasm. The core is Rust, with bindings for C/C++, Java, Dart, Python, Ruby, JS/TypeScript, Go, C#, Kotlin, Lua, PHP and Swift. Within a lockbox you can store: - Files, directories, permissions and symlinks. - Variables. - Forms. Variables, forms and the lockbox itself can have descriptions. reVault uses a portable vault (just another lockbox with structured content) to hold your keys, contacts' keys, lockbox aliases and form definitions. It ties into your platform's secure store, so logging into your desktop unlocks your vault. You don't have to enter a passphrase every time you access a lockbox. You can disable this. There are lots of shortcuts. Creating a lockbox stores an alias in your vault, based on its filename or a name you choose: lbx create /some/path/mybox.lbox lbx mybox open --duration 1h lbx mybox var set KEY VALUE Set a default lockbox and you can leave its name out: lbx session default mybox lbx var get KEY You can mirror a directory tree into a lockbox and update it when the directory changes: lbx store.lbox mirrors project create --from ./project --to /projects/project lbx store.lbox mirrors update The API lets you read, write and seek within files without extracting them to the filesystem. Each lockbox has a table of contents, so extracting a single file from a multi-gigabyte lockbox is fast. Recovery Updates are transactional, with automatic rollback for failed updates. The format is designed for recovery: content is stored in pages, allowing unaffected content to be recovered if part of a lockbox is corrupted. Sharing An encrypted lockbox is more useful if you can share it. reVault has an open-source keyserver for exchanging public keys, with validation through a second trusted channel. It's still experimental. OnePub has donated a server to run a single keyserver. If you're interested in donating resources, I'd like to bring up a second redundant server. It's pure Rust, uses under 100 MB RSS and supports rate limits. To publish your default profile's public key: lbx vault profiles email you@example.com lbx vault profiles publish Give the publish code to your contact. They can import your key: lbx vault contacts receive Display your profile's fingerprint and exchange it through a second trusted channel: lbx vault profiles fingerprint Repeat the process in the opposite direction to get their key. Once you have it, grant them access to your default lockbox: lbx access grant alice You can then email the encrypted lockbox to Alice. To install the CLI and get started: cargo install revault_cli lbx vault init lbx completion install Completion installation detects your shell. To diagnose issues: lbx doctor The language bindings are published to their respective package repositories. I'm looking for constructive criticism of the project on its own merits, particularly the APIs and language bindings. I'm not interested in a debate about using AI. Comments URL: https://news.ycombinator.com/item?id=50227527 Points: 9 # Comments: 5",
+      "discussion_url": "https://news.ycombinator.com/item?id=50227527"
+    },
+    {
       "id": "90aafdeda2faa83d92ad",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -63433,6 +63445,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50233097"
     },
     {
+      "id": "74409f69f19b242d9d72",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: QualityLayer, put the engineer back in the loop of your coding agent",
+      "url": "https://qualitylayer.dev",
+      "published_at": "2026-10-25T16:08:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://qualitylayer.dev/ Comments URL: https://news.ycombinator.com/item?id=50233097 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233097"
+    },
+    {
       "id": "e114b4bc553f493cf456",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -63467,41 +63491,197 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://age-of-product.com/product-backlog-refinement-agent/ Comments URL: https://news.ycombinator.com/item?id=50233182 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50233182"
+    },
+    {
+      "id": "624b20d344cf9b380f3c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Repotruck – Mirror and organize GitHub repos with a TUI and MCP server",
+      "url": "https://sametcn99.github.io/repotruck",
+      "published_at": "2026-10-25T16:29:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://sametcn99.github.io/repotruck/ Comments URL: https://news.ycombinator.com/item?id=50233315 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233315"
+    },
+    {
+      "id": "cc4a35d1479f7bb560fa",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Radian, an agent puts development workflow on autopilot",
+      "url": "https://getrad.dev",
+      "published_at": "2026-10-25T16:41:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "I have built an indie hacker project; my main flow was: 1. chatting with Claud Code about the general plan 2. assigning slices of work to other worker agents like Pi + DeepSeek 4.1 Flash 3. building in parallel 4. Claud Code reviews when done, runs tests, and merges after I validate It worked, but with a lot of glue in the middle, so I built radian + arc into the same binary. Radian: a compact, pragmatic agent that has enough tooling to solve a small coding task end to end; it does not try to be a plugin platform. You can still extend it via MCP, skills, or hooks to extend its capabilities. I think plugins are great, but a lot of them are for humans. I'm trying to remove humans from the loop. Humans are at the start and end of the loop. arc: built into the radian binary; * it can get work sent from another agent * assign work items to concurrent headless radian agents * automatically review, CICD, integrate locally * humans can still be in the loop but not at the agent conversation or code review level, but at the work item approval/review level. * shows all of the above in a plan view or Kanban board in TUI. I have been heavily dogfooding, and Radian + arc basically built themselves in the last couple of weeks, with me just being a product manager/scrum master and qa. radian + arc are open source at https://github.com/hisea/radian What do you think about this approach? Looking for ideas to make Radian better or fit more scenarios. Comments URL: https://news.ycombinator.com/item?id=50233447 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233447"
+    },
+    {
+      "id": "a4f77e30d24bd35d0c14",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Junior – an open-source AI junior engineer that runs on your Mac",
+      "url": "https://github.com/usejunior-sh/junior",
+      "published_at": "2026-10-25T16:45:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm Samar, a software engineer. I built Junior because I was spending more time fixing CI issues, babysitting PRs and resolving merge conflicts. I thought maybe i should automate all of it, and that's why I started building Junior. Junior is an agent that runs locally on macOS and picks up that kind of work. It connects with my Linear, Slack, Github etc and autopicks work for himself. It works on it and shares a report for me to review. It's open source under. I'd love feedback, especially on the permission model and how autonomous should it work. Happy to answer anything. Comments URL: https://news.ycombinator.com/item?id=50233491 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233491"
+    },
+    {
+      "id": "bf28aa65953cbd7baa5c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Open Accountant – AI-customizable budgeting app for freelancers",
+      "url": "https://github.com/finereli/open-accountant",
+      "published_at": "2026-10-25T18:18:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "This is my own very opinionated take on personal accounting / budgeting for freelancers and small business owners operating in multiple currencies. A lot of this is influenced by my circumstances: - consultant / freelancer / business owner with multiple revenue streams - revenue fluctuates a lot and changes month to month - we're nomad, so currencies and shops change a lot, but categories stay stable - mobile and agentic first (PWA and MCP) with good desktop support on top - import from Wise, Plaid (so most banks), CSV, + screenshots and PDFs from mobile apps when all else fails - automatic categorization that does the right thing 90% of the time and learns for your corrections - deployed on a CloudFlare account (free account is usually enough) Think of this as a template - just hand the repo URL to your agent and go wild. This is built to be infinitely malleable and extendable because accounting setups and needs differ so much between people. Extracted from my own heavily used setup after removing all the private and unique bits. May we all take control of our funds, each in our unique way. Comments URL: https://news.ycombinator.com/item?id=50234412 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50234412"
+    },
+    {
+      "id": "ba0b94b1950cb4304266",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Muxer – Control cmux terminals from Android",
+      "url": "https://github.com/gantoine/muxer",
+      "published_at": "2026-10-25T18:25:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! As an avid user of cmux ( https://cmux.com/ ), I wanted a way to control terminal and agent sessions from my Android phone, so I built Muxer. The app talks to a tiny relay over HTTPS, that then talks to cmux through its local socket, and gives you to ability to: - Answer agent permission requests, questions and plans from a notification - Reply to Claude Code, Codex and Pi chat sessions with text, voice, @ file mentions and photos - Receive all cmux notification, with inline replies, bubbles and background delivery. - Use a live terminal with sticky modifier keys and local scrollback - Share text and links from any app to an agent - Organize workspaces - Manage cmux Cloud VMs and automations - Lock the app with your fingerprint, face or screen lock Enjoy, and let me know what you think! Comments URL: https://news.ycombinator.com/item?id=50234491 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50234491"
+    },
+    {
+      "id": "4361dd89436098147ace",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Optio – A self-hosted orchestration platform for AI agents",
+      "url": "https://optio.host",
+      "published_at": "2026-10-25T18:37:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! I shared Optio here back in March. Originally it was focused on getting swarms of coding agents (claude code/codex) to drive PRs towards a merge by automatically resuming them on CI failures or PR comments. Since then, I've reworked the project to be a general platform for running any kind of AI workflow on your infra by allowing users to configure each component of a possible workflow: When: On demand, a cron schedule, or triggered by external events such as a webhook, slack message, ticket (jira/linear/gh), pagerduty/datadog/alertsmanager/pylon/sentry. Where: In a k8s pod or any machine you have installed the optio daemon on (I use my laptop). Who: Any harness you prefer (Claude Code, Codex, Gemini, Pi, etc.) What/Why: You can format parameters from the triggers directly into the prompts and then configure if the agent should exit, be resumed automatically, or be persistent. You can either define workflows in the web ui or as yaml files that get synced to the orchestrator (ai config-as-code). I've also built native iOS and Android apps so you can connect to your cluster and create/manage agents remotely. The marketing page is at https://optio.host and the code is still open source at https://github.com/jonwiggins/optio Would love feedback or any thoughts you might have on how I could make it better! Comments URL: https://news.ycombinator.com/item?id=50234643 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50234643"
+    },
+    {
+      "id": "5a53ca19c61c4cd35476",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Zubspace.gg – remake of 30yo Subspace game, a space MMO in the browser",
+      "url": "https://zubspace.gg",
+      "published_at": "2026-10-25T19:10:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey all, SubSpace has been my favorite game since I was a kid playing it in 1997, and its always been a dream of mine to rebuild it for the browser so I could play from any OS and enjoy with others instantly. Here it is: https://zubspace.gg It's open source too: https://github.com/pkieltyka/zubspace The project is written in Rust targets WASM+WebGL and uses WebRTC data channels for its networking layer for low latency game play :) just load up your favorite agent on it, and feel free to extend it Comments URL: https://news.ycombinator.com/item?id=50235012 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235012"
+    },
+    {
+      "id": "082ce2395591df40e513",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: SQLite-on-object storage using GCS Appendable Objects",
+      "url": "https://github.com/fatlotus/sqlite-on-gcs-rapid",
+      "published_at": "2026-10-25T19:50:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Recently, I have been playing around with GCS Rapid, a new API in GCS that lets you append to an existing object. It's pretty fast, and it's cool that you can do a log-structured merge tree on top to get a durable database without needing to run a server. Disclaimer: I am a Google employee, but this is not an official Google product. Do not use this code in production; it has 0 production airmiles and was written with AI. Comments URL: https://news.ycombinator.com/item?id=50235408 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235408"
+    },
+    {
+      "id": "745a658daf9a3a60f1ba",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hycli – reverse-engineer websites into CLI and MCP tools for AI agents",
+      "url": "https://github.com/Hybirdss/Hycli",
+      "published_at": "2026-10-25T19:51:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Hybirdss/Hycli Comments URL: https://news.ycombinator.com/item?id=50235425 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235425"
+    },
+    {
+      "id": "fe33ec1daa52f1e302d6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ledge – an open-source app that puts the MacBook notch to work",
+      "url": "https://ledgeapp.dev",
+      "published_at": "2026-10-25T20:04:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Ledge is free and open-source MacBook app that puts your idle notch into the work. It transforms the static notch into a status area: music, your next meeting, and more. It also keeps your agents work even when your lid is shut. Feel free to reach out if you have any feedback! Comments URL: https://news.ycombinator.com/item?id=50235534 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235534"
+    },
+    {
+      "id": "78a7996a4e1588c632ce",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MuscleMemory – procedural memory for coding agents, proven by tests",
+      "url": "https://github.com/TheWariend/MuscleMemory",
+      "published_at": "2026-10-25T20:19:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/TheWariend/MuscleMemory Comments URL: https://news.ycombinator.com/item?id=50235670 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235670"
+    },
+    {
+      "id": "e07788093eebab34a063",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MTA.rip: a train visualizer that shows congestion",
+      "url": "https://mta.rip?station=127&route=1&view=trackmap",
+      "published_at": "2026-10-25T20:29:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "It bugged me recently that the New York City subway countdown clocks show an estimated time that is often inaccurate. Since many of the delays are due to other trains on the same track, I figured: why not just show the trains? Source code: https://github.com/fatlotus/mta-dot-rip/ . Disclaimer: This project was written with AI. The code is very hacky, I wouldn't use it for learning if you're just getting started with Go or JavaScript. Comments URL: https://news.ycombinator.com/item?id=50235759 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235759"
+    },
+    {
+      "id": "5b79dbae2be07b55ca01",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentTrust – Zero-trust security and human approvals for AI agents",
+      "url": "https://github.com/SRN0129/Agenttrust",
+      "published_at": "2026-10-25T20:46:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/SRN0129/Agenttrust Comments URL: https://news.ycombinator.com/item?id=50235909 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235909"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-25T16:19:34.770698+00:00",
+      "last_success": "2026-10-25T20:51:07.227569+00:00",
       "count": 10,
       "earliest": "2026-10-22T18:12:58+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-25T16:19:35.012647+00:00",
+      "last_success": "2026-10-25T20:51:07.532572+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-25T16:19:35.115474+00:00",
+      "last_success": "2026-10-25T20:51:07.714895+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-25T16:19:35.233260+00:00",
+      "last_success": "2026-10-25T20:51:07.825638+00:00",
       "count": 30,
       "earliest": "2026-10-12T15:54:36+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-25T16:19:42.821420+00:00",
+      "last_success": "2026-10-25T20:51:08.351265+00:00",
       "count": 100,
-      "earliest": "2026-10-24T15:16:50+00:00",
+      "earliest": "2026-10-24T22:44:35+00:00",
       "gap": false,
       "error": null
     },
@@ -63510,59 +63690,59 @@
       "count": 100,
       "earliest": "2026-10-22T18:00:15+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-25T16:19:50.955637+00:00",
+      "last_success": "2026-10-25T20:51:18.017636+00:00",
       "count": 10,
       "earliest": "2026-10-15T19:22:06+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-25T16:19:51.320731+00:00",
+      "last_success": "2026-10-25T20:51:18.618138+00:00",
       "count": 10,
       "earliest": "2026-10-13T08:26:52+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-25T16:19:51.719354+00:00",
+      "last_success": "2026-10-25T20:51:19.123651+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-25T16:19:52.014132+00:00",
+      "last_success": "2026-10-25T20:51:19.508567+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-25T16:19:52.494929+00:00",
+      "last_success": "2026-10-25T20:51:20.138237+00:00",
       "count": 10,
       "earliest": "2026-10-08T16:53:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-25T16:20:00.253012+00:00",
+      "last_success": "2026-10-25T20:51:32.652619+00:00",
       "count": 1,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-25T16:20:00.450154+00:00",
+      "last_success": "2026-10-25T20:51:32.831443+00:00",
       "count": 1318,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-25T16:20:05.285923+00:00",
+      "last_success": "2026-10-25T20:51:39.161437+00:00",
       "count": 2,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -63643,5 +63823,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-25T16:20:05.286572+00:00"
+  "collected_at": "2026-10-25T20:51:39.161914+00:00"
 }
