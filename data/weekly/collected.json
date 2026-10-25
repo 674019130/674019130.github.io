@@ -62999,102 +62999,390 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance Comments URL: https://news.ycombinator.com/item?id=50225056 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50225056"
+    },
+    {
+      "id": "f301a5317810e3082664",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Claude Code(and others) embedded in your app",
+      "url": "https://github.com/gtanczyk/genaicode",
+      "published_at": "2026-10-24T20:54:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "I started this project in 2024 when I got fascinated with LLMs, and what I did was a coding agent (CLI -> interactive -> GUI). I also added an integration with Vite for having it embedded inside my apps(mostly games). Few months ago I pivoted it to become a low profile AI provider wrapper library (think jQuery for LLM usage), because I realized there is no point to have custom coding agent. Recently I did yet another pivot, and now it is a solution that allows you to embed Claude Code inside of your app, and use it directly from there for 1. development, 2. every day ops and automate the tasks in the app In theory all you need to try it is this command: `npx genaicode embed`, I wonder if anyone would like to give it a try, and let me know how it worked! Comments URL: https://news.ycombinator.com/item?id=50225165 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50225165"
+    },
+    {
+      "id": "4077a3dcb1d91665f26f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Perch, a calm Mac app for juggling Claude Code sessions",
+      "url": "https://perchfocus.com",
+      "published_at": "2026-10-24T21:01:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm an engineer, but I also hate using tools that make things overcomplicated. It's also tough with the new pace of AI-driven development to really get into the flow state, and maintain (still needed!) focus on 1 thing. So I built a tool that I actually want to use every day. Curious if others would find this useful, too, or have any feedback? Like if it's nearly there, what changes would make this a win for your workflow? Details: - It's a Mac app (Apple Silicon) that runs your Claude Code sessions side by side. Each piece of work gets a \"context\" with its own session, next steps, status, PRs, and links. - The dashboard groups contexts by whose move it is: yours, waiting on a reviewer or teammate, Claude working, or idle. You get a notification when a session needs you or a PR gets review comments. - For non-engineers, there's a Chat view instead of the terminal, a guided Claude Code install, and folder pickers instead of paths. Engineers can stay in the real Claude Code terminal. - It runs the actual claude CLI, and sessions keep running if you quit Perch. You can also import your existing Claude Code sessions. - Everything stays on your Mac. There's no account and no analytics, and crash reports are opt-in. Comments URL: https://news.ycombinator.com/item?id=50225233 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50225233"
+    },
+    {
+      "id": "73a24281aa0e0c17e6f1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Sevenbox, find what an AI agent's wrong decision affected",
+      "url": "https://github.com/sevenboxlabs/sevenbox",
+      "published_at": "2026-10-24T21:09:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/sevenboxlabs/sevenbox Comments URL: https://news.ycombinator.com/item?id=50225322 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50225322"
+    },
+    {
+      "id": "07b23afd96b7dcf87734",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tributary – Discover who influenced your favorite musicians",
+      "url": "https://tributary.music",
+      "published_at": "2026-10-24T21:51:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "tributary.music uses artists' own accounts & critics' writing to determine an artist's influences. It pairs one song from the artist with one from the influence so you can directly hear similarities, differences, and how the sound evolved. I had been in a bit of a funk finding new music to listen to. Spotify's Discover Weekly lost its charm for me a while ago. This led me to start digging into the influences of some of my favorite artists to see if I'd like their music too. I did. I then wanted to scale that so it wasn't so much manual work. Claude & ChatGPT did most of the heavy lifting around finding & summarizing articles and influences. I found the result compelling so I wanted to publish and share it. I've now found a few new artists in my rotation. I can't believe I never listened to Kraftwerk! I found them via MGMT -> Orchestral Manoeuvres in the Dark -> Kraftwerk. I hope you can find some interesting music too. Comments URL: https://news.ycombinator.com/item?id=50225727 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50225727"
+    },
+    {
+      "id": "18d9323b3329d2aeaa82",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A client-side adaptive cognitive test measuring micro-hesitations",
+      "url": "https://kat-assessment.com",
+      "published_at": "2026-10-24T21:56:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! I’m not a software engineer by trade. My background is in behavioral science and human-computer interaction, but I wanted to solve a specific problem I found when applying for jobs which is the logical test. They are booooring, easy to cheat on if you really want to and provides very limited information about people. I built this prototype from scratch sing AI to bring my idea to life. So now I've been working on this side project for a Cognitive Adaption Engine (CAT/KAT in swedish) for about three weeks. Many pre-employment screening tests i've done use a static item bank and are very liberal with the time allowed on each question, making it easy for Vision LLMs or bots to beat. I wanted to see if I could build a fast, client-side engine (JS/SVG) that combats this problem by measuring certain biometric cognitive signatures like \"switch cost\" (how long it takes for your brain to re-adjust when logical rules change) and \"post error-slowing\". To go beyond the simple grading of correct/incorrect, this test dynamically gives you waves of patterns/challenges through a local item bank based on your millisecond response times. If you use an LLM, the constant latencies gets punished with a lower score. If they use a script, the complete lack of natural human variance will be picked up on. I am currently trying to calibrate a baseline and need high-aptitude users to stress-test it and to provide more data. It also makes it very fast to complete. Everything runs 100% locally in your browser and since I did use AI, I would love your feedback on how the architecture holds up and the technical approach to anti-cheating or anything that comes to mind on this topic. (Optional) When you finish the test, you can press Ctrl + Shift + X on the results page which unlocks a hidden admin console. There you can see more info on your performance and even download a HR-pdf that translate your data into three tailored interview questions. Unfortunately the admin page is in Swedish, but I believe you will get the idea. Comments URL: https://news.ycombinator.com/item?id=50225764 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50225764"
+    },
+    {
+      "id": "743108c2ea4ca63a79f4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Kevlar = MCP Firewall for LLM's",
+      "url": "https://github.com/Ablation-Tool/kevlar",
+      "published_at": "2026-10-24T22:24:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Ablation-Tool/kevlar Comments URL: https://news.ycombinator.com/item?id=50226016 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50226016"
+    },
+    {
+      "id": "f09fc27b0f1e915cb9e4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Omni Verify, my AI agent can't post until Kane checks every promise",
+      "url": "https://github.com/DainoJung/omni-verify",
+      "published_at": "2026-10-24T23:15:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/DainoJung/omni-verify Comments URL: https://news.ycombinator.com/item?id=50226442 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50226442"
+    },
+    {
+      "id": "410aedfc3b25c2cfc2d3",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Omni Verify, my AI agent can't post until Kane checks every promise",
+      "url": "https://github.com/DainoJung/omni-verify",
+      "published_at": "2026-10-24T23:15:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/DainoJung/omni-verify Comments URL: https://news.ycombinator.com/item?id=50226442 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50226442"
+    },
+    {
+      "id": "3c2b666f3668272b14d8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sparse kernel delivering 36% higher training throughput",
+      "url": "https://huggingface.co/JakCwi/eugen-sparse",
+      "published_at": "2026-10-24T23:25:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "I developed a custom GPU kernel in Triton to accelerate training with a sparse feed-forward network (FFN). With K=256, activating 256 of 4,096 FFN neurons per token (6.25%), the sparse model achieved 36% higher training throughput than its dense counterpart. The kernel has so far been tested on a single NVIDIA RTX PRO 6000 GPU and requires GPU hardware with BF16 support. Whether a model trained with a sparse FFN and densified afterwards can match the quality of a model trained densely remains an open question. These early results have motivated me to continue training a larger model using this approach. More about EUGEN and my work: https://jakubcwirlej.com/ai-dev/ Comments URL: https://news.ycombinator.com/item?id=50226525 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50226525"
+    },
+    {
+      "id": "73e732e4eec46c63a484",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Orgiggly – Claude Code plugin that hosts the apps it builds",
+      "url": "https://github.com/orgiggly/claude-plugin",
+      "published_at": "2026-10-24T23:39:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/orgiggly/claude-plugin Comments URL: https://news.ycombinator.com/item?id=50226623 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50226623"
+    },
+    {
+      "id": "d5838cf9a86c4e27e4b7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ADRs for AI – Deliberation records for human–AI work, versioned in Git",
+      "url": "https://adrs.systems",
+      "published_at": "2026-10-25T00:43:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://adrs.systems Comments URL: https://news.ycombinator.com/item?id=50227041 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50227041"
+    },
+    {
+      "id": "79a746030cc2ebf45afe",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English",
+      "url": "https://huggingface.co/destined/hurston-1",
+      "published_at": "2026-10-25T01:30:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I’m open sourcing my Hurston-1 narrowband TTS model (Apache-2.0). It is very good with American English and does especially well with Southern American and Regional African English accents. Destined AI is based in Atlanta, and I built this because I’m amazed by what AI can do, and I wanted to help introduce and welcome more people to feel comfortable using and interacting with AI. Since 2021, I’ve been collecting fully consented voice data from over 20,000 people, 1M audio recordings, and over 1,800 hrs of audio captured to date. For this model, I used a small part of the data, 136 hrs, to finetune Maya1 and expand it’s capabilities. Hurston-1 is a narrowband TTS model that focuses the output on telephone use because that is still where most of these voices will be heard. I’ve used it to support customers such as Amazon and Salesforce and generated over half-mill revenue with it. Now I’m open sourcing it to help unlock opportunities for others as well. Limitations: this model doesn’t maintain the exact same voice across prompts and doesn’t support voice cloning. For many use cases, this is fine but maybe not so - if you’re creating podcasts. This is the first release - I’m already working on the next version with improvements. I would appreciate, if anyone is interested in this space, download the model from huggingface, check it out and let me know any feedback. Also, open to connecting with others in this space as well. Comments URL: https://news.ycombinator.com/item?id=50227330 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50227330"
+    },
+    {
+      "id": "90aafdeda2faa83d92ad",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Senate – AI senators debate live policy and vote on the record",
+      "url": "https://aisenatus.com",
+      "published_at": "2026-10-25T02:15:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://aisenatus.com Comments URL: https://news.ycombinator.com/item?id=50227610 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50227610"
+    },
+    {
+      "id": "38df6438a1b356d9c9f1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Close the UI building AI agent loop with Protoshot",
+      "url": "https://npmjs.com/protoshot",
+      "published_at": "2026-10-25T03:10:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Protoshot scans your css files and components and lets you write just some JSX to preview it. A much simpler setup than having to orchestrate agent-browser or puppeteer instance for just seeing what UI looks like. Comments URL: https://news.ycombinator.com/item?id=50227918 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50227918"
+    },
+    {
+      "id": "bc1fc53d944e4fc928cd",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Close the UI building AI agent loop with Protoshot",
+      "url": "https://npmjs.com/protoshot",
+      "published_at": "2026-10-25T03:10:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Protoshot scans your css files and components and lets you write just some JSX to preview it. A much simpler setup than having to orchestrate agent-browser or puppeteer instance for just seeing what UI looks like. Comments URL: https://news.ycombinator.com/item?id=50227918 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50227918"
+    },
+    {
+      "id": "432001a34d1eb71a1761",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: An OSS browser and work environment for humans and agents",
+      "url": "https://github.com/zephium-browser/Zephium",
+      "published_at": "2026-10-25T03:16:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Fast, private, fully-featured, built in Rust (forked Wry, system's WebView). 40 MB. Not a Chromium fork. Native adblocking (forked adblock-rust), major Chrome extension support, deeply integrated productivity tools, a custom agentic browsing engine, and a lot more. It's not just another wrapper built in a few days. And... Work mode: a shared environment where you and AI agents can browse, research, build, and get real work done together. Live browser sessions, parallel sub-agents, tools, files, components, and interactive results, all in one canvas. AI is optional (disable in one click). No telemetry. BYOK support and local models. Website: https://zephium.app Launch video: https://youtu.be/QbSarcWspvw X: https://x.com/CryntaDev Comments URL: https://news.ycombinator.com/item?id=50227943 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50227943"
+    },
+    {
+      "id": "d252f72cb1f6c98daba5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Four-Leaf job matches that find you automatically",
+      "url": "https://four-leaf.ai/jobs",
+      "published_at": "2026-10-25T03:25:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://four-leaf.ai/jobs Comments URL: https://news.ycombinator.com/item?id=50227987 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50227987"
+    },
+    {
+      "id": "25330f0621c995b53101",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentSkill – Yara-L-Skill",
+      "url": "https://github.com/ajaynyayapathi/yara-l-skill",
+      "published_at": "2026-10-25T03:32:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "An Agent Skill that teaches AI coding agents to write, review, tune, and convert YARA-L 2.0 detection rules for Google Security Operations (SecOps, formerly Chronicle). Comments URL: https://news.ycombinator.com/item?id=50228031 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50228031"
+    },
+    {
+      "id": "3f244e58ef9648cfe032",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Git-ing Over it, learn Git like you'll use it IRL",
+      "url": "https://git-ing-over-it.vercel.app",
+      "published_at": "2026-10-25T04:23:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! I made a browser game called Git-ing Over It around the git situations you might actually run into at work. It's completely free, 14 levels, no sign up! A Slack message, some objectives, a terminal, and at times a browser window or a code file welcome you in each level. Each level is a mix of 'whose fault it is '- sometimes it's you, sometimes it's your made-up teammate's, and sometimes it's just a bad Monday situation. It's a real git engine so the answers are judged on the final state of the repo. No LLMs checking it, and no direct command-based solutions. It is more intended for early devs and students. Of course AI can solve all your git problems but at the end of the day, fundamentals tell the difference. So git is needed. Even if AI handles git for you, it doesn't hurt to know the whys and hows. And this is where a game like this helps. Please go and break something. I'd love to know of levels where the commands don't behave as expected. Link: https://git-ing-over-it.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=50228301 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50228301"
+    },
+    {
+      "id": "42c491ddb00ede9f29ec",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "TaskWire An MCP-based taskboard for managing AI agent workflows",
+      "url": "https://taskwire.si",
+      "published_at": "2026-10-25T06:44:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://taskwire.si Comments URL: https://news.ycombinator.com/item?id=50228951 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50228951"
+    },
+    {
+      "id": "08b66468cbbb394bf2b8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI:Predict, Retrieve, Generate, Recommend, Decide, Act, and Orchestrate",
+      "url": "https://www.researchgate.net/publication/415644138_EASCM_White_Paper_Luthera_2026_v10",
+      "published_at": "2026-10-25T08:42:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.researchgate.net/publication/415644138_EASCM_White_Paper_Luthera_2026_v10 Comments URL: https://news.ycombinator.com/item?id=50229495 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50229495"
+    },
+    {
+      "id": "11db9cd120c3ff109908",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: OpenXet",
+      "url": "https://github.com/stubbi/openxet",
+      "published_at": "2026-10-25T09:29:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Xet [1] seems like a good idea in a world of ever more data hungry applications. It's used in Huggingface's service but the server side has been kept close source. I started reengineering it with Claude from the protocol descriptions to provide it for everyone. If you think it's cool, I am grateful for any stars and feedback! Please no AI-Slop discussions. I am optimistic about the potential for this kind of service since the client is open source and some blog posts describe the mechanisms. Still happy to hear where it's taking wrong directions and needs more guidance. [1] https://huggingface.co/docs/hub/en/xet/index Comments URL: https://news.ycombinator.com/item?id=50229716 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50229716"
+    },
+    {
+      "id": "fd02863618cb296657e3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Echoboard where AI agents do science and humans only watch",
+      "url": "https://jevontane.com/echoboard",
+      "published_at": "2026-10-25T10:18:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://jevontane.com/echoboard/ Comments URL: https://news.ycombinator.com/item?id=50229997 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50229997"
+    },
+    {
+      "id": "80dbe095efce3985f339",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Clara – a decision model that returns a probability for every answer",
+      "url": "https://api.saanora.com/docs",
+      "published_at": "2026-10-25T10:44:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://api.saanora.com/docs Comments URL: https://news.ycombinator.com/item?id=50230196 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50230196"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-25T04:41:35.361317+00:00",
+      "last_success": "2026-10-25T11:29:34.880958+00:00",
       "count": 10,
       "earliest": "2026-10-22T18:12:58+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-25T04:41:35.614786+00:00",
+      "last_success": "2026-10-25T11:29:35.156718+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-25T04:41:35.859869+00:00",
+      "last_success": "2026-10-25T11:29:35.395451+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-25T04:41:36.060030+00:00",
+      "last_success": "2026-10-25T11:29:35.529377+00:00",
       "count": 30,
       "earliest": "2026-10-12T15:54:36+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-24T20:49:55.078559+00:00",
+      "last_success": "2026-10-25T11:29:40.241651+00:00",
       "count": 100,
-      "earliest": "2026-10-23T19:33:30+00:00",
+      "earliest": "2026-10-24T06:26:18+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-24T20:49:55.978671+00:00",
+      "last_success": "2026-10-25T11:29:49.501371+00:00",
       "count": 100,
-      "earliest": "2026-10-22T14:28:05+00:00",
+      "earliest": "2026-10-22T16:19:34+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-25T04:41:48.416981+00:00",
+      "last_success": "2026-10-25T11:29:50.632504+00:00",
       "count": 20,
       "earliest": "2026-10-03T23:07:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-25T04:41:49.496586+00:00",
+      "last_success": "2026-10-25T11:29:51.469629+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-25T04:41:50.077396+00:00",
+      "last_success": "2026-10-25T11:29:51.850881+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-25T04:41:50.531553+00:00",
+      "last_success": "2026-10-25T11:29:52.215417+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-25T04:41:51.242361+00:00",
+      "last_success": "2026-10-25T11:29:52.830253+00:00",
       "count": 10,
       "earliest": "2026-10-08T16:53:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-25T04:42:18.850491+00:00",
+      "last_success": "2026-10-25T11:30:13.337277+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-25T04:42:19.181121+00:00",
+      "last_success": "2026-10-25T11:30:13.489948+00:00",
       "count": 1318,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-25T04:42:30.974514+00:00",
+      "last_success": "2026-10-25T11:30:22.109686+00:00",
       "count": 3,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -63175,5 +63463,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-25T04:42:30.975144+00:00"
+  "collected_at": "2026-10-25T11:30:22.110317+00:00"
 }
