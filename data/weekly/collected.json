@@ -63287,104 +63287,284 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://api.saanora.com/docs Comments URL: https://news.ycombinator.com/item?id=50230196 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50230196"
+    },
+    {
+      "id": "9c832aa0f6b0011b9e90",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Find overlapping Rust tests with mutation testing",
+      "url": "https://github.com/yasuyuky/cargo-test-prune",
+      "published_at": "2026-10-25T12:02:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "To tackle the ever-increasing number of tests, I built cargo-test-prune. The idea behind it is to use cargo-mutants to generate mutants, and then solve the set cover problem for those mutants to suggest which tests can be eliminated. (use a greedy algorithm to cover the detected mutants with fewer tests) I came up with this as a countermeasure against the monotonically increasing tests that tend to accumulate, especially when coding with AI. In fact, this very repository was also written using AI. I ran this tool on a previous revision of this repository. There were 11 tests and 108 generated mutants: 73 were caught by the tests, 23 survived, and 12 failed to compile. I removed the 5 tests suggested by the tool and re-ran the same 108 mutants. The remaining 6 tests caught the exact same 73 mutants. Tests partly serve as documentation, so simply applying this isn't necessarily recommended, but since writing less code still holds value in the AI era, I think this tool could be quite useful. Comments URL: https://news.ycombinator.com/item?id=50230702 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50230702"
+    },
+    {
+      "id": "ae38a6cf3af554d85e2e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Lingering While the Agent Runs",
+      "url": "https://seanvoisen.com/thinking/2026-10-24-lingering-while-the-agent-runs",
+      "published_at": "2026-10-25T12:32:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://seanvoisen.com/thinking/2026-10-24-lingering-while-the-agent-runs/ Comments URL: https://news.ycombinator.com/item?id=50230872 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50230872"
+    },
+    {
+      "id": "d3dc89586c41b515af74",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A 32K-window proxy that beat full context on long agent histories",
+      "url": "https://github.com/lastreload/mnemonic-proxy",
+      "published_at": "2026-10-25T13:08:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/lastreload/mnemonic-proxy Comments URL: https://news.ycombinator.com/item?id=50231157 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50231157"
+    },
+    {
+      "id": "c0b3c89cc428215b9248",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Workmux: Tmux workflow for parallel coding agents",
+      "url": "https://workmux.dev",
+      "published_at": "2026-10-25T13:10:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://workmux.dev/ Comments URL: https://news.ycombinator.com/item?id=50231179 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50231179"
+    },
+    {
+      "id": "e145f0c1d987aea274e8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Open-Source Cybersecurity Platform Uses AI Agents to Protect Businesses",
+      "url": "https://medium.com/@thomasunise/this-open-source-cybersecurity-platform-uses-ai-agents-to-detect-threats-and-protect-businesses-762e65392b42",
+      "published_at": "2026-10-25T13:41:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://medium.com/@thomasunise/this-open-source-cybersecurity-platform-uses-ai-agents-to-detect-threats-and-protect-businesses-762e65392b42 Comments URL: https://news.ycombinator.com/item?id=50231486 Points: 15 # Comments: 4",
+      "discussion_url": "https://news.ycombinator.com/item?id=50231486"
+    },
+    {
+      "id": "78d4411b41574f25bd50",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Kolo – share your AI coding sessions with anyone",
+      "url": "https://github.com/komovaar/kolo",
+      "published_at": "2026-10-25T13:49:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/komovaar/kolo Comments URL: https://news.ycombinator.com/item?id=50231567 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50231567"
+    },
+    {
+      "id": "410853c492346aac04c9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Kolo – share your AI coding sessions with anyone",
+      "url": "https://github.com/komovaar/kolo",
+      "published_at": "2026-10-25T13:49:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/komovaar/kolo Comments URL: https://news.ycombinator.com/item?id=50231567 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50231567"
+    },
+    {
+      "id": "db5ae53aa62ff63984e0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: The fastest, most token-efficient iOS Simulator MCP for AI agents",
+      "url": "https://github.com/NoMac-app/simulator-use",
+      "published_at": "2026-10-25T14:05:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/NoMac-app/simulator-use Comments URL: https://news.ycombinator.com/item?id=50231724 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50231724"
+    },
+    {
+      "id": "6f3467b7c858a3150b7c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Devin agent skills that patch the GitLab CVSS 10.0, PHP and Node.js RCEs",
+      "url": "https://github.com/cognitionai/devin-vuln-fixes",
+      "published_at": "2026-10-25T14:11:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/cognitionai/devin-vuln-fixes Comments URL: https://news.ycombinator.com/item?id=50231787 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50231787"
+    },
+    {
+      "id": "9f0c471e4e9bdf7fb184",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Directory 958 inspirational artisans, craftspeople, smiths, for post-AI",
+      "url": "https://www.worldofbuilders.com",
+      "published_at": "2026-10-25T15:12:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.worldofbuilders.com/ Comments URL: https://news.ycombinator.com/item?id=50232415 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50232415"
+    },
+    {
+      "id": "568be2e054412d47e2a4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Red-teaming AI agent monitors with an LLM that fakes tool outputs",
+      "url": "https://www.redwoodresearch.org/blog/simulated-control-evaluations",
+      "published_at": "2026-10-25T15:41:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.redwoodresearch.org/blog/simulated-control-evaluations Comments URL: https://news.ycombinator.com/item?id=50232753 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50232753"
+    },
+    {
+      "id": "27f1cb277d4548aeae4b",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: QualityLayer, put the engineer back in the loop of your coding agent",
+      "url": "https://qualitylayer.dev",
+      "published_at": "2026-10-25T16:08:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://qualitylayer.dev/ Comments URL: https://news.ycombinator.com/item?id=50233097 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233097"
+    },
+    {
+      "id": "e114b4bc553f493cf456",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "What the Specification Did Not Say: Gaps in Test-Graded Coding-Agent Benchmarks",
+      "url": "https://arxiv.org/abs/2610.30635",
+      "published_at": "2026-10-25T16:09:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2610.30635 Comments URL: https://news.ycombinator.com/item?id=50233105 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233105"
+    },
+    {
+      "id": "0b10350fd0cc50f3ef58",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Vibe Coding for Free: What $0 Gets You in 2026",
+      "url": "https://codingplans.dev/briefs/vibe-coding-for-free",
+      "published_at": "2026-10-25T16:15:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://codingplans.dev/briefs/vibe-coding-for-free/ Comments URL: https://news.ycombinator.com/item?id=50233164 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233164"
+    },
+    {
+      "id": "efb400f7bb1dcdd13d04",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Product Backlog Refinement Agent – Useful or Risk?",
+      "url": "https://age-of-product.com/product-backlog-refinement-agent",
+      "published_at": "2026-10-25T16:17:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://age-of-product.com/product-backlog-refinement-agent/ Comments URL: https://news.ycombinator.com/item?id=50233182 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233182"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-25T11:29:34.880958+00:00",
+      "last_success": "2026-10-25T16:19:34.770698+00:00",
       "count": 10,
       "earliest": "2026-10-22T18:12:58+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-25T11:29:35.156718+00:00",
+      "last_success": "2026-10-25T16:19:35.012647+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-25T11:29:35.395451+00:00",
+      "last_success": "2026-10-25T16:19:35.115474+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-25T11:29:35.529377+00:00",
+      "last_success": "2026-10-25T16:19:35.233260+00:00",
       "count": 30,
       "earliest": "2026-10-12T15:54:36+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-25T11:29:40.241651+00:00",
+      "last_success": "2026-10-25T16:19:42.821420+00:00",
       "count": 100,
-      "earliest": "2026-10-24T06:26:18+00:00",
+      "earliest": "2026-10-24T15:16:50+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-25T11:29:49.501371+00:00",
+      "last_success": "2026-10-25T16:19:50.616410+00:00",
       "count": 100,
-      "earliest": "2026-10-22T16:19:34+00:00",
+      "earliest": "2026-10-22T18:00:15+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-25T11:29:50.632504+00:00",
-      "count": 20,
-      "earliest": "2026-10-03T23:07:17+00:00",
+      "last_success": "2026-10-25T16:19:50.955637+00:00",
+      "count": 10,
+      "earliest": "2026-10-15T19:22:06+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-25T11:29:51.469629+00:00",
-      "count": 20,
-      "earliest": "2026-10-02T04:35:33+00:00",
+      "last_success": "2026-10-25T16:19:51.320731+00:00",
+      "count": 10,
+      "earliest": "2026-10-13T08:26:52+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-25T11:29:51.850881+00:00",
+      "last_success": "2026-10-25T16:19:51.719354+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-25T11:29:52.215417+00:00",
+      "last_success": "2026-10-25T16:19:52.014132+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-25T11:29:52.830253+00:00",
+      "last_success": "2026-10-25T16:19:52.494929+00:00",
       "count": 10,
       "earliest": "2026-10-08T16:53:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-25T11:30:13.337277+00:00",
-      "count": 2,
-      "earliest": "2026-10-05T16:56:22+00:00",
+      "last_success": "2026-10-25T16:20:00.253012+00:00",
+      "count": 1,
+      "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-25T11:30:13.489948+00:00",
+      "last_success": "2026-10-25T16:20:00.450154+00:00",
       "count": 1318,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-25T11:30:22.109686+00:00",
-      "count": 3,
-      "earliest": "2026-10-09T19:44:51+00:00",
+      "last_success": "2026-10-25T16:20:05.285923+00:00",
+      "count": 2,
+      "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
       "error": null
     }
@@ -63463,5 +63643,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-25T11:30:22.110317+00:00"
+  "collected_at": "2026-10-25T16:20:05.286572+00:00"
 }
