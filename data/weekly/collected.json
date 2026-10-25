@@ -63003,28 +63003,28 @@
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-24T20:49:54.066923+00:00",
+      "last_success": "2026-10-25T04:41:35.361317+00:00",
       "count": 10,
       "earliest": "2026-10-22T18:12:58+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-24T20:49:54.249842+00:00",
+      "last_success": "2026-10-25T04:41:35.614786+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-24T20:49:54.379148+00:00",
+      "last_success": "2026-10-25T04:41:35.859869+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-24T20:49:54.490515+00:00",
+      "last_success": "2026-10-25T04:41:36.060030+00:00",
       "count": 30,
       "earliest": "2026-10-12T15:54:36+00:00",
       "gap": false,
@@ -63035,66 +63035,66 @@
       "count": 100,
       "earliest": "2026-10-23T19:33:30+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-10-24T20:49:55.978671+00:00",
       "count": 100,
       "earliest": "2026-10-22T14:28:05+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-24T20:49:56.733654+00:00",
+      "last_success": "2026-10-25T04:41:48.416981+00:00",
       "count": 20,
       "earliest": "2026-10-03T23:07:17+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-24T20:49:57.423140+00:00",
+      "last_success": "2026-10-25T04:41:49.496586+00:00",
       "count": 20,
       "earliest": "2026-10-02T04:35:33+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-24T20:49:57.780746+00:00",
+      "last_success": "2026-10-25T04:41:50.077396+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-24T20:49:58.126135+00:00",
+      "last_success": "2026-10-25T04:41:50.531553+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-24T20:49:58.565930+00:00",
+      "last_success": "2026-10-25T04:41:51.242361+00:00",
       "count": 10,
       "earliest": "2026-10-08T16:53:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-24T20:50:15.122721+00:00",
+      "last_success": "2026-10-25T04:42:18.850491+00:00",
       "count": 2,
       "earliest": "2026-10-05T16:56:22+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-24T20:50:15.283303+00:00",
+      "last_success": "2026-10-25T04:42:19.181121+00:00",
       "count": 1318,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-24T20:50:22.747139+00:00",
+      "last_success": "2026-10-25T04:42:30.974514+00:00",
       "count": 3,
       "earliest": "2026-10-09T19:44:51+00:00",
       "gap": false,
@@ -63175,5 +63175,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-24T20:50:22.747781+00:00"
+  "collected_at": "2026-10-25T04:42:30.975144+00:00"
 }
