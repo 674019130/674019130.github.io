@@ -67871,34 +67871,130 @@
       "date_kind": "source_publication",
       "evidence": "### Added - Cloud tasks: Settings > API Configuration has a Local | Cloud toggle when cloud sessions are on. Cloud picks the Cline model new cloud tasks run on, saved separately from your local models. Clicking the model label in a cloud session's composer opens it there. - Starting or resuming a cloud sandbox shows a progress card with the repo, branch and steps (start sandbox, clone repository, start agent). It collapses once the agent starts. ### Changed - Cloud sessions hide the Plan/Act toggle and the auto-approve bar instead of showing them disabled. - With no model chosen, the Cline provider uses Claude Sonnet 5.5 again, which is back at the top of Cline's recommended list. - Model requests retry at most 3 times instead of 5. - Kimi K3 now gets `max` reasoning for Extra High and Max, instead of an `xhigh` setting it rejects. - Refreshed the model catalog. Adds the CommandCode, Reflection, Liquid Inference and Munito AI providers and drops CrofAI, iFlow and Llama. The Cline free list adds Reflection Beam, Nemotron 3.5 Lightning and Laguna S 2.1 and drops Mimo V2.6 Flash and Muse Spark 1.3 Contributor. ClinePass now defaults to Kimi K3.1 Pro and adds MiniMax M3.1 Flash and DeepSeek V4.1 Flash 1017. Default models change for most other providers, mostly to Kimi K3.1 Pro, MiniMax M3.1 Flash or DeepSeek V4.1 Flash 1017. If you use a provider without pinning a model, expect a different default. ### Fixed - GPT-6 models (such as `gpt-6-sol` and `gpt-6.1-sol`) work on OpenAI and Azure OpenAI-compatible endpoints, and SAP AI Core no longer rejects requests with \"Unsupported parameter: 'max_tokens'\". Both now get `max_completion_tokens`. - Gemini API keys (the `gemini` provider) no longer send native Google Search. Free-tier keys failed every turn with a 429 quota error on Gemini 3+, and on Gemini 2.x every Cline tool was dropped. - Toggling Plan/Act while a task is starting no longer drops your first prompt, and the session no longer keeps running with the other mode's tools. - Disabled rules stay disabled. - Starting a command no longer moves keyboard focus into the terminal, so text you're typing in the chat no longer lands in the shell. - Cancelling a task or opening another one while Cline is asking a question no longer lets your next message get taken as the answer to the old question. - A turn whose connection drops after the model has streamed only reasoning is now retried instead of ending the task. - Auto-compaction no longer runs for models with an unknown context limit, and it no longer runs again every few tool calls after the first compaction. - `ask_question`: the model keeps going after you pick an option, and empty answers are rejected. - `run_commands` with an empty command list now returns an error instead of a silent success. On PowerShell, the tool tells the model how quote escaping works and to confirm recursive deletes first. - Task header badges wrap instead of hiding the close button, the GitHub connection check no longer flashes a loading indicator, and the Local/Cloud toggle's padding is fixed. **Full Changelog**: https://github.com/cline/cline/compare/v4.1.25...v4.1.26",
       "discussion_url": ""
+    },
+    {
+      "id": "824da9ed165d7583f58d",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "published_at": "2026-10-26T13:45:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "discussion_url": ""
+    },
+    {
+      "id": "b079f6589748c2b2bfa7",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "We’re helping farmers around the world connect to essential services online.",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/digital-public-infrastructure-farmers",
+      "published_at": "2026-10-26T14:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Google.org is investing $2.5M to help 1 million farmers access AI-powered agricultural services via the World Bank's ONA. See how it works.",
+      "discussion_url": ""
+    },
+    {
+      "id": "0d439720c90628cd95f3",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Working with academic communities to build scientific understanding",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "published_at": "2026-10-26T14:30:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
+      "discussion_url": ""
+    },
+    {
+      "id": "cf5d66dcf125903ec998",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks",
+      "published_at": "2026-10-26T16:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”",
+      "discussion_url": ""
+    },
+    {
+      "id": "3bdd0930fe86b635ebca",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "15 college students share their favorite Gemini features",
+      "url": "https://blog.google/products-and-platforms/products/gemini/college-student-favorite-features",
+      "published_at": "2026-10-26T16:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "We asked 15 college students about their favorite Gemini features for learning, studying, taking notes, and more.",
+      "discussion_url": ""
+    },
+    {
+      "id": "7a211f2c3a60697fc812",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting Jason Koebler",
+      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler",
+      "published_at": "2026-10-26T19:00:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered something journalistically notable and that 404 Media, specifically, can help them. — Jason Koebler , ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems Tags: jason-koebler , openai , journalism , ai , llms , ai-ethics , ai-misuse , generative-ai , chatgpt , 404-media",
+      "discussion_url": ""
+    },
+    {
+      "id": "2814477f57fca86f84d5",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GPT-6.1 Terra in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot",
+      "published_at": "2026-10-26T19:15:53+00:00",
+      "date_kind": "source_publication",
+      "evidence": "GPT-6.1 Terra, OpenAI’s newest model, is now generally available in GitHub Copilot. It is designed for everyday agentic coding and terminal work at a lower cost than GPT-6.1 Sol. In early testing, GPT-6.1 Terra solved noticeably more terminal and C# coding tasks than GPT-5.6 Terra. It works in focused, consolidated steps on well-scoped tasks. This model is billed at provider list pricing under usage-based billing. See Models and pricing for GitHub Copilot for details. Availability in GitHub Copilot GPT-6.1 Terra is available to Copilot Pro, Pro+, Max, Business, and Enterprise users. You can select the model in the model picker in: Visual Studio Code Visual Studio Copilot CLI GitHub Copilot cloud agent GitHub Copilot app github.com GitHub Mobile on iOS and Android JetBrains IDEs Xcode Eclipse Rollout will be gradual. Check back soon if you don’t see it yet. Enabling access Copilot Enterprise and Copilot Business plan administrators can manage access to GPT-6.1 Terra through the model policy in Copilot settings. Under default model enablement, new models are automatically enabled unless an administrator has turned off the global default or explicitly disables this model. Learn more To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot. Share your feedback Join the GitHub Community to share your feedback. The post GPT-6.1 Terra in GitHub Copilot appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "976a16177f966829fc4e",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.311",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
+      "published_at": "2026-10-26T21:51:23+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `--hold-idle-file` and `--max-hold-min` to `self-hosted-runner`, to keep an idle session while your host reports processes it left running - Added a tip for the Explanatory output style, shown when you ask Claude for explanations - Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item - Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading - Fixed standard-context sessions stopping with \"Usage credits required for 1M context\" when a request ran over 200K tokens; Claude Code now compacts the conversation and continues - Fixed Write and Edit stalling for up to 5 seconds after they ran, and reporting 0 lines changed, when changing thousands of lines in a file - Fixed subagents being unable to use MCP tools from servers that finish connecting after the subagent starts - Fixed Claude seeing stale MEMORY.md and CLAUDE.md content right after automatic compaction when those files were edited earlier in the session - Fixed `claude -p` and SDK sessions saving transcript messages out of order or keeping messages that were taken back - Fixed `SubagentStop` hooks running about twice a minute for each running subagent instead of once when it finishes - Fixed the @ file picker ignoring `.ignore`/`.rgignore` negation rules that re-include git-ignored files - Fixed a subagent's isolated worktree being removed while a background subagent it started was still working in it - Fixed background agents in auto mode that wait on their own shells starting a new main conversation turn on every wake - Fixed the Bash tool description claiming the working directory always persists between calls - Fixed the environment block naming a shell commands don't run in, such as fish when the Bash tool uses zsh - Fixed `claude mcp add`, `claude mcp remove` and `/mcp` naming the current folder instead of the project entry in `~/.claude.json` that holds a local-scope server when run below a repository root - Fixed `claude mcp list` and `claude mcp get` showing the error code twice on failed-connection lines (for example `ENOENT: ENOENT: …`) - Fixed Remote Control sessions staying on \"Connecting\" for about two minutes when a network proxy blocks a startup request - Fixed messages that Claude sends to a cloud or Remote Control session appearing as your own message in the Claude mobile apps - Fixed Claude not being told the cause when a file attached to a message sent over Remote Control or to a cloud session could not be saved because the disk was full, or that a message's attachments past the first 20 were left out - Fixed WebFetch and WebSearch hanging on a stalled response in Cowork cloud sessions; an unfinished request now fails after 300 seconds - Fixed a background session that crashed between turns not being restarted while it was attached, pinned, or had a scheduled task or wake-up set - Fixed the \"background service did not respond\" error suggesting the disabled `claude daemon restart`; it now suggests `claude daemon stop --any` and says it ends background sessions - Fixed `claude respawn ` starting the background service before reporting that no background session matches the id - Fixed `/effort` not warning about a prompt cache miss in plan mode when the plan model differs from the session model - Fixed `/ide` saying the VS Code extension was installed before the install finished or when it failed - Fixed the Write tool's file preview skipping rows and miscounting hidden lines when a line is wider than the terminal - Fixed ↑ in an agent's chat tab recalling a message that was still waiting to be delivered, so resending it sent a second copy - Fixed Cowork cloud sessions losing their connectors and most tools after a restart when a plugin or your settings named an `agent`; Cowork cloud sessions now ignore that setting - Fixed agent teams sessions showing an empty task list when comin",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-26T13:03:00.474809+00:00",
+      "last_success": "2026-10-26T22:40:11.661087+00:00",
       "count": 10,
-      "earliest": "2026-10-22T18:12:58+00:00",
+      "earliest": "2026-10-22T18:14:16+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-26T13:03:00.829397+00:00",
+      "last_success": "2026-10-26T22:40:11.974648+00:00",
       "count": 20,
-      "earliest": "2026-10-15T17:30:00+00:00",
+      "earliest": "2026-10-19T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-26T13:03:01.023498+00:00",
+      "last_success": "2026-10-26T22:40:12.151813+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-26T13:03:01.211532+00:00",
+      "last_success": "2026-10-26T22:40:12.318400+00:00",
       "count": 30,
-      "earliest": "2026-10-12T16:58:00+00:00",
+      "earliest": "2026-10-12T18:15:38+00:00",
       "gap": false,
       "error": null
     },
@@ -67917,56 +68013,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-26T13:03:15.939215+00:00",
+      "last_success": "2026-10-26T22:40:29.365812+00:00",
       "count": 10,
-      "earliest": "2026-10-15T19:22:06+00:00",
+      "earliest": "2026-10-16T20:53:06+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-26T13:03:16.655156+00:00",
+      "last_success": "2026-10-26T22:40:30.039764+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-26T13:03:17.221415+00:00",
+      "last_success": "2026-10-26T22:40:30.652784+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-26T13:03:17.723657+00:00",
+      "last_success": "2026-10-26T22:40:31.208153+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-26T13:03:18.431177+00:00",
+      "last_success": "2026-10-26T22:40:32.079952+00:00",
       "count": 10,
       "earliest": "2026-10-08T16:53:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-26T13:03:34.937297+00:00",
+      "last_success": "2026-10-26T22:40:49.768407+00:00",
       "count": 1,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-26T13:03:35.124930+00:00",
-      "count": 1318,
+      "last_success": "2026-10-26T22:40:49.987026+00:00",
+      "count": 1325,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-26T13:03:43.273631+00:00",
+      "last_success": "2026-10-26T22:40:59.603790+00:00",
       "count": 2,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -68047,5 +68143,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-26T13:03:43.274172+00:00"
+  "collected_at": "2026-10-26T22:40:59.604497+00:00"
 }
