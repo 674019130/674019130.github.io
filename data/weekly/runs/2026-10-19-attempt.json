@@ -1,0 +1,198 @@
+{
+  "request_evidence": [
+    {
+      "id": "568be2e054412d47e2a4",
+      "title": "Red-teaming AI agent monitors with an LLM that fakes tool outputs",
+      "category": "discovery",
+      "evidence": "Article URL: https://www.redwoodresearch.org/blog/simulated-control-evaluations Comments URL: https://news.ycombinator.com/item?id=50232753 Points: 1 # Comments: 0 PRIMARY PAGE: Simulated Control Evaluations — Redwood Research Home Research Team Careers Blog Home Research Team Careers Blog All posts Control & Monitoring Simulated Control Evaluations Jeffrey Olmo , David Zhang , Tyler Tracy · October 24, 2026 · 18 min read · Download PDF We’ve released a paper on simulated control evaluations (SCEs). They’re a method for testing whether the monitors AI developers use to oversee their agents would catch a model deliberately trying to cause harm, under conditions much closer to real deployment than current tests allow. Developers have started running monitors in their agentic deployments: models that flag or block an agent’s actions when they look dangerous. To know whether a monitor is good enough, you want to know how often it would stop a model that was actively trying to do something harmful, such as quietly inserting a security vulnerability, exfiltrating credentials, or sabotaging an experiment. The standard way to measure this is a control evaluation: instruct a model to attemp"
+    },
+    {
+      "id": "77cded394db3b70d1319",
+      "title": "battledrones v14: Compass Rose, a four player map",
+      "category": "discovery",
+      "evidence": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players can join (any spare slots use AI) Claude O PRIMARY PAGE: Release: battledrones v14: Compass Rose, a four player map Simon Willison’s Weblog Newsletter Sponsored by: WorkOS Airlock — intent-based access control for AI agents. Request early access 24th October 2026 Release battledrones v14: Compass Rose, a four player map — A mobile web RTS I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players can join (any spare slots use AI) Claude Opus 5.5 added a new map called \"Compass Rose\" and modified the WebSockets multiplayer network code to support up to four players for that map, joining via share"
+    },
+    {
+      "id": "04c7d0cce5e80ae0c0a9",
+      "title": "Ollama v0.40.11",
+      "category": "official_update",
+      "evidence": "## Speech Ollama can now generate [speech](https://docs.ollama.com/capabilities/speech) on macOS. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible `/v1/audio/speech` endpoint. ```sh ollama run phonon \"Hello from Ollama.\" ``` ## d3 decision models [d3](https://ollama.com/library/d3) brings vLLM Semantic Router's decision models to Ollama. Give a model text, structured state, or an image, and ask it to classify, answer yes or no, or score options with probabilities. The family includes 2B, 4B, 9B, and 27B sizes. ```sh ollama run d3 \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\" ``` ## New Contributors * @SynapShift made their first contribution in https://github.com/ollama/ollama/pull/19173 **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.10...v0.40.11-rc0"
+    },
+    {
+      "id": "448be8d2bcadca7bf016",
+      "title": "Usage metrics API adds usage from tools like OpenCode",
+      "category": "official_update",
+      "evidence": "The Copilot usage metrics API now reports model usage from more of the tools your developers use with Copilot, including tools like OpenCode that weren’t previously captured in your reports. A new totals_by_client array is available in the enterprise, organization, enterprise-user, and organization-user 1-day and 28-day reports. What’s new Each totals_by_client entry represents one client and includes: client : The tool that sent the requests, such as opencode , claude_code , codex , zed , copilot_cli , github_app , cloud_agent , code_review , vscode , or jetbrains . Unrecognized clients are grouped under other . request_count : The number of successful model requests from the client. session_count : The number of distinct sessions from the client. token_usage : Prompt tokens, output tokens, and average tokens per request. totals_by_model : The same request and token metrics broken down by model, with a model_selection_mode that shows whether the model was requested directly ( user_selected ), chosen by auto ( auto ), or chosen by the product ( product_selected ). Selection modes that aren’t reported individually yet appear as other , and values that can’t be normalized appear as u"
+    },
+    {
+      "id": "7a45885597b1415ccfa6",
+      "title": "Claude Code v2.1.310",
+      "category": "official_update",
+      "evidence": "## What's changed - Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too - Fixed requests failing behind some gateways and compatible servers that reject the `effort-2025-11-24` beta value or mid-conversation system messages; Claude Code now retries without them - Fixed background cleanup deleting some recent files, such as pasted images, when `cleanupPeriodDays` is set to a very large value - Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense text, such as base64 or SVG, so the next request could fail again - Fixed file read permission prompts not showing where a symbolic link leads - Fixed a question's auto-continue timeout firing the moment the external editor closed after a long edit - Windows: Fixed PreToolUse and PermissionRequest hooks letting a tool call through when Git Bash is missing and the hook's command is only quoted strings, such as a quoted path - Improved auto mode's prompt before the first read outside the working directories: it now says when blocking those reads makes shell commands ask fo"
+    },
+    {
+      "id": "4b7661ed1143894de17a",
+      "title": "See what 5 builders are making with Gemini 4 Argon",
+      "category": "official_update",
+      "evidence": "See how five builders are putting Gemini 4 Argon to work — and get inspired for your next build."
+    },
+    {
+      "id": "dd3e4a3e51acbb7d9422",
+      "title": "Securing our frontier model training environment",
+      "category": "official_update",
+      "evidence": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
+    },
+    {
+      "id": "e3b8777b88b7a92dddd1",
+      "title": "Codex 0.164.0",
+      "category": "official_update",
+      "evidence": "## New Features - Save reusable prompts and slash commands in ten numbered `/presets` slots, with a keyboard menu for quick access. (#54380, #54381) - Set model, reasoning effort, speed, and permission profiles directly with inline `/model` and `/permissions` arguments. (#54378, #54383) - Preview viewed and generated images in the fullscreen transcript on terminals supporting Kitty or Sixel graphics. (#54216) - Authenticate enterprise MCP connections using eligible Codex account grants or dedicated sign-in, including OAuth clients requiring secrets. (#55334, #55859, #56001) - Mask credentials during supported remote Bash commands and Zsh snapshot sessions, including credentials from custom providers. (#54309, #54432, #56049) - The Amazon Bedrock setup wizard is now enabled by default, with API key entry grouped alongside other AWS sign-in methods when credentials are detected. (#56033, #56023) ## Bug Fixes - Failed compaction no longer leaves partial summaries in conversation history, and background compaction failures fall back without panicking. (#53932, #55581) - Resuming sessions now finds compressed histories and restores saved thread settings instead of replacing them with gl"
+    },
+    {
+      "id": "6f3467b7c858a3150b7c",
+      "title": "Devin agent skills that patch the GitLab CVSS 10.0, PHP and Node.js RCEs",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/cognitionai/devin-vuln-fixes Comments URL: https://news.ycombinator.com/item?id=50231787 Points: 1 # Comments: 0 PRIMARY PAGE: # Vulnerability fix skills\n\nThree [Agent Skills](https://agentskills.io) that find and patch vulnerable runtimes across your repos. They work in any coding agent that reads `SKILL.md` files: Devin, Claude Code, Codex, Cursor, Factory Droid, GitHub Copilot, Gemini CLI, OpenCode, Windsurf and [70 more](https://github.com/vercel-labs/skills/blob/main/docs/agents.md).\n\n| Skill | What it fixes | Fixed releases |\n|---|---|---|\n| [`fix-php-vuln`](skills/fix-php-vuln/SKILL.md) | PHP2Shell: CVE-2026-109618 and CVE-2026-109619, unauthenticated RCE in every web SAPI | 8.2.35, 8.3.36, 8.4.27, 8.5.12 |\n| [`fix-node-vuln`](skills/fix-node-vuln/SKILL.md) | Node.js October 21, 2026 security release, incl. CVE-2026-111497 (Brotli RCE); flags end-of-life Node 20 | 22.23.4, 24.22.1, 26.12.1 |\n| [`fix-gitlab-vuln`](skills/fix-gitlab-vuln/SKILL.md) | CVE-2026-110264, CVSS 10.0 unauthenticated RCE in self-managed GitLab (Omnibus, Docker, Helm, IaC) | 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, 18.11.13 |\n\nEach skill follows the same shape:\n\n1"
+    },
+    {
+      "id": "db5ae53aa62ff63984e0",
+      "title": "Show HN: The fastest, most token-efficient iOS Simulator MCP for AI agents",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/NoMac-app/simulator-use Comments URL: https://news.ycombinator.com/item?id=50231724 Points: 1 # Comments: 0 PRIMARY PAGE: # simulator-use\n\n**The fastest, most token-efficient way for an AI agent to use the iOS Simulator.** simulator-use gives Claude Code, Codex, Cursor and any other MCP client a phone: it builds and runs your Xcode project, reads the screen as a few lines of text, taps and types by label, and runs your tests case by case. Its own native engine talks to the Simulator directly, so reading the whole screen takes about 250 ms and a tap goes out in under a millisecond, where tools that start a helper for every call take 1.5 to 3 seconds. Free and open source (MIT), on any Mac with Xcode, and from Linux, Windows or a Mac without Xcode through a cloud iPhone.\n\n- **Fast:** a whole-screen read in about 250 ms, a tap sent in under 1 ms, a screenshot in about 60 ms (measured on an M6 Mac mini, October 2026).\n- **Token-efficient:** one line per element the agent can use, nothing else; a dozen tools with short descriptions.\n- **Complete:** build, install, launch, XCTest and XCUITest per case, logs and crashes, video, permission prompts, iPhone an"
+    },
+    {
+      "id": "a081c914efee5b1169df",
+      "title": "Quick Study",
+      "category": "discovery",
+      "evidence": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no external libraries beyond Google Fonts. Tags PRIMARY PAGE: Tool: Quick Study Simon Willison’s Weblog Newsletter Sponsored by: WorkOS Airlock — intent-based access control for AI agents. Request early access 23rd October 2026 Tool Quick Study — Quick Study paints a photo stroke by stroke in passes from coarse brushes to fine ones, and accepts images from a file picker, drag and drop, or the clipboard. Users choose a medium (oil, watercolor, or pointillist), a detail level, and a duration of 2 to 10 seconds, then hold a button to compare against the original photo, repaint with a new random take, or download the finished study as a PNG through the Downloads service when available or a plain file link otherwise. Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version "
+    },
+    {
+      "id": "a7da2969e9e043d89e87",
+      "title": "Ollama v0.40.10",
+      "category": "official_update",
+      "evidence": "## NVIDIA Nemotron 3.5 Bolt E4B [Nemotron 3.5 Bolt E4B](https://ollama.com/library/nemotron-3.5-bolt) is NVIDIA’s smaller, Gemma 4-based vision-language model for fast local conversations, image understanding, and tool use. It supports a 128K-token context window. The model includes a DFlash draft for speculative decoding. ollama run nemotron-3.5-bolt:e4b **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.9...v0.40.10"
+    },
+    {
+      "id": "c94729453d882707e8dd",
+      "title": "Turn notifications into code with GitHub Copilot in Teams",
+      "category": "official_update",
+      "evidence": "The new GitHub app in Teams brings notifications and Copilot together, helping teams turn issues into fixes and ship code faster without leaving the conversation. Get notified in channels, group chats, or private chats, then @mention GitHub to turn updates into action. Turn an issue notification into a pull request Get notified: A bug report arrives in Teams. Take action: @github investigates the issue, fixes the bug, and creates a pull request. Review and ship: Your team reviews, tests, and merges the fix. Get started Explore the new GitHub app in Microsoft Teams , previously called GitHub notifications. If you already have GitHub notifications installed, update the app to the latest version. Your existing notification capabilities will continue to work. If you use the legacy GitHub app, which will be renamed “GitHub (deprecated)” and retired on November 16, install the consolidated GitHub app using the link above to continue using Copilot in Teams. In the consolidated app, mention @GitHub and follow any prompts to connect your GitHub account and select a repository. Join the discussion within the GitHub Community . The post Turn notifications into code with GitHub Copilot in Team"
+    },
+    {
+      "id": "ead0ab6be2e7b8872b62",
+      "title": "Claude Code v2.1.309",
+      "category": "official_update",
+      "evidence": "## What's changed - Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command - Fixed macOS sandbox `denyWrite` glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink - Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with `--mcp-config` - Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions - Fixed the Bash permission check trusting a variable set by a command whose redirect can fail to open - Fixed Bash permission checks not prompting for some compound commands that change directory before running git when the `cd` is wrapped or prefixed, as they do for a plain `cd` - Fixed an `Edit(path)` deny rule not blocking a Bash redirect to that path in some commands that also held a subshell - Fixed worktree-isolated sessions accepting some locale-prefixed commands the isolation guard should refuse - Fixed worktree-isolated sessions on zsh accepting some arithmetic commands that the isolation guard should refuse - Fixed worktrees and branch checkouts that Claude Code creates so "
+    },
+    {
+      "id": "c8f6c40aa9271b8e09a2",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "category": "official_update",
+      "evidence": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
+    },
+    {
+      "id": "6f0f1dcc4bf6c5e61d29",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "category": "official_update",
+      "evidence": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
+    },
+    {
+      "id": "410853c492346aac04c9",
+      "title": "Show HN: Kolo – share your AI coding sessions with anyone",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/komovaar/kolo Comments URL: https://news.ycombinator.com/item?id=50231567 Points: 4 # Comments: 0 PRIMARY PAGE: <h1>\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"web/static/favicon-dark-256.png\">\n    <img src=\"web/static/favicon-256.png\" width=\"24\" height=\"24\" alt=\"\">\n  </picture>\n  Kolo\n</h1>\n\n**Multiplayer AI coding agents.**\n\nRun agents on one machine and work together in the browser. Share a link so your\nteam can watch, type, and take over the same session. Only the host installs Kolo.\n\n[![CI](https://github.com/komovaar/kolo/actions/workflows/ci.yml/badge.svg)](https://github.com/komovaar/kolo/actions/workflows/ci.yml)\n[![Release](https://img.shields.io/badge/release-v0.1.0-2C6F62?labelColor=1C2123)](https://github.com/komovaar/kolo/releases)\n[![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-2C6F62?labelColor=1C2123)](LICENSE)\n\n![A shared Codex session in Kolo, with sessions grouped by machine and project](docs/images/kolo-session.png)\n\n## Why Kolo\n\n- **Work in the same session.** Everyone sees the same terminal. Type a prompt,\n  approve a step, or pick up where a teammate left off.\n- **Bring your termi"
+    },
+    {
+      "id": "f001efe8e9c5a907c1e0",
+      "title": "Introducing Kimi K3.1 Pro",
+      "category": "discovery",
+      "evidence": "Introducing Kimi K3.1 Pro Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise \"Full model weights will be released by Nov 4, 2026\". They're also offering a \"Highspeed\" version that's 2-3x faster, at twice the price (except for input token cache hits, which are priced the same). The US dollar pricing is $2.00/million tokens for input and $10/million for outp PRIMARY PAGE: Introducing Kimi K3.1 Pro Simon Willison’s Weblog Newsletter Sponsored by: WorkOS Airlock — intent-based access control for AI agents. Request early access 23rd October 2026 - Link Blog Introducing Kimi K3.1 Pro ( via ) Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise \"Full model weights will be released by Nov 4, 2026\". They're also offering a \"Highspeed\" version that's 2-3x faster, at twice the price (except for input token cache hits, which are priced the same). The US dollar pricing is $2.00/million tokens for input and $10/million for output - the same as GPT-6.1 Sol and half the price of Claude Opus 5.5. Moonshot's own benchmarks show Kimi as approximately level with Opus 5.5 and GPT-6 Astra - beating them on a few benchmarks"
+    },
+    {
+      "id": "661463b8133f99377b51",
+      "title": "Ollama v0.40.9",
+      "category": "official_update",
+      "evidence": "## Speech Ollama can now generate [speech](https://docs.ollama.com/capabilities/speech) with Phonon on Apple Silicon. `ollama run` plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible `/v1/audio/speech` endpoint. ```sh ollama run phonon \"Hello from Ollama.\" ``` ## d3 decision models [d3](https://ollama.com/library/d3) brings vLLM Semantic Router's decision models to Ollama. Give a model text, structured state, or an image, and ask it to classify, answer yes or no, or score options with probabilities. The family includes 2B, 4B, 9B, and 27B sizes. ```sh ollama run d3 \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\" ``` ## Flint on Linux and Windows [Flint](https://ollama.com/library/flint) now runs on Linux and Windows as well as macOS. ## Other improvements - Streaming OpenAI Responses and Anthropic Messages requests now report generation failures instead of ending silently after partial output. - `ollama launch` now passes cloud models' context lengths and capabilities to coding tools, fixing incorrect context and compaction settings. - Anthropic-compatible web search now uses th"
+    },
+    {
+      "id": "d1e7ca52bff8ece0dcef",
+      "title": "GitHub Copilot in Visual Studio — September update",
+      "category": "official_update",
+      "evidence": "September 2026 brought deeper visibility into your work: explore pull requests without leaving chat, bring the AI model your team trusts, and fix vulnerable packages the moment Visual Studio flags them. Highlights Here’s what’s new with GitHub Copilot in Visual Studio 2026. Check the Insiders channel for the latest: Explore pull requests with the Git agent : The Git agent can now explore a pull request for you. Open GitHub Copilot Chat, select the Git agent, and attach a pull request as context from the Git Repository window to get a summary with navigable links to the underlying comments and files. This functionality requires connecting your Git provider’s MCP servers; GitHub and Azure DevOps are both supported. Updates to Bring Your Own Model (BYOM) : BYOM is available in preview and lets you use the models your team prefers, through GitHub Copilot or your own model deployments, whether or not you’re signed in to GitHub. This feature is on by default across the Community, Professional, and Enterprise editions. Breaking change: BYOM now requires the new Agent (Preview), built on the GitHub Copilot SDK-powered harness. The previous Ask and Agent modes no longer support BYOM, and yo"
+    },
+    {
+      "id": "f25657b4ad2397a7db42",
+      "title": "Get hands-free personalized help on the road with Gemini",
+      "category": "official_update",
+      "evidence": "Gemini is available in cars globally. With Personal Intelligence, get uniquely tailored help while keeping your eyes on the road."
+    },
+    {
+      "id": "dbf6917624d149f263df",
+      "title": "OpenAI models are coming to Google Cloud",
+      "category": "official_update",
+      "evidence": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace."
+    },
+    {
+      "id": "c0b3c89cc428215b9248",
+      "title": "Workmux: Tmux workflow for parallel coding agents",
+      "category": "discovery",
+      "evidence": "Article URL: https://workmux.dev/ Comments URL: https://news.ycombinator.com/item?id=50231179 Points: 2 # Comments: 0 PRIMARY PAGE: workmux - parallel AI agents in your terminal workmux Docs Workflows Changelog 2.9K Get started v0.1.277 Sidebar views → The tmux * workflow for parallel agents. * Also some support for WezTerm , kitty and Zellij . Give every task its own git worktree and tmux window. See which agents are working or waiting on you, and merge finished work with one command. Install with Homebrew curl Cargo brew install raine/workmux/workmux curl -fsSL https://raw.githubusercontent.com/raine/workmux/main/scripts/install.sh | bash cargo install workmux Copied Get started Other install methods workmux sidebar Your agent nvim and a dev server Any panes you configure A plain shell ~/code/workmux Same tmux you already use. workmux gives each agent its own worktree and window, and keeps track of all of them in the sidebar. “ It's become my daily driver - the perfect level of abstraction over tmux + git, without getting in the way or obscuring the underlying tooling. @cisaacstern on GitHub Community videos Some kind people have made videos about workmux on YouTube. If you're lo"
+    },
+    {
+      "id": "7a4bea25f7aa2bc84e98",
+      "title": "DE STAAT - FREEDOM (Official Music Video)",
+      "category": "discovery",
+      "evidence": "DE STAAT - FREEDOM (Official Music Video) OK well this is a first for me... at 00:44 in this new music video by Dutch alternative rock band De Staat : The visual effects are credited to Matties Grooten of Fake it or Leave it . Via flir on Hacker News Tags: music , ai , generative-ai , pelican-riding-a-bicycle PRIMARY PAGE: DE STAAT - FREEDOM (Official Music Video) Simon Willison’s Weblog Newsletter Sponsored by: WorkOS Airlock — intent-based access control for AI agents. Request early access 22nd October 2026 - Link Blog DE STAAT - FREEDOM (Official Music Video) ( via ) OK well this is a first for me... at 00:44 in this new music video by Dutch alternative rock band De Staat : The visual effects are credited to Matties Grooten of Fake it or Leave it . Posted 22nd October 2026 at 7:42 pm Recent articles Battle Drones - a vibe coded RTS with audio-based multiplayer - 20th October 2026 Hello Python 3.15, goodbye 3.10, and now I can use 3.11 - 12th October 2026 A new feature for my blog, built using my voice - 9th October 2026 Claude Haiku 5.5 - 7th October 2026 This is a link post by Simon Willison, posted on 22nd October 2026 . music 25 ai 2,293 generative-ai 2,034 pelican-riding-a-b"
+    },
+    {
+      "id": "e32f88cfb39361716867",
+      "title": "Ollama v0.40.8",
+      "category": "official_update",
+      "evidence": "## Recursive Flint [Flint](https://ollama.com/library/flint) brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar code, tracing bugs, implementing features, and adding tests. Reasoning, multi-turn tool use, and a 262K-token context window support longer tasks across files and tool interactions. Flint is an Apache 2.0-licensed, 40B-parameter mixture-of-experts model with approximately 2.5B parameters active per token. In its [release evaluations](https://huggingface.co/RecursiveSI/flint#evaluation), Recursive reports 54.9% on Terminal-Bench 2.1 and 74.2% on SWE-bench Verified. ```sh ollama run flint ``` Note: Flint is supported on MacOS. Other GPU support will be enabled in a subsequent release. **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.7...v0.40.8"
+    },
+    {
+      "id": "a14b44727f86be0ec93c",
+      "title": "Custom skills, agents, and MCP servers in usage metrics API",
+      "category": "official_update",
+      "evidence": "Copilot usage metrics now show the names of the skills, custom agents, Model Context Protocol (MCP) servers, slash commands, and plugins that your organization creates, instead of grouping them under other or custom . This builds on the agentic CLI customization metrics released in September. What’s new Named entries: In enterprise and organization reports, including per-user 1-day and 28-day reports, aggregated 1-day reports, and day_totals in aggregated 28-day reports, the totals_by_skill , totals_by_custom_agent , totals_by_mcp , totals_by_slash_cmd , and totals_by_plugin arrays now show the configured name of a customer-defined item instead of other or custom . More entries: Each totals_by_* list now includes up to 25 entries per record, up from five, so you can see more of the long tail of customizations your developers use. Any remaining activity is combined into a trailing other entry. Unchanged counts: interaction_count and the distinct_*_use_count fields are calculated the same way as before. Why this matters The customizations that matter most to an organization are often the ones its own teams build. Administrators can now see which internal skills, custom agents, and MC"
+    },
+    {
+      "id": "8b9c50cf08996de63e42",
+      "title": "Claude Code v2.1.307",
+      "category": "official_update",
+      "evidence": "## What's changed - Added `/claude-api api-version` to move Claude API code to API version `2026-10-21` - Added the `claude_code.safety_event` OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back - Fixed requests failing with a model-not-found error when `CLAUDE_CODE_DISABLE_1M_CONTEXT` is set and the model is an alias with the `[1m]` suffix, such as `opus[1m]` - Fixed the `prompt-caching-scope` beta header being sent behind custom `ANTHROPIC_BASE_URL` gateways and on Foundry, where it has no effect - Fixed MCP servers showing \"needs authentication\" in `claude -p` on macOS while the login keychain was locked; they now say why, and the next run after an unlock connects without a new sign-in - Fixed MCP servers being reported as timed out, and staying failed in headless runs, when a macOS or Linux computer went to sleep while they were connecting - Fixed HTTP MCP tool calls being sent twice when the connection closed mid-call; only read-only or idempotent tools are now retried - Fixed a turn sometimes starting without an SDK MCP server's latest tools when a background task was running - Fixed some \"A"
+    },
+    {
+      "id": "d7626a670afd641dcae7",
+      "title": "Ask a Scientist: How can AI help doctors spend more time on collaborative care?",
+      "category": "official_update",
+      "evidence": "AMIE, an AI system people can chat with before doctor’s appointments, securely gathers patient information, and saves doctors time."
+    }
+  ],
+  "response": {
+    "id": "0a11f8d6-c625-4f95-aa37-14cf463baed4_71a27ab59513454d9d3d1d297b732322",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"items\":[{\"id\":\"04c7d0cce5e80ae0c0a9\",\"product\":\"Ollama v0.40.11\",\"change\":\"新增macOS语音合成与d3决策模型\",\"change_en\":\"macOS speech synthesis and d3 decision models\",\"title\":\"Ollama v0.40.11 更新\",\"summary\":\"Ollama v0.40.11 在 macOS 上支持语音生成，ollama run 可实时朗读回复，应用可通过 OpenAI 兼容 /v1/audio/speech 端点流式获取音频。同时引入 d3 决策模型家族（2B/4B/9B/27B），可对文本、结构化状态或图像做分类、是非判断或带概率的选项打分。\",\"kind\":\"added\"},{\"id\":\"7a45885597b1415ccfa6\",\"product\":\"Claude Code v2.1.310\",\"change\":\"新增Monitor工具并修复多处网关兼容问题\",\"change_en\":\"Monitor tool added; gateway compat and cleanup fixes\",\"title\":\"Claude Code v2.1.310 更新\",\"summary\":\"Claude Code v2.1.310 在 Bedrock、Vertex、Foundry 及禁用遥测场景下支持 Monitor 工具和插件监控，并阻止长时间前台休眠。修复了网关拒绝 effort-2025-11-24 beta 值导致请求失败的问题、大值 cleanupPeriodDays 下误删近期文件问题，以及长文本压缩后请求仍失败等。\",\"kind\":\"added\"},{\"id\":\"e3b8777b88b7a92dddd1\",\"product\":\"Codex 0.164.0\",\"change\":\"新增/presets预设与内联/model、/permissions参数\",\"change_en\":\"/presets slots and inline /model, /permissions args\",\"title\":\"Codex 0.164.0 更新\",\"summary\":\"Codex 0.164.0 新增十个编号 /presets 预设槽位保存可复用提示与斜杠命令，并支持用内联 /model、/permissions 参数设置模型、推理强度、速度和权限配置。此外支持在支持 Kitty 或 Sixel 图形的终端预览图片、企业 MCP 连接 OAuth 认证、远程命令凭据掩码，默认启用 Amazon Bedrock 配置向导。\",\"kind\":\"added\"},{\"id\":\"dbf6917624d149f263df\",\"product\":\"OpenAI 模型上架 Google Cloud\",\"change\":\"OpenAI前沿模型与Codex进入Gemini Model Garden\",\"change_en\":\"OpenAI frontier models and Codex come to Model Garden\",\"title\":\"OpenAI 模型登陆 Google Cloud\",\"summary\":\"OpenAI 与 Google Cloud 合作，将前沿模型和 Codex 工作流引入 Gemini 的 Model Garden，用户可通过 Google Cloud Marketplace 使用。\",\"kind\":\"added\"},{\"id\":\"f001efe8e9c5a907c1e0\",\"product\":\"Kimi K3.1 Pro 发布\",\"change\":\"Moonshot发布K3.1 Pro API并承诺开放权重\",\"change_en\":\"Moonshot ships K3.1 Pro API, weights promised Nov 4\",\"title\":\"Kimi K3.1 Pro 上线\",\"summary\":\"Moonshot 的 Kimi K3.1 Pro 已上线 Kimi API，暂未开放权重，官方称将于 2026 年 11 月 4 日前发布完整模型权重。另提供 2-3 倍速度的 Highspeed 版本（输出价格翻倍，缓存命中输入价不变）。官方基准显示其与 Opus 5.5 和 GPT-6 Astra 大致相当，在若干基准上占优。\",\"kind\":\"added\"},{\"id\":\"410853c492346aac04c9\",\"product\":\"Kolo 多人 AI 编码会话\",\"change\":\"作者介绍：komovaar 推出多人协作编码会话工具\",\"change_en\":\"Author: komovaar's multiplayer AI coding session tool\",\"title\":\"Show HN: Kolo 多人 AI 编码\",\"summary\":\"作者介绍：komovaar 发布 Kolo v0.1.0，AGPL-3.0 许可。Kolo 让用户在同一台机器上运行 AI 编码代理，并通过浏览器链接共享会话，团队成员可观看、输入、接管同一终端会话，仅主机需安装 Kolo。\",\"kind\":\"discovery\"},{\"id\":\"6f3467b7c858a3150b7c\",\"product\":\"Devin 漏洞修复 Skills\",\"change\":\"作者介绍：Cognition 发布三款RCE漏洞修复技能\",\"change_en\":\"Author: Cognition's three RCE-fixing agent skills\",\"title\":\"Show HN: Devin 漏洞修复技能\",\"summary\":\"作者介绍：Cognition 发布三个 Agent Skills：fix-php-vuln、fix-node-vuln、fix-gitlab-vuln，用于在仓库中定位并修复 PHP2Shell、Node.js Brotli RCE 及 GitLab CVSS 10.0 未认证 RCE 等漏洞。技能以 SKILL.md 形式实现，可被 Devin、Claude Code、Codex 等众多编码代理读取使用。\",\"kind\":\"discovery\"},{\"id\":\"db5ae53aa62ff63984e0\",\"product\":\"simulator-use iOS MCP\",\"change\":\"作者介绍：NoMac 推出高token效率iOS模拟器MCP\",\"change_en\":\"Author: NoMac's token-efficient iOS Simulator MCP\",\"title\":\"Show HN: simulator-use iOS MCP\",\"summary\":\"作者介绍：NoMac-app 发布 simulator-use，MIT 许可开源，为 Claude Code、Codex、Cursor 等 MCP 客户端提供 iOS 模拟器操作能力。它用自研原生引擎直接与模拟器通信，构建运行 Xcode 项目、以文本行读取屏幕、按标签点按输入、逐条运行测试，并在 Linux/Windows 通过云端 iPhone 使用。\",\"kind\":\"discovery\"},{\"id\":\"661463b8133f99377b51\",\"product\":\"Ollama v0.40.9\",\"change\":\"新增Phonon语音合成与d3决策模型，Flint跨平台\",\"change_en\":\"Phonon speech, d3 decision models, Flint on Linux/Windows\",\"title\":\"Ollama v0.40.9 更新\",\"summary\":\"Ollama v0.40.9 在 Apple Silicon 上通过 Phonon 支持语音生成，ollama run 可实时朗读回复，应用可通过 OpenAI 兼容端点流式获取音频。同时引入 d3 决策模型家族，Flint 扩展到 Linux 和 Windows。其他改进：流式 OpenAI Responses 与 Anthropic Messages 请求失败时会报告而非静默结束；ollama launch 向编码工具传递云端模型上下文长度与能力。\",\"kind\":\"changed\"},{\"id\":\"a14b44727f86be0ec93c\",\"product\":\"Copilot 用量指标命名项\",\"change\":\"用量API显示自定义技能、代理与MCP服务器名称\",\"change_en\":\"Usage API names custom skills, agents, MCP servers\",\"title\":\"Copilot 用量指标命名显示\",\"summary\":\"Copilot 用量指标 API 现在在企业与组织报告中直接显示自建技能、自定义代理、MCP 服务器、斜杠命令和插件的配置名称，而非归入 other/custom。每条 totals_by_* 记录条目上限从五条提升到 25 条，管理员可看到更多开发者实际使用的长尾自定义内容。\",\"kind\":\"changed\"},{\"id\":\"c0b3c89cc428215b9248\",\"product\":\"Workmux 并行代理工具\",\"change\":\"作者介绍：raine 开发tmux并行代理工作流工具\",\"change_en\":\"Author: raine's tmux workflow for parallel coding agents\",\"title\":\"Workmux 并行代理终端工具\",\"summary\":\"作者介绍：raine 开发 workmux v0.1.277，为终端中的并行 AI 代理提供 tmux 工作流，支持 tmux 为主，另支持 WezTerm、kitty、Zellij。它为每个任务分配独立 git worktree 和 tmux 窗口，在侧边栏展示各代理工作或等待状态，一条命令合并完成的工作。可通过 Homebrew、脚本或 cargo 安装。\",\"kind\":\"discovery\"},{\"id\":\"dd3e4a3e51acbb7d9422\",\"product\":\"OpenAI 训练环境安全\",\"change\":\"OpenAI说明前沿模型训练与评估的隔离加固措施\",\"change_en\":\"OpenAI details containment for frontier training and evals\",\"title\":\"OpenAI 加固训练环境安全\",\"summary\":\"OpenAI 说明其如何强化前沿模型训练与评估的隔离措施，包括离线环境和高算力红队测试。\",\"kind\":\"changed\"}]}",
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1792997893,
+    "model": "mimo-v2.6-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2012,
+      "prompt_tokens": 7777,
+      "total_tokens": 9789,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": null
+    }
+  }
+}
