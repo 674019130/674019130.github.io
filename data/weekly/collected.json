@@ -63517,6 +63517,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50233447"
     },
     {
+      "id": "9bc1b22af5c192d35c6c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Radian, an agent puts development workflow on autopilot",
+      "url": "https://getrad.dev",
+      "published_at": "2026-10-25T16:41:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "I have built an indie hacker project; my main flow was: 1. chatting with Claud Code about the general plan 2. assigning slices of work to other worker agents like Pi + DeepSeek 4.1 Flash 3. building in parallel 4. Claud Code reviews when done, runs tests, and merges after I validate It worked, but with a lot of glue in the middle, so I built radian + arc into the same binary. Radian: a compact, pragmatic agent that has enough tooling to solve a small coding task end to end; it does not try to be a plugin platform. You can still extend it via MCP, skills, or hooks to extend its capabilities. I think plugins are great, but a lot of them are for humans. I'm trying to remove humans from the loop. Humans are at the start and end of the loop. arc: built into the radian binary; * it can get work sent from another agent * assign work items to concurrent headless radian agents * automatically review, CICD, integrate locally * humans can still be in the loop but not at the agent conversation or code review level, but at the work item approval/review level. * shows all of the above in a plan view or Kanban board in TUI. I have been heavily dogfooding, and Radian + arc basically built themselves in the last couple of weeks, with me just being a product manager/scrum master and qa. radian + arc are open source at https://github.com/hisea/radian What do you think about this approach? Looking for ideas to make Radian better or fit more scenarios. Comments URL: https://news.ycombinator.com/item?id=50233447 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233447"
+    },
+    {
       "id": "a4f77e30d24bd35d0c14",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -63527,6 +63539,18 @@
       "date_kind": "community_post",
       "evidence": "Hi HN, I'm Samar, a software engineer. I built Junior because I was spending more time fixing CI issues, babysitting PRs and resolving merge conflicts. I thought maybe i should automate all of it, and that's why I started building Junior. Junior is an agent that runs locally on macOS and picks up that kind of work. It connects with my Linear, Slack, Github etc and autopicks work for himself. It works on it and shares a report for me to review. It's open source under. I'd love feedback, especially on the permission model and how autonomous should it work. Happy to answer anything. Comments URL: https://news.ycombinator.com/item?id=50233491 Points: 3 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50233491"
+    },
+    {
+      "id": "5aeb2694ac15dd576b5a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Temporal Continuity API – Stopping agent amnesia and context drift",
+      "url": "https://api.rscapex.com",
+      "published_at": "2026-10-25T17:16:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://api.rscapex.com Comments URL: https://news.ycombinator.com/item?id=50233787 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50233787"
     },
     {
       "id": "bf28aa65953cbd7baa5c",
@@ -63565,6 +63589,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50234643"
     },
     {
+      "id": "914d6a77687767ac4664",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Vibe coding is turning the music gear world upside down",
+      "url": "https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware",
+      "published_at": "2026-10-25T18:52:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware Comments URL: https://news.ycombinator.com/item?id=50234827 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50234827"
+    },
+    {
       "id": "5a53ca19c61c4cd35476",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -63575,6 +63611,30 @@
       "date_kind": "community_post",
       "evidence": "Hey all, SubSpace has been my favorite game since I was a kid playing it in 1997, and its always been a dream of mine to rebuild it for the browser so I could play from any OS and enjoy with others instantly. Here it is: https://zubspace.gg It's open source too: https://github.com/pkieltyka/zubspace The project is written in Rust targets WASM+WebGL and uses WebRTC data channels for its networking layer for low latency game play :) just load up your favorite agent on it, and feel free to extend it Comments URL: https://news.ycombinator.com/item?id=50235012 Points: 3 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=50235012"
+    },
+    {
+      "id": "31bb7c8e964ebea56847",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Reclaim disk space with an AI agent",
+      "url": "https://github.com/riza/ai-disk-cleanup",
+      "published_at": "2026-10-25T19:31:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/riza/ai-disk-cleanup Comments URL: https://news.ycombinator.com/item?id=50235230 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235230"
+    },
+    {
+      "id": "90302ec8641e53545edb",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "NeuronDump: Open a local LLM as a 3D graph, cut parts, see what breaks",
+      "url": "https://github.com/aymen94/NeuronDump",
+      "published_at": "2026-10-25T19:45:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/aymen94/NeuronDump Comments URL: https://news.ycombinator.com/item?id=50235357 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235357"
     },
     {
       "id": "082ce2395591df40e513",
@@ -63601,6 +63661,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50235425"
     },
     {
+      "id": "4d5c443cabc222b029b9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "It's a trap: testing coding agents on a language with surprising semantics",
+      "url": "https://blog.csongor.co.uk/loom",
+      "published_at": "2026-10-25T19:51:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blog.csongor.co.uk/loom/ Comments URL: https://news.ycombinator.com/item?id=50235426 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235426"
+    },
+    {
       "id": "fe33ec1daa52f1e302d6",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -63622,6 +63694,18 @@
       "published_at": "2026-10-25T20:19:47+00:00",
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/TheWariend/MuscleMemory Comments URL: https://news.ycombinator.com/item?id=50235670 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50235670"
+    },
+    {
+      "id": "000f854fedb4a55d1753",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: MuscleMemory – procedural memory for coding agents, proven by tests",
+      "url": "https://github.com/TheWariend/MuscleMemory",
+      "published_at": "2026-10-25T20:19:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/TheWariend/MuscleMemory Comments URL: https://news.ycombinator.com/item?id=50235670 Points: 5 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50235670"
     },
     {
@@ -63647,102 +63731,426 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/SRN0129/Agenttrust Comments URL: https://news.ycombinator.com/item?id=50235909 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50235909"
+    },
+    {
+      "id": "391d3fa32c62bace3eb6",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "url": "https://minimaxir.com/2026/10/cheap-llms",
+      "published_at": "2026-10-25T21:11:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://minimaxir.com/2026/10/cheap-llms/ Comments URL: https://news.ycombinator.com/item?id=50236102 Points: 214 # Comments: 245",
+      "discussion_url": "https://news.ycombinator.com/item?id=50236102"
+    },
+    {
+      "id": "82ea5987ef0dec0925ca",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I added stacked subgraphs to Mermaid flowcharts",
+      "url": "https://ramraj07.github.io/ra-mermaid",
+      "published_at": "2026-10-25T21:32:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "I’m an avid user of mermaid but am constantly annoyed by their limitation that subgraphs do not follow direction if any internal nodes are connected to the outside. So I asked Claude to add a new syntax called stack layout and it seems to work pretty elegantly. I also fixed my annoyance with mermaid.live and allowed this playground to save snapshots in your local storage as well. Happy to add more storage features if anyone’s interested! The one prompt fork is at https://github.com/ramraj07/ra-mermaid Comments URL: https://news.ycombinator.com/item?id=50236250 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50236250"
+    },
+    {
+      "id": "21d2583526eb96d95459",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A Blender addon that makes Claude twice as efficient at using nodes",
+      "url": "https://github.com/carson-katri/geometry-script",
+      "published_at": "2026-10-25T21:50:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "I originally made this addon 4 years ago, but recently discovered that coding agents love it. The addon adds a scripting API for Blender’s node trees, such as Geometry Nodes or Shader Nodes. It generates a function and related types for every node in Blender. Then the agent (or you) can write scripts to create node trees without having to guess what the node, input, and output names are. It’s meant to be used alongside the Blender MCP. In my tests, Opus finishes building node trees in at least half the time using at least half the tokens to answer the same prompt. Because the scripting API forces it to build correct node trees, it has to back track less to fix mistakes. This saves a lot of time and tokens. There is also a skill and some helper functions to let it look up the function signatures for nodes. Let me know how it works for you! Comments URL: https://news.ycombinator.com/item?id=50236380 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50236380"
+    },
+    {
+      "id": "d85e21fc24861cf9ec4e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built an AI agent to find customers on Telegram while I sleep",
+      "url": "https://opensparta.com/en",
+      "published_at": "2026-10-25T21:53:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://opensparta.com/en Comments URL: https://news.ycombinator.com/item?id=50236396 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50236396"
+    },
+    {
+      "id": "1bf3c091a86c4083fadf",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: I built an AI agent to find customers on Telegram while I sleep",
+      "url": "https://opensparta.com/en",
+      "published_at": "2026-10-25T21:53:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://opensparta.com/en Comments URL: https://news.ycombinator.com/item?id=50236396 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50236396"
+    },
+    {
+      "id": "e6f70f5a69e1c81eb5ec",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Glitchrupt: Glitch your desktop when your AI agent needs your attention",
+      "url": "https://github.com/elbee19/glitchrupt",
+      "published_at": "2026-10-25T22:22:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "I keep missing my AI agents' requests for my attention. So I had it build a thing that glitches the whole screen, like the glitches in the SpiderVerse movies. Comments URL: https://news.ycombinator.com/item?id=50236627 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50236627"
+    },
+    {
+      "id": "8ebcd1d014afd159b06a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Glitchrupt: Glitch your desktop when your AI agent needs your attention",
+      "url": "https://github.com/elbee19/glitchrupt",
+      "published_at": "2026-10-25T22:22:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "I keep missing my AI agents' requests for my attention. So I had it build a thing that glitches the whole screen, like the glitches in the SpiderVerse movies. Comments URL: https://news.ycombinator.com/item?id=50236627 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50236627"
+    },
+    {
+      "id": "e882a7b7877c867bdf66",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Limitbreak – Claude Code switches accounts mid-session on a limit",
+      "url": "https://github.com/radu2lupu/limitbreak",
+      "published_at": "2026-10-25T23:43:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/radu2lupu/limitbreak Comments URL: https://news.ycombinator.com/item?id=50237185 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50237185"
+    },
+    {
+      "id": "c5c28d1cc49de08265cf",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d)",
+      "url": "https://sketchagent.dev/s/yfYU6LhT",
+      "published_at": "2026-10-26T00:02:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "When GPT-6/Gemini launched recently, a lot of the 3D demos used blender-mcp ( https://github.com/ahujasid/blender-mcp ). It's cool, but you have to install blender locally and wire up plugins just to try a prompt or share a run. I built a browser-based 3D mesh playground so you can hook up your own coding agent over MCP (or run in-browser) directly in a tab. It runs on three.js + manifold-3d for blender-like boolean/mesh editing in JS, and gives the agent a render_preview tool to take multi-view screenshots (front/right/top/iso + custom camera angles + clay mode). That way the agent can look at what it built and fix the geometry, similar to how it iterates when building a website. The submitted link is a trace of Gemini reconstructing a Copenhagen canal scene from a photo: it hits a script error on the first pass, fixes the bug, and then goes through several rounds of checking 4-view and close-up render_preview screenshots to tweak the geometry. Comments URL: https://news.ycombinator.com/item?id=50237291 Points: 4 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50237291"
+    },
+    {
+      "id": "464077e7ca703feef3b1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d)",
+      "url": "https://sketchagent.dev/s/yfYU6LhT",
+      "published_at": "2026-10-26T00:02:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "When GPT-6/Gemini launched recently, a lot of the 3D demos used blender-mcp ( https://github.com/ahujasid/blender-mcp ). It's cool, but you have to install blender locally and wire up plugins just to try a prompt or share a run. I built a browser-based 3D mesh playground so you can hook up your own coding agent over MCP (or run in-browser) directly in a tab. It runs on three.js + manifold-3d for blender-like boolean/mesh editing in JS, and gives the agent a render_preview tool to take multi-view screenshots (front/right/top/iso + custom camera angles + clay mode). That way the agent can look at what it built and fix the geometry, similar to how it iterates when building a website. The submitted link is a trace of Gemini reconstructing a Copenhagen canal scene from a photo: it hits a script error on the first pass, fixes the bug, and then goes through several rounds of checking 4-view and close-up render_preview screenshots to tweak the geometry. Comments URL: https://news.ycombinator.com/item?id=50237291 Points: 4 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50237291"
+    },
+    {
+      "id": "858fcd4be0067cb78734",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Coding Is Dead. Programming Is Not",
+      "url": "https://twitter.com/jay4fun_/status/2114522024387269032",
+      "published_at": "2026-10-26T00:59:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/jay4fun_/status/2114522024387269032 Comments URL: https://news.ycombinator.com/item?id=50237672 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50237672"
+    },
+    {
+      "id": "d5631a997272f3d3b4bb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: RainbowSay – Learn, teach, research languages live with shows you love",
+      "url": "https://rainbowsay.ai",
+      "published_at": "2026-10-26T01:08:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://rainbowsay.ai/ Comments URL: https://news.ycombinator.com/item?id=50237773 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50237773"
+    },
+    {
+      "id": "3d2189503e09102c7322",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Depono – Chat with many AI models at cost and 10%, files kept in Git",
+      "url": "https://depono.xyz",
+      "published_at": "2026-10-26T01:12:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://depono.xyz/ Comments URL: https://news.ycombinator.com/item?id=50237806 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50237806"
+    },
+    {
+      "id": "f221197e010ae9bf2989",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Freehire, open-source search 3M+ tech jobs from company career boards",
+      "url": "https://freehire.me",
+      "published_at": "2026-10-26T01:13:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "freehire is a filterable, job board aggregator, job tracker, and AI-assisted resume tailoring tool. Saving your skills and preferences changes which jobs appear and how your resume gets tailored. I've looked at a lot of these solutions over the years and found it really hard to find the right mix of tools in an open-source offering. I've contributed to a few issues now and worked closely with the maintainer. I've watched this evolve over the last few months. I feel it's ready for everyone to check out and stress test. Source: github.com/strelov1/freehire Comments URL: https://news.ycombinator.com/item?id=50237813 Points: 6 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50237813"
+    },
+    {
+      "id": "a42af3f72dc0cd692226",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: God – real-time control room for LLM agent societies (EMNLP 2026 demo)",
+      "url": "https://github.com/XiaoLuoLYG/GOD",
+      "published_at": "2026-10-26T02:11:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/XiaoLuoLYG/GOD Comments URL: https://news.ycombinator.com/item?id=50238271 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238271"
+    },
+    {
+      "id": "89a89325d3c69b085231",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: God – real-time control room for LLM agent societies (EMNLP 2026 demo)",
+      "url": "https://github.com/XiaoLuoLYG/GOD",
+      "published_at": "2026-10-26T02:11:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/XiaoLuoLYG/GOD Comments URL: https://news.ycombinator.com/item?id=50238271 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238271"
+    },
+    {
+      "id": "d417bde0efe86f4e76eb",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Biff 2.0.4: LLM Skills",
+      "url": "https://biffweb.com/p/skills",
+      "published_at": "2026-10-26T02:18:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://biffweb.com/p/skills/ Comments URL: https://news.ycombinator.com/item?id=50238323 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238323"
+    },
+    {
+      "id": "583d931f96678d1ba14d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Drint – packaging dielines and 3D box mockups as an MCP server",
+      "url": "https://drint.io/help/mcp",
+      "published_at": "2026-10-26T03:09:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://drint.io/help/mcp Comments URL: https://news.ycombinator.com/item?id=50238603 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238603"
+    },
+    {
+      "id": "a4ee69ebf55593bf7ec1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
+      "url": "https://github.com/nodecode-ai/nodecode",
+      "published_at": "2026-10-26T03:30:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, we're Mike and Thom. Agents of the future should only have one tool (the interpreter, ideally a LISP eval), nothing more or less; to interact with the world. Agents remember by writing markdown files. NODECODE remembers by rewriting itself. And that is in itself a new paradigm in working with agents. What if memories, skills, MCPs, provider connectors, tools, etc. all live under the same image as *.lisp files instead of in disarray across random folders? Ask it for something it can’t do, and it writes what it needs into its OWN running image and keeps it even after a restart. (Changes in a LISP image have significantly lower ceremony and overhead than in harnesses written in other languages): Small intuitive scenario: > you can't read PDFs. teach yourself. (defun read-pdf (path) ...) ; runs at once, kept (read-pdf \"invoices/0421.pdf\") ;; Globex owes $1,240.00, due Oct 24, unpaid. [… rest of PDF content] read-pdf is still there after a restart, in your terminal, and in every other UI clients (Discord, web app, etc.) Technically at a lower level; NODECODE runs as one process in SBCL, a Common Lisp system, and shells attach to it. The model has one tool: it evaluates LISP in the running program. Code is data, so a program can rewrite itself while it runs. What the model defines runs at once and is kept, one file per definition, committed with git, loaded at every start. Why LISP now? Current SOTA models have reached an optimum point in how they efficiently work with LISP, though not as fluently as Python. Still, we believe AGI will understand ANY language (past/present/future) by understanding the crux of any given language, and not through excessive and expensive pretraining scheme. Why LISP in general? We believe LISP is the current language that communicates to the world with the least bandwidth. Why another LISP agent? The LISP harnesses we found are hard to use unless you already know the language itself, and so we had this idea of simplifying and condensing the UX to be user friendly for the masses, while leveraging the power of LISP. Code as data is what lets an agent change itself, and that shouldn't need a LISP hacker to run. NODECODE is our first step toward putting it on everyone's PC and mobile. You ask in plain words, the model writes LISP, and you get briefed in natural language; that is how it should be. Extensions? Code as data also suits extensions. We see NODECODE as a living agent organism. To us, it feels very much alive, and so this brings us to the Cells system. A Cell is a folder that teaches NODECODE something new: a chat room it can live in (e.g Discord, Telegram, Slack, etc. - Yes we made Cells for channels to have it act as a very capable personal agent), a skill, a memory, MCPs, new tools, etc. Install one from our Cell hub or ask it to write a custom, personalized one. Either way it is more code the agent can read and change. Your terminal, a browser tab, your phone and bots in Discord, Telegram and Slack all attach to that SAME gateway process, so a tool it writes in one is there in ALL of them. Over time it becomes yours and it is continuously evolving; the organism within it; NODECODE. MIT License. https://github.com/nodecode-ai/nodecode X/twitter/demo launch post: https://x.com/pomterree/status/2113721985167728757 docs: https://nodecode.ai/docs Comments URL: https://news.ycombinator.com/item?id=50238751 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238751"
+    },
+    {
+      "id": "993196cb7592d86ca83a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
+      "url": "https://github.com/nodecode-ai/nodecode",
+      "published_at": "2026-10-26T03:30:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, we're Mike and Thom. Agents of the future should only have one tool (the interpreter, ideally a LISP eval), nothing more or less; to interact with the world. Agents remember by writing markdown files. NODECODE remembers by rewriting itself. And that is in itself a new paradigm in working with agents. What if memories, skills, MCPs, provider connectors, tools, etc. all live under the same image as *.lisp files instead of in disarray across random folders? Ask it for something it can’t do, and it writes what it needs into its OWN running image and keeps it even after a restart. (Changes in a LISP image have significantly lower ceremony and overhead than in harnesses written in other languages): Small intuitive scenario: > you can't read PDFs. teach yourself. (defun read-pdf (path) ...) ; runs at once, kept (read-pdf \"invoices/0421.pdf\") ;; Globex owes $1,240.00, due Oct 24, unpaid. [… rest of PDF content] read-pdf is still there after a restart, in your terminal, and in every other UI clients (Discord, web app, etc.) Technically at a lower level; NODECODE runs as one process in SBCL, a Common Lisp system, and shells attach to it. The model has one tool: it evaluates LISP in the running program. Code is data, so a program can rewrite itself while it runs. What the model defines runs at once and is kept, one file per definition, committed with git, loaded at every start. Why LISP now? Current SOTA models have reached an optimum point in how they efficiently work with LISP, though not as fluently as Python. Still, we believe AGI will understand ANY language (past/present/future) by understanding the crux of any given language, and not through excessive and expensive pretraining scheme. Why LISP in general? We believe LISP is the current language that communicates to the world with the least bandwidth. Why another LISP agent? The LISP harnesses we found are hard to use unless you already know the language itself, and so we had this idea of simplifying and condensing the UX to be user friendly for the masses, while leveraging the power of LISP. Code as data is what lets an agent change itself, and that shouldn't need a LISP hacker to run. NODECODE is our first step toward putting it on everyone's PC and mobile. You ask in plain words, the model writes LISP, and you get briefed in natural language; that is how it should be. Extensions? Code as data also suits extensions. We see NODECODE as a living agent organism. To us, it feels very much alive, and so this brings us to the Cells system. A Cell is a folder that teaches NODECODE something new: a chat room it can live in (e.g Discord, Telegram, Slack, etc. - Yes we made Cells for channels to have it act as a very capable personal agent), a skill, a memory, MCPs, new tools, etc. Install one from our Cell hub or ask it to write a custom, personalized one. Either way it is more code the agent can read and change. Your terminal, a browser tab, your phone and bots in Discord, Telegram and Slack all attach to that SAME gateway process, so a tool it writes in one is there in ALL of them. Over time it becomes yours and it is continuously evolving; the organism within it; NODECODE. MIT License. https://github.com/nodecode-ai/nodecode X/twitter/demo launch post: https://x.com/pomterree/status/2113721985167728757 docs: https://nodecode.ai/docs Comments URL: https://news.ycombinator.com/item?id=50238751 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238751"
+    },
+    {
+      "id": "113fe615dbf48e64c66b",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline SDK v0.2.0",
+      "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.2.0",
+      "published_at": "2026-10-26T03:34:08+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Starting a session that already has a run in progress now reattaches to the live session instead of replacing its runtime. Before, the original run kept going but couldn't be reached, and its transcript writes landed on a stale snapshot. A start that includes a prompt while a run is in progress is rejected - The hub records every client that registered a capability for a session, including clients that join a task that's already running, and sends each request to the first one still connected. If none is left, the request fails quickly with a message the user can act on, instead of waiting forever - A turn whose connection drops after the model has streamed only reasoning is now retried, and the partial reasoning is discarded. Turns with text, media or tool calls are still never retried - Model requests retry at most 3 times after the first attempt (down from 5). Failed attempts are recorded in Langfuse traces, and cancelled requests are no longer reported as Langfuse errors - AI SDK updated to `ai` 7.0.136 / `@ai-sdk/provider-utils` 5.0.58. `max` reasoning now reaches the provider: the gateway no longer turns it into `xhigh`, and Kimi K3 gets `max` for Extra High and Max. Empty Anthropic turns are still retried despite the new `anthropic.*` custom stream parts - The `gemini` provider no longer sends native Google Search. On Gemini 3+, free-tier keys failed every turn with a 429 quota error, and on Gemini 2.x it dropped every Cline tool. Vertex keeps native search - Auto-compaction no longer runs when the model's input limit is unknown. Manual and overflow-recovery compaction still work - After the first compaction, the size estimate now uses the messages as they are actually sent, with tool results truncated. Before, it overestimated about 7x and compaction ran again every few tool calls - Checkpoint diffs read file contents with a single `git cat-file --batch` process instead of up to two `git show` processes per file. Workspaces with many untracked files used to spawn thousands of git processes - SSH remotes work behind a ProxyJump alias. The connect budget goes from 10s to 30s, the per-command limit to 60s, and tunnel readiness to 40s. When ssh exits mid-upload, its real error is reported instead of `EPIPE`, and a `LocalForward` on the alias no longer collides with the tunnel - `ask_question` answers are framed so the model keeps going after a bare choice. Empty answers are rejected, and an answer with only an attachment counts as answered - `run_commands` rejects an empty `commands` list with a tool error, and its schema now advertises `minItems: 1` - On PowerShell, the `run_commands` description explains backtick escaping, single-quoting literal paths, preferring cmdlets over `cmd /c`, and confirming recursive deletes first - Plugin commands run in the active session runtime and the hub. Plugin watches start working again when discovery directories appear - Compiled binaries load embedded plugin and dashboard resources straight from the binary, and every declared SDK runtime export is packaged - A configured `CLINE_PLUGIN_RUNTIME_DIR` is resolved to an absolute path - When OpenRouter has no match for a Cline recommended model, its capabilities are filled in from the Vercel catalog - Desktop cloud session orchestration moved into the hub. `session.list` reports `activeCloudCommands`, and the hub isn't replaced while cloud commands are still running - Core adds conversation summaries and cloud continuation support - Run stall telemetry: `agent.run-finished` and `agent.run-failed` carry stall signals from a new `RunHealthObserver` - `@cline/ui` now ships with the SDK packages on the shared version. It adds a `Kbd` component and token chips for slash commands and file mentions in `AgentComposer` - Refreshed the model catalog (7,041 → 6,457 models). Adds the Liquid Inference, Munito AI and Munito AI (EU) providers and drops CrofAI, iFlow and Llama. The Cline free list adds Reflection Beam, Nemotron 3.5 Lightning and Laguna ",
+      "discussion_url": ""
+    },
+    {
+      "id": "1ab969772333e2700e01",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Client Lead Qualifier and Review Responder for Agencies",
+      "url": "https://news.ycombinator.com/item?id=50238870",
+      "published_at": "2026-10-26T03:48:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Comments URL: https://news.ycombinator.com/item?id=50238870 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238870"
+    },
+    {
+      "id": "50ff6c60884c94cfa5ea",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI Client Lead Qualifier and Review Responder for Agencies",
+      "url": "https://news.ycombinator.com/item?id=50238873",
+      "published_at": "2026-10-26T03:49:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Comments URL: https://news.ycombinator.com/item?id=50238873 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238873"
+    },
+    {
+      "id": "f6818ff25aed3097ea37",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
+      "url": "https://uipalooza.ai",
+      "published_at": "2026-10-26T04:00:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "This question has been bugging me for a while: do different AI models have a different design sense? Does it matter which one I pick? I built UI Palooza to explore that. I gave models the same four frontend briefs, with enough room to choose their own typography, colors, layouts, and interactions. Then I repeated the runs with different design skills and sample directions. The public collection has 1,784 designs. You can compare them side by side and open the working websites, not just screenshots. No signup required. One way to explore it: pick a brief and Baseline A, then compare Vanilla with a design skill. Or keep the skill fixed and look across models. I’d be interested in which patterns you notice—and what you’d change about the experiment. Comments URL: https://news.ycombinator.com/item?id=50238943 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50238943"
+    },
+    {
+      "id": "edeba24cc6496a1043ae",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline CLI v3.0.74",
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.74",
+      "published_at": "2026-10-26T04:03:28+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- Opening a task that's already running in another Cline app now attaches to that run instead of starting a second one that couldn't be stopped. If an app closes mid-task, requests waiting on it now fail with a clear message instead of hanging - `cline hub status` and `cline doctor` no longer hang on a Hub that has frozen. Its health check now times out after 3s and the Hub is reported as not running - A turn whose connection drops after the model has streamed only reasoning (for example, \"The socket connection was closed unexpectedly\") is now retried instead of ending the run - Model requests retry at most 3 times instead of 5 - Kimi K3 now gets `max` reasoning for Extra High and Max, instead of an `xhigh` setting it rejects - Gemini API keys (the `gemini` provider) no longer send native Google Search. Free-tier keys failed every turn with a 429 quota error on Gemini 3+, and on Gemini 2.x every Cline tool was dropped - Auto-compaction no longer runs for models with an unknown context limit, and it no longer runs again every few tool calls after the first compaction - `ask_question`: the model keeps going after you pick an option, empty answers are rejected, and an answer with only an attachment counts - `run_commands` with an empty command list now returns an error instead of a silent success. On PowerShell, the tool tells the model how quote escaping works and to confirm recursive deletes first - Plugin slash commands run in the active session - Compiled CLI binaries load plugins and serve the dashboard from resources embedded in the binary - ACP: the provider and account options now appear under the right config categories - The skills tool call label no longer shows `null` arguments - Refreshed the model catalog. Adds the Liquid Inference and Munito AI providers and drops CrofAI, iFlow and Llama. The Cline free list adds Reflection Beam, Nemotron 3.5 Lightning and Laguna S 2.1 and drops Mimo V2.6 Flash and Muse Spark 1.3 Contributor. ClinePass now defaults to Kimi K3.1 Pro and adds MiniMax M3.1 Flash and DeepSeek V4.1 Flash 1017. Default models change for 56 other providers, mostly to Kimi K3.1 Pro, MiniMax M3.1 Flash or DeepSeek V4.1 Flash 1017 **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.73...cli-v3.0.74",
+      "discussion_url": ""
+    },
+    {
+      "id": "3e1edb4ad5479f62569d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Proc-CLI – An agent-friendly CLI tool for process and port management",
+      "url": "https://proc-cli.com",
+      "published_at": "2026-10-26T04:14:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://proc-cli.com/ Comments URL: https://news.ycombinator.com/item?id=50239041 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50239041"
+    },
+    {
+      "id": "808a0fb50f67427d7b37",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Proc-CLI – An agent-friendly CLI tool for process and port management",
+      "url": "https://proc-cli.com",
+      "published_at": "2026-10-26T04:14:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://proc-cli.com/ Comments URL: https://news.ycombinator.com/item?id=50239041 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50239041"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-25T20:51:07.227569+00:00",
+      "last_success": "2026-10-26T04:47:15.237729+00:00",
       "count": 10,
       "earliest": "2026-10-22T18:12:58+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-25T20:51:07.532572+00:00",
+      "last_success": "2026-10-26T04:47:15.471989+00:00",
       "count": 20,
       "earliest": "2026-10-15T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-25T20:51:07.714895+00:00",
+      "last_success": "2026-10-26T04:47:15.729240+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-25T20:51:07.825638+00:00",
+      "last_success": "2026-10-26T04:47:15.888798+00:00",
       "count": 30,
-      "earliest": "2026-10-12T15:54:36+00:00",
+      "earliest": "2026-10-12T16:58:00+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-25T20:51:08.351265+00:00",
+      "last_success": "2026-10-26T04:47:18.548241+00:00",
       "count": 100,
-      "earliest": "2026-10-24T22:44:35+00:00",
+      "earliest": "2026-10-25T09:18:26+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-25T16:19:50.616410+00:00",
+      "last_success": "2026-10-26T04:47:20.241184+00:00",
       "count": 100,
-      "earliest": "2026-10-22T18:00:15+00:00",
+      "earliest": "2026-10-23T09:19:41+00:00",
       "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-25T20:51:18.017636+00:00",
+      "last_success": "2026-10-26T04:47:20.946864+00:00",
       "count": 10,
       "earliest": "2026-10-15T19:22:06+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-25T20:51:18.618138+00:00",
+      "last_success": "2026-10-26T04:47:21.594699+00:00",
       "count": 10,
-      "earliest": "2026-10-13T08:26:52+00:00",
+      "earliest": "2026-10-13T15:02:27+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-25T20:51:19.123651+00:00",
+      "last_success": "2026-10-26T04:47:22.190458+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-25T20:51:19.508567+00:00",
+      "last_success": "2026-10-26T04:47:22.676654+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-25T20:51:20.138237+00:00",
+      "last_success": "2026-10-26T04:47:23.504614+00:00",
       "count": 10,
       "earliest": "2026-10-08T16:53:47+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-25T20:51:32.652619+00:00",
+      "last_success": "2026-10-26T04:47:39.675256+00:00",
       "count": 1,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-25T20:51:32.831443+00:00",
+      "last_success": "2026-10-26T04:47:39.888110+00:00",
       "count": 1318,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-25T20:51:39.161437+00:00",
+      "last_success": "2026-10-26T04:47:48.161583+00:00",
       "count": 2,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -63823,5 +64231,5 @@
       "to": "2026-10-20T23:36:17+00:00"
     }
   ],
-  "collected_at": "2026-10-25T20:51:39.161914+00:00"
+  "collected_at": "2026-10-26T04:47:48.162203+00:00"
 }
