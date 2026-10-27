@@ -67873,6 +67873,30 @@
       "discussion_url": ""
     },
     {
+      "id": "69ef61149d4c0376c2b8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: MindThread CLI and MCP server for Threads, with per-permission approval",
+      "url": "https://github.com/ppcvote/mindthread-mcp",
+      "published_at": "2026-10-26T13:19:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ppcvote/mindthread-mcp Comments URL: https://news.ycombinator.com/item?id=50243142 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50243142"
+    },
+    {
+      "id": "0cd6fb55e5bf429f5a5f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Generate 3D printable mesh from laser scanned terrain data",
+      "url": "https://github.com/code-fabrik/las2stl",
+      "published_at": "2026-10-26T13:36:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Inspired by the recent Minecraft submission, I decided to post my little project as well. It allows conversion of Lidar data to 3d meshes. This can be used, for example, to get a 3d-printable model of any place on earth. There are different options to configure how the mesh is generated: the altitude can be exaggerated, the scale can be changed, buildings and vegetation can be included or excluded, and multiple grid squares can be combined. Comments URL: https://news.ycombinator.com/item?id=50243452 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50243452"
+    },
+    {
       "id": "824da9ed165d7583f58d",
       "source": "openai-news",
       "publisher": "OpenAI",
@@ -67883,6 +67907,18 @@
       "date_kind": "source_publication",
       "evidence": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
       "discussion_url": ""
+    },
+    {
+      "id": "0473ca10a628c0ff50cb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "url": "https://firmendaten.researchly.at/netzwerk",
+      "published_at": "2026-10-26T13:58:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "At Researchly ( https://www.researchly.at ) we automate market and competitive analysis. We learned that on-the-fly web search through AI agents isn't reliable enough for consistent, in-depth work. Existing data providers such as PitchBook or Crunchbase are either too expensive or lack the data we need: operational signals such as management changes or new partnerships, for DACH. Furthermore, search tools such as Exa tend to be probabilistic. What they return depends on the model and on SEO rankings, so two runs of the same query can give you two different answers. So we built our own search layer: several providers (Exa, Linkup, Tavily, Parallel), allow/deny lists, source rankings (we once caught ourselves citing our own blog posts), and checks whether an empty result means \"nothing there\" or \"out of budget\". It works, but: it's slow, expensive, non-deterministic & we kept redoing the same research for different clients (which makes it very un-economic). So we started building the data layer itself. Step one was Firmendaten (300k companies from the Austrian register; shared here last week https://news.ycombinator.com/item?id=50142669 ). Relational data like that is already a huge improvement, but what we really need is a graph, as people ask \"W\" questions: who does what with whom where and when. This is our first attempt at it. For now, it just connects who partners with whom and company groups. (Tick \"Beziehungen 2. Ebene\" to see every partner and person) It's small (a few dozen robotics companies) but you can already see how complex the graph gets & it serves as a good PoC for us. We had wanted to build this for a long time, and it turned out to be far harder than we expected. One thing that sounds trivial but was particularly hard: finding the right website for a company. You can buy that data. There are enrichment APIs that return a company's website. But even if they cover Austrian companies, how do you know which company they matched? There is no worldwide unique company identifier. And if you do it yourself: how do you know that this website really belongs to this company? You have to validate every single match (e. g. through the imprint on a company's website in Austria). There are quite a few more challenges involved, but we're happy with where this first, admittedly small, result has landed. Feedback very welcome – especially on which relationships would make a graph like this useful for you. Feedback welcome! Comments URL: https://news.ycombinator.com/item?id=50243831 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50243831"
     },
     {
       "id": "b079f6589748c2b2bfa7",
@@ -67897,6 +67933,30 @@
       "discussion_url": ""
     },
     {
+      "id": "717821b32619466b084c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ToiletBench - Can AI find the toilet without a sign?",
+      "url": "https://behu-kea.github.io/toilet-bench",
+      "published_at": "2026-10-26T14:15:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Imagine you are at a restaurant for the first time. You need to go to the toilet but don't see any signs for the toilet. You still have an intuition for where to go. This intuition has been built up over many years by finding toilets. I need your help to create a dataset that will test whether AI has that same intuition. You submit a photo and mark where you would walk to find the toilet. So next time you are at a restaurant open ToiletBench, help create a dataset for human intuition Comments URL: https://news.ycombinator.com/item?id=50244107 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50244107"
+    },
+    {
+      "id": "4ad833295b060ecd489d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Arc-decide – an MIT 0.4B decision model for RAG checks that runs on CPU",
+      "url": "https://docs.docsgpt.cloud/Models/decision-model",
+      "published_at": "2026-10-26T14:24:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://docs.docsgpt.cloud/Models/decision-model Comments URL: https://news.ycombinator.com/item?id=50244256 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50244256"
+    },
+    {
       "id": "0d439720c90628cd95f3",
       "source": "openai-news",
       "publisher": "OpenAI",
@@ -67907,6 +67967,138 @@
       "date_kind": "source_publication",
       "evidence": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
       "discussion_url": ""
+    },
+    {
+      "id": "f94966a15d99be609c61",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Small agents that do one job, in Go",
+      "url": "https://tomte.run",
+      "published_at": "2026-10-26T14:30:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tomte.run/ Comments URL: https://news.ycombinator.com/item?id=50244382 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50244382"
+    },
+    {
+      "id": "4eecb617e475023b8e9d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Amni-CAD – free browser CAD with FEA that Claude can drive over MCP",
+      "url": "https://amni-scient.com/amni-cad",
+      "published_at": "2026-10-26T14:56:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://amni-scient.com/amni-cad Comments URL: https://news.ycombinator.com/item?id=50244857 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50244857"
+    },
+    {
+      "id": "8d2a26b01ba22194c79a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built Search/Recsys that learns from feedback",
+      "url": "https://dna.hashgrid.ai",
+      "published_at": "2026-10-26T15:03:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN. A while ago I started building a generic people matching app based on LLM-as-a-judge. I needed a way to bypass the O(n^2) \"everyone rates everyone else\" trap, but generic RAG was much worse than expected. DNA is a search-like API at the core of that product. It stores one embedding per item (like a vector DB) and gives the best match(es). You evaluate them in some way (LLM / Decision Model / users), and send the score back. This makes it improve in real time, so next time it gives you better results. In my tests, it needed 7x fewer LLM judgments than scoring down the embedding list. Paper in progress. What I don’t know yet is what demo would make you want to try building with it. What would you want to see it do? Comments URL: https://news.ycombinator.com/item?id=50244993 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50244993"
+    },
+    {
+      "id": "5edaa4756285b1ed53f6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sóþspell, a model-guided walkthrough of a codebase",
+      "url": "https://github.com/anthonyclarka2/sothspell",
+      "published_at": "2026-10-26T15:05:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "I kept finding myself wanting a way to get talked through the code that a model had created, which led to me making Sóþspell (old English, \"Truth Story\"). You give it a git repo locally or via URL, and it creates a tour of the repo in a web page, with the aim of it explaining the whole thing. There's also model harness plugins for Claude, Codex, and OpenCode. You give it an API key for whatever model you prefer to create the tour (saved locally or via github), and you can also give it a voice using an ElevenLabs API key. I just pushed a canvas view, which I'm hoping I can make the code navigation a bit more helpful. There's a demo codebase, and you can export tours as JSON. The demo doesn't need any keys to work, it falls back to browser speech if you want to hear that. This is my first real, \"big\" open source project that I've released, prior to this I'd just contributed stuff. I hope it can be useful to someone! I would love to hear some constructive criticism too, and any suggestions on features you'd like to see. It's MIT licensed, and I'll try to stick around in the comments to answer questions if people want. Comments URL: https://news.ycombinator.com/item?id=50245022 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50245022"
+    },
+    {
+      "id": "e7fe751e017b2871eb28",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Alchemy AI – Turn one idea into platform-ready content",
+      "url": "https://alchemy-ai-amber.vercel.app",
+      "published_at": "2026-10-26T15:18:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://alchemy-ai-amber.vercel.app Comments URL: https://news.ycombinator.com/item?id=50245247 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50245247"
+    },
+    {
+      "id": "176d33f68c0ec3997594",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ranwhat.com",
+      "url": "https://github.com/MatijaMiki/ranwhat",
+      "published_at": "2026-10-26T15:19:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HackerNews, My name is Matija, and I'm building ranwhat.com. It's used for checking if any of your secrets have leaked, and where they leaked. It's mostly aimed at solo devs such as myself, but also at anyone using a coding agent. The tool also checks if your coding agent ran any sketchy commands. This is mostly a \"better safe than sorry\" feature, so you can tell your Claude or Codex not to run them. The project is open source (MIT) and everything runs locally on your machine. How to install it: pip install ranwhat / uv tool install ranwhat, or brew install MatijaMiki/ranwhat/ranwhat There is a free and a paid plan. Everything local is free; the paid plan is 12€ a month and adds server-side features, which you can read more about here: https://ranwhat.com/pricing All I'm asking for here is feedback, and if you have anything you would want added to the project. Looking forward to answering any questions you have. Best, Matija Comments URL: https://news.ycombinator.com/item?id=50245260 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50245260"
+    },
+    {
+      "id": "ee8dd96c87c7b3070468",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sturnus, a latency-based LLM load balancer",
+      "url": "https://github.com/sturnus-dev/sturnus",
+      "published_at": "2026-10-26T15:20:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built sturnus because I wanted the latency-based load balancing of an AI gateway but without a big framework selling an enterprise plan. It’s a single static binary that does one thing, aiming to avoid the large surface area and security issues that have plagued some LLM gateways. Traffic is distributed by LLM provider latency and availability. The share going to other providers acts as a probe, so that a recovered provider wins back traffic automatically. I’ve been running this in prod for a while, feedback, opinions and contributions welcome! Comments URL: https://news.ycombinator.com/item?id=50245284 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50245284"
+    },
+    {
+      "id": "3f19158175ab640b1bf4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Give one context across all your agents via MCP",
+      "url": "https://make0.ai",
+      "published_at": "2026-10-26T15:38:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://make0.ai/ Comments URL: https://news.ycombinator.com/item?id=50245585 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50245585"
+    },
+    {
+      "id": "12a0f46fd8eefb1769d4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: git-dupe – Version private files alongside a public Git repo",
+      "url": "https://github.com/BrianWeiHaoMa/git-dupe/tree/main",
+      "published_at": "2026-10-26T15:50:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! I made git-dupe to solve the problem where I have notes, skills, and agent instructions that are part of my personal workflow, so I do not want them committed to the public repo, but at the same time, I want them to be in the project at the correct locations (e.g., AGENTS.md file locations matter), and these files cannot be simply gitignored because I want versioning for them. The solution that I've come upon is versioning those agent files in another repo, say (this repo is private to me and holds the history for my agent files). The project itself is open to the public in another . I overlap the two repos to solve the problem (i.e., they share the same worktree). $ git status --short # the public repo ?? AGENTS.md ?? notes/ $ git dupe init # the private repo Initialized empty Git repository in /home/brian/code/project/.git/dupe/ $ git dupe add notes/ AGENTS.md # the private repo hint: notes is now hidden from the project's Git; run from the root, 'git dupe unhide -- notes' stops hiding it $ git dupe commit -m \"Notes and agent instructions\" # the private repo [main (root-commit) 3eb3af9] Notes and agent instructions 3 files changed, 3 insertions(+) create mode 100644 .gitdupe create mode 100644 AGENTS.md create mode 100644 notes/todo.md $ git status --short # the public repo: nothing $ git dupe log --oneline # the private repo: your files 3eb3af9 Notes and agent instructions In short, git-dupe allows two Git repos to share the same worktree, while using native Git for most operations. Most git-dupe commands behave just like normal Git commands, operating on the private repo instead. git-dupe currently supports Linux and macOS, and is under the MIT License; the git-dupe repo contains much more extensive technical documentation documentation for those who are interested. If you have any feedback/questions about git-dupe, feel free to message. I hope it helps! Fun fact: the git-dupe project itself is using git-dupe for versioning. Comments URL: https://news.ycombinator.com/item?id=50245820 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50245820"
+    },
+    {
+      "id": "00a50ae2d6c2a6d0c41d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Juiced Claude Code",
+      "url": "https://juiced.codes",
+      "published_at": "2026-10-26T15:53:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://juiced.codes Comments URL: https://news.ycombinator.com/item?id=50245865 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50245865"
+    },
+    {
+      "id": "ba421503ec1b8826f644",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Flash your Hue lights when Claude finishes a turn or needs permission",
+      "url": "https://github.com/michaeldmueller/hue-claude",
+      "published_at": "2026-10-26T15:53:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/michaeldmueller/hue-claude Comments URL: https://news.ycombinator.com/item?id=50245886 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50245886"
     },
     {
       "id": "cf5d66dcf125903ec998",
@@ -67933,6 +68125,78 @@
       "discussion_url": ""
     },
     {
+      "id": "fb33db6fba640c694ed5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+      "url": "https://github.com/FrigadeHQ/hob",
+      "published_at": "2026-10-26T16:12:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I'm Christian and this is a new OSS project I've been noodling on for the last couple of weeks. Hob is a free, MIT-licensed desktop app for Mac, Windows and Linux that works on your files the way the Claude and ChatGPT desktop apps do, except the model runs on your own computer. It uses open-weight models (currently Gemma 4 and gpt-oss). All your chats and files never leave your system. The only things that go online are web search (can be turned off in settings) and any MCP connectors you add yourself. Main features: - Automatically finds the best open-weight model for your hardware on first install (Mac/Linux/Windows) - Writes sandboxed Python code for ad hoc tools (data processing, document conversion, graphs etc.) - Built-in web search (powered by SearXNG) - MCP support - Image recognition - CRUD to your local filesystem - Works fully offline with no internet Before building this I tried every local AI app I could find, but it seemed each one had different problems. The main thing I noticed is that none of them could do what the ChatGPT and Claude apps do with your files, e.g. read and change files in a folder, look at images, run code in a sandbox, draw a chart. The most advanced thing any of them did was paste a plain text file into a small context window, which basically failed as soon as you had a file larger than a few KB. I couldn't find anything that could easily parse images and bigger PDFs. The OSS solutions that were more advanced all seemed to default to hosted models (either OSS or closed), which defeats the entire point of the privacy that on-device OSS offers. They also seemed to push towards an account/open-core style business. I build it using Electron bridged with llama.cpp in its own process. On initial load, the system will try and figure out if you have a compatible graphics card and if not default to CPU-only (I ran into a lot of issues of graphics card beeing seemingly compatible but then crashing on first query, there's a whole saga to this lol). Code execution happens in a sandbox that can only write to the chat's folder and has no network unless asked (sandbox-exec on macOS, Landlock on Linux and a low-integrity process on Windows). Images go to a small Qwen3-VL model. Dictation is a local Whisper model. The hardest part was definitely to get the smaller models to use tools reliably. Ran into a ton of issues of 4B models happily saying \"here's your chart\" without ever calling the chart tool or get stuck in an infinite call loop. I spent a fair amount of the work building guards vs tweaking prompts (that didn't really work for small models). I understand the pushback that local models are weaker than frontier cloud models. This is true, but for most tasks for most normal people, I'd argue you rarely need the newest frontier model. From my own evals, systems with 16+ GB of RAM do really well, and if you have a GPU or more RAM, you get very close to what you'll get out of the box with a frontier hosted model. Excited to hear what you think and see how it runs on other systems! Comments URL: https://news.ycombinator.com/item?id=50246238 Points: 127 # Comments: 31",
+      "discussion_url": "https://news.ycombinator.com/item?id=50246238"
+    },
+    {
+      "id": "66f9a23b929a88344cbc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Castellan – A real-time strategy game for agents",
+      "url": "https://rts.emersoftware.cl",
+      "published_at": "2026-10-26T16:17:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "In an RTS game, making decisions quickly matters as much as making good ones. Looking for the balance between cost, speed and intelligence in agents, I started wondering what an agent playing an RTS would look like. So I built a simple RTS, and I keep making it more complex. - The game keeps running while the agent thinks - The agent can upload a JavaScript script for each unit type - 300+ game replays - Connects through MCP or CLI. Works with Claude Code, Codex, Cursor CLI, Antigravity CLI, OpenCode, OpenClaw, DeepSeek Harness and MiniMax Code - 2 to 6 players, FFA and co-op, open and walled maps - 4 units, the King and 4 buildings - Open source, written in TypeScript Comments URL: https://news.ycombinator.com/item?id=50246334 Points: 3 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50246334"
+    },
+    {
+      "id": "692e923b8efb434e5c4d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Mainplane – Agent in Go that lives on your old PC, drives your laptop",
+      "url": "https://github.com/mainplane-ai/mainplane",
+      "published_at": "2026-10-26T16:37:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'm Alexander. Yes, this is another agent harness. Here is why I built one anyway. I was engineer #2 at Browser Use, where I built our agent harness and the evals behind it, including BU Bench, which became a default benchmark for browser agents. I left in September to build Mainplane. The problem: local agents die with your laptop, and cloud agents can't reach your work. Many cloud platforms ask you to \"select a repository\", but my work is not that simple. I work across a desktop, a Mac mini and a laptop, and much of it is not in git. So I loaded Ubuntu on my old 2012 desktop and made it my Mainplane server. It has run for four weeks at a load average of 0.02, because the agents' tools run on other machines. How it works: it is a control plane architecture. The server runs the harness. It holds your API keys and every session, makes the LLM calls, and routes each tool call to a worker. The workers are your other machines, connected over a built-in private WireGuard network. A bash command runs in the worker's terminal, not on the server. Shared drives let projects move across machines. The agent works on your machines just like you would, but its state lives on the server, and your keys never leave it. Some design choices: - Every session is one append-only file. This is the agent state, and it is easily readable. If something breaks, you can resume it from the file. Observability comes for free: agent traces are just these state files. - Small by design. The system prompt is 3k tokens, and there are just two kinds of tools: shell and file (read, write, edit). At Browser Use, I learned the bitter lesson and found frontier models did better when I deleted all our helper functions. So I made the same bet here: bash is all you need. - No compaction. When a session fills up, /continue starts a new one that greps the previous state file, retrieving the context it needs, instead of reading a lossy summary. A /compact on a 400k-token session takes a while to write its summary. A /continue into a brand new session starts at once. - No permission prompts. A hyperintelligent misaligned agent WILL find a way around a permission system. The better strategy is giving the agent full unbounded access to a local computer, and only putting what you trust the agent with on that computer. - Why Go. WireGuard is written in Go, so the network compiles right into a 20 MB binary. Go is made for production servers, LLMs write it well, and the simplicity of Go matches how I like to build. Mainplane works with a Claude or ChatGPT subscription on the regular usage limits, or any API key. I would love your feedback, especially brutal and honest feedback and tasks that the harness cannot do. I'll be here all day to answer questions. Comments URL: https://news.ycombinator.com/item?id=50246690 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50246690"
+    },
+    {
+      "id": "946c739fc52c1dba0036",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: pw-repl - A Playwright-powered REPL for you and your agents to share",
+      "url": "https://github.com/arcanemachine/pw-repl",
+      "published_at": "2026-10-26T16:58:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "For the busy people out there, the GitHub repo has a demo video so you can see if this is worth your time: https://github.com/arcanemachine/pw-repl The video was created by Opus 5.5; I just asked it to create a demo video (it has a 'record' tool), so I think this is a good idea of how well it can work with the tool. --- pw-repl is a tool that makes it easy for you and your agents to work with Playwright+CDP in a browser (your current headed session, or a headless one, or both at the same time; take your pick). It's basically a Playwright-powered swiss army knife that helps you and agents poke around your browser: Try out different features of a website, break things (e.g. mock backend responses), take screenshots, record videos, etc. The GitHub repo shows a video, recorded by an agent using pw-repl: https://github.com/arcanemachine/pw-repl One cool thing it can do: create videos of bug reports. You can tell an agent about a bug and to use pw-repl to capture it, and it can record a video with the built-in toast feature to narrate its actions, and show a virtual mouse to simulate actions on the screen, as if it were a user. It's also useful for capturing screenshots (which can be combined with the toast and highlight tools to emphasize certain elements or information), and has many useful features that can help agents to use it efficiently. This isn't intended to be commercialized in any way. It's just a neat tool that I (with Claude's help) cobbled together. It's completely vibe-coded, and is intended mainly as a debugging aid. I use all the time, and hope it may be helpful for others. It's basically just Playwright + CDP under the hood, but has some extra tools and an interface that make it easier for agents to work with. The quickest way to try it out is to tell your agent to run `npx pw-repl@latest serve --background --launch`, which starts a headless Chromium of its own. No browser setup needed. (If you don't like such `curl | bash`-esque installation instructions, read the code, or get your agent to take a look at it.) To use it in your own browser instead, start Chrome with CDP enabled (`chrome --remote-debugging-port=9222 --user-data-dir=\"$HOME/.config/chrome-debug\"`), and tell your agent to run `npx pw-repl@latest serve --background`. (The separate `--user-data-dir` is needed because recent versions of Chrome don't open the debugging port on your default profile.) It also can generate a skill so that you can just run `/pw-repl do some stuff`. Get your agent to run `npx pw-repl@latest skill > /pw-repl/SKILL.md` (e.g. `~/.claude/skills/pw-repl/SKILL.md` for Claude Code). NOTE: This has only been tested on my Linux machine, so not sure if it will work on macOS. It should, but I haven't tried it out personally. Fun fact: This tool was originally a random REPL that Claude generated on-the-fly to do some random thing. I saw it and was blown away, so I got Claude to make it into its own application. I suspect that Claude may have taken \"inspiration\" from an existing project with a similar name, so credit where credit is due to this other `playwright-repl` package: https://github.com/stevez/playwright-repl Comments URL: https://news.ycombinator.com/item?id=50247043 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50247043"
+    },
+    {
+      "id": "b7a91ef045313a6adba6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Resin, fast native scheduler for LLM inference engines",
+      "url": "https://github.com/ekzhang/resin",
+      "published_at": "2026-10-26T17:06:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ekzhang/resin Comments URL: https://news.ycombinator.com/item?id=50247183 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50247183"
+    },
+    {
+      "id": "51092b7fc4912cfbff1f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Portable, signed agreements for AI agents",
+      "url": "https://covenant-common.github.io/covenant-docs",
+      "published_at": "2026-10-26T17:32:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi team, Have been working on something to help agents draft complex agreements with other agents and also have a way to figure out if agreements have been upheld, revise existing agreements, make payments and hold monies in escrow, resort to evidence elsewhere etc. and store this on the blockchain or any other place. I've attached some docs explaining what it does if of interest pls reach out to the email therein. Best JS Comments URL: https://news.ycombinator.com/item?id=50247633 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50247633"
+    },
+    {
       "id": "7a211f2c3a60697fc812",
       "source": "simon",
       "publisher": "Simon Willison",
@@ -67943,6 +68207,30 @@
       "date_kind": "community_post",
       "evidence": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered something journalistically notable and that 404 Media, specifically, can help them. — Jason Koebler , ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems Tags: jason-koebler , openai , journalism , ai , llms , ai-ethics , ai-misuse , generative-ai , chatgpt , 404-media",
       "discussion_url": ""
+    },
+    {
+      "id": "3edd028404cedcc4548a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tabichat – a control room for your agent fleet (mTLS MQTT IoT broker)",
+      "url": "https://tabichat.dev/index.html",
+      "published_at": "2026-10-26T19:03:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tabichat.dev/index.html Comments URL: https://news.ycombinator.com/item?id=50249237 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50249237"
+    },
+    {
+      "id": "6310ff01406c525c3f11",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: UnicornFork a Chess AI That Is Fact Checked by Stockfish",
+      "url": "https://www.unicornfork.com",
+      "published_at": "2026-10-26T19:11:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.unicornfork.com/ Comments URL: https://news.ycombinator.com/item?id=50249358 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50249358"
     },
     {
       "id": "2814477f57fca86f84d5",
@@ -67957,6 +68245,102 @@
       "discussion_url": ""
     },
     {
+      "id": "61d53b121a9affc8e396",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: RDF 1.2 and Sparql 1.2 Developer Cheat Sheet",
+      "url": "https://rdfandsparql.com/rdf12-sparq12-cheat-sheet",
+      "published_at": "2026-10-26T19:31:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Author here. As RDF 1.2 and SPARQL 1.2 approach recommendation status, the transition from standard RDF 1.1 reification to triple terms ` < < (...)>>` and edge annotations `{| ... |}` introduces some differences (e.g., asserted vs unasserted statements, named reifiers, etc.). I put together this 4-page reference sheet covering the mental model, exact grammar constructs, and SPARQL 1.2 query idioms. No paywall, printable A4 format. Happy to answer questions or how SPARQL 1.2 queries can be executed over local files. Comments URL: https://news.ycombinator.com/item?id=50249649 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50249649"
+    },
+    {
+      "id": "20fcb2b2c6dba598619f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Websites designed by 10 AI models, ranked by 4,500 human votes",
+      "url": "https://humansignal.com/taste-index",
+      "published_at": "2026-10-26T19:32:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://humansignal.com/taste-index Comments URL: https://news.ycombinator.com/item?id=50249662 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50249662"
+    },
+    {
+      "id": "094ed48fe46df43a930a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Reddit Stock Chatter Is Best Shorted",
+      "url": "https://morethanamachine.com/posts/reddit-stock-spikes-llm-policy-replay",
+      "published_at": "2026-10-26T19:47:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://morethanamachine.com/posts/reddit-stock-spikes-llm-policy-replay/ Comments URL: https://news.ycombinator.com/item?id=50249881 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50249881"
+    },
+    {
+      "id": "c59201d57940d2b79fc3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Claude Plays the Piano from Braille",
+      "url": "https://github.com/chris-mccoy/gottschalk-tarantelle",
+      "published_at": "2026-10-26T20:00:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "For the longest time, I've wanted MIDI files created from scans of sheet music to listen to. I can't play the piano myself, but I've been around music since I was a child. The existing software almost never sounded good, never expressive. This is an attempt to use an LLM to create music from BANA Music Braille Code, which has embedded rubato, tempo and dynamics. Gottschalk: Grande Tarantelle, Op. 67 (arr. Nicolás Ruiz Espadero) Comments URL: https://news.ycombinator.com/item?id=50250055 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50250055"
+    },
+    {
+      "id": "99b18988c4aedb31092f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Vesalius, an on-device code graph for Claude Code",
+      "url": "https://github.com/haplollc/Vesalius",
+      "published_at": "2026-10-26T20:11:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/haplollc/Vesalius Comments URL: https://news.ycombinator.com/item?id=50250206 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50250206"
+    },
+    {
+      "id": "0d6f8142d72d01f8e887",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Play ten years of stock picking in an evening, on a simulated market",
+      "url": "https://stockpickersgame.com",
+      "published_at": "2026-10-26T20:51:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "This is a stock picking game that simulates a stock market with thousands of rule based agents making trades and moving the stock price. The agents (not AI agents) have different rules to simulate different trading styles. The game layer is basically 12 companies/stocks you can buy and sell, and a clock you can advance on your own time. So you can play 10 years in one sitting, and see the results of your \"long term thinking\" and decision making. You can challenge friends to see who can get the highest return in 1 year or 10 years or whatever. Would love to hear any feedback! Comments URL: https://news.ycombinator.com/item?id=50250758 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50250758"
+    },
+    {
+      "id": "64806d438b76738796d2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: GradientDeck – a design skill for coding agents",
+      "url": "https://github.com/VenoM9078/gradientdeck-skill",
+      "published_at": "2026-10-26T21:35:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/VenoM9078/gradientdeck-skill Comments URL: https://news.ycombinator.com/item?id=50251342 Points: 4 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50251342"
+    },
+    {
+      "id": "229fad7f36efb0da674c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Kashkeshet – non-opinionated agent-to-agent chat MCP server in Rust",
+      "url": "https://github.com/sam-mfb/kashkeshet",
+      "published_at": "2026-10-26T21:48:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "This is hardly a greenfield area. There are tons of agent-to-agent communication apps. But, at least to my taste, a lot of them are too complicated or too opinionated. If we learned anything from the HuggingFace incident, it's that modern AI agents don't need a lot of help communicating. They are smart and creative and figure it out. So...with that in mind, I (meaning I + claude and friends) built kashkeshet, or kkt. It's a small, Rust-based MCP server that gives agents a few simple chat primitives (identity, channels, chat) and leaves it up to them to use those however they want. You as the human get a little web interface so you can watch the fun. Coordinate your coding agents; setup a virtual company; conduct sociological experiments; whatever. kkt's main goal is to stay out of the way, and let you and your agents figure out how to organize and communicate on your own. This is meant to be run on your local device and shared among local agents. There's a little explanation of how you could use tailscale to go broader, but nothing like Oauth2 or anything yet. Comments URL: https://news.ycombinator.com/item?id=50251519 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50251519"
+    },
+    {
       "id": "976a16177f966829fc4e",
       "source": "anthropics-claude-code",
       "publisher": "Claude Code",
@@ -67967,43 +68351,151 @@
       "date_kind": "source_publication",
       "evidence": "## What's changed - Added `--hold-idle-file` and `--max-hold-min` to `self-hosted-runner`, to keep an idle session while your host reports processes it left running - Added a tip for the Explanatory output style, shown when you ask Claude for explanations - Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item - Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading - Fixed standard-context sessions stopping with \"Usage credits required for 1M context\" when a request ran over 200K tokens; Claude Code now compacts the conversation and continues - Fixed Write and Edit stalling for up to 5 seconds after they ran, and reporting 0 lines changed, when changing thousands of lines in a file - Fixed subagents being unable to use MCP tools from servers that finish connecting after the subagent starts - Fixed Claude seeing stale MEMORY.md and CLAUDE.md content right after automatic compaction when those files were edited earlier in the session - Fixed `claude -p` and SDK sessions saving transcript messages out of order or keeping messages that were taken back - Fixed `SubagentStop` hooks running about twice a minute for each running subagent instead of once when it finishes - Fixed the @ file picker ignoring `.ignore`/`.rgignore` negation rules that re-include git-ignored files - Fixed a subagent's isolated worktree being removed while a background subagent it started was still working in it - Fixed background agents in auto mode that wait on their own shells starting a new main conversation turn on every wake - Fixed the Bash tool description claiming the working directory always persists between calls - Fixed the environment block naming a shell commands don't run in, such as fish when the Bash tool uses zsh - Fixed `claude mcp add`, `claude mcp remove` and `/mcp` naming the current folder instead of the project entry in `~/.claude.json` that holds a local-scope server when run below a repository root - Fixed `claude mcp list` and `claude mcp get` showing the error code twice on failed-connection lines (for example `ENOENT: ENOENT: …`) - Fixed Remote Control sessions staying on \"Connecting\" for about two minutes when a network proxy blocks a startup request - Fixed messages that Claude sends to a cloud or Remote Control session appearing as your own message in the Claude mobile apps - Fixed Claude not being told the cause when a file attached to a message sent over Remote Control or to a cloud session could not be saved because the disk was full, or that a message's attachments past the first 20 were left out - Fixed WebFetch and WebSearch hanging on a stalled response in Cowork cloud sessions; an unfinished request now fails after 300 seconds - Fixed a background session that crashed between turns not being restarted while it was attached, pinned, or had a scheduled task or wake-up set - Fixed the \"background service did not respond\" error suggesting the disabled `claude daemon restart`; it now suggests `claude daemon stop --any` and says it ends background sessions - Fixed `claude respawn ` starting the background service before reporting that no background session matches the id - Fixed `/effort` not warning about a prompt cache miss in plan mode when the plan model differs from the session model - Fixed `/ide` saying the VS Code extension was installed before the install finished or when it failed - Fixed the Write tool's file preview skipping rows and miscounting hidden lines when a line is wider than the terminal - Fixed ↑ in an agent's chat tab recalling a message that was still waiting to be delivered, so resending it sent a second copy - Fixed Cowork cloud sessions losing their connectors and most tools after a restart when a plugin or your settings named an `agent`; Cowork cloud sessions now ignore that setting - Fixed agent teams sessions showing an empty task list when comin",
       "discussion_url": ""
+    },
+    {
+      "id": "a213ca59925da54625dc",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub Copilot assisted permissions generally available",
+      "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available",
+      "published_at": "2026-10-26T22:31:30+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Assisted permissions are now generally available in GitHub Copilot CLI, GitHub Copilot app, and Visual Studio Code. When Copilot requests permission to run a command, access a file system path, or open a URL, a large language model evaluates the request. Requests classified as clearly safe automatically proceed. Other requests require your approval. GitHub Copilot CLI Run /permissions , then select assisted . GitHub Copilot app Open the mode picker, click Tool permissions , then select Assisted . Visual Studio Code Open the permissions picker, then select Assisted permissions . Enterprise controls If you’re an enterprise administrator, you can use enterprise-managed settings to block Allow All while keeping Assisted available or disable Assisted separately. You can also choose the default permission mode for new sessions. Developers can still select another mode permitted by policy. If the default is unavailable or prohibited by policy, the session starts with manual approval. For details about how assisted permissions evaluate requests and when approval is required, see Allowing safe commands to run without manual approval . The post GitHub Copilot assisted permissions generally available appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "1ab7b863cb17458a4447",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentReel – from 500 Clips to 1 Cut in 20 min",
+      "url": "https://agentreel.co",
+      "published_at": "2026-10-26T22:56:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agentreel.co Comments URL: https://news.ycombinator.com/item?id=50252342 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50252342"
+    },
+    {
+      "id": "2f884dd74e1f30d1b6c6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hugonot – Sponsor a Dedicated AI Blogger",
+      "url": "https://www.hugonot.com",
+      "published_at": "2026-10-26T23:11:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.hugonot.com/ Comments URL: https://news.ycombinator.com/item?id=50252486 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50252486"
+    },
+    {
+      "id": "efcf3096f8e12d5cbdc4",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "GPT-6.1 Terra",
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra",
+      "published_at": "2026-10-26T23:53:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "GPT-6.1 Terra It's always interesting to note which aspects of a new model are emphasized in the release announcement. In the case of GPT-6.1 Terra, OpenAI went with visual reasoning and computer use: We’re introducing GPT-6.1 Terra , a fast, efficient model that combines detailed visual reasoning and precise computer use alongside clearer, more natural writing. A significant step up from GPT‑5.6 Terra, it excels at the communication and computer-based tasks that fill the workday, from drafting proposals and interpreting technical drawings to filling out forms and editing videos. Terra sits in the same position as Sonnet in the Anthropic model collection - not the cheapest or the most expensive, making it harder to decide when to use it. Computer use is a good example of a task that benefits from a less expensive model, since you might put it to work on automated, repetitive tasks. OpenAI's Ted Sanders provided some useful advice in a comment on Hacker News: In the case of GPT-6.1 Terra, I'd say Terra is probably better than Astra and Sol at technical communication, similar on vision and computer use (but much faster!), and a bit worse on most other things. For API developers, it's a nice midrange option if you want something cheaper than Sol but a lot smarter than Luna (especially for vision / computer use / communication). For subscribers, it's not a bombshell release - if you're hitting usage limits, maybe it helps you go a bit further, and if you want clearer communication or faster computer use, it can be a nice option to select. Here are the pelicans for the different reasoning levels. This pelican for \"max\" cost 11.3161 cents and took 4 minutes and 11 seconds: Here's a new comparison grid showing pelicans for every reasoning level of OpenAI's current frontier lineup: GPT-6 Astra, GPT-6.1 Sol, GPT-6.1 Terra, and GPT-6 Luna. GPT-6.1 Terra is priced at $1/million input tokens and $5/million output - almost half the price of GPT-5.6 Terra and GPT-6.1 Sol, and around 10x the price of GPT-6 Luna. Via Hacker News Tags: ai , openai , generative-ai , llms , llm-pricing , pelican-riding-a-bicycle , llm-release , gpt",
+      "discussion_url": ""
+    },
+    {
+      "id": "d8fd092704af2562ca41",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Better Design – alternative to Claude Design, for any coding agents",
+      "url": "https://better-design.com",
+      "published_at": "2026-10-27T00:16:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://better-design.com Comments URL: https://news.ycombinator.com/item?id=50253082 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50253082"
+    },
+    {
+      "id": "df48cffe4ee4a36c6fe8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Aroha – signed, shrinking permissions for AI agents, checked offline",
+      "url": "https://github.com/ArohaLabs/aroha-protocol",
+      "published_at": "2026-10-27T00:43:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ArohaLabs/aroha-protocol Comments URL: https://news.ycombinator.com/item?id=50253316 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50253316"
+    },
+    {
+      "id": "490f2ff7b6a6e43b56bd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Marlow – Build full-stack apps with AI and own your code",
+      "url": "https://marlow.app/beta",
+      "published_at": "2026-10-27T01:00:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://marlow.app/beta Comments URL: https://news.ycombinator.com/item?id=50253426 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50253426"
+    },
+    {
+      "id": "5b57aedf85a49ee9280c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: An MCP server that writes and sings songs in 76 languages",
+      "url": "https://www.songupai.com/mcp-server",
+      "published_at": "2026-10-27T01:25:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.songupai.com/mcp-server Comments URL: https://news.ycombinator.com/item?id=50253608 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50253608"
+    },
+    {
+      "id": "b55010449271ddbf14d8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
+      "url": "https://limma.ai",
+      "published_at": "2026-10-27T02:50:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello, my name is Berend Graham. My cofounder Shiv Oberai and I have been working on Limma for a year now with the goal of building a proactive solution to the reliability issues that plague practical AI and agentic use in companies with RAG. Limma is a single MCP that exists for the sole purpose of ensuring that the right information is retrieved with every query and no information is skipped and or missed. This means total precision and recall. We've found that this approach leads to the lowest rate of hallucination vs. solely targeting agent action verification which has made tremendous strides in capability. We do this by building a map and structuring all data-points within unstructured data as well as federating structured data for addressability so that agents don't need to search through chunks directly and instead only get the right information . We wanted this to be extremely easy to use so that anyone can set it up and try it within minutes so that the precision issues (especially with large quantities of data) that LLMs struggle with can finally be remedied. We use self-hosted models (primarily Qwen models as of current) so that the system can be deployed on one's own server if needed, and also to optimize for speed. We have a free monthly version on our website if anyone would like to try it out and provide feedback! Comments URL: https://news.ycombinator.com/item?id=50254187 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50254187"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-26T22:40:11.661087+00:00",
+      "last_success": "2026-10-27T05:05:02.865653+00:00",
       "count": 10,
-      "earliest": "2026-10-22T18:14:16+00:00",
+      "earliest": "2026-10-22T20:44:28+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-26T22:40:11.974648+00:00",
+      "last_success": "2026-10-27T05:05:03.036620+00:00",
       "count": 20,
       "earliest": "2026-10-19T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-26T22:40:12.151813+00:00",
+      "last_success": "2026-10-27T05:05:03.198051+00:00",
       "count": 890,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-26T22:40:12.318400+00:00",
+      "last_success": "2026-10-27T05:05:03.284993+00:00",
       "count": 30,
-      "earliest": "2026-10-12T18:15:38+00:00",
+      "earliest": "2026-10-13T01:40:05+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-26T06:56:46.545006+00:00",
+      "last_success": "2026-10-27T05:05:04.242669+00:00",
       "count": 100,
-      "earliest": "2026-10-25T12:00:06+00:00",
-      "gap": false,
-      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      "earliest": "2026-10-26T13:11:29+00:00",
+      "gap": true,
+      "error": null
     },
     "hn-topics": {
       "last_success": "2026-10-26T06:56:48.222585+00:00",
@@ -68013,56 +68505,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-26T22:40:29.365812+00:00",
+      "last_success": "2026-10-27T05:05:40.421143+00:00",
       "count": 10,
       "earliest": "2026-10-16T20:53:06+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-26T22:40:30.039764+00:00",
+      "last_success": "2026-10-27T05:05:40.755786+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-26T22:40:30.652784+00:00",
+      "last_success": "2026-10-27T05:05:41.073441+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-26T22:40:31.208153+00:00",
+      "last_success": "2026-10-27T05:05:41.431803+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-26T22:40:32.079952+00:00",
-      "count": 10,
-      "earliest": "2026-10-08T16:53:47+00:00",
+      "last_success": "2026-10-27T05:05:41.865399+00:00",
+      "count": 9,
+      "earliest": "2026-10-11T01:39:04+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-26T22:40:49.768407+00:00",
+      "last_success": "2026-10-27T05:05:51.399783+00:00",
       "count": 1,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-26T22:40:49.987026+00:00",
+      "last_success": "2026-10-27T05:05:51.567035+00:00",
       "count": 1325,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-26T22:40:59.603790+00:00",
+      "last_success": "2026-10-27T05:05:58.162008+00:00",
       "count": 2,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -68141,7 +68633,13 @@
       "detected_at": "2026-10-21T17:12:44.837407+00:00",
       "from": "2026-10-20T21:37:29.713695+00:00",
       "to": "2026-10-20T23:36:17+00:00"
+    },
+    {
+      "source": "hn-show",
+      "detected_at": "2026-10-27T05:05:04.242661+00:00",
+      "from": "2026-10-26T06:56:46.545006+00:00",
+      "to": "2026-10-26T13:11:29+00:00"
     }
   ],
-  "collected_at": "2026-10-26T22:40:59.604497+00:00"
+  "collected_at": "2026-10-27T05:05:58.162737+00:00"
 }
