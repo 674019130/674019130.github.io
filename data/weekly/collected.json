@@ -63697,6 +63697,18 @@
       "discussion_url": ""
     },
     {
+      "id": "7c0e0132ce708c4dd514",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+      "url": "https://openai.com/index/anima",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.",
+      "discussion_url": ""
+    },
+    {
       "id": "4e5c55a138d99c9226bc",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -69193,6 +69205,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50255427"
     },
     {
+      "id": "7352163f047399e2e3e9",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "published_at": "2026-10-27T07:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+      "discussion_url": ""
+    },
+    {
       "id": "99bacd2ae5183dc8c9d4",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -69407,32 +69431,80 @@
       "date_kind": "community_post",
       "evidence": "It supports forecast, cross-validation, anomaly detection, and exogenous variables for models such as AWS Chronos, Google TimesFM, Mistral Timestral, H2O TimeH2O, Nixtla TimeGPT, etc., under the same API. Comments URL: https://news.ycombinator.com/item?id=50257899 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50257899"
+    },
+    {
+      "id": "f76e29c3b872f3a23201",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "8 examples of Gemini 4 Argon in action",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-in-action",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "From deep research to interactive design, here are eight examples of what Gemini 4 Argon, our most intelligent model yet, is capable of.",
+      "discussion_url": ""
+    },
+    {
+      "id": "b9b49efead6267911ccb",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "We’re announcing Genie 4, our new world model for real-time interactive simulation.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4",
+      "published_at": "2026-10-27T16:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Today, we’re announcing our research on Genie 4, our new world model that brings unprecedented realism and native audio to real-time interactive simulation.The Genie 4 m…",
+      "discussion_url": ""
+    },
+    {
+      "id": "6adee554979b895ead32",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "published_at": "2026-10-27T16:12:42+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
+      "id": "45d60c17f741943e498e",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "published_at": "2026-10-27T17:16:52+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-27T12:11:46.051116+00:00",
+      "last_success": "2026-10-27T18:00:34.990145+00:00",
       "count": 10,
       "earliest": "2026-10-22T20:44:28+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-27T12:11:46.511589+00:00",
+      "last_success": "2026-10-27T18:00:35.207475+00:00",
       "count": 20,
-      "earliest": "2026-10-19T16:00:00+00:00",
+      "earliest": "2026-10-19T20:15:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-27T12:11:46.914058+00:00",
-      "count": 890,
+      "last_success": "2026-10-27T18:00:35.404632+00:00",
+      "count": 891,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-27T12:11:47.303652+00:00",
+      "last_success": "2026-10-27T18:00:35.556801+00:00",
       "count": 30,
       "earliest": "2026-10-13T01:40:05+00:00",
       "gap": false,
@@ -69443,66 +69515,66 @@
       "count": 100,
       "earliest": "2026-10-26T15:50:53+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-10-27T12:12:11.267236+00:00",
       "count": 100,
       "earliest": "2026-10-25T13:08:14+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-27T12:12:12.105905+00:00",
+      "last_success": "2026-10-27T18:00:52.691036+00:00",
       "count": 10,
       "earliest": "2026-10-16T20:53:06+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-27T12:12:12.999870+00:00",
+      "last_success": "2026-10-27T18:00:53.415132+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-27T12:12:13.809686+00:00",
+      "last_success": "2026-10-27T18:00:54.061742+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-27T12:12:14.442668+00:00",
+      "last_success": "2026-10-27T18:00:54.592058+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-27T12:12:15.490361+00:00",
+      "last_success": "2026-10-27T18:00:55.426470+00:00",
       "count": 9,
       "earliest": "2026-10-11T01:39:04+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-27T12:12:38.886825+00:00",
+      "last_success": "2026-10-27T18:01:16.558173+00:00",
       "count": 1,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-27T12:12:39.278347+00:00",
-      "count": 1325,
+      "last_success": "2026-10-27T18:01:16.777382+00:00",
+      "count": 1327,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-27T12:12:54.310729+00:00",
+      "last_success": "2026-10-27T18:01:29.058351+00:00",
       "count": 2,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -69589,5 +69661,5 @@
       "to": "2026-10-26T13:11:29+00:00"
     }
   ],
-  "collected_at": "2026-10-27T12:12:54.311469+00:00"
+  "collected_at": "2026-10-27T18:01:29.059024+00:00"
 }
