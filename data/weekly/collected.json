@@ -68989,6 +68989,18 @@
       "discussion_url": ""
     },
     {
+      "id": "fa74d8a59382c3939039",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.12",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12",
+      "published_at": "2026-10-27T00:07:12+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Liquid AI LFM3 [LFM3](https://ollama.com/library/lfm3) is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes: - [lfm3](https://ollama.com/library/lfm3): a 1.7B text model with a 256K-token context window - [lfm3-vl](https://ollama.com/library/lfm3-vl): adds image understanding - [lfm3-audio](https://ollama.com/library/lfm3-audio): speech recognition, translation, and text-to-speech in 18 languages - [lfm3-omni](https://ollama.com/library/lfm3-omni): text, images, and audio in one model ```sh ollama run lfm3 ``` ## d1 decision models Liquid AI's d1 models now come in a 2B size, built on LFM3. [d1](https://ollama.com/library/d1) makes decisions about text and images, and [d1-omni](https://ollama.com/library/d1-omni) adds audio. ```sh ollama run d1:2b \"I was charged twice for order 4417.\" --ask \"Is this a billing issue?\" ``` Note: lfm3 and d1 2b are supported on Apple hardware in this release. Support for Linux/Windows coming soon. ## What's Changed - Faster prompt processing on Apple silicon for Gemma 4, Flint and Laguna models - Speculative decoding now supports DFlash2 draft models on MLX - Gemma 4 keeps more detail in small images - `ollama launch` now works with OpenCode v2 - Fixed tool-only assistant turns from Kimi CLI - Updated MLX and llama.cpp **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.11...v0.40.12",
+      "discussion_url": ""
+    },
+    {
       "id": "d8fd092704af2562ca41",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -69479,34 +69491,82 @@
       "date_kind": "source_publication",
       "evidence": "",
       "discussion_url": ""
+    },
+    {
+      "id": "5fb4e4a8a21d31cc8759",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Game Boy Color on My Conference Badge",
+      "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge",
+      "published_at": "2026-10-27T19:34:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Game Boy Color on My Conference Badge I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer. I've been hacking around with it again, and then I ran into with Steve Francia... who worked with Gemini to get a full NES emulator working on it, and then went a step further and deployed an emulator for both the Game Boy and the Game Boy Color. Which means, if you can obtain the ROM, you can run The Legend of Zelda: Link's Awakening on your conference badge! A neat feature of the badge is that you can turn it upside down and then use game controller touch buttons that are built into the badge body. Tags: games , github , hardware-hacking , ai , generative-ai , llms , gemini , steve-francia",
+      "discussion_url": ""
+    },
+    {
+      "id": "d68ffc384d21cb792dec",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.165.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
+      "published_at": "2026-10-27T20:09:38+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## New Features - Added a built-in Google Cloud Vertex AI provider, configured with `model_provider = \"gcp\"`. (#56265) - Added GPT-6.1 Terra to the model catalogs. (#57337) - Added a repository filter to the session picker and directory grouping to the agent command center, making it easier to navigate sessions across linked worktrees. (#56308) - Added experimental attached thread forks to the app-server API. (#56351) - Enabled reasoning effort changes during a conversation by default for supported models. (#56163) - Enabled memory v2 by default for fresh profiles and added support for importing external-agent memories into it. (#56211, #56414) ## Bug Fixes - Fixed fresh TUI sessions to honor the server’s default approval reviewer when no explicit override is provided. (#56090) - Kept TUI preferences editable and immediately applicable when execution settings are invalid. (#56091) - Cancelled remote MCP tool requests when their local response futures are dropped. (#56132) - Prevented queued agent messages from restarting work after an interrupt or a switch to Plan mode. (#56330) - Stopped retrying when a provider reports that a model was not found, preserving its error message. (#56445) - Closed a marketplace URL validation gap that could allow Git to connect to a different host than the one checked against allowed patterns. (#56263) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.164.0...rust-v0.165.0 - #56081 Cache decrypted Codex auth and managed secrets @celia-oai - #56090 Honor server approval reviewer defaults on fresh TUI startup @etraut-openai - #56091 Keep TUI preferences editable when execution settings are invalid @etraut-openai - #56097 Prepare TUI startup to accept multiple backend sessions @bc-openai - #56124 Forward Guardian reviewer events to parent raw-event subscribers @jif-oai - #56127 Avoid blocking EMA auth status checks on account refresh @jif-oai - #56132 Cancel MCP tool requests when response futures are dropped @rhan-oai - #56133 Defer agent mail after empty final answers @eknight-oai - #56139 Fix the MCP auth status test's IdP OAuth configuration @jif-oai - #56153 Preserve safe enterprise MCP authentication error details @jif-oai - #56154 Add managed network review domains before allow rules @olliem-oai - #56163 Enable reasoning effort overrides by default @felixxia-oai - #56182 Add AWS SigV4 signing to network proxy MITM hooks @viyatb-oai - #56210 Stabilize the marketplace staging cleanup test @felixxia-oai - #56211 Default fresh memory profiles to v2 @jif-oai - #56214 Remove the `u64` cast from WSL DrvFS detection @felixxia-oai - #56220 Use cargo_bin in the Windows sandbox manifest test @felixxia-oai - #56222 Consolidate Bazel CI setup into `prepare-bazel-ci` @anp-oai - #56224 Reuse current model context across paginated resume config loading @charliemarsh-oai - #56233 Make Opus encoder test timestamps follow sample time @goodman-oai - #56234 Emit prompt telemetry only after hooks accept input @abhinav-oai - #56236 Make the code mode yield/resume test yield explicitly between phases @goodman-oai - #56246 Bump Bazelisk to 1.30.0 in the Bazel CI setup action @anp-oai - #56247 Consolidate Rust unit tests under dedicated test modules @dkovalenko-oai - #56248 Bump uv to 0.13.5 in CI and release workflows @anp-oai - #56250 Avoid redundant settings checkpoints when resuming threads @owenlin0 - #56261 Isolate V8 source dependencies and their C++ runtime settings @seanh-oai - #56263 Reject backslashes in HTTP(S) marketplace URL userinfo @willwang-openai - #56265 Add a built-in Google Cloud Vertex AI provider @celia-oai - #56266 Preserve MCP disable reasons across runtime overlays @mzeng-openai - #56272 Upgrade Python SDK model generation to datamodel-code-generator 0.64.0 @anp-oai - #56274 Wait for cloud config refresh cancellation in loader lifetime tests @goodman-oai - #56277 Support bounded request bodies in AWS SigV4 signing @viyatb-oai - #56278 Add negotiated network policy ",
+      "discussion_url": ""
+    },
+    {
+      "id": "a07bdb723c07914701aa",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.312",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
+      "published_at": "2026-10-27T20:24:20+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `oidc.user_id_claim` to the Claude apps gateway, to identify people by an id_token claim other than `sub`, such as Microsoft Entra ID's `oid` - Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does - Fixed managed settings and organization policy not being fetched for the rest of the session after signing in from the VS Code extension - Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place - Fixed per-directory and `paths:` skills not being found after a Bash `cd` deeper into a git repository - Fixed a rare case where the first reply after resuming a session in the terminal could be missing the next time the session was resumed - Fixed a command with an invalid name stopping all commands from loading, which could leave `claude -p` with no output - Fixed the Read tool sometimes failing on PDF pages with \"pdftoppm failed: Could not write image\" when the clean-up of old session files ran at the same time - Fixed the spinner, OpenTelemetry `effort` values and transcripts naming a newly picked effort level during a task before the model applied it; they now show the level in force - Fixed the `/model` and `/effort` cache warning saying the re-read waits for your next message; a change made while Claude is working can trigger it sooner - Fixed some sessions showing as waiting on you when the last message only mentioned items waiting on you mid-sentence - Fixed agent view restoring input text on the next launch after it was cleared with Ctrl+C just before exiting - Fixed agent view reopening in shell mode after exiting with Ctrl+D from an empty `!` input - Fixed vim mode `d`, `c` and `y` with a `gj` or `gk` count larger than the lines left deleting or copying text; like Vim, they now only move the cursor - Fixed `/verify` showing a long description meant for Claude in `/help` and the `/` command menu instead of a short one - Improved the prompt's effort indicator: a change made mid-task now says it may wait for your next message, and the note clears when it no longer applies - Improved WebFetch errors in cloud sessions: a host that does not resolve is now explained as possibly outside the allowed network domains, so Claude names the host to allow - Changed Bedrock, Vertex, Foundry and Mantle to use the shorter system prompt for model names Claude Code doesn't recognize, such as custom deployment names and inference profile ARNs, even when they front Sonnet or Haiku; set `CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT=0` to keep the full prompt - Changed automatic model switches after a flagged message to also cover model names Claude Code doesn't recognize, such as custom deployment names; set `CLAUDE_CODE_DISABLE_REFUSAL_FALLBACK=1` to turn them off - Changed usage limit messages to call the 5-hour window the \"5-hour limit\" instead of the \"session limit\" - Changed cloud sessions started from the CLI to get their names and branch names from the server - Changed prompt and agent hooks to run at most 24 at a time per session, sub-agents included, plus at most 12 that have waited longer than their event's timeout; a `timeout` under 1 second now counts as 1 second - Changed a subagent's `autoCompactWindow` to lower the window set by `CLAUDE_CODE_AUTO_COMPACT_WINDOW`, where it had no effect before; it still never raises that window - Changed OpenTelemetry `mcp_server.name` to report the real name of fixed-URL remote MCP servers declared by plugins from the official Anthropic marketplace, instead of `custom` - Changed Claude Code to stop sending the `claude_code.safety_event` OpenTelemetry event - [VSCode] Fixed sessions ending on a bare exit code when your organization's settings couldn't be loaded or were refused at startup; the tab now says why and offers Retry or Sign in again - [VSCode] Changed usage limit resets to show a clo",
+      "discussion_url": ""
+    },
+    {
+      "id": "10206986487f130966c7",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub Copilot supports server-to-server authentication",
+      "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+      "published_at": "2026-10-27T21:36:55+00:00",
+      "date_kind": "source_publication",
+      "evidence": "GitHub Copilot now supports server-to-server authentication for GitHub Apps installed on organizations, available in public preview. Services and agents built with the GitHub Copilot SDK can now make requests on behalf of an organization without relying on a signed-in user’s credentials. This workload-owned identity helps agents and automated services operate reliably at larger scale without tying their authentication or usage to individual users. Developers can give a GitHub App the read-only Copilot Requests organization permission, install the app on an organization, and pass a short-lived installation access token to the Copilot SDK. Usage is attributed and billed to the organization that owns the installation. The organization’s model policies, budgets, and spending controls apply. Organization owners can review which apps have access, identify app-attributed usage in AI usage CSV reports using the app_client_id field, and stop an app’s access by suspending or uninstalling it. To get started, see server-to-server authentication for the GitHub Copilot SDK and managing GitHub App access to your organization’s Copilot . The post GitHub Copilot supports server-to-server authentication appeared first on The GitHub Blog .",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-27T18:00:34.990145+00:00",
+      "last_success": "2026-10-27T22:13:57.926821+00:00",
       "count": 10,
-      "earliest": "2026-10-22T20:44:28+00:00",
+      "earliest": "2026-10-22T22:19:17+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-27T18:00:35.207475+00:00",
+      "last_success": "2026-10-27T22:13:58.223579+00:00",
       "count": 20,
       "earliest": "2026-10-19T20:15:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-27T18:00:35.404632+00:00",
+      "last_success": "2026-10-27T22:13:58.463312+00:00",
       "count": 891,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-27T18:00:35.556801+00:00",
+      "last_success": "2026-10-27T22:13:58.625104+00:00",
       "count": 30,
-      "earliest": "2026-10-13T01:40:05+00:00",
+      "earliest": "2026-10-13T13:32:00+00:00",
       "gap": false,
       "error": null
     },
@@ -69525,57 +69585,57 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-27T18:00:52.691036+00:00",
-      "count": 10,
-      "earliest": "2026-10-16T20:53:06+00:00",
+      "last_success": "2026-10-27T22:14:27.846844+00:00",
+      "count": 20,
+      "earliest": "2026-10-06T03:55:19+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-27T18:00:53.415132+00:00",
+      "last_success": "2026-10-27T22:14:28.222312+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-27T18:00:54.061742+00:00",
+      "last_success": "2026-10-27T22:14:28.615826+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-27T18:00:54.592058+00:00",
+      "last_success": "2026-10-27T22:14:28.975548+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-27T18:00:55.426470+00:00",
-      "count": 9,
+      "last_success": "2026-10-27T22:14:29.549980+00:00",
+      "count": 10,
       "earliest": "2026-10-11T01:39:04+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-27T18:01:16.558173+00:00",
+      "last_success": "2026-10-27T22:14:43.127034+00:00",
       "count": 1,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-27T18:01:16.777382+00:00",
-      "count": 1327,
+      "last_success": "2026-10-27T22:14:43.324782+00:00",
+      "count": 1328,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-27T18:01:29.058351+00:00",
-      "count": 2,
+      "last_success": "2026-10-27T22:14:52.311120+00:00",
+      "count": 3,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
       "error": null
@@ -69661,5 +69721,5 @@
       "to": "2026-10-26T13:11:29+00:00"
     }
   ],
-  "collected_at": "2026-10-27T18:01:29.059024+00:00"
+  "collected_at": "2026-10-27T22:14:52.311768+00:00"
 }
