@@ -72313,6 +72313,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50279594"
     },
     {
+      "id": "30f900193c6f06f39d6f",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.13",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
+      "published_at": "2026-10-28T19:55:04+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## LFM3 on Linux and Windows Liquid AI's [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linux and Windows as well as Apple silicon. **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.12...v0.40.13",
+      "discussion_url": ""
+    },
+    {
       "id": "92490529d3cca581e6f4",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -72455,102 +72467,306 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://armincat.com/articles/ai-agent-executed-same-query-254-times Comments URL: https://news.ycombinator.com/item?id=50281851 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50281851"
+    },
+    {
+      "id": "d3f38f0c0af4c531a435",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting Ted Sanders",
+      "url": "https://simonwillison.net/2026/Oct/28/ted-sanders",
+      "published_at": "2026-10-28T23:23:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes. Despite that complexity, much of the variation in performance is explained by just a single variable: model size. In general, models that are bigger will (a) be more performant / reliable, (b) cost more per token, and (c) have better recall of esoteric facts. As you note, our models are ordered: Luna < Terra < Sol < Astra [ ... ] These days, version number signifies a few things at once: the order of release, the relationship to other releases, and the magnitude of improvement. So something like 6.1 would indicate it was launched after 5.6, may share some similarities to other 6.1 models in terms of training data / personality (which is why it's not 5.7), and isn't a giant enough leap to merit the headlines and expectations that would come with a 7. — Ted Sanders , explaining OpenAI's model naming conventions Tags: generative-ai , gpt , openai , ai , llms , ted-sanders",
+      "discussion_url": ""
+    },
+    {
+      "id": "72aac60c40c42241f391",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A Lisp coding agent is beating Codex in token efficiency by 10x",
+      "url": "https://twitter.com/techfren/status/2115583260919202187",
+      "published_at": "2026-10-28T23:38:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/techfren/status/2115583260919202187 Comments URL: https://news.ycombinator.com/item?id=50282481 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50282481"
+    },
+    {
+      "id": "488c4c4ec6a4a09374a9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Atsfill: Let your agent apply for you. One CLI for every hiring system",
+      "url": "https://github.com/shbernal/atsfill",
+      "published_at": "2026-10-28T23:48:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/shbernal/atsfill Comments URL: https://news.ycombinator.com/item?id=50282574 Points: 1 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50282574"
+    },
+    {
+      "id": "3cc421988b205025b16d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: synapseForge - Open-source Python framework with built-in agent creator",
+      "url": "https://www.synapseaihub.com.ar",
+      "published_at": "2026-10-29T00:02:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.synapseaihub.com.ar/ Comments URL: https://news.ycombinator.com/item?id=50282685 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50282685"
+    },
+    {
+      "id": "3bb5f62245366a14eee0",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: synapseForge - Open-source Python framework with built-in agent creator",
+      "url": "https://www.synapseaihub.com.ar",
+      "published_at": "2026-10-29T00:02:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.synapseaihub.com.ar/ Comments URL: https://news.ycombinator.com/item?id=50282685 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50282685"
+    },
+    {
+      "id": "4f3abf01a8c8cfea04bd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Postbox – Personal Mailbox for Humans and Agents Hosted on Cloudflare",
+      "url": "https://github.com/NaxAlpha/postbox",
+      "published_at": "2026-10-29T00:17:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/NaxAlpha/postbox Comments URL: https://news.ycombinator.com/item?id=50282780 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50282780"
+    },
+    {
+      "id": "46dca538a258bac981a4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap)",
+      "url": "https://www.npmjs.com/package/deepseek-search-cli",
+      "published_at": "2026-10-29T00:20:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "If you've been following along with DeepSeek news you will know they recently added web search capability to the DeepSeek API, where you can use web search under the same API key. It is pretty handy, also super cheap at only $0.75 per 1,000 requests (pretty much as cheap as it gets, one search credit can encompass many responses). I created a simple TypeScript CLI wrapper around the API for my own agents to use (for open source models and harnesses) I'm sure most of you could whip this up on your own but it also comes with unit/integration/live/e2e testing, CI checks, changelog, auth handling, linting, sdk wrapper, and a fleshed out readme, potentially saving you a few hours of work + validation. Just need to install, auth, and drop a comment in your 'AGENTS.md' to use `dsearch --help` when agent needs web search. GitHub: https://github.com/LaishGlenberg/deepseek-search-cli Comments URL: https://news.ycombinator.com/item?id=50282799 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50282799"
+    },
+    {
+      "id": "48448a58d8287f1aa49f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Fengarde–OCSF-native open-source SIEM with local AI triage (Apache-2.0)",
+      "url": "https://supermhel.github.io/fengarde",
+      "published_at": "2026-10-29T00:24:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://supermhel.github.io/fengarde/ Comments URL: https://news.ycombinator.com/item?id=50282830 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50282830"
+    },
+    {
+      "id": "4cf7cff55c2f37377414",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "MicroZig to Adopt Strict No LLM / No AI Policy",
+      "url": "https://github.com/ZigEmbeddedGroup/microzig/blob/main/CODE_OF_CONDUCT.md",
+      "published_at": "2026-10-29T00:30:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/ZigEmbeddedGroup/microzig/blob/main/CODE_OF_CONDUCT.md Comments URL: https://news.ycombinator.com/item?id=50282865 Points: 49 # Comments: 67",
+      "discussion_url": "https://news.ycombinator.com/item?id=50282865"
+    },
+    {
+      "id": "635031fefbe3c066c966",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A zero-dependency auditor for AI agent exposure (secrets, SSH, configs)",
+      "url": "https://ai-agent-antivirus.space",
+      "published_at": "2026-10-29T01:56:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ai-agent-antivirus.space/ Comments URL: https://news.ycombinator.com/item?id=50283625 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50283625"
+    },
+    {
+      "id": "90a2a324c9e7e12da3e9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "HLock: Harness Portability for Agent Configs",
+      "url": "https://docs.hlock.ai",
+      "published_at": "2026-10-29T02:01:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://docs.hlock.ai/ Comments URL: https://news.ycombinator.com/item?id=50283670 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50283670"
+    },
+    {
+      "id": "eb9a45eb957b1db1d7d4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Tools, 17 with write access: How AI platforms bound agent authority",
+      "url": "https://www.antalpha.com/en-us/blog/120-tools-17-that-can-write-how-four-platforms-bound-an-ai-agents-authority",
+      "published_at": "2026-10-29T03:17:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.antalpha.com/en-us/blog/120-tools-17-that-can-write-how-four-platforms-bound-an-ai-agents-authority/ Comments URL: https://news.ycombinator.com/item?id=50284178 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50284178"
+    },
+    {
+      "id": "7d8c9a39938be8cf1de7",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Partnering with Singapore to bring frontier AI to public health",
+      "url": "https://blog.google/innovation-and-ai/technology/health/google-for-health-summit-singapore",
+      "published_at": "2026-10-29T03:30:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Google announced a new research hub and initiatives to support clinicians, advance research, and help Singaporeans live healthier lives.",
+      "discussion_url": ""
+    },
+    {
+      "id": "c4fc763e60849dec1da4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Startica Open-source app for SEO, marketing, accessibility and security",
+      "url": "https://github.com/chriscasper/startica",
+      "published_at": "2026-10-29T03:40:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, name is Casper. Really apprehensive about posting here but I figured there might be someone else out there that could use some of the same tools. Been building a lot sites and other apps lately and I needed a lot of extra tools but not a lot of budget to spend on SaaS subscriptions for every project. So I started adding in features of other tools I wanted to use to help manage marketing, SEO, accessibility and security. Its still very rough and yes, it was built with the help of AI. Looking for feedback, good or bad haha. Comments URL: https://news.ycombinator.com/item?id=50284303 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50284303"
+    },
+    {
+      "id": "08ccf1e3fc29ed2b3a64",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentGPA, a report card for how you work with coding agents",
+      "url": "https://agentgpa.dev/leak-index",
+      "published_at": "2026-10-29T04:04:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agentgpa.dev/leak-index Comments URL: https://news.ycombinator.com/item?id=50284426 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50284426"
+    },
+    {
+      "id": "90ae90ce72d3c15c21dc",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: AgentGPA, a report card for how you work with coding agents",
+      "url": "https://agentgpa.dev/leak-index",
+      "published_at": "2026-10-29T04:04:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agentgpa.dev/leak-index Comments URL: https://news.ycombinator.com/item?id=50284426 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50284426"
+    },
+    {
+      "id": "5356482bc4d014556793",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "O11: OpenRouter for Agent Tools",
+      "url": "https://o11.ai",
+      "published_at": "2026-10-29T04:36:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://o11.ai Comments URL: https://news.ycombinator.com/item?id=50284623 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50284623"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-28T22:35:20.924138+00:00",
+      "last_success": "2026-10-29T05:48:27.574342+00:00",
       "count": 10,
       "earliest": "2026-10-28T15:30:15+00:00",
-      "gap": true,
+      "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-28T22:35:21.173106+00:00",
+      "last_success": "2026-10-29T05:48:27.815205+00:00",
       "count": 20,
-      "earliest": "2026-10-22T11:30:00+00:00",
+      "earliest": "2026-10-22T13:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-28T22:35:21.344885+00:00",
+      "last_success": "2026-10-29T05:48:28.026669+00:00",
       "count": 891,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-28T22:35:21.938909+00:00",
+      "last_success": "2026-10-29T05:48:28.126297+00:00",
       "count": 30,
-      "earliest": "2026-10-14T16:26:53+00:00",
+      "earliest": "2026-10-14T21:23:01+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-28T22:35:22.824164+00:00",
+      "last_success": "2026-10-29T05:48:28.650362+00:00",
       "count": 100,
-      "earliest": "2026-10-28T12:57:13+00:00",
-      "gap": true,
+      "earliest": "2026-10-28T14:03:38+00:00",
+      "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-28T22:35:23.629952+00:00",
+      "last_success": "2026-10-29T05:48:30.529837+00:00",
       "count": 100,
-      "earliest": "2026-10-27T14:01:45+00:00",
+      "earliest": "2026-10-27T15:48:11+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-28T22:35:24.532522+00:00",
+      "last_success": "2026-10-29T05:48:31.747953+00:00",
       "count": 20,
       "earliest": "2026-10-06T03:55:19+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-28T22:35:24.949368+00:00",
+      "last_success": "2026-10-29T05:48:32.399645+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-28T22:35:25.325724+00:00",
+      "last_success": "2026-10-29T05:48:32.950040+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-28T22:35:25.681830+00:00",
+      "last_success": "2026-10-29T05:48:33.421607+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-28T22:35:26.131915+00:00",
-      "count": 9,
+      "last_success": "2026-10-29T05:48:34.062845+00:00",
+      "count": 10,
       "earliest": "2026-10-12T19:00:12+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-28T22:35:37.902112+00:00",
+      "last_success": "2026-10-29T05:48:50.636761+00:00",
       "count": 2,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-28T22:35:38.079917+00:00",
+      "last_success": "2026-10-29T05:48:50.818536+00:00",
       "count": 1334,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-28T22:35:45.782092+00:00",
+      "last_success": "2026-10-29T05:49:01.108847+00:00",
       "count": 3,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -72655,5 +72871,5 @@
       "to": "2026-10-28T12:57:13+00:00"
     }
   ],
-  "collected_at": "2026-10-28T22:35:45.782781+00:00"
+  "collected_at": "2026-10-29T05:49:01.109422+00:00"
 }
