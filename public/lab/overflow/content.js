@@ -1,0 +1,68 @@
+export const copy = {
+  en: {
+    back: '← UI lab', edition: '13 / Overflow: infinite', title: 'Overflow: infinite',
+    intro: 'The scrollbar becomes an ink ball in the margin that prints what you have read. Past the last line, the page keeps going and comes back around.',
+    stage: 'Overflow experiment', scroller: 'Sample page', ball: 'Ink ball. Drag it, or use the arrow keys to draw.',
+    article: {
+      title: 'A page that keeps going', read: '3 min read', lap: n => `Lap ${n}`,
+      sections: [
+        ['Where pages stop', 'Most pages end the same way: a footer, a last link, a scrollbar pressed against the bottom of its track. The reader gets a small jolt, the sense of hitting a wall rather than finishing something.'],
+        ['Progress as ink', 'Here the scrollbar is a ball in the margin. It rolls as you read and leaves a line behind it, so the part you have covered is printed and the part ahead is still blank.'],
+        ['Once per turn', 'The ball carries a single mark. Each time it comes round to the paper it leaves a stamp in the line, so the spacing of the stamps is exactly the circumference of the ball.'],
+        ['Reading backwards', 'Scroll up and the ball rolls back over its own line. Nothing is erased, and the mark passes over each stamp at the moment it touches it again.'],
+        ['Past the last line', 'At the end of the text the margin runs out, and the ball keeps going. It leaves the rail and wanders across the empty paper in graphite, as if the blue ink stayed with the words.'],
+        ['Coming back around', 'Keep scrolling and the top of the page arrives again from below. The first reading fades to a faint trace, and a second one starts printing over it.'],
+        ['Letting go', 'Pick the ball up and draw with it. Throw it and it slides, slows, and rolls home to the margin, finishing its line on the way. A hard flick leaves a few drops.'],
+      ],
+    },
+    auto: 'Autoscroll', end: 'Last line', clear: 'Clear ink', light: 'Light', dark: 'Dark', theme: 'Theme',
+    announce: {
+      lap: n => `Back at the top. Lap ${n}.`,
+      past: 'Past the last line.',
+      cleared: 'Ink cleared.',
+      auto: on => on ? 'Autoscroll on.' : 'Autoscroll off.',
+      theme: dark => dark ? 'Dark theme.' : 'Light theme.',
+    },
+    hint: 'Scroll inside the page, or drag the ball. With the ball focused, arrow keys draw and Escape sends it home.',
+    tricks: 'Key CSS & implementation tricks', source: 'View the source', inspired: 'Inspired by',
+    notes: [
+      ['The scroll position is a rolling ball', 'In the text, the ball is a scroll thumb: its y on the paper is the scroll progress mapped onto the rail, so it travels from the top of the frame to the bottom while you read. Its rotation is not animated separately. θ is the distance rolled divided by the radius, so scrolling back up turns it back by the same amount. The mark is projected onto the sphere: it slides along the direction of travel by sin θ, is squashed by cos θ, and disappears while it is underneath.'],
+      ['Stamps from a dash pattern', 'The mark touches the paper at θ = π, once every 2πr of travel. The ribbon is a single canvas stroke whose dash pattern is [2πr − gap, gap], offset so that each gap is centred on a point where θ ≡ π. The stamp glyph is then drawn into the gap, rotated to the path. The same rule prints the rail, the graphite path in the blank area and anything you draw by hand, so stamps along all three are spaced by the same circumference.'],
+      ['overflow: infinite', 'The scroller holds the page, a blank area, and an inert copy of the page. When scrollTop reaches L, the offset of the copy, it is reduced by L. The copy looks exactly like the top of the page because every ink path is drawn at each k·L that falls inside the viewport. For the jump to be invisible, the state the copy shows must already be the next lap: the rail fades to a ghost on entering the blank area, not on wrapping, and the next lap’s rail starts at the ball’s current angle.'],
+      ['Grab, throw, roll home', 'The ball is a real button with pointer capture. While held it follows the pointer and records points in page coordinates, so scrolling during a drag draws too. On release it keeps its last velocity under exponential friction, then a critically damped spring brings it back to wherever the scroll position says it belongs, and it keeps printing all the way. Drops appear only above a speed threshold. With reduced motion the ball follows the scroll directly and snaps home on release, without springs, throws or drops. A language switch keeps the lap, the ink and the place, because progress is stored per zone and remapped after layout.'],
+    ],
+  },
+  zh: {
+    back: '← UI 实验室', edition: '13 / 无尽页面', title: '无尽页面',
+    intro: '滚动条变成页边的一颗墨球，一边滚一边印出你读过的部分。读过最后一行，页面不会停下，而是绕回开头。',
+    stage: '无尽页面实验', scroller: '示例页面', ball: '墨球。可以拖动，或用方向键画线。',
+    article: {
+      title: '一个不会结束的页面', read: '阅读约 3 分钟', lap: n => `第 ${n} 遍`,
+      sections: [
+        ['页面在哪里停下', '大多数页面的结尾都一样：页脚、最后一个链接、滚动条抵在轨道底部。读者会被轻轻顿一下，感觉像是撞上了墙，而不是读完了什么。'],
+        ['用墨迹表示进度', '这里的滚动条是页边的一颗球。你往下读，它就往下滚，身后留下一道墨线：读过的部分已经印上，前面的部分还是空白。'],
+        ['每转一圈', '球上只有一个印记。它每转到纸面一次，就在墨线里留下一个印章，所以印章之间的距离正好是球的周长。'],
+        ['往回读', '往上滚动时，球会沿着自己的墨线滚回去。什么都不会被擦掉，印记每次经过一个印章，都正好是它再次碰到纸面的时刻。'],
+        ['过了最后一行', '正文结束，页边的轨道也到了尽头，但球没有停。它离开轨道，在空白的纸上用铅灰色游走，好像蓝色墨水留在了文字旁边。'],
+        ['绕回开头', '继续往下滚，页面的开头会从下方再次出现。第一遍的墨迹淡成一道浅痕，第二遍从它上面重新印起。'],
+        ['放手', '把球拿起来就能画线。把它扔出去，它会滑行、减速，再滚回页边，一路把线补完。甩得很快时，会溅出几滴墨。'],
+      ],
+    },
+    auto: '自动滚动', end: '最后一行', clear: '清除墨迹', light: '浅色', dark: '深色', theme: '主题',
+    announce: {
+      lap: n => `回到开头，第 ${n} 遍。`,
+      past: '已经过了最后一行。',
+      cleared: '墨迹已清除。',
+      auto: on => on ? '已开启自动滚动。' : '已关闭自动滚动。',
+      theme: dark => dark ? '深色主题。' : '浅色主题。',
+    },
+    hint: '在页面里滚动，或者拖动墨球。聚焦墨球后，方向键可以画线，Esc 让它回到页边。',
+    tricks: '关键 CSS 与实现诀窍', source: '查看源码', inspired: '灵感来自',
+    notes: [
+      ['滚动位置就是一颗滚动的球', '在正文区域，球就是滚动条的滑块：它在纸面上的 y 坐标由滚动进度映射到轨道上，所以你读的时候它会从画面顶部走到底部。它的转动没有单独做动画：θ 等于滚过的距离除以半径，所以往回滚时会反向转回同样的角度。印记被投影到球面上：沿运动方向偏移 sin θ，按 cos θ 压扁，转到底下时就看不见。'],
+      ['用虚线图案留出印章', '印记在 θ = π 时碰到纸面，也就是每滚过 2πr 一次。墨带是一条 canvas 描边，虚线图案为 [2πr − 间隙, 间隙]，并设置偏移，让每个间隙都正好落在 θ ≡ π 的位置，再把印章字形画进间隙、按路径方向旋转。轨道、空白处的铅灰色路径和手画的线都用同一条规则，所以三者的印章间距都是同一个周长。'],
+      ['overflow: infinite', '滚动容器里依次是页面、一段空白和一份 inert 的页面副本。scrollTop 到达副本的偏移 L 时，就减去 L。副本看起来和页面开头完全一样，因为每条墨迹都会在视口内所有的 k·L 位置各画一次。要让这次跳转不可见，副本呈现的必须已经是下一遍的状态：轨道墨迹在进入空白区时就淡成浅痕，而不是在跳转时；下一遍的轨道从球当前的角度开始印。'],
+      ['抓起、扔出、滚回原位', '墨球是一个真正的按钮，并使用 pointer capture。按住时它跟随指针，并以页面坐标记录路径，所以拖动时滚动页面也会留下线。松手后它带着最后的速度在指数摩擦下滑行，再由临界阻尼弹簧带回滚动位置所对应的地方，一路继续印线。只有速度超过阈值才会溅出墨滴。开启减少动态效果时，球直接跟随滚动位置，松手后立刻回位，没有弹簧、滑行和墨滴。切换语言会保留圈数、墨迹和阅读位置，因为进度按区域保存，并在重新排版后重新映射。'],
+    ],
+  },
+};

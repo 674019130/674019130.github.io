@@ -1,0 +1,73 @@
+/* Radix Colors: slate for paper and text, indigo for the ink. Everything in the experiment is scoped under #stage. */
+:root { --bg: #fcfcfd; --ink: #1c2024; --muted: #60646c; --line: #d9d9e0; --panel: #f0f0f3;
+  --paper: #f9f9fb; --text: #1c2024; --text-2: #60646c; --rule: #e0e1e6;
+  --ink-blue: #3e63dd; --ink-lead: #1c2024; --focus: #8da4ef;
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Songti SC', 'Noto Serif CJK SC', serif; }
+:root[data-theme="dark"] { --bg: #111113; --ink: #edeef0; --muted: #b0b4ba; --line: #363a3f; --panel: #212225;
+  --paper: #18191b; --text: #edeef0; --text-2: #b0b4ba; --rule: #2e3135;
+  --ink-blue: #5472e4; --ink-lead: #b0b4ba; --focus: #3a5bc7; }
+
+nav { align-items: center; } nav > span { margin-left: auto; }
+#language { border: 0; background: none; padding: 6px 8px; color: var(--muted); }
+
+#stage { position: relative; height: 520px; margin: 32px 0 8px; border: .5px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); container: stage / inline-size; isolation: isolate; }
+#scroller { --rail: 36px; position: absolute; inset: 0; overflow: hidden auto; overscroll-behavior: contain; scrollbar-width: none; outline: none; }
+#scroller::-webkit-scrollbar { display: none; }
+#scroller:focus-visible { box-shadow: inset 0 0 0 2px var(--focus); border-radius: 8px; }
+#ink { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; mix-blend-mode: multiply; }
+:root[data-theme="dark"] #ink { mix-blend-mode: normal; }
+
+/* The sample page */
+#stage .page { padding: 28px 28px 36px calc(var(--rail) * 2); font-family: var(--serif); font-size: 14px; line-height: 24px; color: var(--text); }
+#stage .page header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 16px; border-bottom: .5px solid var(--rule); }
+#stage .page h2 { margin: 0; font-size: 16px; font-weight: 500; }
+#stage .meta { display: flex; gap: 12px; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif; font-size: 12px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+#stage .page section { display: grid; grid-template-columns: minmax(0, 1fr) 128px; column-gap: 32px; padding: 18px 0; border-bottom: .5px solid var(--rule); }
+#stage .page section:last-child { border-bottom: 0; padding-bottom: 0; }
+#stage .page h3 { grid-column: 2; grid-row: 1; margin: 0; font-size: 14px; font-weight: 500; }
+#stage .page p { grid-column: 1; grid-row: 1; margin: 0; max-width: 34em; text-wrap: pretty; }
+#stage .page section p { color: var(--text); }
+
+/* The ball: a real button, centred on its transform, with a larger hit area. */
+#ball { position: absolute; left: -14px; top: -14px; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 50%; background: none; cursor: grab; touch-action: none; transition: none; will-change: transform; filter: drop-shadow(0 2px 2px #0000001f); }
+#ball::before { content: ""; position: absolute; inset: -10px; border-radius: 50%; }
+#ball:hover { background: none; }
+#ball:active, #ball.held { cursor: grabbing; transform: none; }
+#ball:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+#ball svg { display: block; width: 28px; height: 28px; overflow: visible; }
+#ball .body { fill: color-mix(in oklab, var(--ink-blue), var(--ink-lead) var(--lead, 0%)); }
+#ball text { fill: var(--paper); font: 600 15px ui-serif, Georgia, serif; text-anchor: middle; dominant-baseline: middle; }
+
+/* Page controls */
+.controls { justify-content: center; }
+.controls button { border-width: .5px; }
+.segmented { display: inline-flex; padding: 2px; border: .5px solid var(--line); border-radius: 7px; }
+.segmented button { border: 0; padding: 7px 11px; border-radius: 5px; color: var(--muted); background: transparent; }
+.segmented button[aria-pressed="true"] { background: var(--panel); color: var(--ink); }
+.status, .hint { text-align: center; }
+.hint { font-size: 12px; color: var(--muted); line-height: 1.7; max-width: 480px; margin: 6px auto; }
+
+.tricks { border-top: .5px solid var(--line); margin-top: 40px; padding-top: 26px; }
+.tricks h2 { font-size: 16px; font-weight: 500; margin: 0 0 24px; }
+.tricks h3 { font-size: 14px; font-weight: 600; margin: 0 0 8px; }
+.tricks p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.tricks article { margin: 0 0 28px; }
+.tricks pre { overflow-x: auto; padding: 14px; background: var(--panel); border-radius: 8px; font-size: 12px; line-height: 1.65; }
+.tricks pre:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.source-links { display: flex; gap: 18px; font-size: 12px; color: var(--muted); }
+.source-links a, main > footer a { text-decoration: underline; text-underline-offset: 3px; }
+main > footer { font-size: 12px; color: var(--muted); margin-top: 30px; }
+
+:root[data-preview] main { overflow: hidden; }
+:root[data-preview] #stage { margin: 0; width: 600px; height: 400px; border: 0; border-radius: 0; }
+:root[data-preview] :is(.hint, .tricks, main > footer) { display: none; }
+
+@container stage (max-width: 520px) {
+  #scroller { --rail: 22px; }
+  #stage .page { padding-right: 20px; }
+  #stage .page header { flex-direction: column; gap: 4px; }
+  #stage .page section { grid-template-columns: minmax(0, 1fr); }
+  #stage .page h3 { grid-column: 1; grid-row: auto; margin-bottom: 4px; }
+  #stage .page p { grid-row: auto; }
+}
+@media (max-width: 480px) { #stage { height: 480px; } }
