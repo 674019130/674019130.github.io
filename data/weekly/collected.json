@@ -72505,6 +72505,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50282574"
     },
     {
+      "id": "083bbbae3b748915a201",
+      "source": "huggingface",
+      "publisher": "Hugging Face",
+      "category": "official_update",
+      "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "",
+      "discussion_url": ""
+    },
+    {
       "id": "3cc421988b205025b16d",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -72671,41 +72683,197 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://o11.ai Comments URL: https://news.ycombinator.com/item?id=50284623 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50284623"
+    },
+    {
+      "id": "27c80fec8740c4d358c9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Fabivo – Furniture design from a photo to a numbered cut list",
+      "url": "https://www.fabivo.app/en",
+      "published_at": "2026-10-29T05:21:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello all, Ive been building Fabivo, a free furniture planner that runs in the browser. You sketch it simply by drawing it, (by far my favorite feature of this app), clicking for boards or just selecting some starting designs. But what i think separates fabivo from others its the image to model ai assistant, which took me a looong time to develop and get some quirks fixed, thanks god latest models are focusing on 3d, thats been helping too! The photo part is an image to JSON CAD harness: the model returns a parametric furniture model in mm that the app can build and edit. That harness is also what i benchmark, and honestly its the reason the app exists. I wanted to see if a photo could turn into a plan i could take to the saw. Also finetuned some image models and found interesting stuff, that was a first. My intention was to basically reuse the drawing feature to convert a 2d line sketch from image models like gpt image / nano banana to my parametric model, which \"worked\", and was actually thinking of using that for prod, but then cheaper/better models at 3d launched, but anyways, i learned a lot! Im getting better performance from my harness than from plain 3js, tho this is anecdotally and havent actually benchmarked it... Happy to answer anything, especially about the harness or the cut order. edit: Adding the numbers, missed them. 17 photos of real furniture, three models, same harness, medium reasoning, same tools. Scored on how close the returned structure and boards are to the gold model, so its my own set. (tho i have a hard time making a good scoring metric... just usually go by look!) Model (medium reasoning) Avg. time / photo Avg. input tokens / photo Avg. output tokens / photo Avg. tool calls / photo GPT-6.1 Terra 9.5 s 30,409 632 1.06 Claude Sonnet 5.5 13.6 s 50,167 1,592 1.18 Claude Haiku 5.5 34.9 s 66,786 6,658 2.35 Terra was both cheaper per photo and the most consistent to my likings. Sonnet was close on quality, Haiku needed way more tool calls to get there. Comments URL: https://news.ycombinator.com/item?id=50284856 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50284856"
+    },
+    {
+      "id": "0c04cf40f570fed9081f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Uji – Gentoo of Coding Agents",
+      "url": "https://github.com/uji-labs/uji",
+      "published_at": "2026-10-29T05:52:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "My friend and I are Neovim nerds, and every so often our Neovim setups would throw errors. What did we do? We talked to each other and solved it. It was never Neovim’s fault. We think the same way about harnesses. If you don’t like something, you shouldn’t have to call a trillion-dollar company; you should be able to fix it yourself. If you want something custom, you shouldn’t have to keep spamming some discussion thread; you should be able to write it yourself. And more than anything, it should be simple and fast, and your computer shouldn’t scream OOM. That’s the inspiration behind uji. I hope you all love it!!! Comments URL: https://news.ycombinator.com/item?id=50284996 Points: 11 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50284996"
+    },
+    {
+      "id": "c5949f9900e731f64418",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Alignment Interview Challenge",
+      "url": "https://docloop.com/careers/engineering-alignment-quiz",
+      "published_at": "2026-10-29T06:58:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "If I'm abusing Show HN feel free to downvote (I know this blurs the line between a job post and a Show), but genuinely just trying to get some feedback from other engineers / engineering leaders on an approach we're trying here @ DocLoop re: engineering interviewing. TLDR: Now that coding is no longer at a premium my thesis is that alignment is more precious than ever.... this is my optimistic attempt at trying to build something that achieves a _little_ bit of it. It's a compromise between the challenges everyone hates taking and _something_ that a recruiting team can use to get some meaningful signal amidst the sea of AI submissions that come. Definitely open to critique! Comments URL: https://news.ycombinator.com/item?id=50285386 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50285386"
+    },
+    {
+      "id": "b08aede4b8ede43579e2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Orc-work-notify – Claude Code plugin with orc voice alerts",
+      "url": "https://github.com/vagkaratzas/orc-work-notify",
+      "published_at": "2026-10-29T07:35:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vagkaratzas/orc-work-notify Comments URL: https://news.ycombinator.com/item?id=50285590 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50285590"
+    },
+    {
+      "id": "49e641218785445d4be8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A free 16-point check for how AI assistants see your website",
+      "url": "https://checker.visiblebyagents.com/self-check.html",
+      "published_at": "2026-10-29T08:05:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://checker.visiblebyagents.com/self-check.html Comments URL: https://news.ycombinator.com/item?id=50285822 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50285822"
+    },
+    {
+      "id": "b8550a2980c3cd74a6f1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Endlesstokens – an LLM API billed by time, not tokens",
+      "url": "https://endlesstokens.ai",
+      "published_at": "2026-10-29T10:17:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://endlesstokens.ai/ Comments URL: https://news.ycombinator.com/item?id=50286808 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50286808"
+    },
+    {
+      "id": "b338a132ca1f36ab0b50",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Control – Data Observability for Postgres, Pipelines and CDC",
+      "url": "https://control.turbolytics.io",
+      "published_at": "2026-10-29T10:55:09+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello Everyone! I built control.turbolytics.io for data observability. The goal is to provide a cost-effective way to monitor postgres and data pipelines at scale. Onboarding a new db takes minutes. Controls entire purpose is to answer the question: \"Are customers being affected?\" I have experience operating pretty large data clusters and pipelines (100's of thousands of instances). Control takes these learnings and exposes them in the product: - SLO based alerts by default model that errors exist in reality - Verdicts provide health classifications, instead of requiring the operator to read through 10's or hundreds of metrics. - Flat pricing based on instances. - The control observability protocol is pushed based and no customer or sensitive data is stored in control. How is everyone monitoring their databases and pipelines today? If you're using a big vendor, what's working for you? What's not? Looking forward to everyone's feedback, Thank you! Danny Comments URL: https://news.ycombinator.com/item?id=50287082 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50287082"
+    },
+    {
+      "id": "a7eac555fe7865814a88",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI social media interview platform",
+      "url": "https://www.spotlytt.com",
+      "published_at": "2026-10-29T11:33:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Looking for feedback on product functionality wise. Already working on design changes. Comments URL: https://news.ycombinator.com/item?id=50287379 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50287379"
+    },
+    {
+      "id": "94e9689f8fe069cc0b80",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AQVEN – typed LLM workflows, checked before a token is spent",
+      "url": "https://github.com/lastonoga/AQVEN",
+      "published_at": "2026-10-29T11:56:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/lastonoga/AQVEN Comments URL: https://news.ycombinator.com/item?id=50287581 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50287581"
+    },
+    {
+      "id": "2effeb48673aaf186c36",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Nori – A fast Git client for reviewing and landing your agents' work",
+      "url": "https://meetnori.app",
+      "published_at": "2026-10-29T12:23:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I'd like to present Nori, a Git client built with performance and low resource consumption in mind. Nori helps you review your agents' work and easily rebase, commit, push and PR your worktrees. It's available on Mac, Windows and Linux. Nori is free for common Git features (even for private repos). You can buy a one-time Pro license for $20, which lets you list and manage reviews and issues right in Nori. Comments URL: https://news.ycombinator.com/item?id=50287819 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50287819"
+    },
+    {
+      "id": "6344eebcc952539344f1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Macvoice – A local voice agent for Mac in 1.4 GB, no PyTorch",
+      "url": "https://github.com/johnrobinsn/macvoice",
+      "published_at": "2026-10-29T12:25:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/johnrobinsn/macvoice Comments URL: https://news.ycombinator.com/item?id=50287842 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50287842"
+    },
+    {
+      "id": "034048e4b4f8d2feaa63",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Universal Blindspot Detector (AI meta-analysis)",
+      "url": "https://trooperloops.com/upload",
+      "published_at": "2026-10-29T12:29:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "This is a rough \"blindspot detector\" for AI conversations. Basically, the tool reframes conversations and tries to find the smallest moves the user COULD have made to have surfaced unknown assumptions for whatever problem they were solving. The goal is to show the value of using AI as a reflective surface to search for \"unknown unknowns\" or \"things YOU didn't know you needed to know\". ------------------------- The basic premise is this: For any given AI conversation, the quality of the output (for the specified goal) depends on the context from which decisions can be made. You can learn to surface assumptions (the AI's AND your own) and get better output from informed decisions. Best of all, when operating in this way, you have to actively engage the problem and strategy to accomplish this, so you don't lose understanding or creative agency. When you iterate during problem definition or strategy planning, it's cheaper and more efficient, too. For example: [# of Planning Phase Iterations] x 1,000 tokens [# of Strategy Phase Iterations] x 3,000 tokens [# of Execution Output Phase Iterations] x 5,000,000 tokens Usually when we are solving problems with this method, we one-shot the output even with local models like Qwen 3.6/3.8, spending FAR less time in the expensive execution phase. --------------------------- Anyway, please have a look! Totally free, no signup, you just need to export conversations in specific formats and upload them. This was made by myself and a few interns in a barn while doing indie game development ... and costs us money, so please don't abuse it. < 3 Comments URL: https://news.ycombinator.com/item?id=50287887 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50287887"
+    },
+    {
+      "id": "6d5eabed23c5988136d4",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Equipping healthcare professionals with practical AI skills",
+      "url": "https://blog.google/innovation-and-ai/technology/health/google-ai-for-healthcare-professionals-certificate",
+      "published_at": "2026-10-29T13:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Built by clinicians at Google, the new Google AI for Healthcare Professionals Certificate helps healthcare professionals prioritize patients.",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-29T05:48:27.574342+00:00",
+      "last_success": "2026-10-29T13:01:05.512990+00:00",
       "count": 10,
       "earliest": "2026-10-28T15:30:15+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-29T05:48:27.815205+00:00",
+      "last_success": "2026-10-29T13:01:05.810064+00:00",
       "count": 20,
-      "earliest": "2026-10-22T13:00:00+00:00",
+      "earliest": "2026-10-23T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-29T05:48:28.026669+00:00",
-      "count": 891,
+      "last_success": "2026-10-29T13:01:06.025611+00:00",
+      "count": 892,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-29T05:48:28.126297+00:00",
+      "last_success": "2026-10-29T13:01:06.222720+00:00",
       "count": 30,
       "earliest": "2026-10-14T21:23:01+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-29T05:48:28.650362+00:00",
+      "last_success": "2026-10-29T13:01:09.853977+00:00",
       "count": 100,
-      "earliest": "2026-10-28T14:03:38+00:00",
+      "earliest": "2026-10-28T16:26:02+00:00",
       "gap": false,
       "error": null
     },
@@ -72714,59 +72882,59 @@
       "count": 100,
       "earliest": "2026-10-27T15:48:11+00:00",
       "gap": false,
-      "error": null
+      "error": "URLError: <urlopen error timed out>"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-29T05:48:31.747953+00:00",
+      "last_success": "2026-10-29T13:01:40.221292+00:00",
       "count": 20,
       "earliest": "2026-10-06T03:55:19+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-29T05:48:32.399645+00:00",
+      "last_success": "2026-10-29T13:01:40.782528+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-29T05:48:32.950040+00:00",
+      "last_success": "2026-10-29T13:01:41.281397+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-29T05:48:33.421607+00:00",
+      "last_success": "2026-10-29T13:01:41.767147+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-29T05:48:34.062845+00:00",
+      "last_success": "2026-10-29T13:01:42.556767+00:00",
       "count": 10,
       "earliest": "2026-10-12T19:00:12+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-29T05:48:50.636761+00:00",
+      "last_success": "2026-10-29T13:01:59.970772+00:00",
       "count": 2,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-29T05:48:50.818536+00:00",
+      "last_success": "2026-10-29T13:02:00.157759+00:00",
       "count": 1334,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-29T05:49:01.108847+00:00",
+      "last_success": "2026-10-29T13:02:11.003271+00:00",
       "count": 3,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -72871,5 +73039,5 @@
       "to": "2026-10-28T12:57:13+00:00"
     }
   ],
-  "collected_at": "2026-10-29T05:49:01.109422+00:00"
+  "collected_at": "2026-10-29T13:02:11.003878+00:00"
 }
