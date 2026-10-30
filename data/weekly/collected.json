@@ -73429,6 +73429,18 @@
       "discussion_url": ""
     },
     {
+      "id": "b06fed62ca323183c635",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Colorado students joined a Google hackathon to tackle energy grid challenges.",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/colorado-impact-hackathon",
+      "published_at": "2026-10-29T16:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Students at the Google Colorado Impact Hackathon built AI tools like SolarSnap to modernize the energy grid. See the winning innovations here.",
+      "discussion_url": ""
+    },
+    {
       "id": "4644059acda2e478fefe",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -73979,102 +73991,294 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://huggingface.co/Nanbeige/Nanbeige4.3-33B Comments URL: https://news.ycombinator.com/item?id=50296877 Points: 3 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50296877"
+    },
+    {
+      "id": "624dc450f7fa92f748bc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Free CVE feed for agents to lookup vulnerabilities",
+      "url": "https://casco.com/cve/agents",
+      "published_at": "2026-10-29T23:42:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Founder of Casco here. I built a CVE feed for agents to query the latest CVEs. Ask your agents to point your codebase dependencies to https://casco.com/cve/agents to flag any ongoing issues. About to build a \"how to test for exploitability\" prompt for each of the CVEs as well. Comments URL: https://news.ycombinator.com/item?id=50297846 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50297846"
+    },
+    {
+      "id": "9595d16600730cca70a6",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "LLM Programming and Theory Building",
+      "url": "https://kevinlynagh.com/newsletter/2026_10_29_llm_programming_and_theory_building",
+      "published_at": "2026-10-29T23:56:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://kevinlynagh.com/newsletter/2026_10_29_llm_programming_and_theory_building/ Comments URL: https://news.ycombinator.com/item?id=50297955 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50297955"
+    },
+    {
+      "id": "3d5b8b76f989a9cd2d6b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Coding agents need a tap from your watch, not API keys",
+      "url": "https://permaura.com",
+      "published_at": "2026-10-29T23:58:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://permaura.com Comments URL: https://news.ycombinator.com/item?id=50297971 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50297971"
+    },
+    {
+      "id": "db544b922a030990a5ab",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Coding agents need a tap from your watch, not API keys",
+      "url": "https://permaura.com",
+      "published_at": "2026-10-29T23:58:18+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://permaura.com Comments URL: https://news.ycombinator.com/item?id=50297971 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50297971"
+    },
+    {
+      "id": "a420c2f80a8b31cf3a36",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I created a spreadsheet in a plain text file",
+      "url": "https://app.ordinate.dev",
+      "published_at": "2026-10-30T00:01:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built a plain-text spreadsheet format and an app for working with it. It began with small tasks like tracking my dog's health records and organizing records for tax season. Full spreadsheet apps always felt excessive, while Markdown tables don't support formulas. Also, its compact and readable syntax lets AI read and edit a workbook directly, without spreadsheet-specific tools. You can try the in-app agent on the desktop version with ChatGPT sign-in. Ordinate is now open source and available to try. My hope is for it to do for spreadsheets what Markdown did for documents. For more about it: https://ordinate.dev Comments URL: https://news.ycombinator.com/item?id=50298001 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50298001"
+    },
+    {
+      "id": "35e3cbcd2b4b3213d38a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Nodwyn – An Extensible Coding Harness",
+      "url": "https://nodwyn.com",
+      "published_at": "2026-10-30T00:13:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://nodwyn.com/ Comments URL: https://news.ycombinator.com/item?id=50298161 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50298161"
+    },
+    {
+      "id": "fb8f42e7a134945b6271",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Cubic Doggo 07B Wouf: A low-cost open-source quadruped with ST3215",
+      "url": "https://github.com/SphericalCowww/CubicDoggo_07B",
+      "published_at": "2026-10-30T00:28:52+00:00",
+      "date_kind": "community_post",
+      "evidence": "Cubic Doggo 07B Wouf is a ROS2-controlled 12-DOF untethered quadruped, built with ST3215 smart servos fully with off-the-shelf components and 3D-printed parts Featuring: * 12 ST-3215-C018 servos, usually on a bundled sale because of SO-ARM101 * Walking forward with a payload of 1 kg * Smart servos as required for closed-loop reinforcement learning capability * FreeCAD models fully available for editing * M3 screws and locknuts are used extensively (instead of glue or heat set inserts) to strengthen and secure the PLA+ printed structures. Design iterates on strengthening whichever part breaks first. Check JLCPCB for stronger components * No custom PCB (because I am terrible at it), only 2 required soldering points * Runs on a Raspberry Pi with ROS2 Jazzy installed. Joystick control ready * Walks on batteries * Aesthetics of an exposed electronic box, but great as a development platform for stacking new components on top Comments URL: https://news.ycombinator.com/item?id=50298302 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50298302"
+    },
+    {
+      "id": "d1c7e838909b108c7a63",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.314",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
+      "published_at": "2026-10-30T01:06:26+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added `permissions.blockWritesOutsideWorkingDirectories`: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode - Added an optional `groups` list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too - Added `guardrail_trace` to Claude apps gateway Bedrock upstreams, to log which Amazon Bedrock guardrail filter fired on a request, without the matched text - Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is used on your next message if the prompt cache has expired - Fixed sessions failing turn after turn with \"Invalid effort level\" when an organization's admin caps a model's effort: Claude Code now lowers the effort, retries, and says which level it uses - Fixed `claude -p` exiting with code 0 and no output when startup failed; it now prints the error and exits 1 - Fixed Bedrock sessions with many images failing every turn and `/compact` with \"400 Input is too long.\" instead of removing older images and compacting - Fixed Microsoft Foundry sessions failing when the resource has no deployment for the default Sonnet, Opus or Haiku model: Claude Code now falls back to an older model of that family - Fixed repeated refused requests behind a gateway that doesn't accept tool search's `tool_reference` blocks: the request is sent again once without tool search, and the session remembers - Fixed TLS connections failing with `UNABLE_TO_GET_ISSUER_CERT` when the system certificate store holds a renewed root certificate that is cross-signed with its predecessor - Fixed MCP servers that also work without sign-in showing \"needs authentication\" after their stored sign-in stopped working; they are now used signed out - Fixed `claude mcp logout` reporting success when the MCP sign-in was not removed, for example while the macOS keychain is locked over SSH - Fixed extra sign-in renewals when several sessions share an Anthropic profile login and the credentials lock is busy - Fixed `claude ultrareview` and `claude remote-control` asking the workspace trust question in a CI job that has a terminal; with `CI` set they now refuse an untrusted folder at once - Fixed an administrator's TLS trust settings in managed settings not being applied in Claude Desktop sessions - Fixed model switching being refused on machines with managed plugin settings when one of your own `--plugin-dir` or `--plugin-url` plugins had a broken manifest or failed to download - Fixed the Bedrock and Vertex model upgrade offer coming back at every start when managed settings pin the model - Fixed `forceRemoteSettingsRefresh` set only in remote managed settings no longer applying once the stored copy had expired, which let sessions start without policy when the server could not be reached - Fixed \"Continue automatically at usage limit\" continuing more than three times without a prompt from you when a task restarted itself between waits (a /goal check-in, a background or scheduled task) - Fixed background and cloud sessions started with Ultracode turning it back on at their next start after it had been switched off - Fixed the last broken reply and its retry prompts staying in the conversation after Claude gave up on a tool call that could not be parsed - Fixed a PreCompact hook with very large output making compaction fail or repeat; each hook's output is now cut at 10,000 characters - Fixed background diff refreshes briefly taking the repository's index lock, which could make a git command run at the same moment fail with \"Unable to create '.git/index.lock': File exists\" - Fixed markdown tables jumping between grid and stacked layouts on half-typed rows while streaming, and long tables falling back to raw pipes - Fixed the /resume picker showing the text of CLAUDE.md or CLAUDE.local.md as a session's title when the session only ran slash commands - Fixed `/btw` answeri",
+      "discussion_url": ""
+    },
+    {
+      "id": "f46e298dfdbc8639f344",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge",
+      "url": "https://github.com/Millillion/lasm",
+      "published_at": "2026-10-30T02:05:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Lasm has been my dream for a good part of 2026. I firmly believe that formal verification is the next evolution of software engineering and programming languages. This next wave will largely be enabled by the incredibly intelligent LLMs that understand formal verification and its programming languages. Lean is one of the most popular languages that allow for formal verification, and to me is incredibly powerful because it is a general purpose programming language with formal verification built directly into it. You can build general purpose software in Lean, and formally verify it in Lean. Amazing. Lasm brings Lean to the browser, Node, serverless, and edge environments (and more). The idea is that you can now write web apps, frontend to backend, in Lean and formally verify these apps. Imagine an Express server or Hono server, running on Cloudflare Workers, with formal verification of its specification. I'm an agentic engineer with an emphasis in software engineering, and Lasm was built mostly by Claude Opus 5.5 with my high-level direction. Comments URL: https://news.ycombinator.com/item?id=50299004 Points: 19 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50299004"
+    },
+    {
+      "id": "a716326e44f40532f958",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HiPath AI – CS learning roadmaps where a quiz unlocks each lesson",
+      "url": "https://www.hipathai.me",
+      "published_at": "2026-10-30T03:45:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.hipathai.me Comments URL: https://news.ycombinator.com/item?id=50299645 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50299645"
+    },
+    {
+      "id": "732d1cd567b10442151d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Same agent-memory accuracy with 8x fewer tokens by changing the embedding model",
+      "url": "https://github.com/goyohan0611-png/turnbook",
+      "published_at": "2026-10-30T04:06:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/goyohan0611-png/turnbook Comments URL: https://news.ycombinator.com/item?id=50299763 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50299763"
+    },
+    {
+      "id": "b8f6fe6c59864abfa820",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Breatic – Collaborative canvases and documents with an AI agent",
+      "url": "https://github.com/orime-org/breatic",
+      "published_at": "2026-10-30T04:23:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/orime-org/breatic Comments URL: https://news.ycombinator.com/item?id=50299847 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50299847"
+    },
+    {
+      "id": "ba95b71feb4669fafb47",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Breatic – Collaborative canvases and documents with an AI agent",
+      "url": "https://github.com/orime-org/breatic",
+      "published_at": "2026-10-30T04:23:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/orime-org/breatic Comments URL: https://news.ycombinator.com/item?id=50299847 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50299847"
+    },
+    {
+      "id": "f6c9317b51bd43c23ed2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "What Claude Code's 30-second agent summary call costs, read from the binary",
+      "url": "https://theainewsreport.com/2026-10-29-claude-code-agent-summary-cost-explained.html",
+      "published_at": "2026-10-30T04:58:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://theainewsreport.com/2026-10-29-claude-code-agent-summary-cost-explained.html Comments URL: https://news.ycombinator.com/item?id=50300003 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50300003"
+    },
+    {
+      "id": "dba4408b164cd1179b3b",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A Claude Code agent's test escaped into my Mac. I only noticed because it talked",
+      "url": "https://www.marutpandya.com/posts/2026/10/my-mac-started-reading-json-aloud",
+      "published_at": "2026-10-30T05:16:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.marutpandya.com/posts/2026/10/my-mac-started-reading-json-aloud/ Comments URL: https://news.ycombinator.com/item?id=50300097 Points: 6 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50300097"
+    },
+    {
+      "id": "12573f2ef67439ec0243",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Korea-data-MCP – Korean public APIs that agents can't misread",
+      "url": "https://github.com/YoungsoonLee/korea-data-mcp",
+      "published_at": "2026-10-30T05:29:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/YoungsoonLee/korea-data-mcp Comments URL: https://news.ycombinator.com/item?id=50300177 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50300177"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-29T22:45:20.593697+00:00",
+      "last_success": "2026-10-30T05:49:33.130860+00:00",
       "count": 10,
       "earliest": "2026-10-28T15:30:55+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-29T22:45:20.772385+00:00",
+      "last_success": "2026-10-30T05:49:33.328329+00:00",
       "count": 20,
-      "earliest": "2026-10-26T16:00:00+00:00",
+      "earliest": "2026-10-27T13:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-29T22:45:21.020878+00:00",
+      "last_success": "2026-10-30T05:49:33.570169+00:00",
       "count": 894,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-29T22:45:21.213873+00:00",
+      "last_success": "2026-10-30T05:49:33.685600+00:00",
       "count": 30,
-      "earliest": "2026-10-15T13:04:03+00:00",
+      "earliest": "2026-10-15T19:47:52+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-29T22:45:26.818328+00:00",
+      "last_success": "2026-10-30T05:49:34.155674+00:00",
       "count": 100,
-      "earliest": "2026-10-29T13:44:28+00:00",
-      "gap": true,
+      "earliest": "2026-10-29T14:48:54+00:00",
+      "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-29T22:45:31.008957+00:00",
+      "last_success": "2026-10-30T05:49:34.931879+00:00",
       "count": 100,
-      "earliest": "2026-10-28T13:00:11+00:00",
+      "earliest": "2026-10-28T14:46:29+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-29T22:45:32.140646+00:00",
+      "last_success": "2026-10-30T05:49:36.138788+00:00",
       "count": 20,
-      "earliest": "2026-10-06T03:55:19+00:00",
+      "earliest": "2026-10-06T18:59:30+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-29T22:45:32.670856+00:00",
+      "last_success": "2026-10-30T05:49:36.717819+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-29T22:45:33.197661+00:00",
+      "last_success": "2026-10-30T05:49:37.233501+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-29T22:45:33.579049+00:00",
+      "last_success": "2026-10-30T05:49:37.688786+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-29T22:45:34.194075+00:00",
+      "last_success": "2026-10-30T05:49:38.347355+00:00",
       "count": 10,
       "earliest": "2026-10-12T19:00:12+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-29T22:45:50.819742+00:00",
+      "last_success": "2026-10-30T05:49:54.816674+00:00",
       "count": 2,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-29T22:45:51.035744+00:00",
+      "last_success": "2026-10-30T05:49:55.071476+00:00",
       "count": 1337,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-29T22:46:01.397922+00:00",
+      "last_success": "2026-10-30T05:50:04.878966+00:00",
       "count": 4,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -74185,5 +74389,5 @@
       "to": "2026-10-29T13:44:28+00:00"
     }
   ],
-  "collected_at": "2026-10-29T22:46:01.398630+00:00"
+  "collected_at": "2026-10-30T05:50:04.879772+00:00"
 }
