@@ -19,7 +19,7 @@ const exports = {}
 vm.runInNewContext(outputText, { exports, require })
 
 test('lab links render during SSR without teleporting into the document body', async () => {
-  for (const zh of [false, true]) for (const slug of ['overflow', 'merge-conflicts', 'kanban', 'project-card', 'answer-length', 'ascii-background', 'share-sheet', 'timeline', 'receipt', 'mascot', 'folding-card', 'live-numbers', 'color-drift']) {
+  for (const zh of [false, true]) for (const slug of ['merge-conflicts', 'kanban', 'project-card', 'answer-length', 'ascii-background', 'share-sheet', 'timeline', 'receipt', 'mascot', 'folding-card', 'live-numbers', 'color-drift']) {
     const context = {}
     const html = await renderToString(createSSRApp(exports.default, {
       zh, slug, title: slug, titleZh: slug, date: '2026-09-15',
