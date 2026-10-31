@@ -75263,102 +75263,294 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/muvon/octomind Comments URL: https://news.ycombinator.com/item?id=50313319 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50313319"
+    },
+    {
+      "id": "1a3596dabc00bf17a252",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN:AI gave me the skills. It didn't give me people",
+      "url": "https://apps.apple.com/us/app/neonetworking/id6818046802",
+      "published_at": "2026-10-31T05:26:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://apps.apple.com/us/app/neonetworking/id6818046802 Comments URL: https://news.ycombinator.com/item?id=50313446 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50313446"
+    },
+    {
+      "id": "1f04777555fcf75f5db7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Archwhere – work alongside AI coding agents on an architecture map",
+      "url": "https://github.com/tapaskar/archwhere",
+      "published_at": "2026-10-31T05:46:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "I am a solo founder/developer, my agents shipping 30 PRs a week, couldn’t see which part of product they were changing; existing arch tools die because humans won’t maintain the model — so I made the agents maintain it. MIT license Comments URL: https://news.ycombinator.com/item?id=50313522 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50313522"
+    },
+    {
+      "id": "dc7293fce2fcceafcefb",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Archwhere – work alongside AI coding agents on an architecture map",
+      "url": "https://github.com/tapaskar/archwhere",
+      "published_at": "2026-10-31T05:46:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "I am a solo founder/developer, my agents shipping 30 PRs a week, couldn’t see which part of product they were changing; existing arch tools die because humans won’t maintain the model — so I made the agents maintain it. MIT license Comments URL: https://news.ycombinator.com/item?id=50313522 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50313522"
+    },
+    {
+      "id": "21a36c2449e0b1daf2f1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Non-autoregressive NC LLM spits tokens 21x faster than text diffusion",
+      "url": "https://hazyresearch.stanford.edu/blog/2026-10-12-ncm",
+      "published_at": "2026-10-31T06:31:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://hazyresearch.stanford.edu/blog/2026-10-12-ncm Comments URL: https://news.ycombinator.com/item?id=50313737 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50313737"
+    },
+    {
+      "id": "7c4131da4800afb53e58",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agent-arcade – Terminal games that pause when Claude Code/Codex is done",
+      "url": "https://github.com/Kuldeep-045/agent-arcade",
+      "published_at": "2026-10-31T07:37:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Kuldeep-045/agent-arcade Comments URL: https://news.ycombinator.com/item?id=50313989 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50313989"
+    },
+    {
+      "id": "ad1e3a98a9af9b05e8ac",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Agent-arcade – Terminal games that pause when Claude Code/Codex is done",
+      "url": "https://github.com/Kuldeep-045/agent-arcade",
+      "published_at": "2026-10-31T07:37:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Kuldeep-045/agent-arcade Comments URL: https://news.ycombinator.com/item?id=50313989 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50313989"
+    },
+    {
+      "id": "8f19a819a841482551da",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: KuralHub 1.0, Speech emotion datasets for 70 languages in one place",
+      "url": "https://aaivu.github.io/KuralHub/datasets.html",
+      "published_at": "2026-10-31T08:25:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Update to an earlier Show HN. KuralHub is a catalog of speech emotion datasets for the 70 most widely spoken languages, with benchmark results for 11 pretrained speech models on 33 of those datasets. Version 1.0 adds: - A searchable catalog with one page per language. Each of the 90 datasets lists its emotion labels, size, licence, access link and citation. - All 363 benchmark runs as downloadable CSV and JSON, with the logs for each run. - The published paper (Interspeech 2026), and code that runs on current PyTorch and Transformers. - A short form for suggesting a missing dataset or a model to benchmark. The most practical finding: the right model depends on the language. Whisper had the best average, but HuBERT came out on top for nine languages, bigger checkpoints did not help, and Tamil, Telugu and Kannada were hard for every model. 25 of the 70 languages still have no known emotional speech dataset, including Sinhala, Nepali, Hausa and Yoruba. Catalog: https://aaivu.github.io/KuralHub/datasets.html Results: https://aaivu.github.io/KuralHub/benchmark.html What changed: https://github.com/aaivu/KuralHub/releases/tag/v1.0.0 Paper: https://www.isca-archive.org/interspeech_2026/thavarasa26_in... Suggestions for missing datasets are welcome, especially for those 25 languages, and so are new languages beyond the current 70. Comments URL: https://news.ycombinator.com/item?id=50314172 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314172"
+    },
+    {
+      "id": "9c2de0eccba05cec6f43",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Real-time zero-knowledge LLM identification from physical telemetry",
+      "url": "https://zenodo.org/records/23806637",
+      "published_at": "2026-10-31T09:05:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://zenodo.org/records/23806637 Comments URL: https://news.ycombinator.com/item?id=50314322 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314322"
+    },
+    {
+      "id": "939fbcfe183716b99e93",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "An AI agent read a Shift_JIS page as 208,953 replacement characters",
+      "url": "https://github.com/openclaw/openclaw/pull/188766",
+      "published_at": "2026-10-31T09:05:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/openclaw/openclaw/pull/188766 Comments URL: https://news.ycombinator.com/item?id=50314324 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314324"
+    },
+    {
+      "id": "59dc553ec27960581d4f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I benchmarked a voice AI against real people. It scored at chance",
+      "url": "https://mundi.chat/try",
+      "published_at": "2026-10-31T09:18:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://mundi.chat/try Comments URL: https://news.ycombinator.com/item?id=50314370 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314370"
+    },
+    {
+      "id": "2145e5fac66ac16b6722",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: JJ Suna AI – Open 5B Flow-Matching DiT for 48 KHz Music Synthesis",
+      "url": "https://suna.jjcoders.com",
+      "published_at": "2026-10-31T09:55:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://suna.jjcoders.com/ Comments URL: https://news.ycombinator.com/item?id=50314522 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314522"
+    },
+    {
+      "id": "27971ed95b386dd176f4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Imza – plan and review focused coding agent",
+      "url": "https://github.com/umutsevdi/imza",
+      "published_at": "2026-10-31T09:58:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi everyone. I've been building Imza for the last three months. It's yet another coding agent. I know there are a dozen have been posted here. But I believe this one is different enough to have a place here. It has three explicit modes: plan, build and review. Plan mode allows you to draft a spec document together with the agent. Both you and the agent can edit the document until everything is clear. Build mode takes the plan and implements it. Review mode provides you a code review tool. You can annotate things you want to change in the code and send them as revision to the plan mode. It's entirely written in C++, requires no account, supports 50+ providers including OpenAI subscriptions or local models. Imza supports MCP, skills and instruction files out of the box and uses 8-11MB RAM at startup. One of the biggest differentiator is the Lua engine. What I did differently here is agent receives only one tool, that allows the LLM to execute Lua scripts. I then passed C++ methods as Lua bindings that the agent can execute. So model can orchestrate multiple bindings in one call. Each binding passes through a permission layer. Since Lua is the only way to interact with the filesystem, imza can monitor and control the model's behavior. I'd love to hear your feedback. Thanks Website: https://imza.run Source: https://github.com/umutsevdi/imza Comments URL: https://news.ycombinator.com/item?id=50314538 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314538"
+    },
+    {
+      "id": "350be3be8e60237a6753",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Imza – plan and review focused coding agent",
+      "url": "https://github.com/umutsevdi/imza",
+      "published_at": "2026-10-31T09:58:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi everyone. I've been building Imza for the last three months. It's yet another coding agent. I know there are a dozen have been posted here. But I believe this one is different enough to have a place here. It has three explicit modes: plan, build and review. Plan mode allows you to draft a spec document together with the agent. Both you and the agent can edit the document until everything is clear. Build mode takes the plan and implements it. Review mode provides you a code review tool. You can annotate things you want to change in the code and send them as revision to the plan mode. It's entirely written in C++, requires no account, supports 50+ providers including OpenAI subscriptions or local models. Imza supports MCP, skills and instruction files out of the box and uses 8-11MB RAM at startup. One of the biggest differentiator is the Lua engine. What I did differently here is agent receives only one tool, that allows the LLM to execute Lua scripts. I then passed C++ methods as Lua bindings that the agent can execute. So model can orchestrate multiple bindings in one call. Each binding passes through a permission layer. Since Lua is the only way to interact with the filesystem, imza can monitor and control the model's behavior. I'd love to hear your feedback. Thanks Website: https://imza.run Source: https://github.com/umutsevdi/imza Comments URL: https://news.ycombinator.com/item?id=50314538 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314538"
+    },
+    {
+      "id": "71da1a2bcf407ae5bf37",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Free OCR Cost Calculator – Estimate multi-provider LLM token costs",
+      "url": "https://ocrbench.app/blog/llm-ocr-cost-calculator",
+      "published_at": "2026-10-31T10:38:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Here is a cost calculator i made to estimate ocr cost on the main llm provider, it request the free endpoints of each llm provider and multiply by the input token price. Comments URL: https://news.ycombinator.com/item?id=50314746 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314746"
+    },
+    {
+      "id": "69d4676fd302228ac168",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Free OCR Cost Calculator – Estimate multi-provider LLM token costs",
+      "url": "https://ocrbench.app/blog/llm-ocr-cost-calculator",
+      "published_at": "2026-10-31T10:38:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Here is a cost calculator i made to estimate ocr cost on the main llm provider, it request the free endpoints of each llm provider and multiply by the input token price. Comments URL: https://news.ycombinator.com/item?id=50314746 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50314746"
+    },
+    {
+      "id": "421060014abc0073a885",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Prospero: A new coding harness for a more civilized age",
+      "url": "https://nullprogram.com/blog/2026/10/31",
+      "published_at": "2026-10-31T11:54:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://nullprogram.com/blog/2026/10/31/ Comments URL: https://news.ycombinator.com/item?id=50315226 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50315226"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-31T05:40:50.249412+00:00",
+      "last_success": "2026-10-31T12:29:30.206736+00:00",
       "count": 10,
       "earliest": "2026-10-28T15:30:55+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-31T05:40:50.419054+00:00",
+      "last_success": "2026-10-31T12:29:30.394036+00:00",
       "count": 20,
       "earliest": "2026-10-28T14:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-31T05:40:50.594819+00:00",
+      "last_success": "2026-10-31T12:29:30.530220+00:00",
       "count": 894,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-31T05:40:50.726372+00:00",
+      "last_success": "2026-10-31T12:29:30.626015+00:00",
       "count": 30,
       "earliest": "2026-10-16T01:58:00+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-31T05:40:51.102587+00:00",
+      "last_success": "2026-10-31T12:29:32.025857+00:00",
       "count": 100,
-      "earliest": "2026-10-30T11:33:47+00:00",
+      "earliest": "2026-10-30T14:33:42+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-31T05:40:51.816528+00:00",
+      "last_success": "2026-10-31T12:29:59.567761+00:00",
       "count": 100,
-      "earliest": "2026-10-29T09:31:48+00:00",
+      "earliest": "2026-10-29T13:17:25+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-31T05:40:52.868996+00:00",
+      "last_success": "2026-10-31T12:30:00.361710+00:00",
       "count": 20,
       "earliest": "2026-10-07T18:10:20+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-31T05:40:53.315736+00:00",
+      "last_success": "2026-10-31T12:30:00.782726+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-31T05:40:53.831406+00:00",
+      "last_success": "2026-10-31T12:30:01.126815+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-31T05:40:54.189510+00:00",
+      "last_success": "2026-10-31T12:30:01.439627+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-31T05:40:54.752883+00:00",
+      "last_success": "2026-10-31T12:30:01.893525+00:00",
       "count": 10,
       "earliest": "2026-10-12T19:00:12+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-31T05:41:11.405016+00:00",
+      "last_success": "2026-10-31T12:30:15.405158+00:00",
       "count": 2,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-31T05:41:11.588846+00:00",
+      "last_success": "2026-10-31T12:30:15.556764+00:00",
       "count": 1341,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-31T05:41:21.013697+00:00",
+      "last_success": "2026-10-31T12:30:23.764152+00:00",
       "count": 4,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -75469,5 +75661,5 @@
       "to": "2026-10-29T13:44:28+00:00"
     }
   ],
-  "collected_at": "2026-10-31T05:41:21.014241+00:00"
+  "collected_at": "2026-10-31T12:30:23.764840+00:00"
 }
