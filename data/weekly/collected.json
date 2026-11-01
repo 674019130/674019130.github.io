@@ -76271,41 +76271,329 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/mksglu/context-mode Comments URL: https://news.ycombinator.com/item?id=50324789 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50324789"
+    },
+    {
+      "id": "8b081707c8795288858f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Modeljury – a jury of cheap LLMs that escalates the hard cases",
+      "url": "https://github.com/YasserManss/modeljury",
+      "published_at": "2026-11-01T12:58:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/YasserManss/modeljury Comments URL: https://news.ycombinator.com/item?id=50325217 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50325217"
+    },
+    {
+      "id": "8d36726bd90e00dacd0e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Learn to beatmatch on Winamp-skinned decks (vibe-coded, desktop only)",
+      "url": "https://bit-cheer.com",
+      "published_at": "2026-11-01T13:02:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "## Intro Given all the token resets in the last few weeks, I decided to try building a fully vibe, and fully one-shotted project (one prompt per feature/bug fix, no reviews, neither human nor indipendent agents, only the ones the agent itself spawns). That's how bit-cheer https://bit-cheer.com was born, a tool for learning beatmatching that I really wish I had when I started with turntables. The idea is absolutely not new, and if you want to learn beatmatching and want something much more tested and still free, I recommend https://www.beatmatch.pro/ . I needed a somewhat challenging task to see how far I could get with this 100% vibe, one-shotted approach, and I liked the somewhat nostalgic idea of using early 2000s graphics, so bit-cheer reuses Winamp's graphics and elements and can \"wear\" any Winamp skin. ## No mobile The app was intentionally designed not to support mobile. I didn't feel like going crazy trying to make Winamp skins work on mobile, and it most likely never will support it. ## Technical details The web app is written in Elm (with a bit of js, mainly for plumbing and skin rendering) and uses an audio engine written in Rust and compiled to WASM. That's all I know. (I had to ask the agent what it uses npm and js for, and it used for what I was more or less expecting) What I didn't expect is that, for some reason, it decided not to use elm-test, so the score matcher, which according to the agent needs unit tests, is written entirely in JS. Two other unexpected things are (1) the Comfort/HD feature, which does pixel enhancement and is pretty CPU-heavy, is in js even though Rust/WASM was an option, and (2) the Vite and Elm dependencies are not up to date. These are the only three issues that came out of a very quick review (literally a handful of questions to the agent). Everything else was done purely as a \"user\", meaning using the app and giving my feedback to the agent. Most of the skin rendering was done by Claude with Opus 5.5 Max, while most of the audio engine was done by Astra 6 Ultra. The FE is 50/50. I find that what I got is a very good result, considering that I give the agent only few high level instructions and then only used the app and reported bug and asked for features. ## The webapp The webapp offers 5 modes: * Foundation: you need to match 2 different kicks, and you can see the BPM of each track. * Loop builder: you need to match 2 complete loops (many instruments, not just a kick), and you can see the BPM (you can build your own loops as well). * By ear: same as loop builder, but BPMs are hidden. * Star mode: same as by ear, but BPMs are not constant and you need to keep the tracks aligned. * Pro decks: you can play actual music, 40 CC tracks or tracks you load from your PC. You can enable star mode here as well to keep things more interesting. In any mode, you have a coach that will rate your run. It also offer an 8 lesson learning path an hardwar mixed support (still not tested) and, of course, the skin studio. ## Links * bit-cheer: https://bit-cheer.com/ * youtube: https://www.youtube.com/watch?v=SLSok7xQwCY * github: https://github.com/Fi3/bit-cheer/ * twit: https://x.com/dev_sv2/status/2116874582044881332 Comments URL: https://news.ycombinator.com/item?id=50325252 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50325252"
+    },
+    {
+      "id": "2c046449c9e08640194d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Devloops – Adversarial agent loops so humans only make the key decision",
+      "url": "https://github.com/fritzprix/devloops",
+      "published_at": "2026-11-01T13:26:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/fritzprix/devloops Comments URL: https://news.ycombinator.com/item?id=50325483 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50325483"
+    },
+    {
+      "id": "0a0e040bd8553b173972",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Breath of the Wild's Hyrule digital diorama",
+      "url": "https://legendofhyrule.com/map",
+      "published_at": "2026-11-01T13:39:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Two weeks ago I posted a Zelda timeline here ahead of the Ocarina of Time remake. Here's what I've been working on: Breath of the Wild's Hyrule as a small 3D diorama you can explore. It has the main landmarks and a few easter eggs. It was the last Zelda game I played, early in the pandemic on a Wii U. It's been a fun little hit of nostalgia revisiting those places. The terrain information comes from data the Zelda modding community which was then smoothed and scaled down. It's Three.js with the lighting and shadows baked when the page loads. I built it with Claude, as I did the timeline. Without it, I'd never have had the time for a project this whimsical, so it wouldn't have seen the light of day. I didn't write any of the code. For me it felt a lot like part of being a tech lead: shaping the ideas and the output. Comments URL: https://news.ycombinator.com/item?id=50325595 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50325595"
+    },
+    {
+      "id": "6afa7b04ed9af36c7381",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Shroom – screen recording and sharing, your own Cloudflare, 10M setup",
+      "url": "https://shroom.am",
+      "published_at": "2026-11-01T13:53:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Some months I needed to record and share a single 30-minute demo, but in other months I only needed a few 2-minute quick videos. Paying $18/month didn't justify. So I had to build it myself. Shroom is a free, open source (MIT) screen recording and sharing app for Mac, hosted in your own Cloudflare account. Install with one line (or with your AI agent) and follow a guided setup for about 10 minutes, a few clicks (create a token, add a card to enable storage on Cloudflare). With Cloudflare's free tier, up to about 3 hours of recorded videos cost you nothing. After that, it is still cheap - use the slider at https://shroom.am to see the approximate storage costs. Shroom auto-deletes stale videos (old, unwatched) to keep your storage consumption low. Pin important videos to keep them from being deleted. Invite your teammates with a single link, they don't need a Cloudflare account. Their videos go into your storage. You only pay for storage, no matter how many people you invite. It comes with an editor, but you can also cut as you record. If you make a mistake, just say \"shroom cut\" while recording and continue. After you stop the slipped sentence will be cut for you. It will also add chapters and captions to your video using AI, again, all running in your Cloudflare. Github: https://github.com/bagrat/shroom Comments URL: https://news.ycombinator.com/item?id=50325709 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50325709"
+    },
+    {
+      "id": "127aad838e86e6c60aeb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Let formal specs test AI implementations",
+      "url": "https://github.com/mrasu/spec-guardian",
+      "published_at": "2026-11-01T14:11:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/mrasu/spec-guardian Comments URL: https://news.ycombinator.com/item?id=50325878 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50325878"
+    },
+    {
+      "id": "cf6ceba7400e6f5e7c03",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ElmTUI. Declarative terminal user interface framework in Common Lisp",
+      "url": "https://github.com/fkr-0/elmtui",
+      "published_at": "2026-11-01T14:34:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "ElmTUI is a declarative TUI framework for Common Lisp. I built it for fun, it has css-like styling and follows the model-update-view idea. An enhanced Lisp Repl is implemented as an example. I added capability to preserve scrollback for instances running in tmux, allowing to analyze terminal styles, or manipulate/restore earlier scrollback contents. For now its SBCL only though. Comments URL: https://news.ycombinator.com/item?id=50326094 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50326094"
+    },
+    {
+      "id": "79325a21cbe0872277a2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Bowerbird – Open-source NotebookLM for any model, with checked quotes",
+      "url": "https://github.com/jolovicdev/bowerbird",
+      "published_at": "2026-11-01T14:51:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/jolovicdev/bowerbird Comments URL: https://news.ycombinator.com/item?id=50326245 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50326245"
+    },
+    {
+      "id": "a3ebffaf924bce422ee9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Amidumb – scores how you direct Claude Code and Codex, from local logs",
+      "url": "https://github.com/jjinendra3/amidumb",
+      "published_at": "2026-11-01T15:15:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/jjinendra3/amidumb Comments URL: https://news.ycombinator.com/item?id=50326432 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50326432"
+    },
+    {
+      "id": "e4a9e248da232cc10967",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sweet-search – local code search for agents (5–33% cheaper runs)",
+      "url": "https://github.com/mrsladoje/sweet-search",
+      "published_at": "2026-11-01T15:36:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi everyone :) After almost a year of fighting windmills, I am proud to say I built sweet-search, a local code search tool for Claude Code, Codex and Opencode. It delivers 5-33% cheaper agentic runs with Sol 6.1 and Opus 5.5 with Claude Code, Codex and Opencode, with pooled solved tasks equal vs native (both 481 of 1,000 tasks pooled on 5 model*harness combos). Measured on 200 held-out SWE-rebench tasks. Detailed bench results are in the README. It consists of 6 tools: hybrid search with late interaction reranking, my version of grep, and others. It also has GPU accelerated indexing (for embedding and late interaction models) and low footprint incremental indexing. Some highlights: 1. The ANN kernel is custom and very competitive with FAISS and USearch. 2. The custom MaxSim kernel is 1.4–7.3× faster than NumPy and PyTorch (reranking on CPU). 3. My hybrid-search tool is SOTA on M2CRB and zero-shot SOTA on CoSQA. 4. My custom grep tool is 2.46x faster e2e than ripgrep and ranks hits in a specific way (inspired by Sainte-Laguë). Here is the promo video I built with fframes and Opus 5.5: https://www.youtube.com/watch?v=lJzgXRQprs4 Would love to hear your opinions, Marko :) Comments URL: https://news.ycombinator.com/item?id=50326635 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50326635"
+    },
+    {
+      "id": "f750d1fc8ec84c297973",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "url": "https://hackerbooks.org",
+      "published_at": "2026-11-01T15:58:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5). It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page. To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly steered and made calls, bought the domain name, etc. It counts mentions, so it's not perfect (praising a book and trashing it both count). If your favourite book is missing or matched to the wrong thing, tell me. Comments URL: https://news.ycombinator.com/item?id=50326821 Points: 643 # Comments: 148",
+      "discussion_url": "https://news.ycombinator.com/item?id=50326821"
+    },
+    {
+      "id": "fe3313745ab6b9835dcd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Relayvora – Hand unfinished work between Claude Code and Codex",
+      "url": "https://github.com/Dagimassefa/Relayvora",
+      "published_at": "2026-11-01T16:15:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Dagimassefa/Relayvora Comments URL: https://news.ycombinator.com/item?id=50326987 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50326987"
+    },
+    {
+      "id": "8ab29b89ef86dc66d72c",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Quoting Kyle Kingsbury",
+      "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury",
+      "published_at": "2026-11-01T16:49:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users? — Kyle Kingsbury , Jepsen results for ParticleDB 1.1.4 Tags: kyle-kingsbury , llms , ai , generative-ai , ai-misuse",
+      "discussion_url": ""
+    },
+    {
+      "id": "def5a16305a2c956e5b5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: 2D world SIM where each creature runs a text classifier in the browser",
+      "url": "https://id-le.com?lab&halloween",
+      "published_at": "2026-11-01T17:42:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Each creature in this data lab is a real text classifier. You put together a workflow, and the creatures execute it. Just set a stream of incoming messages and watch them work: one filters out the spam, another tags each message's mood, finally a router sends each message to the right bin, and anything it isn't sure about goes to review The classifiers run entirely in your browser. It uses a 22.7M parameter model, int8 ONNX, about 10 ms a message, no API calls Outside the lab, the creatures also evolve, chat, gossip, build huts, plot charts, count numbers, process and eat words, code and dream when asleep. You can also see their stream of consciousness, which they turn into thoughts that they tag. And when they are asleep, you can watch their dreams There are a lot of ways of modifying or evolving the environment and the creatures, including adding elements from other websites, playing music and changing the weather And if you want to change anything at all, talk to the Operator (or make it smarter), connect it to your Claude or OpenAI subscription, or setup your API key, or point it to a local model in Ollama or LM Studio, and you can edit the whole world via chat, without limits (get the code here: https://github.com/nicobrenner/id-le ) What else would you like the creatures to do? PS: Happy Halloween Comments URL: https://news.ycombinator.com/item?id=50327798 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50327798"
+    },
+    {
+      "id": "10344e975002ed056887",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Recento Pro (beta): CleanShot, Paste, AlDente-style tools in one app",
+      "url": "https://1dot.ai/recento-pro",
+      "published_at": "2026-11-01T17:48:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://1dot.ai/recento-pro Comments URL: https://news.ycombinator.com/item?id=50327851 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50327851"
+    },
+    {
+      "id": "b2f63d5fabc4f3152f44",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Natively 3.0 – a local meeting assistant that hides from screen share",
+      "url": "https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant",
+      "published_at": "2026-11-01T17:51:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant Comments URL: https://news.ycombinator.com/item?id=50327881 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50327881"
+    },
+    {
+      "id": "7465107fb1136cf98b01",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Offline project memory for coding agents – no API key, no vector DB",
+      "url": "https://github.com/krapcys1-maker/adaptive-agent-memory-research",
+      "published_at": "2026-11-01T17:57:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/krapcys1-maker/adaptive-agent-memory-research Comments URL: https://news.ycombinator.com/item?id=50327937 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50327937"
+    },
+    {
+      "id": "8e1c6e6b42ccb6c8846e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I vibe-coded a generator of Suprematist compositions with Claude",
+      "url": "https://supremath.art",
+      "published_at": "2026-11-01T18:24:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://supremath.art/ Comments URL: https://news.ycombinator.com/item?id=50328210 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50328210"
+    },
+    {
+      "id": "67aa65e01e3f2b61b1eb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: DSP Explorables",
+      "url": "https://news.ycombinator.com/item?id=50328748",
+      "published_at": "2026-11-01T19:19:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "I spent the weekend with Claude assembling some pages for interactive exploration of a variety of basic DSP topics. I have published the pages at https://dsp.gundy.dev/ My main goal, initially, was to build something for myself, as a way to refresh my memory and/or satisfy my curiosity on topics I love. My problem is that I find signal processing textbooks dry. Static diagrams and heavy math don't engage me very well, and I much prefer things I can interact with. As the pages started taking shape, I started thinking others might get some benefit too. I've tried to keep the pages relatively light on math, except where it genuinely illuminates, and also keep the pages full of interactive examples. For example an in-browser acoustic modem is built up piece-by-piece and used to demonstrate modulation; multiple synths are playable with MIDI keyboards; many pages give you the ability to record your own samples and use them eg. for pitch shifting or compression or modelling your own guitar body in the physical modelling page. There's the ability to measure the SNR of your own room to determine its capacity to carry information, and much more. I'm genuinely interested in any and all feedback - things that I could have covered better, other topics to include etc. I still have a roadmap of a number of things I'd like to cover, and I figured before I get too much deeper, it could benefit from some wider socialisation and feedback. Also note: this is an ad-free hobby project and for the foreseeable future will remain that way. All demos run in the browser only, no data is sent to, or processed by anything other than your own machine. Thanks! Comments URL: https://news.ycombinator.com/item?id=50328748 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50328748"
+    },
+    {
+      "id": "2015bf5225010084176b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Crosswalk – terminal manager to reduce sprawl",
+      "url": "https://wareshq.com/crosswalk",
+      "published_at": "2026-11-01T19:28:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "I usually have many projects and terminals I’m working in so Crosswalk groups my work together and allows me to open a terminal (or another terminal app) in the correct folder/project quickly and label the tab (as well as add notes). I started on iTerm2 (which is great) years ago for my terminal manager, then found I spent too much time flipping between tabs once I started leveraging terminal agents like Claude Code and Codex so I built Crosswalk to improve visibility at a glance. It originally started as a web page, but then I moved it to an app so I had better control over notifications and sounds to let me know when work was done or needed me on one of the tabs. Crosswalk shows which sessions are still working or sitting idle with an activity dot on the tab. It provides hotkeys to jump between tabs and groups quickly. Even if you're not using agents, you can still use it for your terminal work - I commonly leave active projects as groups on the left even if I not working in them right now. There's an MCP server so an agent can launch new tabs (and agents) - it's helpful when you need a lead agent to spawn long running agents (in visible tabs) and then monitor their status (running, stuck, needs user feedback) or compact their context at efficient times. There are other nice features like layouts to view multiple terminals at once and reopens terminals from last session. I spent a bunch of time iterating on the pty host (pseudoterminal host) so updating the app or closing and then reopening will restore the sessions. This is a paid product you can trial for free. I created it to solve the multi agent bottlenecks so I use it daily, both personally and professionally. For Mac and Windows - Electron based. Comments URL: https://news.ycombinator.com/item?id=50328826 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50328826"
+    },
+    {
+      "id": "8e3e0b511cd61cc5ff25",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Nouli – A decision model TUI to branch and blend multiple histories",
+      "url": "https://github.com/nouli-ai/nouli",
+      "published_at": "2026-11-01T20:18:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/nouli-ai/nouli Comments URL: https://news.ycombinator.com/item?id=50329343 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50329343"
+    },
+    {
+      "id": "ec5cd8596524375385d7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Building an AI Traffic Guardrail(kilasec)",
+      "url": "https://kilasec.com",
+      "published_at": "2026-11-01T21:37:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Show HN: An AI traffic guardrail Building something based on 2 decades of support experience. It's a guardrail for AI traffic where you can apply policies, redact PII and API keys, set model destinations, catch destructive actions before execution, etc. The whole thing is built with Claude and can also be configured and troubleshot via Claude/AI tools (it acts as an MCP server). It acts as a proxy for AI traffic. All you need is a Linux box (the Collector, where policy rules are applied) and a client app installed on the machine generating AI traffic to forward selected requests to it. Everything is visible in the UI. Lots of customization, with user experience kept in mind throughout. Happy to answer any questions! Comments URL: https://news.ycombinator.com/item?id=50330158 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50330158"
+    },
+    {
+      "id": "c0a41caf9df85aef93d8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Nonce – Open-source, least-privilege Gmail access for AI agents",
+      "url": "https://www.anonce.io",
+      "published_at": "2026-11-01T21:44:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! We built nonce, an open-source tool that sits between personal AI agents (Muse, Grok, ChatGPT, Claude) and your personal data in Gmail, Calendar, Drive and more. Today, if you connect Gmail to an AI agent like Muse, it can read your entire inbox. Whether on purpose or not, they can read far more emails than needed. This poses a huge data-privilege risk, in which personal data is accessed without limits. With nonce, the AI will no longer hold your Google or Slack tokens. To read anything, it has to show its intent first: User's question: When does my flight to Tokyo leave? Agent's justification: Need the airline confirmation email Agent's search query: from:united.com Tokyo Access needed: 10 minutes If the justification and search query are reasonable, nonce issues a scoped token to the AI Agent. AI Agent can only query data using a token. If something looks fishy, i.e the AI is acting on its own, wants too much, or wants sensitive emails like bank statements, medical results, or password resets. nonce sends you a notification to approve or deny. By default, nonce denies massive crawling behaviors How it works 1. nonce scores each search against your original question before running it, to ensure its relevance. 2. Every search is combined with the token's search. If the AI searches \"bank statement\", nonce runs (from:united.com Tokyo) AND (bank statement). It can narrow its access, but not widen it. 3. The token is scoped to that agent only, with a TTL for X minutes. Limitations: nonce can't see your chat with the AI, so it can't prove you asked, which leaves a risk that the AI Agent can fake the intent. However, users can audit past accesses in nonce portal and identify these bypasses. Give it a shot at https://github.com/roe-ai/nonce We'd love to hear what you think. Website: https://anonce.io Comments URL: https://news.ycombinator.com/item?id=50330213 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50330213"
+    },
+    {
+      "id": "651498c3f3fde8ab3b59",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Corollary, LaTeX Editor for Mac with On-Device Apple Foundation Models",
+      "url": "https://calvinyz.github.io/corollary",
+      "published_at": "2026-11-01T21:45:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "A few days ago, I got OpenAI's email that Prism will be officially shutting down on January 1. Having written my last paper in it, I was quite disappointed since I've never really enjoyed typing LaTeX by hand for long periods. Also, when I updated my macOS recently, I started playing around with Apple's Foundation Models a bit (which I'm late on). So on Saturday I decided that, instead of studying for my midterms, my weekend project was going to be building a local version of Prism that used on-device Apple FMs. It's an Overleaf-style editor with a PDF preview that compiles with TeX Live, and it installs TeX for you if you don't have it. To use the AI features, select text and press Cmd-K, and you can accept or reject the diff. If you have a handwritten formula that you want to insert, you can place your cursor where you want to insert and drop in a photo, which GLM-OCR turns into LaTeX locally since Apple's OCR doesn't handle math. What was fun was testing out the capability of the models. Corollary uses SystemLanguageModel.default, which is Apple's general-purpose on-device model and the one built into macOS for Apple Intelligence. It's about 3B params with a 4,096 token context window on my M1 Max. When asked for plain text, it kept every \\cite, \\ref, \\label and formula intact in 78 of 80 edits, but with structured output (@Generable) it went 0 for 20 because the JSON escaping eats the backslashes (\\text comes back as a tab). While this limits capabilities like full document edits, you can already point it at Ollama or your own API key, and I'm sure the models will catch up soon. Also, it needs an Apple silicon Mac, and the AI needs macOS 26 with Apple Intelligence. At this stage I don't have an Apple Developer ID yet, so the first launch needs System Settings > Privacy & Security > Open Anyway. Sorry about that. Please give it a try and let me know what bugs you run into or what the model struggles on! Github: https://github.com/calvinyz/corollary Comments URL: https://news.ycombinator.com/item?id=50330224 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50330224"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-01T13:24:42.781298+00:00",
+      "last_success": "2026-11-01T22:01:42.188078+00:00",
       "count": 10,
       "earliest": "2026-10-28T15:30:55+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-01T13:24:43.082599+00:00",
+      "last_success": "2026-11-01T22:01:42.399647+00:00",
       "count": 20,
       "earliest": "2026-10-28T14:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-01T13:24:43.239134+00:00",
+      "last_success": "2026-11-01T22:01:42.617944+00:00",
       "count": 894,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-01T13:24:43.387468+00:00",
+      "last_success": "2026-11-01T22:01:42.814778+00:00",
       "count": 30,
-      "earliest": "2026-10-17T13:16:49+00:00",
+      "earliest": "2026-10-17T21:11:12+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-01T13:24:45.079189+00:00",
+      "last_success": "2026-11-01T22:01:43.355191+00:00",
       "count": 100,
-      "earliest": "2026-10-31T11:19:00+00:00",
+      "earliest": "2026-11-01T01:25:24+00:00",
       "gap": false,
       "error": null
     },
@@ -76314,61 +76602,61 @@
       "count": 100,
       "earliest": "2026-10-29T21:50:44+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-01T13:24:48.127664+00:00",
-      "count": 20,
-      "earliest": "2026-10-07T18:10:20+00:00",
+      "last_success": "2026-11-01T22:01:51.583912+00:00",
+      "count": 10,
+      "earliest": "2026-10-20T20:46:50+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-01T13:24:48.750255+00:00",
+      "last_success": "2026-11-01T22:01:52.006567+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-01T13:24:49.360604+00:00",
+      "last_success": "2026-11-01T22:01:52.443661+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-01T13:24:49.833891+00:00",
+      "last_success": "2026-11-01T22:01:52.813251+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-01T13:24:50.578461+00:00",
+      "last_success": "2026-11-01T22:01:53.436593+00:00",
       "count": 10,
       "earliest": "2026-10-12T19:00:12+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-01T13:25:12.607313+00:00",
+      "last_success": "2026-11-01T22:02:12.386037+00:00",
       "count": 2,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-01T13:25:12.765457+00:00",
+      "last_success": "2026-11-01T22:02:12.550312+00:00",
       "count": 1341,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-01T13:25:24.465209+00:00",
-      "count": 4,
-      "earliest": "2026-10-15T21:30:38+00:00",
+      "last_success": "2026-11-01T22:02:17.742880+00:00",
+      "count": 3,
+      "earliest": "2026-10-23T04:48:10+00:00",
       "gap": false,
       "error": null
     }
@@ -76477,5 +76765,5 @@
       "to": "2026-10-29T13:44:28+00:00"
     }
   ],
-  "collected_at": "2026-11-01T13:25:24.465863+00:00"
+  "collected_at": "2026-11-01T22:02:17.743561+00:00"
 }
