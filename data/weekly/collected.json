@@ -75923,102 +75923,294 @@
       "date_kind": "community_post",
       "evidence": "Othismo is a runtime which has a bunch of sandboxed WASM modules talking to each other + the host environment. It's actually hosting its own website right now at othismo.com. This is a project that's been percolating in my head for a while, as a vague desire to make a \"better\" runtime for software development. But it was never particularly clear for me what that would _actually_ look like. In the last month or so, I felt a bit inspired to ask what such a runtime might look like for agentic development. My hypothesis is that we really can't review 10k+ SLoC pull requests consistently and really understand them. But if we try to have a higher level view of things, we still can't be confident the agent(s) haven't done something stupid and opened a socket or a file somewhere in that 10k+ SLoC. Therefore we need a very clear demarcation between computation and side effects. In Othismo that takes the shape of the image definition files (.oth) which describe the namespace + various type definitions describing what the interface of an object (should) be. It's somewhat like TypeScript, we don't actually do anything to verify an object conforms to this interface. I'd love your feedback on the syntax used to define images overall, I feel like it doesn't do a great job giving me a clear notion of the environment lexically. I'm more comfortable about the syntax for describing the behavior of objects, although things like `operator` and `readonly` are really only necessary because I've not done anything to support auth at the protocol layer yet. You can run the same website hosted at othismo.com with `git clone git@github.com:mamidon/othismo.git` `task run:example:static` You can also play with the namespace interactively with ``` task build:example:static target/debug/othismo shell examples/static/static.rti # print out the namespace(s) target/debug/othismo --check examples/static/static.rti ``` You'll need rust, task (it's like make), and node+npm. Comments URL: https://news.ycombinator.com/item?id=50319764 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50319764"
+    },
+    {
+      "id": "a1ed141c7ce6e915d663",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: InterviewFit: learn the approach, not the answer",
+      "url": "https://interviewfit.io/dev/coding/sets/starter-50",
+      "published_at": "2026-10-31T21:29:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://interviewfit.io/dev/coding/sets/starter-50 Comments URL: https://news.ycombinator.com/item?id=50320422 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50320422"
+    },
+    {
+      "id": "c64561aa1256dfadb0c2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Nvidia RE-USE speech enhancement model running in the browser on WebGPU",
+      "url": "https://re-use-demo.geronimo-labs.com",
+      "published_at": "2026-10-31T21:38:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://re-use-demo.geronimo-labs.com Comments URL: https://news.ycombinator.com/item?id=50320492 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50320492"
+    },
+    {
+      "id": "7ed55941371fd406cc9e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Winch – App Store optimization run by your own coding agent",
+      "url": "https://getwinch.app",
+      "published_at": "2026-10-31T21:39:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://getwinch.app/ Comments URL: https://news.ycombinator.com/item?id=50320501 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50320501"
+    },
+    {
+      "id": "f157bd2d96515d68dd8d",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Winch – App Store optimization run by your own coding agent",
+      "url": "https://getwinch.app",
+      "published_at": "2026-10-31T21:39:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://getwinch.app/ Comments URL: https://news.ycombinator.com/item?id=50320501 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50320501"
+    },
+    {
+      "id": "a8d164fa813dc409b4ae",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Muse Zouroboros, gives Muse a software factory",
+      "url": "https://github.com/marlandoj/muse-zouroboros",
+      "published_at": "2026-10-31T21:57:47+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello HN. I built the Zouroboros workshop on Muse. Together I think they are the most powerful vibecoding workshop tool on the planet today. I use Muse as my daily assistant. Its pretty awesome until you want it to build using different models or tools. That's where the workshop comes in. If I want to build anything complex or long running jobs that last hours or days, Muse sends it to the workshop. The workshop itself splits jobs up into pieces and determines which harness is best used for that job. 7 harnesses are installed in all, more can be added. Claude,Hermes,Codex, Gemini are the big players. The workshop routes harnesses and models based on the job. The workshop itself is more than a harness and model router. Its persistent memory. In fact Zouroboros started out as a memory substrate like SuperMemory but it has since evolved. Memory is the core. The cool part is that memory on the workshop work for any frontend agent like Muse. Snapping them together was frictionless. The package is on npm in the repo link. There is a community version and a hosted version if true vibecoding builders want to get serious. Solo builders can build with the communnity version or scale up to hosted since Muse has limited resources itself. Its a rough implementation on the verge of a GTM. I wont lie. I would like to hear how others are vibecoding using Muse and if a workshop would benefit them. Comments URL: https://news.ycombinator.com/item?id=50320648 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50320648"
+    },
+    {
+      "id": "2be538283f0cd7dcfdeb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Playground for Designing Buildable Robotics",
+      "url": "https://github.com/JamelHammoud/basecase",
+      "published_at": "2026-10-31T21:59:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've been trying to build a small robot, but haven't had much luck with LLMs out of the box, so I built my own app. Comments URL: https://news.ycombinator.com/item?id=50320660 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50320660"
+    },
+    {
+      "id": "a0ee57c3a3b2cb560ebf",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "datasette-llm 0.1a9",
+      "url": "https://simonwillison.net/2026/Oct/31/datasette-llm",
+      "published_at": "2026-10-31T22:10:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db --internal internal.db Previously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra . Tags: datasette , llm , datasette-agent",
+      "discussion_url": ""
+    },
+    {
+      "id": "41ddbac338c816311e49",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "A coding agent that fits in 636 KB – no Node, no Python, no NPM",
+      "url": "https://github.com/descz/delta",
+      "published_at": "2026-10-31T23:30:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/descz/delta Comments URL: https://news.ycombinator.com/item?id=50321273 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50321273"
+    },
+    {
+      "id": "50e882a58c1899082a1f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Ultron – an uncensored agent that can do your coding",
+      "url": "https://chat.gtgimage.com",
+      "published_at": "2026-10-31T23:38:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://chat.gtgimage.com Comments URL: https://news.ycombinator.com/item?id=50321332 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50321332"
+    },
+    {
+      "id": "20de3ccc949c7c4adeb4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: BBRouter – Ben Eater's 8-bit computer, simulated on 3D breadboards",
+      "url": "https://bbrouter.com/bbrouter/ben-eater-sap-1",
+      "published_at": "2026-11-01T00:10:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I kept wiring Ben Eater's 8-bit computer wrong, so I built a realistic virtual breadboard editor. Some of the nice features are side-by-side diff, scope, schematics auto-sync, auto-router (BBRouter stands for breadboard router), and my favorites: upload from the real Arduino IDE and connect to your AI with MCP, let Claude & co build it or help you troubleshoot. The link is the SAP-1 running. You can orbit it, probe a hole with the scope, slow the clock down, play with the virtual displays for debugging, then you can actually build it following the step-by-step instructions. A side-goal is to create a community, there are quite a lot of simulators out there but mostly offline / too abstract to realistically use it for a real build. I also never found one that had a decent UI/UX and worked well on mobile or with a trackpad. Happy to answer anything, and tell me what breaks. p.s. Maker plan is $7/month; code HACKERNEWS makes the first month free and then $5/month for as long as you keep it. Comments URL: https://news.ycombinator.com/item?id=50321522 Points: 17 # Comments: 5",
+      "discussion_url": "https://news.ycombinator.com/item?id=50321522"
+    },
+    {
+      "id": "00da2f8eee879e905a90",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Docsferatu: An agent that drafts docs PRs while you sleep",
+      "url": "https://www.inngest.com/blog/docsferatu-an-agent-that-drafts-docs-prs-while-you-sleep",
+      "published_at": "2026-11-01T00:23:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.inngest.com/blog/docsferatu-an-agent-that-drafts-docs-prs-while-you-sleep Comments URL: https://news.ycombinator.com/item?id=50321597 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50321597"
+    },
+    {
+      "id": "df11ca01ba6913e9cab0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: LinkedIn-ops – Zero-dependency CDP automation built for AI agents",
+      "url": "https://github.com/shashtag-ventures/linkedin-ops",
+      "published_at": "2026-11-01T01:46:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/shashtag-ventures/linkedin-ops Comments URL: https://news.ycombinator.com/item?id=50322021 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50322021"
+    },
+    {
+      "id": "30a74651a54dd556e42c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Proxenos – a local-first agent for getting through the health system",
+      "url": "https://github.com/mindemory/proxenos",
+      "published_at": "2026-11-01T02:06:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/mindemory/proxenos Comments URL: https://news.ycombinator.com/item?id=50322117 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50322117"
+    },
+    {
+      "id": "bc237ade9ed0f8014d34",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Proxenos – a local-first agent for getting through the health system",
+      "url": "https://github.com/mindemory/proxenos",
+      "published_at": "2026-11-01T02:06:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/mindemory/proxenos Comments URL: https://news.ycombinator.com/item?id=50322117 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50322117"
+    },
+    {
+      "id": "a73631972d7088099c5a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: What [67] MCP servers do at startup, with the internet cut off",
+      "url": "https://mcp.brydge-ai.com",
+      "published_at": "2026-11-01T04:48:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://mcp.brydge-ai.com Comments URL: https://news.ycombinator.com/item?id=50322794 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50322794"
+    },
+    {
+      "id": "5e73ab8e5085ae40e2c9",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Meridian: A peer-to-peer browser game world built by an AI agent",
+      "url": "https://blakelapierre.substack.com/p/meridian-in-action-play-it-in-your",
+      "published_at": "2026-11-01T05:25:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://blakelapierre.substack.com/p/meridian-in-action-play-it-in-your Comments URL: https://news.ycombinator.com/item?id=50322925 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50322925"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-10-31T21:34:31.198768+00:00",
+      "last_success": "2026-11-01T06:04:38.804962+00:00",
       "count": 10,
       "earliest": "2026-10-28T15:30:55+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-10-31T21:34:31.518386+00:00",
+      "last_success": "2026-11-01T06:04:39.053356+00:00",
       "count": 20,
       "earliest": "2026-10-28T14:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-10-31T21:34:31.754030+00:00",
+      "last_success": "2026-11-01T06:04:39.165648+00:00",
       "count": 894,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-10-31T21:34:31.880888+00:00",
+      "last_success": "2026-11-01T06:04:39.272080+00:00",
       "count": 30,
-      "earliest": "2026-10-16T01:58:00+00:00",
+      "earliest": "2026-10-17T13:16:49+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-10-31T21:34:32.485212+00:00",
+      "last_success": "2026-11-01T06:04:39.508133+00:00",
       "count": 100,
-      "earliest": "2026-10-30T19:34:49+00:00",
+      "earliest": "2026-10-31T04:29:53+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-10-31T21:34:33.231208+00:00",
+      "last_success": "2026-11-01T06:04:47.192091+00:00",
       "count": 100,
-      "earliest": "2026-10-29T17:04:06+00:00",
+      "earliest": "2026-10-29T20:16:04+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-10-31T21:34:34.113648+00:00",
+      "last_success": "2026-11-01T06:04:47.904828+00:00",
       "count": 20,
       "earliest": "2026-10-07T18:10:20+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-10-31T21:34:34.536091+00:00",
+      "last_success": "2026-11-01T06:04:48.225264+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-10-31T21:34:34.935483+00:00",
+      "last_success": "2026-11-01T06:04:48.512523+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-10-31T21:34:35.316615+00:00",
+      "last_success": "2026-11-01T06:04:48.816373+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-10-31T21:34:35.811732+00:00",
+      "last_success": "2026-11-01T06:04:49.239801+00:00",
       "count": 10,
       "earliest": "2026-10-12T19:00:12+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-10-31T21:34:50.972080+00:00",
+      "last_success": "2026-11-01T06:05:01.142859+00:00",
       "count": 2,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-10-31T21:34:51.107874+00:00",
+      "last_success": "2026-11-01T06:05:01.293972+00:00",
       "count": 1341,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-10-31T21:34:59.827124+00:00",
+      "last_success": "2026-11-01T06:05:08.983533+00:00",
       "count": 4,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -76129,5 +76321,5 @@
       "to": "2026-10-29T13:44:28+00:00"
     }
   ],
-  "collected_at": "2026-10-31T21:34:59.827797+00:00"
+  "collected_at": "2026-11-01T06:05:08.984221+00:00"
 }
