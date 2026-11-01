@@ -76115,102 +76115,258 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://blakelapierre.substack.com/p/meridian-in-action-play-it-in-your Comments URL: https://news.ycombinator.com/item?id=50322925 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50322925"
+    },
+    {
+      "id": "c5e084db95d29705ee69",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AnchorGit – Hardware-signed Git decision ledger for AI code",
+      "url": "https://www.anchorgit.com",
+      "published_at": "2026-11-01T07:04:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.anchorgit.com Comments URL: https://news.ycombinator.com/item?id=50323310 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50323310"
+    },
+    {
+      "id": "a00948fbe3366e3cd518",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Geop – Open-source Nurbs CAD with MCP (MicroDuck example)",
+      "url": "https://app.geop-cad.dev?example=duck",
+      "published_at": "2026-11-01T08:40:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wrote an interval arithmetic based CAD kernel and designed a MicroDuck like robot with it. Download for best MCP experience. Comments URL: https://news.ycombinator.com/item?id=50323694 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50323694"
+    },
+    {
+      "id": "a01114b51aa06fd72ae5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: OpenProject Agent Engine – Automated Workflow and Agent Dispatch",
+      "url": "https://github.com/310networks/openproject-agent-engine",
+      "published_at": "2026-11-01T09:06:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "I started looking into OpenProject as an open-source JIRA alternative for personal project, and wanted a way to have my AI agents pick up tasks and complete them automatically. So I put together this OpenProject Agent Engine. It auto assigns the 'work package' (ticket), then kicks off the agent to do the work. Once complete, the agent opens a PR then leaves a detailed comment on the ticket. The engine then assigns the ticket to a QA code review agent. If it passes, the PR gets merged and and ticket is closed. If it doesn't pass, it gets kicked back to the original agent to fix the issues. Feedback welcome and hope it can help someone. Docker Hub: https://hub.docker.com/r/kookster310/op-agent-engine Github: https://github.com/310networks/openproject-agent-engine Comments URL: https://news.ycombinator.com/item?id=50323807 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50323807"
+    },
+    {
+      "id": "bf50a593dbab98d585fb",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: OpenProject Agent Engine – Automated Workflow and Agent Dispatch",
+      "url": "https://github.com/310networks/openproject-agent-engine",
+      "published_at": "2026-11-01T09:06:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "I started looking into OpenProject as an open-source JIRA alternative for personal project, and wanted a way to have my AI agents pick up tasks and complete them automatically. So I put together this OpenProject Agent Engine. It auto assigns the 'work package' (ticket), then kicks off the agent to do the work. Once complete, the agent opens a PR then leaves a detailed comment on the ticket. The engine then assigns the ticket to a QA code review agent. If it passes, the PR gets merged and and ticket is closed. If it doesn't pass, it gets kicked back to the original agent to fix the issues. Feedback welcome and hope it can help someone. Docker Hub: https://hub.docker.com/r/kookster310/op-agent-engine Github: https://github.com/310networks/openproject-agent-engine Comments URL: https://news.ycombinator.com/item?id=50323807 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50323807"
+    },
+    {
+      "id": "a0c93770b42a78811f75",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "DeepSeek launches advanced coding agent to rival Claude Code",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic",
+      "published_at": "2026-11-01T09:07:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic Comments URL: https://news.ycombinator.com/item?id=50323814 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50323814"
+    },
+    {
+      "id": "218b258658e3de6330a5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Safely connect GrokBot to your PC/VM: chosen folders and Claude/Codex",
+      "url": "https://github.com/janreges/safe-grokbot-bridge",
+      "published_at": "2026-11-01T09:47:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/janreges/safe-grokbot-bridge Comments URL: https://news.ycombinator.com/item?id=50324018 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50324018"
+    },
+    {
+      "id": "8be1bca568d043b2dbac",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Rust crawler for SEO and content audits, with optional LLM review",
+      "url": "https://crawler.siteone.io",
+      "published_at": "2026-11-01T09:52:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://crawler.siteone.io/ Comments URL: https://news.ycombinator.com/item?id=50324052 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50324052"
+    },
+    {
+      "id": "b423c314a3c17fd0a52a",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Rust crawler for SEO and content audits, with optional LLM review",
+      "url": "https://crawler.siteone.io",
+      "published_at": "2026-11-01T09:52:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://crawler.siteone.io/ Comments URL: https://news.ycombinator.com/item?id=50324052 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50324052"
+    },
+    {
+      "id": "126d372202323a878f29",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "QwenPU: An LLM running inside another LLM's weights",
+      "url": "https://huggingface.co/divagr1925/QwenPU",
+      "published_at": "2026-11-01T10:15:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/divagr1925/QwenPU Comments URL: https://news.ycombinator.com/item?id=50324179 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50324179"
+    },
+    {
+      "id": "3f7db9eaf1faecbdaa9a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Turn websites into audio locally in the browser with WebGPU",
+      "url": "https://storytella.io",
+      "published_at": "2026-11-01T10:30:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted a simple way to listen to articles on the go and found elevenreader. While I think the voices they have are great, I didn't want to bother with an account, a subscription, and yet another service interested in my content habits. I thought that TTS models and runtimes surely must have reached a point where they can run effectively on a mobile device with WebGPU. Maybe a fully local webapp could be feasible? Shortly after, I heard about Phonon here on HN and was motivated to spend a weekend with Claude and see what we could come up with :) The result is: - A fully local Audiobook/TTS webapp - An optimised Phonon runtime reaching ~4x increase in speed on WebGPU and CPU compared to stock Phonon - Streaming, so the audio starts quickly and continues to generate uninterrupted while the phone is locked - Library with an optional \"auto-download\" feature, so you can pre-render articles to be listened to later - Fully serverless and local, the bundle is hosted in Cloudflare workers, no backend, no database, no user accounts, no tracking. Only piece of backend logic is a simple proxy to use as fallback for fetching URLs that the browser is unable to fetch b/c of CORS Depending on your OS version, you may need to enable WebGPU in iOS/Safari settings, Chromium-based browsers in chrome://flags (search for WebGPU and enable both settings), and allow JIT in Site Controls on Vanadium (GrapheneOS). Comments URL: https://news.ycombinator.com/item?id=50324284 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50324284"
+    },
+    {
+      "id": "aa77de14a57594de0fbd",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Will Agent Resource Registries ever have their moment, the way AI gateways did?",
+      "url": "https://agenticresourcediscovery.org",
+      "published_at": "2026-11-01T11:39:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://agenticresourcediscovery.org/ Comments URL: https://news.ycombinator.com/item?id=50324679 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50324679"
+    },
+    {
+      "id": "4402d6ee692cb249ba22",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Making Coding Fun Again",
+      "url": "https://shantaram.xyz/posts/2026/10/making-coding-fun-again",
+      "published_at": "2026-11-01T11:55:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://shantaram.xyz/posts/2026/10/making-coding-fun-again Comments URL: https://news.ycombinator.com/item?id=50324785 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50324785"
+    },
+    {
+      "id": "1581d15261f7bdd7f573",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Context Mode – An Open-Source MCP Server That Reduces AI Coding Context Usage",
+      "url": "https://github.com/mksglu/context-mode",
+      "published_at": "2026-11-01T11:56:19+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/mksglu/context-mode Comments URL: https://news.ycombinator.com/item?id=50324789 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50324789"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-01T06:04:38.804962+00:00",
+      "last_success": "2026-11-01T13:24:42.781298+00:00",
       "count": 10,
       "earliest": "2026-10-28T15:30:55+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-01T06:04:39.053356+00:00",
+      "last_success": "2026-11-01T13:24:43.082599+00:00",
       "count": 20,
       "earliest": "2026-10-28T14:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-01T06:04:39.165648+00:00",
+      "last_success": "2026-11-01T13:24:43.239134+00:00",
       "count": 894,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-01T06:04:39.272080+00:00",
+      "last_success": "2026-11-01T13:24:43.387468+00:00",
       "count": 30,
       "earliest": "2026-10-17T13:16:49+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-01T06:04:39.508133+00:00",
+      "last_success": "2026-11-01T13:24:45.079189+00:00",
       "count": 100,
-      "earliest": "2026-10-31T04:29:53+00:00",
+      "earliest": "2026-10-31T11:19:00+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-11-01T06:04:47.192091+00:00",
+      "last_success": "2026-11-01T13:24:46.775246+00:00",
       "count": 100,
-      "earliest": "2026-10-29T20:16:04+00:00",
+      "earliest": "2026-10-29T21:50:44+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-01T06:04:47.904828+00:00",
+      "last_success": "2026-11-01T13:24:48.127664+00:00",
       "count": 20,
       "earliest": "2026-10-07T18:10:20+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-01T06:04:48.225264+00:00",
+      "last_success": "2026-11-01T13:24:48.750255+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-01T06:04:48.512523+00:00",
+      "last_success": "2026-11-01T13:24:49.360604+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-01T06:04:48.816373+00:00",
+      "last_success": "2026-11-01T13:24:49.833891+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-01T06:04:49.239801+00:00",
+      "last_success": "2026-11-01T13:24:50.578461+00:00",
       "count": 10,
       "earliest": "2026-10-12T19:00:12+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-01T06:05:01.142859+00:00",
+      "last_success": "2026-11-01T13:25:12.607313+00:00",
       "count": 2,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-01T06:05:01.293972+00:00",
+      "last_success": "2026-11-01T13:25:12.765457+00:00",
       "count": 1341,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-01T06:05:08.983533+00:00",
+      "last_success": "2026-11-01T13:25:24.465209+00:00",
       "count": 4,
       "earliest": "2026-10-15T21:30:38+00:00",
       "gap": false,
@@ -76321,5 +76477,5 @@
       "to": "2026-10-29T13:44:28+00:00"
     }
   ],
-  "collected_at": "2026-11-01T06:05:08.984221+00:00"
+  "collected_at": "2026-11-01T13:25:24.465863+00:00"
 }
