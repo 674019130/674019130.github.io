@@ -83483,32 +83483,56 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/argeuthiesen/claudinho Comments URL: https://news.ycombinator.com/item?id=50359514 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50359514"
+    },
+    {
+      "id": "a4b9fe02afb54ad41dcf",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.318",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+      "published_at": "2026-11-04T00:01:03+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added a record of your answer when Claude Code asks to turn on the mods it writes in a session - Added `assume_role` on `mantle` upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution - Added an `effort` option to a mod's `$.model.fork`, so a quick side job can run at `low` whatever effort the session uses; the result reports the effort sent - Added the date a stored claude.ai sign-in ends to `claude auth status` (`loginExpiresAt`) and to `claude -p` JSON results (`credential_expires_at`) - Added a one-line stderr warning to `claude -p` text output, starting 10 days before a stored claude.ai sign-in ends - Fixed `--continue` sometimes losing the earlier conversation after a malformed tool call's retries ran out (regression in 2.1.314) - Fixed macOS sessions with many running Bash commands stalling while memory grew - Fixed permission prompts being answered by keys typed just after sending a message, or before a slow prompt appeared - Fixed `/logout`, `claude auth logout` and `claude mcp remove` reporting success, and changes to trust, consent or MCP settings being dropped with no word, when the config file could not be updated on a shared network home directory - Fixed jobs exiting with `Not logged in` when another terminal or host signs in again to the same account and organization on the same home - Fixed `claude mcp add` and `remove` writing the config without its lock: they now wait for it or exit 1, though another job's save can still replace a saved server - Fixed `claude plugin` commands exiting before a slow token refresh was saved, which could sign you out on the next run - Fixed `claude plugin validate` passing a custom-named marketplace file that `claude plugin marketplace add` rejects - Fixed stdio MCP servers that exit on the version probe being re-probed on every start; a server that dies in under 3s for its own reason is also pinned to the legacy handshake for 7 days - Fixed sessions being refused at startup by an `allowedProviders` list that another login on the same machine had stored - Fixed idle compaction replacing a conversation with a reply that was not a summary - Fixed the \"Now using usage credits\" notice reappearing about every 30 seconds while a background subagent is running - Fixed custom slash commands that fail, or that only Claude can invoke, printing nothing in `claude -p` and SDK sessions - Fixed `claude -p` and Agent SDK sessions reporting success when an API error cut off a reply while a mod hooked `turn.step` - Fixed a message sent right after a model change still running after Stop in headless sessions: Stop now cancels or stops it as it would a queued message - Fixed a deleted session transcript being re-created with its last prompt when an idle non-interactive session exited - Fixed `claude remote-control` hosts, the background daemon and self-hosted runners failing to start new sessions (`spawn ENOENT`) after an update or version cleanup removed the binary of a still-running process - Fixed a running Claude Code process owned by another user (for example one left by `sudo claude`) being treated as dead by version cleanup, which could delete its binary - Fixed `/remote-control` showing a session as available after a failed connection - Fixed `/design revoke` reporting success when the request failed with a 404 - Fixed a shell command approved after a self-hosted runner or cloud session restart running in the session's start folder, not the folder it was asked in; if that folder can't be entered, it is not run - Fixed Claude not being told when an approved connector tool was unavailable after a cloud session restart - Fixed cloud sessions being stopped in the middle of a turn when the service refuses uploads for several minutes - Fixed variables a `Setup` hook writes to `CLAUDE_ENV_FILE` not reaching the Bash tool in some cloud sessions - Fixed the iPhone app showing a cloud session's turn as finished while it ",
+      "discussion_url": ""
+    },
+    {
+      "id": "0b2bdd104dbaefa6ff06",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "BYOK and enterprise custom models in the Copilot usage API",
+      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+      "published_at": "2026-11-04T00:32:19+00:00",
+      "date_kind": "source_publication",
+      "evidence": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of BYOK: Local BYOK is configured by developers in their client. Requests go from Copilot CLI or the GitHub Copilot app directly to the developer’s provider key or local model. Find it in used_local_byok , totals_by_local_byok , and active local BYOK user counts. Enterprise custom models are configured by admins in GitHub settings, and requests route through GitHub to your provider. Find them with is_custom_enterprise_model in totals_by_client . Both appear in enterprise and organization reports, at the user and aggregate level, in 1-day and 28-day reports. Local BYOK Local BYOK covers a developer’s own provider key and local models served by tools such as Ollama, Foundry Local, LM Studio, and llama-server. used_local_byok : Whether a user made at least one local BYOK request in Copilot CLI or the Copilot app that day. Appears in user-level reports. totals_by_local_byok : Session, request, prompt, and token counts, broken out by byok_kind ( local_managed , local_user , local_auto , or remote_user ) and surface ( copilot_cli or copilot_app ). Appears in user-level and aggregate reports. daily_active_local_byok_users , weekly_active_local_byok_users , and monthly_active_local_byok_users : Distinct users with local BYOK activity for the day, calendar week, and calendar month. Appears in aggregate reports. Enterprise custom models Added is_custom_enterprise_model , a boolean on each totals_by_client[].totals_by_model[] entry. Its value is true when the request used a custom model configured for your enterprise or organization. GitHub observes these requests server-side, so the field covers every client, including IDEs. A model used both as a Copilot-hosted model and as a custom model appears as two entries, so the counts stay separate. Custom model entries include real request and token counts. Why this matters BYOK usage used to blend into Copilot-hosted totals, because local and custom models often share names with Copilot models. Now you can: Govern BYOK: See who sends requests to their own provider keys, local models, or enterprise custom models, and check that against your BYOK policy. Understand spend: Separate Copilot-hosted usage from usage billed by your own provider or run on free local models, so cost per user reflects what Copilot actually serves. See across all tools: Get one view of AI usage in your enterprise, whichever model or provider your developers choose. Compare efficiency: Group users by BYOK or custom model usage and compare them against the Copilot usage metrics you already track. Important notes No change to existing totals: BYOK usage is already counted. Local BYOK is a subset of totals_by_cli and totals_by_copilot_app , and custom model usage is already in totals_by_client . Existing totals are unchanged. Lower bound for local BYOK: Local BYOK fields rely on client telemetry, so they undercount when telemetry is disabled. Token counts can also undercount because some local providers don’t report token usage. Enterprise custom model counts are observed server-side and don’t have this limitation. Model names: Custom model names use the existing model name normalization, so unrecognized names appear as unknown . Local BYOK usage isn’t broken out by model name. No backfill: Report days before this release don’t include is_custom_enterprise_model . Access: Available to enterprise owners, enterprise billing managers, organization owners, and anyone with a custom organization or enterprise role that grants the View Copilot Metrics permission. The Copilot usage metrics policy must be enabled. Visit the Copilot usage metrics API documentation to get started. The post BYOK and enterprise custom models in the Copilot usage API appeared first on The GitHub Blog .",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-03T23:23:21.996864+00:00",
+      "last_success": "2026-11-04T06:22:04.197619+00:00",
       "count": 10,
-      "earliest": "2026-10-28T16:00:00+00:00",
+      "earliest": "2026-10-29T17:14:38+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-03T23:23:22.239344+00:00",
+      "last_success": "2026-11-04T06:22:04.322986+00:00",
       "count": 20,
       "earliest": "2026-10-29T03:30:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-03T23:23:22.471643+00:00",
+      "last_success": "2026-11-04T06:22:04.459886+00:00",
       "count": 896,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-03T23:23:22.765854+00:00",
+      "last_success": "2026-11-04T06:22:04.534617+00:00",
       "count": 30,
       "earliest": "2026-10-21T16:25:16+00:00",
       "gap": false,
@@ -83519,66 +83543,66 @@
       "count": 100,
       "earliest": "2026-11-03T14:19:28+00:00",
       "gap": true,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "hn-topics": {
       "last_success": "2026-11-03T23:23:27.014130+00:00",
       "count": 100,
       "earliest": "2026-11-02T02:05:55+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-03T23:23:27.380211+00:00",
+      "last_success": "2026-11-04T06:22:14.293276+00:00",
       "count": 10,
-      "earliest": "2026-10-21T03:16:31+00:00",
+      "earliest": "2026-10-21T22:17:02+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-03T23:23:27.870073+00:00",
+      "last_success": "2026-11-04T06:22:14.683318+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-03T23:23:28.190344+00:00",
+      "last_success": "2026-11-04T06:22:15.025773+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-03T23:23:28.468254+00:00",
+      "last_success": "2026-11-04T06:22:15.351278+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-03T23:23:28.872016+00:00",
+      "last_success": "2026-11-04T06:22:15.890161+00:00",
       "count": 9,
       "earliest": "2026-10-16T22:00:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-03T23:23:45.239097+00:00",
+      "last_success": "2026-11-04T06:22:32.872284+00:00",
       "count": 2,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-03T23:23:45.400166+00:00",
+      "last_success": "2026-11-04T06:22:32.980640+00:00",
       "count": 1354,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-03T23:23:49.851111+00:00",
+      "last_success": "2026-11-04T06:22:37.877461+00:00",
       "count": 3,
       "earliest": "2026-10-23T04:48:10+00:00",
       "gap": false,
@@ -83695,5 +83719,5 @@
       "to": "2026-11-03T14:19:28+00:00"
     }
   ],
-  "collected_at": "2026-11-03T23:23:49.851902+00:00"
+  "collected_at": "2026-11-04T06:22:37.878188+00:00"
 }
