@@ -83485,6 +83485,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50359257"
     },
     {
+      "id": "d87212e4733152e794d9",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.15",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+      "published_at": "2026-11-03T22:52:31+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## MiMo V2.6 Xiaomi MiMo's [mimo-v2.6](https://ollama.com/library/mimo-v2.6), a 9B model built for code and agent workflows, is now supported in Ollama. ```sh ollama run mimo-v2.6 ``` ## AutoTrust decision models [AutoTrust](https://ollama.com/library/autotrust-jev) decision models read text and return choices, yes or no probabilities, and ratings for the questions you supply. The family includes 9b, 35b, and 27b-vl sizes — the 35b and 27b-vl sizes can also read images. ```sh ollama run autotrust-jev \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\" ``` Note: autotrust-jev is supported on Apple silicon in this release. ## What's Changed - ollama launch now supports Kimi Code CLI — the successor to kimi-cli — and offers to migrate existing kimi-cli setups - ollama launch now fills in Pi's model list automatically so models can be picked inside Pi, and Claude Desktop's model picker shows Ollama's actual model names - Recurrent and vision GGUF models can now serve more than one request at a time - Qwen3 and Qwen3.5 models using long-context (YaRN) scaling - Running ollama with no arguments opens the welcome launcher **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.14...v0.40.15",
+      "discussion_url": ""
+    },
+    {
       "id": "3ea9a01cdb52c2e7e431",
       "source": "hn-show",
       "publisher": "Show HN",
@@ -84661,6 +84673,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50373055"
     },
     {
+      "id": "00114f28936ba5d3ec7a",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Franklin Templeton uses OpenAI to support investment research",
+      "url": "https://openai.com/index/franklin-templeton",
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+      "discussion_url": ""
+    },
+    {
       "id": "62011c4a6b161f1289e6",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -84839,6 +84863,18 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://zenodo.org/records/23958737 Comments URL: https://news.ycombinator.com/item?id=50376280 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50376280"
+    },
+    {
+      "id": "d4c1e7a9c1d48d238b5d",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "url": "https://openai.com/index/merge-builds-with-openai",
+      "published_at": "2026-11-05T08:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+      "discussion_url": ""
     },
     {
       "id": "85191815c3c36a1e7de3",
@@ -85441,6 +85477,18 @@
       "discussion_url": ""
     },
     {
+      "id": "9b80fbdb9ff786dea084",
+      "source": "openai-news",
+      "publisher": "OpenAI",
+      "category": "official_update",
+      "title": "Australian universities are creating AI-native graduates",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "published_at": "2026-11-05T17:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+      "discussion_url": ""
+    },
+    {
       "id": "41f448643955e02961af",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -85859,103 +85907,499 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://www.kapwing.com/mcp Comments URL: https://news.ycombinator.com/item?id=50383498 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50383498"
+    },
+    {
+      "id": "5e4d8ea478da6684c2b4",
+      "source": "google",
+      "publisher": "Google Blog",
+      "category": "official_update",
+      "title": "Generate longer AI videos with Omni 1.2 Flash in Google Vids at no cost.",
+      "url": "https://blog.google/products-and-platforms/products/workspace/omni-1-2-flash-google-vids",
+      "published_at": "2026-11-05T20:00:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Create longer AI videos in Google Vids with the new Omni 1.2 Flash model. Generate 15-second clips and consistent scenes for free. Try it now.",
+      "discussion_url": ""
+    },
+    {
+      "id": "76fd6f8cecaccce6de92",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Teach a speech model (en) a name by saying it once, on your Mac",
+      "url": "https://detailkeeper.com",
+      "published_at": "2026-11-05T20:06:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted to see if a speech model could spell a name better if it heard it, not just read it. Most STT tools handle custom words as text (keyterm list, fixing transcript after with llm, etc). So I trained an adapter to try it, specifically a LoRA on Qwen3-ASR 1.7b (see benchmark). This LoRA transcribes words only after it hears a recording of each of your custom words. To make this model easier to use in day-to-day life, we also built Detail Keeper. It's a Mac app where you can put this adapter to use by specifying difficult-to-transcribe-correctly words and then having them picked up correctly in your recordings. We've found this helpful in two specific cases: 1. Words STT has never heard: invented characters and places, codenames, unusual surnames. 2. Your spelling of a word it does know: Kathryn and not Catherine, Jon and not John. I wasn't able to achieve both good recognition and recognizing many words (1k+) with the model alone. Detail Keeper first narrows each passage to the likeliest taught names by sound. Then the adapter writes the passage, and the app checks it against a plain transcript. On our open benchmark (audiobooks, 1,100 name mentions) it spells taught names as well as Eleven Labs Scribe with keyterms: 89.6% vs 88.2%, no measurable difference. The only downside is that it overwrites a few more untaught names and changes slightly more ordinary words. Everything, including where we lose, is at detailkeeper.com/benchmark. Note: It's free, local and nothing leaves your Mac, but it does require an Apple M series+ mac and OS 26+ currently. Also worth noting that it downloads about 3.6GB of models and only works in English right now. If you're interested, you can also find the adapter itself on HF: huggingface.co/virgil-coach/own-names-qwen3-asr Comments URL: https://news.ycombinator.com/item?id=50383785 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50383785"
+    },
+    {
+      "id": "8fbd7b95653cc61cdf5f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Zerg Client – a coding agent harness that drives its own terminal panes",
+      "url": "https://zergai.com/ztc",
+      "published_at": "2026-11-05T20:08:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://zergai.com/ztc Comments URL: https://news.ycombinator.com/item?id=50383799 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50383799"
+    },
+    {
+      "id": "cb945a15cf911da398e4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Zerg Client – a coding agent harness that drives its own terminal panes",
+      "url": "https://zergai.com/ztc",
+      "published_at": "2026-11-05T20:08:03+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://zergai.com/ztc Comments URL: https://news.ycombinator.com/item?id=50383799 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50383799"
+    },
+    {
+      "id": "b88d7168a56fd2cd9099",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Kai Lentit Goes to Olympics of 4KB Coding",
+      "url": "https://www.youtube.com/watch?v=PeZNLvD4mds",
+      "published_at": "2026-11-05T20:16:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=PeZNLvD4mds Comments URL: https://news.ycombinator.com/item?id=50383897 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50383897"
+    },
+    {
+      "id": "8a5d589b48113737483b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: CalmCanary – Uptime Monitoring Tool",
+      "url": "https://www.calmcanary.co",
+      "published_at": "2026-11-05T20:20:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "This is part of my experiment to see if I can build a SaaS in an agentic world. I've been wanting to put something out in the wild for a while. I think that although we have agents that can build stuff and deploy it to any hosting solution, we still need to be assured that the system is available and working. Although I've started with a very thin product, I'm solo building this out to support a few use-cases that I think might be quite cool. Under-the-hood I've actually used Elixir to help make things more stable and robust. Appreciate feedback and hopefully people will follow along with my journey. Comments URL: https://news.ycombinator.com/item?id=50383948 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50383948"
+    },
+    {
+      "id": "0b42aed2668747667078",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Lantern Lattice – the call graph from your compiler, for coding agents",
+      "url": "https://github.com/julymetodiev/lantern-lattice",
+      "published_at": "2026-11-05T20:25:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/julymetodiev/lantern-lattice Comments URL: https://news.ycombinator.com/item?id=50384015 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384015"
+    },
+    {
+      "id": "02367dc63988b718337e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Lantern Lattice – the call graph from your compiler, for coding agents",
+      "url": "https://github.com/julymetodiev/lantern-lattice",
+      "published_at": "2026-11-05T20:25:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/julymetodiev/lantern-lattice Comments URL: https://news.ycombinator.com/item?id=50384015 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384015"
+    },
+    {
+      "id": "fb2f6e05487b1c6f9a47",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Wallet screening your AI agent can call over MCP",
+      "url": "https://prax-labs.com/wallet-screening",
+      "published_at": "2026-11-05T20:33:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://prax-labs.com/wallet-screening Comments URL: https://news.ycombinator.com/item?id=50384115 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384115"
+    },
+    {
+      "id": "0c444c331ad9b05c52a9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Hand Your Markdown Tasks to Claude Code from a Kanban Board",
+      "url": "https://blog.etherpk.com/hand-your-markdown-tasks-to-claude-code-from-a-kanban-board",
+      "published_at": "2026-11-05T20:56:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "EtherPK (a markdown / wikilink based notes app) tasks are plain markdown, but the EtherPK client has built powerful functionality on top of markdown tasks, integrating a Kanban board and MCP server to allow you to manage your work in your notes and easily hand off with instruction and full task context to your AI Agent (e.g. Claude Code). A task in is a markdown checkbox line in your notes, written in any document, wherever and whenever the task or idea comes up. If you nest it under another task and it becomes that task's subtask. A Kanban board shows those lines as cards and keeps no copy of them, so moving a card edits the line. The task editor is a form over the same text, so a picture, a comment or a subtask you add there ends up as text in the note. Full post at: https://blog.etherpk.com/hand-your-markdown-tasks-to-claude-... Comments URL: https://news.ycombinator.com/item?id=50384357 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384357"
+    },
+    {
+      "id": "4d57c24e6fc83b682300",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agentshield Zero-leak kernel sandbox and secret defense for AI coding",
+      "url": "https://ritualdev.in/agentshield",
+      "published_at": "2026-11-05T21:00:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ritualdev.in/agentshield/ Comments URL: https://news.ycombinator.com/item?id=50384401 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384401"
+    },
+    {
+      "id": "f4479348c32c04e2d161",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Agentshield Zero-leak kernel sandbox and secret defense for AI coding",
+      "url": "https://ritualdev.in/agentshield",
+      "published_at": "2026-11-05T21:00:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ritualdev.in/agentshield/ Comments URL: https://news.ycombinator.com/item?id=50384401 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384401"
+    },
+    {
+      "id": "7e12c05a78996cdadec9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Cerea – yet another self-hosted LLM chat front end",
+      "url": "https://github.com/paoloviviani/Cerea",
+      "published_at": "2026-11-05T21:11:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Here is Cerea, a self-hostable, open-source (Apache 2.0) chat+agent frontend for LLMs. It works alone with any OpenAI-compatible inference provider, but it's way better when coupled with the model gateway I'm also developing, Pystino ( https://github.com/paoloviviani/Pystino ). I came to this after struggling to find a hosted chat interface that was truly open source, that I really enjoyed to use, and that was simple enough to be shared and used by family. In particular, I was looking for something that could provide the smooth and integrated user experience of commercial products for the tasks needed by family (e.g., document editing, form filling, notes and knowledge management), but backed by open models hosted wherever I decide. Then it became richer, now supporting: remote coding agents (wrapping Opencode), delegation and coordination between agents, integration between chat/projects and code agents (this one to me is a pain point for Claude, which I use at work), projects, RAG, rich artifacts support, schedules, and more. You can try it yourself, either cloning the full repo and head to Cerea/kit, or just the deploy kit with a script ( https://github.com/paoloviviani/Cerea#quick-start ). It's just a docker compose with a ./configure script that helps to generate a sensible .env for the specific scenario. It works in the browser and as a PWA on mobile. I hope you'll enjoy, feel free to reach out for questions. Comments URL: https://news.ycombinator.com/item?id=50384502 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384502"
+    },
+    {
+      "id": "8f40938924934ab1de75",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Cerea – yet another self-hosted LLM chat front end",
+      "url": "https://github.com/paoloviviani/Cerea",
+      "published_at": "2026-11-05T21:11:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Here is Cerea, a self-hostable, open-source (Apache 2.0) chat+agent frontend for LLMs. It works alone with any OpenAI-compatible inference provider, but it's way better when coupled with the model gateway I'm also developing, Pystino ( https://github.com/paoloviviani/Pystino ). I came to this after struggling to find a hosted chat interface that was truly open source, that I really enjoyed to use, and that was simple enough to be shared and used by family. In particular, I was looking for something that could provide the smooth and integrated user experience of commercial products for the tasks needed by family (e.g., document editing, form filling, notes and knowledge management), but backed by open models hosted wherever I decide. Then it became richer, now supporting: remote coding agents (wrapping Opencode), delegation and coordination between agents, integration between chat/projects and code agents (this one to me is a pain point for Claude, which I use at work), projects, RAG, rich artifacts support, schedules, and more. You can try it yourself, either cloning the full repo and head to Cerea/kit, or just the deploy kit with a script ( https://github.com/paoloviviani/Cerea#quick-start ). It's just a docker compose with a ./configure script that helps to generate a sensible .env for the specific scenario. It works in the browser and as a PWA on mobile. I hope you'll enjoy, feel free to reach out for questions. Comments URL: https://news.ycombinator.com/item?id=50384502 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384502"
+    },
+    {
+      "id": "5a814e31d763178f23eb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Trace to Agent Session, open corresponding segment of dialogue",
+      "url": "https://github.com/keepplain/keepplain-plugin",
+      "published_at": "2026-11-05T21:16:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "A single plugin will keep your sessions with coding-agents, excluding the secrets that are removed on your computer. After that, any agent can help you understand why a line of code has been altered, take over where you left off, and continue even if Claude runs out of time. Support: Claude Code, Codex, Antigravity, Grok, Cursor, Pi https://keepplain.com Comments URL: https://news.ycombinator.com/item?id=50384568 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384568"
+    },
+    {
+      "id": "896b503899e170298322",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Trace to Agent Session, open corresponding segment of dialogue",
+      "url": "https://github.com/keepplain/keepplain-plugin",
+      "published_at": "2026-11-05T21:16:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "A single plugin will keep your sessions with coding-agents, excluding the secrets that are removed on your computer. After that, any agent can help you understand why a line of code has been altered, take over where you left off, and continue even if Claude runs out of time. Support: Claude Code, Codex, Antigravity, Grok, Cursor, Pi https://keepplain.com Comments URL: https://news.ycombinator.com/item?id=50384568 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50384568"
+    },
+    {
+      "id": "89703382ad9a66e54335",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Bisimia – A TLA+ environment that runs in the browser",
+      "url": "https://bisimia.com",
+      "published_at": "2026-11-05T21:54:16+00:00",
+      "date_kind": "community_post",
+      "evidence": "Bisimia is a browser-based local-first environment to write and model-check TLA+ specs. I started working on this in January wanting to have a better environment to write TLA+ specs and model check them. I started out with running TLC via CheerpJ https://cheerpj.com/ (which I later on found out to be the approach taken by https://learning.tlapl.us/ ), however after many days and nights I've abandoned this for a few reasons, the most prominent of which is performance. Now we use GraalVM https://www.graalvm.org/ and some magic around it to achieve a median improvement of 22×, with speedups reaching nearly 70× compared to CheerpJ. The goal here was to run the real TLC (and be bug-for-bug compatible) and not re-implement things (which is the approach taken for example by https://will62794.github.io/spectacle/ ). Comments URL: https://news.ycombinator.com/item?id=50385004 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50385004"
+    },
+    {
+      "id": "7df71f233b36f255309c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Inference business simulator – don't go broke, rent GPUs, serve tokens",
+      "url": "https://makermaker.ai/breakthroughs/inference/simulation",
+      "published_at": "2026-11-05T22:00:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://makermaker.ai/breakthroughs/inference/simulation/ Comments URL: https://news.ycombinator.com/item?id=50385087 Points: 8 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50385087"
+    },
+    {
+      "id": "4283813b32b8c497c686",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Bring your own agent to Positron with the Positron MCP",
+      "url": "https://opensource.posit.co/blog/2026-11-04_positron-mcp",
+      "published_at": "2026-11-05T22:09:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://opensource.posit.co/blog/2026-11-04_positron-mcp/ Comments URL: https://news.ycombinator.com/item?id=50385193 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50385193"
+    },
+    {
+      "id": "2dc0f20674ca566bbc3e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AgentSight: System-wide AI agent profiling and monitoring with eBPF",
+      "url": "https://eunomia.dev/agentsight",
+      "published_at": "2026-11-05T22:27:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://eunomia.dev/agentsight/ Comments URL: https://news.ycombinator.com/item?id=50385391 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50385391"
+    },
+    {
+      "id": "2448b829584ca9ef32e2",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "How two engineer side projects became the agent taking action inside Dropbox",
+      "url": "https://dropbox.tech/machine-learning/how-two-engineer-side-projects-became-the-agent-taking-action-inside-dropbox",
+      "published_at": "2026-11-05T22:53:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://dropbox.tech/machine-learning/how-two-engineer-side-projects-became-the-agent-taking-action-inside-dropbox Comments URL: https://news.ycombinator.com/item?id=50385688 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50385688"
+    },
+    {
+      "id": "21d1999e3a678b25124c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Open-world text adventure played through AI agents",
+      "url": "https://eremoterra.com",
+      "published_at": "2026-11-05T23:04:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I am building Eremoterra, this experiment of trying to make a game out of an MCP (to learn MCP stuff, but also had a lot fun designing the game). You play in your own agent. The server returns a fact sheet for the place you are. The world is like real Earth, but empty (until the players start to arrive) and only the natural wold (as humanity never existed). The agent narrates the sheet and can write what you confirm in a sort of lore book, typed events and fixed templates, so the model cannot become the source of truth. I added some NPCs that, i hope, bring some interesting emergent behaviour. Within the game there are also \"journeys\", which is more like traditional text adventures of trying to find something and bringing it home. The world is one Rust process and one RocksDB. The Earth is 233,280,000 parcels of one arcminute. Geography is a memory-mapped atlas of about 1.9 GB, built from public natural-state data. Light, weather, and tide are a function of that atlas, the coordinates, and the clock. The world game runs the real time clock. I would love to have some beta testers for it. https://eremoterra.com Comments URL: https://news.ycombinator.com/item?id=50385803 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50385803"
+    },
+    {
+      "id": "60f95a46935029a94758",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Does a team of coding agents beat one agent?",
+      "url": "https://programmingtheloop.com/experiments/swarm-tax",
+      "published_at": "2026-11-05T23:10:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://programmingtheloop.com/experiments/swarm-tax/ Comments URL: https://news.ycombinator.com/item?id=50385876 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50385876"
+    },
+    {
+      "id": "5fa68fcf19b74aea5292",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Formally verifying agent-written full-stack apps with Proof-Driven Development",
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit",
+      "published_at": "2026-11-05T23:25:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/ Comments URL: https://news.ycombinator.com/item?id=50386024 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50386024"
+    },
+    {
+      "id": "73226be2273c648f6325",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Lab Canary – Rating AI labs on whether their staff can speak up",
+      "url": "https://labcanary.com",
+      "published_at": "2026-11-05T23:31:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://labcanary.com/ Comments URL: https://news.ycombinator.com/item?id=50386089 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50386089"
+    },
+    {
+      "id": "abde334faf40ee58aab3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: LLMBrake – Per-customer dollar caps for OpenAI/Anthropic API calls",
+      "url": "https://github.com/llmbrake/llmbrake",
+      "published_at": "2026-11-05T23:40:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/llmbrake/llmbrake Comments URL: https://news.ycombinator.com/item?id=50386174 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50386174"
+    },
+    {
+      "id": "a236115aca2b4fd44700",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Usage metrics API flags telemetry and version gaps",
+      "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps",
+      "published_at": "2026-11-06T00:08:31+00:00",
+      "date_kind": "source_publication",
+      "evidence": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in enterprise and organization user reports, and daily affected-user counts appear in enterprise and organization reports. What’s new client_telemetry_present : Whether client telemetry was received for the user that day. false means Copilot saw the user’s activity, but no usage events arrived from their editor. usage_metrics_requirements : Lists each of the user’s IDEs and Copilot extensions as met , unmet , or unknown against the minimum supported versions . missing_client_telemetry_user_count : The number of users that day with client_telemetry_present set to false . below_usage_metrics_minimum_user_count : The number of users that day with at least one IDE or extension below the minimum version. Why this matters Users without client telemetry still count as active, but their reports lack detail such as lines of code, feature breakdowns, and model breakdowns. Common causes include outdated editors or extensions, disabled IDE telemetry, and proxies or firewalls that block events. These fields show how many users are affected and who to follow up with. This way you can close gaps without opening a support ticket. Important notes Scope: User fields appear in enterprise and organization user reports (1-day and 28-day). Counts appear in enterprise and organization 1-day reports and in each day_totals entry of 28-day reports. Access: These fields are available to enterprise owners, enterprise billing managers, organization owners, and anyone with a custom organization or enterprise role that grants the View Copilot Metrics permission. The Copilot usage metrics policy must be enabled. Daily counts: Each count covers a single day. A user can be counted in both missing_client_telemetry_user_count and below_usage_metrics_minimum_user_count , so don’t add the two counts together. Don’t add counts across days to count unique users. Independent signals: A user can meet every version minimum and still be missing telemetry (e.g., they’re behind a proxy). Unavailable values: Null or omitted values mean the data is unavailable, not false or zero. Days before this release have no values. Visit the Copilot usage metrics API documentation to get started. The post Usage metrics API flags telemetry and version gaps appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "12cf06d4b6b47899e148",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I made a game where you have to think of answers others wouldn't give",
+      "url": "https://downtheline.io",
+      "published_at": "2026-11-06T00:13:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Basically you try to give the rarest (deepest cut) answers to prompts. You score more points the rarer the answer. And each prompt has one \"golden ticket\" which is basically an answer I think is funny (and it earns you a whopping 100 pts!). Yes, this is a daily game (sorry)! I'm still learning how to code well so any advice or ideas for improvements are super welcome. Thanks for playing it! Just thought I'd add an AI disclaimer too - I do use an LLM to gather the lists of correct answers. It scrapes wikidata etc... but I manually review. Please don't shoot me! ;) Comments URL: https://news.ycombinator.com/item?id=50386452 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50386452"
+    },
+    {
+      "id": "e8e57d7aa3f8317e6a7f",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Usage metrics API adds code review details and addressed rate",
+      "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
+      "published_at": "2026-11-06T00:19:07+00:00",
+      "date_kind": "source_publication",
+      "evidence": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-reviewed pull requests merged without a later change request from a person and how many Copilot code review comments developers acted on. With these you can track an addressed rate per repository. What’s new total_comments_evaluated : The number of Copilot code review comments checked to see whether the developer acted on them. total_comments_addressed : The number of evaluated comments the developer acted on, whether by applying the suggestion, asking Copilot to make the fix, editing the code, or replying that the fix will come in a later pull request. Divide by total_comments_evaluated for the addressed rate. review_comments_by_severity , review_comments_by_review_tier , review_comments_by_comment_type , and review_comments_by_customization : Both counts broken down by severity (e.g., high , medium , low ), review tier (e.g., lite , balanced , max ), comment type (e.g., bug , security , or custom for your repository’s own coding guidelines), and customization (e.g., custom instructions, skills, MCP servers, or none). total_merged_no_human_change_request_after_review : The number of merged pull requests that Copilot code review reviewed where no person requested changes after Copilot’s first review. Why this matters The existing pull_requests fields show how often Copilot code review runs and how often someone clicks to apply a suggestion, but developers act on most feedback in other ways. These fields show whether developers act on Copilot code review feedback in each repository, which kinds of comments land, whether custom instructions, skills, and MCP servers make a difference, and whether reviewers still request changes after Copilot reviews. Important notes Scope: Present on every row of the enterprise and organization repos-1-day reports. Counts are 0 and arrays are empty when a repository had no Copilot code review activity that day. Counted on merge: Comments are evaluated when their pull request merges, so they count on the merge day, not the day Copilot posted them. Bot pull requests: Copilot usually doesn’t evaluate comments on pull requests opened by bots, such as Copilot cloud agent. total_merged_no_human_change_request_after_review still includes those pull requests. Different from suggestion counts: pull_requests.total_copilot_applied_suggestions counts only ready-to-apply suggestions that someone applied. The new counts include every evaluated comment and count them as addressed however the developer acted on them. Access: Enterprise owners, enterprise billing managers, organization owners, and anyone with a custom organization or enterprise role that grants the View Copilot Metrics permission can access these reports. The Copilot usage metrics policy must be enabled. Visit the Copilot usage metrics API documentation to get started. The post Usage metrics API adds code review details and addressed rate appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "58766850ba3d7f373c57",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Paper: Nubank cuts AI agent update cycles from 3 weeks to under 5 days",
+      "url": "https://arxiv.org/abs/2609.30137",
+      "published_at": "2026-11-06T00:43:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://arxiv.org/abs/2609.30137 Comments URL: https://news.ycombinator.com/item?id=50386702 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50386702"
+    },
+    {
+      "id": "d6e37361a76da8e16567",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.167.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0",
+      "published_at": "2026-11-06T01:40:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## New Features - Open the agent command center with `codex agents --no-daemon`. The command center and session picker now mark unread results (#58238, #58239, #58263, #58264). - Switch between connected backends from the terminal session picker and keep your drafts when switching (#58280, #58457). - Preview local image attachments while composing on supported terminals, and open viewed local images from clickable transcript paths (#58261, #58446). - Find API key and cloud provider options under “Sign in another way.” Enable `gcp_setup_wizard` to set up Google Cloud Vertex AI with Application Default Credentials or a credential file (#57857, #58427). - Opt into macOS or Windows system proxy settings from `/experimental` (#58157). - Expand patch details directly in the transcript while an approval prompt is open (#58281). ## Bug Fixes - Saved chats stay visible after you switch model providers. If a chat can’t resume, you can read its transcript and prepare an editable prompt to continue in a new chat (#58202). - `Ctrl+L` clears the terminal display while keeping earlier messages available through `Ctrl+T` (#58266). - Deleting text that exposes a leading `!` keeps an ordinary draft in chat mode (#58412). - Network approval prompts close when their requests end. Concurrent requests to the same endpoint prompt one at a time (#58350, #58351). - Long realtime V3 conversations save completed speech to chat history as the transcript grows (#58221). - Automatic context compaction now accounts for retained output from failed responses and responses with missing token usage data (#58404). ## Documentation - The app-server README covers managed network constraints under `[permissions.network]` and `prompt-user` command rules that require fresh human approval (#58045, #58182). - The `openai-docs` skill recommends the documented replacement when migrating away from a deprecated model (#58134). ## Chores - DotSlash manifests now reference the Cargo packages shipped with the release (#58717, #58757). - Linux musl builds use fewer allocator arenas to reduce idle memory after conversations unload (#58399). ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.166.0...rust-v0.167.0 - #57848 Add bounded Code Mode output collection and rendering @seanh-oai - #57850 Wire bounded output collection into the code mode runtime @seanh-oai - #57855 Load TUI plugin mentions from installed plugins @zamoshchin-openai - #57857 Add Google Cloud Vertex AI setup to TUI onboarding @alexsong-oai - #57859 Extend the provider OAuth sign-in timeout to ten minutes @smurching-oai - #57861 Skip resource template discovery for hosted Apps @khong-oai - #57862 Keep resume picker pagination moving across backends @bc-openai - #57864 Allow upstream interruption when canceling Responses Lite turns @liame-oai - #57866 Retry transient environment startup failures on the next turn @pansul47-oai - #57870 Enable server-side output truncation for Code Mode sessions @seanh-oai - #57876 Reuse the cached runtime keymap for default configuration @bc-openai - #57883 Preserve status-line hyperlinks through footer layout and animations @joesavona - #57970 Add an experimental UI tree renderer for the status line @joesavona - #57974 Apply session plugin overrides during MCP config refresh @TAFOYA-OAI - #57978 Add per-chat leases for shared MCP connections @charliemarsh-oai - #57985 Skip read-only volume-root expansion in the MXC sandbox @iceweasel-oai - #58013 Fix argument comment lint tests after rust-clippy branch rename @seanh-oai - #58025 Add trace-safe diagnostics for Noise relay request progress @apanasenko-oai - #58028 Add direct Guardian review of recorded exec calls @swastik-oai - #58034 Add an option to disable successful SSE delta logs @jif-oai - #58040 Preserve native tool-call evidence through Guardian review @ioanbudea-OAI - #58045 Add managed command checkpoints requiring fresh human approval @jif-oai - #58057 Initialize `native_call` in agent host te",
+      "discussion_url": ""
+    },
+    {
+      "id": "b56f6d183d86a585687c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Repairer – close the breach when a Linux flaw goes public",
+      "url": "https://gno.security/repairer",
+      "published_at": "2026-11-06T05:00:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "As we've seen with the Ubuntu critical CVE-2026-98432 (CVSS 9.8), AI-dicovered zero day exploit are being reported at an exponential rate and we don't have the process for dealing with the flood of exploits in real time. What we need is an AI-based system for autopatching systems based on real time information. The vendor's fix can take days or weeks to be out (is the Ubuntu thing patched yet?) and meanwhile the grid is vulnerable to exploitation, especially AI worms. Repairer is a small program that runs on each of your servers. The day an exploit goes public it puts up a stopgap that blocks it, and once the real fix is up it takes the stopgap back off by itself. A stopgap only takes something away — drop certain packets, turn off a kernel module or service, remove a setuid bit. It never opens a port, installs or downloads anything, nor runs code. It arms an undo playbook before applying the stopgap, so the change reverts if affects any services. It only ever acts on rules you sign with a (hardware) crypto wallet. Let's go further: stopgaps are written and checked by a swarm of AI agents (gnosh.ai sessions) running on gno.land, each with bonded stake. Each stopgap is run on fresh machines, and whoever is caught lying loses their stake to whoever caught them. The agent is built and tested on Ubuntu and Debian, all open source, standard-library Go. More distros coming. Let's build repairer together. https://gno.security/repairer/ https://github.com/gnosecurity/repairer Comments URL: https://news.ycombinator.com/item?id=50388417 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50388417"
+    },
+    {
+      "id": "412a7f3a71fb11dbed6b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Stitch.ai – New all-in-one workspace with Stitchy the AI assistant",
+      "url": "https://app.stitch.ai/auth/signup",
+      "published_at": "2026-11-06T05:19:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Our team is excited to launch Stitch.ai this week. We've been working hard to bring knowledge workers, freelancers and founders a workspace that doesn't require hopping between apps and tabs; everything is in one app. The Stitch.ai app includes mail, calendar, contacts, tasks, notes, sheets, slides, files, boards and forms. We sort of still can't believe we managed to build so many tools! We use auto-generated Knots and Tags to label your work, helping you surface related items with one click. Stitching is also a great feature that allows you to 'Stitch'. your items together. You can Stitch tasks to events, emails to notes, and slides to contacts. What gets Stitched together stays together! We've also launched Stitchy, our AI assistant who works with you across everything. She writes your emails, schedules events and manages your tasks. Oh, and she's a dog in a robot costume so that's a bonus! She also runs jobs for you, so you can ask her to watch out for email replies, send daily project updates, or give you daily news snippets to read with your morning protein matcha espresso latte. Everything is built-in, so there's no need to set up email clients or integrations. You get your own @stitch.ai email address when you sign up. Try it out for free for 7 days at the link! We'd love for the HN community to play around with it, send emails, schedule events, try out Knots and Tags, Stitching items, and give us your honest feedback! We are working hard to make a product people are actually excited to use when they land at their desk (or couch). Comments URL: https://news.ycombinator.com/item?id=50388519 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50388519"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-05T19:57:00.787677+00:00",
+      "last_success": "2026-11-06T06:45:40.355304+00:00",
       "count": 10,
-      "earliest": "2026-11-03T13:49:32+00:00",
+      "earliest": "2026-11-03T15:11:46+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-05T19:57:01.004725+00:00",
+      "last_success": "2026-11-06T06:45:40.536088+00:00",
       "count": 20,
-      "earliest": "2026-10-29T16:15:00+00:00",
+      "earliest": "2026-10-30T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-05T19:57:01.110450+00:00",
+      "last_success": "2026-11-06T06:45:40.681875+00:00",
       "count": 898,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-05T19:57:01.305255+00:00",
+      "last_success": "2026-11-06T06:45:40.737489+00:00",
       "count": 30,
       "earliest": "2026-10-23T19:40:54+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-05T19:57:12.177222+00:00",
+      "last_success": "2026-11-06T06:45:41.239449+00:00",
       "count": 100,
-      "earliest": "2026-11-05T12:51:37+00:00",
-      "gap": true,
+      "earliest": "2026-11-05T15:08:16+00:00",
+      "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-11-05T19:57:13.887679+00:00",
+      "last_success": "2026-11-06T06:45:41.813378+00:00",
       "count": 100,
-      "earliest": "2026-11-04T09:30:16+00:00",
+      "earliest": "2026-11-04T13:38:06+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-05T19:57:14.362696+00:00",
+      "last_success": "2026-11-06T06:45:42.275673+00:00",
       "count": 10,
       "earliest": "2026-10-21T22:17:02+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-05T19:57:14.847154+00:00",
+      "last_success": "2026-11-06T06:45:42.826570+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-05T19:57:15.323616+00:00",
+      "last_success": "2026-11-06T06:45:43.213000+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-05T19:57:15.727374+00:00",
+      "last_success": "2026-11-06T06:45:43.586681+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-05T19:57:16.286287+00:00",
-      "count": 9,
+      "last_success": "2026-11-06T06:45:44.090426+00:00",
+      "count": 10,
       "earliest": "2026-10-16T22:00:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-05T19:57:38.078666+00:00",
+      "last_success": "2026-11-06T06:46:03.891034+00:00",
       "count": 3,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-05T19:57:38.217628+00:00",
-      "count": 1361,
+      "last_success": "2026-11-06T06:46:04.025187+00:00",
+      "count": 1366,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-05T19:57:45.401301+00:00",
-      "count": 3,
+      "last_success": "2026-11-06T06:46:11.384903+00:00",
+      "count": 4,
       "earliest": "2026-10-23T04:48:10+00:00",
       "gap": false,
       "error": null
@@ -86083,5 +86527,5 @@
       "to": "2026-11-05T12:51:37+00:00"
     }
   ],
-  "collected_at": "2026-11-05T19:57:45.402182+00:00"
+  "collected_at": "2026-11-06T06:46:11.385696+00:00"
 }
