@@ -87047,41 +87047,257 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/rtk-ai/rtk Comments URL: https://news.ycombinator.com/item?id=50396762 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50396762"
+    },
+    {
+      "id": "a9a371bf0162d9c816ad",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Makoda: reuse your Codex or Claude subscriptions as API",
+      "url": "https://makoda.ai",
+      "published_at": "2026-11-06T19:08:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Already paying for ChatGPT or Claude? You should not need a second, per-token bill just to test your app(local or remote). I was paying ~$120/mo in API bills just to test my own app, on top of my ChatGPT and Claude plans. So, I built Makoda: a free app that reuses your Codex's/Claude's compute on your machine as a local & remote API. available for mac & ubuntu. Comments URL: https://news.ycombinator.com/item?id=50396871 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50396871"
+    },
+    {
+      "id": "bc64c0effe9f89e429d4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agents infer Lego mechanisms from sources, then animate them",
+      "url": "https://github.com/anteloc/ldraw-mecha/tree/v0.5.0",
+      "published_at": "2026-11-06T19:41:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi there :) Around a month ago, I released LDraw Nova, an agentic toolset for assembling LEGO CAD models by generating LDraw source code files. For more details, here's the Show HN post: https://news.ycombinator.com/item?id=49937916 From the comments, I got the impression that there was quite an interest in seeing not only AI-generated LEGO models, but also AI-animated LEGO ones. I took a look at results from past experiments, and found it feasible to use agentic LLMs for: - analyzing the LDraw source code for LEGO models - reverse-engineer! the mechanisms present by reading the descriptions and sequence for the parts there - and then, animate them via Blender! This new project I'm presenting, LDraw Mecha, is the end result and proof that can be done: - Read specially annotated LDraw LEGO models .mpd source files - Infer the model structure in terms of submodels - Select from those the ones that are mechanisms - Plan animations - Execute them in Blender In summary, from an initial .mpd source file, get a rigged and animated version for the model as a Blender (.blend) file. See the results here: - Repo (v0.5.0): https://github.com/anteloc/ldraw-mecha/tree/v0.5.0 - Gallery: https://github.com/anteloc/ldraw-mecha/blob/v0.5.0/GALLERY.m... - Process: https://github.com/anteloc/ldraw-mecha/blob/v0.5.0/PROCESS.m... This project is very unusual, I'd really appreciate some feedback from the community. Cheers! Comments URL: https://news.ycombinator.com/item?id=50397325 Points: 25 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50397325"
+    },
+    {
+      "id": "995f56563fd74c5392ad",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Context by Altora (YC W27), screen, audio, location 24/7 for agents",
+      "url": "https://trycontext.app",
+      "published_at": "2026-11-06T20:18:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://trycontext.app Comments URL: https://news.ycombinator.com/item?id=50397850 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50397850"
+    },
+    {
+      "id": "a51bad82664c526ca2f3",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "@GitHub in Slack and Teams is generally available and more",
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available",
+      "published_at": "2026-11-06T20:31:08+00:00",
+      "date_kind": "source_publication",
+      "evidence": "Turn conversations into code with @GitHub in Slack and Teams! Investigate bugs, create issues, implement changes, and open pull requests—all without leaving your conversation. What’s new Build and review together with Canvas in Teams Turn team discussions into working code. With Canvas , you can review implementation plans, code changes, and previews alongside your conversation. Continue the discussion with teammates, share feedback, and refine the implementation together—all without leaving Teams. Additional improvements Faster onboarding: Go from request to coding session with fewer steps. @GitHub now identifies the repository from your message and launches your session without requiring you to select it again. Getting started is also easier when you’re not signed in, don’t have a default repository, want to switch repositories, or need app access. More reliable conversations: Fixed an issue that could prevent responses to follow-up messages, helping you keep work moving. Clearer attribution: Issues and pull requests created by @GitHub now include “Created from a Slack/Teams conversation with @username” in their description. Get started Try @GitHub in Slack or Teams . Join the discussion in the GitHub Community . The post @GitHub in Slack and Teams is generally available and more appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "5430b358d51fec842c37",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub Copilot weekly releases — November 2",
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2",
+      "published_at": "2026-11-06T21:00:26+00:00",
+      "date_kind": "source_publication",
+      "evidence": "This week, Copilot comes to JetBrains Air and Xcode’s coding assistant, with updates to help you manage pull requests, settings, and agent sessions. GitHub Copilot app Set up Agent Merge directly from a pull request to have Copilot merge it when it’s ready. It now stays enabled while required checks or rules are pending. You can also check reviewer status, request additional reviews, and select comment text to quote it or discuss it with Copilot. Keep working when a conversation reaches its context limit. Compact the conversation or review what’s using the available space directly from the error. Start a session by dropping files on “New” in the sidebar. CSV and TSV files now open as tables with sticky headers and an option to view the source. Manage sessions in fewer steps. Archive pinned sessions whose pull requests have merged or closed, pin or unpin multiple sessions, and separate nested chats without losing the conversation. My Work now supports more than ten saved custom views. Give Copilot guidance on which tool requests to approve without asking you. Personal instructions for assisted approval are opt-in and apply to local sessions. Install the GitHub Copilot app . GitHub Copilot CLI Manage your whole setup in one place. /settings now opens a unified dashboard for your plugins, MCP servers, and more, and you can search across all of your settings. Install Copilot CLI . GitHub Copilot in JetBrains Introducing a new way to use GitHub Copilot in JetBrains IDEs, with Copilot now available in JetBrains Air. Track multiple agent sessions and run tasks locally in your JetBrains IDE or in the cloud through Air Teams, using your existing Copilot subscription. Get started with Copilot in JetBrains Air . GitHub Copilot in Xcode You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with Xcode 27.3 beta. Get started with Copilot in Xcode . GitHub Copilot in VS Code (1.145 release) Follow the conversation without the clutter or, alternatively, choose to inspect every step. Experimental chat view modes let you collapse or expand reasoning and tool calls without starting a new conversation. Check an agent’s work on another machine without leaving VS Code. Preview remote apps and use interactive canvases in the Agents window, now in preview. Enable remote browser support in settings, plus canvases to use that feature. Run recurring tasks on a schedule that fits your workflow. Local automations now support cron expressions and custom agents from your workspace. Bring screenshots, mockups, and other files into chat without moving them into your workspace. Choose them with Add Context > Files . Cloud sessions only support images. Get back into long Copilot chats more smoothly. Past terminal output now renders as you expand or reveal it instead of loading all at once. Explore everything that’s new in the full release notes . The post GitHub Copilot weekly releases — November 2 appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "69cebe4e52875926c764",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Copilot impact dashboard adds chat and VS Code agent usage",
+      "url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
+      "published_at": "2026-11-06T22:17:28+00:00",
+      "date_kind": "source_publication",
+      "evidence": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption cohort called “Passive users” is now “Chat-first users”, which better describes who is in it. The enterprise and organization 28-day usage metrics reports include the same two features. This builds on feature engagement in the Copilot impact dashboard . What’s new Agent adoption chart: Adds Copilot Chat and the VS Code Agents window, for nine features in total. Chat-first users: Replaces the “Passive users” cohort name. These users are active in Copilot but haven’t used a qualifying feature on at least two days in the 28-day period, so they don’t qualify for an adoption phase. copilot_feature_engagement.totals_by_feature : Adds chat and vscode_agent entries to enterprise and organization 28-day reports. Why this matters Chat is a core Copilot experience, but the dashboard didn’t show it, and users who mainly use chat were labeled passive. Showing Copilot Chat and VS Code Agents window engagement and naming the cohort for what it represents gives a more complete picture of how developers use Copilot. Important notes Adoption phases are unchanged: Chat and the VS Code Agents window are reported as feature engagement but don’t count toward adoption phases. Chat-first users are still the No Cohort value in the API, and cohort sizes don’t change. Engagement rule: As with the other features, a user is engaged when they used the feature on at least two days in the 28-day period. A user can be counted under more than one feature. Chat covers Copilot Chat use captured by usage metrics, including agent mode, so users who make agent edits are also counted under chat. Scope: Like the other seven features, chat and the VS Code Agents window are only reported in enterprise and organization 28-day reports. Reports for periods before this change only include the original seven features. Access: The data is available to enterprise owners and billing managers, organization owners, and anyone with a custom organization or enterprise role that grants the View Copilot Metrics permission. The Copilot usage metrics policy must be enabled. Visit the Copilot impact dashboard documentation and the Copilot usage metrics API documentation to get started. The post Copilot impact dashboard adds chat and VS Code agent usage appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "816750896d37a77830bf",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AJX – Find out where AI agents get stuck using your product",
+      "url": "https://ajx.dev",
+      "published_at": "2026-11-06T22:31:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN. I made AJX (Agent Journey Experience). It is a CLI and skill bundle that you run to test what your product feels like to use from the point of view of an agent, and you get back a list of \"asks\" that would improve your product from an agentic usability perspective: so that agents spend less time, tokens and retries to accomplish tasks with it. How? It works by having an outer loop (AJX harness skill + CLI) that controls an \"inner loop\": the agent that actually tries out your product. The outer loop investigates the inner loop once it finishes. To try it, copy the prompt from the main page into your favorite agent and it will install the skill and CLI and you can then trigger /ajx skill, give it a prompt and some simple configuration as text, and it helps you with the rest. The outer loop starts loading the configured harness of your choice (claude, codex, kiro-cli etc..) in an environment and configuration of your choice (docker, VM, local, with or without specific skills, specific model, amount of runs, and more), and provides the harness (inner loop) with your input prompt and links, and \"definition of done\" - what does it mean to succeed with this product? For example with vercel cli you could say \"build and deploy a simple hello world with vercel CLI [link]\" as the prompt for the AJX test. Once the inner loop harness runs its course, the outer harness loop examines the run, logs and details, and outputs and extract the needed information from that run: retries, tokens, mistakes, assumptions and more, and created a very detailed report, as well as a list of asks that if applied to the product, would improve the agentic journey given the same prompt in the future. I call this \"Agent Journey eXperience\" it's the agentic equivalent of \"User Experience\" - if we were to document the journey an agent does when trying your product for the first time in a specific scenario. - Where does it go astray and makes mistakes? - How many retries does it take to succeed with the task? - How much time? - How many tokens? List of ASKS as an output: What features/fixes would the agent want the product to have to save it from making these mistakes or costing extra time and token in the future? here are some examples: - CLI missing a --JSON, which cost lots of parsing of unneeded code - CLI missing commands like doctor, help aliases - DOCS disagree with behavior of the product - Skills pull the agent in the wrong direction - lack of feedback while product is executing - Human friendly CLIs outputs break the agent loop - and much more. Why? I'm a startups solutions architect @ AWS, and previously wrote the art of unit testing and did lots of work on code quality, engineering practiced and continuous delivery) I built AJX (ajx.dev) when I was tasked with giving feedback on an internal upcoming AWS product that is meant to be used by agents. The team wanted feedback from potential users, and I figured that agents are the new potential users. I figured that if I was a product owner, I'd love to know what it feels like to work with my product (CLI, SDK, Website, Docs etc), and that the harder the agents work to use my product, the less people would point their agent at it, or the less the agent would tend to recommend it. Also I think it's useful to have \"brag points\" that your product is \"agent-friendly\". I even tested AJX with AJX and it found great of issues with the CLI (for example ajx status was returning the wrong status sometimes, ajx init --task behaved differently than expected, and other cool stuff like that. I envision this being used as part of a CI/CD cycle with a loop until AJX returns \"all green\" and no ASKS. AJX is still very new - so probably lots of rough edges but in an agent first world, I think it's a step in the right direction: see the world from an agent's POV. Comments URL: https://news.ycombinator.com/item?id=50399373 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50399373"
+    },
+    {
+      "id": "4e48ab7d7ce4e7f5fe96",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I asked HN about AI agentic setups, here are 750 of the comments mapped",
+      "url": "https://news.ycombinator.com/item?id=50399637",
+      "published_at": "2026-11-06T22:58:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "A few days back I posted here asking about how people were using AI / doing agentic coding (see: https://news.ycombinator.com/item?id=50366117 ). Needless to say, I was overwhelmed by the response! The one challenge I found, however, was that the comments were almost impossible to parse: some users answered my questions in the format I provided, others answered in any order, but either way it was really hard to get a picture of who was using what from that thread alone. So, I spent last night building an interactive site out of people's answers. I used Claude to pull the tools, models and plans out of each comment, with every number linked back to the original comments it came from. The website covers subscriptions, models, harnesses, orchestration and agent platforms, what people liked and disliked about each tool, and some of the better stories from the thread. Take a look and let me know what you think! ----- The interactive website: https://scouttyg.github.io/hn-agentic-setups/ The code: https://github.com/scouttyg/hn-agentic-setups Comments URL: https://news.ycombinator.com/item?id=50399637 Points: 5 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50399637"
+    },
+    {
+      "id": "3f7a31d164d5e2920607",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Goethe – The infrastructure for self-hosted AI",
+      "url": "https://github.com/meshapplied/Goethe",
+      "published_at": "2026-11-07T00:26:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey, we launched Goethe, because deploying models on hardware you control end-to-end is pain in the ass. Goethe is like Vercel, but for AI models and hardware. It manages your models and hardware you point it and runs corresponding optimal inference. -- install it -- deploy any model you want -- get an API you can use with any client securely Comments URL: https://news.ycombinator.com/item?id=50400374 Points: 5 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50400374"
+    },
+    {
+      "id": "a27e96489de462170096",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "Copilot code review: API management and review overview updates",
+      "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates",
+      "published_at": "2026-11-07T00:27:19+00:00",
+      "date_kind": "source_publication",
+      "evidence": "You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories. Copilot’s review overview comment is now more compact, and this update includes fixes for billing, automatic reviews, and reliability. These updates are available to Copilot Pro, Pro+, Max, Business, and Enterprise plans. 🔌 Manage settings and identify Copilot’s output through the API You can already request reviews, choose their effort level, and get information back through the REST API. You can now also: Identify Copilot’s reviews and comments through explicit attribution fields. See the review effort a review used, when that metadata is available. See which skills, MCP servers, and custom instructions Copilot reported as sources for a comment. Depending on your role, you can also read and update code review settings: Enterprise administrators can enable or disable code review for all organizations, or leave the choice to organization administrators. Organization administrators can manage code review enablement, the default review effort, and the runner configuration. Settings your enterprise manages can’t be overridden. Repository administrators can manage review effort and whether reviews use custom instructions and MCP tools. The REST API accepts the same review effort levels as the web interface, and organization and repository settings responses list the levels available to you. ⚠️ The enterprise and organization settings endpoints, including the organization runner endpoint, don’t support GitHub Apps or fine-grained personal access tokens. The repository settings endpoints support both, with Administration: read permission to read settings and Administration: write permission to update them. Classic personal access tokens need repository administrator access. To get started, see Configuring Copilot code review with the API . 📋 A more compact review overview New review overviews keep your findings together at the top: The review effort used and any surveys move into a compact footer. Skipped and content-excluded files share one “Files not reviewed” section, with filenames and linked exclusion reasons. Empty sections are left out, and long lists show an overflow count. You can also tell us what’s wrong with an overview. After you give it a 👎, choose Add a reason and pick the main problem, such as an approval assessment you disagree with, a comment that’s too verbose, or findings that are incorrect or nitpicky. We use this feedback to improve Copilot’s findings. ✨ Other improvements Copilot code review agent sessions now show the AI credits consumed in a review. The Automatically request Copilot code review repository rule now supports the bypass list, so exempt actors in the list will not receive an automatic review from Copilot. Copilot code review organization and repository settings pages have clearer wording and layout. On later reviews of the same pull request, findings unrelated to your recent changes are collapsed and then hidden. Balanced effort reviews now use three reviewer models, with another model combining their findings. 🐛 Bug fixes Billing and preview settings are now preserved when you turn code review off and on again. Failed or timed-out reviews are retried once automatically, and Copilot can switch to another eligible model when the preferred one is unavailable. GitHub Actions, Dependabot, and apps your organization or enterprise owns can request reviews on bot-authored pull requests again when Block reviews requested with an external Copilot license is on, as long as your organization pays for the review. Reviews no longer report a false failure just after starting and discard their results. Reviews in progress during a service update now get more time to finish. Review surveys no longer appear when your organization has opted out of feedback collection. The post Copilot code review: API management and review overview updates appeared first on The GitHub B",
+      "discussion_url": ""
+    },
+    {
+      "id": "cdfaab49127b5fe45973",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: SlopSlot – a slot machine inside Claude Code",
+      "url": "https://github.com/gajus/slopslot",
+      "published_at": "2026-11-07T00:48:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Because that's how it feels like. claude plugin install slopslot --marketplace gajus/slopslot Comments URL: https://news.ycombinator.com/item?id=50400511 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50400511"
+    },
+    {
+      "id": "dbf67375f941def502e0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: We filmed a bird-themed Iliad using mallard",
+      "url": "https://mallard-ai.com/Rika321/Homer?tab=files&file=The_Iliad_Complete.mp4",
+      "published_at": "2026-11-07T01:50:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "Explore how we made it: https://mallard-ai.com/Rika321/Homer Download mallard for free and help us make a bird-themed Odyssey next! Comments URL: https://news.ycombinator.com/item?id=50400854 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50400854"
+    },
+    {
+      "id": "30c497feb3848ff7ae81",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Select – AI agents that earn autonomy through verified work",
+      "url": "https://github.com/Kirby54/Select",
+      "published_at": "2026-11-07T01:55:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Kirby54/Select Comments URL: https://news.ycombinator.com/item?id=50400882 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50400882"
+    },
+    {
+      "id": "e22c2f02ea7c4fa9ff4d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I built an AI photo editor powered by GPT-Image-2.6",
+      "url": "https://getaiphotoeditor.com",
+      "published_at": "2026-11-07T02:07:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://getaiphotoeditor.com/ Comments URL: https://news.ycombinator.com/item?id=50400968 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50400968"
+    },
+    {
+      "id": "0308f7e6d5df55b3209b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Backwords – Let AI teach you how to speak in reverse",
+      "url": "https://backwords.greg.technology",
+      "published_at": "2026-11-07T03:39:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://backwords.greg.technology/ Comments URL: https://news.ycombinator.com/item?id=50401409 Points: 9 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50401409"
+    },
+    {
+      "id": "ad6e666fe281b474a4cb",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Did prediction markets do any predicting this midterms?",
+      "url": "https://app.artifactbin.dev/@vivek/AQTt2H-did-prediction-markets-predict-the-midterms",
+      "published_at": "2026-11-07T03:50:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've heard so much about how prediction markets are the guiding light in this dark world. But when put head to head against polls or Nate Silver's FLIPR model, they are really a wash. Especially looking at flipped or close-by-polls races, there is no alpha compared to a traditional poll-based model. Was this obvious to everyone else too? Can we treat them like the entertainment they are and tax them for the terrible ads? Comments URL: https://news.ycombinator.com/item?id=50401451 Points: 20 # Comments: 8",
+      "discussion_url": "https://news.ycombinator.com/item?id=50401451"
+    },
+    {
+      "id": "44b490cca5790cfd7f97",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Help me pick a logo animation for my in-browser AI creature game",
+      "url": "https://id-le.com/review/intro-logo-animation",
+      "published_at": "2026-11-07T04:54:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://id-le.com/review/intro-logo-animation Comments URL: https://news.ycombinator.com/item?id=50401735 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50401735"
+    },
+    {
+      "id": "cbcd1d03118bd080c500",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Diff MCP tool lists: one server added 33 tools, README unchanged",
+      "url": "https://mcp.brydge-ai.com/diff.html",
+      "published_at": "2026-11-07T05:47:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://mcp.brydge-ai.com/diff.html Comments URL: https://news.ycombinator.com/item?id=50401995 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50401995"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-06T19:24:29.147574+00:00",
+      "last_success": "2026-11-07T05:58:13.412255+00:00",
       "count": 10,
-      "earliest": "2026-11-03T15:11:46+00:00",
+      "earliest": "2026-11-04T19:10:40+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-06T19:24:29.324609+00:00",
+      "last_success": "2026-11-07T05:58:13.562641+00:00",
       "count": 20,
       "earliest": "2026-10-30T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-06T19:24:29.581656+00:00",
+      "last_success": "2026-11-07T05:58:13.738321+00:00",
       "count": 899,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-06T19:24:29.765050+00:00",
+      "last_success": "2026-11-07T05:58:13.875242+00:00",
       "count": 30,
       "earliest": "2026-10-23T21:35:13+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-06T19:24:31.151717+00:00",
+      "last_success": "2026-11-07T05:58:18.753301+00:00",
       "count": 100,
-      "earliest": "2026-11-05T21:00:23+00:00",
+      "earliest": "2026-11-06T11:44:37+00:00",
       "gap": false,
       "error": null
     },
@@ -87090,59 +87306,59 @@
       "count": 100,
       "earliest": "2026-11-04T22:07:35+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-06T19:24:32.371239+00:00",
+      "last_success": "2026-11-07T05:58:24.915611+00:00",
       "count": 10,
       "earliest": "2026-10-22T04:34:55+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-06T19:24:32.900742+00:00",
+      "last_success": "2026-11-07T05:58:25.400763+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-06T19:24:33.362570+00:00",
+      "last_success": "2026-11-07T05:58:25.863588+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-06T19:24:33.773013+00:00",
+      "last_success": "2026-11-07T05:58:26.221569+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-06T19:24:34.350380+00:00",
+      "last_success": "2026-11-07T05:58:26.811387+00:00",
       "count": 10,
       "earliest": "2026-10-16T22:00:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-06T19:24:58.433919+00:00",
+      "last_success": "2026-11-07T05:58:49.577185+00:00",
       "count": 3,
       "earliest": "2026-10-15T17:13:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-06T19:24:58.656403+00:00",
+      "last_success": "2026-11-07T05:58:49.745440+00:00",
       "count": 1368,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-06T19:25:07.070591+00:00",
+      "last_success": "2026-11-07T05:58:57.145597+00:00",
       "count": 4,
       "earliest": "2026-10-23T04:48:10+00:00",
       "gap": false,
@@ -87271,5 +87487,5 @@
       "to": "2026-11-05T12:51:37+00:00"
     }
   ],
-  "collected_at": "2026-11-06T19:25:07.071374+00:00"
+  "collected_at": "2026-11-07T05:58:57.146351+00:00"
 }
