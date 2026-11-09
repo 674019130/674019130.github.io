@@ -1,0 +1,202 @@
+{
+  "request_evidence": [
+    {
+      "id": "4370948b2a78ce728b9e",
+      "title": "Show HN: Velork – Design and Code, Together",
+      "category": "discovery",
+      "evidence": "Hi HN! :) I’ve been working as a fullstack freelancer for over 4 years now. I always wanted some kind of IDE where I could take designs, turn them into code, and not be restricted to using auto layout and all that stuff. Back at the beginning of 2020, before LLMs and AI were a thing, I was sitting with a friend of mine trying to figure out how to take a design, even one built with absolute values, PRIMARY PAGE: Velork — Design and code, together Download Pricing Docs Changelog Log in Get started Design and code, together. The IDE for frontend teams. Design with AI on a canvas next to your code, and ship in the stack you already use. Download All platforms Works with the AI you already pay for Sign in with your Claude Pro or ChatGPT plan, or bring an API key. New accounts get free Velork credits. Claude Code Codex Cursor GitHub Copilot OpenRouter Your agent works on the canvas Ask in plain words. It finds the frame, makes the change and leaves you a note. The agent you already pay for Claude Code, Codex, Cursor or Copilot run inside Velork, on your plan or your own key. Hands on the real canvas Agents read frames, find layers and change them where you can watch. Notes you can answer"
+    },
+    {
+      "id": "945be84329c559b2ce57",
+      "title": "Show HN: Loop – your coding agents, from your phone",
+      "category": "discovery",
+      "evidence": "Loop is a mobile-first companion workspace for the coding harnesses you already run. It aggregates results from your harnesses into a continuous feed that is easy to navigate and organize from your phone. I spent several months holding my newborn in one hand and trying to talk to agents one-handed on my phone. Every mobile UI is still based around chat, and it doesn’t scale on mobile, let alone on PRIMARY PAGE: <h1><img src=\"public/icon-192.png\" width=\"32\" height=\"32\" alt=\"Loop logo\"> Loop: your coding agents, from your phone</h1>\n\nYour coding agents run in a terminal on your computer. Loop puts their work on your phone: a feed of finished results you can read and reply to, questions they need answered, and approvals they're waiting on — what needs you always on top. No account, no server, no app store. Loop runs on your own machine, pairs with a QR scan, and connects to the harnesses you already use — Codex, Claude Code, Pi, OpenCode, Antigravity, Muse Code, Grok Build, or any ACP agent. Your agents keep working while your phone is away.\n\n<table>\n  <tr>\n    <th>Needs you: approve, answer or continue</th>\n    <th>Feed: finished work as results</th>\n  </tr>\n  <tr>\n    <td><img src=\""
+    },
+    {
+      "id": "a27e96489de462170096",
+      "title": "Copilot code review: API management and review overview updates",
+      "category": "official_update",
+      "evidence": "You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories. Copilot’s review overview comment is now more compact, and this update includes fixes for billing, automatic reviews, and reliability. These updates are available to Copilot Pro, Pro+, Max, Business, and Enterprise plans. 🔌 Manage settings and identify Copilot’s output through the API You can already request reviews, choose their effort level, and get information back through the REST API. You can now also: Identify Copilot’s reviews and comments through explicit attribution fields. See the review effort a review used, when that metadata is available. See which skills, MCP servers, and custom instructions Copilot reported as sources for a comment. Depending on your role, you can also read and update code review settings: Enterprise administrators can enable or disable code review for all organizations, or leave the choice to organization administrators. Organization administrators can manage code review enablement, the default review effort, and the runner configuration. Settings your enterprise manages can’t be overridden. Repository adm"
+    },
+    {
+      "id": "c9bc11a49701a7594c13",
+      "title": "Quoting Nilay Patel",
+      "category": "discovery",
+      "evidence": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies a PRIMARY PAGE: A quote from Nilay Patel Simon Willison’s Weblog Newsletter Sponsored by: doubleAI — doubleAI’s Maxwell makes software faster as it runs, no code changes needed. Now in early access 6th November 2026 The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies are spending more than they're making on these products. Refrigerators holding blood storage in Europe are being hacked. The costs are too high. The benefits are not real. And if you con"
+    },
+    {
+      "id": "2ec792eccea8c7f4dcf4",
+      "title": "Claude Code v2.1.319",
+      "category": "official_update",
+      "evidence": "## What's changed - Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set `CLAUDE_CODE_AUTO_MODE_SERVER=0` to keep using it (Bedrock, Vertex and Foundry are unchanged) - Changed auto mode behind an LLM gateway: `CLAUDE_CODE_AUTO_MODE_SERVER=1` turns on the server-side check even with `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS` set; if managed settings set the latter, they must set the `1` too - Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right away and tells Claude the result when it finishes - Added the `CLAUDE_CODE_DISABLE_MCP_TASK_BACKGROUND` environment variable to make Claude Code wait for an MCP task inside its tool call instead of moving it to the background right away - Added `permissions.denyInsteadOfPrompting` setting: a tool call that would wait on a permission prompt is denied and the turn continues, in terminal sessions, subagents and teammates - Added `/claude-api latency-optimize` to find where your Claude API code makes people wait and try faster se"
+    },
+    {
+      "id": "1ebd0a9fb804ea127f57",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "category": "official_update",
+      "evidence": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI."
+    },
+    {
+      "id": "d6e37361a76da8e16567",
+      "title": "Codex 0.167.0",
+      "category": "official_update",
+      "evidence": "## New Features - Open the agent command center with `codex agents --no-daemon`. The command center and session picker now mark unread results (#58238, #58239, #58263, #58264). - Switch between connected backends from the terminal session picker and keep your drafts when switching (#58280, #58457). - Preview local image attachments while composing on supported terminals, and open viewed local images from clickable transcript paths (#58261, #58446). - Find API key and cloud provider options under “Sign in another way.” Enable `gcp_setup_wizard` to set up Google Cloud Vertex AI with Application Default Credentials or a credential file (#57857, #58427). - Opt into macOS or Windows system proxy settings from `/experimental` (#58157). - Expand patch details directly in the transcript while an approval prompt is open (#58281). ## Bug Fixes - Saved chats stay visible after you switch model providers. If a chat can’t resume, you can read its transcript and prepare an editable prompt to continue in a new chat (#58202). - `Ctrl+L` clears the terminal display while keeping earlier messages available through `Ctrl+T` (#58266). - Deleting text that exposes a leading `!` keeps an ordinary draft "
+    },
+    {
+      "id": "5e4d8ea478da6684c2b4",
+      "title": "Generate longer AI videos with Omni 1.2 Flash in Google Vids at no cost.",
+      "category": "official_update",
+      "evidence": "Create longer AI videos in Google Vids with the new Omni 1.2 Flash model. Generate 15-second clips and consistent scenes for free. Try it now."
+    },
+    {
+      "id": "5db6b80ea417ae51fa0e",
+      "title": "llama.cpp v0.9.0",
+      "category": "official_update",
+      "evidence": "## Overview This release adds OCP FP8 E4M3 quantization support, a new `flash_attn_ext_rows` op that makes the unified KV cache efficient for multi-sequence inference, and a generic batched tensor copy API. Four new architectures are supported (Clover, Limite, Metis-1.6 and Mistral Large 4), audio generation and transcription expand with Chatterbox TTS, Nemotron 3.5 Transcribe and predefined Pocket TTS voices, and the Gemma 4 E2B/E4B models get major prefill optimizations. `ggml` is updated to v0.29.0, bringing FP8 E4M3, flash attention rows, NCCL-based multi-node tensor parallelism and performance work across the CPU, CUDA, SYCL, Metal, Vulkan, OpenCL and Hexagon backends. The server and UI receive a round of fixes and refinements. ### Highlights - Quant: OCP FP8 E4M3 tensor type (saturating mode) with conversion helpers and a new ftype ([#27512](https://github.com/ggml-org/llama.cpp/pull/27512)) - llama: `flash_attn_ext_rows` - more efficient unified KV for multi-seq, restoring non-unified KV prefill performance ([#29510](https://github.com/ggml-org/llama.cpp/pull/29510)) - ggml: batched tensor copy API (`ggml_backend_tensor_copy_n`/`set_n`/`get_n`) superseding the `_2d` API, imp"
+    },
+    {
+      "id": "d87212e4733152e794d9",
+      "title": "Ollama v0.40.15",
+      "category": "official_update",
+      "evidence": "## MiMo V2.6 Xiaomi MiMo's [mimo-v2.6](https://ollama.com/library/mimo-v2.6), a 9B model built for code and agent workflows, is now supported in Ollama. ```sh ollama run mimo-v2.6 ``` ## AutoTrust decision models [AutoTrust](https://ollama.com/library/autotrust-jev) decision models read text and return choices, yes or no probabilities, and ratings for the questions you supply. The family includes 9b, 35b, and 27b-vl sizes — the 35b and 27b-vl sizes can also read images. ```sh ollama run autotrust-jev \"A customer says their card was charged twice.\" --ask \"Is this a billing issue?\" ``` Note: autotrust-jev is supported on Apple silicon in this release. ## What's Changed - ollama launch now supports Kimi Code CLI — the successor to kimi-cli — and offers to migrate existing kimi-cli setups - ollama launch now fills in Pi's model list automatically so models can be picked inside Pi, and Claude Desktop's model picker shows Ollama's actual model names - Recurrent and vision GGUF models can now serve more than one request at a time - Qwen3 and Qwen3.5 models using long-context (YaRN) scaling - Running ollama with no arguments opens the welcome launcher **Full Changelog**: https://github.com"
+    },
+    {
+      "id": "3841faf982575f44c269",
+      "title": "Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals",
+      "category": "discovery",
+      "evidence": "I built this because it was useful for me when building evals/benchmarks, and I decided to put it up for free for others. The goal was quite simple, make it easy to use a lead claude code / codex session in a panel on the side, while allowing every cell to also be a terminal session running claude/codex, and make it possible to continue a session in an actual terminal window if I needed to. They c PRIMARY PAGE: <p align=\"center\">\n  <img src=\"desktop/src-tauri/icons/128x128@2x.png\" width=\"112\" alt=\"recalc\">\n</p>\n\n<h1 align=\"center\">recalc</h1>\n\n<p align=\"center\">\n  <strong>A spreadsheet as your harness of harnesses, where every cell can be used as its own terminal.</strong><br>\n  Watch agents fill cells in real time, open any one in its own terminal, and steer it by prompting it or by editing the cells it fills.\n</p>\n\n<p align=\"center\">\n  macOS · Linux (experimental) · works with Claude Code, Codex and pi (experimental) · free and open source · runs on your computer\n</p>\n\n<p align=\"center\">\n  <a href=\"#see-it-work\"><strong>See it work</strong></a> ·\n  <a href=\"#get-started\">Get started</a> ·\n  <a href=\"#cells-in-30-seconds\">Cells in 30 seconds</a> ·\n  <a href=\"demos/README.md\">Examp"
+    },
+    {
+      "id": "790f3b3e97abc80106da",
+      "title": "I Just Deleted All My Agent Skills",
+      "category": "discovery",
+      "evidence": "Article URL: https://philippdubach.com/posts/i-just-deleted-all-my-agent-skills/ Comments URL: https://news.ycombinator.com/item?id=50413912 Points: 8 # Comments: 0 PRIMARY PAGE: Do Agent Skills Actually Work? What the Benchmarks Show · Philipp D. Dubach Skip to content Philipp D. Dubach Home Writing Projects Research Links Subscribe Philipp D. Dubach Home Writing Projects Research Links ↗ Subscribe I Just Deleted All My Agent Skills 7 November 2026 · 2 min read · AI Key takeaways In one paired benchmark, 92 of 98 public software engineering skills had no significant effect on coding task results. A web development benchmark found that public skills lowered mean pass rates and raised token cost by 72% to 394%. Curated skills raised average pass rates from 33.9% to 50.5% in SkillsBench, so the evidence does not condemn every skill. I just deleted all my agent skills after reading Jakob Breu’s (hot) take. I kind of had a gut feeling myself for a long time as models evolve but I didn’t really have the evidence to back it up, so I went looking for it. Some of what I found: SWE-Skills-Bench tested 98 public skills. 92 had no significant effect, and the average pass ratio went from 76.6%"
+    },
+    {
+      "id": "69cebe4e52875926c764",
+      "title": "Copilot impact dashboard adds chat and VS Code agent usage",
+      "category": "official_update",
+      "evidence": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption cohort called “Passive users” is now “Chat-first users”, which better describes who is in it. The enterprise and organization 28-day usage metrics reports include the same two features. This builds on feature engagement in the Copilot impact dashboard . What’s new Agent adoption chart: Adds Copilot Chat and the VS Code Agents window, for nine features in total. Chat-first users: Replaces the “Passive users” cohort name. These users are active in Copilot but haven’t used a qualifying feature on at least two days in the 28-day period, so they don’t qualify for an adoption phase. copilot_feature_engagement.totals_by_feature : Adds chat and vscode_agent entries to enterprise and organization 28-day reports. Why this matters Chat is a core Copilot experience, but the dashboard didn’t show it, and users who mainly use chat were labeled passive. Showing Copilot Chat and VS Code Agents window engagement and naming the cohort for what it represents gives a more complete picture of how developers use Copilot."
+    },
+    {
+      "id": "f799fbf35789dc1323b6",
+      "title": "datasette-llm 0.1a10",
+      "category": "discovery",
+      "evidence": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm PRIMARY PAGE: Release: datasette-llm 0.1a10 Simon Willison’s Weblog Newsletter Sponsored by: doubleAI — doubleAI’s Maxwell makes software faster as it runs, no code changes needed. Now in early access 4th November 2026 Release datasette-llm 0.1a10 — LLM integration plugin for other plugins to depend on Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Posted 4th November 2026 at 3:26 pm Recent articles Hide your slop PR descriptions behind <details><summary> - 9th November 2026 Qwen 3.8 27B on my laptop can interpret model weights, too - 3rd November 2026 The U.S. Census Bureau and “Super Intelligence” - 2nd November 2026 The October inflection point for vibe game development - 28th October 2026 This is a beat by Simon Willison, posted on 4th November 2026 . datasette 1,557 llm 647 Monthly briefing Sponsor me for $10/month and get a curated email digest of the m"
+    },
+    {
+      "id": "a4b9fe02afb54ad41dcf",
+      "title": "Claude Code v2.1.318",
+      "category": "official_update",
+      "evidence": "## What's changed - Added a record of your answer when Claude Code asks to turn on the mods it writes in a session - Added `assume_role` on `mantle` upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution - Added an `effort` option to a mod's `$.model.fork`, so a quick side job can run at `low` whatever effort the session uses; the result reports the effort sent - Added the date a stored claude.ai sign-in ends to `claude auth status` (`loginExpiresAt`) and to `claude -p` JSON results (`credential_expires_at`) - Added a one-line stderr warning to `claude -p` text output, starting 10 days before a stored claude.ai sign-in ends - Fixed `--continue` sometimes losing the earlier conversation after a malformed tool call's retries ran out (regression in 2.1.314) - Fixed macOS sessions with many running Bash commands stalling while memory grew - Fixed permission prompts being answered by keys typed just after sending a message, or before a slow prompt appeared - Fixed `/logout`, `claude auth logout` and `claude mcp remove` reporting success, and changes to trust, consent or MCP settings being dropped with no word, when the config f"
+    },
+    {
+      "id": "93dfa02e2576eaabbca8",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "category": "official_update",
+      "evidence": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science."
+    },
+    {
+      "id": "4b147db749c044b5d02b",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "category": "official_update",
+      "evidence": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing."
+    },
+    {
+      "id": "417aa3b746e26406675d",
+      "title": "Ollama v0.40.14",
+      "category": "official_update",
+      "evidence": "## What's Changed * `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap * Cloud web search responses on `/api/chat` are now decoded correctly, including compressed responses * OpenAI-compatible endpoints no longer override a model's packaged sampler defaults — clients that send no `temperature`/`top_p` get the model's own values instead of 1.0, matching `/api/chat` * `/v1/responses` now preserves readable input content, including prior assistant refusals, instead of flattening it * Ollama's app can now retry ChatGPT disconnect failures instead of leaving the connection in a broken state * `ollama launch codex` verifies ChatGPT routing before configuring, and reports a clear error when routing is unavailable * Faster top-k sampling on MLX for large vocabularies **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.13...v0.40.14"
+    },
+    {
+      "id": "b576b9fec7f652b57abc",
+      "title": "Show HN: Apartment floor plan generator using discrete diffusion",
+      "category": "discovery",
+      "evidence": "Hi HN, I'm Jeroen, and I built PlanFinder, which generates single-floor apartment layouts. You pick an outline, entrance, and walls that get daylight, and it generates layouts which you can edit. It's using a custom discrete diffusion model, trained on mostly European floor plans. Plans can afterwards be filtered on hard constraints like minimal area, or minimum width of a space. Curious to hear y PRIMARY PAGE: Apartment generator playground · PlanFinder Apartment generator playground i Sign in to add more My designs Account Design starts here Choose your apartment shape Generate and edit layouts for individual, single-floor residential apartments. Choose a shape to get started. Walls with daylight Entrance More shapes Draw your own outline Back to my plan Rooms Outline Country Settings Info Draw your own shape Boundary Click the exterior corners. Wall lengths appear as you draw. Façades Select boundary segments that can have windows and receive daylight. Entrance Place the front door on an outside wall with enough room for the opening. Boundary Reset Façade Blind / shared Entrance Randomly generate Draw outline Façade Walls Outside walls Move wall Layout conventions Country Nether"
+    },
+    {
+      "id": "e5afc979af48f2450b28",
+      "title": "The Missing Undo Button for Coding Agents [video]",
+      "category": "discovery",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=BT1Mo-fD-g0 Comments URL: https://news.ycombinator.com/item?id=50413806 Points: 1 # Comments: 0 PRIMARY PAGE: - YouTube About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy & Safety How YouTube works Test new features NFL Sunday Ticket © 2026 Google LLC"
+    },
+    {
+      "id": "5430b358d51fec842c37",
+      "title": "GitHub Copilot weekly releases — November 2",
+      "category": "official_update",
+      "evidence": "This week, Copilot comes to JetBrains Air and Xcode’s coding assistant, with updates to help you manage pull requests, settings, and agent sessions. GitHub Copilot app Set up Agent Merge directly from a pull request to have Copilot merge it when it’s ready. It now stays enabled while required checks or rules are pending. You can also check reviewer status, request additional reviews, and select comment text to quote it or discuss it with Copilot. Keep working when a conversation reaches its context limit. Compact the conversation or review what’s using the available space directly from the error. Start a session by dropping files on “New” in the sidebar. CSV and TSV files now open as tables with sticky headers and an option to view the source. Manage sessions in fewer steps. Archive pinned sessions whose pull requests have merged or closed, pin or unpin multiple sessions, and separate nested chats without losing the conversation. My Work now supports more than ten saved custom views. Give Copilot guidance on which tool requests to approve without asking you. Personal instructions for assisted approval are opt-in and apply to local sessions. Install the GitHub Copilot app . GitHub C"
+    },
+    {
+      "id": "11a276a405ef16e4231c",
+      "title": "datasette-apps 0.3a0",
+      "category": "discovery",
+      "evidence": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration: Apps can now be tagged in Datasette Agent chat messages by typing # , which autocompletes from the apps the user has permission to view. N PRIMARY PAGE: Release: datasette-apps 0.3a0 Simon Willison’s Weblog Newsletter Sponsored by: doubleAI — doubleAI’s Maxwell makes software faster as it runs, no code changes needed. Now in early access 4th November 2026 Release datasette-apps 0.3a0 — Apps that live inside Datasette Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration: Apps can now be tagged in Datasette Agent chat messages by typing # , which autocompletes from the apps the user has permission to view. New app_add_stored_queries() and app_remove_stored_queries() tools let the agent manage which stored queries an app is allowed to call. Granting a w"
+    },
+    {
+      "id": "adb46f22095ceb1ecf93",
+      "title": "Claude Code v2.1.317",
+      "category": "official_update",
+      "evidence": "## What's changed - Added a warning to `/schedule` when a new cloud scheduled task gets connectors you did not ask for, with how to remove them - Added a check that asks before a web or shell tool call sends your account email address to the network - Added `onFailure: \"block\"` for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run - Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do - Added a notice when auto mode's check has no answer for a subagent's tool call, which used to leave nothing in the main view - Added `anthropic.plan`, `anthropic.seat_type`, `anthropic.provider` and `anthropic.custom_base_url` to OTel metrics, events and spans - Added a cost report to the Claude apps gateway admin API, `GET /v1/organizations/analytics/cost`, for reading past spend over a date range in total, per developer, per day or per IdP group - Added a daily record of each developer's IdP groups on Claude apps gateways with `admin:` set, kept for `admin.identity_retention_days`, which the cost report groups by - Added `CLAUDE_CODE_DISABLE_NESTED_SESSION_I"
+    },
+    {
+      "id": "9b80fbdb9ff786dea084",
+      "title": "Australian universities are creating AI-native graduates",
+      "category": "official_update",
+      "evidence": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
+    },
+    {
+      "id": "a2c1a5af45bf47dcd364",
+      "title": "Transform a quick drawing into a live app with Gemini.",
+      "category": "official_update",
+      "evidence": "Turn your sketches into functional apps using Gemini. Upload your drawings to the Canvas tool to generate and refine code instantly. Try it now."
+    },
+    {
+      "id": "e4e8104d92fb40182b2f",
+      "title": "Show HN: Aircheck shows every post your agents queued today on one screen",
+      "category": "discovery",
+      "evidence": "Show HN: Aircheck shows every post your agents queued today on one screen PRIMARY PAGE: Aircheck: every post agents queued today, before it goes out Aircheck Today Fix a post Wire your jobs Questions Docs Connect Aircheck Aircheck shows every post your agents queued today on one screen. Connect Aircheck See how a post is fixed Claude Code Codex Aircheck reads the posts that your Claude Code, Codex, cron, Airflow and launchd jobs queued for the day and the ad creative that your ad pipeline builds. It shows each item with all of its media and whether it is ready to go out. Review the whole day before posts go out. Aircheck offers a send-time strip, a thumbnail sheet grouped by hour, and a list. Each lane shows a ring until all of its posts are sent. The send-time strip places every post at its send time and colors it by platform. The sheet shows the first image of each post, grouped by hour, with a slide count. The list shows one row per post with its lane, format, send time, and file count. Aircheck provides three ways to work on a post. Each action runs the post's own pipeline again with a headless agent and shows the result beside the original. Example Shown only Aircheck runs the"
+    },
+    {
+      "id": "b49647e5dfc5ca710207",
+      "title": "I made an open-web protocol for local LLM storage sharing",
+      "category": "discovery",
+      "evidence": "Article URL: https://joshuadd79.github.io/bring-your-own-brain/ Comments URL: https://news.ycombinator.com/item?id=50413739 Points: 2 # Comments: 0 PRIMARY PAGE: BYOBrain Web SDK - Developer Documentation BYO Brain SDK Introduction The Golden Rules Basic Setup Non-Blocking Patterns Priorities & Execution Cancellation (Stop AI) Pre-cooking & Caching Data Validation API Reference Building with BYOBrain A guide to building resilient, non-blocking games powered by local AI. Because Bring Your Own Brain (BYOB) runs on the player's local hardware (via browser extension or web fallback), inference speeds can vary wildly from high-end GPUs to integrated mobile chips. Designing for BYOB requires a shift in mindset: the game must never wait for the AI. The Golden Rules of BYOB Design 1. Fallback is King: Your game must be 100% playable without AI. If the model is slow, offline, or produces gibberish, the game should instantly fall back to standard scripted lines. 2. The Player Always Wins: Player actions (closing a menu, walking away, starting combat) must immediately interrupt and cancel any background AI generation to save GPU compute. 3. Never Block the Event Loop: The game state should c"
+    },
+    {
+      "id": "a51bad82664c526ca2f3",
+      "title": "@GitHub in Slack and Teams is generally available and more",
+      "category": "official_update",
+      "evidence": "Turn conversations into code with @GitHub in Slack and Teams! Investigate bugs, create issues, implement changes, and open pull requests—all without leaving your conversation. What’s new Build and review together with Canvas in Teams Turn team discussions into working code. With Canvas , you can review implementation plans, code changes, and previews alongside your conversation. Continue the discussion with teammates, share feedback, and refine the implementation together—all without leaving Teams. Additional improvements Faster onboarding: Go from request to coding session with fewer steps. @GitHub now identifies the repository from your message and launches your session without requiring you to select it again. Getting started is also easier when you’re not signed in, don’t have a default repository, want to switch repositories, or need app access. More reliable conversations: Fixed an issue that could prevent responses to follow-up messages, helping you keep work moving. Clearer attribution: Issues and pull requests created by @GitHub now include “Created from a Slack/Teams conversation with @username” in their description. Get started Try @GitHub in Slack or Teams . Join the di"
+    }
+  ],
+  "response": {
+    "id": "73f3b5ab-76f9-438f-bce9-4fc7570a2cce_35cc00c0f38a488c98aa47641122536f",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"items\":[{\"id\":\"2ec792eccea8c7f4dcf4\",\"product\":\"Claude Code\",\"change\":\"新增MCP任务后台化与权限拒绝设置\",\"change_en\":\"Added MCP task backgrounding and deny-instead-of-prompt permission option\",\"title\":\"Claude Code v2.1.319 更新\",\"summary\":\"Claude Code v2.1.319 将MCP服务器的任务调用立即移至后台并在完成时通知；新增 permissions.denyInsteadOfPrompting 设置，将等待权限提示的工具调用直接拒绝；调整 auto mode 在遥测或特性开关关闭时的服务器校验行为；新增 /claude-api latency-optimize 用于定位API延迟。\",\"kind\":\"changed\"},{\"id\":\"a4b9fe02afb54ad41dcf\",\"product\":\"Claude Code\",\"change\":\"新增mods effort选项并修复多项会话问题\",\"change_en\":\"Added mod effort option and fixed continue, session stall and prompt issues\",\"title\":\"Claude Code v2.1.318 更新\",\"summary\":\"Claude Code v2.1.318 为 mod 的 $.model.fork 增加 effort 选项，可在侧任务使用低力度；在 claude auth status 和 claude -p JSON 结果中报告 claude.ai 登录到期时间并提前警告；修复 --continue 在工具调用重试耗尽后丢失早前对话的回归，以及 macOS 大量 Bash 命令会话卡顿等问题。\",\"kind\":\"changed\"},{\"id\":\"d6e37361a76da8e16567\",\"product\":\"Codex\",\"change\":\"新增agent指挥中心与后端切换\",\"change_en\":\"Added agent command center, backend switching and image preview in Codex 0.167.0\",\"title\":\"Codex 0.167.0 更新\",\"summary\":\"Codex 0.167.0 可用 codex agents --no-daemon 打开 agent 指挥中心并标记未读结果；可在终端会话选择器间切换已连接后端并保留草稿；支持在支持的终端预览本地图片附件；新增 gcp_setup_wizard 配置 Google Cloud Vertex AI；修复切换模型提供商后已保存聊天不可见等问题。\",\"kind\":\"changed\"},{\"id\":\"5db6b80ea417ae51fa0e\",\"product\":\"llama.cpp\",\"change\":\"新增FP8量化、四架构与音频生成\",\"change_en\":\"Added FP8 E4M3 quant, four architectures and audio generation in llama.cpp v0.9.0\",\"title\":\"llama.cpp v0.9.0 发布\",\"summary\":\"llama.cpp v0.9.0 增加 OCP FP8 E4M3 量化、flash_attn_ext_rows 算子以提升多序列推理统一KV缓存效率，以及通用批量张量拷贝API；支持 Clover、Limite、Metis-1.6、Mistral Large 4 四个新架构；音频生成与转写扩展 Chatterbox TTS、Nemotron 3.5 Transcribe；ggml 更新至 v0.29.0。\",\"kind\":\"added\"},{\"id\":\"d87212e4733152e794d9\",\"product\":\"Ollama\",\"change\":\"支持MiMo V2.6与AutoTrust决策模型\",\"change_en\":\"Supports MiMo V2.6 and AutoTrust decision models in Ollama v0.40.15\",\"title\":\"Ollama v0.40.15 更新\",\"summary\":\"Ollama v0.40.15 支持小米 MiMo V2.6（面向代码与agent工作流的9B模型）及 AutoTrust 决策模型家族（9b、35b、27b-vl，后者可读图像，本版本在Apple silicon上支持）；ollama launch 支持 Kimi Code CLI 并提供迁移；多次视觉GGUF模型可并发服务；Qwen3/3.5 长上下文YaRN缩放。\",\"kind\":\"added\"},{\"id\":\"a27e96489de462170096\",\"product\":\"Copilot代码评审\",\"change\":\"代码评审设置开放API管理\",\"change_en\":\"Copilot code review settings now manageable via REST and GraphQL APIs\",\"title\":\"Copilot代码评审API管理\",\"summary\":\"GitHub Copilot 代码评审设置现可通过 REST 与 GraphQL API 管理，覆盖企业策略到单个仓库；评审概览评论更紧凑；新增明确归属字段识别 Copilot 评审与评论，可查看评审力度及评论来源的技能、MCP服务器与自定义指令；含计费、自动评审与可靠性修复，适用于Pro、Pro+、Max、Business、Enterprise计划。\",\"kind\":\"changed\"},{\"id\":\"69cebe4e52875926c764\",\"product\":\"Copilot影响看板\",\"change\":\"看板纳入Chat与VS Code Agents\",\"change_en\":\"Copilot impact dashboard adds Chat and VS Code agent usage metrics\",\"title\":\"Copilot看板纳入Chat与Agents\",\"summary\":\"Copilot 影响看板的 Agent 采用图表新增 Copilot Chat 与 VS Code Agents 窗口，现覆盖九种 Copilot 体验；“Passive users”人群更名为“Chat-first users”；企业与组织28天使用量指标报告同步加入 copilot_feature_engagement.totals_by_feature 的 chat 与 vscode_agent 条目。\",\"kind\":\"changed\"},{\"id\":\"5430b358d51fec842c37\",\"product\":\"GitHub Copilot\",\"change\":\"周更含Agent Merge与会话管理\",\"change_en\":\"Weekly release adds Agent Merge setup and session management improvements\",\"title\":\"GitHub Copilot周更（11月2日）\",\"summary\":\"GitHub Copilot 本周支持从拉取请求直接设置 Agent Merge，并在必需检查或规则挂起时保持启用；可查看评审人状态、请求追加评审；对话达上下文上限时可压缩或查看占用；侧栏“New”拖放文件开启会话；CSV/TSV以表格打开；支持归档、批量固定/取消固定会话；新增协助审批的个人指令（本地会话可选）。\",\"kind\":\"changed\"},{\"id\":\"3841faf982575f44c269\",\"product\":\"Recalc\",\"change\":\"作者介绍：电子表格单元格可作终端\",\"change_en\":\"Author: Spreadsheet where cells can run Claude Code or Codex terminals\",\"title\":\"Recalc：单元格即终端\",\"summary\":\"作者介绍：作者因构建评测/基准的需要开发 Recalc，将电子表格作为 harness 的 harness，每个单元格可作为独立终端运行 Claude Code、Codex 或 pi（实验性），支持实时观察agent填格、在独立终端打开会话并通过提示或编辑单元格引导；macOS支持，Linux实验性，免费开源，本地运行。\",\"kind\":\"discovery\"},{\"id\":\"945be84329c559b2ce57\",\"product\":\"Loop\",\"change\":\"作者介绍：手机端coding agent工作台\",\"change_en\":\"Author: Mobile companion workspace aggregating coding harness results\",\"title\":\"Loop：手机上的agent工作台\",\"summary\":\"作者介绍：作者因单手持手机与agent对话的痛点开发 Loop，作为移动优先的伴生工作台，将 Codex、Claude Code、Pi、OpenCode 等 harness 的结果聚合为可导航的信息流，展示已完成结果、待回答问题与待批准事项；无账号、无服务器、无应用商店，在本机运行并扫码配对。\",\"kind\":\"discovery\"}]}",
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1794213676,
+    "model": "mimo-v2.6-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1689,
+      "prompt_tokens": 7727,
+      "total_tokens": 9416,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": null
+    }
+  },
+  "source_warnings": [
+    "hn-show",
+    "hn-topics"
+  ]
+}
