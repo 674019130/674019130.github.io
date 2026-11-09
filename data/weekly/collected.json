@@ -82897,6 +82897,18 @@
       "discussion_url": ""
     },
     {
+      "id": "2a7200089af45bfd431a",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "AI is destroying my CS degree",
+      "url": "https://simonwillison.net/2026/Nov/3/hn-50354278",
+      "published_at": "2026-11-03T16:42:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "My comment on AI is destroying my CS degree — Hacker News. I don't envy educators right now. AI clearly means you need to change how you teach and evaluate students. We are only a few years in though, and it's still extremely unclear what effective teaching with these tools looks like. The worst part is that the evaluation loop is measured in multiple years! If you start trying some new education mechanism today you won't get a robust idea of how well it works until your current cohort graduate in 3-6 years time. Students effectively all become guinea pigs for untested new ways of learning and teaching. Tags: education , hacker-news , ai , ai-ethics",
+      "discussion_url": ""
+    },
+    {
       "id": "aa48007db3752e99463b",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -88883,102 +88895,342 @@
       "date_kind": "community_post",
       "evidence": "I built a 4-channel music tracker modeled on the original Game Boy's sound hardware: two pulse channels, a wave channel, and noise. It runs entirely in the browser using the Web Audio API, with no account or backend. Songs save to localStorage, and share links compress the whole song into the URL hash, so sharing never touches a server. You can also export WAV, M4A, or a square MP4 of the rows playing. It ships with 3 demo songs to show what it can do. I’m a developer, not a composer, so I made the song format LLM-friendly: use “Import from text” on the home page, and see https://chiptunes.studio/llms.txt for the format. To hear it first, here's a demo song. It opens on a playback page with a Remix button that drops you into the editor: https://chiptunes.studio/share#v1.7Z3BjqJAEIbfpfZKJ40gCjcV9L... I’d love feedback from anyone with tracker or DAW experience, and I’d love to hear what you make. Share your song links! Comments URL: https://news.ycombinator.com/item?id=50416992 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50416992"
+    },
+    {
+      "id": "78036916c8bf811d5d88",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Record, branch, and compare command runs in stdlib-only Python",
+      "url": "https://github.com/Protention/ocura-oss",
+      "published_at": "2026-11-08T21:58:08+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi, this is a package I developed for keeping track of short toy-model development cycles and explaining what changed between runs. The core idea: commands run through the package, and their declared parameters (or injected parameters with --substitute) and outcomes go into a dependency-free ledger stored in the project. Because that ledger lives in the project directory, it has worked well for passing context between different agents. I’ve also found some use for it in CI work. Comments URL: https://news.ycombinator.com/item?id=50417782 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50417782"
+    },
+    {
+      "id": "dc3f3cf53d7447fec014",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Remedy – Prompt stuff out of your feeds",
+      "url": "https://getremedyapp.com",
+      "published_at": "2026-11-08T22:16:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built an AI classifier chrome extension with Jev to insta-remove stuff from all your feeds before you see it. Just change the prompt to anything you want like \"remove ragebait\" or \"remove political stuff\" and it works fast. Enjoy! Comments URL: https://news.ycombinator.com/item?id=50417974 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50417974"
+    },
+    {
+      "id": "9da2f6c47ffe3dfa3655",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
+      "published_at": "2026-11-08T22:26:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted. I fired up regular Claude chat (Opus 5.5) and prompted : I'm thinking about a SQLite custom function 'parse_number(value)' that strips ',', '$', '£' and '%', handles a leading '-', and returns 'NULL' for anything it can’t parse Explore the difference between building this as a SQLite extension in C v.s. in Rust - I want to compare performance and code complexity and size of the resulting .so (or whatever) file This gave me a solid starting point - the Rust extension was 321 KB (using Rusqlite ) and 298 KB (using sqlite-loadable-rs ), while the C extension was 14 KB. But the Rust extension was faster! Turns out that's because the Rust equivalent of C's strtod is \"twice as fast\". So I prompted: Try writing your own C function for parsing text into a decimal number that catches up to or beats the Rust implementation And it did, using \"Clinger's fast path\": Net cost per row over 2 million rows, lower is better: first C new C rusqlite sqlite-loadable Mixed data 67 ns 19 ns 46 ns 41 ns Integers only 25 ns 16 ns 36 ns 32 ns Decimals only 106 ns 18 ns 55 ns 47 ns Finally, I had it rewrite the prototype as a research report to match the others in simonw/research by prompting this: Clone simonw/research from GitHub and turn your above investigation into a research report as seen in that repository - you can give me a zip file to download that contains your new folder Here's the resulting report . Tags: c , research , sqlite , rust , claude",
+      "discussion_url": ""
+    },
+    {
+      "id": "8b2061c12ef3d4d857f1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Harness Leaderboard Which coding-agent harness should you run your open model in",
+      "url": "https://huggingface.co/spaces/joelniklaus/harness-leaderboard",
+      "published_at": "2026-11-08T22:28:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/spaces/joelniklaus/harness-leaderboard Comments URL: https://news.ycombinator.com/item?id=50418101 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50418101"
+    },
+    {
+      "id": "ec8a181778089b0a2dea",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: My first project, an AI-powered financial news analyzer",
+      "url": "https://github.com/lamarcol/NotBot",
+      "published_at": "2026-11-08T22:34:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "I'm 17, and I started NotBot a few months ago to see whether I could turn an idea into a working project. My main interest is economics, not becoming a programmer, but I enjoy experimenting with code. A few months ago, I had the idea of creating a program that would analyze the most recent news about a specific stock and calculate a weighted average of their polarity to create a sort of sentiment indicator. While researching, I found a YouTube video about creating a simple GitHub repository that did, in a simplified and imprecise way, what I had in mind. At first glance, I realized it was a very simple program: feedparser retrieved news from Google News, beautifulsoup4 extracted the content, the sentiment was analyzed with FinBERT, running through Transformers and PyTorch. From there, I started modifying it with the free versions of Gemini. I had to solve a lot of problems, for example fixing the extraction of articles from Google News, I managed to solve it with a new library (googlenewsdecoder). Then I had to replace FinBERT, because it classified sentiment based on the context of the words but didn't take into account the actual impact of the event using external sources. I experimented with an LLM that allowed me to specify the evaluation criteria more precisely through a prompt. I found a free one with rather strict TPM and RPM limits (it was called openai/gpt-oss-120b). I also created two coefficients: one that adjusted the reliability of the news based on its source, and another that adjusted its impact based on how recent it was (all selected news articles had been published within the last 24 hours). Each article was divided into title, description, and content, and each of these three sections had a different weight based on predefined values (title 35%, description 25%, and text 40%). If the content had fewer than 100 characters, the text was not assigned any weight, and the title accounted for 60% while the description accounted for 40%. After these modifications, I took a break of about a month because of school commitments, during which I discovered Codex (OpenAI's agent). I changed the main LLM and implemented Gemini (3.1 Flash-Lite) because the TPM limits of the LLM I was using were too restrictive. Even though I started using Gemini, I didn't discard Groq. In fact, I used it as a fallback in case Gemini returned some kind of error. Another important modification was the addition of asynchronous article downloading through aiohttp and the processing of multiple articles simultaneously through asyncio. Later, I decided to start using Groq again for article analysis. In fact, I had both LLMs analyze the longer articles and then calculated the average of their two polarity scores. The first was Finnhub, which allowed me to search for many more news articles about a specific stock (by entering its name and ticker). At that point, I had to split up the code because the script had become very long. The last modification I made concerned news selection: I implemented a filter that prevented similar news articles from being selected, to avoid excessively distorting the polarity in an incorrect way. First of all, I'd like to know, from an expert, how well the project is built from a structural point of view and how it could be improved. For future projects, what parameters should I take into consideration to understand whether a project is well built? Secondly, I'd like to know how I can determine whether a program like this can actually work, or at least how it could be useful (even with some modifications). The third and final point is: which aspects of the pipeline might require more attention or could be optimized? Does it make sense to continue working on the project (also with the idea of turning it into a product), or am I approaching a structural limit? Comments URL: https://news.ycombinator.com/item?id=50418158 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50418158"
+    },
+    {
+      "id": "216349fb6f2f84556cf5",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "a way to keep coding agents within the rules",
+      "url": "https://github.com/OliverKlug/fairlead.git",
+      "published_at": "2026-11-08T22:54:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/OliverKlug/fairlead.git Comments URL: https://news.ycombinator.com/item?id=50418404 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50418404"
+    },
+    {
+      "id": "f068a4867a96bd4668f1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Astryx: An open source design system that's customizable and agent ready",
+      "url": "https://github.com/meta/astryx",
+      "published_at": "2026-11-08T23:27:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/meta/astryx Comments URL: https://news.ycombinator.com/item?id=50418809 Points: 3 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50418809"
+    },
+    {
+      "id": "a87bf1337b83a59b2ca9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Midgarth Quest. Browser-Playable Mmorpg Written by AI",
+      "url": "https://midgarth.quest",
+      "published_at": "2026-11-09T00:50:13+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tolkien-flavoured MMORPG in the style of Tibia. Deep mechanics and lore. Quests, sprites, spells, multiple races. Written entirely by AI. Playable in the browser. Comments URL: https://news.ycombinator.com/item?id=50419542 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50419542"
+    },
+    {
+      "id": "bbad02cf4fe3b8cbe674",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Replay your Claude Code logs to count parallel session collisions",
+      "url": "https://github.com/dooly6276/claude-bulkhead",
+      "published_at": "2026-11-09T00:55:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/dooly6276/claude-bulkhead Comments URL: https://news.ycombinator.com/item?id=50419582 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50419582"
+    },
+    {
+      "id": "cba8486e16d7bbe0a89f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Airlock – Policy-as-code for fleets of AI coding agents",
+      "url": "https://airlock.lunareng.com/docs",
+      "published_at": "2026-11-09T00:59:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "My name is Matt and I am building Airlock. Airlock is going to be an open standard on managing autonomous fleets of engineering agents. I am seeking constructive feedback on the direction of this project and also asking what are your major pain points with managing AI use at larger businesses. Right now I am running my own company using this framework with a total of 23 workflows across four large scale projects. Airlock is still really early, only 3-4 weeks old. Airlock's configuration standard is aimed to be open source and I will also open source the backplane once I gain a bit more confidence in what I have built here and it is a bit more ready for public scrutiny. Today the schema itself and the reusable GitHub actions are publicly available. I will selfishly figure out how to monetize this at some point but my desired customer is going to be larger enterprises. Airlock kind of does a lot of things but if I had to sum it up in several bullet points it would be: 1) Allows for the configuration of agent behaviors and life cycles under version control. Each agent run proves who it is with GitHub’s OIDC token, and Airlock trades that for a GitHub token that lasts one hour and can only touch the repos and permissions listed in that agent’s role file. 2) Allows for configuring levels of autonomy starting with a repository's base autonomy level with stricter overrides down to individual files within a code base. (e.g. you trust agents for most of the repo but perhaps you want extra gating around the 'billing' or 'auth' modules). 3) Supports a standard autonomy scale. At level 4 agents are leading a project's direction while at level 1 they are dependent on humans to lead the direction of a project. 4) Provides an out-of-the-box OTEL collector that stores a subset of agent actions you would care about in the event of an audit. I’m exploring storing agent prompts and user prompts so that only the customer can decrypt them, and haven’t decided how. 5) Comes with a shadow mode that allows you to run Airlock and observe how it would behave in your org without turning it on. To try it you just need to install the GitHub App, create a policy repository and run on GitHub hosted runners. I personally use self-hosted runners on EC2 spot instances. Visit https://airlock.lunareng.com/docs/quickstart to get started. I have been really passionate lately about exploring how businesses of the [near] future will effectively manage autonomous development using agents at scale. I want to help answer the question of how can the business better manage AI spend, prioritization of token usage, auditability of agent actions and compliance with various governance, risk and compliance frameworks. I am coming from the perspective of being an engineer for 15+ years but I have somehow managed to also develop a good understanding of how larger businesses operate. My vision of the future looks like a world where engineers don't use agent harnesses directly from their computer [for coding]. Instead engineering teams are managing a larger backlog of work that is automatically picked up by these agents. Engineering will instead be less about writing code and more about effectively deploying technology to solve business problems. Thanks for taking a look and I look forward to meeting you in the comments. References: https://github.com/lunareng/airlock-actions https://airlock.lunareng.com/schema/role.schema.json https://airlock.lunareng.com/schema/autonomy.schema.json https://airlock.lunareng.com/schema/config.schema.json https://www.anthropic.com/institute/measuring-pace-of-ai-dev... https://felixrieseberg.com/how-to-be-more-ambitious-a-tutori... Comments URL: https://news.ycombinator.com/item?id=50419615 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50419615"
+    },
+    {
+      "id": "9b31be32bf4b6d4386de",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Airlock – Policy-as-code for fleets of AI coding agents",
+      "url": "https://airlock.lunareng.com/docs",
+      "published_at": "2026-11-09T00:59:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "My name is Matt and I am building Airlock. Airlock is going to be an open standard on managing autonomous fleets of engineering agents. I am seeking constructive feedback on the direction of this project and also asking what are your major pain points with managing AI use at larger businesses. Right now I am running my own company using this framework with a total of 23 workflows across four large scale projects. Airlock is still really early, only 3-4 weeks old. Airlock's configuration standard is aimed to be open source and I will also open source the backplane once I gain a bit more confidence in what I have built here and it is a bit more ready for public scrutiny. Today the schema itself and the reusable GitHub actions are publicly available. I will selfishly figure out how to monetize this at some point but my desired customer is going to be larger enterprises. Airlock kind of does a lot of things but if I had to sum it up in several bullet points it would be: 1) Allows for the configuration of agent behaviors and life cycles under version control. Each agent run proves who it is with GitHub’s OIDC token, and Airlock trades that for a GitHub token that lasts one hour and can only touch the repos and permissions listed in that agent’s role file. 2) Allows for configuring levels of autonomy starting with a repository's base autonomy level with stricter overrides down to individual files within a code base. (e.g. you trust agents for most of the repo but perhaps you want extra gating around the 'billing' or 'auth' modules). 3) Supports a standard autonomy scale. At level 4 agents are leading a project's direction while at level 1 they are dependent on humans to lead the direction of a project. 4) Provides an out-of-the-box OTEL collector that stores a subset of agent actions you would care about in the event of an audit. I’m exploring storing agent prompts and user prompts so that only the customer can decrypt them, and haven’t decided how. 5) Comes with a shadow mode that allows you to run Airlock and observe how it would behave in your org without turning it on. To try it you just need to install the GitHub App, create a policy repository and run on GitHub hosted runners. I personally use self-hosted runners on EC2 spot instances. Visit https://airlock.lunareng.com/docs/quickstart to get started. I have been really passionate lately about exploring how businesses of the [near] future will effectively manage autonomous development using agents at scale. I want to help answer the question of how can the business better manage AI spend, prioritization of token usage, auditability of agent actions and compliance with various governance, risk and compliance frameworks. I am coming from the perspective of being an engineer for 15+ years but I have somehow managed to also develop a good understanding of how larger businesses operate. My vision of the future looks like a world where engineers don't use agent harnesses directly from their computer [for coding]. Instead engineering teams are managing a larger backlog of work that is automatically picked up by these agents. Engineering will instead be less about writing code and more about effectively deploying technology to solve business problems. Thanks for taking a look and I look forward to meeting you in the comments. References: https://github.com/lunareng/airlock-actions https://airlock.lunareng.com/schema/role.schema.json https://airlock.lunareng.com/schema/autonomy.schema.json https://airlock.lunareng.com/schema/config.schema.json https://www.anthropic.com/institute/measuring-pace-of-ai-dev... https://felixrieseberg.com/how-to-be-more-ambitious-a-tutori... Comments URL: https://news.ycombinator.com/item?id=50419615 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50419615"
+    },
+    {
+      "id": "e76f08c8b4171dfd7a12",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Mindfries- AI Interviewer based on real eng skill not on L**tC*de",
+      "url": "https://company.mindfries.com/login",
+      "published_at": "2026-11-09T03:30:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN Family, I am Chandan, and have built an AI intrviewer tool that assess the candidate based on real skills of engineering, like working on large codebase to fix, build, and enhance and many deployment type works too with the help of built in AI agent. Google had also introduced the same round for their candidates and all the other platform are checking the Competitive programming which is not suitable to assess every best candidate in the era of AI. Hence I did research, talked to 35+ founders and CTOs, and it took me 2 months to build the proper MVP end to end. I am not good at sales, but the product is awesome and I want the real costumers for it. I would really appreaciate your contribution. Thanks ! Comments URL: https://news.ycombinator.com/item?id=50420697 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50420697"
+    },
+    {
+      "id": "45b75966e6cb5f0b7855",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "AML Cycle 2 results are approaching: What should agent memory benchmarks reveal?",
+      "url": "https://twitter.com/AgentMemoryL/status/2118704959344493029",
+      "published_at": "2026-11-09T03:34:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://twitter.com/AgentMemoryL/status/2118704959344493029 Comments URL: https://news.ycombinator.com/item?id=50420732 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50420732"
+    },
+    {
+      "id": "c15f88b377b5dd6a6078",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Pay per pre-configured GPU hour or per token for open-source LLM inference?",
+      "url": "https://news.ycombinator.com/item?id=50420874",
+      "published_at": "2026-11-09T03:52:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Is it worth paying for a pre-configured GPU for open-source LLM inference instead of using a traditional pay-per-token provider? The biggest advantage seems to be having no usage limits Comments URL: https://news.ycombinator.com/item?id=50420874 Points: 4 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50420874"
+    },
+    {
+      "id": "e9b9b6b082229742bc8f",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Best-Effort Extent-Same, a btrfs dedupe agent",
+      "url": "https://github.com/Zygo/bees",
+      "published_at": "2026-11-09T04:11:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Zygo/bees Comments URL: https://news.ycombinator.com/item?id=50420981 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50420981"
+    },
+    {
+      "id": "e4a34489881ecf45f010",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A diffusion model that runs in pure CSS, no JavaScript",
+      "url": "https://metrix187.github.io/diffusion.css",
+      "published_at": "2026-11-09T04:16:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://metrix187.github.io/diffusion.css/ Comments URL: https://news.ycombinator.com/item?id=50421012 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50421012"
+    },
+    {
+      "id": "8dd204499c06ddeec012",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Hide your slop PR descriptions behind",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary",
+      "published_at": "2026-11-09T04:25:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it. That's a lot of information to absorb. It's not necessarily slop, but it reads like slop! It's very easy to spot an AI-written PR, and as with other forms of AI writing my instant reaction is best summarized as \"I'm not reading all of that\". It doesn't matter how accurate or useful the information is, I'm instantly put off by the thought that it will take me longer to read than it took the driving author to write... even when that driving author is me! I want human editorial judgement. I want someone to have thought just long enough about the PR to give me a human-approved introduction that helps me understand, at a high level, what the PR is for and whether it deserves more of my attention. I think I've found a low-effort way to do this that feels right. Hide most of it in a details/summary The HTML <details><summary> elements render as a collapsed heading (the summary) that can be expanded to view the larger piece of text. The code looks like this: < details > < summary > Claude Opus 5.5 </ summary > < h2 > The hook </ h2 > Plugins implement < code > register_agent_reference_types(datasette) </ code > ... </ details > When rendered, it looks like this : Crucially, <details><summary> is supported in GitHub Markdown . You can drop those tags directly into an issue comment or PR description and GitHub will hide the details and display just the summary plus an expansion arrow. I've started using this for my AI-generated pull requests. The opening paragraph of my PRs will be carefully selected to act as a high-level explanation of what's going on - the shortest text a human can read that will help get them up to speed. I'll sometimes throw in a screenshot as well, since images are often the best way to quickly illustrate a new feature. The full agent-written essay then follows in a <details><summary> . I use the model name and often the effort level as that summary, to make it abundantly clear what is going on - \"Claude Opus 5.5 Medium\" for example. My PRs don't feel nearly as sloppy now! The information is all still there, but a reader can glance at it and get the top, human-curated information without their eyes glazing over at multiple paragraphs of agent-written details. I don't always write the introduction myself - sometimes the agent has given me what I need already, hidden away in the avalanche of other text. My promise to the reader is that the short opener will represent my human judgement as to what is definitely worth their time. Here are some recent examples where I've used this pattern, including the opener I used: datasette PR #3052: Redesign row page as a vertical list of fields - \"The row page showed its single row as a one-row table. For wide tables, like a 46-column GitHub repos table, that scrolled far off to the right and left most of the page blank.\" (then a screenshot) datasette PR #3043: Pagination bar showing which rows are on the current page - \"Table pages that span more than one page now make it obvious where you are, and offer navigation at the top of the page as well as the bottom.\" (plus screenshot) datasette PR #3042: Load edit-tools.js on demand via a small loader - \" edit-tools.js (~220KB) was loaded on every table, row and database page, even for users who couldn't edit anything. Now only load it for users who can edit when they first interact with an edit feature (including mouse over an edit link).\" datasette-agent PR #51: register_ag",
+      "discussion_url": ""
+    },
+    {
+      "id": "1f48965fa9fbe245c8c0",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091",
+      "published_at": "2026-11-09T04:32:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (77KB) I just asked Claude (Opus 5.5 Medium running in regular Claude Chat) to port that to Vanilla JS, in the same thread where it had built it, and got this: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (98KB) They aren't identical - you can see what Claude said about that in the transcript (I don't fully understand why it differed): https://claude.ai/share/e56d163e-2793-4677-aa11-191d5058b414 But yeah, it turns out Claude Opus 5.5 is perfectly capable of 3D modeling in Vanilla JS + WebGL without Three.js. In eyeballing the code I find the Three.js slightly easier to understand myself, but I rarely look at the code for these 3D projects so that isn't a particularly big deal. Tags: hacker-news , javascript , ai , generative-ai , llms , claude , three-js",
+      "discussion_url": ""
+    },
+    {
+      "id": "a9d1ecd04387f72c68ea",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Flide: Make Jev-like decision models up to 9.5x faster",
+      "url": "https://github.com/OmniJev/Flide",
+      "published_at": "2026-11-09T04:43:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Decision models need their own inference engine. So we developed Flide, a high-performance and exact inference engine for Jev-like decision models. Flide achieves up to a 9.5x speedup over vLLM and SGLang. It now supports 30+ popular local Jev-like decision models. Start to make your decision immediately: pip install flide Comments URL: https://news.ycombinator.com/item?id=50421155 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50421155"
+    },
+    {
+      "id": "f26f3088fdc59f68b8e2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: clap.cpp – Audio embedding inference in C++ (GGML)",
+      "url": "https://github.com/gorse-io/clap.cpp",
+      "published_at": "2026-11-09T04:46:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/gorse-io/clap.cpp Comments URL: https://news.ycombinator.com/item?id=50421168 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50421168"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-08T22:05:19.461246+00:00",
+      "last_success": "2026-11-09T06:28:19.512750+00:00",
       "count": 10,
       "earliest": "2026-11-04T19:10:40+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-08T22:05:19.804250+00:00",
+      "last_success": "2026-11-09T06:28:19.677814+00:00",
       "count": 20,
       "earliest": "2026-10-30T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-08T22:05:20.006796+00:00",
+      "last_success": "2026-11-09T06:28:19.845015+00:00",
       "count": 899,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-08T22:05:20.186349+00:00",
+      "last_success": "2026-11-09T06:28:19.927312+00:00",
       "count": 30,
-      "earliest": "2026-10-24T03:59:57+00:00",
+      "earliest": "2026-10-27T19:34:18+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-08T22:05:20.456314+00:00",
+      "last_success": "2026-11-09T06:28:22.762151+00:00",
       "count": 100,
-      "earliest": "2026-11-07T22:03:55+00:00",
+      "earliest": "2026-11-08T06:51:52+00:00",
       "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-11-08T22:05:25.173539+00:00",
+      "last_success": "2026-11-09T06:28:28.173738+00:00",
       "count": 100,
-      "earliest": "2026-11-06T11:16:33+00:00",
+      "earliest": "2026-11-06T13:24:08+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-08T22:05:25.703000+00:00",
+      "last_success": "2026-11-09T06:28:28.626283+00:00",
       "count": 10,
       "earliest": "2026-10-22T04:34:55+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-08T22:05:26.155663+00:00",
+      "last_success": "2026-11-09T06:28:29.062450+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-08T22:05:26.595041+00:00",
+      "last_success": "2026-11-09T06:28:29.474460+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-08T22:05:27.008938+00:00",
+      "last_success": "2026-11-09T06:28:29.796773+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-08T22:05:27.548672+00:00",
+      "last_success": "2026-11-09T06:28:30.303658+00:00",
       "count": 10,
       "earliest": "2026-10-16T22:00:46+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-08T22:05:37.577755+00:00",
+      "last_success": "2026-11-09T06:28:40.008046+00:00",
       "count": 2,
       "earliest": "2026-10-28T12:47:51+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-08T22:05:37.757028+00:00",
+      "last_success": "2026-11-09T06:28:40.150288+00:00",
       "count": 1368,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-08T22:05:42.382210+00:00",
+      "last_success": "2026-11-09T06:28:45.576655+00:00",
       "count": 2,
       "earliest": "2026-10-29T19:47:53+00:00",
       "gap": false,
@@ -89107,5 +89359,5 @@
       "to": "2026-11-05T12:51:37+00:00"
     }
   ],
-  "collected_at": "2026-11-08T22:05:42.382841+00:00"
+  "collected_at": "2026-11-09T06:28:45.577566+00:00"
 }
