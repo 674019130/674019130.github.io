@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A Japan trip itinerary as a cyclic stack of cards: flight, route, stays, dining and budget, slid through by wheel, drag or keys."><title>Trip itinerary · Su UI lab</title><script src="../shared/setup.js"></script><link rel="stylesheet" href="../shared/lab.css"><link rel="stylesheet" href="./styles.css"></head><body><main>
+<nav><a href="/lab" data-copy="back">← UI lab</a><span data-copy="edition">13 / Trip itinerary</span><button id="language" type="button" aria-label="切换为中文">中</button></nav>
+<header class="page-heading"><h1 data-copy="title">Trip itinerary</h1><p class="intro" data-copy="intro">A trip plan as a stack of cards. Scroll, drag or use the arrow keys to walk the itinerary from the flight up to the cover photo.</p></header>
+<section id="stage" class="stage" aria-label="Trip itinerary experiment">
+<div class="app" id="app" tabindex="-1"><div class="deck" id="deck"></div></div>
+</section>
+<div class="controls">
+<button id="auto" type="button" aria-pressed="false" data-copy="autoplay">Autoplay</button>
+<button id="replay" type="button" data-copy="replay">Replay</button>
+<div class="segmented" role="group" id="theme-group" aria-label="Theme"><button type="button" data-theme-choice="light" data-copy="light">Light</button><button type="button" data-theme-choice="dark" data-copy="dark">Dark</button></div>
+</div>
+<p class="status" role="status" id="announce"></p>
+<p class="hint" data-copy="hint">Scroll or drag on the stack, click a card, or use ↑ ↓ on it.</p>
+<p class="demo-note" data-copy="demo">Sample itinerary. The dates, places and prices are made up.</p>
+<section class="tricks" aria-labelledby="tricks-title"><h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
+<article><h3 id="note-title-0"></h3><p id="note-body-0"></p><pre tabindex="0"><code>// model.js: signed cyclic distance, (-3, 3]
+export function offset(index, focus) {
+  let d = (index - focus) % N;
+  if (d &gt; N / 2) d -= N;
+  if (d &lt;= -N / 2) d += N;
+  return d;
+}
+
+// card j's top edge when focus is centred
+const top0 = (appH - HEIGHTS[ORDER[focus]]) / 2;
+if (d === 0) return top0;
+if (d &lt; 0)  return top0 - GAP - COLLAPSED - (-d - 1) * 70;
+return top0 + HEIGHTS[ORDER[focus]] + GAP + (d - 1) * 70;
+
+el.style.transform = `translateY(${cardTop(j, focus)}px)`;</code></pre></article>
+<article><h3 id="note-title-1"></h3><p id="note-body-1"></p><pre tabindex="0"><code>.card {
+  height: 62px;                       /* collapsed: header only */
+  transition: height .54s var(--ease),
+              transform .54s var(--ease);
+}
+.card.on { /* focused card grows to its content height */ }
+
+el.style.height = d === 0 ? `${HEIGHTS[key]}px` : '62px';
+// positions for the neighbours are computed from the
+// *target* height, so they land flush as the card grows</code></pre></article>
+<article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre tabindex="0"><code>// The deck wrapper carries the live drag offset…
+deck.style.transform = `translate3d(0, ${dragY}px)`;
+// …so each card keeps its snapped translateY.
+// On release: past one card-height, or a fast flick, steps.
+if (dragY &gt; 64 || vel &gt; .4) advance(-1);
+else if (dragY &lt; -64 || vel &lt; -.4) advance(1);
+setDeck(0);   // eases back through the same transition</code></pre></article>
+<article><h3 id="note-title-3"></h3><p id="note-body-3"></p><pre tabindex="0"><code>.card-trip .inner {
+  background: linear-gradient(180deg,
+    #2e4a7d, #4a6fa5 42%, #7fa6cf 74%, #b8cde6);
+}
+.card-trip .cap {
+  position: absolute; top: 0; height: 62px;
+  /* title lives in the same band every header uses */
+}</code></pre></article>
+<article><h3 id="note-title-4"></h3><p id="note-body-4"></p><pre tabindex="0"><code>.rt-map circle, .rt-map text { opacity: 0;
+  transform: translateY(6px); }
+.card.on .rt-map circle, .card.on .rt-map text {
+  opacity: 1; transform: none; }   /* replays on refocus */
+
+/* pathLength makes the dash math viewport-independent */
+.rt-map .rt-path { stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset .9s var(--ease) .12s; }
+.card.on .rt-map .rt-path { stroke-dashoffset: 0; }
+
+.bg-bars .bar { height: 0; }       /* planted at zero */
+.card.on .bg-bars .bar { height: calc(var(--h) * 1%); }</code></pre></article>
+<div class="source-links"><a href="./styles.css">CSS ↗</a><a href="./script.js" data-copy="source">View the source</a></div></section>
+<footer><span data-copy="inspired">Inspired by</span> <a href="https://x.com/abtste11a/status/2119889892113273275" target="_blank" rel="noopener noreferrer">Stella Peng ↗</a></footer>
+<noscript><p>Enable JavaScript to try the itinerary deck. / 请启用 JavaScript 体验行程卡堆。</p></noscript>
+</main><script type="module" src="./script.js"></script></body></html>

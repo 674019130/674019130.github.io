@@ -1,0 +1,158 @@
+export const copy = {
+  en: {
+    back: '← UI lab', edition: '13 / Trip itinerary', title: 'Trip itinerary',
+    intro: 'A trip plan as a stack of cards. Scroll, drag or use the arrow keys to walk the itinerary from the flight up to the cover photo.',
+    stage: 'Trip itinerary experiment',
+    appLabel: 'Itinerary deck for a November trip to Japan',
+    lang: 'EN',
+    categories: {
+      flight: 'Flight', route: 'Route', stays: 'Stays', dining: 'Dining', budget: 'Budget', trip: 'Trip',
+    },
+    trip: { title: 'Autumn in Japan', date: 'Nov 20', alt: 'Illustration of Mount Fuji under a red sun' },
+    flight: {
+      stat: 'SFO → HND, 11:50',
+      from: ['SFO', 'San Francisco'], to: ['HND', 'Haneda'],
+      depart: '11:50', arrive: '15:25', nextDay: '+1',
+      meta: ['NH 7', 'Economy, checked in'],
+      duration: '10h 35m, nonstop, Thu, Nov 19',
+      grid: [['Gate', 'G94'], ['Seat', '32A'], ['Boards', '11:10'], ['Bags', '2×23kg']],
+    },
+    route: {
+      stat: 'Tōkyō → Hakone → Kyōto → Ōsaka',
+      stops: [
+        ['Tōkyō', 'D1 – 2'], ['Hakone', 'D3 – 4'], ['Kyōto', 'D5 – 6'], ['Ōsaka', 'D7'],
+      ],
+      legs: [
+        ['Romancecar', 'Shinjuku → Hakone-Yumoto', 'green'],
+        ['Shinkansen', 'Tōkyō → Shin-Ōsaka', 'blue'],
+      ],
+    },
+    stays: {
+      stat: '6 nights, 4 hotels',
+      rows: [
+        ['Nov 20 – 22', 'Hakone onsen ryokan', '2 nts', '$560'],
+        ['Nov 22 – 23', 'Kyōto machiya stay', '1 nt', '$320'],
+        ['Nov 23 – 25', 'Ōsaka bay hotel', '2 nts', '$360'],
+        ['Nov 25 – 26', 'Tōkyō Ginza hotel', '1 nt', '$180'],
+      ],
+      tip: 'Check-in tip: the ryokan opens check-in at 3 PM. Kaiseki dinner is included, so arrive by 6 PM.',
+    },
+    dining: {
+      stat: '4 booked, 1 waitlist',
+      rows: [
+        ['Fri 11/20', '19:30', 'Sushi Ginza', '12-piece omakase', 'Booked, 2', 'booked'],
+        ['Sun 11/22', '18:00', 'Ryokan dinner', 'In-room kaiseki', 'With stay', 'stay'],
+        ['Mon 11/23', '12:00', 'Kyōto kaiseki', 'By the bamboo grove', 'Booked, 2', 'booked'],
+        ['Tue 11/24', '19:00', 'Ōsaka counter', '8-seat counter', 'Waitlist #2', 'wait'],
+        ['Wed 11/25', '09:00', 'Tsukiji walk', 'Outer market breakfast', 'Booked, 2', 'booked'],
+      ],
+    },
+    budget: {
+      stat: '$3,300 / $3,800',
+      total: '$3,300', of: 'of $3,800, 13% left',
+      rows: [
+        ['Transport', '$1,180', '$1,200', 'blue'],
+        ['Lodging', '$1,320', '$1,600', 'green'],
+        ['Food', '$560', '$800', 'yellow'],
+        ['Fun', '$240', '$200', 'red'],
+      ],
+      days: [
+        ['20', 'Fri'], ['21', 'Sat'], ['22', 'Sun'], ['23', 'Mon'],
+        ['24', 'Tue'], ['25', 'Wed'], ['26', 'Thu'],
+      ],
+      today: '0',
+    },
+    autoplay: 'Autoplay', replay: 'Replay', light: 'Light', dark: 'Dark', theme: 'Theme',
+    hint: 'Scroll or drag on the stack, click a card, or use ↑ ↓ on it.',
+    demo: 'Sample itinerary. The dates, places and prices are made up.',
+    announce: key => `Showing ${key}.`,
+    autoplayOn: 'Autoplay on. Walking the itinerary.', autoplayOff: 'Autoplay off.',
+    themeDark: 'Dark theme.', themeLight: 'Light theme.',
+    tricks: 'Key CSS & implementation tricks', source: 'View the source', inspired: 'Inspired by',
+    notes: [
+      ['A cyclic deck laid out by one transform', 'The six cards are not a scroll container; each one computes a signed cyclic distance from the focused card in (-3, 3]. That distance maps to a translateY: distance 0 centers the card at its expanded height, ±1 peeks one collapsed card-height in, and larger offsets slide fully off the panel. Because the distance is modular, the last card can peek below the first without duplicating any markup.'],
+      ['Neighbours chase the growing card', 'A card expands with a height transition from 62px to its content height, while every other card transitions its translateY computed from the focused card’s target height. Sharing one timing curve between height and transform keeps the gaps honest: the card below is pushed down exactly as much as the active card grows, and the peek above sits flush once it lands.'],
+      ['Dragging just offsets the whole column', 'During a pointer drag a live offset is added to every card’s translate, so the stack tracks the finger. On release the offset decides whether to step to a neighbour or settle back, and the remaining distance is animated to zero — the same code path as a button press, so a flick can never leave the deck between two cards.'],
+      ['A photo that still works as a header', 'The cover card is a full-bleed SVG scene. Its title row is positioned in the top 62px, so when the card collapses it degrades into the same header-only silhouette as the other cards — a coloured strip with the trip name — instead of a meaningless slice of sky.'],
+      ['Contents assemble on focus', 'A card’s interior is not a static picture: under .card.on, rows, cells and chips rise in with short staggered transitions, the route line draws itself via a pathLength-normalised stroke-dashoffset, and the budget bars grow from height 0 — the same set of transitions replays every time the card regains focus.'],
+    ],
+  },
+  zh: {
+    back: '← UI 实验室', edition: '13 / 旅行行程', title: '旅行行程',
+    intro: '一次旅行计划被做成一叠卡片。滚动、拖拽或用方向键，可以从航班一路翻到封面的照片。',
+    stage: '旅行行程实验',
+    appLabel: '日本十一月旅行的行程卡片',
+    lang: '中',
+    categories: {
+      flight: '航班', route: '路线', stays: '住宿', dining: '餐饮', budget: '预算', trip: '行程',
+    },
+    trip: { title: '日本之秋', date: '11 月 20 日', alt: '富士山与红日的插图' },
+    flight: {
+      stat: 'SFO → HND, 11:50',
+      from: ['SFO', '旧金山'], to: ['HND', '羽田'],
+      depart: '11:50', arrive: '15:25', nextDay: '+1',
+      meta: ['NH 7', '经济舱,已值机'],
+      duration: '10 小时 35 分,直飞,11 月 19 日周四',
+      grid: [['登机口', 'G94'], ['座位', '32A'], ['登机', '11:10'], ['行李', '2×23kg']],
+    },
+    route: {
+      stat: '东京 → 箱根 → 京都 → 大阪',
+      stops: [
+        ['东京', '第 1 – 2 天'], ['箱根', '第 3 – 4 天'], ['京都', '第 5 – 6 天'], ['大阪', '第 7 天'],
+      ],
+      legs: [
+        ['浪漫特快', '新宿 → 箱根汤本', 'green'],
+        ['新干线', '东京 → 新大阪', 'blue'],
+      ],
+    },
+    stays: {
+      stat: '6 晚,4 家酒店',
+      rows: [
+        ['11/20 – 22', '箱根温泉旅馆', '2 晚', '$560'],
+        ['11/22 – 23', '京都町屋民宿', '1 晚', '$320'],
+        ['11/23 – 25', '大阪湾酒店', '2 晚', '$360'],
+        ['11/25 – 26', '东京银座酒店', '1 晚', '$180'],
+      ],
+      tip: '入住提示:温泉旅馆下午 3 点开始办理入住,怀石晚餐已包含,请 6 点前到达。',
+    },
+    dining: {
+      stat: '已订 4,候补 1',
+      rows: [
+        ['周五 11/20', '19:30', '银座寿司', '12 贯主厨发办', '已订 2 位', 'booked'],
+        ['周日 11/22', '18:00', '旅馆晚餐', '客房怀石', '随住宿', 'stay'],
+        ['周一 11/23', '12:00', '京都怀石', '竹林旁', '已订 2 位', 'booked'],
+        ['周二 11/24', '19:00', '大阪吧台', '8 席吧台', '候补 #2', 'wait'],
+        ['周三 11/25', '09:00', '筑地早餐', '场外市场散步', '已订 2 位', 'booked'],
+      ],
+    },
+    budget: {
+      stat: '$3,300 / $3,800',
+      total: '$3,300', of: '预算 $3,800,余 13%',
+      rows: [
+        ['交通', '$1,180', '$1,200', 'blue'],
+        ['住宿', '$1,320', '$1,600', 'green'],
+        ['餐饮', '$560', '$800', 'yellow'],
+        ['玩乐', '$240', '$200', 'red'],
+      ],
+      days: [
+        ['20', '五'], ['21', '六'], ['22', '日'], ['23', '一'],
+        ['24', '二'], ['25', '三'], ['26', '四'],
+      ],
+      today: '0',
+    },
+    autoplay: '自动播放', replay: '重播', light: '浅色', dark: '深色', theme: '主题',
+    hint: '在卡堆上滚动或拖拽,点一张卡片,或在卡片上按 ↑ ↓。',
+    demo: '示例行程,日期、地点和金额均为虚构。',
+    announce: key => `正在显示${key}。`,
+    autoplayOn: '自动播放已开启,正在播放行程。', autoplayOff: '自动播放已关闭。',
+    themeDark: '深色主题。', themeLight: '浅色主题。',
+    tricks: '关键 CSS 与实现诀窍', source: '查看源码', inspired: '灵感来自',
+    notes: [
+      ['一次 transform 摆出的环形卡堆', '六张卡片并不是滚动容器,每张卡根据它与焦点卡的有符号环形距离 (-3, 3] 计算 translateY:距离 0 居中并展开,±1 露出一条 62px 的表头,更大的距离滑出面板。因为距离取模,最后一张卡可以直接出现在第一张卡下方,不需要复制任何元素。'],
+      ['相邻卡片追着长高的卡走', '卡片用 height 过渡从 62px 长到内容高度,同时其他卡片的 translateY 都按焦点卡的目标高度计算并同时过渡。height 与 transform 共用同一条时间曲线,缝隙始终精确:下方的卡被顶开的距离,正好等于活动卡长高的距离,上方的探头等齐落位。'],
+      ['拖拽只是给整列加偏移', '指针拖动时把实时偏移加到每张卡的 translate 上,卡堆随手走;松手时用偏移量和速度决定是切到相邻卡片还是回原位,剩余距离由同一条动画补到零。和按键走同一套代码,所以怎么甩都不会停在两张卡中间。'],
+      ['一张也能当表头用的照片', '封面卡是一整张内嵌 SVG 场景。它的标题行固定在最上方 62px 里,所以收起时它会像其他卡一样退化成一条“只有表头”的剪影——一条带行程名的彩色横幅,而不是一段没有信息的天空。'],
+      ['内容在聚焦时组装', '卡片内部不是一张静态图:在 .card.on 下,行、格子和标签以短错峰过渡依次浮起,路线用 pathLength 归一化的 stroke-dashoffset 把自己画出来,预算柱从 0 长高——同一套过渡在卡片每次重新聚焦时重放。'],
+    ],
+  },
+};

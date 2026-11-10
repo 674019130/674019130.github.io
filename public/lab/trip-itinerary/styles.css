@@ -1,0 +1,227 @@
+/* Everything inside the experiment lives under #stage, so lab.css's global button styles never leak in. */
+:root { --fg: #1c2024; --fg-2: #43484f; --mut: #6f7a86; --faint: #a0a8b1; --line: #e3e6ea; --app-bg: #e9edf1; --pop: #fff;
+  --shadow: 0 1px 2px #14161e08, 0 8px 24px #14161e0d; --shadow-pop: 0 2px 6px #14161e0f, 0 16px 40px #14161e1a;
+  --blue: #3d7bd9; --blue-ink: #2c5fb8; --blue-wash: #e8f0fc;
+  --green: #30a46c; --green-ink: #1e7f4e; --green-wash: #e6f5ec;
+  --amber: #d9900f; --amber-ink: #9a5b13; --amber-wash: #fbf0d8;
+  --red: #d3404f; --red-ink: #b03040; --red-wash: #fbe9ea;
+  --map-line: #5b8dd9; --route-line: #d0555f; --map-dot: #b8c6d4; --soft-blue: #a9c6ef;
+  --ease: cubic-bezier(.2, .9, .26, 1);
+  --mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace; }
+:root[data-theme="dark"] { --fg: #eceeee; --fg-2: #c5c9c5; --mut: #a0a6a2; --faint: #6a6f6a; --line: #303430; --app-bg: #191c1a; --pop: #222624;
+  --shadow: 0 1px 2px #0000004d, 0 8px 24px #00000040; --shadow-pop: 0 2px 6px #00000059, 0 16px 40px #00000073;
+  --blue: #6b9de8; --blue-ink: #93b9f2; --blue-wash: #1d2a3d;
+  --green: #4cb584; --green-ink: #7fd6ae; --green-wash: #17301f;
+  --amber: #e8a82a; --amber-ink: #f0be5f; --amber-wash: #35270e;
+  --red: #e06a76; --red-ink: #ee8e97; --red-wash: #3a1d20;
+  --map-line: #6b9de8; --route-line: #e06a76; --map-dot: #46505a; --soft-blue: #33507a; }
+
+[hidden] { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+nav { align-items: center; } nav > span { margin-left: auto; }
+#language { border: 0; background: none; padding: 6px 8px; color: var(--muted); }
+
+#stage { margin: 34px auto 8px; font-size: 14px; color: var(--fg); }
+#stage button { border: 0; padding: 0; background: none; color: inherit; font: inherit; border-radius: 0; transition: none; transform: none; cursor: pointer; }
+#stage svg.i { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+
+/* The app panel: a fixed window the deck slides behind. */
+.app { position: relative; width: min(430px, 100%); height: 640px; margin: 0 auto; background: var(--app-bg); border-radius: 28px; overflow: hidden; touch-action: none; }
+.deck { position: absolute; inset: 0; transition: transform .5s var(--ease); }
+.deck.dragging { transition: none; }
+.deck.no-motion { transition: none; }
+.deck.no-motion .card, .deck.no-motion .card * { transition: none !important; animation: none !important; }
+
+.card { position: absolute; top: 0; left: 18px; right: 18px; height: 62px; overflow: hidden; text-align: left;
+  background: var(--pop); border: .5px solid var(--line); border-radius: 20px; box-shadow: var(--shadow);
+  transition: transform .54s var(--ease), height .54s var(--ease), left .54s var(--ease), right .54s var(--ease), opacity .5s var(--ease);
+  will-change: transform; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.card .inner { position: relative; height: 100%; }
+.card.on { left: 10px; right: 10px; cursor: default; }
+.card.far { opacity: 0; pointer-events: none; }
+.card:focus-visible { outline: 2px solid #7181a5; outline-offset: 3px; z-index: 1; }
+.card .body { position: absolute; inset: 62px 0 0; opacity: 0; filter: blur(4px); transition: opacity .3s .08s, filter .45s .08s; }
+.card.on .body { opacity: 1; filter: blur(0); }
+
+.card-h { display: flex; align-items: center; gap: 10px; height: 62px; padding: 0 18px; }
+.card-h .ci { width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; background: var(--app-bg); color: var(--mut); flex: none; }
+.card-h .nm { font-size: 15px; font-weight: 560; letter-spacing: -.01em; }
+.card-h .st { margin-left: auto; font-size: 13px; color: var(--mut); white-space: nowrap; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+
+/* Pills: status tags, category chips and transport legends share one shape. */
+.pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; border-radius: 999px; padding: 3px 10px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pill-dot::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--c); flex: none; }
+.pill-line { border: .5px solid var(--line); color: var(--fg-2); }
+.pill-wash { background: var(--w, var(--panel)); color: var(--fg-2); }
+.pill.booked { background: var(--green-wash); color: var(--green-ink); }
+.pill.stay { background: var(--blue-wash); color: var(--blue-ink); }
+.pill.wait { background: var(--amber-wash); color: var(--amber-ink); }
+
+/* Flight */
+.fl-meta { display: flex; align-items: baseline; justify-content: space-between; padding: 2px 18px 0; }
+.fl-meta .no { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.fl-meta .cl { font-size: 13px; color: var(--mut); }
+.fl-route { display: grid; grid-template-columns: 1fr 96px 1fr; align-items: center; padding: 14px 18px 4px; }
+.fl-city .cd { font-size: 22px; font-weight: 600; letter-spacing: -.01em; }
+.fl-city .nm { font-size: 12px; color: var(--mut); margin-top: 1px; }
+.fl-city .tm { font-size: 13px; color: var(--fg-2); font-variant-numeric: tabular-nums; margin-top: 3px; }
+.fl-city .tm sup { color: var(--mut); font-size: 9px; }
+.fl-city.right { text-align: right; }
+.fl-arc { position: relative; height: 40px; }
+.fl-arc svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.fl-dur { text-align: center; font-size: 12px; color: var(--mut); padding: 4px 18px 0; font-variant-numeric: tabular-nums; }
+.fl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 16px 18px 0; }
+.fl-grid .cell { border-top: .5px solid var(--line); padding-top: 8px; min-width: 0; }
+.fl-grid .lb { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--mut); }
+.fl-grid .vl { font-size: 15px; font-weight: 550; font-variant-numeric: tabular-nums; margin-top: 2px; white-space: nowrap; }
+
+/* Route map */
+.rt-map { position: absolute; inset: 0; margin: 62px 14px 44px; }
+.rt-map svg { width: 100%; height: 100%; }
+.rt-legs { position: absolute; left: 18px; right: 18px; bottom: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+.rt-legs .pill b { font-weight: 600; }
+
+/* Stays */
+.st-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 4px 18px 0; }
+.st-cell { border: .5px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.st-cell::before { content: ""; display: block; width: 22px; height: 3px; border-radius: 2px; background: var(--c, var(--line)); margin-bottom: 7px; }
+.st-cell .dt { font-size: 11px; letter-spacing: .04em; color: var(--mut); font-variant-numeric: tabular-nums; }
+.st-cell .nm { font-size: 13.5px; font-weight: 550; margin-top: 4px; }
+.st-cell .ft { display: flex; justify-content: space-between; font-size: 12px; color: var(--mut); margin-top: 6px; font-variant-numeric: tabular-nums; }
+.st-tip { display: flex; gap: 8px; margin: 12px 18px 0; padding: 9px 12px; background: var(--app-bg); border-radius: 10px; font-size: 12px; color: var(--fg-2); line-height: 1.55; }
+.st-tip svg { width: 14px; height: 14px; flex: none; margin-top: 1px; color: var(--mut); }
+
+/* Dining */
+.dn-rows { padding: 2px 0 14px; }
+.dn-row { display: grid; grid-template-columns: 78px minmax(0, 1fr) auto; align-items: center; column-gap: 12px; padding: 11px 18px; }
+.dn-row + .dn-row { border-top: .5px solid var(--line); }
+.dn-row .dy { font-size: 12px; color: var(--fg-2); }
+.dn-row .tm { font-size: 13px; font-weight: 550; font-variant-numeric: tabular-nums; }
+.dn-row .nm { font-size: 13.5px; font-weight: 550; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dn-row .ds { font-size: 12px; color: var(--mut); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Budget */
+.bg-top { display: flex; align-items: baseline; justify-content: space-between; padding: 2px 18px 0; }
+.bg-top .big { font-size: 22px; font-weight: 600; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.bg-top .of { font-size: 12px; color: var(--mut); }
+.bg-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 18px 0; }
+.bg-chips .pill { border: .5px solid transparent; }
+.bg-chart { margin: 14px 18px 0; }
+.bg-bars { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; align-items: end; height: 108px; position: relative; border-bottom: .5px solid var(--line); padding-left: 32px; }
+.bg-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; padding: 7px 0 0 32px; }
+.bg-bars .tick { position: absolute; left: 0; right: 0; border-top: .5px dashed var(--line); font-size: 10px; color: var(--faint); }
+.bg-bars .tick span { position: absolute; top: -7px; left: 0; }
+.bg-bars .bar { border-radius: 4px 4px 0 0; background: var(--c, var(--map-dot)); height: calc(var(--h) * 1%); transition: height .5s var(--ease); }
+.bg-days .d { text-align: center; font-size: 12px; font-variant-numeric: tabular-nums; }
+.bg-days .d small { display: block; font-size: 10px; color: var(--mut); margin-top: 1px; }
+.bg-days .d.today { font-weight: 650; }
+.bg-days .d.today small { color: var(--fg); }
+
+/* Trip photo card */
+.card-trip { border: 0; color: #fff; }
+.card-trip .inner { background: linear-gradient(180deg, #2f7fd8 0%, #4a96e2 44%, #77b3ec 74%, #a4cdf5 100%); }
+.card-trip .scene { position: absolute; inset: 0; width: 100%; height: 100%; }
+.card-trip .cap { position: absolute; left: 18px; right: 18px; top: 0; height: 62px; display: flex; align-items: center; justify-content: space-between;
+  transition: transform .54s var(--ease); }
+/* Expanded, the caption slides from the header band down to the photo's bottom edge. */
+.card-trip.on .cap { transform: translateY(264px); }
+.card-trip .cap .t { font-size: 15px; font-weight: 560; letter-spacing: -.01em; text-shadow: 0 1px 8px #0b1e3a66; }
+.card-trip .cap .d { font-size: 13px; opacity: .85; text-shadow: 0 1px 8px #0b1e3a66; }
+
+/* page controls */
+.controls { justify-content: center; }
+.segmented { display: inline-flex; flex-wrap: wrap; padding: 2px; border: 1px solid var(--line); border-radius: 7px; }
+.segmented button { border: 0; padding: 7px 11px; border-radius: 5px; color: var(--muted); background: transparent; }
+.segmented button[aria-pressed="true"] { background: var(--panel); color: var(--ink); }
+.status, .hint, .demo-note { text-align: center; }
+.hint, .demo-note { font-size: 12px; color: var(--muted); line-height: 1.7; max-width: 480px; margin: 6px auto; }
+.tricks { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 26px; }
+.tricks h2 { font-size: 17px; font-weight: 500; margin: 0 0 26px; }
+.tricks h3 { font-size: 14px; font-weight: 550; margin: 0 0 8px; }
+.tricks p { color: var(--muted); font-size: 13px; line-height: 1.85; }
+.tricks article { margin: 0 0 28px; }
+.tricks pre { overflow-x: auto; padding: 14px; background: var(--panel); border-radius: 8px; font-size: 12px; line-height: 1.65; }
+.tricks pre:focus-visible { outline: 2px solid #7181a5; outline-offset: 2px; }
+.source-links { display: flex; gap: 18px; font-size: 12px; color: var(--muted); }
+.source-links a, main > footer a { text-decoration: underline; text-underline-offset: 3px; }
+main > footer { font-size: 11px; color: var(--muted); margin-top: 30px; }
+
+/* The 600×400 hover preview shows the whole panel scaled down. */
+:root[data-preview] #stage { position: relative; margin: 0; width: 600px; height: 400px; }
+:root[data-preview] .app { position: absolute; left: 50%; top: 50%; width: 430px; height: 640px; margin: 0; transform: translate(-50%, -50%) scale(.6); }
+:root[data-preview] .tricks, :root[data-preview] .hint, :root[data-preview] .demo-note, :root[data-preview] footer { display: none; }
+
+/* ---- internal motion: a focused card assembles its own content ---- */
+/* Flight */
+.fl-meta, .fl-route > *, .fl-dur, .fl-grid .cell { opacity: 0; transform: translateY(8px);
+  transition: opacity .26s ease-out, transform .26s ease-out; }
+.card.on .fl-meta, .card.on .fl-route > *, .card.on .fl-dur, .card.on .fl-grid .cell { opacity: 1; transform: none; }
+.card.on .fl-meta { transition-delay: 70ms; }
+.card.on .fl-route > :nth-child(1) { transition-delay: 110ms; }
+.card.on .fl-route > :nth-child(2) { transition-delay: 160ms; }
+.card.on .fl-route > :nth-child(3) { transition-delay: 210ms; }
+.card.on .fl-dur { transition-delay: 250ms; }
+.card.on .fl-grid .cell:nth-child(1) { transition-delay: 290ms; }
+.card.on .fl-grid .cell:nth-child(2) { transition-delay: 330ms; }
+.card.on .fl-grid .cell:nth-child(3) { transition-delay: 370ms; }
+.card.on .fl-grid .cell:nth-child(4) { transition-delay: 410ms; }
+/* The arc is revealed by a white mask stroke; the plane rides the same curve. */
+.fl-wipe { stroke-dasharray: 100; stroke-dashoffset: 100; transition: stroke-dashoffset .95s var(--ease) .16s; }
+.card.on .fl-wipe { stroke-dashoffset: 0; }
+.fl-plane { position: absolute; left: 0; top: 0; width: 12px; height: 12px; fill: var(--map-line);
+  offset-path: path('M4 36C30 6 66 6 92 30'); offset-distance: 0%; offset-rotate: auto 90deg;
+  transition: offset-distance .95s cubic-bezier(.3, .7, .3, 1) .16s; }
+.card.on .fl-plane { offset-distance: 100%; }
+
+/* Route: the line draws itself, then stops pop in along it. */
+.rt-map .rt-path { stroke-dasharray: 100; stroke-dashoffset: 100; transition: stroke-dashoffset .9s var(--ease) .12s; }
+.card.on .rt-map .rt-path { stroke-dashoffset: 0; }
+.rt-map text { paint-order: stroke; stroke: var(--pop); stroke-width: 4px; stroke-linejoin: round; }
+.rt-map circle, .rt-map text { opacity: 0; transform: translateY(6px); transition: opacity .3s ease-out, transform .3s ease-out; }
+.card.on .rt-map circle, .card.on .rt-map text { opacity: 1; transform: none; }
+.rt-legs { opacity: 0; transform: translateY(6px); transition: opacity .3s ease-out .62s, transform .3s ease-out .62s; }
+.card.on .rt-legs { opacity: 1; transform: none; }
+
+/* Stays */
+.st-cell { opacity: 0; transform: translateY(8px); transition: opacity .26s ease-out, transform .26s ease-out; }
+.card.on .st-cell { opacity: 1; transform: none; }
+.card.on .st-cell:nth-child(1) { transition-delay: 80ms; }
+.card.on .st-cell:nth-child(2) { transition-delay: 140ms; }
+.card.on .st-cell:nth-child(3) { transition-delay: 200ms; }
+.card.on .st-cell:nth-child(4) { transition-delay: 260ms; }
+.st-tip { opacity: 0; transform: translateY(6px); transition: opacity .28s ease-out, transform .28s ease-out; }
+.card.on .st-tip { opacity: 1; transform: none; transition-delay: 340ms; }
+
+/* Dining */
+.dn-row { opacity: 0; transform: translateX(12px); transition: opacity .28s ease-out, transform .28s ease-out; }
+.card.on .dn-row { opacity: 1; transform: none; }
+.card.on .dn-row:nth-child(1) { transition-delay: 80ms; }
+.card.on .dn-row:nth-child(2) { transition-delay: 150ms; }
+.card.on .dn-row:nth-child(3) { transition-delay: 220ms; }
+.card.on .dn-row:nth-child(4) { transition-delay: 290ms; }
+.card.on .dn-row:nth-child(5) { transition-delay: 360ms; }
+
+/* Budget: total, chips, then bars grow with stagger. */
+.bg-top { opacity: 0; transform: translateY(6px); transition: opacity .26s ease-out, transform .26s ease-out; }
+.card.on .bg-top { opacity: 1; transform: none; transition-delay: 60ms; }
+.bg-chips .pill { opacity: 0; transform: translateY(6px); transition: opacity .24s ease-out, transform .24s ease-out; }
+.card.on .bg-chips .pill { opacity: 1; transform: none; }
+.card.on .bg-chips .pill:nth-child(1) { transition-delay: 110ms; }
+.card.on .bg-chips .pill:nth-child(2) { transition-delay: 150ms; }
+.card.on .bg-chips .pill:nth-child(3) { transition-delay: 190ms; }
+.card.on .bg-chips .pill:nth-child(4) { transition-delay: 230ms; }
+.bg-bars .bar { height: 0; }
+.card.on .bg-bars .bar { height: calc(var(--h) * 1%); }
+.bg-days .d { opacity: 0; transition: opacity .25s ease-out; }
+.card.on .bg-days .d { opacity: 1; transition-delay: 420ms; }
+
+/* Trip: the photo settles out of a slow zoom while the caption slides down. */
+.card-trip .scene { transform: scale(1.08); transition: transform 6s cubic-bezier(.16, .8, .24, 1); }
+.card-trip.on .scene { transform: scale(1); }
+@keyframes drift { 50% { transform: translateX(12px); } }
+.card-trip.on .scene ellipse:nth-of-type(1) { animation: drift 9s ease-in-out infinite; }
+.card-trip.on .scene ellipse:nth-of-type(2) { animation: drift 11s ease-in-out -3s infinite; }
+
+@media (max-width: 480px) {
+  .app { height: 600px; }
+}
