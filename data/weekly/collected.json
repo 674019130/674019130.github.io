@@ -100715,41 +100715,341 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 17 # Comments: 1",
       "discussion_url": "https://news.ycombinator.com/item?id=50503930"
+    },
+    {
+      "id": "0d9123cdc2b932f9b37e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: ShadowDiff – Shadow testing and SQL diffing for AI-migrated back ends",
+      "url": "https://github.com/vishalrajofficial/ShadowDiff",
+      "published_at": "2026-11-15T06:54:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/vishalrajofficial/ShadowDiff Comments URL: https://news.ycombinator.com/item?id=50504643 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50504643"
+    },
+    {
+      "id": "ecc329a62426f72c9623",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Cshoal – A school of fish, hunted by predators, in your terminal",
+      "url": "https://github.com/mcthomas/cshoal",
+      "published_at": "2026-11-15T07:28:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "The movement, behavior, and interactions of the fish and predators come from published studies, cited in the readme. The idea and direction are mine, but Claude wrote the code. I just wanted it to exist. Comments URL: https://news.ycombinator.com/item?id=50504822 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50504822"
+    },
+    {
+      "id": "5c50333037358d07b7a4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Saylark – Open-source voice dictation for Mac, like Wispr Flow",
+      "url": "https://github.com/btahir/saylark",
+      "published_at": "2026-11-15T07:50:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Nothing original here, but like a lot of you, I mostly just talk to Claude Code and Codex these days. Wispr Flow is great, but it’s $15 a month, so I decided to try to build a free, open-source version that runs locally. Comments URL: https://news.ycombinator.com/item?id=50504932 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50504932"
+    },
+    {
+      "id": "5c2fd6fd63d4b80c84fc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Vantage-V-AI – 2-bit ternary KV-cache with attention sinks",
+      "url": "https://github.com/khoadev-vn/VANTAGE-V-AI",
+      "published_at": "2026-11-15T09:50:15+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/khoadev-vn/VANTAGE-V-AI Comments URL: https://news.ycombinator.com/item?id=50505516 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50505516"
+    },
+    {
+      "id": "64706746b50123790602",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN : Multilingual Minimal Local (MCP only) alternative to Granola",
+      "url": "https://github.com/IndianTinker/quills",
+      "published_at": "2026-11-15T11:23:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/IndianTinker/quills Comments URL: https://news.ycombinator.com/item?id=50506080 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50506080"
+    },
+    {
+      "id": "34390e31ec69d128d68a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Nano-Edge-TTS – 70x realtime, Lightweight Kokoro-based TTS model",
+      "url": "https://huggingface.co/drmhse/nano-edge-tts",
+      "published_at": "2026-11-15T11:53:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/drmhse/nano-edge-tts Comments URL: https://news.ycombinator.com/item?id=50506255 Points: 10 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50506255"
+    },
+    {
+      "id": "532d50e159b4d0ffced7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Aurora GeoXAI – Sovereign geospatial AI built out of frustration",
+      "url": "https://news.ycombinator.com/item?id=50506331",
+      "published_at": "2026-11-15T12:07:30+00:00",
+      "date_kind": "community_post",
+      "evidence": "Comments URL: https://news.ycombinator.com/item?id=50506331 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50506331"
+    },
+    {
+      "id": "98a4baa29bbf0de3e56d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Aurora GeoXAI – Sovereign geospatial AI built out of frustration",
+      "url": "https://github.com/felipetjmg1-bit/aurora-geointelligence-xai",
+      "published_at": "2026-11-15T12:07:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/felipetjmg1-bit/aurora-geointelligence-xai Comments URL: https://news.ycombinator.com/item?id=50506332 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50506332"
+    },
+    {
+      "id": "ebb4ff5489bf239cc4f1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: K8 Cruft – a Windows dev-junk cleaner with a 30-day undo",
+      "url": "https://lilbuba.ai/k8-cruft.html",
+      "published_at": "2026-11-15T13:21:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://lilbuba.ai/k8-cruft.html Comments URL: https://news.ycombinator.com/item?id=50506746 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50506746"
+    },
+    {
+      "id": "aba355fd4ec2a7be7192",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
+      "url": "https://github.com/db-branch/db-branch",
+      "published_at": "2026-11-15T13:50:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/db-branch/db-branch Comments URL: https://news.ycombinator.com/item?id=50506940 Points: 8 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50506940"
+    },
+    {
+      "id": "cd14eb50a4270a7c695a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Althar – an open-source IDE where agents review each other's work",
+      "url": "https://github.com/AltharIDE/althar",
+      "published_at": "2026-11-15T14:44:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I'm Balázs, and I wanted to share my passion project that I've been building in my free time. It is free, it is open-source, and I've poured a lot of love into making it delightful. I've spent a lot of time dabbling with agentic ADEs and IDEs since the days of the early VSCode forks. I've switched IDEs more times than I can count. Cursor. Copilot. Codex. PearAI. Orca. Claude Code. OpenCode. Superset. Agent Orchestrator. Windsurf, and then Devin. OpenChamber. Kilo. IntelliJ and VSCode plugins. This September, I felt sort of stranded. I kept switching tools, losing all my chats, losing time, and frankly, losing love for the very thing that has been getting me out of bed every morning for the past decade. Programming. Building. Tinkering. I've spent more time fighting my tools, being forced back into terminals, being rug-pulled by labs, or being forced into the cloud, when really, I just want to work on my machine. It was then that I started to jot down my frustrations in a blog post. Not that anyone would read it, especially these days, but my frustrations, I felt, needed an outlet. As I was writing the post, I sort of realised: for the longest time, I'd been observing and obsessing over products like Linear. Raycast. Arc. Their level of detail. Their thoughtful approach to UX. Their grassroots, scratch-a-boring-itch story. So I decided to scratch my itch, and build an IDE that would stay out of your way. It's called Althar. Delightful to use, calm, and open, rethinking the old paradigms that are holding most of the industry captive. There's no sidebar. There's no built-in text editor. There are no chats (in a traditional sense). Agents forgetting my project between tasks always annoyed me. So did my overarching goals and milestones getting lost between chats, and agents having no way to coordinate work with one another. In most tools I've tried, they work in silos. So, in Althar, you organise your work in projects. A project can be a single repository, or many. On top of it sits your project manager, called the coordinator. You talk to her like you would talk to any PM on a project. You could say something like, \"Help me make my website responsive and accessible. Also, help me measure the performance with Lighthouse.\" She will then split the work into three separate tasks, brief individual task agents called leads, assign each task a reviewer agent (we love a second opinion, but it's optional), and send them on their way. Finished work comes back to you with screenshots, test evidence, and the reviewer's findings settled. You see everything that's happening on a kanban-like board (though it is NOT kanban), and you're only pulled in when you're actually needed. No need to anxiously watch over terminals and in-flight agent thinking trails. You can use all of your existing subscriptions. Claude. Codex. OpenCode and so on. It connects to your issue trackers and git hosts, wherever they may be. Work happens locally. Next week, I hope to add support for remote runners, and I'm also working on a mobile companion. I hope you'll enjoy it. There is so much to say, so many little details. But it's also early days, so please, if you do find issues, let me know :) Or open a pull request. The open source community has given me so much over the years. It is the best thing about software engineering, and something unique to our profession. I'm excited that I get to give back. Comments URL: https://news.ycombinator.com/item?id=50507285 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50507285"
+    },
+    {
+      "id": "f6cdf81b92acac188b77",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A local-first AI agent for the desktop, no Electron, any LLM endpoint",
+      "url": "https://github.com/Scronkfinkle/byob",
+      "published_at": "2026-11-15T14:52:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey folks. Most all the apps I see for agent harnesses are typescript based, and involve either electron or some form of IPC to function as a desktop app. In the age of LLM's, I thought it would be cool to build out a prototype of what a modern desktop application would like for this, without using any web code, since I can have agents pretty aggressively work on the cross-platform compatibility on my behalf. After about a week, I ended up with a harness that feels pretty good! Feel free to try it from the releases or you can install directly via: ``` cargo install byob ```` Comments URL: https://news.ycombinator.com/item?id=50507341 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50507341"
+    },
+    {
+      "id": "ff9d230256883fdeb32e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Selfhost pi agents API with Linux desktop sandbox",
+      "url": "https://github.com/taherchhabra/pi-managed-agents-api",
+      "published_at": "2026-11-15T15:37:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I am building an open source alternative to openai agents api and claude managed agents api. It has linux desktop sandbox support using HCU QEMU/KVM you can self host on a vps. looking for feedback Comments URL: https://news.ycombinator.com/item?id=50507721 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50507721"
+    },
+    {
+      "id": "07a103128e58afd3904e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Folate – Local DOM selector model that beats 7B VLMs at 1/60th the size",
+      "url": "https://github.com/figranium/folate",
+      "published_at": "2026-11-15T15:55:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/figranium/folate Comments URL: https://news.ycombinator.com/item?id=50507874 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50507874"
+    },
+    {
+      "id": "e62d3d652d0df9342673",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: FlAIent – Learn interactive AI coding with real agents",
+      "url": "https://flaient.com",
+      "published_at": "2026-11-15T15:56:25+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://flaient.com/ Comments URL: https://news.ycombinator.com/item?id=50507883 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50507883"
+    },
+    {
+      "id": "1e3985181cc621e5b574",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Simple tool for FDEs to avoid missing HITL steps in claude code",
+      "url": "https://github.com/robertodf99/hook-me-up",
+      "published_at": "2026-11-15T16:01:49+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/robertodf99/hook-me-up Comments URL: https://news.ycombinator.com/item?id=50507946 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50507946"
+    },
+    {
+      "id": "ce6272f795452f0ed222",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Pizza – An event-driven AI agent, no while true",
+      "url": "https://pizza.hertzbeat.com",
+      "published_at": "2026-11-15T16:04:32+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I made Pizza, an open-source, event-driven AI agent. No `while true`. Each turn is a state machine. Conversations and tool calls go into an immutable SQLite log. The UI, model context, and session tree are built from that log. The model gets one tool: a CLI. Reading files, editing code, and running commands all go through it. You can keep a conversation going without manually starting new sessions. Pizza compacts context as needed, and you can branch from any earlier message. Agents in separate workspaces talk through `tell`, each doing the work in its own project. An SSH host can be a workspace too: Pizza deploys itself there and runs remotely. Desktop and terminal interfaces are included. Bring your own model. https://github.com/pizza-agent/pizza Comments URL: https://news.ycombinator.com/item?id=50507971 Points: 3 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50507971"
+    },
+    {
+      "id": "6d49e0a10b2764ee5a5b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: profiler-md converts performance profiles to Markdown",
+      "url": "https://github.com/TomerAberbach/profiler-md",
+      "published_at": "2026-11-15T16:04:51+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN! profiler-md is a CLI and JS library that converts performance profiles to Markdown across 17 formats (e.g. pprof), 29 profilers (e.g. py-spy), 22 languages (e.g. Rust), and 4 profile types (call stack profiles, call graphs, heap snapshots, and traces). Earlier this year I tried using AI agents for performance optimization. They weren't very effective because they frequently: - Speculated about why something was slow from just reading the code - Made changes, measured the wall time before vs after, and struggled to distinguish real improvements from noise - Analyzed raw profiles using one-off scripts, which were often subtly incorrect The issue was that the agents couldn't read a flamegraph like I could. In a flamegraph, I could see what was slow, and when I made changes, I could see whether the targeted work was eliminated. The agents needed a feedback loop like that. So I wrote a small converter from Node CPU profiles to Markdown. The agents were much more effective when using it, and I realized I also liked reading the Markdown myself! I felt this had potential, and I use many different programming languages at work, so I decided to build profiler-md. I also wrote an agent skill [1], which I've successfully used to optimize profiler-md itself and its pprof-format dependency (a 78x speedup on a large pprof file [2] and a 3.3x speedup more broadly [3]). I got to solve some fun problems for this project: - Making it so that adding a new format, profiler, or profile type is as simple as implementing an interface and adding to a registry. I also have project skills for this! - Resolving weirdly differing profiler semantics (e.g. around what line numbers mean [4] [5] [6] [7]) by setting up the right interface boundaries. - Matching functions across profiles for the Markdown diff output. A profile doesn't contain the full code, so this required some heuristics. I evaluated the algorithm by measuring recall (99.9%) and precision (99.7%) on diffs from real version upgrades. - Designing a call tree renderer that maximizes metrics such as how many of the hottest functions it shows and how much of the profile's self value it covers [8]. I'd love to hear what you think. Try it out and let me know if you have any feedback or questions! Full disclosure: I work at Anthropic, but this personal project is unrelated to my employer. [1] https://github.com/TomerAberbach/profiler-md/#skill [2] https://github.com/DataDog/pprof-format/pull/77 [3] https://github.com/DataDog/pprof-format/pull/107 [4] https://github.com/rbspy/rbspy/issues/409 [5] https://github.com/oven-sh/bun/issues/29240 [6] https://github.com/google/pprof-nodejs/issues/361 [7] https://github.com/NixOS/nix/blob/16fa212a96192479593620e9b9... [8] https://github.com/TomerAberbach/profiler-md/blob/a1ee95e4b5... Comments URL: https://news.ycombinator.com/item?id=50507976 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50507976"
+    },
+    {
+      "id": "449988eb58b8ad100aa9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: New Model- NCM Model – Are Memory Hungry LLMs Dead",
+      "url": "https://codedynasty.dev/posts/ncm_model-are_memory-hungry_LLMs_dead",
+      "published_at": "2026-11-15T16:28:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "The biggest bottleneck of running top open models locally is memory bandwidth and sadly the ram costs are off the roof, if there's still a roof, sam altman wants your pc ram for his data centre btw. A fascinating new research paper out of Stanford University proposed an architecture called Next Concept Modeling (NCM), and if it holds up to the test, it could turn our current reliance on hyper-expensive memory chips into a bad investment, for what its worth, i don't think current AI investment are 100% secured against these kinds of innovations, but this is just my opinion. Comments URL: https://news.ycombinator.com/item?id=50508174 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50508174"
+    },
+    {
+      "id": "a977b12569756c24770e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Claudette - Mistral models in Claude Code",
+      "url": "https://github.com/raed667/claudette",
+      "published_at": "2026-11-15T16:38:41+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/raed667/claudette Comments URL: https://news.ycombinator.com/item?id=50508283 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50508283"
+    },
+    {
+      "id": "bd74dd56058ac2ae7294",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Skillroll – pure Markdown evals for any skill using a Dungeon Master",
+      "url": "https://github.com/hagaiw/skillroll",
+      "published_at": "2026-11-15T17:01:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Maintaining agentic skills alway felt like a chore due to how hard it was to test them. Writing evals is just too complex to do for every small skill, So I wrote Skillroll - an eval framework that can test any skill using only an eval.md How? instead of setting up an intricate eval environment, you write a short world description, run a Dungeon Master agent that simulates that world, and route all tool calls to that agent. each eval.md is a test case with a \"world description\", \"agent prompt and \"judgement criteria\" for an llm judge to consider when rating pass/fail. I think Skillroll is especially useful for things like fixing skills by writing a failing eval and iterating on the skill until it passes, you can then keep the eval to guard against future regressions and automatically run it in ci. You can also use it to write new evals using TDD-like approach. I found openai's Luna to be a very nice value-for-money option for running the dungeon master, with cost per eval of around $0.003, and support for pretty complex world scenarios. I hope it might help you reduce the friction in writing evals for your own skills Comments URL: https://news.ycombinator.com/item?id=50508503 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50508503"
+    },
+    {
+      "id": "8ed3d70f639938a17ffd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Canban – Kanban and Workflow and Herdr Workbench for CLI Agents",
+      "url": "https://github.com/jjyr/canban",
+      "published_at": "2026-11-15T17:06:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/jjyr/canban Comments URL: https://news.ycombinator.com/item?id=50508535 Points: 4 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50508535"
+    },
+    {
+      "id": "662de70ccfdfc2dca191",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Pocket Garden – a player interface to over 130 AI based web games",
+      "url": "https://triptych.github.io/web-games-andrew/console",
+      "published_at": "2026-11-15T17:48:21+00:00",
+      "date_kind": "community_post",
+      "evidence": "Play over 130 original web based games with a mobile friendly interface. New games arrive almost daily. Free and open source. Comments URL: https://news.ycombinator.com/item?id=50508977 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50508977"
+    },
+    {
+      "id": "d7ecc7b2d7d089f0ff33",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Attest – Test what AI agents do, not just what they say",
+      "url": "https://attest-framework.github.io",
+      "published_at": "2026-11-15T18:03:01+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://attest-framework.github.io/ Comments URL: https://news.ycombinator.com/item?id=50509107 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50509107"
+    },
+    {
+      "id": "a0f235c7de5ec6990e41",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: PongArena – Play Pong and see how tiny neural networks think",
+      "url": "https://jonaslindblom.github.io/pongarena",
+      "published_at": "2026-11-15T18:07:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "A playground and experiment exploring \"how small can a neural network be and still meaningfully play Pong?\" You can play against the models directly in your browser, also on mobile, no signup needed. Recommend hitting the fullscreen button for better gameplay. The discussion https://news.ycombinator.com/item?id=50341174 sparked my interest and I started experimenting a bit with generating neural network weights. I used Codex to program the weights, developing formulas that generate them and refining them using feedback from simulated matches. I also tried one-shot prompting Astra for the weights directly. The surprise, I think, is how hard it’s been in my training attempts to outperform the programmed model using the same 163-parameter architecture. The playground also has some explainers to help interpret the weights, starting from a one-hidden-neuron example with just 13 parameters... It’s all open source, and there is also a league where community weights can be submitted. It would be interesting to see how others would approach this. Can anyone train, prompt or program weights that outperform the initial ones? Code: https://github.com/jonaslindblom/pongarena Comments URL: https://news.ycombinator.com/item?id=50509161 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50509161"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-15T06:31:31.250301+00:00",
+      "last_success": "2026-11-15T18:51:08.054506+00:00",
       "count": 10,
       "earliest": "2026-11-10T19:26:51+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-15T06:31:31.506821+00:00",
+      "last_success": "2026-11-15T18:51:08.370504+00:00",
       "count": 20,
       "earliest": "2026-11-11T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-15T06:31:31.790314+00:00",
+      "last_success": "2026-11-15T18:51:08.570960+00:00",
       "count": 907,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-15T06:31:31.874785+00:00",
+      "last_success": "2026-11-15T18:51:08.696270+00:00",
       "count": 30,
       "earliest": "2026-11-03T05:32:25+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-15T06:31:51.756173+00:00",
-      "count": 99,
-      "earliest": "2026-11-14T04:34:03+00:00",
+      "last_success": "2026-11-15T18:51:09.672174+00:00",
+      "count": 100,
+      "earliest": "2026-11-14T18:43:21+00:00",
       "gap": false,
       "error": null
     },
@@ -100761,58 +101061,58 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-15T06:32:03.278497+00:00",
+      "last_success": "2026-11-15T18:51:22.300063+00:00",
       "count": 10,
       "earliest": "2026-10-27T20:24:20+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-15T06:32:03.809538+00:00",
+      "last_success": "2026-11-15T18:51:22.707236+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-15T06:32:04.253880+00:00",
+      "last_success": "2026-11-15T18:51:23.071664+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-15T06:32:04.604987+00:00",
+      "last_success": "2026-11-15T18:51:23.512838+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-15T06:32:05.117483+00:00",
+      "last_success": "2026-11-15T18:51:23.961941+00:00",
       "count": 9,
       "earliest": "2026-10-21T16:20:30+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-15T06:32:23.580192+00:00",
-      "count": 3,
-      "earliest": "2026-10-28T12:47:51+00:00",
+      "last_success": "2026-11-15T18:51:35.686475+00:00",
+      "count": 2,
+      "earliest": "2026-11-04T13:08:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-15T06:32:23.792567+00:00",
+      "last_success": "2026-11-15T18:51:35.822697+00:00",
       "count": 1387,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-15T06:32:33.823301+00:00",
-      "count": 6,
-      "earliest": "2026-10-29T19:47:53+00:00",
+      "last_success": "2026-11-15T18:51:41.791752+00:00",
+      "count": 5,
+      "earliest": "2026-11-06T01:40:00+00:00",
       "gap": false,
       "error": null
     }
@@ -100963,5 +101263,5 @@
       "to": "2026-11-12T09:18:34+00:00"
     }
   ],
-  "collected_at": "2026-11-15T06:32:33.824313+00:00"
+  "collected_at": "2026-11-15T18:51:41.792647+00:00"
 }
