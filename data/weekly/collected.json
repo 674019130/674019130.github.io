@@ -100633,6 +100633,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50501171"
     },
     {
+      "id": "65ef7b202bd66e551d8d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Enzo – Dictation, meeting diarization, and recall for Mac, on-device",
+      "url": "https://tryenzo.ai",
+      "published_at": "2026-11-14T21:53:05+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://tryenzo.ai Comments URL: https://news.ycombinator.com/item?id=50501316 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50501316"
+    },
+    {
       "id": "8a4544c361b3e757ac66",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -100643,41 +100655,101 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://bespokelabs.ai/blog/envopt Comments URL: https://news.ycombinator.com/item?id=50501406 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50501406"
+    },
+    {
+      "id": "a50797784204df247cfd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Daily puzzles to keep AI users sharp",
+      "url": "https://brainsaver.app",
+      "published_at": "2026-11-14T23:15:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://brainsaver.app Comments URL: https://news.ycombinator.com/item?id=50502073 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50502073"
+    },
+    {
+      "id": "a265ad9bf5cc6e7005e5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN:LetThemBuild:Claude, Codex, Gemini, Grok & OpenRouter models in Parallel",
+      "url": "https://letthembuild.com",
+      "published_at": "2026-11-14T23:24:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://letthembuild.com Comments URL: https://news.ycombinator.com/item?id=50502144 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50502144"
+    },
+    {
+      "id": "82ce81958f7f5d72b3a9",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "datasette-llm 0.1a11",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm",
+      "published_at": "2026-11-14T23:59:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this: wget https://datasette.io/content.db uvx --with datasette-agent datasette \\ --root --secret 1 \\ -s plugins.datasette-llm.default_model ' { \"model\": \"lmstudio-qwen\", \"model_name\": \"qwen/qwen3.8-27b\", \"api_base\": \"http://localhost:1234/v1\" } ' content.db And you'll get a local server running a Datasette Agent instance powered by your local model! Tags: uv , datasette-agent , llm , datasette , llms , ai , generative-ai",
+      "discussion_url": ""
+    },
+    {
+      "id": "fde51452146a7885d53e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A blog on how computers work from scratch (1)",
+      "url": "https://dinank.dev/posts/between-wall-and-first-fetch.html",
+      "published_at": "2026-11-15T04:07:31+00:00",
+      "date_kind": "community_post",
+      "evidence": "I started learning and writing up this blog in my own words, combining multiple resources until I feel comfortable in my understanding and then writing them down on my own. No AI here (other than help during the learning). This is article 1 of the series. Started understanding the flow of things from wall outlet, I know I skipped the things around how sand turns into a chip, but it would have gotten very long, maybe a story for another time. Looking for some feedback. Comments URL: https://news.ycombinator.com/item?id=50503921 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50503921"
+    },
+    {
+      "id": "b8f1a3cfd2c0a9c397ff",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "published_at": "2026-11-15T04:09:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 17 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50503930"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-14T22:23:53.694197+00:00",
+      "last_success": "2026-11-15T06:31:31.250301+00:00",
       "count": 10,
       "earliest": "2026-11-10T19:26:51+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-14T22:23:53.856926+00:00",
+      "last_success": "2026-11-15T06:31:31.506821+00:00",
       "count": 20,
       "earliest": "2026-11-11T16:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-14T22:23:54.094450+00:00",
+      "last_success": "2026-11-15T06:31:31.790314+00:00",
       "count": 907,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-14T22:23:54.205239+00:00",
+      "last_success": "2026-11-15T06:31:31.874785+00:00",
       "count": 30,
-      "earliest": "2026-11-02T23:49:30+00:00",
+      "earliest": "2026-11-03T05:32:25+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-14T22:23:54.588942+00:00",
+      "last_success": "2026-11-15T06:31:51.756173+00:00",
       "count": 99,
-      "earliest": "2026-11-13T20:59:49+00:00",
+      "earliest": "2026-11-14T04:34:03+00:00",
       "gap": false,
       "error": null
     },
@@ -100686,59 +100758,59 @@
       "count": 100,
       "earliest": "2026-11-12T15:40:21+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-14T22:23:55.694847+00:00",
+      "last_success": "2026-11-15T06:32:03.278497+00:00",
       "count": 10,
       "earliest": "2026-10-27T20:24:20+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-14T22:23:56.231320+00:00",
+      "last_success": "2026-11-15T06:32:03.809538+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-14T22:23:56.713243+00:00",
+      "last_success": "2026-11-15T06:32:04.253880+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-14T22:23:57.118181+00:00",
+      "last_success": "2026-11-15T06:32:04.604987+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-14T22:23:57.628593+00:00",
+      "last_success": "2026-11-15T06:32:05.117483+00:00",
       "count": 9,
       "earliest": "2026-10-21T16:20:30+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-14T22:24:15.675089+00:00",
+      "last_success": "2026-11-15T06:32:23.580192+00:00",
       "count": 3,
       "earliest": "2026-10-28T12:47:51+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-14T22:24:15.891014+00:00",
+      "last_success": "2026-11-15T06:32:23.792567+00:00",
       "count": 1387,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-14T22:24:26.355617+00:00",
+      "last_success": "2026-11-15T06:32:33.823301+00:00",
       "count": 6,
       "earliest": "2026-10-29T19:47:53+00:00",
       "gap": false,
@@ -100891,5 +100963,5 @@
       "to": "2026-11-12T09:18:34+00:00"
     }
   ],
-  "collected_at": "2026-11-14T22:24:26.356696+00:00"
+  "collected_at": "2026-11-15T06:32:33.824313+00:00"
 }
