@@ -1,0 +1,198 @@
+{
+  "request_evidence": [
+    {
+      "id": "e62d3d652d0df9342673",
+      "title": "Show HN: FlAIent – Learn interactive AI coding with real agents",
+      "category": "discovery",
+      "evidence": "Article URL: https://flaient.com/ Comments URL: https://news.ycombinator.com/item?id=50507883 Points: 2 # Comments: 0 PRIMARY PAGE: AI training for software teams, hands-on · flAIent fl AI ent Results Courses Pricing Sound on ▸ off Play with sound? On Off Log in Start Camp 1 free f l A I e n t AI training for software teams A live AI agent on real tickets, with a course for each role: developers, QA, product and engineering managers Start Camp 1 free → → Learn more ▶ Watch a Demo For your team What they learn. What it's worth. Who Developers QA Product Engineering managers What they learn Prompting A precise brief, not “fix the bug”. Cost management Lower AI cost per ticket: search, don’t paste. Planning Agree on a plan before the agent writes. Model choice The right model for each task. Data privacy Keep personal data out of prompts. Hallucinations Check AI’s facts against the source. Each role’s course has its own mix. See more → What it's worth Yearly · USD Employees 15 AI cost per employee / month $2,000 −30% AI cost per solved ticket, sample team after Course 1 sample Sample team. AI cost per solved ticket (tokens × model price), same tickets, before → after the lessons. Savin"
+    },
+    {
+      "id": "c4f22f88f894852f172f",
+      "title": "datasette-apps 0.4a0",
+      "category": "discovery",
+      "evidence": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write PRIMARY PAGE: Release: datasette-apps 0.4a0 Simon Willison’s Weblog Newsletter Sponsored by: Dynatrace — Your coding agent can read your code but can’t see how it runs in production. Read the blog to see how Dynatrace MCP closes that gap. 15th November 2026 Release datasette-apps 0.4a0 — Apps that live inside Datasette Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write apps that link to each other. This means you can have e.g. an app that shows details about a specific recor"
+    },
+    {
+      "id": "aa0c944eead832341881",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in December",
+      "category": "official_update",
+      "evidence": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on December 14, 2026: Model Deprecation date Suggested alternative Claude Fable 5 2026-12-14 Claude Fable 5.2 Claude Haiku 4.5* 2026-12-14 Claude Haiku 5.5 Gemini 3.8 Flash 2026-12-14 Gemini 4 Hydrogen Gemini 4 Argon 2026-12-14 Gemini 4 Carbon Grok 4.6 2026-12-14 Grok 4.7 Kimi K3 2026-12-14 To be announced *Claude Haiku 4.5 will remain available to individual GitHub Copilot subscribers on annual plans. The deprecation of Claude Haiku 4.5 does not apply to these customers. Please update your workflows and integrations to use the supported models before this date. Under default model enablement, the suggested alternatives are automatically enabled for Copilot Enterprise and Copilot Business customers unless an administrator has turned off the global default or explicitly disabled the model. If you’ve turned off the global default, you can enable access to the alternative models through their model policies in Copilot settings. Once enabled, users will see the model in the Copilot Chat model selector in supported GitHub Copilot "
+    },
+    {
+      "id": "7036a31794cde9cc520a",
+      "title": "Claude Code v2.1.325",
+      "category": "official_update",
+      "evidence": "## What's changed - Fixed a security issue in how zstd-compressed responses are decoded - Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook - Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run `/rewind` and change the message, or run `/clear` - Added a note for Claude when a sandboxed `git checkout`, `git stash` or autostash pull cannot update protected files such as those in `.claude` - Fixed `/security-review` and skills' inline git commands stopping with an error in worktrees of bare repositories, `--separate-git-dir` checkouts and Android `repo` checkouts - Fixed subagents with their own model being moved to the plan-mode model when the model setting is `opusplan` or `haiku` - Fixed subagents on a different model sizing file reads and MCP results with the main session's model - Fixed sessions on many third-party gateways and Foundry stopping with a context length error on every turn instead of compacting - Fixed recent turns sometimes going missing from a resumed session after Claude Code stopped without a clean ex"
+    },
+    {
+      "id": "760eb8e0a8b434975618",
+      "title": "Introducing ChatGPT Wallet",
+      "category": "official_update",
+      "evidence": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections."
+    },
+    {
+      "id": "1c2f717ba7572acde4f9",
+      "title": "llama.cpp v1.0.0",
+      "category": "official_update",
+      "evidence": "Blog post: https://huggingface.co/blog/ggml-org/llama-cpp-v1 ## Overview llama.cpp v1.0.0 removes the deprecated public API and promotes the NextN/speculative API to `llama.h`, adds OCP FP8 KV caches, a host-memory MoE expert cache with a configurable CPU share, and loading of external PLE shards. It adds three text architectures (Kimi-K3.1-Pro, Ripple and xing4_0), drama-3 TTS, and MageVL-Cowork and Kimi-K3.1 vision, hardens `llama-server` (SSRF, CORS, DNS rebinding, MCP tool cancellation) and adds a `/v1/audio/speech` endpoint, ships a redesigned web UI with chat groups and a markdown editor, and updates `ggml` to v1.0.0. ### API changes - llama.h: remove `llama_set_warmup`, 35 deprecated functions, `defrag_thold` and `--defrag-thold` ([#30565](https://github.com/ggml-org/llama.cpp/pull/30565)) - llama.h: promote the NextN API from `llama-ext.h` and rename `llama_set_embd_state_src` to `llama_set_ctx_state_src` ([#30565](https://github.com/ggml-org/llama.cpp/pull/30565)) - llama.h: add `moe_cache_size` and `moe_cache_cpu_share` to `llama_context_params` ([#30966](https://github.com/ggml-org/llama.cpp/pull/30966)) - mtmd.h: add `MTMD_GEN_AUDIO_TYPE_DRAMA3` and `temp` in `mtmd_help"
+    },
+    {
+      "id": "f39d32ab9a24df04ba5d",
+      "title": "Codex 0.169.0",
+      "category": "official_update",
+      "evidence": "## New Features - The opt-in terminal workspace supports multiple side-chat tabs. Switch between them with the keyboard or mouse, and reopen saved local side chats after restarting Codex. (#59784, #60152, #60181) - Search older tasks from the agent command center by name, prompt preview, or working directory. (#60286) - Turn on **Collapse turn details** in the full-screen transcript to fold completed activity beneath each prompt while keeping answers visible and tool output searchable. (#60554, #60555, #60556, #60557) - Add or edit custom model providers from the terminal. With custom gateway onboarding enabled, you can create a provider during sign-in and use a device code for supported gateways over SSH or without a local browser. (#59779, #60009, #60186, #60486, #60662) - Press `Ctrl+S` in the terminal report editor to save a diagnostic ZIP locally, even when uploads are disabled. (#60542) - With the opt-in Cloud connection on macOS and Linux, send images, choose a model and reasoning effort, and archive or restore Cloud conversations from the terminal. (#59828, #60061, #60635, #60651) ## Bug Fixes - `codex exec` keeps project configuration and MCP servers disabled in untrusted "
+    },
+    {
+      "id": "7e06c2f6df388db03cb6",
+      "title": "Ollama v0.40.16",
+      "category": "official_update",
+      "evidence": "## Ripple Preview [Ripple Preview](https://ollama.com/library/ripple-preview) from Ricursive Intelligence is a 65B dense model built for agentic coding. ```sh ollama run ripple-preview ``` ## What's Changed - Qwen3.8 Flash Next uses about 27 GiB less memory on Apple silicon - `ollama launch claude` always routes Claude Code to the selected model - `ollama launch` explains when a cloud model has been retired - `/v1/responses` respects `truncation` and no longer silently truncates by default - `/v1/models` returns an empty list instead of `null` when no models are installed - CUDA 13.5 support for Windows on ARM - Updated llama.cpp **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.15...v0.40.16"
+    },
+    {
+      "id": "07a103128e58afd3904e",
+      "title": "Show HN: Folate – Local DOM selector model that beats 7B VLMs at 1/60th the size",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/figranium/folate Comments URL: https://news.ycombinator.com/item?id=50507874 Points: 2 # Comments: 0 PRIMARY PAGE: <p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/figranium/folate/main/banner.png\" alt=\"Folate\" width=\"100%\">\n</p>\n\n<p align=\"center\">\n  <a href=\"https://huggingface.co/figranium/folate\"><img src=\"https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-lg.svg\" alt=\"Model on Hugging Face\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://pypi.org/project/folate/\">PyPI</a> •\n  <a href=\"https://huggingface.co/figranium/folate\">Hugging Face</a> •\n  <a href=\"https://huggingface.co/spaces/figranium/folate-demo\">Demo</a> •\n  <a href=\"https://github.com/figranium/folate/blob/main/LICENSE\">Apache 2.0</a>\n</p>\n\n<p align=\"center\">\n  A lightweight, CPU-efficient neural DOM element ranker built for browser automation within tight memory constraints (&lt;2 GB total footprint alongside a headless browser).\n</p>\n\nFine-tuned from [`google/electra-base-discriminator`](https://huggingface.co/google/electra-base-discriminator) on [`osunlp/Mind2Web`](https://huggingface.co/datasets/osunlp/Mind2Web) and dynamically quantized"
+    },
+    {
+      "id": "21be58c5bf5b284fd4ab",
+      "title": "Apfel-LLM: Drop",
+      "category": "discovery",
+      "evidence": "Article URL: https://github.com/NixOS/nixpkgs/pull/588623 Comments URL: https://news.ycombinator.com/item?id=50507835 Points: 2 # Comments: 0 PRIMARY PAGE: <p align=\"center\">\n  <a href=\"https://nixos.org\">\n    <picture>\n      <source media=\"(prefers-color-scheme: light)\" srcset=\"https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-minimal.svg\">\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://brand.nixos.org/logos/nixos-logo-default-gradient-white-regular-horizontal-minimal.svg\">\n      <img src=\"https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-minimal.svg\" width=\"500px\" alt=\"NixOS logo\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"CONTRIBUTING.md\"><img src=\"https://img.shields.io/github/contributors-anon/NixOS/nixpkgs\" alt=\"Contributors badge\" /></a>\n  <a href=\"https://opencollective.com/nixos\"><img src=\"https://opencollective.com/nixos/tiers/supporter/badge.svg?label=supporters&color=brightgreen\" alt=\"Open Collective supporters\" /></a>\n</p>\n\n[Nixpkgs](https://github.com/nixos/nixpkgs) is a collection of over 140,000 software packages that can be installed with the [Nix](https://nixos.or"
+    },
+    {
+      "id": "854ae3636e1e7ba9a17c",
+      "title": "datasette-agent 0.6a0",
+      "category": "discovery",
+      "evidence": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries: Tags: datasette-agent , llm , datasette , llms , ai , generative-ai PRIMARY PAGE: Release: datasette-agent 0.6a0 Simon Willison’s Weblog Newsletter Sponsored by: Dynatrace — Your coding agent can read your code but can’t see how it runs in production. Read the blog to see how Dynatrace MCP closes that gap. 15th November 2026 Release datasette-agent 0.6a0 — An LLM-powered agent for Datasette Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries: Posted 15th November 2026 at 3:49 am Recent articles Locating the source of a mysterious beep with Claude - 9th November 2026 Hide your slop PR descriptions behind <details><summary> - 9th November 2026 Qwen 3.8 27B on my laptop can interpret model weights, too - 3rd Nov"
+    },
+    {
+      "id": "fb4082a53465da6fc087",
+      "title": "GitHub Enterprise Server support in the GitHub Copilot app",
+      "category": "official_update",
+      "evidence": "You can now bring your work on GitHub Enterprise Server (GHES) into the GitHub Copilot app. Add your GHES account to work with remote repositories, issues, and pull requests. This feature was previously an opt-in preview, and is now generally available. You’ll need to sign in with a GitHub.com or GHE.com account first. Then, go to Settings > Accounts > Add account and choose GitHub Enterprise Server . Available in GitHub Copilot app 1.2.0 and later. Cloud sessions aren’t available for GHES. Learn more in our Copilot GHES documentation . The post GitHub Enterprise Server support in the GitHub Copilot app appeared first on The GitHub Blog ."
+    },
+    {
+      "id": "99c1fe0ebf2a5540ccff",
+      "title": "Claude Code v2.1.323",
+      "category": "official_update",
+      "evidence": "## What's changed - Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it on, or to turn it off for an organization - Added `engines[\"claude-code\"]` to `plugin.json`: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that fits - Added type checking of a plugin's TypeScript hooks module to `claude plugin validate`; each finding is a warning, and `--strict` fails on it - Added to `claude plugin validate` the `$` nouns a mod's `engine.create` hook adds, withholds or replaces - Added support for `CLAUDE_CODE_AUTO_MODE_MODEL` in managed settings for Claude Desktop sessions on third-party providers (takes effect once Claude Desktop includes this version) - Added an options menu (stop, switch to usage credits, upgrade) when a model needs usage credits that are turned off or used up - Added a progress heartbeat every 30 seconds while hooks run long in `claude -p` and SDK sessions, so a host such as Claude Desktop won't end the turn as hung (once it includes this version) - Added `.docx` support to Artifact "
+    },
+    {
+      "id": "adc273c4a43c7ff3cf89",
+      "title": "Connect Google Wallet to Gemini for personal finance insights",
+      "category": "official_update",
+      "evidence": "All Gemini app users in the U.S. can connect Google Wallet to get responses informed by their spending habits."
+    },
+    {
+      "id": "7d9933685bbb0dabca16",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "category": "official_update",
+      "evidence": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment."
+    },
+    {
+      "id": "16224341f7213c5aaa0a",
+      "title": "Codex 0.168.0",
+      "category": "official_update",
+      "evidence": "## New Features - Browse model providers under Sessions → Model providers and choose the default for new chats. (#59541, #59722) - Enable `features.tui_workspace` to view a side conversation beside the main chat. Drag the divider to resize the panes or press `leader z` to zoom the focused pane. (#58992, #59527, #59595) - Attach recordings when using an audio-capable model. Codex skips confirmed rejected recordings on later turns and uses clip duration to keep more short recordings in context. (#59234, #59268) - Enable `features.image_generation_animation` to generate or edit animated GIFs with optional frame count and timing controls. (#59073) - Fullscreen Codex displays image previews and pets in tmux on Ghostty and Kitty with `allow-passthrough all`. (#59579, #59580) - Set `tui.notification_method = \"osc777\"` for terminal notifications. Approval notifications show longer command previews and distinguish terminal input from network access requests. (#59256) ## Bug Fixes - Local TUI history and resume pickers filter newly created threads by the signed-in ChatGPT account. (#58918) - Open and resumed chats use their saved model provider after you change the default for new chats. (#5"
+    },
+    {
+      "id": "ff9d230256883fdeb32e",
+      "title": "Show HN: Selfhost pi agents API with Linux desktop sandbox",
+      "category": "discovery",
+      "evidence": "Hi HN, I am building an open source alternative to openai agents api and claude managed agents api. It has linux desktop sandbox support using HCU QEMU/KVM you can self host on a vps. looking for feedback Comments URL: https://news.ycombinator.com/item?id=50507721 Points: 2 # Comments: 0 PRIMARY PAGE: # Pi Managed Agents API\n\n**Give your apps agents that run code, keep context, and deliver files. Powered by Pi. Hosted by you.**\n\n[![Checks](https://github.com/taherchhabra/pi-managed-agents-api/actions/workflows/check.yml/badge.svg)](https://github.com/taherchhabra/pi-managed-agents-api/actions/workflows/check.yml)\n\n[Get started](#get-started) · [Comparison](#how-it-compares) · [Connect your app](#connect-your-app) · [Built-in documentation](#documentation-in-your-workspace) · [Architecture](docs/architecture.md)\n\nUseful agents need a place to work, a way to carry context into the next task, and a record of what happened. Pi Managed Agents brings those pieces together in a self-hosted API and browser console built around the **Pi coding agent SDK**.\n\nDefine an agent, give it a workspace, and send it a task. Pi handles the model and tool loop; the service saves session state, runs cod"
+    },
+    {
+      "id": "d2ade77f586134d600a9",
+      "title": "FlashVMM – jail your AI agent in a MicroVM that boots in 18 ms",
+      "category": "discovery",
+      "evidence": "Article URL: https://flashvmm.com/ Comments URL: https://news.ycombinator.com/item?id=50507449 Points: 2 # Comments: 0 PRIMARY PAGE: FlashVMM Skip to content Flash VMM Features Boot & run Instant boot Networking Run commands Files in and out Folder sharing Guest bundles Control & limits Live limits Memory on demand Pause and resume Run-length limits Observability Security Network walls Hidden API keys Change tracking Speed at scale Warm pools NIC pools GPU pools State & time travel Snapshots and clones Sleep and wake Live fork Diff Checkpoints, rewind and branch Fleet Host capacity Fleet controller Live migration AI & integration MCP for AI agents Guest messaging Self-update The live demo All features → Technology Why FlashVMM When to use FlashVMM Foundations Architecture and process model The API contract Platforms and engines State Memory model and dirty tracking Snapshot format and restore Fork, checkpoints and diff internals Guest & devices The guest and its agent Virtio devices and storage Network Networking stack Egress engine and connection log Secret relay Isolation & limits Security model Resource enforcement Fleet Host daemon: admission, reclaim and metering Pools: VMs, n"
+    },
+    {
+      "id": "82ce81958f7f5d72b3a9",
+      "title": "datasette-llm 0.1a11",
+      "category": "discovery",
+      "evidence": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or PRIMARY PAGE: Release: datasette-llm 0.1a11 Simon Willison’s Weblog Newsletter Sponsored by: Dynatrace — Your coding agent can read your code but can’t see how it runs in production. Read the blog to see how Dynatrace MCP closes that gap. 14th November 2026 Release datasette-llm 0.1a11 — LLM integration plugin for other plugins to depend on datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this: wget http"
+    },
+    {
+      "id": "f7540b685119b1dc1b67",
+      "title": "Gemini 4 Hydrogen in GitHub Copilot",
+      "category": "official_update",
+      "evidence": "Gemini 4 Hydrogen, Google’s latest Flash model, is now generally available in GitHub Copilot. It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction following over Gemini 3.8 Flash. This model is billed at provider list pricing under usage-based billing. See Models and pricing for GitHub Copilot for details. Availability in GitHub Copilot Gemini 4 Hydrogen is available to Copilot Pro, Pro+, Max, Business, and Enterprise users. You can select the model in the model picker in: Visual Studio Code Visual Studio Copilot CLI GitHub Copilot coding agent GitHub Copilot app github.com GitHub Mobile on iOS and Android JetBrains IDEs Xcode Eclipse Copilot SDK Rollout will be gradual. Check back soon if you don’t see it yet. Enabling access Copilot Enterprise and Copilot Business plan administrators can manage access to Gemini 4 Hydrogen through the model policy in Copilot settings. Under default model enablement, new models are automatically enabled unless an administrator has turned off the global default or explicitly disables this model. Learn more To explore all models available in GitHub Copilot, see our documentation on models and"
+    },
+    {
+      "id": "503eb78068486d62204a",
+      "title": "Claude Code v2.1.322",
+      "category": "official_update",
+      "evidence": "## What's changed - Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
+    },
+    {
+      "id": "5e4f82a08a46f7cebe76",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "category": "official_update",
+      "evidence": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses."
+    },
+    {
+      "id": "d48dcae5b2a2ab303735",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "category": "official_update",
+      "evidence": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact."
+    },
+    {
+      "id": "e60599ea0c9aedf6a7c0",
+      "title": "Codex 0.167.2",
+      "category": "official_update",
+      "evidence": "## New Features - Codex now sends tool updates incrementally by default on Google Cloud Vertex AI. To opt out, set `incremental_tools_legacy_gcp = false` under `[features]` in `config.toml`. ([#60617](https://github.com/openai/codex/pull/60617), [#60848](https://github.com/openai/codex/pull/60848)) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.167.1...rust-v0.167.2"
+    },
+    {
+      "id": "f6cdf81b92acac188b77",
+      "title": "Show HN: A local-first AI agent for the desktop, no Electron, any LLM endpoint",
+      "category": "discovery",
+      "evidence": "Hey folks. Most all the apps I see for agent harnesses are typescript based, and involve either electron or some form of IPC to function as a desktop app. In the age of LLM's, I thought it would be cool to build out a prototype of what a modern desktop application would like for this, without using any web code, since I can have agents pretty aggressively work on the cross-platform compatibility o PRIMARY PAGE: > [!NOTE]\n> Heads up: this project, README included, is influenced heavily by AI agents. If LLM-flavoured\n> prose isn't your thing, fair warning. Human-written docs will come once things settle.\n\n<p align=\"center\"><img src=\"assets/poster.png\" width=\"360\" alt=\"A wartime-poster worker in a red polka-dot bandana flexes a robotic arm under the words Bring your own brain!\"></p>\n\n**A native desktop AI coworker for the model you already run.** Point byob at any\nOpenAI-compatible endpoint (llama-server, Ollama, LM Studio, vLLM or a hosted API) and it works\nin a folder with you: reads and writes files, runs code, and builds spreadsheets, charts,\ndocuments and small apps beside the chat.\n\nbyob is **desktop software, not a web page in a window**: one program for Linux, macOS and Window"
+    },
+    {
+      "id": "ed037744150d61a28007",
+      "title": "A Straight Line Predicts How Fast My Laptop Generates LLM Tokens",
+      "category": "discovery",
+      "evidence": "Article URL: https://bryananthonio.com/blog/straight-line-predicts-how-fast-my-laptop-generates-llm-tokens/ Comments URL: https://news.ycombinator.com/item?id=50507414 Points: 1 # Comments: 0 PRIMARY PAGE: A Straight Line Predicts How Fast My Laptop Generates LLM Tokens Bryan Anthonio About Blog Links Reading A Straight Line Predicts How Fast My Laptop Generates LLM Tokens I went down a rabbit hole to see how memory bandwidth limits the rate at which LLMs generate tokens. November 13th, 2026 10 min read My previous post ended on a cliffhanger. For the model Qwen2.5-0.5B, I found that the time per output token (TPOT) was roughly 9 ms for different prompt sizes. But I didn’t have an explanation for why. I’ve since learned that in the decode phase for large language model (LLM) inference the primary bottleneck is memory bandwidth, the rate at which the GPU reads LLM model weights from RAM. To explore this, I measured the TPOT of six models of varying sizes on my laptop. Contents # The Memory Bandwidth Bottleneck TPOT vs Model Size How I Measured This Caveats of This Measurement What I Took Away From This The Memory Bandwidth Bottleneck # In LLM inference, the decode phase produces one"
+    },
+    {
+      "id": "9734ad6e507459188ed4",
+      "title": "llm-gemini 0.37",
+      "category": "discovery",
+      "evidence": "Release: llm-gemini 0.37 Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family. It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing really confusing. Here's the pricing scheme: Model Dates Input ($/M) Cached input Output Gemini 4 Carbon Through Nov 30, 2026 $2.00 $0.10 $10.00 From Dec 1, 2026 $4.00  PRIMARY PAGE: Release: llm-gemini 0.37 Simon Willison’s Weblog Newsletter Sponsored by: Dynatrace — Your coding agent can read your code but can’t see how it runs in production. Read the blog to see how Dynatrace MCP closes that gap. 12th November 2026 Release llm-gemini 0.37 — LLM plugin to access Google's Gemini family of models Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family. It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing really confusing. Here's the pricing scheme: Model Dates Input ($/M) Cached input Output Gemini 4 Carbon Through Nov 30, 2026 $2.00 $0.10 $10.00 From Dec 1, 2026 $4.00 $0.20 $20.00 Gemini 4 Argon Through Nov 30, 2026 $2.00 $0.10 $10.00 From Dec 1, 2026 $4.00 "
+    },
+    {
+      "id": "9517265651905d8b86df",
+      "title": "Manage AI Scan for repositories using the REST API",
+      "category": "official_update",
+      "evidence": "You can now turn GitHub code scanning’s AI Scan for repositories on or off with the REST API at the organization and repository levels. This public preview adds a repository_scan setting to the existing AI Scan enablement endpoints. You can roll out AI Scan for repositories with scripts and infrastructure as code instead of changing settings one organization or repository at a time. Manage AI Scan for repositories at scale Set the repository_scan property to enabled or disabled on the AI Scan enablement endpoints : GET and PATCH /orgs/{org}/code-scanning/ai-scan GET and PATCH /repos/{owner}/{repo}/code-scanning/ai-scan The setting works the same way as the existing pr_scan setting for AI Scan for pull requests: When an organization disables AI Scan for repositories, its repositories can’t enable it When an organization enables it, its repositories inherit the setting and can opt out individually When an enterprise policy doesn’t allow AI Scan, requests to enable it return a 422 error You can update pr_scan and repository_scan in the same request. If either change is blocked, the request returns a 422 error and neither setting changes. Turning on AI Scan for repositories doesn’t sta"
+    }
+  ],
+  "response": {
+    "id": "949a9d9d-be0f-41ef-b6f6-2eed779c1b17_2tww7ag4ghs2otvvuo_cfef5a7116ce4e5f833acfb85f9101f0",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"items\":[{\"id\":\"f39d32ab9a24df04ba5d\",\"product\":\"Codex\",\"change\":\"终端工作区新增多标签与自定义模型提供商\",\"change_en\":\"Multiple side-chat tabs and custom model providers in terminal\",\"title\":\"Codex 0.169.0\",\"summary\":\"Codex 0.169.0 的终端工作区支持多个边聊标签页，可键盘或鼠标切换并在重启后恢复；可按名称、提示词预览或工作目录搜索历史任务；支持在终端添加或编辑自定义模型提供商，并可通过设备码完成支持网关的登录；macOS 和 Linux 的云连接可发送图片、选择模型与推理强度。\",\"kind\":\"added\"},{\"id\":\"7036a31794cde9cc520a\",\"product\":\"Claude Code\",\"change\":\"修复 zstd 响应解码安全问题等\",\"change_en\":\"Fixes security issue in zstd-compressed response decoding\",\"title\":\"Claude Code v2.1.325\",\"summary\":\"Claude Code v2.1.325 修复了 zstd 压缩响应解码中的安全问题；为策略拦截请求的错误补充继续操作提示；修复在裸仓库 worktree、--separate-git-dir 检出等场景下 /security-review 与 skills 内联 git 命令报错；修复 opusplan 或 haiku 模式下子代理模型被切换的问题；修复第三方网关会话上下文长度错误等。\",\"kind\":\"changed\"},{\"id\":\"1c2f717ba7572acde4f9\",\"product\":\"llama.cpp\",\"change\":\"发布 v1.0.0，移除废弃 API\",\"change_en\":\"v1.0.0 removes deprecated public API, adds features\",\"title\":\"llama.cpp v1.0.0\",\"summary\":\"llama.cpp v1.0.0 移除废弃公共 API 并将 NextN/speculative API 提升到 llama.h，新增 OCP FP8 KV 缓存与可配置 CPU 份额的 MoE 专家缓存；新增 Kimi-K3.1-Pro、Ripple、xing4_0 三种文本架构与 drama-3 TTS；加固 llama-server 的 SSRF、CORS、DNS rebinding 等防护，提供重设计的 Web UI。\",\"kind\":\"changed\"},{\"id\":\"aa0c944eead832341881\",\"product\":\"GitHub Copilot\",\"change\":\"12月14日停用多款模型\",\"change_en\":\"Selected Copilot models deprecated on December 14\",\"title\":\"Copilot 部分模型将停用\",\"summary\":\"GitHub Copilot 将于 2026 年 12 月 14 日在 Chat、内联编辑、Ask/Agent 模式及代码补全中停用 Claude Fable 5、Claude Haiku 4.5、Gemini 3.8 Flash、Gemini 4 Argon、Grok 4.6、Kimi K3 等模型，并给出对应替代模型；默认启用下企业与商业客户自动启用替代模型，年度个人订阅用户仍可继续使用 Claude Haiku 4.5。\",\"kind\":\"removed\"},{\"id\":\"7e06c2f6df388db03cb6\",\"product\":\"Ollama\",\"change\":\"新增 Ripple Preview 模型与多项修复\",\"change_en\":\"Adds Ripple Preview and various fixes\",\"title\":\"Ollama v0.40.16\",\"summary\":\"Ollama v0.40.16 新增由 Ricursive Intelligence 推出的 Ripple Preview，这是一个 65B 稠密模型，面向智能体编码；Qwen3.8 Flash Next 在 Apple silicon 上内存占用减少约 27 GiB；ollama launch claude 始终将 Claude Code 路由到所选模型；/v1/responses 支持 truncation 且不再默认静默截断；Windows on ARM 支持 CUDA 13.5。\",\"kind\":\"added\"},{\"id\":\"9517265651905d8b86df\",\"product\":\"GitHub AI Scan\",\"change\":\"REST API 可管理仓库 AI Scan\",\"change_en\":\"REST API to manage AI Scan for repositories\",\"title\":\"AI Scan 支持 REST 管理\",\"summary\":\"GitHub 代码扫描的 AI Scan 新增 repository_scan 设置，可通过 REST API 在组织和仓库级别开关，属公开预览；支持用脚本与基础设施即代码进行规模化管理；组织禁用后仓库无法单独启用，组织启用后仓库继承并可单独退出；pr_scan 与 repository_scan 可在同一请求更新，任一被阻止则返回 422 且均不生效。\",\"kind\":\"added\"},{\"id\":\"fb4082a53465da6fc087\",\"product\":\"GitHub Copilot 应用\",\"change\":\"GHES 支持转为正式可用\",\"change_en\":\"GHES support in Copilot app is now GA\",\"title\":\"Copilot 应用支持 GHES\",\"summary\":\"GitHub Copilot 应用新增对 GitHub Enterprise Server 的支持，可添加 GHES 账号以处理远程仓库、议题和拉取请求；此前为选择加入预览，现正式可用；需先用 GitHub.com 或 GHE.com 登录，再在设置 > 账号 > 添加账号中选择 GitHub Enterprise Server，要求 Copilot 应用 1.2.0 及以上，GHES 无云会话。\",\"kind\":\"changed\"},{\"id\":\"f7540b685119b1dc1b67\",\"product\":\"Gemini 4 Hydrogen\",\"change\":\"在 GitHub Copilot 正式可用\",\"change_en\":\"Gemini 4 Hydrogen is GA in GitHub Copilot\",\"title\":\"Gemini 4 Hydrogen 上线 Copilot\",\"summary\":\"Gemini 4 Hydrogen 是 Google 最新的 Flash 模型，已在 GitHub Copilot 正式可用，面向快速高效的智能体编码、工具调用与多步工作流，指令遵循较 Gemini 3.8 Flash 改进；按供应商目录定价的用量计费；面向 Copilot Pro、Pro+、Max、Business、Enterprise 用户，可在 VS Code、Copilot CLI、编码 agent、JetBrains、Xcode 等多端选择，逐步推出。\",\"kind\":\"added\"},{\"id\":\"d2ade77f586134d600a9\",\"product\":\"FlashVMM\",\"change\":\"作者介绍：MicroVM 沙箱隔离 AI agent\",\"change_en\":\"Author: MicroVM sandbox to jail AI agents with 18ms boot\",\"title\":\"FlashVMM 隔离 AI agent\",\"summary\":\"作者介绍 FlashVMM：将 AI agent 关入 MicroVM，宣称 18ms 启动，提供即时启动、网络、命令执行与文件进出、文件夹共享、运行时限制、网络隔离与隐藏 API 密钥、快照克隆、检查点与分支、舰队管理与实时迁移、MCP 集成等功能，页面含架构、API 契约与技术文档。\",\"kind\":\"discovery\"}]}",
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1794818159,
+    "model": "mimo-v2.6-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1581,
+      "prompt_tokens": 8137,
+      "total_tokens": 9718,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens_details": null
+    }
+  }
+}
