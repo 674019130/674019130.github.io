@@ -111565,6 +111565,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50565431"
     },
     {
+      "id": "655619ed3b83fd39f8fc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AdversaryPR – A Claude skill to keep up with AI-written PR's",
+      "url": "https://github.com/bugsworthai/adversary",
+      "published_at": "2026-11-19T20:07:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/bugsworthai/adversary Comments URL: https://news.ycombinator.com/item?id=50565593 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50565593"
+    },
+    {
       "id": "ef5405b9524abfcb9a42",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -111599,42 +111611,342 @@
       "date_kind": "source_publication",
       "evidence": "Transfer your chat history into Gemini. Import your ZIP files and AI summaries to continue conversations seamlessly. Get the details.",
       "discussion_url": ""
+    },
+    {
+      "id": "6904d0a45b465d6ce61d",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "PostgreSQL 19 Released",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19",
+      "published_at": "2026-11-19T20:43:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apocalypse. This release was definitely worth the wait. My favorite new feature is this one: For applications that send reads to standbys, PostgreSQL 19 adds \"read-your-writes\" consistency with the new WAIT FOR LSN command. A session on a standby can use WAIT FOR LSN to wait until the standby has replayed the write-ahead log (WAL) up to a specific log sequence number (LSN) before running a query, so the application can read data it just wrote on the primary. In practice, that looks like this: UPDATE movie SET genre = 'Dramatic' WHERE genre = 'Drama'; SELECT pg_current_wal_insert_lsn(); That returns a value like 0/0306EE20 . Store that somewhere (a signed cookie would work) such that on a subsequent request your application can do: WAIT FOR LSN '0/0306EE20' WITH (TIMEOUT '0.1s'); SELECT * FROM movie WHERE genre = 'Drama'; The timeout is optional - if you provide one you'll get an error if the replica you are talking to doesn't catch up within the specified time. I first encountered this pattern in Wikipedia , which has a hand-rolled version of this built against MySQL replication: In addition to this, MediaWiki attempts to ensure that the user sees events occurring on the wiki in chronological order. A few seconds of lag can be tolerated, as long as the user sees a consistent picture from subsequent requests. This is done by saving the primary binlog position in the session, and then at the start of each request, waiting for the replica to catch up to that position before doing any reads from it. Here's the relevant MediaWiki code , which these days uses MySQL's WAIT_FOR_EXECUTED_GTID_SET() function and falls back to SOURCE_POS_WAIT() . Via Lobste.rs Tags: mysql , postgresql , replication , scaling , wikipedia , ai-security-research",
+      "discussion_url": ""
+    },
+    {
+      "id": "efee3d137a64b482667b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Taskthread – a task board your AI agents take work from (MCP)",
+      "url": "https://taskthread.denegra.ai",
+      "published_at": "2026-11-19T20:52:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://taskthread.denegra.ai/ Comments URL: https://news.ycombinator.com/item?id=50566204 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50566204"
+    },
+    {
+      "id": "049c526e7f2386889400",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Fizzler – a simple tool that pulls agents out of defaultthink",
+      "url": "https://fizzler.ai",
+      "published_at": "2026-11-19T21:10:55+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://fizzler.ai/ Comments URL: https://news.ycombinator.com/item?id=50566425 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50566425"
+    },
+    {
+      "id": "46a6a9bde5508cf994f1",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A SEO Tool to get found by Google and get cited by AI",
+      "url": "https://mozolite.com",
+      "published_at": "2026-11-19T21:16:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://mozolite.com Comments URL: https://news.ycombinator.com/item?id=50566502 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50566502"
+    },
+    {
+      "id": "64d304a008bfa688b59d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Billet – 6MB (Agentic) Task Management System",
+      "url": "https://mktwsk.xyz/billet",
+      "published_at": "2026-11-19T21:23:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Ever since AI has come, I've got worse at managing project tasks / goals. When you develop so fast now, things start lacking behind. For that reason I looked into creating a good set of skills I can use in any agent that support skills. The result is billet-skills which you can find at https://github.com/Skytrias/billet-skills Tasks are Markdown files with JSON frontmatter that live in docs/tasks/: --- { \"id\": 7, \"title\": \"Add dark mode\", \"status\": \"ready\", ... } --- ## Outcome The app follows the system's light or dark setting. This allows me to create a bunch of tasks upfront and work on things more easily or in parallel. Billet comes in two parts: 1. billet-skills, the skills: https://github.com/Skytrias/billet-skills 2. Billet, the viewer https://mktwsk.xyz/billet Billet has a few ways of looking at the tasks in your project: - List Mode - Kanban Mode - Plan Mode Multiple Projects can be seen in the Home Dashboard and also a simple Timeline. You can change the skills to whatever you like as long as it conforms to the format. Other than that thats pretty much it. I've also got easy copy&paste support so it becomes easier saying \"work on X and Y\". Billet is free - Give it a try and have fun! Feedback is welcome :) Billet itself is closed-source though - as I have commercial projects that use the same UI core. --- For those interested in the tech: - Software Rendered UI, using Blend2D - Custom immediate mode UI - Custom platform layer - Made in Odin Comments URL: https://news.ycombinator.com/item?id=50566566 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50566566"
+    },
+    {
+      "id": "e0b2457b284ebf5ada1b",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A deterministic agent memory engine in Rust with no LLM",
+      "url": "https://github.com/samvallad33/vestige",
+      "published_at": "2026-11-19T22:11:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/samvallad33/vestige Comments URL: https://news.ycombinator.com/item?id=50567187 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50567187"
+    },
+    {
+      "id": "dd93ef5f893599a63609",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.329",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+      "published_at": "2026-11-19T22:14:41+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added a trust dialog warning that says where a folder's hooks are declared - Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed settings fail to load - Added this session's scheduled tasks, `/loop` wakeups, the goal and this conversation's forks to `/tasks`; x stops one after asking - Added a \"Server message\" row to a server's page in `/mcp` that shows the JSON-RPC error message of a remote HTTP MCP server that refuses the connection - Added a \"Marketplace auto-update\" row to `/status` that names managed marketplaces that get no automatic updates, and why - Added support for turning on Code Mode while OpenTelemetry events and metrics are enabled; each tool call the code makes sends its events; tracing still keeps it off - Fixed `~/.claude.json` sometimes being reset to defaults when a network stall or file lock made it unreadable and cleared during a save - Fixed repeated sign-outs on macOS when Claude Code could read the Keychain but not save to it. That session now stops at expiry and says why, and other sessions stay signed in - Fixed `/terminal-setup` corrupting VS Code settings or keybindings files around block comments, and reporting success while losing the Shift+Enter binding where keybindings.json has an unclosed string - Fixed files accepted through the IDE diff being saved without their last newline, and losing their byte order mark (BOM) when an edit was accepted by saving the diff in VS Code - Fixed picking a cloud session in `/teleport` replacing your open conversation: the pick now starts a new session, as `/clear` does, and `/resume` brings the old one back - Fixed `/usage-credits` asking Pro and Max users to log in again after opening the browser, and the link disappearing after 8 seconds if the browser doesn't open and a task stops for usage credits - Fixed `/usage` saying usage credits are off when they had run out or reached the monthly limit, and `/model` not telling Pro and Max users when that limit blocks a model that runs on usage credits - Fixed the spend limit menu showing your spend as your monthly limit and wrapping its rows under the pointer in narrow windows - Fixed a status line script that prints without end freezing the prompt and using gigabytes of memory - Fixed an empty, frozen screen after approving managed settings while the --resume picker, the trust dialog or another set-up screen was waiting - Fixed choosing Default in `/model` replacing your saved model with your organization's default when the Default row already showed your saved model - Fixed an MCP server being signed in again after you cleared its authentication while a token refresh was running - Fixed background MCP tasks that stalled after a slow reconnect: Claude Code now reconnects most HTTP MCP servers by itself when one is left on an older protocol version - Fixed PDFs, images and `.docx`, `.xlsx` or `.pptx` files that MCP servers or websites send as `application/octet-stream` being saved as .bin, which kept Claude from reading the PDFs and images - Fixed `/code-review ` sometimes reviewing the checked-out branch instead of the pull request without saying so: it now reads the pull request with `gh pr diff`, or says when it can't - Fixed `/code-review` stopping at a permission prompt, on most models, to look for a `~/.claude/CLAUDE.md` that doesn't exist - Self-hosted runner: Fixed `--push-outcome-on-release` sometimes deleting a session's branch on the git host - Fixed Code Mode hiding a script's finished edits and the stopped command after Esc, and losing them on exit - Fixed a runaway loop in Code Mode filling the machine's memory; it is now stopped at a limit - Fixed a background agent running on when it was stopped while it was being resumed - Fixed background shell commands using memory for the earlier conversation until they exit - Fixed Remote Control using memory for the earlier conversation after a compaction or `/clear` in sessions run ",
+      "discussion_url": ""
+    },
+    {
+      "id": "8bb9c7dd1e8b145cffd6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: 15MB transcription model that runs in the browser/device",
+      "url": "https://starbright.quickthoughts.ca",
+      "published_at": "2026-11-19T22:32:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've been obsessed with getting useful transcription models that can be used by websites directly. Starbright is < 15MB in size and works even on modest phones, chromebooks, etc. At the moment, I've only got an English model but hopefully more languages can come soon. Comments URL: https://news.ycombinator.com/item?id=50567436 Points: 4 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50567436"
+    },
+    {
+      "id": "218b4600ce5997d81efe",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Bocalito – A Meal Prep Planner",
+      "url": "https://bocalito.com",
+      "published_at": "2026-11-19T22:47:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "I started to meal prep a few months ago, and loved it because it saves me time and frees my mind. Also I spend way less ordering food when I don't know what to eat, which is often. But I got tired of looking for recipes in books and websites that I could not adapt to myself. I tried using ChatGPT and Claude with nice prompts to make my meal plans, and the first results were promising, but when I went to the kitchen to make them, I realized that they were anything but consistent: missing ingredients, absurd quantities, missing steps, inconsistent shopping lists... inconsistencies everywhere. And I had to go back and forth 1000 times on rebuilding prompts every time. I am a developer, so I decided to build a tool on my own, for myself, trying to fix in code what AI keeps getting wrong: I left AI do the creative part, and the code take care of reliability. And it keeps getting better, since it has been evolving ever since. Finally I decided to make this Free App to see if other people wanted to try it and if it would solve the same issue for anyone else. Any feedback is appreciated, and if you meal prep, I hope you like it! Comments URL: https://news.ycombinator.com/item?id=50567622 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50567622"
+    },
+    {
+      "id": "a1aac8416d62c4b85dc2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Wellness Tracker for AI Usage",
+      "url": "https://chromewebstore.google.com/detail/prethink-ai/ekolohicgedlnehalkchpnbhpfmgnglk",
+      "published_at": "2026-11-19T22:54:59+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hello There, I built a small chrome extension to track my chat-based AI usage. I'm interested in understanding how I use AI conversationally, and how that affects my brain. AI as a means to efficiency is key in the modern world, but I don't believe that our brains are geared to process this level of information and authoritative posture over inconsistent technology, and so I just want to experiment. I would love some users or harsh feedback. Right now, we are not focusing on desktop tools, and it only works via browser -- No data tracked, no auth. Just a simple tracker. Let me know your thoughts! - Harrison Comments URL: https://news.ycombinator.com/item?id=50567716 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50567716"
+    },
+    {
+      "id": "1831cb22c1c30cd5ed91",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Auto PR Labeling with Jev",
+      "url": "https://checks.dorbit.ai",
+      "published_at": "2026-11-19T23:14:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN, I built a service to automatically label PRs on GitHub. It reads the PR title, body, and diff and classifies types of the PR, such as \"document only\", \"breaking change\", and \"needs GPU test\". It internally calls Jev for labeling. You can define custom labels and criteria as well as use preset ones. It was useful for me to reduce CI costs. Especially, it helped us with skipping expensive GPU tests. Please feel free to try it out. You don't need to sign up to test it with preset labels. Just enter a PR URL and see how it works. Comments URL: https://news.ycombinator.com/item?id=50567922 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50567922"
+    },
+    {
+      "id": "bb19a9a5281a711227a6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: erXos – a microkernel OS in Erlang based on Genera/Plan 9/QNX ideas",
+      "url": "https://stass.github.io/erXos",
+      "published_at": "2026-11-19T23:39:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "What if every Erlang process were an operating-system process? With as much system code and drivers written in Erlang itself. This is something I was pondering for a while, and finally was able to prototype thanks to AI coding agents. erXos is a capability-based microkernel OS in Erlang: drivers, filesystems, and the network stack are all supervised Erlang processes, same as any app. The kernel itself is Fiasco, in C++, slightly modified for erXos needs. This is an OS I wanted for a long time: an Erlang machine where every BEAM process is a process visible to the OS and scheduler, not something bolted on top. You can try it right now with nothing to install: there is an emulator on the website that boots the whole OS in the browser ARM64 emulator. At the rc prompt, try `ps`, `top`, `ping` or `erl` and write any kind of erlang code. There's a Pi 4 SD image and a QEMU image too. The goal is to build an ultra-reliable microkernel OS with hot code loading and both system and BEAM-based isolation. The latter is one thing that would allow you to run millions of processes on the system, something that would be prohibitive on a microkernel alone due to the context switch overhead. Capabilities keep every component least-privileged, supervision keeps the machine running when drivers or subsystems crash, and hot code loading would let you fix a broken driver without reboot. The secondary goal is to keep as much of a UNIX face as possible. Too many novel OSes change things for no particular reason that makes them hard to use. erXos tries to preserve as many existing UNIX/FreeBSD concepts as much as possible to remove the learning curve. What works today: - Boots in the browser/v64, in QEMU, and on a Raspberry Pi 4 from an SD card - A real shell (plan9 rc) with job control, pipes, `ps`, `grep`. It feels like UNIX on the surface - Erlang versions of basic UNIX apps. - Drivers written in Erlang: UART, virtio, SD card, Ethernet (GENET), display - A pure Erlang EROFS filesystem for root images - A TCP/IP stack in Erlang based on FreeBSD network stack and verified for correctness against it - Domains: every app runs as its own address space or Erlang node, isolated from others - Plan 9 namespaces and 9P everywhere; windows are files like RIO and 9P is a file protocol between OS servers - Supervision end to end: if a driver fails, its supervisor resets the device and restarts it I also have 2 demo apps built on app sdk: a full-screen kiosk app with live crypto quotes and clock and, of course Doom, which ships on the Pi 4 card image (type `doom`). What's coming: - Raspberry Pi 5 support - Full display on the Pi - WIFI - Bluetooth - POSIX-lite for C programs, so existing code can run as a domain - Performance, debugging and tracing features. The code is all available under the BSD license. Would love to hear all and any feedback! Comments URL: https://news.ycombinator.com/item?id=50568169 Points: 6 # Comments: 3",
+      "discussion_url": "https://news.ycombinator.com/item?id=50568169"
+    },
+    {
+      "id": "7ab21f5751a6dc262385",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Bot-inator – Mac agent that writes its own tools, runs them sandboxed",
+      "url": "https://github.com/Bforsyth1234/bot-inator",
+      "published_at": "2026-11-20T00:00:40+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Bforsyth1234/bot-inator Comments URL: https://news.ycombinator.com/item?id=50568353 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50568353"
+    },
+    {
+      "id": "469ed893ada536e483c0",
+      "source": "openai-codex",
+      "publisher": "Codex",
+      "category": "official_update",
+      "title": "Codex 0.171.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+      "published_at": "2026-11-20T00:44:47+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## New Features - Added GPT-6.2 Sol and Astra to model catalogs, with Sol as the default catalog selection. (#62106) - Enabled the TUI workspace by default, with searchable document previews, image previews, and subagent transcripts alongside the main conversation. (#61352, #61888, #61889, #61919, #62157) - Added configurable undo and redo shortcuts to the non-Vim prompt composer, including restoration of attachments and large pastes. (#61954) - Added `codex exec --remote ` to start or resume noninteractive sessions on an existing app server. (#61707) - Added `/rc` and `/remote` to manage local remote control and display device pairing codes from the TUI. (#62121) - Added custom MCP status line selection and authoring through `/statusline` when `tui_extensions_statusline` is enabled. (#61979, #61988, #62037) ## Bug Fixes - Preserved drafts, queued follow-ups, and interrupted input with their original threads when switching or resuming sessions. (#61216) - Kept permission profiles intact when changing working directories. (#61195) - Prevented late completion events from cancelling approvals for a newer turn. (#61801) - Preserved earlier edits in aggregate diffs when steering an active turn. (#61820) - Fixed scrolling that inserted stray characters, composer caret jumps, and redraws using stale terminal dimensions. (#62139, #62174, #62175) - Fixed enterprise MCP sign-in for identity providers that issue ID tokens without refresh tokens. (#62129) ## Chores - Updated source builds and release tooling to Rust 1.99.1. (#61205) - Updated XML dependencies and removed obsolete security advisory exceptions. (#62068) ## Changelog Full Changelog: https://github.com/openai/codex/compare/rust-v0.170.0...rust-v0.171.0 - #61178 Enable conversation-scoped speed selection for Cloud turns @bc-openai - #61180 Reclaim abandoned trusted Git repositories @etraut-openai - #61181 Fix pagination for unindexed threads sorted by ascending recency @etraut-openai - #61182 Support renaming cloud threads @bc-openai - #61183 Fix fork parent metadata in reconstructed TUI sessions @fcoury-oai - #61185 Defer Guardian context limits to request preparation @ioanbudea-OAI - #61186 Keep plan item IDs unique after completion @neerajrj-oai - #61187 Add authenticated GCS caching for Bazel CI and releases @dkovalenko-oai - #61194 Remove redundant legacy permission helpers @ioanbudea-OAI - #61195 Preserve permission profiles across working directory updates @ioanbudea-OAI - #61196 Clear inline image previews before history insertion can scroll them @dob-oai - #61197 Clarify remote message board and clock documentation @anp-oai - #61198 Add graceful agent-tree suspension and recovery @bryanashley - #61199 Align rollout trace replay with the same-binary contract @cassirer-openai - #61200 Unify TUI status content and layout caching in `StatusLine` @fcoury-oai - #61201 Clean up Rust error handling and OTLP test assertions @ioanbudea-OAI - #61205 Upgrade the Rust toolchain to 1.99.1 @ioanbudea-OAI - #61206 Enforce Linux seccomp restrictions for x32 syscalls @dhavalkapil-oai - #61207 Add SPIFFE JWT-SVID support for workload identity authentication @cooper-oai - #61210 Retain TUI delegation prompts in thread model history @won-openai - #61211 Add local status line provider configuration @joesavona - #61212 Add persistence support for status line provider selections @joesavona - #61213 Support model catalog Apps usage instructions @goodman-oai - #61215 Track dictation usage from accepted user inputs @chrisdong-oai - #61216 Preserve thread input across TUI session resumes @bc-openai - #61218 Hide attached threads from the agents overview @fcoury-oai - #61219 Hide TUI status details for read-only history @joesavona - #61220 Deduplicate overlapping Apps startup tool listings @charliemarsh-oai - #61221 Forward repeated signals through the npm wrapper @etraut-openai - #61222 Store rollout trace payloads in compressed shards @cassirer-openai - #61224 Include AppX event IDs in Windows ",
+      "discussion_url": ""
+    },
+    {
+      "id": "31b20b2a65ee53d2bae8",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Tyche, An intelligent interface that clicks, books, and shops on iPhone",
+      "url": "https://apps.apple.com/us/app/tyche-intelligent-interface/id6835683787",
+      "published_at": "2026-11-20T01:22:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "I’ve always believed that AI should work alongside people, not just behind the scenes. People don’t want to just let AI make every decision for them in the background. They want to interact with it, take control, and hand things off whenever they choose. i) Tyche is an intelligent browser that does what you ask. It clicks, books, fills out forms, shops, summarizes, and scrolls, right on the web pages you already use. ii) Browse on your own or with the agent. Switch tabs anytime, and pick up any page or chat right where you left off. iii) Introducing Tyche. Now available on the U.S. App Store. Comments URL: https://news.ycombinator.com/item?id=50568974 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50568974"
+    },
+    {
+      "id": "e1b345d8c9887c57ddbe",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
+      "published_at": "2026-11-20T02:49:57+00:00",
+      "date_kind": "community_post",
+      "evidence": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this YouTube video (see also the accompanying Twitter post ) Claire describes the flood of token fraud she has seen from groups abusing the product's free trial, sometimes just to get free AI usage but often to resell tokens or run other commercial enterprises on top of the ChatPRD agent. I am funding a international Roblox and Fortnite map studio. They run a loop of free trials and promo codes and then tunnel to my agent and use it to build Roblox and Fortnite maps. Apparently one of the common prompts Claire saw running through her agent involved SVGs of pelicans riding bicycles! Presumably the token scammers are using that to help sniff the underlying models - different model families have a definite signature, and I've used it like this in the past to try and guess the identity of stealth preview models on platforms like OpenRouter. Claire is winding down her free trials entirely, which sadly looks like the right decision in the face of this abuse. Tags: youtube , ai , generative-ai , llms , pelican-riding-a-bicycle , ai-misuse",
+      "discussion_url": ""
+    },
+    {
+      "id": "16818c520bf3d44a0d78",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: GhostFleet: A Battleship game with an advanced AI opponent",
+      "url": "https://ghostfleet.in/play?mode=wraithAI",
+      "published_at": "2026-11-20T03:59:43+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hi HN I've always been drawn to puzzle and strategy games, and for a long time I've wanted to build a game of my own. While building my own version of battleship, I came across this idea of adding a super intelligent in-game AI which uses probability and statistics to reason with the board and fire its next shot. The goal was to create a set of rules & logic capable of consistently outperforming human players, much like chess engines that have evolved to surpass even the world's strongest human chess players. Thus I created WraithAI and named the game as Ghostfleet. WraithAI features: 1. Monte Carlo Simulation with Probability heatmaps: Before every turn WraithAI samples 800 possible enemy fleet configurations and aggregates them into a probability heatmap. It identifies the most likely locations of the enemy ships. 2. Bayesian Inference: After every shot it updates its beliefs and uses the information gain to draw a new heatmap. When two cells look equally likely WraithAI picks the one whose result would tell more about the hidden enemy fleet for its next turn. 3. Adaptive Strategy & defense: It adjusts its aggression based on the state of the game and has a mechanism which resists common search strategies. I would genuinely like to know how people can find patterns in its behavior. Can you outsmart & beat WraithAI? Ghostfleet also has multiplayer mode so you can play with your friends. There is a matchmaking component called TownSquare at the bottom through which you can share room codes with other players. You can play directly in your browser: 1. Play against WraithAI: https://ghostfleet.in/play?mode=wraithAI 2. Ghostfleet: https://ghostfleet.in/ 3. WraithAI Technical breakdown: https://ghostfleet.in/wraith-ai Comments URL: https://news.ycombinator.com/item?id=50569981 Points: 2 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50569981"
+    },
+    {
+      "id": "6587a64ef42bdd01b5df",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Agent Driven Slide Decks",
+      "url": "https://github.com/steamfield/decks",
+      "published_at": "2026-11-20T04:07:56+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/steamfield/decks Comments URL: https://news.ycombinator.com/item?id=50570036 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50570036"
+    },
+    {
+      "id": "da1880e3e0be4e2a2588",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A Personality Test for Engineers",
+      "url": "https://engtest.dev",
+      "published_at": "2026-11-20T04:32:26+00:00",
+      "date_kind": "community_post",
+      "evidence": "After hiring engineers for the past 10 years at various startups, I realized that there were different axis of engineering preferences that impacted how well I worked with them. I decided to use Claude (sorry) to build out a quiz that ranks based on a series of questions. It's a little cheesy, but I thought this could be a useful way to understand the style of the engineer before an interview. There aren't any \"wrong\" answers, just preferences, so it can't be gamed like most tests. What's good at a large company could be the opposite at a small company. You don't need to sign up in order to take the test, so don't feel obligated. Here is mine, as an example result https://engtest.dev/g/lucas Would love feedback if anyone would find this useful for hiring, or if you found the results insightful! Comments URL: https://news.ycombinator.com/item?id=50570206 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50570206"
+    },
+    {
+      "id": "7edafec8340deeba4efc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Mergepond – a Mac Git client for worktrees and coding agents",
+      "url": "https://mergepond.dev",
+      "published_at": "2026-11-20T05:39:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://mergepond.dev Comments URL: https://news.ycombinator.com/item?id=50570576 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50570576"
+    },
+    {
+      "id": "84cef671e2017e67182e",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: SoundBench – AI vocal remover and audio tools that run in the browser",
+      "url": "https://soundbench.net",
+      "published_at": "2026-11-20T05:44:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://soundbench.net/ Comments URL: https://news.ycombinator.com/item?id=50570611 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50570611"
+    },
+    {
+      "id": "3fbbfb6ce14081add8a3",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AiTz – A universal gateway for discovering AI tools",
+      "url": "https://aitz.site",
+      "published_at": "2026-11-20T05:54:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "About AiTz I started AiTz because discovering useful AI tools can be difficult when they are scattered across the internet. I wanted to build one place where people can discover different AI tools and find solutions for different tasks. AiTz is an independent project that I'm building from Tanzania, with a global audience in mind. I'm still improving it, and I'd be interested in feedback from developers and people who regularly use AI tools. Website: https://aitz.site Comments URL: https://news.ycombinator.com/item?id=50570680 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50570680"
+    },
+    {
+      "id": "b3449e34506c5eea40dc",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Testing a crystal-lattice model on 1.58M Harvard Solar System orbits",
+      "url": "https://github.com/Dr-Logvinovich/IT3-Solar-System-Quantum-Architecture",
+      "published_at": "2026-11-20T05:59:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/Dr-Logvinovich/IT3-Solar-System-Quantum-Architecture/ Comments URL: https://news.ycombinator.com/item?id=50570716 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50570716"
+    },
+    {
+      "id": "0d128c623bc38098ddec",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: BSWorld – AI agents can now test Bluetooth code without hardware",
+      "url": "https://github.com/XiaoMi/bsworld",
+      "published_at": "2026-11-20T06:06:42+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/XiaoMi/bsworld Comments URL: https://news.ycombinator.com/item?id=50570766 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50570766"
+    },
+    {
+      "id": "95f9b5c2629d91a03dc6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Sandscale – Cloud infrastructure for AI creators, agents and developers",
+      "url": "https://sandscale.dev",
+      "published_at": "2026-11-20T06:17:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "Sandscale is live! We’re building a platform that helps developers, AI creators and businesses create, experiment and execute AI-powered workflows. It provides secure isolated environments, cloud workspaces and infrastructure for AI-powered development. We’re excited to hear feedback from the developer community. Comments URL: https://news.ycombinator.com/item?id=50570825 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50570825"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-19T20:37:12.294021+00:00",
+      "last_success": "2026-11-20T07:15:43.421831+00:00",
       "count": 10,
-      "earliest": "2026-11-17T18:04:48+00:00",
+      "earliest": "2026-11-17T20:20:29+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-19T20:37:12.362380+00:00",
+      "last_success": "2026-11-20T07:15:43.616632+00:00",
       "count": 20,
       "earliest": "2026-11-18T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-19T20:37:12.430171+00:00",
+      "last_success": "2026-11-20T07:15:43.798415+00:00",
       "count": 913,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-19T20:37:12.634787+00:00",
+      "last_success": "2026-11-20T07:15:43.878089+00:00",
       "count": 30,
-      "earliest": "2026-11-09T23:57:21+00:00",
+      "earliest": "2026-11-10T03:53:04+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-19T20:37:12.710953+00:00",
+      "last_success": "2026-11-20T07:15:51.504312+00:00",
       "count": 100,
-      "earliest": "2026-11-19T09:35:03+00:00",
-      "gap": true,
+      "earliest": "2026-11-19T15:05:33+00:00",
+      "gap": false,
       "error": null
     },
     "hn-topics": {
@@ -111642,60 +111954,60 @@
       "count": 99,
       "earliest": "2026-11-18T09:31:57+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-19T20:37:34.369404+00:00",
+      "last_success": "2026-11-20T07:16:01.069478+00:00",
       "count": 10,
-      "earliest": "2026-11-03T01:25:46+00:00",
+      "earliest": "2026-11-04T00:01:03+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-19T20:37:34.811077+00:00",
+      "last_success": "2026-11-20T07:16:01.675293+00:00",
       "count": 10,
       "earliest": "2026-10-16T03:51:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-19T20:37:35.158933+00:00",
+      "last_success": "2026-11-20T07:16:02.104517+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-19T20:37:35.529348+00:00",
+      "last_success": "2026-11-20T07:16:02.489478+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-19T20:37:35.927657+00:00",
+      "last_success": "2026-11-20T07:16:03.124064+00:00",
       "count": 9,
       "earliest": "2026-10-21T16:20:30+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-19T20:37:52.535962+00:00",
+      "last_success": "2026-11-20T07:16:24.296288+00:00",
       "count": 2,
       "earliest": "2026-11-04T13:08:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-19T20:37:52.655491+00:00",
-      "count": 1414,
+      "last_success": "2026-11-20T07:16:24.449355+00:00",
+      "count": 1418,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-19T20:38:02.185926+00:00",
-      "count": 7,
+      "last_success": "2026-11-20T07:16:36.051815+00:00",
+      "count": 8,
       "earliest": "2026-11-06T01:40:00+00:00",
       "gap": false,
       "error": null
@@ -111877,5 +112189,5 @@
       "to": "2026-11-19T09:35:03+00:00"
     }
   ],
-  "collected_at": "2026-11-19T20:38:02.186874+00:00"
+  "collected_at": "2026-11-20T07:16:36.052810+00:00"
 }
