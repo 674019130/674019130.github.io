@@ -96385,6 +96385,18 @@
       "discussion_url": "https://news.ycombinator.com/item?id=50447073"
     },
     {
+      "id": "7174f9c88ae7cfbfa9e2",
+      "source": "ollama-ollama",
+      "publisher": "Ollama",
+      "category": "official_update",
+      "title": "Ollama v0.40.17",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.17",
+      "published_at": "2026-11-10T22:25:00+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## Inkling 2 Mini [Inkling 2 Mini](https://ollama.com/library/inkling-2-mini) from Thinking Machines is a 26B parameter model with 5.4B active. Its looped layers give it more computation per token than its size suggests, and it still fits on a Mac at about 20GB. It handles text and images, tool calls, and thinking, and scores 79.2% on SWE-Bench Verified). ``` ollama run inkling-2-mini ``` Note: inkling-2-mini is supported on Apple silicon only in this release. PC support will follow in an upcoming release. ## What's Changed - `ollama launch claude` supports Claude Code's deferred tool loading, so MCP tools are loaded when needed instead of all at once - Ollama on Apple silicon now serves multiple requests at once. - `ollama launch opencode` sets thinking options from the model's metadata - `ollama launch pi` refreshes Pi's model list after sign-in and passes along prompt arguments - `ollama launch chatgpt --restore` asks before switching an active profile and preserves existing settings and chat history; quitting ChatGPT yourself now lets it exit through its own quit prompt - Running `ollama` with no arguments in a non-interactive shell prints help instead of erroring - Ctrl+C or Ctrl+G while in a multiline `\"\"\"` block leaves multiline mode instead of swallowing the next line - Changing the context shift setting no longer reloads the model - Vulkan now uses mmap for integrated GPUs, fixing `Failed to allocate pinned memory` load failures on shared-memory GPUs - On Windows iGPUs, partially offloaded models no longer fail to allocate the KV cache - Tool definitions passed through the API keep JSON schema keywords Ollama doesn't model instead of dropping them - Disabling thinking now maps to the model's lowest supported reasoning level rather than being ignored - Source builds can use prebuilt MLX-C and XGrammar binaries **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.16...v0.40.17-rc3",
+      "discussion_url": ""
+    },
+    {
       "id": "02730ac59296f729c28c",
       "source": "hn-topics",
       "publisher": "Hacker News",
@@ -112475,32 +112487,104 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://www.masteringemacs.org/article/announcing-dreamcoder Comments URL: https://news.ycombinator.com/item?id=50581110 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50581110"
+    },
+    {
+      "id": "b771d9e2f3ac43b71b96",
+      "source": "github",
+      "publisher": "GitHub Changelog",
+      "category": "official_update",
+      "title": "GitHub Enterprise Server 3.23 release candidate",
+      "url": "https://github.blog/changelog/2026-11-20-github-enterprise-server-3-23-release-candidate",
+      "published_at": "2026-11-20T20:41:26+00:00",
+      "date_kind": "source_publication",
+      "evidence": "GitHub Enterprise Server (GHES) 3.23 is now available and introduces new capabilities across the platform. Here are a few highlights in the 3.23 release: When working in GitHub Projects, you can create more precise project views by combining filters with logical OR , explicit AND , and parentheses for grouping. For example, (status:Done OR status:Todo) is:issue shows issues with either status. If your enterprise uses GitHub Secret Protection, you can detect unstructured secrets entirely within your network using AI secret detection on GHES, including in air-gapped environments. A self-contained, fine-tuned model runs on the appliance’s CPU without a GPU, hosted LLM, or outbound connection. This feature is in public preview and subject to change. As a developer, you can identify known malicious packages in PyPI, Maven, RubyGems, NuGet, Go, Rust, and Composer through the GitHub Advisory Database, in addition to npm. The database automatically ingests malware advisories from OpenSSF’s malicious-packages repository to expand coverage across these ecosystems. By default, Dependabot waits until a package version has been available on its registry for at least three days before opening a version update pull request. This cooldown gives maintainers and the community more time to detect and report compromised or buggy releases before users merge updates. As an OAuth app developer, you can limit token lifetimes by using access tokens that expire after eight hours and refresh tokens to obtain new access tokens. Token expiration is opt-in for existing OAuth apps and the default for newly created apps. You can request expiring tokens with scope=offline_access during authorization for testing and gradual rollout, or require expiration in your app registration. Before requiring expiration, you must update all clients to request, store, and use refresh tokens to avoid breaking sign-in for clients that do not support them. This feature is in public preview and subject to change. In your GHES cluster, you can now move the Redis primary from a node that also runs other services, such as MySQL, to a dedicated node. Redis then uses the dedicated node’s resources and data volume rather than sharing them with those services. This procedure does not attach a new disk to an existing node or use an external Redis service. Release candidates let you try the latest features early and share feedback before general availability. To learn more, see About upgrades to new releases and the GHES 3.23 release notes . To get started, download the GHES 3.23 release candidate . If you have feedback or questions about the release candidate, contact GitHub Support . The post GitHub Enterprise Server 3.23 release candidate appeared first on The GitHub Blog .",
+      "discussion_url": ""
+    },
+    {
+      "id": "41e0f2764bfed1751db5",
+      "source": "anthropics-claude-code",
+      "publisher": "Claude Code",
+      "category": "official_update",
+      "title": "Claude Code v2.1.330",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "published_at": "2026-11-20T22:32:56+00:00",
+      "date_kind": "source_publication",
+      "evidence": "## What's changed - Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after `claude auth login`, Claude Code applies the organization's settings and uses its cloud provider or gateway - Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in `/config` - Added `CLAUDE_CODE_FULL_SIGN_IN_LINK=1` to print the full sign-in link, if the short one shows an error or a script reads values from it - Self-hosted runner: Added `--start-dir` / `SELF_HOSTED_RUNNER_START_DIR` to have Claude start its work in a folder of a repository, while settings and hooks load as without it - Added a notice in cloud and self-hosted runner sessions when a plugin marketplace can't be fetched because its repository isn't one of the session's - Self-hosted runner: Added a notice when Anthropic-managed git refuses a plugin's own repository, naming the plugin and what to do - Added `commandPrinted` to `claude plugin install --json` results, true when the plugin's install command wrote to stderr, and `commandFailed` when it exited with an error, was killed or timed out - Added `claude_code_self_hosted_runner_order_to_registered_seconds` to the self-hosted runner's `/metrics`: seconds from work order issued to registration accepted, on orchestrator-spawned runners - Added `claude_code_self_hosted_runner_order_to_first_session_seconds` to the self-hosted runner's `/metrics`: seconds from work order to first session handed over, on runners started for a session - Fixed Claude Code freezing for up to several minutes right after compacting a very long conversation - Fixed WebFetch freezing the session for minutes on some pages, and returning an empty result for some others - Fixed `ExitWorktree` and the worktree exit dialog deleting a worktree that another running Claude Code session was working in - Fixed changes to user settings being lost when several Claude Code processes saved them at the same time - Fixed `--continue` and `--resume` opening an empty session or failing when the last saved message had a missing or invalid timestamp - Fixed the first prompt after a sleep of two minutes or more waiting three minutes on a connection that had died, on Linux and WSL - Fixed turns failing with \"JSON schema is invalid\", and session files growing by many megabytes, when many MCP tools have an input schema that the API refuses - Linux: Fixed Bash commands waiting seconds and showing no file diff for the rest of a session in slow repositories with large ignored folders such as `node_modules` - Windows: Fixed Bash commands running slower for the rest of a session after Git Bash took 10 to 60 seconds to start, on machines with no custom start-up files - Fixed `/rewind` sometimes restoring an older version of a file when two queued prompts, or stacked skills, ran together right after a turn that changed it - Fixed text and images added when approving a permission prompt being dropped when the approved command or tool then failed - Fixed MCP resources from claude.ai connectors and plugin servers not being attached when @-mentioned in the terminal's prompt box - Fixed an MCP server that subagents declare being shut down when one of them finished, while other subagents or the session were still using it - Fixed Claude in Chrome staying \"not connected\" after a brief connection problem, even though Chrome was open and signed in - Fixed terminal sessions on Amazon Bedrock (Mantle) started with no model selected ignoring a pinned Opus model, and still calling an unavailable default model after announcing a fallback - Fixed the rest of what you were typing being lost when a plan arrived in fullscreen mode - Fixed claude.ai connectors with different names being dropped when they share a server URL (anthropics/claude-code#101856) - Fixed plugins going missing from the installed list when several `claude plugin` commands ran",
+      "discussion_url": ""
+    },
+    {
+      "id": "ccabe7482761a1c51992",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline SDK v0.2.1",
+      "url": "https://github.com/cline/cline/releases/tag/sdk/sdk/v0.2.1",
+      "published_at": "2026-11-21T05:19:22+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- `read_files` results are no longer re-cut to the 8k tool-result cap on the way to the provider. They use the 50k file-content cap, so a read the tool reported in full arrives in full. Command, search, MCP and custom tool results keep the 8k cap, and an explicit tool-result cap still applies - Models that need interleaved reasoning get a placeholder `reasoning_content` on assistant messages that have none. This fixes Reflection Beam's `400 Missing required parameter: 'messages[n].reasoning_content'` after compaction or a model switch. The fact is carried as `ModelInfo.metadata.interleavedReasoningField` - The summarizer now states a preference to go without reasoning instead of disabling it outright. The gateway disables it only for models whose catalog entry advertises an off option. Before, uncatalogued models got `reasoning_effort: \"none\"`, which some endpoints reject, and compaction fell back to basic - A custom model with saved overrides now has `reasoning` seeded into its capability list unless it sets `supportsReasoning: false`, so an explicit reasoning disable reaches the provider. Before, gpt-5.6 and gpt-6 chat-completions endpoints rejected every tool call - The native OpenAI adapter fits the reasoning level to the model's advertised effort ladder, so `max` and Extra High are no longer sent verbatim to GPT-5.x and o-series models that reject them - LiteLLM: the legacy `max_tokens` is no longer used as the input budget when `max_output_tokens` is set. Null limits are treated as missing - The `cline` provider's bundled default is now the first bundled free model. `resolveClineDefaultModelId()` in `@cline/core` returns the first free model from the live recommended feed, then the bundled one, then `CLINE_DEFAULT_MODEL_ID` - `CLINE_DEFAULT_MODEL_ID` is now `anthropic/claude-sonnet-5.5`, and the remaining hardcoded default-model literals use it. `@cline/shared` adds `ANTHROPIC_DEFAULT_MODEL_ID` for Anthropic's bare id format - A running compaction can be stopped, and cancellations are counted in telemetry - Session config and the hub RPC schema accept the `max` reasoning effort - With tools and spawning enabled, core registers `ux_verifier`, which delegates an ordered checklist to a subagent through the host's `spawn_agent` executor. Disabling `spawn_agent` disables it too - `createUxVerificationReportTool()` creates the opt-in `report_ux_verification` tool for structured reports with captions, pass/fail/blocked results and screenshot references - `createPublishArtifactsTool({ publish })` creates the opt-in `publish_artifacts` tool. `createArtifactPublisher` from `@cline/core/cloud` publishes to cloud sessions through signed upload policies. Artifact IDs default to the source filename - `McpToolDescriptor.annotations` carries a server's tool hints (`readOnlyHint` and friends) through the stdio and URL clients and the manager cache. `task.tool_used` telemetry gains `mode` - `session.resume` starts a runtime for a saved session ID and reads history on the hub, instead of requiring `initialMessages` - Cloud task creation accepts `initialMessage` to create and send in one call, and `localGit` to launch from a captured Git snapshot - `HubCloudSessionClient.getArtifactDownloadUrl(sessionId, artifactId)` returns a signed URL without starting the sandbox - Provider, model, MCP and MCP OAuth management are available as hub commands, with token authentication required for provider management - The hub can return session history in bounded chunks and archived cloud history - The hub validates caller accounts for cloud commands, and no longer re-sends a rejected Cline refresh token on every cloud poll - Hub cloud requests no longer duplicate the API prefix - Hub session handlers are retained when a session deletion fails - Confirmed cloud handoff publication is exported from `@cline/core/cloud` for direct hosts - `@cline/shared` adds `resolveClineAppUrl`, and the account response carries `dataPrivacyPath` for the web app's privacy s",
+      "discussion_url": ""
+    },
+    {
+      "id": "b91dfa20ac79e35e50c3",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline CLI v3.0.75",
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.75",
+      "published_at": "2026-11-21T05:30:43+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- One-shot runs (a prompt argument or piped stdin) now start in yolo mode instead of act mode, since nobody is at the keyboard to approve tools. Act mode is kept when auto-approve is off (`--auto-approve false` or the saved setting), when a mode flag is passed, when plan mode is saved, or when the prompt is a `/team` prompt. Yolo mode has no team tools, so pass `--act` when you need them - `--timeout` and Ctrl+C now stop the first turn of a one-shot run. Before, neither could interrupt it - The CLI no longer reads `.env` or `bunfig.toml` from the directory it is launched in - With no saved model, the Cline provider now starts on the first free model instead of Claude Sonnet 5.5. Saved selections are untouched - `/account` shows a Privacy settings link to the Cline web app's data-use preferences - `read_files` results are no longer cut to 8k characters on the way to the model. A read now arrives in full, up to the tool's own limit of 2000 lines or about 48k characters - Reflection Beam no longer fails every turn with `400 Missing required parameter: 'messages[n].reasoning_content'` after a compaction or a model switch - Compaction no longer falls back to the basic summary on models the catalog doesn't describe. The summarizer was sending `reasoning_effort: \"none\"`, which some endpoints reject - Turning reasoning off now reaches custom models that have saved Model Configuration overrides. Before, gpt-5.6 and gpt-6 chat-completions endpoints rejected every tool call - On the native OpenAI provider, the reasoning level is fitted to what each model supports, so `max` and Extra High are no longer rejected by GPT-5.x and o-series models - LiteLLM: the legacy `max_tokens` field is no longer used as the input budget when the model reports `max_output_tokens` - Removed the `CLINE_CAPTURE_*` debug variables, which wrote full provider request bodies to disk - Experimental: set `CLINE_CLOUD_SESSIONS=1` to run tasks in Cline Cloud from the TUI. Ctrl+O toggles Local/Cloud, Ctrl+K picks the repo and branch, and `/model` picks the cloud model - Each platform package now ships a `THIRD_PARTY_NOTICES.txt` - Security: undici raised to 7.30.1, which fixes two process-crash issues - Refreshed the model catalog. Adds 94 providers from models.dev and drops Lilac and Tempr. The Cline recommended list adds Muse Ember. The Cline free list drops Reflection Beam, Laguna S 2.1 and Solar Mini 4. ClinePass drops DeepSeek V4.1 Flash, Mimo V2.6 Flash, Mimo V2.6 Pro, MiniMax M3, Qwen3.7 Plus and Qwen3.7 Max. Default models change for 67 other providers, mostly to Kimi K3.1 Pro, Gemini 4 Neon (including the `gemini` and `vertex` providers) or DeepSeek V4.1 Flash 1017 **Full Changelog**: https://github.com/cline/cline/compare/cli-v3.0.74...cli-v3.0.75",
+      "discussion_url": ""
+    },
+    {
+      "id": "5225ff1cd78a89ee897c",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline Desktop v0.0.50",
+      "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.50",
+      "published_at": "2026-11-21T05:54:06+00:00",
+      "date_kind": "source_publication",
+      "evidence": "- The thinking picker offers **Max** reasoning effort, for models whose top level is max - A manual `/compact` can be stopped. Before, it could sit on \"Thinking…\" with no Stop button when the summarizer stalled - With no saved model, the Cline provider now starts on the first free model instead of Claude Sonnet 5.5. Saved selections are untouched - The Account view has a Privacy settings link to the Cline web app's data-use preferences - Settings → About has a **Third-party notices** entry with the licenses for the open source software included in Cline - On macOS, Check for Updates from the menu runs once instead of twice - Refreshed colours and typography across the app - `read_files` results are no longer cut to 8k characters on the way to the model. A read now arrives in full, up to the tool's own limit of 2000 lines or about 48k characters - Reflection Beam no longer fails every turn with `400 Missing required parameter: 'messages[n].reasoning_content'` after a compaction or a model switch - Compaction no longer falls back to the basic summary on models the catalog doesn't describe. The summarizer was sending `reasoning_effort: \"none\"`, which some endpoints reject - Turning reasoning off now reaches custom models that have saved Model Configuration overrides. Before, gpt-5.6 and gpt-6 chat-completions endpoints rejected every tool call - On the native OpenAI provider, the reasoning level is fitted to what each model supports, so `max` and Extra High are no longer rejected by GPT-5.x and o-series models - LiteLLM: the legacy `max_tokens` field is no longer used as the input budget when the model reports `max_output_tokens` - Refreshed the model catalog. Adds 94 providers from models.dev and drops Lilac and Tempr. The Cline recommended list adds Muse Ember. The Cline free list drops Reflection Beam, Laguna S 2.1 and Solar Mini 4. ClinePass drops DeepSeek V4.1 Flash, Mimo V2.6 Flash, Mimo V2.6 Pro, MiniMax M3, Qwen3.7 Plus and Qwen3.7 Max. Default models change for 67 other providers, mostly to Kimi K3.1 Pro, Gemini 4 Neon (including the `gemini` and `vertex` providers) or DeepSeek V4.1 Flash 1017 **Full Changelog**: https://github.com/cline/cline/compare/desktop-v0.0.49...desktop-v0.0.50",
+      "discussion_url": ""
+    },
+    {
+      "id": "3435a8a68cdf13e15e13",
+      "source": "cline-cline",
+      "publisher": "Cline",
+      "category": "official_update",
+      "title": "Cline v4.1.27",
+      "url": "https://github.com/cline/cline/releases/tag/v4.1.27",
+      "published_at": "2026-11-21T06:05:04+00:00",
+      "date_kind": "source_publication",
+      "evidence": "### Added - LM Studio settings have an API key field, for servers with \"Require Authentication\" turned on. - The MCP tab shows a \"read-only\" badge on tools whose server declares them read-only. - The Account view has a Privacy settings link to the Cline web app's data-use preferences. - The extension package now includes its third-party license notices. ### Changed - With no saved model, the Cline provider now starts on the first free model instead of Claude Sonnet 5.5. Saved selections are untouched. - The reasoning effort dropdown shows the effort a new task will actually use, and has a Default entry that clears the saved setting. - A provider's model list refreshes after you save its API key or base URL, and a failed refresh (such as a rejected key) shows as an error in the model picker. - `read_files` results are no longer cut to 8k characters on the way to the model. A read now arrives in full, up to the tool's own limit of 2000 lines or about 48k characters. - Refreshed the model catalog. Adds 94 providers from models.dev and drops Lilac and Tempr. The Cline recommended list adds Muse Ember. The Cline free list drops Reflection Beam, Laguna S 2.1 and Solar Mini 4. ClinePass drops DeepSeek V4.1 Flash, Mimo V2.6 Flash, Mimo V2.6 Pro, MiniMax M3, Qwen3.7 Plus and Qwen3.7 Max. Default models change for 67 other providers, mostly to Kimi K3.1 Pro, Gemini 4 Neon (including the `gemini` and `vertex` providers) or DeepSeek V4.1 Flash 1017. ### Fixed - Picking \"None\" for reasoning effort is now saved and sent. Before, GPT-6 on Azure kept its default effort and rejected tool calls. - Turning reasoning off now reaches custom models that have saved Model Configuration overrides. Before, gpt-5.6 and gpt-6 chat-completions endpoints rejected every tool call. - On the native OpenAI provider, the reasoning level is fitted to what each model supports, so `max` and Extra High are no longer rejected by GPT-5.x and o-series models. - Reflection Beam no longer fails every turn with `400 Missing required parameter: 'messages[n].reasoning_content'` after a compaction or a model switch. - Compaction no longer falls back to the basic summary on models the catalog doesn't describe. - LiteLLM: the legacy `max_tokens` field is no longer used as the input budget when the model reports `max_output_tokens`. - Reasoning text from a turn that was cancelled or failed no longer shows up at the start of the next turn's reasoning. - Commit search passes your query to git as arguments instead of shell text, so a quoted search matches the exact phrase. - Security: undici raised to 7.30.1, which fixes two process-crash issues. **Full Changelog**: https://github.com/cline/cline/compare/v4.1.26...v4.1.27",
+      "discussion_url": ""
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-20T20:19:26.732313+00:00",
+      "last_success": "2026-11-21T07:07:36.033744+00:00",
       "count": 10,
-      "earliest": "2026-11-18T16:54:26+00:00",
+      "earliest": "2026-11-18T22:04:50+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-20T20:19:26.975722+00:00",
+      "last_success": "2026-11-21T07:07:36.370199+00:00",
       "count": 20,
       "earliest": "2026-11-18T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-20T20:19:27.060739+00:00",
+      "last_success": "2026-11-21T07:07:36.477709+00:00",
       "count": 915,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-20T20:19:27.205826+00:00",
+      "last_success": "2026-11-21T07:07:36.561356+00:00",
       "count": 30,
       "earliest": "2026-11-10T07:28:21+00:00",
       "gap": false,
@@ -112518,59 +112602,59 @@
       "count": 100,
       "earliest": "2026-11-18T23:55:54+00:00",
       "gap": false,
-      "error": null
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-20T20:19:43.648322+00:00",
+      "last_success": "2026-11-21T07:08:13.810079+00:00",
       "count": 10,
-      "earliest": "2026-11-04T00:01:03+00:00",
+      "earliest": "2026-11-06T17:04:01+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-20T20:19:44.061924+00:00",
+      "last_success": "2026-11-21T07:08:14.141185+00:00",
       "count": 10,
-      "earliest": "2026-10-16T03:51:13+00:00",
+      "earliest": "2026-10-17T03:00:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-20T20:19:44.409259+00:00",
+      "last_success": "2026-11-21T07:08:14.483693+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-20T20:19:44.688422+00:00",
+      "last_success": "2026-11-21T07:08:14.765005+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-20T20:19:45.138664+00:00",
-      "count": 9,
+      "last_success": "2026-11-21T07:08:15.150773+00:00",
+      "count": 10,
       "earliest": "2026-10-21T16:20:30+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-20T20:20:01.514022+00:00",
+      "last_success": "2026-11-21T07:08:30.086283+00:00",
       "count": 2,
       "earliest": "2026-11-04T13:08:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-20T20:20:01.656052+00:00",
-      "count": 1420,
+      "last_success": "2026-11-21T07:08:30.257973+00:00",
+      "count": 1421,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-20T20:20:10.762768+00:00",
+      "last_success": "2026-11-21T07:08:39.027841+00:00",
       "count": 8,
       "earliest": "2026-11-06T01:40:00+00:00",
       "gap": false,
@@ -112753,5 +112837,5 @@
       "to": "2026-11-19T09:35:03+00:00"
     }
   ],
-  "collected_at": "2026-11-20T20:20:10.763781+00:00"
+  "collected_at": "2026-11-21T07:08:39.028995+00:00"
 }
