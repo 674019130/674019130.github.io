@@ -113303,102 +113303,378 @@
       "date_kind": "community_post",
       "evidence": "Article URL: https://github.com/VBS2004/pencil Comments URL: https://news.ycombinator.com/item?id=50592137 Points: 2 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50592137"
+    },
+    {
+      "id": "28773ca7ac58bc4708d7",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I made an app to show your codebase on a canvas [video]",
+      "url": "https://www.youtube.com/watch?v=WNnumyRfUpQ",
+      "published_at": "2026-11-21T19:54:39+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've been playing with the idea of putting a whole codebase on an infinite canvas. You could search files, filter by type, or see what changed since a commit. Might be useful when coding agents are changing so many files at once. And it all runs in the browser. Try it here: https://www.vahidyousefzadeh.com/repopan/app Comments URL: https://news.ycombinator.com/item?id=50592988 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50592988"
+    },
+    {
+      "id": "4affacdb172b81c6141f",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: trace2rules – Mine and audit coding-agent logs into AGENTS.md rules",
+      "url": "https://github.com/rkkautsar/trace2rules",
+      "published_at": "2026-11-21T19:55:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/rkkautsar/trace2rules Comments URL: https://news.ycombinator.com/item?id=50592998 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50592998"
+    },
+    {
+      "id": "10e6251a751787e51d0c",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: trace2rules – Mine and audit coding-agent logs into AGENTS.md rules",
+      "url": "https://github.com/rkkautsar/trace2rules",
+      "published_at": "2026-11-21T19:55:58+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/rkkautsar/trace2rules Comments URL: https://news.ycombinator.com/item?id=50592998 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50592998"
+    },
+    {
+      "id": "ff26cdccfd3918dc51e5",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ripcloc – cloc every edit your agent makes",
+      "url": "https://github.com/alfredjeanlab/ripcloc",
+      "published_at": "2026-11-21T20:38:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN. ripcloc exists because I ask agents to consider line cost in feedback early and often when they're doing work to help constrain unnecessary complexity and to trigger discussions about code smells that lead to bad architecture. It is fast enough that you can add it to a git commit hook. It is fast enough that your agent harness can run it after every tool call. The other reason it exists is to help _count your tests_. Ripcloc attributes each line as either a source line, a test line or a comment/doc line, so that you can have a better idea quickly how much your codebase is _implementation_ vs _tests_. It does this even for inline tests like `#[cfg(test)] mod tests { ... }` in Rust (and is still faster than its predecessors!). Comments URL: https://news.ycombinator.com/item?id=50593391 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50593391"
+    },
+    {
+      "id": "248077f495fbc15f4ae8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Ripcloc – cloc every edit your agent makes",
+      "url": "https://github.com/alfredjeanlab/ripcloc",
+      "published_at": "2026-11-21T20:38:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN. ripcloc exists because I ask agents to consider line cost in feedback early and often when they're doing work to help constrain unnecessary complexity and to trigger discussions about code smells that lead to bad architecture. It is fast enough that you can add it to a git commit hook. It is fast enough that your agent harness can run it after every tool call. The other reason it exists is to help _count your tests_. Ripcloc attributes each line as either a source line, a test line or a comment/doc line, so that you can have a better idea quickly how much your codebase is _implementation_ vs _tests_. It does this even for inline tests like `#[cfg(test)] mod tests { ... }` in Rust (and is still faster than its predecessors!). Comments URL: https://news.ycombinator.com/item?id=50593391 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50593391"
+    },
+    {
+      "id": "ad7187c3742c9da94b39",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Brain Doesn't Think in Sentences. Why Should an LLM?",
+      "url": "https://www.innerkore.com/blog/brain-doesnt-think-sentences-llm",
+      "published_at": "2026-11-21T21:04:11+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.innerkore.com/blog/brain-doesnt-think-sentences-llm/ Comments URL: https://news.ycombinator.com/item?id=50593617 Points: 5 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50593617"
+    },
+    {
+      "id": "759a5946041b75d1ded2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Custom SQLites for agents (a remote MCP)",
+      "url": "https://databasedmcp.com",
+      "published_at": "2026-11-21T21:04:46+00:00",
+      "date_kind": "community_post",
+      "evidence": "What if your agents could create (almost) any SQLite database they need? I built databasedmcp to let Claude (or any other agent) create databases for my sessions, in both Claude and Claude Code. With the MCP, agents can create multiple databases with basically any schema. Docs and tool descriptions: https://databasedmcp.com/docs Some use cases that I've discovered: * Share data between agents Let agents store their status, what they're working on, etc. This is essentially about passing data between coding agents. E.g. set up a worker agent that picks up work items that other agents add to the database. This kind of enables autonomous work discovery. * Build custom apps I've built many ad-hoc apps just by describing the idea to Claude. Ask it to create the UI as an artifact and to use databasedmcp as the backend. Artifacts can call MCP tools however they want. You use the chat to modify the app, and use the app itself in the artifact UI. Pretty easy to build small apps such as a shopping list, an expense tracker, etc. Then use Claude to extract data from documents, and store the data with databasedmcp in a structured manner. Any comments are appreciated, thanks! Comments URL: https://news.ycombinator.com/item?id=50593621 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50593621"
+    },
+    {
+      "id": "0bab3922a18ac49651ad",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: It's now easy to install Linux on an Android Phone – Android2linux",
+      "url": "https://github.com/android2linux/android2linux",
+      "published_at": "2026-11-21T21:34:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN! One of my biggest dreams (really) was to have a Linux phone. I tried to install on some phones in the past, even the ones that would be marked as compatible and it was always so difficult that I couldn't really do it. Yesterday I decided to try again, this time using Claude to do most of the work. A couple hours later it runs postmarketOS as my second phone: 4G, SMS, a terminal, SSH. It took two fixes. U-Boot didn't recognise my phone model, so I patched 14 bytes of its device-tree match strings. Then the modem wasn't working, because the packaged TFTP server that lends the modem a folder mishandled its file-size queries but an upstream build fixed it. The repo is what came out of it: guides for any phone (but specific just for my xiaomi), an agent skill that follows the same method and safety rules, notes per phone, and web apps reworked for a phone screen (WhatsApp Web for desktop with a one-pane layout). What doesn't work (in this phone of mine): no charger driver yet (slow charging), no cameras, and no banking apps, so I keep an Android at home for those. Whether this works for you depends on your phone having a port. reports through the issue forms help, especially for phones that don't work yet. I think that finally succeeding at having a Linux phone is worth creating a post on HN. I was thinking about a Tell HN but decided to convert the knowledge into a repo so more people can share, discuss, add their phones, new apps, etc. Hope it helps! Comments URL: https://news.ycombinator.com/item?id=50593862 Points: 4 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50593862"
+    },
+    {
+      "id": "1cbfe243cd9d8e043ccf",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Nistivo – custom AI models trained for you, one fixed quote",
+      "url": "https://nistivo.com",
+      "published_at": "2026-11-21T21:47:44+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://nistivo.com/ Comments URL: https://news.ycombinator.com/item?id=50593969 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50593969"
+    },
+    {
+      "id": "905593e87e942ac5dbe8",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "FarmDash (zero-custody DeFi agent API): RFC 9727 catalog, typed webhooks",
+      "url": "https://www.farmdash.one/.well-known/api-catalog",
+      "published_at": "2026-11-21T21:54:48+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.farmdash.one/.well-known/api-catalog Comments URL: https://news.ycombinator.com/item?id=50594026 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594026"
+    },
+    {
+      "id": "b9e1be401c1b98b99429",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: A playable world model of the Backrooms",
+      "url": "https://github.com/Yelar/noclip",
+      "published_at": "2026-11-21T22:00:20+00:00",
+      "date_kind": "community_post",
+      "evidence": "A 211M-param transformer acts as a game engine. It draws every next frame from the last 2.4 seconds and my inputs. Built a simulator of 18 Backrooms levels in PyTorch to generate the data. Recorded 440 hours of scripted play in it. Trained the model from scratch on that, using flow matching in a pretrained autoencoder's latent space. The model was trained on its own imperfect frames as context so it doesn't drift right away. It recalls a few older frames by position, so a quick look back usually works. Inspired by Oasis Minecraft. To try it you need an NVIDIA GPU with ~4 GB. Weights: https://huggingface.co/yelarys/noclip Video with sound: https://x.com/yelaryss Comments URL: https://news.ycombinator.com/item?id=50594070 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594070"
+    },
+    {
+      "id": "91035a008a222d913ad4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Can AI Rewrite OpenCode in 90% Rust?",
+      "url": "https://www.youtube.com/watch?v=SwX4OoxMaKM",
+      "published_at": "2026-11-21T22:14:00+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://www.youtube.com/watch?v=SwX4OoxMaKM Comments URL: https://news.ycombinator.com/item?id=50594166 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594166"
+    },
+    {
+      "id": "1a4d90318164dbcfd36e",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Fleet – manage multiple harnesses with a central agent in a TUI",
+      "url": "https://github.com/sturlabragason/fleet",
+      "published_at": "2026-11-21T22:25:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/sturlabragason/fleet Comments URL: https://news.ycombinator.com/item?id=50594270 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594270"
+    },
+    {
+      "id": "25a7ae099b9e5ddbe8e4",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Kvdiff – Local proxy showing the byte breaking your LLM prompt cache",
+      "url": "https://github.com/flipcyde101/kvdiff",
+      "published_at": "2026-11-21T22:38:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/flipcyde101/kvdiff Comments URL: https://news.ycombinator.com/item?id=50594339 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594339"
+    },
+    {
+      "id": "0c688513f5a91759f736",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Git blame for AI code, down to the agent session",
+      "url": "https://keepplain.com/blame",
+      "published_at": "2026-11-21T22:51:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://keepplain.com/blame Comments URL: https://news.ycombinator.com/item?id=50594433 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594433"
+    },
+    {
+      "id": "f3a3b45416ed7a5fd455",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Show HN: Git blame for AI code, down to the agent session",
+      "url": "https://keepplain.com/blame",
+      "published_at": "2026-11-21T22:51:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://keepplain.com/blame Comments URL: https://news.ycombinator.com/item?id=50594433 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594433"
+    },
+    {
+      "id": "96c6435372a2c1e1b2b6",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Reviving a 2012 open-source password manager for modern Android",
+      "url": "https://jurakovic.github.io/passdroid",
+      "published_at": "2026-11-21T23:23:29+00:00",
+      "date_kind": "community_post",
+      "evidence": "Offline password manager for Android: a fork of Passdroid (last release 2012), brought up to date. The app has no internet permission. Two key new features: - 2FA codes (TOTP) - fingerprint unlock Plus many smaller changes and fixes, and security hardening: AES-256 with PBKDF2 at 600k iterations, AES-GCM encrypted exports. Threat model and design are in INTERNALS.md. Built largely with Claude Code; the design and security decisions are mine. Feedback welcome, especially on the security side. Comments URL: https://news.ycombinator.com/item?id=50594645 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594645"
+    },
+    {
+      "id": "51edee010c2eaac8bf83",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: WorldFoundry – AI agents need experience, not just training data",
+      "url": "https://worldfoundry-demo.vercel.app",
+      "published_at": "2026-11-21T23:53:34+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://worldfoundry-demo.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=50594826 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50594826"
+    },
+    {
+      "id": "4a31ec12195362899052",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Muru",
+      "url": "https://simonwillison.net/2026/Nov/21/muru",
+      "published_at": "2026-11-21T23:56:28+00:00",
+      "date_kind": "community_post",
+      "evidence": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process. Here's everything he's published so far, all in the last three weeks: 2026-11-04 — Twenty years of mod_wsgi, and what comes next 2026-11-05 — A first look at Muru 2026-11-07 — Muru: looking inside the workers 2026-11-08 — Muru: how it fits together 2026-11-09 — Muru: import once, fork many 2026-11-10 — Muru: HTTPS in development 2026-11-11 — Muru: WSGI and ASGI together 2026-11-11 — AI as a lifestyle choice 2026-11-12 — Muru: releases, not restarts 2026-11-13 — Muru: canaries without a service mesh 2026-11-14 — Muru: a better tenant in a container 2026-11-15 — Muru: working with Kubernetes, not around it 2026-11-16 — Muru: scaling from what the workers report 2026-11-17 — Muru: scaling to zero 2026-11-18 — Muru: overlays on a schedule 2026-11-19 — Muru: noticing and responding 2026-11-20 — Muru: a toolbar on every page 2026-11-21 — Muru: tracing in the toolbar That post about AI as a lifestyle choice is particularly worth a read: The AI may be doing a lot of the work on the surface, but deciding what isn't good enough yet is still down to me, and twenty years of getting things wrong with mod_wsgi turns out to be useful for that. I am prepared to put in the hard work to keep polishing Muru until it is something I would trust, and something you would too. Tags: graham-dumpleton , modwsgi , python , wsgi , ai , rust , asgi , generative-ai , llms , ai-assisted-programming",
+      "discussion_url": ""
+    },
+    {
+      "id": "e21a832cbe171b153990",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: System 1.5 Model – Inkling-2-Mini Decision",
+      "url": "https://huggingface.co/eltokh7/inkling-2-mini-decision",
+      "published_at": "2026-11-22T03:27:27+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://huggingface.co/eltokh7/inkling-2-mini-decision Comments URL: https://news.ycombinator.com/item?id=50595931 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50595931"
+    },
+    {
+      "id": "0ca087c0758fc041b723",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Vouch – See what AI assistants say about your brand mid-conversation",
+      "url": "https://vouchgeo.com",
+      "published_at": "2026-11-22T04:24:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://vouchgeo.com Comments URL: https://news.ycombinator.com/item?id=50596218 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50596218"
+    },
+    {
+      "id": "3dcbbd7e42c139637625",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Replaying an agent run and what it takes",
+      "url": "https://github.com/chizy7/tether/blob/master/docs/REPLAY.md",
+      "published_at": "2026-11-22T05:11:17+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/chizy7/tether/blob/master/docs/REPLAY.md Comments URL: https://news.ycombinator.com/item?id=50596505 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50596505"
+    },
+    {
+      "id": "79feb256210a99db32c1",
+      "source": "hn-topics",
+      "publisher": "Hacker News",
+      "category": "discovery",
+      "title": "Why agent swarms get better at optimizing code as they grow",
+      "url": "https://frontier.replit.com/throwing-headcount-at-the-problem",
+      "published_at": "2026-11-22T06:19:54+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://frontier.replit.com/throwing-headcount-at-the-problem/ Comments URL: https://news.ycombinator.com/item?id=50596818 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50596818"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-21T19:15:53.165062+00:00",
+      "last_success": "2026-11-22T06:47:36.256291+00:00",
       "count": 10,
       "earliest": "2026-11-18T22:04:50+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-21T19:15:53.393767+00:00",
+      "last_success": "2026-11-22T06:47:36.415459+00:00",
       "count": 20,
       "earliest": "2026-11-18T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-21T19:15:53.528735+00:00",
+      "last_success": "2026-11-22T06:47:36.592086+00:00",
       "count": 915,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-21T19:15:53.597081+00:00",
+      "last_success": "2026-11-22T06:47:36.682988+00:00",
       "count": 30,
-      "earliest": "2026-11-10T20:09:44+00:00",
+      "earliest": "2026-11-11T15:11:59+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-21T19:15:53.967228+00:00",
+      "last_success": "2026-11-22T06:47:37.302702+00:00",
       "count": 100,
-      "earliest": "2026-11-20T19:59:46+00:00",
-      "gap": true,
+      "earliest": "2026-11-21T05:42:49+00:00",
+      "gap": false,
       "error": null
     },
     "hn-topics": {
-      "last_success": "2026-11-21T19:15:55.539761+00:00",
+      "last_success": "2026-11-22T06:47:37.986970+00:00",
       "count": 99,
-      "earliest": "2026-11-19T16:46:14+00:00",
+      "earliest": "2026-11-19T19:22:14+00:00",
       "gap": false,
       "error": null
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-21T19:15:56.199200+00:00",
+      "last_success": "2026-11-22T06:47:38.500120+00:00",
       "count": 10,
       "earliest": "2026-11-06T17:04:01+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-21T19:15:56.654442+00:00",
+      "last_success": "2026-11-22T06:47:39.052309+00:00",
       "count": 10,
       "earliest": "2026-10-17T03:00:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-21T19:15:57.036429+00:00",
+      "last_success": "2026-11-22T06:47:39.472400+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-21T19:15:57.448498+00:00",
+      "last_success": "2026-11-22T06:47:39.794539+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-21T19:15:57.983960+00:00",
+      "last_success": "2026-11-22T06:47:40.297654+00:00",
       "count": 10,
       "earliest": "2026-10-21T16:20:30+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-21T19:16:17.528129+00:00",
+      "last_success": "2026-11-22T06:48:00.547999+00:00",
       "count": 2,
       "earliest": "2026-11-04T13:08:06+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-21T19:16:17.690283+00:00",
+      "last_success": "2026-11-22T06:48:00.685315+00:00",
       "count": 1421,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-21T19:16:28.447681+00:00",
+      "last_success": "2026-11-22T06:48:11.485926+00:00",
       "count": 8,
       "earliest": "2026-11-06T01:40:00+00:00",
       "gap": false,
@@ -113587,5 +113863,5 @@
       "to": "2026-11-20T19:59:46+00:00"
     }
   ],
-  "collected_at": "2026-11-21T19:16:28.448742+00:00"
+  "collected_at": "2026-11-22T06:48:11.486989+00:00"
 }
