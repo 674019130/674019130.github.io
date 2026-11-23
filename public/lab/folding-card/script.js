@@ -18,6 +18,9 @@
   const status = /** @type {HTMLElement} */ (document.querySelector('#status'));
   let position = 0, target = 0, velocity = 0, frame = 0, lastTime = 0;
   let manualStill = false;
+  // Copy comes from copy.js (window.labCopy); English is the fallback.
+  const EN = { open: 'Open card', close: 'Close card', sClosed: 'Closed. Tap the card to open it.', sOpen: 'Open. Tap the cover to close it.', sMoving: 'Unfolding. Drag to explore.' };
+  const t = (/** @type {keyof typeof EN} */ k) => /** @type {any} */ (window).labCopy?.[k] ?? EN[k];
   let lightX = .25, lightY = -.3, lightFrame = 0, holographic = true;
   /** @type {{id:number, x:number, y:number, start:number, moved:boolean, horizontal:boolean}|null} */
   let drag = null;
@@ -95,8 +98,8 @@
     innerFace.setAttribute('aria-hidden', String(p < .5));
     coverFace.setAttribute('aria-hidden', String(p >= .5));
     toggle.setAttribute('aria-expanded', String(p >= .98));
-    toggle.textContent = target > .5 ? 'Close card' : 'Open card';
-    status.textContent = p < .01 ? 'Closed · tap the card to open' : p > .99 ? 'Open · tap the cover to close' : 'Unfolding · drag to explore';
+    toggle.textContent = target > .5 ? t('close') : t('open');
+    status.textContent = p < .01 ? t('sClosed') : p > .99 ? t('sOpen') : t('sMoving');
   }
   function stop() { cancelAnimationFrame(frame); frame = 0; lastTime = 0; }
   function tick(/** @type {number} */ now) {
@@ -163,6 +166,7 @@
   window.addEventListener('keydown', event => { if (event.key === 'Escape') { cancelPreview(); setTarget(0); toggle.focus(); } });
   document.addEventListener('visibilitychange', () => { if (document.hidden) { cancelPreview(); setTarget(target, true); } });
   window.addEventListener('pagehide', () => { cancelPreview(); stop(); cancelAnimationFrame(lightFrame); });
+  window.addEventListener('lab:language', render);
   render();
   if (preview) {
     setTarget(1, true);
