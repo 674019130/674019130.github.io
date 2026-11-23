@@ -1,0 +1,13 @@
+.voice-stage { display: grid; gap: 28px; padding: clamp(16px, 4vw, 40px); }
+.voice-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.voice-controls button { font: inherit; padding: 6px 12px; color: inherit; background: transparent; border: .5px solid currentColor; border-radius: 8px; cursor: pointer; }
+.voice-controls button[aria-pressed="true"] { background: #28262c; color: #eeeef0; }
+.voice-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.voice-sample { display: grid; gap: 10px; align-content: start; font-size: 14px; }
+.voice-field, .voice-phone { background: #18191b; color: #eeeef0; border: .5px solid #43484e; }
+.voice-field { position: relative; isolation: isolate; overflow: hidden; display: grid; align-items: center; min-height: 52px; border-radius: 12px; }
+.voice-field input { width: 100%; box-sizing: border-box; padding: 12px; background: transparent; border: 0; color: inherit; font: inherit; }
+.voice-field:focus-within { outline: 2px solid #70b8ff; outline-offset: 2px; }
+.voice-field.pill { width: min(100%, 144px); border-radius: 99px; text-align: center; }
+.voice-phone { display: grid; align-items: end; min-height: 140px; border-radius: 18px; padding: 5px; }
+@media (max-width: 650px) { .voice-grid { grid-template-columns: 1fr; } }
