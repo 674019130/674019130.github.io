@@ -4,200 +4,238 @@
         <title>苏</title>
         <link>https://674019130.github.io/</link>
         <description>I was 26 years old and didn't know what I could do other than write some simple code.</description>
-        <lastBuildDate>Sun, 30 Jun 2024 16:52:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 09:24:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>苏</title>
-            <url>https://gravatar.com/userimage/135478784/07954c26f630b810ec9709a8907dab5f.jpeg</url>
+            <url>https://gravatar.com/avatar/2914ec1292f53a19b51340bda091c50faaeef0fd3a5d35c1c525ad27693bb6eb?v=1775685650000&amp;size=256&amp;d=initials</url>
             <link>https://674019130.github.io/</link>
         </image>
-        <copyright>CC BY-NC-SA 4.0 2024 © 苏</copyright>
+        <copyright>CC BY-NC-SA 4.0 2026 © 苏</copyright>
         <atom:link href="https://674019130.github.io/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[Notes on Meta Muse: More Linux to Learn]]></title>
+            <link>https://674019130.github.io/posts/muse-security-notes-en</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/muse-security-notes-en</guid>
+            <pubDate>Wed, 23 Sep 2026 09:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>I read Meta’s <a href="https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse">How We Built Safety Into Muse</a>, and my first reaction was: there is a lot of Linux here.</p>
+<p>Halfway through, I was chatting with a friend about how Meta sometimes puts effort into unexpected places. I had opened the article to see how they approached agent safety. Soon I was reading about user namespaces, privilege separation, and communication between processes.</p>
+<p>A few details seemed worth writing down. The architecture diagram was particularly useful: it shows where the agent runs, where credentials live, and which component decides whether an operation may proceed.</p>
+<p>The runtime cell and VM are the parts I wanted to understand better.</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/muse-security-notes-en" target="_blank">https://674019130.github.io/posts/muse-security-notes-en</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Meta Muse 安全设计阅读笔记：还是得学 Linux]]></title>
+            <link>https://674019130.github.io/posts/muse-security-notes-zh</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/muse-security-notes-zh</guid>
+            <pubDate>Wed, 23 Sep 2026 09:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>看了 Meta 的 <a href="https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse">How We Built Safety Into Muse</a>，第一感觉是：好多 Linux 的知识。</p>
+<p>看到一半和朋友聊，觉得 Meta 总是在一些奇奇怪怪的地方发力。原本只是想看看 agent 的安全怎么做，结果读到了用户命名空间、权限隔离、进程间通信，专业性突然拉满了。</p>
+<p>有几个地方值得记下来。尤其是它的架构图，把 agent 放在哪里、凭据放在哪里、谁来决定操作能不能执行，交代得很清楚。</p>
+<p>我自己最感兴趣的是 runtime cell 和 VM 这一部分。</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/muse-security-notes-zh" target="_blank">https://674019130.github.io/posts/muse-security-notes-zh</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[A First Look at Jev: A Few Small Decisions]]></title>
+            <link>https://674019130.github.io/posts/jev-first-look-en</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/jev-first-look-en</guid>
+            <pubDate>Sun, 20 Sep 2026 18:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>After getting access to the Jev API, I wanted to try two small tasks: choosing how to handle an input, and scoring a set of candidate documents. Beyond the numbers, the most memorable part turned out to be a response header I had missed.</p>
+<p>These are first impressions. Only sanitized aggregate results are included. The example is constructed separately; real queries, source documents, business prompts, and system configuration are omitted. This is not a production model recommendation.</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/jev-first-look-en" target="_blank">https://674019130.github.io/posts/jev-first-look-en</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Jev 尝鲜：让模型做几个小判断]]></title>
+            <link>https://674019130.github.io/posts/jev-first-look-zh</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/jev-first-look-zh</guid>
+            <pubDate>Sun, 20 Sep 2026 18:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>拿到 Jev 的 API 之后，我最想试的是两件小事：给输入选一个处理方式，以及给一组候选内容打分。跑完之后，除了几个数字，印象最深的反而是一个漏掉的响应头。</p>
+<p>这是一篇尝鲜记录。只保留脱敏后的汇总结果，示例另外构造，不包含真实查询、原文、业务提示词和系统配置，也不是生产选型结论。</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/jev-first-look-zh" target="_blank">https://674019130.github.io/posts/jev-first-look-zh</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
             <title><![CDATA[记一次从 Hexo 到 Valaxy 的迁移，GitHub Actions 部署 GitHub Pages]]></title>
-            <link>https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合</link>
-            <guid>https://674019130.github.io/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合</guid>
-            <pubDate>Sun, 30 Jun 2024 16:52:05 GMT</pubDate>
+            <link>https://674019130.github.io/posts/hexo-to-valaxy-migration</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/hexo-to-valaxy-migration</guid>
+            <pubDate>Wed, 05 Aug 2026 06:46:18 GMT</pubDate>
             <content:encoded><![CDATA[<p><em>仿佛只有有一个自己的博客，才像个理想中的程序员。</em></p>
 <p><em>从买一台云主机，部署 WordPress，到 Hexo，再到前几天被 <a href="https://github.com/YunYouJun">云游君</a> 安利的（也就是现在在使用的）Valaxy，也经历了蛮久。</em></p>
 <p><em>但是记录和折腾这么久，自己又真正学到了什么东西呢？</em></p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<br/><p>访问 <a href="https://674019130.github.io/posts/hexo-to-valaxy-migration" target="_blank">https://674019130.github.io/posts/hexo-to-valaxy-migration</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
-            <title><![CDATA[LeetCode Stats Card]]></title>
-            <link>https://674019130.github.io/posts/LeetCode Stats Card</link>
-            <guid>https://674019130.github.io/posts/LeetCode Stats Card</guid>
-            <pubDate>Sun, 30 Jun 2024 16:47:39 GMT</pubDate>
-            <content:encoded><![CDATA[<p><img src="https://leetcard.jacoblin.cool/treepoem?theme=light&amp;font=Cairo&amp;ext=heatmap&amp;site=cn" alt="LeetCode Stats"></p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[Java 多线程 API 笔记（待填坑）]]></title>
-            <link>https://674019130.github.io/posts/Java 多线程 API 笔记</link>
-            <guid>https://674019130.github.io/posts/Java 多线程 API 笔记</guid>
-            <pubDate>Sun, 30 Jun 2024 15:29:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h4>除了要理解 Java 多线程的内存模型，还要熟悉相关的 Java API，最好能再看下多线程工具实现的源码。</h4>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[LeetCode 数据库刷题笔记]]></title>
-            <link>https://674019130.github.io/posts/LeetCode-SQL-notes</link>
-            <guid>https://674019130.github.io/posts/LeetCode-SQL-notes</guid>
-            <pubDate>Sun, 30 Jun 2024 15:27:48 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>LeetCode 数据库刷题笔记</h1>
-<blockquote>
-<p>只做重点的记录。</p>
-</blockquote>
-<h2>[550. 游戏玩法分析 IV](<a href="https://leetcode.cn/problems/game-play-analysis">https://leetcode.cn/problems/game-play-analysis</a></h2>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[Java 面试优质题目笔记]]></title>
-            <link>https://674019130.github.io/posts/Java 面试优质题目笔记</link>
-            <guid>https://674019130.github.io/posts/Java 面试优质题目笔记</guid>
-            <pubDate>Sun, 30 Jun 2024 14:49:28 GMT</pubDate>
-            <content:encoded><![CDATA[<blockquote>
-<p>Talk is cheap, show me the code.</p>
-</blockquote>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[一些技术问题的另类观点（待填坑）]]></title>
-            <link>https://674019130.github.io/posts/常见技术问题的一些不一样的看法</link>
-            <guid>https://674019130.github.io/posts/常见技术问题的一些不一样的看法</guid>
-            <pubDate>Sat, 29 Jun 2024 15:10:29 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>或许你听说过延迟双删吗？</strong><img src="https://s2.loli.net/2024/06/29/fBaVhUbizqd9kOm.jpg" alt="服务端缓存之redis入门 - 知乎"></p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[分布式事务解决方案 Seata 学习笔记]]></title>
-            <link>https://674019130.github.io/posts/分布式事务 Seata 学习笔记</link>
-            <guid>https://674019130.github.io/posts/分布式事务 Seata 学习笔记</guid>
-            <pubDate>Thu, 27 Jun 2024 17:26:01 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>我摊牌了，我就是想用分布式事务解决缓存数据库一致性问题！（bushi</strong></p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[关于 Java 8 中函数式编程的粗浅见解（待填坑）]]></title>
-            <link>https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解</link>
-            <guid>https://674019130.github.io/posts/关于-Java-8-中函数式编程的粗浅见解</guid>
-            <pubDate>Thu, 27 Jun 2024 16:54:11 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>如何在 Java 的不完整的函数式编程中窥得其真正的含义呢？</strong></p>
-<p>一次函数式编程的链式调用，就应该作为一个匿名函数使用。</p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[Java Lock Notes]]></title>
-            <link>https://674019130.github.io/posts/Java Lock Notes</link>
-            <guid>https://674019130.github.io/posts/Java Lock Notes</guid>
-            <pubDate>Sat, 01 Jun 2024 10:05:10 GMT</pubDate>
-            <content:encoded><![CDATA[<blockquote>
-<p><a href="https://tech.meituan.com/2018/11/15/java-lock.html">https://tech.meituan.com/2018/11/15/java-lock.html</a></p>
-</blockquote>
-<p>美团这篇写的很好，非常适合拿来复习。</p>
-<hr>
-<p>![img](https://awps-</p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[Windows 下 Docker 使用笔记]]></title>
-            <link>https://674019130.github.io/posts/Windows 下 docker 使用笔记</link>
-            <guid>https://674019130.github.io/posts/Windows 下 docker 使用笔记</guid>
-            <pubDate>Sat, 01 Jun 2024 09:35:32 GMT</pubDate>
+            <title><![CDATA[Windows 下 docker 使用笔记]]></title>
+            <link>https://674019130.github.io/posts/Windows%20%E4%B8%8B%20docker%20%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Windows 下 docker 使用笔记</guid>
+            <pubDate>Wed, 05 Aug 2026 06:46:18 GMT</pubDate>
             <content:encoded><![CDATA[<p><strong>Docker 伟大，无需多言！</strong></p>
 <blockquote>
 <p>但是 Windows 下的 Docker 使用体验像吃了那个。</p>
 </blockquote>
-<p><img src="https://s2.loli.net/2024/05/28/17kjdQVX35ieZvb.png" alt="image.png"></p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<blockquote>
+<p>换了 MacBook 之后终于丝滑体验了！</p>
+</blockquote>
+<!-- ![image.png](https://s2.loli.net/2024/05/28/17kjdQVX35ieZvb.png) -->
+<br/><p>访问 <a href="https://674019130.github.io/posts/Windows 下 docker 使用笔记" target="_blank">https://674019130.github.io/posts/Windows 下 docker 使用笔记</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
-            <title><![CDATA[LeetCode record 2024-05]]></title>
-            <link>https://674019130.github.io/posts/LeetCode record 2024-05</link>
-            <guid>https://674019130.github.io/posts/LeetCode record 2024-05</guid>
-            <pubDate>Fri, 31 May 2024 13:40:15 GMT</pubDate>
-            <content:encoded><![CDATA[<p><strong>如果有一天没有打卡，会不会辜负踌躇满志的那个自己。</strong></p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <title><![CDATA[DSPy 0x01]]></title>
+            <link>https://674019130.github.io/posts/DSPy%200x01</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/DSPy 0x01</guid>
+            <pubDate>Wed, 05 Aug 2026 06:46:18 GMT</pubDate>
+            <content:encoded><![CDATA[<hr>
+<p>新框架层出不穷，或许你也想通过机器学习训练得到最佳 prompt？</p>
+<p><img src="https://dspy.ai/static/img/dspy_logo.png" alt="dspylogo"></p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/DSPy 0x01" target="_blank">https://674019130.github.io/posts/DSPy 0x01</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Google Prompt Engineering 白皮书阅读笔记]]></title>
+            <link>https://674019130.github.io/posts/Google%20Prompt%20Engineering%20%E7%99%BD%E7%9A%AE%E4%B9%A6%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Google Prompt Engineering 白皮书阅读笔记</guid>
+            <pubDate>Wed, 05 Aug 2026 06:46:18 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>You don't need to be a data scientist or a machine learning engineer – everyone can write a prompt.</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2025/04/16/zEiAw6lyxd3DpRK.png" alt="CleanShot 2025-04-16 at 12.47.13@2x.png"></p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Google Prompt Engineering 白皮书阅读笔记" target="_blank">https://674019130.github.io/posts/Google Prompt Engineering 白皮书阅读笔记</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Vibe Coding 个人实践总结]]></title>
+            <link>https://674019130.github.io/posts/Cursor%20%E5%AE%9E%E8%B7%B5%E6%80%BB%E7%BB%93</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Cursor 实践总结</guid>
+            <pubDate>Wed, 05 Aug 2026 06:46:18 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>在使用新工具的路上四处张望，捡起了一些未知价值的石子。</p>
+</blockquote>
+<blockquote>
+<p>一定不要忘了原来的工具怎么用，AI 辅助编程越强大，理解代码的能力和架构设计的能力就越重要。<br>
+代码越多，包袱越重，有一个宏观的视角会让我们举重若轻；微观上理解每一个细节，可以让我们精简代码，以及确保走在正确的道路上。</p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Cursor 实践总结" target="_blank">https://674019130.github.io/posts/Cursor 实践总结</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[When Relevance Meets Recency: Engineering a Multi-Stage Search Ranking System]]></title>
+            <link>https://674019130.github.io/posts/multi-stage-search-ranking-en</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/multi-stage-search-ranking-en</guid>
+            <pubDate>Wed, 29 Jul 2026 12:05:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>A production search engine is not a scoring formula with an API around it. It is a sequence of decisions: what the user is optimizing for, which documents are allowed to compete, where freshness belongs, when an expensive model is justified, and how page two can continue after page one has been rearranged.</p>
+<p>This article presents a reusable model for that sequence. It deliberately stays above any one implementation: the interesting engineering ideas are the boundaries between stages, not a particular threshold, dictionary, or weight.</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/multi-stage-search-ranking-en" target="_blank">https://674019130.github.io/posts/multi-stage-search-ranking-en</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[当相关性遇见时效性：多阶段搜索排序的工程设计]]></title>
+            <link>https://674019130.github.io/posts/multi-stage-search-ranking-zh</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/multi-stage-search-ranking-zh</guid>
+            <pubDate>Wed, 29 Jul 2026 12:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>生产搜索不是“找一个更好的公式”，而是在目标、候选集合、时效性先验和昂贵模型之间连续做决定。真正困难的部分，往往不是某一步算得准不准，而是每一步应该看见哪些候选、改变什么，以及怎样让下一页仍然接得上。</p>
+<p>本文不讨论某个具体系统的参数，而是整理一套可以迁移的多阶段搜索设计：相关性排序与时间排序为什么应该分流，复杂 Query 为什么是一种策略信号，为什么完整智能排序通常集中在第一页，以及时效性为什么需要在融合前后各出现一次。</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/multi-stage-search-ranking-zh" target="_blank">https://674019130.github.io/posts/multi-stage-search-ranking-zh</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[关于代码规范的一些粗浅想法]]></title>
+            <link>https://674019130.github.io/posts/%E5%85%B3%E4%BA%8E%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%B2%97%E6%B5%85%E6%83%B3%E6%B3%95</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/关于代码规范的一些粗浅想法</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>什么是代码规范？</h1>
+<blockquote>
+<p>“衡量代码质量的唯一标准是阅读该代码时说脏话的次数”。</p>
+<p>——Robert C. Martin</p>
+<p>&lt;img src=&quot;<a href="https://pica.zhim">https://pica.zhim</a></p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/关于代码规范的一些粗浅想法" target="_blank">https://674019130.github.io/posts/关于代码规范的一些粗浅想法</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
             <title><![CDATA[常用算法代码片段]]></title>
-            <link>https://674019130.github.io/posts/常用算法代码片段</link>
-            <guid>https://674019130.github.io/posts/常用算法代码片段</guid>
-            <pubDate>Wed, 29 May 2024 10:20:24 GMT</pubDate>
+            <link>https://674019130.github.io/posts/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/常用算法代码片段</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
             <content:encoded><![CDATA[<h1>快速排序（递归版）</h1>
 <pre><code class="language-java">import java.util.Arrays;
 
 public class QuickSort {
 
   public static void sort(</code></pre>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<br/><p>访问 <a href="https://674019130.github.io/posts/常用算法代码片段" target="_blank">https://674019130.github.io/posts/常用算法代码片段</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
-            <title><![CDATA[常用业务代码片段]]></title>
-            <link>https://674019130.github.io/posts/常用业务代码片段</link>
-            <guid>https://674019130.github.io/posts/常用业务代码片段</guid>
-            <pubDate>Wed, 29 May 2024 10:20:18 GMT</pubDate>
-            <content:encoded><![CDATA[<blockquote>
-<p>跟 ChatGPT 聊天甚至都觉得有些麻烦了 T_T</p>
-</blockquote>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://674019130.github.io/posts/hello-valaxy</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/hello-valaxy</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!<br>
+$$ test a_2$$</p>
+<h2>Usage</h2>
+<br/><p>访问 <a href="https://674019130.github.io/posts/hello-valaxy" target="_blank">https://674019130.github.io/posts/hello-valaxy</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
-            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x05]]></title>
-            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05</link>
-            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05</guid>
-            <pubDate>Mon, 27 May 2024 07:31:30 GMT</pubDate>
-            <content:encoded><![CDATA[<blockquote>
-<p>我们必须跳出电脑指令序列的窠臼。叙述定义、描述元数据、梳理关系，<strong>而不是编写过程</strong>。</p>
-<p>—— Grace Murray Hopper，未来的计算机及其管理（1962）</p>
-</blockquote>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <title><![CDATA[Hello, World!]]></title>
+            <link>https://674019130.github.io/posts/hello-world</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/hello-world</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check [documentation](<a href="https://hex">https://hex</a></p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/hello-world" target="_blank">https://674019130.github.io/posts/hello-world</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
-            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x04]]></title>
-            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</link>
-            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</guid>
-            <pubDate>Wed, 08 May 2024 05:58:10 GMT</pubDate>
+            <title><![CDATA[Oracle-Mybatis-批量更新返回值问题]]></title>
+            <link>https://674019130.github.io/posts/Oracle-Mybatis-%E6%89%B9%E9%87%8F%E6%9B%B4%E6%96%B0%E8%BF%94%E5%9B%9E%E5%80%BC%E9%97%AE%E9%A2%98</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>场景</h1>
+<p>ORM：Mybatis</p>
+<p>数据库：Oracle</p>
+<p>组里新人写的一个接口。</p>
+<p>传给 Mapper 层的是两个元素数量相等的 List，根据某两个字段是否与 List 中的元素匹配，对 st</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题" target="_blank">https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Java Lock Notes]]></title>
+            <link>https://674019130.github.io/posts/Java%20Lock%20Notes</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Java Lock Notes</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
             <content:encoded><![CDATA[<blockquote>
-<p>与可能出错的东西比，“不可能”出错的东西最显著的特点就是：一旦真的出错，通常就彻底玩完了。</p>
-<p>—— 道格拉斯・亚当斯（1992）</p>
+<p><a href="https://tech.meituan.com/2018/11/15/java-lock.html">https://tech.meituan.com/2018/11/15/java-lock.html</a></p>
 </blockquote>
+<p>美团这篇写的很好，非常适合拿来复习。</p>
 <hr>
-<blockquote>
-<p>复制意味着在通过网络连接的多台机器上保留相</p>
-</blockquote>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<p>![img](https://awps-</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Java Lock Notes" target="_blank">https://674019130.github.io/posts/Java Lock Notes</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
-            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x00]]></title>
-            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</link>
-            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</guid>
-            <pubDate>Sun, 05 May 2024 15:55:16 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>第一章：可靠性、可伸缩性和可维护性</h1>
-<!-- > ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <title><![CDATA[Java 面试优质题目笔记]]></title>
+            <link>https://674019130.github.io/posts/Java%20%E9%9D%A2%E8%AF%95%E4%BC%98%E8%B4%A8%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Java 面试优质题目笔记</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>Talk is cheap, show me the code.</p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Java 面试优质题目笔记" target="_blank">https://674019130.github.io/posts/Java 面试优质题目笔记</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
             <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x01]]></title>
-            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01</link>
-            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
+            <link>https://674019130.github.io/posts/Designing%20Data-Intensive%20Applications%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%200x01</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
             <content:encoded><![CDATA[<h1>第二章：数据模型与查询语言</h1>
 <blockquote>
 <p>多数应用使用层层叠加的数据模型构建。对于每层数据模型的关键问题是：它是如何用低一层数据模型来 <strong>表示</strong> 的？例如：</p>
@@ -205,26 +243,26 @@ public class QuickSort {
 <li>作为一名应用开发人员，你观</li>
 </ol>
 </blockquote>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01" target="_blank">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x01</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
             <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x02]]></title>
-            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02</link>
-            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
+            <link>https://674019130.github.io/posts/Designing%20Data-Intensive%20Applications%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%200x02</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
             <content:encoded><![CDATA[<h1>第三章：存储与检索</h1>
 <blockquote>
 <p>为了高效查找数据库中特定键的值，我们需要一个数据结构：<strong>索引（index）</strong>。本章将介绍一系列的索引结构，并在它们之间进行比较。索引背后的大致思想是通过保存一些额外</p>
 </blockquote>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02" target="_blank">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x02</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
             <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x03]]></title>
-            <link>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03</link>
-            <guid>https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
+            <link>https://674019130.github.io/posts/Designing%20Data-Intensive%20Applications%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%200x03</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
             <content:encoded><![CDATA[<blockquote>
 <p>唯变所适</p>
 <p>—— 以弗所的赫拉克利特，为柏拉图所引（公元前 360 年）</p>
@@ -234,66 +272,210 @@ public class QuickSort {
 <h4>远程过程调用（RPC）的问题</h4>
 <p>Web 服务仅仅是通过网络进行 API 请求的一系</p>
 </blockquote>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03" target="_blank">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x03</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
-            <title><![CDATA[Oracle & Mybatis 批量更新返回值问题]]></title>
-            <link>https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题</link>
-            <guid>https://674019130.github.io/posts/Oracle-Mybatis-批量更新返回值问题</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>场景</h1>
-<p>ORM：Mybatis</p>
-<p>数据库：Oracle</p>
-<p>组里新人写的一个接口。</p>
-<p>传给 Mapper 层的是两个元素数量相等的 List，根据某两个字段是否与 List 中的元素匹配，对 st</p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[关于代码规范的一些粗浅想法]]></title>
-            <link>https://674019130.github.io/posts/关于代码规范的一些粗浅想法</link>
-            <guid>https://674019130.github.io/posts/关于代码规范的一些粗浅想法</guid>
-            <pubDate>Wed, 01 May 2024 18:53:18 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>什么是代码规范？</h1>
-<blockquote>
-<p>“衡量代码质量的唯一标准是阅读该代码时说脏话的次数”。</p>
-<p>——Robert C. Martin</p>
-<p>&lt;img src=&quot;<a href="https://pica.zhim">https://pica.zhim</a></p>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x04]]></title>
+            <link>https://674019130.github.io/posts/Designing%20Data-Intensive%20Applications%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%200x04</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>与可能出错的东西比，&quot;不可能&quot;出错的东西最显著的特点就是：一旦真的出错，通常就彻底玩完了。</p>
+<p>—— 道格拉斯・亚当斯（1992）</p>
 </blockquote>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<hr>
+<blockquote>
+<p>复制意味着在通过网络连接的多台机器上保留相</p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04" target="_blank">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x04</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x05]]></title>
+            <link>https://674019130.github.io/posts/Designing%20Data-Intensive%20Applications%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%200x05</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>我们必须跳出电脑指令序列的窠臼。叙述定义、描述元数据、梳理关系，<strong>而不是编写过程</strong>。</p>
+<p>—— Grace Murray Hopper，未来的计算机及其管理（1962）</p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05" target="_blank">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x05</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[《Designing Data-Intensive Applications》 读书笔记 | 0x00]]></title>
+            <link>https://674019130.github.io/posts/Designing%20Data-Intensive%20Applications%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%200x00</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</guid>
+            <pubDate>Mon, 29 Jun 2026 05:57:22 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>第一章：可靠性、可伸缩性和可维护性</h1>
+<!-- > ![图 1-3 用于分发推特至关注者的数据流水线，2012 年 11 月的负载参数【16】](https://1126993343-files.<br/><p>访问 <a href="https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00" target="_blank">https://674019130.github.io/posts/Designing Data-Intensive Applications 读书笔记 0x00</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[04-27 评测迭代]]></title>
+            <link>https://674019130.github.io/posts/%E8%AF%84%E6%B5%8B%E8%BF%AD%E4%BB%A3%200x01</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/评测迭代 0x01</guid>
+            <pubDate>Mon, 27 Apr 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>学习「评测迭代」的笔记。整体路径是：从生产 trace 出发，经粗筛 + 精筛两层过滤，再到 prompt / 模型两条优化路线的闭环。</p>
+<pre><code class="language-text">生产 trace
+    │
+    ├── 粗筛层（便宜、自动、覆盖广）
+    │     ├─ LLM-as-Judge 抽样打分    ← 主观质量
+    │     ├─ 用户点踩                  ← 显式负反馈
+    │     └─ 停留时长 / 复制率 / 重问率 ← 隐式行为信号
+    │
+    ├── 精筛层（贵、人工、高质量）
+    │     └─ 标注师挑 hard case → 评测集 + 训练集
+    │
+    └── 优化层（两条路并行）
+          ├─ Prompt 层：自进化 + 蒙特卡洛搜 fewshot
+          └─ 模型层：SFT（学会做对） / DPO（学会偏好）
+</code></pre>
+<p>主要学习内容：</p>
+<ul>
+<li>抽样 Trace</li>
+<li>LLM as a Judge</li>
+<li>蒙特卡洛优化 / 蒙特卡洛搜索树</li>
+<li>SFT 和 DPO 的区别</li>
+</ul>
+<br/><p>访问 <a href="https://674019130.github.io/posts/评测迭代 0x01" target="_blank">https://674019130.github.io/posts/评测迭代 0x01</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[从 Chatbot 到 Multi-Agent：一部架构演进史 (v2)]]></title>
+            <link>https://674019130.github.io/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B-v2</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/从Chatbot到Multi-Agent-架构演进-v2</guid>
+            <pubDate>Mon, 13 Apr 2026 22:45:00 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>这是口述 + Claude 协作整理的架构长文，v2 版本。v1 在 <a href="/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B-v1/">从 Chatbot 到 Multi-Agent (v1)</a> ，v2 诞生过程中的&quot;中肯 review&quot;在 <a href="/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-v1%E6%89%B9%E8%AF%84%E4%B8%8E%E6%94%B9%E8%BF%9B%E7%82%B9/">十个盲点</a> 。</p>
+</blockquote>
+<p>v2 相对于 v1 的主要变化：在开头补上了&quot;为什么要 Agent&quot;这个一直被架构文章忽略的哲学问题；把&quot;模型与 harness 共进化&quot;作为一条贯穿全文的暗线；在 B 阶段显著加厚 eval 的讨论；在 B+ 新增了&quot;失败模式目录&quot;&quot;成本经济学&quot;&quot;Prompt Injection 防御&quot;三块；在 B++ 新增了&quot;Human-in-the-loop 作为设计轴&quot;和&quot;现场保存与还原&quot;；在 C 阶段补充了 Gemini function calling 的差异和 Computer Use 作为另一种范式。</p>
+<p>这不是一份对 v1 的打补丁，而是一次重写——主干保留，但加入了 v1 缺失的三条主线：<strong>为什么要做、会怎么失败、怎么被经济性反噬</strong>。</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/从Chatbot到Multi-Agent-架构演进-v2" target="_blank">https://674019130.github.io/posts/从Chatbot到Multi-Agent-架构演进-v2</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[对自己写的东西做一次中肯 Review：Agent 架构文的十个盲点]]></title>
+            <link>https://674019130.github.io/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-v1%E6%89%B9%E8%AF%84%E4%B8%8E%E6%94%B9%E8%BF%9B%E7%82%B9</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/从Chatbot到Multi-Agent-v1批评与改进点</guid>
+            <pubDate>Mon, 13 Apr 2026 22:25:00 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>我把 v1 的 Agent 架构长文交给 Claude 做了一次&quot;中肯评价&quot;，让它 think harder，告诉我哪里写错了、哪里视野不够、哪里是我看不到的盲点。结果是一份比我想象中更狠的 review。这篇文章就是这份 review 本身——作为一份&quot;对自己写的东西做系统 review&quot;的模板，同时也是 <a href="/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B-v2/">v2</a> 改写的起点。</p>
+<p>v1 见 <a href="/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B-v1/">这里</a> 。</p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/从Chatbot到Multi-Agent-v1批评与改进点" target="_blank">https://674019130.github.io/posts/从Chatbot到Multi-Agent-v1批评与改进点</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[从 Chatbot 到 Multi-Agent：一部架构演进史 (v1)]]></title>
+            <link>https://674019130.github.io/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B-v1</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/从Chatbot到Multi-Agent-架构演进-v1</guid>
+            <pubDate>Mon, 13 Apr 2026 22:10:00 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>这是 DDIA 风格的长文第一版，基于我的口述由 Claude 协作整理。这一版后来被我在 <a href="/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-v1%E6%89%B9%E8%AF%84%E4%B8%8E%E6%94%B9%E8%BF%9B%E7%82%B9/">v1 批评与改进点</a> 中系统 review，并在 <a href="/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B-v2/">v2</a> 里重写。v1 保留不动作为对照。</p>
+<p>本文试图用《Designing Data-Intensive Applications》那种&quot;一边讲原理，一边讲权衡&quot;的笔触，把&quot;大模型应用&quot;从最朴素的聊天机器人一路推演到今天最前沿的 Multi-Agent 团队。我们会把每一个阶段命名为一个架构代号 (A、A+、B、B+、B++、C、D)，并在每次跃迁时明确指出：<strong>哪些东西变了，哪些东西没变，又带来了哪些新问题</strong>。</p>
+</blockquote>
+<p>读者可以把本文当作一份演进路线图——每一个代号都是一次&quot;补丁叠加&quot;，最终的 D 并不是对 A 的推翻，而是在 A 的骨架上逐层长出的血肉。</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/从Chatbot到Multi-Agent-架构演进-v1" target="_blank">https://674019130.github.io/posts/从Chatbot到Multi-Agent-架构演进-v1</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing Data-Intensive Applications (2nd Edition) 读书笔记 0x00]]></title>
+            <link>https://674019130.github.io/posts/ddia2-ch1</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/ddia2-ch1</guid>
+            <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>DDIA 第二版，第一章：可靠性、可扩展性和可维护性。</p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/ddia2-ch1" target="_blank">https://674019130.github.io/posts/ddia2-ch1</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[北京、海、雨]]></title>
+            <link>https://674019130.github.io/posts/%E5%8C%97%E4%BA%AC%E3%80%81%E6%B5%B7%E3%80%81%E9%9B%A8</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/北京、海、雨</guid>
+            <pubDate>Sat, 16 Aug 2025 18:40:23 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>北京，六月底便已经非常闷热。步入七月后，更觉再无穿外套的必要，就连傍晚的风也变得粘稠。</p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/北京、海、雨" target="_blank">https://674019130.github.io/posts/北京、海、雨</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[AI Horseless Carriages 读书笔记]]></title>
+            <link>https://674019130.github.io/posts/AI%20Horseless%20Carriages</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/AI Horseless Carriages</guid>
+            <pubDate>Sun, 27 Apr 2025 14:17:00 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>I suspect that in the future we'll look back and laugh at the idea that a &quot;prompt injection&quot; (like &quot;Ignore previous instructions...&quot;) was something to be concerned about.</p>
+</blockquote>
+<blockquote>
+<p>未来我们可能会对&quot;提示注入&quot;这种担忧感到好笑。<br>
+<img src="https://koomen.dev/images/steam-carriage.png" alt="蒸汽机车"></p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/AI Horseless Carriages" target="_blank">https://674019130.github.io/posts/AI Horseless Carriages</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[Sharing Valuable Articles on AI Usage]]></title>
+            <link>https://674019130.github.io/posts/Sharing%20Valuable%20Articles%20on%20AI%20Usage</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/Sharing Valuable Articles on AI Usage</guid>
+            <pubDate>Sun, 11 Aug 2024 14:02:12 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>在 AI 出现后，信息量再次爆炸，我筛选出一些值得分享和阅读的内容，提高信息获取的效率。</p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/Sharing Valuable Articles on AI Usage" target="_blank">https://674019130.github.io/posts/Sharing Valuable Articles on AI Usage</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[分布式事务解决方案 Seata 学习笔记]]></title>
+            <link>https://674019130.github.io/posts/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%20Seata%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/分布式事务 Seata 学习笔记</guid>
+            <pubDate>Fri, 28 Jun 2024 00:24:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>截至 2025-04-15，依然没能在项目中用上 T_T，是确实还没场景</strong></p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/分布式事务 Seata 学习笔记" target="_blank">https://674019130.github.io/posts/分布式事务 Seata 学习笔记</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[LeetCode record 2024-05]]></title>
+            <link>https://674019130.github.io/posts/LeetCode%20record%202024-05</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/LeetCode record 2024-05</guid>
+            <pubDate>Mon, 27 May 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>如果有一天没有打卡，会不会辜负踌躇满志的那个自己。</strong></p>
+<br/><p>访问 <a href="https://674019130.github.io/posts/LeetCode record 2024-05" target="_blank">https://674019130.github.io/posts/LeetCode record 2024-05</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[LeetCode SQL 练习笔记]]></title>
+            <link>https://674019130.github.io/posts/LeetCode-SQL-notes</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/LeetCode-SQL-notes</guid>
+            <pubDate>Thu, 02 May 2024 02:28:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>LeetCode 数据库刷题笔记</h1>
+<blockquote>
+<p>只做重点的记录。</p>
+</blockquote>
+<h2>[550. 游戏玩法分析 IV](<a href="https://leetcode.cn/problems/game-play-analysis-">https://leetcode.cn/problems/game-play-analysis-</a></h2>
+<br/><p>访问 <a href="https://674019130.github.io/posts/LeetCode-SQL-notes" target="_blank">https://674019130.github.io/posts/LeetCode-SQL-notes</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (苏)</author>
+        </item>
+        <item>
+            <title><![CDATA[常用业务代码片段]]></title>
+            <link>https://674019130.github.io/posts/%E5%B8%B8%E7%94%A8%E4%B8%9A%E5%8A%A1%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/常用业务代码片段</guid>
+            <pubDate>Thu, 02 May 2024 02:28:12 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>跟 ChatGPT 聊天甚至都觉得有些麻烦了 T_T</p>
+</blockquote>
+<br/><p>访问 <a href="https://674019130.github.io/posts/常用业务代码片段" target="_blank">https://674019130.github.io/posts/常用业务代码片段</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
         <item>
             <title><![CDATA[LeetCode record 2024-04]]></title>
-            <link>https://674019130.github.io/posts/LeetCode record 2024-04</link>
-            <guid>https://674019130.github.io/posts/LeetCode record 2024-04</guid>
-            <pubDate>Wed, 01 May 2024 18:53:17 GMT</pubDate>
+            <link>https://674019130.github.io/posts/LeetCode%20record%202024-04</link>
+            <guid isPermaLink="false">https://674019130.github.io/posts/LeetCode record 2024-04</guid>
+            <pubDate>Sat, 27 Apr 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2><a href="https://leetcode.cn/problems/convert-to-base-2/">1017. 负二进制转换</a> 中等</h2>
 <p>给你一个整数 <code>n</code> ，以二进制字符串的形式返回该整数的</p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[Hello World]]></title>
-            <link>https://674019130.github.io/posts/hello-world</link>
-            <guid>https://674019130.github.io/posts/hello-world</guid>
-            <pubDate>Tue, 22 Nov 2022 05:08:32 GMT</pubDate>
-            <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check [documentation](<a href="https://hex">https://hex</a></p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (苏)</author>
-        </item>
-        <item>
-            <title><![CDATA[Hello, Valaxy!]]></title>
-            <link>https://674019130.github.io/posts/hello-valaxy</link>
-            <guid>https://674019130.github.io/posts/hello-valaxy</guid>
-            <pubDate>Fri, 01 Apr 2022 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Valaxy</h2>
-<p>Next Generation Static Blog Framework.</p>
-<p>Write your first post!<br>
-$$ test a_2$$</p>
-<h2>Usage</h2>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+<br/><p>访问 <a href="https://674019130.github.io/posts/LeetCode record 2024-04" target="_blank">https://674019130.github.io/posts/LeetCode record 2024-04</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (苏)</author>
         </item>
     </channel>
