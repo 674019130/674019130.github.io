@@ -403,13 +403,13 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-yun@1.0.0-rc.12_valaxy@1.0.0-rc.12_@babel+parser@7.29.9_@devframes+agentic_075e26f6548f41bd318416184968fa7d/node_modules/valaxy-theme-yun/pages/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@1.5.1_valaxy@1.5.1_@devframes+agentic@1.4.0_crossws@0.4.17_srvx@1.0.8__194ad0c9ebfc07f6866f4c277f4e1311/node_modules/valaxy-theme-yun/pages/index.vue': {
       routes:
         | '/'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy@1.0.0-rc.12_@babel+parser@7.29.9_@devframes+agentic@1.0.0_crossws@0.4.12_srvx@1._7f6b2bf3d0b455de797101d57d5c431c/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/.pnpm/valaxy@1.5.1_@devframes+agentic@1.4.0_crossws@0.4.17_srvx@1.0.8__devframe@1.4.0__@nuxt+_21be5c45f3852adbd52eec5723640660/node_modules/valaxy/client/pages/[...path].vue': {
       routes:
         | '/[...path]'
       views:
@@ -463,13 +463,13 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@1.0.0-rc.12_valaxy@1.0.0-rc.12_@babel+parser@7.29.9_@devframes+agentic_075e26f6548f41bd318416184968fa7d/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@1.5.1_valaxy@1.5.1_@devframes+agentic@1.4.0_crossws@0.4.17_srvx@1.0.8__194ad0c9ebfc07f6866f4c277f4e1311/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@1.0.0-rc.12_valaxy@1.0.0-rc.12_@babel+parser@7.29.9_@devframes+agentic_075e26f6548f41bd318416184968fa7d/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@1.5.1_valaxy@1.5.1_@devframes+agentic@1.4.0_crossws@0.4.17_srvx@1.0.8__194ad0c9ebfc07f6866f4c277f4e1311/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
       routes:
         | '/posts/'
       views:
