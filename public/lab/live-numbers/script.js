@@ -6,6 +6,10 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const animateBox = /** @type {HTMLInputElement} */ ($('#animate'));
 const tabularBox = /** @type {HTMLInputElement} */ ($('#tabular'));
 let range = 'live', tick = 0, paused = false;
+// Copy comes from copy.js (window.labCopy); English is the fallback.
+const EN = { feedLive: 'Simulated live feed', feedPaused: 'Feed paused', feedSnapshot: 'Simulated snapshot', pause: 'Pause', resume: 'Resume',
+  tabularOn: 'Equal-width digits keep the columns steady.', tabularOff: 'Proportional digits: watch the columns shift as values update.', selected: '{range} selected.' };
+const t = (/** @type {keyof typeof EN} */ k) => /** @type {any} */ (window).labCopy?.[k] ?? EN[k];
 /** @type {ReturnType<typeof setInterval>|undefined} */
 let timer;
 /** @type {Map<HTMLElement, () => void>} */
@@ -60,9 +64,9 @@ function render(motion = false) {
 }
 function schedule() {
   clearInterval(timer); timer = undefined;
-  if (!paused && range === 'live' && !document.hidden) timer = setInterval(() => { tick++; render(true); }, 600);
+  if (!paused && range === 'live' && !document.hidden) timer = setInterval(() => { tick++; render(true); }, 700);
   document.documentElement.dataset.paused = String(paused || range !== 'live');
-  $('#feed-label').textContent = range !== 'live' ? 'Simulated snapshot' : paused ? 'Feed paused' : 'Simulated live feed';
+  $('#feed-label').textContent = range !== 'live' ? t('feedSnapshot') : paused ? t('feedPaused') : t('feedLive');
 }
 document.querySelectorAll('button[data-range]').forEach(button => button.addEventListener('click', () => {
   const next = /** @type {HTMLElement} */ (button).dataset.range || 'live';
@@ -70,18 +74,21 @@ document.querySelectorAll('button[data-range]').forEach(button => button.addEven
   range = next;
   document.querySelectorAll('button[data-range]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
   render(true); schedule();
-  $('#announcement').textContent = `${button.textContent} selected.`;
+  $('#announcement').textContent = t('selected').replace('{range}', button.textContent || '');
 }));
 tabularBox.addEventListener('change', () => {
   document.documentElement.dataset.tabular = String(tabularBox.checked);
-  $('#explanation').textContent = tabularBox.checked ? 'Equal-width digits keep the columns steady.' : 'Proportional digits: watch the spacing change as values update.';
+  explain();
 });
+function explain() { $('#explanation').textContent = tabularBox.checked ? t('tabularOn') : t('tabularOff'); }
 animateBox.addEventListener('change', () => { if (!canAnimate()) active.forEach(f => f()); });
 $('#pause').addEventListener('click', () => {
-  paused = !paused; $('#pause').textContent = paused ? 'Resume' : 'Pause'; $('#pause').setAttribute('aria-pressed', String(paused)); schedule();
+  paused = !paused; $('#pause').textContent = paused ? t('resume') : t('pause'); $('#pause').setAttribute('aria-pressed', String(paused)); schedule();
 });
 reduced.addEventListener('change', () => { if (!canAnimate()) active.forEach(f => f()); });
 document.addEventListener('visibilitychange', () => { if (document.hidden) active.forEach(f => f()); schedule(); });
 window.addEventListener('pagehide', () => { clearInterval(timer); active.forEach(f => f()); });
 window.addEventListener('pageshow', schedule);
+window.addEventListener('lab:language', () => { $('#pause').textContent = paused ? t('resume') : t('pause'); explain(); schedule(); });
+$('#pause').textContent = t('pause'); explain();
 render(); schedule();

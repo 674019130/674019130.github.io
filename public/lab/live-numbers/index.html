@@ -1,9 +1,44 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A small study of stable numbers and intentional motion."><title>Live numbers · Su UI lab</title><script src="../shared/setup.js"></script><link rel="stylesheet" href="../shared/lab.css"><link rel="stylesheet" href="./styles.css"></head>
-<body><main><nav><a href="/lab">← UI lab</a><span>05 / Live numbers</span></nav><header class="page-heading"><h1>Live numbers</h1><p class="intro">Changing numbers. A steady place to read them.</p></header>
-<section class="stage" aria-label="Live numbers experiment"><div class="ticker">
-<div class="toolbar"><span class="feed"><i aria-hidden="true"></i><span id="feed-label">Simulated live feed</span></span><div class="periods" role="group" aria-label="Time range"><button type="button" data-range="live" aria-pressed="true">Live</button><button type="button" data-range="hour" aria-pressed="false">1H</button><button type="button" data-range="day" aria-pressed="false">1D</button><button type="button" data-range="week" aria-pressed="false">1W</button></div></div>
-<table><caption class="sr-only">Fictional assets, simulated prices and percentage changes</caption><thead><tr><th scope="col">Asset</th><th scope="col">Symbol</th><th scope="col">Price</th><th scope="col">Change</th></tr></thead><tbody id="quotes"></tbody></table>
-<div class="preferences"><label><input type="checkbox" id="tabular" checked>Tabular numbers</label><label><input type="checkbox" id="animate" checked>Animate changes</label><button type="button" id="pause" aria-pressed="false">Pause</button></div>
+<body><main>
+<nav><a href="/lab" data-copy="back">← UI lab</a><button id="language" type="button" aria-label="切换为中文">中</button></nav>
+<header class="page-heading"><h1 data-copy="title">Live numbers</h1><p class="intro" data-copy="intro">Prices that keep changing, in columns that stay put.</p></header>
+<section class="stage" aria-label="Live numbers experiment" data-copy-label="stage"><div class="ticker">
+<div class="toolbar"><span class="feed"><i aria-hidden="true"></i><span id="feed-label">Simulated live feed</span></span><div class="periods" role="group" aria-label="Time range" data-copy-label="range"><button type="button" data-range="live" aria-pressed="true" data-copy="live">Live</button><button type="button" data-range="hour" aria-pressed="false" data-copy="hour">1H</button><button type="button" data-range="day" aria-pressed="false" data-copy="day">1D</button><button type="button" data-range="week" aria-pressed="false" data-copy="week">1W</button></div></div>
+<table><caption class="sr-only" data-copy="caption">Fictional assets, simulated prices and percentage changes</caption><thead><tr><th scope="col" data-copy="asset">Asset</th><th scope="col" data-copy="symbol">Symbol</th><th scope="col" data-copy="price">Price</th><th scope="col" data-copy="change">Change</th></tr></thead><tbody id="quotes"></tbody></table>
+<div class="preferences"><label><input type="checkbox" id="tabular" checked><span data-copy="tabular">Tabular numbers</span></label><label><input type="checkbox" id="animate" checked><span data-copy="animate">Animate changes</span></label><button type="button" id="pause" aria-pressed="false">Pause</button></div>
 <p class="caption" id="explanation">Equal-width digits keep the columns steady.</p><span class="sr-only" id="announcement" role="status"></span>
-</div></section><footer class="credit">Fictional assets. Simulated data.<br>Interaction study inspired by <a href="https://x.com/preetsuthar17/status/2102010365307675057" target="_blank" rel="noopener noreferrer">Preet Suthar ↗</a></footer><noscript><p>Enable JavaScript to explore the live numbers.</p></noscript></main><script type="module" src="./script.js"></script></body></html>
+</div></section>
+<p class="demo-note" data-copy="demo">Fictional assets and simulated data.</p>
+<section class="tricks" aria-labelledby="tricks-title"><h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
+<article><h3 id="note-title-0"></h3><p id="note-body-0"></p><pre tabindex="0"><code>.number { display: inline-flex; font-variant-numeric: tabular-nums lining-nums; }
+[data-tabular=false] .number { font-variant-numeric: proportional-nums lining-nums; }
+th:nth-child(n+3), td:nth-child(n+3) { text-align: right; }</code></pre></article>
+<article><h3 id="note-title-1"></h3><p id="note-body-1"></p><pre tabindex="0"><code>[...value].forEach((char, index) =&gt; {
+  // compare from the right so the decimal places line up
+  const oldChar = previous[previous.length - value.length + index];
+  if (motion &amp;&amp; oldChar !== char &amp;&amp; /\d/.test(char) &amp;&amp; /\d/.test(oldChar)) {
+    next.animate([{ transform: `translateY(${dir * 100}%)`, opacity: 0 }, { transform: 'none', opacity: 1 }], timing);
+    old.animate([{ transform: 'none', opacity: 1 }, { transform: `translateY(${-dir * 100}%)`, opacity: 0 }], timing);
+  }
+});
+
+.digit { display: inline-grid; position: relative; overflow: hidden; }
+.digit &gt; span { grid-area: 1 / 1; }   /* old and new share one cell */</code></pre></article>
+<article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre tabindex="0"><code>// model.js: every 2–4 ticks, offset per row
+export function tradeIndex(i, tick) {
+  const every = 2 + (i * 5) % 3;
+  return Math.floor((tick + i * 3) / every);
+}
+const k = tradeIndex(i, tick);    // unchanged k → identical price → no roll
+const wobble = Math.sin(k * 1.37 + i) * .0009 + Math.sin(k * .53 + i * 2.1) * .0006;</code></pre></article>
+<article><h3 id="note-title-3"></h3><p id="note-body-3"></p><pre tabindex="0"><code>function setNumber(cell, value, motion) {
+  active.get(cell)?.();           // finish any roll still in flight
+  …
+}
+const canAnimate = () =&gt; animateBox.checked &amp;&amp; !reduced.matches &amp;&amp; params.get('still') !== '1';
+document.addEventListener('visibilitychange', () =&gt; { if (document.hidden) active.forEach(f =&gt; f()); schedule(); });</code></pre></article>
+<div class="source-links"><a href="./styles.css">CSS ↗</a><a href="./script.js" data-copy="source">View the source</a></div></section>
+<footer><span data-copy="inspired">Inspired by</span> <a href="https://x.com/preetsuthar17/status/2102010365307675057" target="_blank" rel="noopener noreferrer">Preet Suthar ↗</a></footer>
+<noscript><p>Enable JavaScript to explore the live numbers. / 请启用 JavaScript 体验动态数字。</p></noscript></main>
+<script type="module" src="./copy.js"></script><script type="module" src="./script.js"></script></body></html>
