@@ -54,7 +54,12 @@ let reactionTimer;
 let reactionFrame;
 let sequenceToken = 0;
 let running = false;
-const descriptions = { idle: 'Idle · looking around', thinking: 'Thinking · weighing the options', happy: 'Happy · found something good', proud: 'Proud · a decision well made', sleepy: 'Sleepy · time for a rest' };
+// Copy comes from copy.js (window.labCopy); English is the fallback.
+const EN = { dIdle: 'Idle, looking around.', dThinking: 'Thinking, weighing the options.', dHappy: 'Happy, found something good.', dProud: 'Proud of a decision well made.', dSleepy: 'Sleepy, time for a rest.',
+  rNotice: 'Noticed something.', rConsider: 'Considering it.', rWink: 'A wink.', rSurprised: 'Surprised.', rApprove: 'Approves.', play: 'Play sequence', stopSeq: 'Stop sequence' };
+const t = k => (window.labCopy && window.labCopy[k]) || EN[k];
+const cap = s => s[0].toUpperCase() + s.slice(1);
+const describe = value => t('d' + cap(value));
 function stop() {
   sequenceToken++;
   clearTimeout(sequenceTimer);
@@ -62,12 +67,12 @@ function stop() {
   cancelAnimationFrame(reactionFrame);
   delete mascot.dataset.reaction;
   running = false;
-  playButton.textContent = 'Play sequence';
+  playButton.textContent = t('play');
 }
 function mood(value) {
   mascot.dataset.mood = value;
   morphFace(value);
-  status.textContent = descriptions[value];
+  status.textContent = describe(value);
   moodButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.mood === value)));
 }
 function reaction(value) {
@@ -75,18 +80,18 @@ function reaction(value) {
   reactionFrame = requestAnimationFrame(() => {
     mascot.dataset.reaction = value;
     morphFace(value);
-    status.textContent = `Reaction · ${value}`;
+    status.textContent = t('r' + cap(value));
     reactionTimer = setTimeout(() => {
       delete mascot.dataset.reaction;
       morphFace(mascot.dataset.mood);
-      status.textContent = descriptions[mascot.dataset.mood];
+      status.textContent = describe(mascot.dataset.mood);
     }, 1050);
   });
 }
 function sequence() {
   stop();
   running = true;
-  playButton.textContent = 'Stop sequence';
+  playButton.textContent = t('stopSeq');
   const token = sequenceToken;
   const steps = ['idle', 'thinking', 'happy', 'proud', 'sleepy'];
   let index = 0;
@@ -95,7 +100,7 @@ function sequence() {
     mood(steps[index++]);
     if (index < steps.length) sequenceTimer = setTimeout(next, isStill() ? 1200 : 1900);
     else if (preview && !isStill()) sequenceTimer = setTimeout(sequence, 1900);
-    else { running = false; playButton.textContent = 'Play sequence'; }
+    else { running = false; playButton.textContent = t('play'); }
   }
   next();
 }
@@ -106,9 +111,13 @@ function applyMotion() {
 }
 moodButtons.forEach(button => button.addEventListener('click', () => { stop(); mood(button.dataset.mood); }));
 document.querySelectorAll('button[data-reaction]').forEach(button => button.addEventListener('click', () => reaction(button.dataset.reaction)));
-playButton.addEventListener('click', () => { if (running) { stop(); morphFace(mascot.dataset.mood); status.textContent = descriptions[mascot.dataset.mood]; } else sequence(); });
+playButton.addEventListener('click', () => { if (running) { stop(); morphFace(mascot.dataset.mood); status.textContent = describe(mascot.dataset.mood); } else sequence(); });
 document.querySelector('#reset').addEventListener('click', () => { stop(); mood('idle'); });
 motionQuery.addEventListener('change', applyMotion);
 window.addEventListener('pagehide', () => { stop(); cancelAnimationFrame(faceFrame); });
+window.addEventListener('lab:language', () => {
+  playButton.textContent = running ? t('stopSeq') : t('play');
+  status.textContent = mascot.dataset.reaction ? t('r' + cap(mascot.dataset.reaction)) : describe(mascot.dataset.mood);
+});
 applyMotion();
 if (preview && !isStill()) sequence();

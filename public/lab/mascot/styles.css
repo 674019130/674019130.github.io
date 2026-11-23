@@ -1,7 +1,12 @@
 
-:root { --character: #86b4ce; --face: #293c49; }
-:root[data-theme="dark"] { --character: #b0a4d9; --face: #302d47; }
-.mascot-stage { display: grid; place-items: center; min-height: 330px; margin-top: 26px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+/* Radix sky (light) and violet (dark) for the body; step 12 / step 3 for the face. */
+:root { --character: #60b3d7; --face: #1d3e56; }
+:root[data-theme="dark"] { --character: #baa7ff; --face: #291f43; }
+.mascot-stage { display: grid; place-items: center; min-height: 360px; border-radius: 16px; background: var(--panel); }
+.mascot-controls { display: grid; gap: 10px; justify-content: center; margin: 20px 0 0; }
+.mascot-controls .row { display: grid; grid-template-columns: 56px auto; align-items: center; gap: 12px; }
+.mascot-controls .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+@media (max-width: 560px) { .mascot-controls .row { grid-template-columns: 1fr; gap: 6px; } }
 .lab-mascot { width: 216px; height: 216px; }
 .lab-mascot svg { width: 100%; display: block; overflow: visible; }
 .character { transform-origin: 80px 116px; }
@@ -26,7 +31,8 @@
 @keyframes consider-tilt { 0%,100% { transform: rotate(0); } 35%,70% { transform: rotate(5deg); } }
 @keyframes nod { 0%,100% { transform: translateY(0); } 30%,70% { transform: translateY(3px); } 50% { transform: translateY(-1px); } }
 .lab-mascot[data-still] * { animation: none !important; transition: none !important; }
-:root[data-preview] .mascot-stage { height: 400px; margin: 0; border: 0; border-radius: 0; background: var(--bg); }
+:root[data-preview] .mascot-stage { height: 400px; margin: 0; border-radius: 0; }
+:root[data-preview] .mascot-controls { display: none; }
 :root[data-preview] .lab-mascot { width: 228px; height: 228px; }
 .face path { fill: none; stroke: var(--face); stroke-linecap: round; stroke-linejoin: round; }
 .face .eye { stroke-width: 10; }

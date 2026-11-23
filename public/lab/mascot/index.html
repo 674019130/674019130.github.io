@@ -1,3 +1,47 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Change a mood. Catch a reaction. Let the character tell the story."><title>Expressive mascot · Su UI lab</title><script src="../shared/setup.js"></script><link rel="stylesheet" href="../shared/lab.css"><link rel="stylesheet" href="./styles.css"></head>
-<body><main><nav><a href="/lab">← UI lab</a><span>03 / Expressive mascot</span></nav><header class="page-heading"><h1>Expressive mascot</h1><p class="intro">Change a mood. Catch a reaction. Let the character tell the story.</p><p class="note">Small expressions, softly animated</p></header><div class="mascot-stage"><div class="lab-mascot" id="mascot" data-mood="idle" aria-hidden="true"><svg viewBox="0 0 160 160" role="presentation" focusable="false"><g class="character"><circle class="body" cx="80" cy="80" r="62"/><g class="face"><g transform="translate(0 6)"><path id="eye-left" class="eye" d="M64 65 C64 69 64 72 64 76"/><path id="eye-right" class="eye" d="M96 65 C96 69 96 72 96 76"/></g></g></g></svg></div></div><div class="controls" role="group" aria-label="Mood"><span class="control-label">Mood</span><button type="button" data-mood="idle" aria-pressed="true">Idle</button><button type="button" data-mood="thinking" aria-pressed="false">Thinking</button><button type="button" data-mood="happy" aria-pressed="false">Happy</button><button type="button" data-mood="proud" aria-pressed="false">Proud</button><button type="button" data-mood="sleepy" aria-pressed="false">Sleepy</button></div><div class="controls" role="group" aria-label="Short reaction"><span class="control-label">React</span><button type="button" data-reaction="notice">Notice</button><button type="button" data-reaction="consider">Consider</button><button type="button" data-reaction="wink">Wink</button><button type="button" data-reaction="surprised">Surprised</button><button type="button" data-reaction="approve">Approve</button></div><div class="controls"><button type="button" class="primary" id="play">Play sequence</button><button type="button" id="reset">Reset</button></div><p class="status" id="status" role="status">Idle · looking around</p><noscript><p>Enable JavaScript to try this experiment.</p></noscript></main><script src="./script.js"></script></body></html>
+<body><main>
+<nav><a href="/lab" data-copy="back">← UI lab</a><button id="language" type="button" aria-label="切换为中文">中</button></nav>
+<header class="page-heading"><h1 data-copy="title">Expressive mascot</h1><p class="intro" data-copy="intro">Set a mood, trigger a short reaction, and let the face carry the story.</p></header>
+<section class="mascot-stage" aria-label="Expressive mascot experiment" data-copy-label="stage"><div class="lab-mascot" id="mascot" data-mood="idle" aria-hidden="true"><svg viewBox="0 0 160 160" role="presentation" focusable="false"><g class="character"><circle class="body" cx="80" cy="80" r="62"/><g class="face"><g transform="translate(0 6)"><path id="eye-left" class="eye" d="M64 65 C64 69 64 72 64 76"/><path id="eye-right" class="eye" d="M96 65 C96 69 96 72 96 76"/></g></g></g></svg></div></section>
+<div class="mascot-controls">
+<div class="row"><span class="control-label" data-copy="moodLabel">Mood</span><div class="segmented" role="group" aria-label="Mood" data-copy-label="moodLabel"><button type="button" data-mood="idle" aria-pressed="true" data-copy="idle">Idle</button><button type="button" data-mood="thinking" aria-pressed="false" data-copy="thinking">Thinking</button><button type="button" data-mood="happy" aria-pressed="false" data-copy="happy">Happy</button><button type="button" data-mood="proud" aria-pressed="false" data-copy="proud">Proud</button><button type="button" data-mood="sleepy" aria-pressed="false" data-copy="sleepy">Sleepy</button></div></div>
+<div class="row" role="group" aria-label="React" data-copy-label="reactLabel"><span class="control-label" data-copy="reactLabel">React</span><div class="chips"><button type="button" data-reaction="notice" data-copy="notice">Notice</button><button type="button" data-reaction="consider" data-copy="consider">Consider</button><button type="button" data-reaction="wink" data-copy="wink">Wink</button><button type="button" data-reaction="surprised" data-copy="surprised">Surprised</button><button type="button" data-reaction="approve" data-copy="approve">Approve</button></div></div>
+</div>
+<div class="controls"><button type="button" class="primary" id="play">Play sequence</button><button type="button" id="reset" data-copy="reset">Reset</button></div>
+<p class="status" id="status" role="status">Idle, looking around.</p>
+<section class="tricks" aria-labelledby="tricks-title"><h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
+<article><h3 id="note-title-0"></h3><p id="note-body-0"></p><pre tabindex="0"><code>// x0 y0, c1x c1y, c2x c2y, x1 y1, stroke width
+const eye = (x, shape = 'open') =&gt; ({
+  open:  [x, 65, x, 69, x, 72, x, 76, 10],
+  smile: [x - 6, 75, x - 2, 68, x + 2, 68, x + 6, 75, 4.5],
+  sleep: [x - 6, 75, x - 2, 79, x + 2, 79, x + 6, 75, 4.5],
+}[shape]);
+node.setAttribute('d', `M${v[0]} ${v[1]} C${v.slice(2, 8).join(' ')}`);</code></pre></article>
+<article><h3 id="note-title-1"></h3><p id="note-body-1"></p><pre tabindex="0"><code>const source = [...visibleFace];            // what is drawn right now
+function frame(now) {
+  const t = Math.min(1, (now - started) / 420);
+  const eased = t * t * (3 - 2 * t);        // smoothstep
+  visibleFace = source.map((v, i) =&gt; v + (target[i] - v) * eased);
+  drawFace(visibleFace);
+  if (t &lt; 1) faceFrame = requestAnimationFrame(frame);
+}</code></pre></article>
+<article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre tabindex="0"><code>.lab-mascot[data-mood="thinking"] .character { animation: ponder 3s ease-in-out infinite; }
+.lab-mascot[data-reaction] .character,
+.lab-mascot[data-reaction] .face { animation: none; transform: none; }
+.lab-mascot[data-reaction="approve"] .character { animation: nod 900ms ease-in-out both; }</code></pre></article>
+<article><h3 id="note-title-3"></h3><p id="note-body-3"></p><pre tabindex="0"><code>function stop() { sequenceToken++; clearTimeout(sequenceTimer); clearTimeout(reactionTimer); }
+function sequence() {
+  stop();
+  const token = sequenceToken;
+  function next() {
+    if (token !== sequenceToken) return;   // a newer action won
+    mood(steps[index++]);
+    if (index &lt; steps.length) sequenceTimer = setTimeout(next, 1900);
+  }
+  next();
+}</code></pre></article>
+<div class="source-links"><a href="./styles.css">CSS ↗</a><a href="./script.js" data-copy="source">View the source</a></div></section>
+<footer data-copy="origin">Adapted from the mascot in one of my own apps.</footer>
+<noscript><p>Enable JavaScript to try this experiment. / 请启用 JavaScript 体验这个实验。</p></noscript></main>
+<script src="./script.js"></script><script type="module" src="./copy.js"></script></body></html>
