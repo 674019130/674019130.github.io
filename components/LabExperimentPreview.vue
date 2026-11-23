@@ -89,15 +89,15 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .experiment-row { display: flex; align-items: center; gap: 16px; padding: 16px 12px; margin: 0 -12px; color: var(--home-text); text-decoration: none; border-radius: 6px; transition: background 160ms; }
-.experiment-row:hover, .experiment-row:focus-visible { background: var(--home-rule); }
-.experiment-row:focus-visible { outline: 2px solid #7181a5; outline-offset: 3px; }
-.row-rule { flex: 1; height: 1px; background: var(--home-rule); min-width: 12px; }
-time { font-size: 11px; color: var(--home-muted); white-space: nowrap; }
+.experiment-row:hover, .experiment-row:focus-visible { background: var(--home-hover, #f0f0f0); }
+.experiment-row:focus-visible { outline: 2px solid #5eb1ef; outline-offset: 2px; }
+.row-rule { flex: 1; height: .5px; background: var(--home-rule); min-width: 12px; }
+time { font-size: 12px; color: var(--home-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .row-arrow { color: var(--home-muted); font-size: 12px; }
-.timeline-hover-preview { position: fixed; width: 336px; height: 224px; max-width: calc(100vw - 24px); overflow: hidden; border-radius: 8px; border: 1px solid #d8dadd; background: #fff; box-shadow: 0 12px 40px #0002; pointer-events: none; z-index: 50; animation: preview-in 180ms ease-out; }
-:global(html.dark) .timeline-hover-preview { border-color: #414441; background: #202220; }
+.timeline-hover-preview { position: fixed; width: 336px; height: 224px; max-width: calc(100vw - 24px); overflow: hidden; border-radius: 8px; border: .5px solid #cecece; background: #fcfcfc; box-shadow: 0 2px 6px #0000000f, 0 12px 32px #00000017; pointer-events: none; z-index: 50; animation: preview-in 180ms ease-out; }
+:global(html.dark) .timeline-hover-preview { border-color: #444947; background: #171918; }
 iframe { width: 600px; height: 400px; border: 0; transform: scale(.56); transform-origin: top left; display: block; pointer-events: none; }
 @keyframes preview-in { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
-@media (max-width: 420px) { .experiment-row { gap: 10px; } time { font-size: 10px; } }
+@media (max-width: 420px) { .experiment-row { gap: 10px; } }
 @media (prefers-reduced-motion: reduce) { .timeline-hover-preview { animation: none; } .experiment-row { transition: none; } }
 </style>

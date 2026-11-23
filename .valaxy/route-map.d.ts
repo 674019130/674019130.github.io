@@ -75,6 +75,20 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/home-classic': RouteRecordInfo<
+      '/home-classic',
+      '/home-classic',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/lab': RouteRecordInfo<
+      '/lab',
+      '/lab',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/links/': RouteRecordInfo<
       '/links/',
       '/links',
@@ -92,6 +106,27 @@ declare module 'vue-router/auto-routes' {
     '/posts/': RouteRecordInfo<
       '/posts/',
       '/posts',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/从Chatbot到Multi-Agent-架构演进-v1': RouteRecordInfo<
+      '/posts/从Chatbot到Multi-Agent-架构演进-v1',
+      '/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B-v1',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/从Chatbot到Multi-Agent-架构演进-v2': RouteRecordInfo<
+      '/posts/从Chatbot到Multi-Agent-架构演进-v2',
+      '/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B-v2',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/从Chatbot到Multi-Agent-v1批评与改进点': RouteRecordInfo<
+      '/posts/从Chatbot到Multi-Agent-v1批评与改进点',
+      '/posts/%E4%BB%8EChatbot%E5%88%B0Multi-Agent-v1%E6%89%B9%E8%AF%84%E4%B8%8E%E6%94%B9%E8%BF%9B%E7%82%B9',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -131,9 +166,9 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合': RouteRecordInfo<
-      '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合',
-      '/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%BB%8E%20Hexo%20%E5%88%B0%20Valaxy%20%E7%9A%84%E8%BF%81%E7%A7%BB%EF%BC%8C%E5%8F%8A%20GitHub%20Actions%20%E5%92%8C%20Github%20Pages%20%E7%9A%84%E9%85%8D%E5%90%88',
+    '/posts/评测迭代 0x01': RouteRecordInfo<
+      '/posts/评测迭代 0x01',
+      '/posts/%E8%AF%84%E6%B5%8B%E8%BF%AD%E4%BB%A3%200x01',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -155,6 +190,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/Cursor 实践总结': RouteRecordInfo<
       '/posts/Cursor 实践总结',
       '/posts/Cursor%20%E5%AE%9E%E8%B7%B5%E6%80%BB%E7%BB%93',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/ddia2-ch1': RouteRecordInfo<
+      '/posts/ddia2-ch1',
+      '/posts/ddia2-ch1',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -229,6 +271,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/hexo-to-valaxy-migration': RouteRecordInfo<
+      '/posts/hexo-to-valaxy-migration',
+      '/posts/hexo-to-valaxy-migration',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/Java 面试优质题目笔记': RouteRecordInfo<
       '/posts/Java 面试优质题目笔记',
       '/posts/Java%20%E9%9D%A2%E8%AF%95%E4%BC%98%E8%B4%A8%E9%A2%98%E7%9B%AE%E7%AC%94%E8%AE%B0',
@@ -239,6 +288,20 @@ declare module 'vue-router/auto-routes' {
     '/posts/Java Lock Notes': RouteRecordInfo<
       '/posts/Java Lock Notes',
       '/posts/Java%20Lock%20Notes',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/jev-first-look-en': RouteRecordInfo<
+      '/posts/jev-first-look-en',
+      '/posts/jev-first-look-en',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/jev-first-look-zh': RouteRecordInfo<
+      '/posts/jev-first-look-zh',
+      '/posts/jev-first-look-zh',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -260,6 +323,34 @@ declare module 'vue-router/auto-routes' {
     '/posts/LeetCode record 2024-05': RouteRecordInfo<
       '/posts/LeetCode record 2024-05',
       '/posts/LeetCode%20record%202024-05',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/multi-stage-search-ranking-en': RouteRecordInfo<
+      '/posts/multi-stage-search-ranking-en',
+      '/posts/multi-stage-search-ranking-en',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/multi-stage-search-ranking-zh': RouteRecordInfo<
+      '/posts/multi-stage-search-ranking-zh',
+      '/posts/multi-stage-search-ranking-zh',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/muse-security-notes-en': RouteRecordInfo<
+      '/posts/muse-security-notes-en',
+      '/posts/muse-security-notes-en',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/muse-security-notes-zh': RouteRecordInfo<
+      '/posts/muse-security-notes-zh',
+      '/posts/muse-security-notes-zh',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -312,13 +403,13 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-yun@0.27.0_vue@3.5.13_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@1.0.0-rc.12_valaxy@1.0.0-rc.12_@babel+parser@7.29.9_@devframes+agentic_075e26f6548f41bd318416184968fa7d/node_modules/valaxy-theme-yun/pages/index.vue': {
       routes:
         | '/'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy@0.27.0_@babel+parser@7.29.0_@nuxt+kit@3.16.1_@types+markdown-it@14.1.2_@types+no_7ba31276614aa52fc718c7f8afbf13bc/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/.pnpm/valaxy@1.0.0-rc.12_@babel+parser@7.29.9_@devframes+agentic@1.0.0_crossws@0.4.12_srvx@1._7f6b2bf3d0b455de797101d57d5c431c/node_modules/valaxy/client/pages/[...path].vue': {
       routes:
         | '/[...path]'
       views:
@@ -354,21 +445,51 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/home-classic.md': {
+      routes:
+        | '/home-classic'
+      views:
+        | never
+    }
+    'pages/lab.md': {
+      routes:
+        | '/lab'
+      views:
+        | never
+    }
     'pages/links/index.md': {
       routes:
         | '/links/'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.27.0_vue@3.5.13_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@1.0.0-rc.12_valaxy@1.0.0-rc.12_@babel+parser@7.29.9_@devframes+agentic_075e26f6548f41bd318416184968fa7d/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.27.0_vue@3.5.13_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@1.0.0-rc.12_valaxy@1.0.0-rc.12_@babel+parser@7.29.9_@devframes+agentic_075e26f6548f41bd318416184968fa7d/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
       routes:
         | '/posts/'
+      views:
+        | never
+    }
+    'pages/posts/从Chatbot到Multi-Agent-架构演进-v1.md': {
+      routes:
+        | '/posts/从Chatbot到Multi-Agent-架构演进-v1'
+      views:
+        | never
+    }
+    'pages/posts/从Chatbot到Multi-Agent-架构演进-v2.md': {
+      routes:
+        | '/posts/从Chatbot到Multi-Agent-架构演进-v2'
+      views:
+        | never
+    }
+    'pages/posts/从Chatbot到Multi-Agent-v1批评与改进点.md': {
+      routes:
+        | '/posts/从Chatbot到Multi-Agent-v1批评与改进点'
       views:
         | never
     }
@@ -402,9 +523,9 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'pages/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合.md': {
+    'pages/posts/评测迭代 0x01.md': {
       routes:
-        | '/posts/记一次从 Hexo 到 Valaxy 的迁移，及 GitHub Actions 和 Github Pages 的配合'
+        | '/posts/评测迭代 0x01'
       views:
         | never
     }
@@ -423,6 +544,12 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/Cursor 实践总结.md': {
       routes:
         | '/posts/Cursor 实践总结'
+      views:
+        | never
+    }
+    'pages/posts/ddia2-ch1.md': {
+      routes:
+        | '/posts/ddia2-ch1'
       views:
         | never
     }
@@ -486,6 +613,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/posts/hexo-to-valaxy-migration.md': {
+      routes:
+        | '/posts/hexo-to-valaxy-migration'
+      views:
+        | never
+    }
     'pages/posts/Java 面试优质题目笔记.md': {
       routes:
         | '/posts/Java 面试优质题目笔记'
@@ -495,6 +628,18 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/Java Lock Notes.md': {
       routes:
         | '/posts/Java Lock Notes'
+      views:
+        | never
+    }
+    'pages/posts/jev-first-look-en.md': {
+      routes:
+        | '/posts/jev-first-look-en'
+      views:
+        | never
+    }
+    'pages/posts/jev-first-look-zh.md': {
+      routes:
+        | '/posts/jev-first-look-zh'
       views:
         | never
     }
@@ -513,6 +658,30 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/LeetCode record 2024-05.md': {
       routes:
         | '/posts/LeetCode record 2024-05'
+      views:
+        | never
+    }
+    'pages/posts/multi-stage-search-ranking-en.md': {
+      routes:
+        | '/posts/multi-stage-search-ranking-en'
+      views:
+        | never
+    }
+    'pages/posts/multi-stage-search-ranking-zh.md': {
+      routes:
+        | '/posts/multi-stage-search-ranking-zh'
+      views:
+        | never
+    }
+    'pages/posts/muse-security-notes-en.md': {
+      routes:
+        | '/posts/muse-security-notes-en'
+      views:
+        | never
+    }
+    'pages/posts/muse-security-notes-zh.md': {
+      routes:
+        | '/posts/muse-security-notes-zh'
       views:
         | never
     }

@@ -44,18 +44,20 @@ useHead(computed(() => ({
 </template>
 
 <style scoped>
-.lab-home { --home-bg: #fff; --home-text: #1a1a1a; --home-muted: #6b6b6b; --home-rule: #ebebeb; min-height: 100svh; padding: 64px 24px; box-sizing: border-box; background: var(--home-bg); color: var(--home-text); font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif; font-size: 14.4px; line-height: 1.65; }
-:global(html.dark .lab-home) { --home-bg: #181918; --home-text: #eceeec; --home-muted: #b1b5b1; --home-rule: #363936; }
+/* Radix gray (light) / sage (dark), same tokens as /lab/shared/lab.css */
+.lab-home { --home-bg: #fcfcfc; --home-text: #202020; --home-muted: #646464; --home-rule: #d9d9d9; --home-hover: #f0f0f0; min-height: 100svh; padding: 64px 24px; box-sizing: border-box; background: var(--home-bg); color: var(--home-text); font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif; font-size: 14px; line-height: 1.65; }
+:global(html.dark .lab-home) { --home-bg: #171918; --home-text: #eceeed; --home-muted: #adb5b2; --home-rule: #373b39; --home-hover: #202221; }
 .lab-frame { max-width: 538px; margin: 0 auto; animation: lab-arrive 400ms ease-out; }
-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 38px; }
-button { background: none; border: 0; color: var(--home-muted); padding: 8px; font: inherit; cursor: pointer; }
+header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 38px; font-size: 12px; }
+button { background: none; border: 0; border-radius: 7px; color: var(--home-muted); padding: 8px; font: inherit; font-size: 12px; cursor: pointer; }
+button:hover { background: var(--home-hover); color: var(--home-text); }
 a { color: var(--home-muted); text-decoration: none; transition: color 200ms; }
 a:hover { color: var(--home-text); }
-h1 { font-size: 16.8px; font-weight: 500; margin: 0 0 10px; }
+h1 { font-size: 16px; font-weight: 500; margin: 0 0 8px; }
 p { margin: 0; color: var(--home-muted); }
-.lab-list { margin: 34px 0 30px; padding: 12px 0; border-top: 1px solid var(--home-rule); border-bottom: 1px solid var(--home-rule); }
+.lab-list { margin: 34px 0 30px; padding: 12px 0; border-top: .5px solid var(--home-rule); border-bottom: .5px solid var(--home-rule); }
 footer { font-size: 12px; }
-a:focus-visible, button:focus-visible { outline: 2px solid #4a5b96; outline-offset: 5px; }
+a:focus-visible, button:focus-visible { outline: 2px solid #5eb1ef; outline-offset: 2px; }
 @keyframes lab-arrive { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .lab-frame { animation: none; } a { transition: none; } }
 </style>
