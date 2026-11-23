@@ -320,7 +320,7 @@ const CHANGE_EVENTS = [
 const timelineList = document.querySelector("#timelineList");
 const replayButton = document.querySelector("#replayButton");
 const resetButton = document.querySelector("#resetButton");
-const speedSelect = document.querySelector("#speedSelect");
+const speedValue = () => document.querySelector('input[name="speed"]:checked').value;
 const statusText = document.querySelector("#statusText");
 const statusDot = document.querySelector("#statusDot");
 const modeLabel = document.querySelector("#modeLabel");
@@ -471,7 +471,7 @@ function playbackDelay(base) {
   // Local-only slow motion for inspecting intermediate frames, never a public setting.
   const qaScale = ['localhost', '127.0.0.1'].includes(location.hostname)
     ? Math.max(1, Math.min(8, Number(new URLSearchParams(location.search).get('motion')) || 1)) : 1;
-  return Math.round(base * Number(speedSelect.value || 1) * qaScale);
+  return Math.round(base * Number(speedValue()) * qaScale);
 }
 
 function groupById(groupId) {
