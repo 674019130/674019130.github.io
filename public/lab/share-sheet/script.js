@@ -15,6 +15,22 @@ let transitionId = 0;
 let shellAnimation;
 let copyTimer;
 let displayedCount = 0;
+let lastRecipients = [];
+// Copy comes from copy.js (window.labCopy); English is the fallback.
+const EN = { copy: 'Copy', copied: 'Copied', retry: 'Retry', done: 'Done', email: 'Email', pick: 'Pick people below', send: 'Send', sending: 'Sending',
+  sendPrefix: 'Send to ', person: ' person', people: ' people', canView: 'Can view. Demo setting.', onlySelected: 'Only selected people. Demo setting.',
+  sentDetail: 'Demo complete. No message was sent.', aCopied: 'Link copied.', aClipboard: 'Clipboard unavailable. Copy the selected link manually.',
+  aUndone: 'Demo share undone. Recipients kept for editing.', aChannelFail: '{c}: simulated failure, try again.', aChannelOk: '{c}: demo complete, nothing sent.',
+  sendFail: 'Demo delivery failed. Try again with “Send works”.', aSelected: '{p} selected.', aRemoved: '{p} removed.', select: 'Select {p}', remove: 'Remove {p}',
+  aComplete: 'Demo complete. No message was sent.' };
+const t = (key, vars = {}) => ((window.labCopy && window.labCopy[key]) || EN[key]).replace(/\{(\w)\}/g, (_, k) => vars[k]);
+const zh = () => document.documentElement.lang.startsWith('zh');
+const channelName = button => button.dataset.channel === 'Email' ? t('email') : button.dataset.channel;
+function sentTitle(recipients) {
+  const names = recipients.slice(0, 2).map(index => people[index]);
+  if (zh()) return `已发送给 ${names.join('、')}${recipients.length > 2 ? ` 等 ${recipients.length} 人` : ''}`;
+  return `Sent to ${names.join(', ')}${recipients.length > 2 ? `, and ${recipients.length - 2} other${recipients.length > 3 ? 's' : ''}` : ''}`;
+}
 // Local visual QA can slow the exact same keyframes without changing production.
 const motionScale = ['localhost', '127.0.0.1'].includes(location.hostname)
   ? Math.min(24, Math.max(1, Number(options.get('motion')) || 1)) : 1;
@@ -119,11 +135,11 @@ function buttonContent(button, name, label, immediate = false) {
 }
 function sendLabel() {
   const label = $('#send-label');
-  if (sending) { label.replaceChildren(icon('spinner'), 'Sending'); return; }
-  if (!selected.size) { label.textContent = 'Send'; displayedCount = 0; return; }
+  if (sending) { label.replaceChildren(icon('spinner'), t('sending')); return; }
+  if (!selected.size) { label.textContent = t('send'); displayedCount = 0; return; }
   const count = document.createElement('span'); count.className = 'count';
   const next = document.createElement('span'); next.textContent = selected.size;
-  count.append(next); label.replaceChildren('Send to ', count, selected.size === 1 ? ' person' : ' people');
+  count.append(next); label.replaceChildren(t('sendPrefix'), count, selected.size === 1 ? t('person') : t('people'));
   if (displayedCount !== selected.size) {
     const direction = selected.size > displayedCount ? 1 : -1;
     const previous = document.createElement('span'); previous.className = 'old-count'; previous.setAttribute('aria-hidden', 'true'); previous.textContent = displayedCount; count.append(previous);
@@ -142,7 +158,7 @@ function update() {
     let chip = chips.get(index);
     if (!chip) {
       chip = document.createElement('button'); chip.className = 'chip'; chip.dataset.person = index;
-      chip.setAttribute('aria-label', `Remove ${people[index]}`); chip.append(avatar(index), people[index], icon('close'));
+      chip.setAttribute('aria-label', t('remove', { p: people[index] })); chip.append(avatar(index), people[index], icon('close'));
       chip.addEventListener('click', () => togglePerson(index, true)); $('#selected').append(chip);
       // Geometry is stable before fly() measures its landing rectangle.
       animate(chip, [{ opacity: 0 }, { opacity: 1 }]);
@@ -151,7 +167,7 @@ function update() {
     const from = positions.get(String(index)); const to = chip.getBoundingClientRect();
     if (from && from.left !== to.left) animate(chip, [{ transform: `translateX(${from.left - to.left}px)` }, { transform: 'translateX(0)' }]);
   }
-  if (!selected.size) { const el = document.createElement('span'); el.className = 'placeholder'; el.textContent = 'Pick people below'; $('#selected').append(el); }
+  if (!selected.size) { const el = document.createElement('span'); el.className = 'placeholder'; el.textContent = t('pick'); $('#selected').append(el); }
   document.querySelectorAll('[data-pick]').forEach(el => { el.setAttribute('aria-pressed', String(selected.has(Number(el.dataset.pick)))); el.disabled = sending; });
   $('#send').disabled = !selected.size || sending; $('#access').disabled = sending; sendLabel();
   if (shape.dataset.state === 'open') morph('open');
@@ -179,11 +195,11 @@ function togglePerson(index, returnFocus = false) {
   adding ? selected.add(index) : selected.delete(index);
   $('#error').hidden = true; update();
   fly(index, from, adding ? $(`.chip[data-person="${index}"] img`) : button.querySelector('img'));
-  if (returnFocus) button.focus(); announce(`${people[index]} ${adding ? 'selected' : 'removed'}`);
+  if (returnFocus) button.focus(); announce(t(adding ? 'aSelected' : 'aRemoved', { p: people[index] }));
 }
 people.forEach((name, index) => {
   const button = document.createElement('button'); button.className = 'person'; button.dataset.pick = index;
-  button.setAttribute('aria-pressed', 'false'); button.setAttribute('aria-label', `Select ${name}`);
+  button.setAttribute('aria-pressed', 'false'); button.setAttribute('aria-label', t('select', { p: name }));
   const portrait = document.createElement('span'); portrait.className = 'portrait'; portrait.append(avatar(index));
   const badge = document.createElement('span'); badge.className = 'selected-badge'; badge.append(icon('check')); portrait.append(badge);
   button.append(portrait, name); button.addEventListener('click', () => togglePerson(index)); $('#people').append(button);
@@ -191,46 +207,64 @@ people.forEach((name, index) => {
 function resetTransient() {
   generation++; timers.forEach(clearTimeout); timers.clear(); flights.forEach(cleanup => cleanup()); sending = false;
   sheet.removeAttribute('aria-busy'); $('#error').hidden = true;
-  document.querySelectorAll('[data-channel]').forEach(button => { button.disabled = false; button.classList.remove('is-success'); buttonContent(button, button.dataset.channel === 'Email' ? 'mail' : button.dataset.channel.toLowerCase(), button.dataset.channel); });
-  $('#copy').classList.remove('is-success'); buttonContent($('#copy'), 'copy', 'Copy', true);
+  document.querySelectorAll('[data-channel]').forEach(button => { button.disabled = false; button.dataset.status = ''; button.classList.remove('is-success'); buttonContent(button, button.dataset.channel === 'Email' ? 'mail' : button.dataset.channel.toLowerCase(), channelName(button)); });
+  $('#copy').classList.remove('is-success'); buttonContent($('#copy'), 'copy', t('copy'), true);
 }
 function close(focus = true, immediate = false) { resetTransient(); update(); state('closed', focus, immediate); }
 trigger.addEventListener('click', () => state('open'));
 $('#close').addEventListener('click', () => close());
 $('#done').addEventListener('click', () => { close(); selected.clear(); update(); });
-$('#undo').addEventListener('click', () => { resetTransient(); update(); state('open'); announce('Demo share undone. Recipients kept for editing.'); });
+$('#undo').addEventListener('click', () => { resetTransient(); update(); state('open'); announce(t('aUndone')); });
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && !event.defaultPrevented && shape.dataset.state !== 'closed') { event.preventDefault(); close(); } });
 document.addEventListener('pointerdown', event => { if (shape.dataset.state !== 'closed' && !shape.contains(event.target) && !event.target.closest('.demo-controls')) close(false); });
-$('#access').addEventListener('change', () => { $('#access-description').textContent = `${$('#access').selectedIndex ? 'Only selected people' : 'Can view'} · demo setting`; });
+const accessText = () => { $('#access-description').textContent = t($('#access').selectedIndex ? 'onlySelected' : 'canView'); };
+$('#access').addEventListener('change', accessText);
 $('#copy').addEventListener('click', async () => {
   const current = generation;
   try {
     await navigator.clipboard.writeText($('#link').value); if (current !== generation) return;
-    clearTimeout(copyTimer); timers.delete(copyTimer); $('#copy').classList.add('is-success'); buttonContent($('#copy'), 'check', 'Copied'); announce('Link copied');
-    copyTimer = later(() => { $('#copy').classList.remove('is-success'); buttonContent($('#copy'), 'copy', 'Copy'); }, 2400 * motionScale);
-  } catch { if (current !== generation) return; $('#link').focus(); $('#link').select(); announce('Clipboard unavailable. Copy the selected link manually.'); buttonContent($('#copy'), 'copy', 'Retry'); }
+    clearTimeout(copyTimer); timers.delete(copyTimer); $('#copy').classList.add('is-success'); buttonContent($('#copy'), 'check', t('copied')); announce(t('aCopied'));
+    copyTimer = later(() => { $('#copy').classList.remove('is-success'); buttonContent($('#copy'), 'copy', t('copy')); }, 2400 * motionScale);
+  } catch { if (current !== generation) return; $('#link').focus(); $('#link').select(); announce(t('aClipboard')); buttonContent($('#copy'), 'copy', t('retry')); }
 });
 for (const [id, outcome] of [['works', false], ['fails', true]]) $(`#${id}`).addEventListener('click', () => { fail = outcome; $('#works').setAttribute('aria-pressed', String(!fail)); $('#fails').setAttribute('aria-pressed', String(fail)); });
 document.querySelectorAll('[data-channel]').forEach(button => button.addEventListener('click', () => {
-  const outcome = fail; button.disabled = true; buttonContent(button, 'spinner', button.dataset.channel);
-  later(() => { button.disabled = false; button.classList.toggle('is-success', !outcome); buttonContent(button, outcome ? 'close' : 'check', outcome ? 'Retry' : 'Done'); announce(`${button.dataset.channel}: ${outcome ? 'simulated failure, try again' : 'demo complete, nothing sent'}`); }, 800);
+  const outcome = fail; button.disabled = true; button.dataset.status = 'busy'; buttonContent(button, 'spinner', channelName(button));
+  later(() => { button.disabled = false; button.dataset.status = outcome ? 'fail' : 'ok'; button.classList.toggle('is-success', !outcome); buttonContent(button, outcome ? 'close' : 'check', outcome ? t('retry') : t('done')); announce(t(outcome ? 'aChannelFail' : 'aChannelOk', { c: channelName(button) })); }, 800);
 }));
 $('#send').addEventListener('click', () => {
   if (!selected.size || sending) return;
   const outcome = fail; sending = true; $('#error').hidden = true; sheet.setAttribute('aria-busy', 'true'); update();
   later(() => {
     sending = false; sheet.removeAttribute('aria-busy');
-    if (outcome) { $('#error').textContent = 'Demo delivery failed. Try again with “Send works”.'; $('#error').hidden = false; update(); $('#send').focus(); animate(shape, [{ transform: 'translateX(0)' }, { transform: 'translateX(-5px)' }, { transform: 'translateX(4px)' }, { transform: 'translateX(0)' }], { duration: 300 }); return; }
+    if (outcome) { $('#error').textContent = t('sendFail'); $('#error').hidden = false; update(); $('#send').focus(); animate(shape, [{ transform: 'translateX(0)' }, { transform: 'translateX(-5px)' }, { transform: 'translateX(4px)' }, { transform: 'translateX(0)' }], { duration: 300 }); return; }
     const recipients = [...selected]; $('#sent-avatars').replaceChildren(...recipients.map(avatar));
     const badge = document.createElement('span'); badge.className = 'sent-badge'; badge.append(icon('check')); $('#sent-avatars').append(badge);
-    $('#sent-title').textContent = `Sent to ${recipients.slice(0, 2).map(index => people[index]).join(', ')}${recipients.length > 2 ? `, and ${recipients.length - 2} other${recipients.length > 3 ? 's' : ''}` : ''}`;
-    $('#sent-detail').textContent = 'Demo complete · no message was sent';
-    state('sent'); update(); announce('Demo complete. No message was sent.');
+    lastRecipients = recipients;
+    $('#sent-title').textContent = sentTitle(recipients);
+    $('#sent-detail').textContent = t('sentDetail');
+    state('sent'); update(); announce(t('aComplete'));
   }, 1000);
 });
 window.addEventListener('resize', () => morph(shape.dataset.state, true));
 motionQuery.addEventListener('change', () => { document.documentElement.toggleAttribute('data-still', isStill()); if (isStill()) { document.getAnimations().forEach(a => { if (a.effect?.getTiming().iterations === Infinity) a.cancel(); else a.finish(); }); flights.forEach(cleanup => cleanup()); } });
 document.documentElement.toggleAttribute('data-still', isStill());
-buttonContent($('#copy'), 'copy', 'Copy', true);
+buttonContent($('#copy'), 'copy', t('copy'), true);
+// Language switch: relabel in place; the open state, selection and timers are untouched.
+window.addEventListener('lab:language', () => {
+  buttonContent($('#copy'), $('#copy').classList.contains('is-success') ? 'check' : 'copy', t($('#copy').classList.contains('is-success') ? 'copied' : 'copy'), true);
+  document.querySelectorAll('[data-channel]').forEach(button => {
+    const st = button.dataset.status;
+    if (st === 'ok' || st === 'fail') buttonContent(button, st === 'fail' ? 'close' : 'check', st === 'fail' ? t('retry') : t('done'));
+    else buttonContent(button, st === 'busy' ? 'spinner' : button.dataset.channel === 'Email' ? 'mail' : button.dataset.channel.toLowerCase(), channelName(button));
+  });
+  document.querySelectorAll('[data-pick]').forEach(button => button.setAttribute('aria-label', t('select', { p: people[Number(button.dataset.pick)] })));
+  document.querySelectorAll('#selected .chip').forEach(chip => chip.setAttribute('aria-label', t('remove', { p: people[Number(chip.dataset.person)] })));
+  const placeholder = $('#selected .placeholder'); if (placeholder) placeholder.textContent = t('pick');
+  if (!$('#error').hidden) $('#error').textContent = t('sendFail');
+  if (lastRecipients.length) { $('#sent-title').textContent = sentTitle(lastRecipients); $('#sent-detail').textContent = t('sentDetail'); }
+  accessText(); displayedCount = selected.size; sendLabel();
+  morph(shape.dataset.state, true);
+});
 window.addEventListener('pagehide', () => close(false, true));
 if (preview) { selected.add(1); selected.add(2); update(); state('open', false, true); }
