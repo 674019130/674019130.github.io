@@ -113819,41 +113819,269 @@
       "date_kind": "community_post",
       "evidence": "memory workflow for decisions (why's & why not's) Comments URL: https://news.ycombinator.com/item?id=50602894 Points: 1 # Comments: 0",
       "discussion_url": "https://news.ycombinator.com/item?id=50602894"
+    },
+    {
+      "id": "97856bca3c5ee373a87b",
+      "source": "simon",
+      "publisher": "Simon Willison",
+      "category": "discovery",
+      "title": "Select Styling Specimens",
+      "url": "https://simonwillison.net/2026/Nov/22/select-styling",
+      "published_at": "2026-11-22T19:45:06+00:00",
+      "date_kind": "community_post",
+      "evidence": "Tool: Select Styling Specimens I got frustrated at how HTML <select> boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser After some experimentation I've decided my favorite CSS for select boxes is this: select { appearance : none ; color : # 1f2933 ; padding : 0.5 em 2.25 em 0.5 em 0.75 em ; border : 1 px solid # c4cbd3 ; border-radius : 6 px ; background : # fff url ( \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23667085' stroke-width='1.5'/%3E%3C/svg%3E\" ) no-repeat right 0.75 em center / 0.75 em ; } Here's what that looks like in the three browsers: Tags: tools , css , html",
+      "discussion_url": ""
+    },
+    {
+      "id": "cf6a2e45422a2d6f15cd",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Taskless, turn AGENTS.md and PR comments into runnable checks",
+      "url": "https://www.taskless.io",
+      "published_at": "2026-11-22T20:11:12+00:00",
+      "date_kind": "community_post",
+      "evidence": "Hey HN, I'm Jakob, the solo dev and founder behind Taskless. I got tired of my AGENTS.md files being ignored or forgotten a half dozen turns into conversations. I also remembered reading someone here on HN saying we weren't using nearly enough syntax trees in our code checks. This is the result. Taskless gives you powerful syntax tree tools with human verifiable fixtures. The CLI is MIT licensed, so running the CLI, onboarding, rule writing, and running the underlying ast-grep & Vale checks are all local. You can give it a try with: npx @taskless/cli and then asking your agent to \"onboard with Taskless\". Under the hood, the CLI works with your agent to read your PR review comments, fixup commits, and agent files. It takes things that keep recurring and turns them into the simplest code-level enforcement that can prevent the issue going forward. By choosing code over an LLM for the runtime, there's no model once code is generated. The checks can then be committed to your codebase and enforced. I'm particularly proud of how determinism is mixed into the onboarding flow. Any time the CLI can give the agent information without letting the agent wandering the codebase, the CLI does. It results in a more consistent experience with far fewer errors. Anonymous telemetry can be disabled outright by setting DO_NOT_TRACK=1 or TASKLESS_TELEMETRY_DISABLED=1 in your environment (it collects CLI version, OS, the repo's org/owner, and a bit about the repository it's running in). When the agent's done, it creates a report you can share around to show everyone there's a better way to control the output of agentic coding tools. I thought I'd include a few here from some of my favorite repos. - Effect: https://tskl.es/gh/Effect-TS/effect/20261104/1g4gRoMmoADlysg... I specifically liked Effect because effect-bot is in the PRs fixing bugs and writing docs for the team, and they already use oxlint plugins and a TypeScript language service plugin. - Sentry: https://tskl.es/gh/getsentry/sentry/20261016/1ZyMPva1BzaHaa5... Sentry's all open source, and David Cramer's tweeted a lot about determinism, especially now that the team is using Junior to ship code via Slack chat. - n8n: https://tskl.es/gh/n8n-io/n8n/20261026/1C3I3yVjFyfxNFEpl4qFA... n8n has more AI driven code than the other two repos and is a good example of how bad it can get when the determinism isn't in place. Since agents tend to copy what they see from related files, problems propagate quickly. I'd love to hear what you're doing today to keep agents behaving, or if you do kick the tires, I'd love the honest feedback. Comments URL: https://news.ycombinator.com/item?id=50603421 Points: 6 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50603421"
+    },
+    {
+      "id": "f7adbef113ab4685b132",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: I've made a CVE auto pentest app",
+      "url": "https://keybrum.com",
+      "published_at": "2026-11-22T20:34:24+00:00",
+      "date_kind": "community_post",
+      "evidence": "I've made this website to pentest your own vibecoded apps fleet. It handles automatically cve tracking from https://cve.now/ and for each of them add them as a new attack in an engine. It can even launch its own sandbox with sub agents that tests IDOR attacks etc. I'm sure it can be very handy as Claude subscriptions would otherswise flag quickly any of your coding sessions for cyber safeguards rails. I'd appreciate any suggestions or feedback ! Comments URL: https://news.ycombinator.com/item?id=50603596 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50603596"
+    },
+    {
+      "id": "9d810c6dac5dc263e1c0",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: TheGitAI CLI/Desktop Agent with Computer Control on Linux (Wayland+X11)",
+      "url": "https://thegit.ai/tour",
+      "published_at": "2026-11-22T21:23:50+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://thegit.ai/tour Comments URL: https://news.ycombinator.com/item?id=50604040 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50604040"
+    },
+    {
+      "id": "395bd34731dbc31743ff",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Gall – Inkling 2 Mini on 24GB M2, frees RAM between messages",
+      "url": "https://github.com/ltrgoddard/gall",
+      "published_at": "2026-11-22T21:40:38+00:00",
+      "date_kind": "community_post",
+      "evidence": "Thinking Machines Lab gives 32GB as the minimum RAM requirement for Inkling 2 Mini on Mac, but with the Q3 quant I felt it must be possible to get somewhere reasonable on my 24GB M2 MacBook Air. Llama.cpp wasn't cutting it even with patches, so I spent this week's Fable allowance (with a sprinkling of Astra) on this custom inference engine, and took the opportunity to add some optimisations and ergonomics for running on a memory-constrained laptop: - strictly one model loaded at a time, requests queued; - KV cache gets saved and model unloaded after every response (or configurable delay), so RAM stays at 50MB between calls, but reload is fast; - menu bar app shows status and icon changes when prefilling/generating. So far I've been using it with hax [1] with my normal system prompt + tool list, which runs to about 2,800 tokens, and getting near-instant responses in new sessions due to the cache-and-reload. Works great as a local agent setup for infrequent messages too, e.g. via a Telegram bridge. I'm sure this vibecoded engine and the model itself will be superseded in time, but for now it's by far the best local model setup I've ever managed on this machine, so wanted to share for others in the same boat. Please do hack away at it. 1. https://github.com/OleksandrChekhovskyi/hax Comments URL: https://news.ycombinator.com/item?id=50604195 Points: 5 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50604195"
+    },
+    {
+      "id": "cecd9d508021803ed725",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Aaf-gate – policy gate and kill switch for existing agent runtimes",
+      "url": "https://github.com/buberlo/aaf-gate",
+      "published_at": "2026-11-22T22:17:07+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/buberlo/aaf-gate Comments URL: https://news.ycombinator.com/item?id=50604524 Points: 3 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50604524"
+    },
+    {
+      "id": "309ea7623b51258e3ae4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Prompt Studio – Free, client-side structured prompt generator for LLMs",
+      "url": "https://freeaipromptgen.com",
+      "published_at": "2026-11-22T23:05:10+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://freeaipromptgen.com/ Comments URL: https://news.ycombinator.com/item?id=50604980 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50604980"
+    },
+    {
+      "id": "f21e6e5f64ffa5172325",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Trix - A terminal workspace that shows which coding agent needs you",
+      "url": "https://trixapp.ai",
+      "published_at": "2026-11-22T23:28:23+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://trixapp.ai/ Comments URL: https://news.ycombinator.com/item?id=50605218 Points: 7 # Comments: 2",
+      "discussion_url": "https://news.ycombinator.com/item?id=50605218"
+    },
+    {
+      "id": "2d5bfe5a950f82da4f6a",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Inbox Envoy, an open-source email triage skill for your own AI agent",
+      "url": "https://github.com/salespeak-ai/inbox-envoy",
+      "published_at": "2026-11-23T00:00:35+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/salespeak-ai/inbox-envoy Comments URL: https://news.ycombinator.com/item?id=50605502 Points: 2 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50605502"
+    },
+    {
+      "id": "61b7c12bfec70a605f45",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: UltraIterator – Fractal Exhibition Android App",
+      "url": "https://danwills.github.io/ultraiterator",
+      "published_at": "2026-11-23T00:12:33+00:00",
+      "date_kind": "community_post",
+      "evidence": "I found (and rendered) all these beautiful Fractals with UltraFractal over the years, and although there's a Flickr where you can kinda browse them, I wanted to present them in a more creative way. So, with help from Claude, there are now live-rendered (ported to web) versions of a selection of the fractals on the landing page (that you can zoom yourself if your gpu/cpu are fast enough) and the Android app has access to the full collection as rendered tiles (on an r2 bucket). I'd absolutely love to have some testers from the HN community! Comments URL: https://news.ycombinator.com/item?id=50605607 Points: 2 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50605607"
+    },
+    {
+      "id": "cf98b50babba7215135d",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AgentDE – A small, native macOS home for your terminal agents",
+      "url": "https://github.com/AgentDE/agentde",
+      "published_at": "2026-11-23T00:38:37+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/AgentDE/agentde Comments URL: https://news.ycombinator.com/item?id=50605840 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50605840"
+    },
+    {
+      "id": "1b05e94aa489eec9f7d2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Taskcue – see which of your Claude Code and Codex sessions need you",
+      "url": "https://github.com/taskcue/taskcue",
+      "published_at": "2026-11-23T00:52:02+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/taskcue/taskcue Comments URL: https://news.ycombinator.com/item?id=50605978 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50605978"
+    },
+    {
+      "id": "f90bdef90cf32ac048c9",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Monitor is so bright at night when agents are running so I build a lamp",
+      "url": "https://inthepond.com.au/night-lamp",
+      "published_at": "2026-11-23T03:28:22+00:00",
+      "date_kind": "community_post",
+      "evidence": "I am not sure if it's just me. I spent a lot of time next to my workstation, and it's just too bright at night with Macbook's lid on. Instead of having the lid half closed and worrying about if my cat would jump on it and close it properly, I went off a build a night lamp website so my brain recognises the bright bright screen as a lamp... and that brings peace to my sleep. Comments URL: https://news.ycombinator.com/item?id=50607158 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50607158"
+    },
+    {
+      "id": "f595abebacf3199818b2",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Ignis – A browser-native LLM and multimodal inference engine",
+      "url": "https://ignis.ray-d-song.com",
+      "published_at": "2026-11-23T03:48:45+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://ignis.ray-d-song.com/ Comments URL: https://news.ycombinator.com/item?id=50607257 Points: 1 # Comments: 1",
+      "discussion_url": "https://news.ycombinator.com/item?id=50607257"
+    },
+    {
+      "id": "83c84dd92b70f3cecd2c",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Codexed – A local settings editor for Codex CLI",
+      "url": "https://github.com/codex-config/codexed",
+      "published_at": "2026-11-23T03:58:14+00:00",
+      "date_kind": "community_post",
+      "evidence": "I wanted an easier way to manage my Codex config. Editing config.toml by hand works, but I don't remember which keys exist or what half the feature flags do. So I made a little app that does 2-3 things well, is fast, and isn't bloated. Features: - Shows the available settings for your specific Codex version (always in sync). - Configure config.toml, AGENTS.md, Skills, Plugins and MCPs. - Turn feature flags on or off, globally or per project. - Keeps your comments and formatting in config.toml, because Codex makes the changes itself. - Tree-view in the sidebar to view all Codex projects. - Gives useful suggestions for enabling privacy-related settings. It ships as one Go binary for macOS, Linux and Windows, under the MIT license. Screenshots and install steps are on GitHub: https://github.com/codex-config/codexed Let me know what you think and why it sucks. If you like such tools, these 2 might be helpful: - Claudia — The same thing but for Claude Code - Switcheroo — Switch local CLI accounts for 10+ providers (Wrangler, Vercel, Claude, GitHub etc) Comments URL: https://news.ycombinator.com/item?id=50607324 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50607324"
+    },
+    {
+      "id": "0918c18239543fe0d094",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Kavach AI – Sub-16ms AST security gate with 0% false positives",
+      "url": "https://github.com/rajrajak99/kavach-ai",
+      "published_at": "2026-11-23T05:23:53+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/rajrajak99/kavach-ai Comments URL: https://news.ycombinator.com/item?id=50607787 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50607787"
+    },
+    {
+      "id": "505d1a17a4595d54bfd4",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Open-source MCP server to check AI search crawler readiness",
+      "url": "https://github.com/alicexixi85/geo-seo-mcp-pro",
+      "published_at": "2026-11-23T06:19:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://github.com/alicexixi85/geo-seo-mcp-pro Comments URL: https://news.ycombinator.com/item?id=50608126 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50608126"
+    },
+    {
+      "id": "9c981947014781ef5e34",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: AI code review in VS Code with your own API key or Ollama, no account",
+      "url": "https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model",
+      "published_at": "2026-11-23T06:24:04+00:00",
+      "date_kind": "community_post",
+      "evidence": "Article URL: https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model Comments URL: https://news.ycombinator.com/item?id=50608149 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50608149"
+    },
+    {
+      "id": "e9ef67ff7f953a461831",
+      "source": "hn-show",
+      "publisher": "Show HN",
+      "category": "discovery",
+      "title": "Show HN: Smartesto – Run custom prompts on webpages and text with Apple devices",
+      "url": "https://www.giuliomagnifico.dev/apps/smartesto",
+      "published_at": "2026-11-23T06:37:36+00:00",
+      "date_kind": "community_post",
+      "evidence": "I built Smartesto (for iOS, iPadOS, macOS) because I wanted a quick way to run predefined prompts (I call them actions) on a webpage or selected text, using the Share Sheet or Shortcuts. For example \"Summarize a webpage\", \"Proofread\" selected text, \"Improve text\", etc. Depending on the action, I wanted to send the text to different AI providers via their APIs or process it locally on my device. And it does just that. It works with APIs from OpenAI, Anthropic, Mistral, Gemini, as well as Apple’s on-device models (using local text processing). I also ran into pages that AI providers couldn’t access because they blocked AI bots. To address that, I built a custom Readability package that quickly extracts the page text on the device. Smartesto then passes the extracted text to the selected action for processing. You can find the download, screenshots and videos here: https://www.giuliomagnifico.dev/apps/smartesto/ If you have similar needs, give it a try and see if it works for you (and I’d appreciate your feedback) Comments URL: https://news.ycombinator.com/item?id=50608234 Points: 1 # Comments: 0",
+      "discussion_url": "https://news.ycombinator.com/item?id=50608234"
     }
   ],
   "sources": {
     "github": {
-      "last_success": "2026-11-22T19:40:04.782152+00:00",
+      "last_success": "2026-11-23T07:38:43.392851+00:00",
       "count": 10,
       "earliest": "2026-11-18T22:04:50+00:00",
       "gap": false,
       "error": null
     },
     "google": {
-      "last_success": "2026-11-22T19:40:04.912735+00:00",
+      "last_success": "2026-11-23T07:38:43.553616+00:00",
       "count": 20,
       "earliest": "2026-11-18T17:00:00+00:00",
       "gap": false,
       "error": null
     },
     "huggingface": {
-      "last_success": "2026-11-22T19:40:04.976504+00:00",
+      "last_success": "2026-11-23T07:38:43.716744+00:00",
       "count": 915,
       "earliest": "2020-02-14T00:00:00+00:00",
       "gap": false,
       "error": null
     },
     "simon": {
-      "last_success": "2026-11-22T19:40:05.018840+00:00",
+      "last_success": "2026-11-23T07:38:43.801280+00:00",
       "count": 30,
-      "earliest": "2026-11-11T15:11:59+00:00",
+      "earliest": "2026-11-11T17:19:52+00:00",
       "gap": false,
       "error": null
     },
     "hn-show": {
-      "last_success": "2026-11-22T19:40:09.595394+00:00",
+      "last_success": "2026-11-23T07:38:44.330159+00:00",
       "count": 100,
-      "earliest": "2026-11-21T21:34:54+00:00",
+      "earliest": "2026-11-22T12:37:28+00:00",
       "gap": false,
       "error": null
     },
@@ -113865,56 +114093,56 @@
       "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     "anthropics-claude-code": {
-      "last_success": "2026-11-22T19:40:22.187367+00:00",
+      "last_success": "2026-11-23T07:38:58.223569+00:00",
       "count": 10,
       "earliest": "2026-11-06T17:04:01+00:00",
       "gap": false,
       "error": null
     },
     "cline-cline": {
-      "last_success": "2026-11-22T19:40:22.507062+00:00",
+      "last_success": "2026-11-23T07:38:58.675843+00:00",
       "count": 10,
       "earliest": "2026-10-17T03:00:13+00:00",
       "gap": false,
       "error": null
     },
     "continuedev-continue": {
-      "last_success": "2026-11-22T19:40:22.791666+00:00",
+      "last_success": "2026-11-23T07:38:59.081815+00:00",
       "count": 4,
       "earliest": "2026-03-27T21:25:10+00:00",
       "gap": false,
       "error": null
     },
     "Aider-AI-aider": {
-      "last_success": "2026-11-22T19:40:23.093289+00:00",
+      "last_success": "2026-11-23T07:38:59.462469+00:00",
       "count": 10,
       "earliest": "2025-03-13T21:46:58+00:00",
       "gap": false,
       "error": null
     },
     "ollama-ollama": {
-      "last_success": "2026-11-22T19:40:23.513504+00:00",
+      "last_success": "2026-11-23T07:38:59.999850+00:00",
       "count": 10,
       "earliest": "2026-10-21T16:20:30+00:00",
       "gap": false,
       "error": null
     },
     "ggml-org-llama.cpp": {
-      "last_success": "2026-11-22T19:40:32.758140+00:00",
+      "last_success": "2026-11-23T07:39:14.004749+00:00",
       "count": 1,
       "earliest": "2026-11-13T10:20:19+00:00",
       "gap": false,
       "error": null
     },
     "openai-news": {
-      "last_success": "2026-11-22T19:40:32.861851+00:00",
+      "last_success": "2026-11-23T07:39:14.113072+00:00",
       "count": 1422,
       "earliest": "2015-12-11T08:00:00+00:00",
       "gap": false,
       "error": null
     },
     "openai-codex": {
-      "last_success": "2026-11-22T19:40:37.423978+00:00",
+      "last_success": "2026-11-23T07:39:18.979726+00:00",
       "count": 4,
       "earliest": "2026-11-13T08:37:05+00:00",
       "gap": false,
@@ -114103,5 +114331,5 @@
       "to": "2026-11-20T19:59:46+00:00"
     }
   ],
-  "collected_at": "2026-11-22T19:40:37.424890+00:00"
+  "collected_at": "2026-11-23T07:39:18.980709+00:00"
 }
