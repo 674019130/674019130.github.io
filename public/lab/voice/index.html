@@ -3,42 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Voice glow | UI lab</title>
+  <meta name="description" content="A glow that rises with your voice from the bottom edge of a chat input, a recording pill and a phone screen, then gathers into a sweeping beam while the reply is worked out.">
+  <title>Voice glow · Su UI lab</title>
   <script src="../shared/setup.js"></script>
   <link rel="stylesheet" href="../shared/lab.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <main>
-  <nav><a href="/lab">← UI lab</a></nav>
-  <header class="page-heading"><h1>Voice glow</h1></header>
-  <section class="stage voice-stage" aria-label="Voice glow experiment" data-mode="listen">
-    <div class="voice-controls" role="group" aria-label="Glow state">
-      <button type="button" data-state="idle" aria-pressed="false">Idle</button>
-      <button type="button" data-state="listen" aria-pressed="true">Simulate voice</button>
-      <button type="button" data-state="process" aria-pressed="false">Processing</button>
+  <nav><a href="/lab" data-copy="back">← UI lab</a><button id="language" type="button" aria-label="切换为中文">中</button></nav>
+  <header class="page-heading"><h1 data-copy="title">Voice glow</h1><p class="intro" data-copy="intro"></p></header>
+
+  <section id="stage" class="stage" aria-label="Voice glow experiment">
+    <div class="samples">
+      <div class="field chat" data-preset="chat" role="group" aria-label="Chat input">
+        <span class="placeholder" data-copy="chatPlaceholder">Ask anything</span>
+        <div class="chat-bar">
+          <span class="round" data-label="attach"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3.5v9M3.5 8h9"/></svg></span>
+          <span class="round" data-label="dictate"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="6" y="2.5" width="4" height="7" rx="2"/><path d="M3.8 8a4.2 4.2 0 0 0 8.4 0M8 12.2v1.8"/></svg></span>
+        </div>
+      </div>
+      <div class="field pill" data-preset="pill" role="group" aria-label="Recording pill">
+        <span class="rec-dot" aria-hidden="true"></span><span class="timer" id="timer">0:00</span>
+      </div>
     </div>
-    <div class="voice-grid">
-      <div class="voice-sample">
-        <label for="voice-chat">Chat input</label>
-        <div class="voice-field chat"><input id="voice-chat" placeholder="Ask anything" autocomplete="off"></div>
-      </div>
-      <div class="voice-sample">
-        <span id="voice-pill">Recording pill</span>
-        <div class="voice-field pill" aria-labelledby="voice-pill"><span aria-hidden="true">▂ ▄ ▇ ▄ ▂</span></div>
-      </div>
-      <div class="voice-sample">
-        <label for="voice-phone">Phone bottom</label>
-        <div class="voice-phone"><div class="voice-field phone"><input id="voice-phone" placeholder="Message" autocomplete="off"></div></div>
+    <div class="phone" role="group" aria-label="Phone">
+      <div class="field screen" data-preset="phone">
+        <div class="thread" aria-hidden="true"><p class="bubble in" data-copy="bubbleIn"></p><p class="bubble out" data-copy="bubbleOut"></p><p class="bubble in" data-copy="bubbleIn2"></p></div>
+        <div class="composer"><span data-copy="phonePlaceholder">Message</span><span class="send" data-label="send"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3.5M4 7.5l4-4 4 4"/></svg></span></div>
       </div>
     </div>
   </section>
-  <details>
-    <summary>Implementation notes / 实现技巧</summary>
-    <p>The official VoiceBeam renders the default, pill and mobile presets. A simulated level drives all three, while processing switches to the component’s own sweep. Reduced motion pauses the effect.</p>
-    <p lang="zh-CN">官方 VoiceBeam 渲染默认输入框、录音胶囊和手机三种预设。模拟音量驱动光晕，处理中切换为组件自带的扫光。减少动态效果时暂停动效。</p>
-  </details>
-  <footer class="credit"><a href="https://libraries.dev/voice">Inspired by Voice from Libraries.dev</a></footer>
+
+  <div class="controls">
+    <div class="segmented" role="group" id="state-group" aria-label="Glow state">
+      <button type="button" data-mode="idle" data-copy="idle">Idle</button>
+      <button type="button" data-mode="speak" data-copy="speak">Speaking</button>
+      <button type="button" data-mode="think" data-copy="think">Thinking</button>
+    </div>
+    <button type="button" id="mic" aria-pressed="false">Use microphone</button>
+    <div class="segmented" role="group" id="theme-group" aria-label="Theme">
+      <button type="button" data-theme-choice="light" data-copy="light">Light</button>
+      <button type="button" data-theme-choice="dark" data-copy="dark">Dark</button>
+    </div>
+  </div>
+  <p class="status" role="status" id="announce"></p>
+  <p class="hint" data-copy="hint"></p>
+
+  <section class="tricks" aria-labelledby="tricks-title"><h2 id="tricks-title" data-copy="tricks">Key CSS &amp; implementation tricks</h2>
+<article><h3 id="note-title-0"></h3><p id="note-body-0"></p><pre tabindex="0"><code>// one lobe: a unit-circle gradient in a stretched space
+ctx.save();
+ctx.translate(x, h + ry * .06);   // centre just below the bottom edge
+ctx.scale(rx, ry);                // circle → ellipse
+const g = ctx.createRadialGradient(0, 0, 0, 0, 0, 1);
+g.addColorStop(0,   rgba(color, a));
+g.addColorStop(.35, rgba(color, a * .75));
+g.addColorStop(.7,  rgba(color, a * .28));
+g.addColorStop(1,   rgba(color, 0));
+ctx.fillStyle = g;
+ctx.beginPath(); ctx.arc(0, 0, 1, 0, Math.PI * 2); ctx.fill();
+ctx.restore();</code></pre></article>
+<article><h3 id="note-title-1"></h3><p id="note-body-1"></p><pre tabindex="0"><code>const ATTACK = .05, RELEASE = .32;            // seconds
+for (let i = 0; i &lt; 5; i++) {
+  const target = bands[i];
+  const tau = target &gt; level[i] ? ATTACK : RELEASE;
+  level[i] += (target - level[i]) * (1 - Math.exp(-dt / tau));
+}</code></pre></article>
+<article><h3 id="note-title-2"></h3><p id="note-body-2"></p><pre tabindex="0"><code>gather += ((mode === 'think') - gather) * (1 - Math.exp(-dt / .35));
+
+const beam = .5 + Math.sin(t * 1.7) * p.sweep;          // shared sweep
+const x  = w * lerp(home + drift, beam + (i - 2) * .03, gather);
+const rx = w * p.spread * lerp(.75 + .45 * L, .72, gather);
+const ry = h * p.reach  * lerp(.2 + .8 * L, .78, gather);</code></pre></article>
+<article><h3 id="note-title-3"></h3><p id="note-body-3"></p><pre tabindex="0"><code>const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+const ctx = new AudioContext();
+const analyser = Object.assign(ctx.createAnalyser(), { fftSize: 1024, smoothingTimeConstant: .5 });
+ctx.createMediaStreamSource(stream).connect(analyser);
+
+// five log-spaced bands, 90 Hz – 4 kHz
+const edges = [90, 180, 360, 720, 1440, 4000].map(f =&gt; Math.round(f / (ctx.sampleRate / 2) * analyser.frequencyBinCount));
+analyser.getByteFrequencyData(spectrum);
+bands[i] = clamp((avg(spectrum, edges[i], edges[i + 1]) / 255 - .18) * 2.4);</code></pre></article>
+<article><h3 id="note-title-4"></h3><p id="note-body-4"></p><pre tabindex="0"><code>.field { position: relative; overflow: hidden; border-radius: 16px; isolation: isolate; }
+.field canvas.glow { position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: -1; filter: blur(10px); pointer-events: none; }
+
+ctx.globalCompositeOperation = 'lighter';           // lobes add, never cover
+const a = (dark ? .95 : .5) * Math.min(1, .25 + L); // light surfaces get half</code></pre></article>
+<div class="source-links"><a href="./styles.css">CSS ↗</a><a href="./script.js" data-copy="source">View the source</a></div></section>
+  <footer><span data-copy="inspired">Inspired by</span> <a href="https://libraries.dev/voice" target="_blank" rel="noopener noreferrer">Voice by Jakub Antalik ↗</a></footer>
+  <noscript><p>Enable JavaScript to see the glow. / 请启用 JavaScript 查看光效。</p></noscript>
 </main>
 <script type="module" src="./script.js"></script>
 </body>

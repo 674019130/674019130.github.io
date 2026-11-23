@@ -1,13 +1,47 @@
-.voice-stage { display: grid; gap: 28px; padding: clamp(16px, 4vw, 40px); }
-.voice-controls { display: flex; flex-wrap: wrap; gap: 8px; }
-.voice-controls button { font: inherit; padding: 6px 12px; color: inherit; background: transparent; border: .5px solid currentColor; border-radius: 8px; cursor: pointer; }
-.voice-controls button[aria-pressed="true"] { background: #28262c; color: #eeeef0; }
-.voice-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.voice-sample { display: grid; gap: 10px; align-content: start; font-size: 14px; }
-.voice-field, .voice-phone { background: #18191b; color: #eeeef0; border: .5px solid #43484e; }
-.voice-field { position: relative; isolation: isolate; overflow: hidden; display: grid; align-items: center; min-height: 52px; border-radius: 12px; }
-.voice-field input { width: 100%; box-sizing: border-box; padding: 12px; background: transparent; border: 0; color: inherit; font: inherit; }
-.voice-field:focus-within { outline: 2px solid #70b8ff; outline-offset: 2px; }
-.voice-field.pill { width: min(100%, 144px); border-radius: 99px; text-align: center; }
-.voice-phone { display: grid; align-items: end; min-height: 140px; border-radius: 18px; padding: 5px; }
-@media (max-width: 650px) { .voice-grid { grid-template-columns: 1fr; } }
+/* Everything inside the experiment lives under #stage; lab.css owns the page chrome. */
+#stage {
+  --surface: #f9f9f9; --field: #fcfcfc; --field-line: #d9d9d9; --text: #202020; --sub: #646464; --faint: #8d8d8d;
+  --bubble-in: #f0f0f0; --bubble-out: #0090ff; --rec: #e5484d; --bezel: #202020;
+  display: grid; grid-template-columns: minmax(0, 1fr) 248px; gap: 40px; align-items: center;
+  padding: 40px; border-radius: 16px; background: var(--surface); color: var(--text);
+}
+:root[data-theme="dark"] #stage {
+  --surface: #101211; --field: #171918; --field-line: #373b39; --text: #eceeed; --sub: #adb5b2; --faint: #63706b;
+  --bubble-in: #272a29; --bubble-out: #0090ff; --rec: #ff9592; --bezel: #2e3130;
+}
+.samples { display: grid; gap: 28px; justify-items: center; width: 100%; }
+#stage svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* every glowing surface: the canvas is clipped by the field's own radius */
+.field { position: relative; isolation: isolate; overflow: hidden; background: var(--field); border: .5px solid var(--field-line); }
+.field canvas.glow { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; filter: blur(var(--blur, 8px)); pointer-events: none; }
+.field.pill { --blur: 4px; } .field.screen { --blur: 14px; }
+
+/* chat input, ~350px like the reference preset */
+.field.chat { width: min(100%, 352px); height: 112px; border-radius: 20px; padding: 16px 12px 12px 16px; display: flex; flex-direction: column; justify-content: space-between; }
+.placeholder { font-size: 14px; color: var(--faint); }
+.chat-bar { display: flex; justify-content: space-between; margin-left: -4px; }
+.round { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: var(--sub); }
+.round:first-child { background: color-mix(in srgb, var(--field-line) 45%, transparent); }
+
+/* recording pill, ~150×44 */
+.field.pill { width: 152px; height: 44px; border-radius: 22px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.rec-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--rec); }
+:root:not([data-mode="speak"]) .rec-dot { background: var(--faint); }
+.timer { font-size: 14px; font-variant-numeric: tabular-nums; }
+
+/* phone: 36px outer radius, 6px bezel, 30px screen (concentric) */
+.phone { width: 248px; height: 420px; padding: 6px; border-radius: 36px; background: var(--bezel); }
+.field.screen { width: 100%; height: 100%; border: 0; border-radius: 30px; display: flex; flex-direction: column; justify-content: flex-end; padding: 12px; }
+.thread { display: grid; gap: 6px; margin-bottom: 16px; }
+.bubble { max-width: 80%; margin: 0; padding: 7px 12px; border-radius: 16px; font-size: 14px; line-height: 1.35; }
+.bubble.in { justify-self: start; background: var(--bubble-in); }
+.bubble.out { justify-self: end; background: var(--bubble-out); color: #fff; }
+.composer { display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 4px 0 14px; border-radius: 20px; border: .5px solid var(--field-line); background: color-mix(in srgb, var(--field) 70%, transparent); font-size: 14px; color: var(--faint); }
+.send { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--bubble-out); color: #fff; }
+
+@media (max-width: 640px) {
+  #stage { grid-template-columns: 1fr; padding: 28px 20px; gap: 28px; justify-items: center; }
+}
+:root[data-preview] #stage { width: 600px; height: 400px; border-radius: 0; padding: 24px 40px; grid-template-columns: minmax(0, 1fr) 210px; }
+:root[data-preview] .phone { width: 210px; height: 352px; }
