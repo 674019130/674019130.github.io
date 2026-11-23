@@ -1,5 +1,8 @@
 // @ts-check
 import { Fluid } from './fluid.js';
+// Copy comes from copy.js (window.labCopy); English is the fallback.
+const EN={pause:'Pause',resume:'Resume',sMove:'Move your pointer through the canvas, or drag with a finger.',sStill:'Still mode: gestures leave a static trace.',sPaused:'Paused. Resume to stir the color.',sNoCanvas:'Canvas unavailable.'};
+const t=(/** @type {keyof typeof EN} */k)=>/** @type {any} */(window).labCopy?.[k]??EN[k];
 /** @param {HTMLElement} root */
 function mountFluid(root){
 const canvas=/** @type {HTMLCanvasElement} */(root.querySelector('[data-fluid-canvas]'));
@@ -32,8 +35,8 @@ function loop(now){
 }
 function start(){if(!frame && !paused && !still() && visible && !document.hidden && context)frame=requestAnimationFrame(loop);}
 function sync(){
- stop();pause.disabled=still() || !context;pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused));
- status.textContent=!context?'Canvas unavailable.':still()?'Still mode: gestures leave a static trace.':paused?'Paused. Resume to stir the color.':'Move your pointer through the canvas, or drag with a finger.';
+ stop();pause.disabled=still() || !context;pause.textContent=paused?t('resume'):t('pause');pause.setAttribute('aria-pressed',String(paused));
+ status.textContent=!context?t('sNoCanvas'):still()?t('sStill'):paused?t('sPaused'):root.matches('.closing-study')?'':t('sMove');
  start();
 }
 /** @param {PointerEvent} event */
@@ -60,7 +63,7 @@ root.querySelectorAll('[data-palette]').forEach(button=>button.addEventListener(
 motion.addEventListener('change',()=>{previous=null;sync();});
 document.addEventListener('visibilitychange',()=>{previous=null;sync();});
 new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync();}).observe(stage);
-window.addEventListener('pagehide',stop);window.addEventListener('pageshow',sync);
+window.addEventListener('pagehide',stop);window.addEventListener('pageshow',sync);window.addEventListener('lab:language',sync);
 // An honest static gesture sample in the Lab thumbnail; the full page starts empty.
 if(params.get('preview')==='1'){for(let i=0;i<45;i++){const x=.24+i*.012,y=.5+Math.sin(i*.12)*.13;fluid.splat(x,y,.009,Math.cos(i*.12)*.012,palettes[0]);fluid.step();}paint();}
 sync();

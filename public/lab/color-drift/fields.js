@@ -1,6 +1,7 @@
 // @ts-check
 import {createParticles,stepParticles,heightAt,crossing} from './fields-model.js';
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+const label=(/** @type {string} */k,/** @type {string} */fallback)=>/** @type {any} */(window).labCopy?.[k]??fallback;
 const still=()=>reduced.matches || new URLSearchParams(location.search).get('still')==='1';
 /** @param {'particles'|'contours'} kind @param {string} selector */
 function mount(kind,selector){
@@ -13,7 +14,7 @@ function mount(kind,selector){
  function draw(){
  const [w,h]=dimensions;ctx.clearRect(0,0,w,h);
  if(kind==='particles'){
- for(const p of points){const d=Math.hypot(p.x-pointer[0],(p.y-pointer[1])*h/w),ink=strength*Math.exp(-d*d/.055);ctx.fillStyle=`rgba(${Math.round(151-36*ink)},${Math.round(142-80*ink)},${Math.round(156-18*ink)},${.18+ink*.48})`;ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.55;ctx.beginPath();ctx.moveTo(p.px*w,p.py*h);ctx.lineTo(p.x*w,p.y*h);ctx.stroke();ctx.fillRect(p.x*w,p.y*h,.65+ink*.35,.65+ink*.35);}
+ for(const p of points){const d=Math.hypot(p.x-pointer[0],(p.y-pointer[1])*h/w),ink=strength*Math.exp(-d*d/.055);ctx.fillStyle=`rgba(${Math.round(151-36*ink)},${Math.round(142-80*ink)},${Math.round(156-18*ink)},${.42+ink*.46})`;ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.55;ctx.beginPath();ctx.moveTo(p.px*w,p.py*h);ctx.lineTo(p.x*w,p.y*h);ctx.stroke();ctx.fillRect(p.x*w,p.y*h,.65+ink*.35,.65+ink*.35);}
 
  if(active){ctx.strokeStyle='#a58baf';ctx.lineWidth=.7;ctx.beginPath();ctx.moveTo(pointer[0]*w-4,pointer[1]*h);ctx.lineTo(pointer[0]*w+4,pointer[1]*h);ctx.moveTo(pointer[0]*w,pointer[1]*h-4);ctx.lineTo(pointer[0]*w,pointer[1]*h+4);ctx.stroke();}
  }else{
@@ -31,7 +32,7 @@ function mount(kind,selector){
  function stop(){cancelAnimationFrame(frame);frame=0;last=0;}
  /** @param {number} now */
  function loop(now){frame=0;if(!last || now-last>32){const dt=last?Math.min((now-last)/1000,.05):1/30;last=now;time+=dt;speed+=(Math.min(1,Math.hypot(pointer[0]-previousPointer[0],pointer[1]-previousPointer[1])*24)-speed)*.12;previousPointer=[...pointer];strength+=(Number(active)-strength)*.09;blend=Math.min(1,blend+.055);if(kind==='particles')stepParticles(points,pointer,strength,time,speed,dimensions[1]/dimensions[0]);draw();}if(visible && !paused && !still() && !document.hidden)frame=requestAnimationFrame(loop);}
- function sync(){stop();button.disabled=still();button.textContent=paused?'Resume':'Pause';button.setAttribute('aria-pressed',String(paused));draw();if(visible&&!paused&&!still()&&!document.hidden)frame=requestAnimationFrame(loop);}
+ function sync(){stop();button.disabled=still();button.textContent=paused?label('resume','Resume'):label('pause','Pause');button.setAttribute('aria-pressed',String(paused));draw();if(visible&&!paused&&!still()&&!document.hidden)frame=requestAnimationFrame(loop);}
  function interact(){if(paused)return;active=true;if(still()){strength=1;blend=1;if(kind==='particles')for(let i=0;i<65;i++)stepParticles(points,pointer,strength,time,speed,dimensions[1]/dimensions[0]);draw();}}
  canvas.addEventListener('pointermove',e=>{if(paused)return;const r=canvas.getBoundingClientRect();pointer=[Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))];interact();});
  canvas.addEventListener('pointerdown',e=>{if(paused)return;const r=canvas.getBoundingClientRect();pointer=[Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))];canvas.setPointerCapture(e.pointerId);interact();});
@@ -40,9 +41,9 @@ function mount(kind,selector){
  canvas.addEventListener('focus',interact);
  canvas.addEventListener('keydown',e=>{const keys={ArrowLeft:[-.04,0],ArrowRight:[.04,0],ArrowUp:[0,-.06],ArrowDown:[0,.06]};const d=keys[e.key];if(!d || paused)return;e.preventDefault();pointer=pointer.map((v,i)=>Math.max(.02,Math.min(.98,v+d[i])));interact();});
  button.addEventListener('click',()=>{paused=!paused;sync();});
- if(kind==='contours')document.querySelectorAll('[data-landscape]').forEach(b=>b.addEventListener('click',()=>{oldMode=mode;mode=Number(/** @type {HTMLElement} */(b).dataset.landscape);blend=still()||paused?1:0;document.querySelectorAll('[data-landscape]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelector('#landscape-status').textContent=b.textContent;draw();}));
+ if(kind==='contours')document.querySelectorAll('[data-landscape]').forEach(b=>b.addEventListener('click',()=>{oldMode=mode;mode=Number(/** @type {HTMLElement} */(b).dataset.landscape);blend=still()||paused?1:0;document.querySelectorAll('[data-landscape]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));/** @type {HTMLElement} */(document.querySelector('#landscape-status')).textContent=b.textContent;draw();}));
  new ResizeObserver(()=>{dimensions=size();draw();}).observe(canvas);
  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync();}).observe(canvas);
- document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);window.addEventListener('pagehide',stop);window.addEventListener('pageshow',sync);sync();
+ document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);window.addEventListener('lab:language',()=>{sync();const on=document.querySelector('[data-landscape][aria-pressed="true"]');const st=document.querySelector('#landscape-status');if(on&&st)st.textContent=on.textContent;});window.addEventListener('pagehide',stop);window.addEventListener('pageshow',sync);sync();
 }
 mount('particles','#particle-canvas');mount('contours','#contour-canvas');
