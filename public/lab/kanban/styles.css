@@ -12,10 +12,6 @@
 /* The board needs more room than the 720px text column. */
 main { width: min(1000px, calc(100% - 40px)); }
 nav, .page-heading, .controls, .status, .hint, .demo-note, .tricks, main > footer { max-width: 720px; margin-inline: auto; }
-nav { align-items: center; } nav > span { margin-left: auto; }
-#language { border: 0; background: none; padding: 6px 8px; color: var(--muted); }
-[hidden] { display: none !important; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 .stage { margin: 34px 0 8px; font-size: 13px; line-height: 1.35; }
 /* lab.css styles every button; these selectors win back the board's own look. */
@@ -29,7 +25,7 @@ nav { align-items: center; } nav > span { margin-left: auto; }
 .view-thumb { position: absolute; top: 3px; bottom: 3px; left: 0; width: var(--thumb-w, 0); translate: var(--thumb-x, 0) 0; border-radius: 7px; background: var(--card); box-shadow: 0 0 0 1px var(--card-line), 0 1px 2px #0000000f; transition: translate 320ms var(--ease), width 320ms var(--ease); }
 .view-toggle[data-instant] .view-thumb { transition: none; }
 .stage .view-toggle button { position: relative; padding: 6px 12px; font-size: 12px; color: var(--muted); transition: color 200ms; }
-.stage .view-toggle button[aria-pressed="true"] { color: var(--accent); }
+.stage .view-toggle button[aria-pressed="true"] { color: var(--ink); }
 
 /* Columns stay at least 212px wide; narrow screens scroll the board sideways. */
 .board-scroll { overflow-x: auto; margin: 0 -12px; padding: 0 12px 12px; scroll-snap-type: x proximity; scroll-padding-inline: 12px; overscroll-behavior-x: contain; }
@@ -39,7 +35,7 @@ nav { align-items: center; } nav > span { margin-left: auto; }
 .head-name { font-weight: 550; }
 .head-count { color: var(--soft); font-variant-numeric: tabular-nums; }
 .head[data-over] .head-count { color: var(--warn); }
-.badge { display: none; padding: 2px 7px; border-radius: 999px; background: var(--badge); color: var(--warn); font-size: 10.5px; font-weight: 550; animation: badge-in 260ms var(--ease); }
+.badge { display: none; padding: 2px 7px; border-radius: 999px; background: var(--badge); color: var(--warn); font-size: 12px; font-weight: 550; animation: badge-in 260ms var(--ease); }
 .head[data-over] .badge { display: inline-block; }
 .stage .icon-button { margin-left: auto; width: 26px; height: 26px; display: grid; place-items: center; color: var(--soft); border-radius: 7px; }
 .stage .icon-button:hover { background: var(--cell); color: var(--ink); }
@@ -60,16 +56,16 @@ nav { align-items: center; } nav > span { margin-left: auto; }
 .card[data-pressing] { scale: .98; }
 .card[data-lifted] { position: absolute; left: 0; top: 0; scale: 1.03; cursor: grabbing; box-shadow: 0 0 0 1px var(--accent-line), var(--lift); }
 .card[data-grabbed] { scale: 1.02; z-index: 2; box-shadow: 0 0 0 1.5px var(--accent), var(--lift); }
-.card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--soft); font-size: 11px; }
-.card-id { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10.5px; letter-spacing: .03em; }
+.card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--soft); font-size: 12px; }
+.card-id { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; letter-spacing: .03em; }
 .tag { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); }
 .tag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--dot); }
 .tag[data-tag="billing"] { --dot: var(--billing); } .tag[data-tag="design"] { --dot: var(--design); } .tag[data-tag="api"] { --dot: var(--api); } .tag[data-tag="lifecycle"] { --dot: var(--lifecycle); }
 .card-title { margin: 6px 0 9px; font-size: 13px; font-weight: 500; line-height: 1.38; overflow-wrap: anywhere; }
-.card-foot { display: flex; align-items: center; gap: 10px; min-height: 22px; color: var(--soft); font-size: 11px; font-variant-numeric: tabular-nums; }
+.card-foot { display: flex; align-items: center; gap: 10px; min-height: 22px; color: var(--soft); font-size: 12px; font-variant-numeric: tabular-nums; }
 .meta { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
 .card-foot .avatar { margin-left: auto; }
-.avatar { width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; flex: 0 0 auto; font-size: 8.5px; font-weight: 650; letter-spacing: .02em; color: var(--tone); background: var(--tone-bg); box-shadow: 0 0 0 1px color-mix(in srgb, var(--tone) 18%, transparent); }
+.avatar { width: 24px; height: 24px; border-radius: 50%; display: inline-grid; place-items: center; flex: 0 0 auto; font-size: 12px; font-weight: 650; letter-spacing: .02em; color: var(--tone); background: var(--tone-bg); box-shadow: 0 0 0 1px color-mix(in srgb, var(--tone) 18%, transparent); }
 .avatar.small { width: 20px; height: 20px; }
 .avatar.empty { background: none; box-shadow: inset 0 0 0 1.5px var(--card-hover); border: 0; }
 [data-person="emma"] { --tone: var(--emma); --tone-bg: var(--emma-bg); }
@@ -91,31 +87,14 @@ nav { align-items: center; } nav > span { margin-left: auto; }
 .composer textarea { display: block; width: 100%; resize: none; border: 0; padding: 2px 4px; background: none; color: var(--ink); font: inherit; font-size: 13px; line-height: 1.38; border-radius: 6px; }
 .composer textarea:focus { outline: none; }
 .composer-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 6px; }
-.composer-hint { color: var(--soft); font-size: 10.5px; }
-.stage .composer button { padding: 4px 10px; border-radius: 7px; background: var(--ink); color: var(--bg); font-size: 11.5px; font-weight: 550; }
+.composer-hint { color: var(--soft); font-size: 12px; }
+.stage .composer button { padding: 4px 10px; border-radius: 7px; background: var(--ink); color: var(--bg); font-size: 12px; font-weight: 550; }
 
 @keyframes badge-in { from { opacity: 0; scale: .8; } }
 @keyframes rise-in { from { opacity: 0; translate: 0 4px; } }
 @keyframes cell-in { from { opacity: .4; } }
 
-.controls { justify-content: center; }
-.controls .spacer { width: 10px; }
-.segmented { display: inline-flex; padding: 2px; border: 1px solid var(--line); border-radius: 7px; }
-.segmented button { border: 0; padding: 7px 11px; border-radius: 5px; color: var(--muted); background: transparent; }
-.segmented button[aria-pressed="true"] { background: var(--panel); color: var(--ink); }
-.status { text-align: center; }
-.hint, .demo-note { font-size: 12px; color: var(--muted); text-align: center; line-height: 1.7; max-width: 460px; margin: 6px auto; }
 
-.tricks { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 26px; }
-.tricks h2 { font-size: 17px; font-weight: 500; margin: 0 0 26px; }
-.tricks h3 { font-size: 14px; font-weight: 550; margin: 0 0 8px; }
-.tricks p { color: var(--muted); font-size: 13px; line-height: 1.85; }
-.tricks article { margin: 0 0 28px; }
-.tricks pre { overflow-x: auto; padding: 14px; background: var(--panel); border-radius: 8px; font-size: 12px; line-height: 1.65; }
-.tricks pre:focus-visible { outline: 2px solid #7181a5; outline-offset: 2px; }
-.source-links { display: flex; gap: 18px; font-size: 12px; color: var(--muted); }
-.source-links a, main > footer a { text-decoration: underline; text-underline-offset: 3px; }
-main > footer { font-size: 11px; color: var(--muted); margin-top: 30px; }
 
 /* The 600×400 preview shows the whole board at 62.5%. */
 :root[data-preview] .stage { width: 960px; margin: 0; padding: 22px 26px; transform: scale(.625); transform-origin: top left; }

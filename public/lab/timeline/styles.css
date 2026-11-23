@@ -66,7 +66,7 @@ select {
 .control-kicker {
   margin: 0 0 10px;
   color: #4f70c4;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.11em;
   text-transform: uppercase;
@@ -105,7 +105,7 @@ select {
 
 .timeline-card {
   overflow: hidden;
-  border: 1px solid transparent;
+  border: .5px solid transparent;
   border-radius: 10px;
   background:
     linear-gradient(var(--surface), var(--surface)) padding-box,
@@ -148,10 +148,10 @@ select {
 .mode-label {
   margin-left: 3px;
   padding: 3px 5px 2px;
-  border: 1px solid #cfd3df;
+  border: .5px solid #cfd3df;
   border-radius: 2px;
   color: #6d7280;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.08em;
   line-height: 1;
@@ -275,7 +275,7 @@ select {
 .row-date {
   justify-self: end;
   color: #747474;
-  font-size: 10.5px;
+  font-size: 12px;
   line-height: 1.3;
   text-align: right;
 }
@@ -321,10 +321,10 @@ select {
   display: inline-flex;
   margin-left: 5px;
   padding: 1px 3px;
-  border: 1px solid currentColor;
+  border: .5px solid currentColor;
   border-radius: 2px;
   font-family: Arial, sans-serif;
-  font-size: 7px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.05em;
   line-height: 1.15;
@@ -444,13 +444,13 @@ select:focus-visible {
 
 .removed-cluster-label {
   color: #9a3f38;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
 }
 
 .removed-cluster-action {
   color: #31509d;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -489,7 +489,7 @@ select:focus-visible {
   gap: 8px;
   min-height: 44px;
   padding: 9px 18px 12px;
-  border-top: 1px solid #e3e3e3;
+  border-top: .5px solid #e3e3e3;
   color: #31509d;
   font-size: 12px;
   font-weight: 700;
@@ -555,13 +555,13 @@ select:focus-visible {
 }
 
 .primary-button {
-  border: 1px solid #31509d;
+  border: .5px solid #31509d;
   background: #31509d;
   color: #ffffff;
 }
 
 .secondary-button {
-  border: 1px solid #b8bfd4;
+  border: .5px solid #b8bfd4;
   background: transparent;
   color: #31509d;
 }
@@ -596,7 +596,7 @@ select:focus-visible {
 .speed-control select {
   min-height: 38px;
   padding: 7px 10px;
-  border: 1px solid #cdd0d8;
+  border: .5px solid #cdd0d8;
   border-radius: 3px;
   background: #ffffff;
   color: var(--ink);
@@ -606,7 +606,7 @@ select:focus-visible {
   display: grid;
   gap: 9px;
   padding-top: 18px;
-  border-top: 1px solid #d9dce4;
+  border-top: .5px solid #d9dce4;
   color: #555963;
   font-size: 12px;
 }
@@ -640,8 +640,8 @@ select:focus-visible {
 
 .implementation-note {
   padding-top: 16px;
-  border-top: 1px solid #d9dce4;
-  font-size: 11px !important;
+  border-top: .5px solid #d9dce4;
+  font-size: 12px !important;
 }
 
 @media (max-width: 820px) {
@@ -717,9 +717,9 @@ body { background: var(--page); }
 .secondary-button:hover { background: #f6f6f6; }
 .speed-control { display: flex; align-items: center; gap: 8px; margin-left: auto; font-weight: 400; }
 .speed-control select { min-height: 36px; border-color: #ddd; border-radius: 5px; }
-.legend { display: flex; flex-wrap: wrap; gap: 20px; padding: 0; margin: 22px 0 12px; border: 0; font-size: 11px; }
+.legend { display: flex; flex-wrap: wrap; gap: 20px; padding: 0; margin: 22px 0 12px; border: 0; font-size: 12px; }
 .legend-swatch { width: 14px; }
-.timeline-card { border: 1px solid #e7e7e7; border-radius: 6px; background: #fff; }
+.timeline-card { border: .5px solid #e7e7e7; border-radius: 6px; background: #fff; }
 .timeline-card-header { padding-top: 16px; padding-bottom: 14px; }
 .timeline-card-header h2 { color: #333; background: none; -webkit-text-fill-color: currentColor; font-size: 13px; font-weight: 500; }
 .mode-label { margin-left: auto; font-weight: 500; }
@@ -756,7 +756,7 @@ html[data-preview][data-theme="dark"] .diff-tag.removed { color: var(--removed);
 
 /* Arrival is provisional; a confirmed date gives the same group its new place. */
 .scenario-control { min-width: 0; margin: 0 0 12px; padding: 0; border: 0; }
-.scenario-control legend { padding: 0; margin-bottom: 9px; color: var(--muted); font-size: 11px; }
+.scenario-control legend { padding: 0; margin-bottom: 9px; color: var(--muted); font-size: 12px; }
 .scenario-segments { display: inline-grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 100%; padding: 4px; gap: 3px; border-radius: 9px; background: #f2f2f2; }
 .scenario-segments label { position: relative; min-width: 0; cursor: pointer; }
 .scenario-segments input { position: absolute; opacity: 0; width: 1px; height: 1px; }
@@ -776,14 +776,42 @@ html[data-preview][data-theme="dark"] .diff-tag.removed { color: var(--removed);
 .lab-nav > span { margin-left: auto; }
 .timeline-list { overflow-anchor: none; }
 .timeline-group.is-reordering { z-index: 1; background: var(--surface); box-shadow: 0 6px 18px #0000000d; border-radius: 5px; }
-.position-state { color: var(--muted); font-size: 10px; white-space: nowrap; }
+.position-state { color: var(--muted); font-size: 12px; white-space: nowrap; }
 .position-state.is-sorted { color: #247047; }
-.implementation-notes { margin-top: 48px; border-top: 1px solid #e7e7e7; padding-top: 24px; }
+.implementation-notes { margin-top: 48px; border-top: .5px solid #e7e7e7; padding-top: 24px; }
 .implementation-notes h2 { font-size: 16px; font-weight: 500; }
 .implementation-notes h3 { font-size: 13px; font-weight: 600; margin-top: 26px; }
 .implementation-notes p { font-size: 13px; line-height: 1.7; color: #666; max-width: 74ch; }
-.implementation-notes pre { overflow-x: auto; padding: 16px; background: #f6f6f6; border-radius: 5px; font-size: 11px; line-height: 1.7; }
+.implementation-notes pre { overflow-x: auto; padding: 16px; background: #f6f6f6; border-radius: 5px; font-size: 12px; line-height: 1.7; }
 .implementation-notes a { color: var(--ink); font-size: 12px; }
 [hidden] { display: none !important; }
 html[data-preview] .scenario-control, html[data-preview] .scenario-hint, html[data-preview] .implementation-notes { display: none; }
 @media (max-width: 420px) { .scenario-segments { display: grid; width: 100%; } .scenario-segments span { padding-inline: 10px; } .speed-control { margin-left: 0; } }
+
+/* Lab system alignment: same column, type scale, Radix gray tokens and hairlines as /lab/shared/lab.css. */
+:root { --page: #fcfcfc; --surface: #fcfcfc; --ink: #202020; --muted: #646464; --link: #202020; }
+.page-shell { width: min(720px, calc(100% - 40px)); }
+.lab-nav { min-height: 32px; margin-bottom: 28px; font-size: 12px; color: var(--muted); }
+.lab-nav > span { display: none; }
+.lab-nav a { color: var(--muted); }
+.language-button { margin-left: auto; min-width: 32px; padding: 9px 8px; border-radius: 7px; color: var(--muted); font-size: 12px; }
+.language-button:hover { background: #f0f0f0; color: var(--ink); }
+.intro { margin-bottom: 28px; }
+.intro-copy { color: var(--muted); }
+.primary-button { background: #202020; border-color: #202020; border-radius: 7px; }
+.primary-button:hover { background: #3a3a3a; }
+.secondary-button, .speed-control select { border: .5px solid #cecece; border-radius: 7px; color: #202020; }
+.secondary-button:hover { background: #f0f0f0; }
+.timeline-card { border-color: #d9d9d9; border-radius: 16px; background: #fcfcfc; }
+.timeline-card-header h2 { color: #202020; font-size: 14px; font-weight: 600; }
+.mode-label { text-transform: none; letter-spacing: 0; font-size: 12px; font-weight: 400; border: 0; background: #f0f0f0; color: #646464; border-radius: 999px; padding: 2px 8px; }
+.scenario-segments { padding: 2px; gap: 2px; border-radius: 8px; background: #f0f0f0; }
+.scenario-segments span { min-height: 32px; padding: 6px 14px; border-radius: 6px; color: #646464; }
+.scenario-hint { font-size: 14px; color: #646464; }
+.timeline-empty strong { font-size: 14px; color: #202020; }
+.implementation-notes { margin-top: 48px; border-top: .5px solid #d9d9d9; padding-top: 28px; }
+.implementation-notes h2 { font-size: 14px; font-weight: 600; margin: 0 0 24px; }
+.implementation-notes h3 { font-size: 14px; font-weight: 500; margin: 32px 0 6px; }
+.implementation-notes p { font-size: 14px; line-height: 1.75; color: #646464; }
+.implementation-notes pre { padding: 14px 16px; background: #f0f0f0; border-radius: 8px; font-size: 12px; line-height: 1.65; }
+.position-state.is-sorted { color: #218358; }

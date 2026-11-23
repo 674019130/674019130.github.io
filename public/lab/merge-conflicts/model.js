@@ -23,9 +23,9 @@ export const CONFLICTS = [
 ];
 
 export const CHECKS = [
-  { id: 'tests', tip: 'vitest · 42 passed, 0 failed', time: '38s' },
-  { id: 'lint', tip: 'eslint · 0 problems', time: '9s' },
-  { id: 'types', tip: 'tsc --noEmit · no errors', time: '21s' },
+  { id: 'tests', tip: 'vitest: 42 passed, 0 failed', time: '38s' },
+  { id: 'lint', tip: 'eslint: 0 problems', time: '9s' },
+  { id: 'types', tip: 'tsc --noEmit: no errors', time: '21s' },
   { id: 'preview', tip: 'pr-128.acme-webapp.dev', time: '1m 04s' },
 ];
 

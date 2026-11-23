@@ -76,7 +76,7 @@ function bodyHtml(key) {
       <path class="rt-path" pathLength="100" d="M296 44C240 66 232 110 196 130 160 150 128 152 108 186 92 214 74 232 48 240" fill="none" stroke="var(--route-line)" stroke-width="2.2" stroke-linecap="round"/>
       ${t.stops.map(([nm, d], i) => { const p = [[296, 44], [196, 130], [108, 186], [48, 240]][i]; const delay = 300 + i * 110; return `<circle style="transition-delay:${delay}ms" cx="${p[0]}" cy="${p[1]}" r="4.6" fill="var(--pop)" stroke="var(--route-line)" stroke-width="2.4"/>
         <text style="transition-delay:${delay}ms" x="${p[0] + (i === 3 ? -12 : 12)}" y="${p[1] - 9}" text-anchor="${i === 3 ? 'end' : 'start'}" font-size="12.5" font-weight="600" fill="var(--fg)">${esc(nm)}</text>
-        <text style="transition-delay:${delay + 60}ms" x="${p[0] + (i === 3 ? -12 : 12)}" y="${p[1] + 17}" text-anchor="${i === 3 ? 'end' : 'start'}" font-size="10.5" fill="var(--mut)">${esc(d)}</text>`; }).join('')}
+        <text style="transition-delay:${delay + 60}ms" x="${p[0] + (i === 3 ? -12 : 12)}" y="${p[1] + 17}" text-anchor="${i === 3 ? 'end' : 'start'}" font-size="12" fill="var(--mut)">${esc(d)}</text>`; }).join('')}
     </svg></div><div class="rt-legs">${t.legs.map(([nm, ds, cl]) => `<span class="pill pill-line pill-dot" style="--c:var(--${cl})"><b>${esc(nm)}</b>${esc(ds)}</span>`).join('')}</div>`;
   if (key === 'stays') return `<div class="st-grid">${t.rows.map(([dt, nm, nt, pr], i) => `<div class="st-cell" style="--c:var(--${['blue', 'green', 'amber', 'red'][i]})"><div class="dt">${esc(dt)}</div><div class="nm">${esc(nm)}</div><div class="ft"><span>${esc(nt)}</span><span>${esc(pr)}</span></div></div>`).join('')}</div>
     <div class="st-tip">${ICONS.info}<span>${esc(t.tip)}</span></div>`;

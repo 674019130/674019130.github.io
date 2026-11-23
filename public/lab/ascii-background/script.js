@@ -26,20 +26,26 @@ const copy = {
   en: {
     back: '← UI lab', title: 'ASCII atmosphere', edition: '08 / ASCII atmosphere', intro: 'Somewhere between a photograph and a signal.',
     tagline: 'Light becomes language.', haze: 'Haze', ember: 'Ember', grove: 'Grove', drift: 'Drift', portrait: 'Portrait', texture: 'Character texture',
-    how: 'How the atmosphere is made', inspired: 'Inspired by', photos: 'Photographs:', photograph: 'View photograph', treatment: 'View treatment',
+    tricks: 'Key CSS & implementation tricks', source: 'View the source', inspired: 'Inspired by',
+    n0t: 'A photograph remapped to three colours', n0b: 'The landscape is drawn once into an offscreen canvas, softened with a canvas blur, then every pixel’s luminance is mapped onto a four-stop colour ramp. A deterministic grain is added from the pixel index, so it never shimmers between frames or scene changes. Pixels are read only on resize or scene change, never in an animation loop.',
+    n1t: 'Characters chosen by brightness', n1b: 'A monospaced grid samples the same luminance values. Brighter cells pick denser glyphs from a 70-character ramp, so the texture follows the landscape’s contours. Opacity rises in the middle band and along edges, and fades in the brightest and darkest areas, which keeps the photograph readable underneath.',
+    n2t: 'Drift moves the plane, not the characters', n2b: 'Characters and photograph live on one plane. Drift is a slow CSS keyframe on that plane, so nothing is re-sampled or randomly refreshed and there is no flicker. The animation is paused in hidden tabs and with reduced motion. The reference images are static; this movement is an extension made for the lab.', photos: 'Photographs:', photograph: 'View photograph', treatment: 'View treatment',
     loading: 'Loading the landscape…', error: 'The photograph could not load. Choose a scene to retry.',
-    originalStatus: 'Original photograph · choose View treatment to return.', still: 'Still mode · motion is disabled.',
-    moving: 'Drifting slowly · press Drift again to pause.', idle: 'A still study. Turn on Drift for a slow, continuous movement.', paused: 'Paused · the characters stay anchored to the photograph.',
+    originalStatus: 'Original photograph. Choose View treatment to return.', still: 'Still mode. Motion is disabled.',
+    moving: 'Drifting slowly. Press Drift again to pause.', idle: 'A still study. Turn on Drift for a slow, continuous movement.', paused: 'Paused. The characters stay anchored to the photograph.',
     scene: 'Soft photographic background with a luminance-mapped ASCII texture', landscape: 'Landscape',
     description: 'Soft photographic landscapes, false color, and light rendered as ASCII.'
   },
   zh: {
     back: '← UI 实验室', title: '字符氛围', edition: '08 / 字符氛围', intro: '介于风景照片与字符信号之间。',
     tagline: '让光成为语言。', haze: '薄雾', ember: '余晖', grove: '树林', drift: '漂移', portrait: '竖屏', texture: '字符强度',
-    how: '这种氛围是怎样做出来的', inspired: '灵感来自', photos: '摄影素材：', photograph: '查看原图', treatment: '查看效果',
+    tricks: '关键 CSS 与实现诀窍', source: '查看源码', inspired: '灵感来自',
+    n0t: '把照片重映射成三种颜色', n0b: '风景只在离屏画布上绘制一次，先用画布模糊柔化，再把每个像素的亮度映射到四段色阶上。颗粒感由像素序号决定，所以在帧之间、切换场景时都不会闪动。像素只在尺寸变化或切换场景时读取，从不在动画循环里读取。',
+    n1t: '按亮度挑选字符', n1b: '等宽字符网格采样同一份亮度。越亮的格子从 70 个字符的序列里挑越密的字形，纹理因此贴合风景的轮廓。不透明度在中间带和边缘处更高，在最亮和最暗处减弱，底下的照片始终看得清。',
+    n2t: '漂移移动的是平面，不是字符', n2b: '字符和照片在同一个平面上。“漂移”只是这个平面上一段缓慢的 CSS 关键帧，不重新采样，也不随机刷新字符，所以没有闪烁。后台标签页和减少动态效果时动画暂停。原参考是静态图，这段移动是实验室自己的延伸。', photos: '摄影素材：', photograph: '查看原图', treatment: '查看效果',
     loading: '正在载入风景…', error: '照片未能加载，请选择背景重试。',
-    originalStatus: '原始照片 · 点击「查看效果」返回。', still: '静态模式 · 已关闭动态效果。',
-    moving: '正在缓慢漂移 · 再次点击「漂移」可暂停。', idle: '默认静止。开启「漂移」，让画面缓慢、连续地移动。', paused: '已暂停 · 字符仍与照片的轮廓保持一致。',
+    originalStatus: '原始照片。点击「查看效果」返回。', still: '静态模式，已关闭动态效果。',
+    moving: '正在缓慢漂移，再次点击「漂移」可暂停。', idle: '默认静止。开启「漂移」，让画面缓慢、连续地移动。', paused: '已暂停，字符仍与照片的轮廓保持一致。',
     scene: '柔焦风景背景，叠加随明暗变化的 ASCII 字符纹理', landscape: '风景',
     description: '柔焦风景、蓝紫与朱红调色，以及随明暗变化的 ASCII 字符纹理。'
   }
@@ -50,7 +56,7 @@ let statusKey = 'loading';
 const t = key => copy[language][key];
 function say(key) { statusKey = key; status.textContent = t(key); }
 function updateSceneLabel() {
-  document.querySelector('#scene-name').textContent = `${presets[active].label.slice(0, 5)}${t(active)}`;
+  document.querySelector('#scene-name').textContent = t(active);
 }
 function applyLanguage() {
   document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';

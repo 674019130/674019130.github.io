@@ -359,7 +359,7 @@ function renderRows(box) {
     el._title = r.titleKey || r.title;
     const meta = r.right
       ? `<span class="st-${r.right.tone}">${esc(t.status[r.right.k](r.right.n))}</span>`
-      : r.hash ? `<span class="hash">${r.hash}</span><span class="who">${r.who === 'you' ? t.you : r.who} · ${r.when === 'now' ? t.now : r.when}</span>` : '';
+      : r.hash ? `<span class="hash">${r.hash}</span><span class="who">${r.who === 'you' ? t.you : r.who}<span class="when">${r.when === 'now' ? t.now : r.when}</span></span>` : '';
     const before = cache.get(`${id}:m`);
     set(el.children[2], `${id}:m`, meta);
     if (before !== undefined && shape(before) !== shape(meta) && lively()) restart(el.children[2], 'blurin');

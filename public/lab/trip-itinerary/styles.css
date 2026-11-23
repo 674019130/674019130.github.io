@@ -16,10 +16,6 @@
   --red: #e06a76; --red-ink: #ee8e97; --red-wash: #3a1d20;
   --map-line: #6b9de8; --route-line: #e06a76; --map-dot: #46505a; --soft-blue: #33507a; }
 
-[hidden] { display: none !important; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-nav { align-items: center; } nav > span { margin-left: auto; }
-#language { border: 0; background: none; padding: 6px 8px; color: var(--muted); }
 
 #stage { margin: 34px auto 8px; font-size: 14px; color: var(--fg); }
 #stage button { border: 0; padding: 0; background: none; color: inherit; font: inherit; border-radius: 0; transition: none; transform: none; cursor: pointer; }
@@ -65,14 +61,14 @@ nav { align-items: center; } nav > span { margin-left: auto; }
 .fl-city .cd { font-size: 22px; font-weight: 600; letter-spacing: -.01em; }
 .fl-city .nm { font-size: 12px; color: var(--mut); margin-top: 1px; }
 .fl-city .tm { font-size: 13px; color: var(--fg-2); font-variant-numeric: tabular-nums; margin-top: 3px; }
-.fl-city .tm sup { color: var(--mut); font-size: 9px; }
+.fl-city .tm sup { color: var(--mut); font-size: 12px; }
 .fl-city.right { text-align: right; }
 .fl-arc { position: relative; height: 40px; }
 .fl-arc svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 .fl-dur { text-align: center; font-size: 12px; color: var(--mut); padding: 4px 18px 0; font-variant-numeric: tabular-nums; }
 .fl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 16px 18px 0; }
 .fl-grid .cell { border-top: .5px solid var(--line); padding-top: 8px; min-width: 0; }
-.fl-grid .lb { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--mut); }
+.fl-grid .lb { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--mut); }
 .fl-grid .vl { font-size: 15px; font-weight: 550; font-variant-numeric: tabular-nums; margin-top: 2px; white-space: nowrap; }
 
 /* Route map */
@@ -85,7 +81,7 @@ nav { align-items: center; } nav > span { margin-left: auto; }
 .st-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 4px 18px 0; }
 .st-cell { border: .5px solid var(--line); border-radius: 12px; padding: 10px 12px; }
 .st-cell::before { content: ""; display: block; width: 22px; height: 3px; border-radius: 2px; background: var(--c, var(--line)); margin-bottom: 7px; }
-.st-cell .dt { font-size: 11px; letter-spacing: .04em; color: var(--mut); font-variant-numeric: tabular-nums; }
+.st-cell .dt { font-size: 12px; letter-spacing: .04em; color: var(--mut); font-variant-numeric: tabular-nums; }
 .st-cell .nm { font-size: 13.5px; font-weight: 550; margin-top: 4px; }
 .st-cell .ft { display: flex; justify-content: space-between; font-size: 12px; color: var(--mut); margin-top: 6px; font-variant-numeric: tabular-nums; }
 .st-tip { display: flex; gap: 8px; margin: 12px 18px 0; padding: 9px 12px; background: var(--app-bg); border-radius: 10px; font-size: 12px; color: var(--fg-2); line-height: 1.55; }
@@ -109,11 +105,11 @@ nav { align-items: center; } nav > span { margin-left: auto; }
 .bg-chart { margin: 14px 18px 0; }
 .bg-bars { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; align-items: end; height: 108px; position: relative; border-bottom: .5px solid var(--line); padding-left: 32px; }
 .bg-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; padding: 7px 0 0 32px; }
-.bg-bars .tick { position: absolute; left: 0; right: 0; border-top: .5px dashed var(--line); font-size: 10px; color: var(--faint); }
+.bg-bars .tick { position: absolute; left: 0; right: 0; border-top: .5px dashed var(--line); font-size: 12px; color: var(--faint); }
 .bg-bars .tick span { position: absolute; top: -7px; left: 0; }
 .bg-bars .bar { border-radius: 4px 4px 0 0; background: var(--c, var(--map-dot)); height: calc(var(--h) * 1%); transition: height .5s var(--ease); }
 .bg-days .d { text-align: center; font-size: 12px; font-variant-numeric: tabular-nums; }
-.bg-days .d small { display: block; font-size: 10px; color: var(--mut); margin-top: 1px; }
+.bg-days .d small { display: block; font-size: 12px; color: var(--mut); margin-top: 1px; }
 .bg-days .d.today { font-weight: 650; }
 .bg-days .d.today small { color: var(--fg); }
 
@@ -129,22 +125,6 @@ nav { align-items: center; } nav > span { margin-left: auto; }
 .card-trip .cap .d { font-size: 13px; opacity: .85; text-shadow: 0 1px 8px #0b1e3a66; }
 
 /* page controls */
-.controls { justify-content: center; }
-.segmented { display: inline-flex; flex-wrap: wrap; padding: 2px; border: 1px solid var(--line); border-radius: 7px; }
-.segmented button { border: 0; padding: 7px 11px; border-radius: 5px; color: var(--muted); background: transparent; }
-.segmented button[aria-pressed="true"] { background: var(--panel); color: var(--ink); }
-.status, .hint, .demo-note { text-align: center; }
-.hint, .demo-note { font-size: 12px; color: var(--muted); line-height: 1.7; max-width: 480px; margin: 6px auto; }
-.tricks { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 26px; }
-.tricks h2 { font-size: 17px; font-weight: 500; margin: 0 0 26px; }
-.tricks h3 { font-size: 14px; font-weight: 550; margin: 0 0 8px; }
-.tricks p { color: var(--muted); font-size: 13px; line-height: 1.85; }
-.tricks article { margin: 0 0 28px; }
-.tricks pre { overflow-x: auto; padding: 14px; background: var(--panel); border-radius: 8px; font-size: 12px; line-height: 1.65; }
-.tricks pre:focus-visible { outline: 2px solid #7181a5; outline-offset: 2px; }
-.source-links { display: flex; gap: 18px; font-size: 12px; color: var(--muted); }
-.source-links a, main > footer a { text-decoration: underline; text-underline-offset: 3px; }
-main > footer { font-size: 11px; color: var(--muted); margin-top: 30px; }
 
 /* The 600×400 hover preview shows the whole panel scaled down. */
 :root[data-preview] #stage { position: relative; margin: 0; width: 600px; height: 400px; }
@@ -216,7 +196,9 @@ main > footer { font-size: 11px; color: var(--muted); margin-top: 30px; }
 .card.on .bg-days .d { opacity: 1; transition-delay: 420ms; }
 
 /* Trip: the photo settles out of a slow zoom while the caption slides down. */
-.card-trip .scene { transform: scale(1.08); transition: transform 6s cubic-bezier(.16, .8, .24, 1); }
+/* Collapsed, the 62px band would crop the torii into fragments: show only the sky until the card opens. */
+.card-trip .scene { opacity: 0; transform: scale(1.08); transition: transform 6s cubic-bezier(.16, .8, .24, 1), opacity .3s ease-out; }
+.card-trip.on .scene { opacity: 1; }
 .card-trip.on .scene { transform: scale(1); }
 @keyframes drift { 50% { transform: translateX(12px); } }
 .card-trip.on .scene ellipse:nth-of-type(1) { animation: drift 9s ease-in-out infinite; }
