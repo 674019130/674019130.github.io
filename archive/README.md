@@ -8,4 +8,4 @@
 - `pages/about/index-2026-09-14.md.txt` and `pages/about/site-2026-09-14.md.txt`: archived before refreshing the personal introduction and separating the duplicated site history on 2026-09-14. Preserves the original personal notes and former TODO list.
 
 - `components/LabTimelinePreview-2026-09-15-source.vue.txt`: original single-experiment hover component archived when generalized to `LabExperimentPreview` for the timeline, receipt and mascot experiments.
-- `package-lock.json` (2026-11-23): stale npm lockfile frozen at valaxy 0.28.11; the repo standardizes on pnpm (`packageManager: pnpm@10.14.0` + pnpm-lock.yaml). Archived so that `npm install` cannot install the wrong dependency tree.
+- `lockfiles/package-lock-2026-11-23.json` (2026-11-23): stale npm lockfile frozen at valaxy 0.28.11; the repo standardizes on pnpm (`packageManager: pnpm@10.14.0` + pnpm-lock.yaml). Archived so that `npm install` cannot install the wrong dependency tree. Renamed away from `package-lock.json` because the GitHub dependency graph indexes that filename in any directory and kept reporting its vulnerabilities.
