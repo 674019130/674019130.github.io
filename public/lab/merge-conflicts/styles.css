@@ -21,7 +21,7 @@
 
 #stage { margin: 34px auto 8px; max-width: 640px; display: flex; flex-direction: column; gap: 18px; font-size: 14px; color: var(--fg); }
 #stage button { border: 0; padding: 0; background: none; color: inherit; font: inherit; border-radius: 0; transition: none; transform: none; cursor: pointer; }
-#stage button:focus-visible, #stage textarea:focus-visible, #stage .chk:focus-visible { outline: 2px solid #7181a5; outline-offset: 2px; border-radius: 8px; }
+#stage button:focus-visible, #stage textarea:focus-visible, #stage .chk:focus-visible { outline: 2px solid #7181a5; outline-offset: 2px; }
 #stage svg.i { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
 #stage code { font-family: var(--mono); }
 #convo { display: flex; flex-direction: column; gap: 18px; }
@@ -168,7 +168,9 @@
 #stage .files code { font-size: 12.5px; color: var(--fg-2); }
 #stage .files .n { font-variant-numeric: tabular-nums; white-space: nowrap; }
 
-#stage .composer { border: .5px solid var(--cl); border-radius: 18px; padding: 12px 12px 10px 16px; background: var(--bg); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 10px; margin-top: -8px; }
+#stage .composer { border: .5px solid var(--cl); border-radius: 18px; padding: 12px 12px 10px 16px; background: var(--bg); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 10px; margin-top: -8px; transition: border-color .25s ease-out, box-shadow .25s ease-out; }
+#stage .composer:focus-within { border-color: var(--blue); box-shadow: var(--shadow), 0 0 0 3px rgba(79, 134, 236, .18); }
+:root[data-theme="dark"] #stage .composer:focus-within { box-shadow: var(--shadow), 0 0 0 3px rgba(91, 146, 245, .24); }
 #stage .composer textarea { border: 0; resize: none; background: transparent; color: var(--fg); font-family: inherit; font-size: 15px; line-height: 1.5; padding: 2px 0; min-height: 44px; outline: none; }
 #stage .composer textarea::placeholder { color: var(--faint); }
 #stage .cbar { display: flex; align-items: center; gap: 6px; margin-left: -4px; }
